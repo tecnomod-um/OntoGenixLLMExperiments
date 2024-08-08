@@ -1,8 +1,9 @@
 # NOTES
 
 ## Tools to validate
-RDF/XML and other formats converter: https://www.easyrdf.org/converter
-Turtle online validator: http://ttl.summerofcode.be/
+* RDF/XML and other formats converter: https://www.easyrdf.org/converter
+
+* Turtle online validator: http://ttl.summerofcode.be/
 
 
 ## Errors
