@@ -1,0 +1,69 @@
+**Foundational Prefix:**
+<https://base_ontology.com#> rdf:type owl:Ontology
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#> rdf:type owl:Namespace
+<http://www.w3.org/2000/01/rdf-schema#> rdf:type owl:Namespace
+<http://www.w3.org/2002/07/owl#> rdf:type owl:Namespace
+
+**Data Description:**
+1. Company: text - Company information - string
+2. Company public response: text - Company public response - string
+3. Company response to consumer: categorical - Company response to consumer - {yes, no,...}
+4. Consumer complaint narrative: text - Consumer complaint narrative - string
+5. Consumer consent provided?: categorical - Consumer consent provided? - {yes, no,...}
+6. Consumer disputed?: categorical - Consumer disputed? - {yes, no,...}
+7. Date received: text - Date received - string
+8. Date sent to company: text - Date sent to company - string
+9. Issue: text - Issue - string
+10. Product: text - Product - string
+11. State: text - State - string
+12. Sub-issue: text - Sub-issue - string
+13. Sub-product: text - Sub-product - string
+14. Submitted via: categorical - Submitted via - {web, phone,...}
+15. Tags: categorical - Tags - {tag1, tag2,...}
+16. Timely response?: categorical - Timely response? - {yes, no,...}
+17. ZIP code: text - ZIP code - string
+18. Complaint ID: numerical - Complaint ID - integer
+
+**Classes:**
+1. Complaint
+2. Company
+3. Consumer
+4. Product
+5. Issue
+6. State
+7. Submission
+
+**Subclasses:**
+1. PublicResponse: subclass of -> Company
+2. ConsumerComplaint: subclass of -> Complaint
+3. ProductIssue: subclass of -> Issue
+4. StateLocation: subclass of -> State
+5. SubmissionMethod: subclass of -> Submission
+
+**Object Properties:**
+1. hasCompany: Complaint - Company
+2. hasConsumer: Complaint - Consumer
+3. hasProduct: Complaint - Product
+4. hasIssue: Complaint - Issue
+5. hasState: Complaint - State
+6. hasSubmission: Complaint - Submission
+7. hasPublicResponse: Company - PublicResponse
+8. hasConsumerComplaint: Consumer - ConsumerComplaint
+9. hasProductIssue: Product - ProductIssue
+10. hasStateLocation: State - StateLocation
+11. hasSubmissionMethod: Submission - SubmissionMethod
+
+**Data Type Properties:**
+1. companyName: Company - string
+2. complaintNarrative: ConsumerComplaint - string
+3. consumerConsent: Consumer - boolean
+4. consumerDisputed: Consumer - boolean
+5. dateReceived: Complaint - date
+6. dateSent: Complaint - date
+7. issueDescription: Issue - string
+8. productDescription: Product - string
+9. stateName: State - string
+10. submissionMethod: Submission - string
+11. timelyResponse: Complaint - boolean
+12. zipCode: StateLocation - string
+13. complaintID: Complaint - integer

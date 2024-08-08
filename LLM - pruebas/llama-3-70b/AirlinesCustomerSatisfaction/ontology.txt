@@ -1,0 +1,53 @@
+Here is the TURTLE ontology:
+
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix base: <https://base_ontology.com#>
+
+owl:Ontology( <https://base_ontology.com#> )
+
+# Classes
+base:Flight a owl:Class.
+base:Passenger a owl:Class.
+base:Travel a owl:Class.
+base:Class a owl:Class.
+base:Economy a owl:Class ; rdfs:subClassOf base:Class.
+base:Business a owl:Class ; rdfs:subClassOf base:Class.
+base:FirstClass a owl:Class ; rdfs:subClassOf base:Class.
+base:Male a owl:Class ; rdfs:subClassOf base:Passenger.
+base:Female a owl:Class ; rdfs:subClassOf base:Passenger.
+base:Leisure a owl:Class ; rdfs:subClassOf base:Travel.
+base:Business a owl:Class ; rdfs:subClassOf base:Travel.
+base:Satisfaction a owl:Class.
+base:CustomerType a owl:Class.
+base:Gender a owl:Class.
+
+# Object Properties
+base:has_passenger a owl:ObjectProperty ; rdfs:domain base:Flight ; rdfs:range base:Passenger.
+base:has_class a owl:ObjectProperty ; rdfs:domain base:Flight ; rdfs:range base:Class.
+base:has_travel_type a owl:ObjectProperty ; rdfs:domain base:Flight ; rdfs:range base:Travel.
+base:has_gender a owl:ObjectProperty ; rdfs:domain base:Passenger ; rdfs:range base:Gender.
+base:has_customer_type a owl:ObjectProperty ; rdfs:domain base:Passenger ; rdfs:range base:CustomerType.
+base:has_satisfaction a owl:ObjectProperty ; rdfs:domain base:Passenger ; rdfs:range base:Satisfaction.
+
+# Data Type Properties
+base:has_age a owl:DatatypeProperty ; rdfs:domain base:Passenger ; rdfs:range xsd:integer.
+base:has_departure_delay a owl:DatatypeProperty ; rdfs:domain base:Flight ; rdfs:range xsd:integer.
+base:has_arrival_delay a owl:DatatypeProperty ; rdfs:domain base:Flight ; rdfs:range xsd:integer.
+base:has_flight_distance a owl:DatatypeProperty ; rdfs:domain base:Flight ; rdfs:range xsd:integer.
+base:has_baggage_handling_rating a owl:DatatypeProperty ; rdfs:domain base:Flight ; rdfs:range xsd:integer.
+base:has_checkin_service_rating a owl:DatatypeProperty ; rdfs:domain base:Flight ; rdfs:range xsd:integer.
+base:has_cleanliness_rating a owl:DatatypeProperty ; rdfs:domain base:Flight ; rdfs:range xsd:integer.
+base:has_departure_time_convenience a owl:DatatypeProperty ; rdfs:domain base:Flight ; rdfs:range xsd:integer.
+base:has_ease_of_online_booking a owl:DatatypeProperty ; rdfs:domain base:Flight ; rdfs:range xsd:integer.
+base:has_food_and_drink_rating a owl:DatatypeProperty ; rdfs:domain base:Flight ; rdfs:range xsd:integer.
+base:has_gate_location_convenience a owl:DatatypeProperty ; rdfs:domain base:Flight ; rdfs:range xsd:integer.
+base:has_inflight_entertainment_rating a owl:DatatypeProperty ; rdfs:domain base:Flight ; rdfs:range xsd:integer.
+base:has_inflight_wifi_service_rating a owl:DatatypeProperty ; rdfs:domain base:Flight ; rdfs:range xsd:integer.
+base:has_leg_room_service_rating a owl:DatatypeProperty ; rdfs:domain base:Flight ; rdfs:range xsd:integer.
+base:has_on_board_service_rating a owl:DatatypeProperty ; rdfs:domain base:Flight ; rdfs:range xsd:integer.
+base:has_online_boarding_rating a owl:DatatypeProperty ; rdfs:domain base:Flight ; rdfs:range xsd:integer.
+base:has_online_support_rating a owl:DatatypeProperty ; rdfs:domain base:Flight ; rdfs:range xsd:integer.
+base:has_seat_comfort_rating a owl:DatatypeProperty ; rdfs:domain base:Flight ; rdfs:range xsd:integer.

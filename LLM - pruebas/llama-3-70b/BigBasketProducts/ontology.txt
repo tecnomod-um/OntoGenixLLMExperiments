@@ -1,0 +1,31 @@
+@prefix base: <http://base_ontology.com#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+base:Product a owl:Class.
+base:Brand a owl:Class.
+base:Category a owl:Class.
+base:Image a owl:Class.
+base:Quantity a owl:Class.
+base:Price a owl:Class.
+base:ProductName a owl:Class ; rdfs:subClassOf base:Product.
+base:SubCategory a owl:Class ; rdfs:subClassOf base:Category.
+
+base:hasBrand a owl:ObjectProperty ; rdfs:domain base:Product ; rdfs:range base:Brand.
+base:hasCategory a owl:ObjectProperty ; rdfs:domain base:Product ; rdfs:range base:Category.
+base:hasImage a owl:ObjectProperty ; rdfs:domain base:Product ; rdfs:range base:Image.
+base:hasQuantity a owl:ObjectProperty ; rdfs:domain base:Product ; rdfs:range base:Quantity.
+base:hasPrice a owl:ObjectProperty ; rdfs:domain base:Product ; rdfs:range base:Price.
+base:hasSubCategory a owl:ObjectProperty ; rdfs:domain base:Category ; rdfs:range base:SubCategory.
+
+base:absoluteUrl a owl:DatatypeProperty ; rdfs:domain base:Product ; rdfs:range xsd:string.
+base:brandName a owl:DatatypeProperty ; rdfs:domain base:Brand ; rdfs:range xsd:string.
+base:categoryName a owl:DatatypeProperty ; rdfs:domain base:Category ; rdfs:range xsd:string.
+base:imageUrl a owl:DatatypeProperty ; rdfs:domain base:Image ; rdfs:range xsd:string.
+base:productName a owl:DatatypeProperty ; rdfs:domain base:ProductName ; rdfs:range xsd:string.
+base:quantityValue a owl:DatatypeProperty ; rdfs:domain base:Quantity ; rdfs:range xsd:string.
+base:subCategoryName a owl:DatatypeProperty ; rdfs:domain base:SubCategory ; rdfs:range xsd:string.
+base:discountPriceValue a owl:DatatypeProperty ; rdfs:domain base:DiscountPrice ; rdfs:range xsd:decimal.
+base:originalPriceValue a owl:DatatypeProperty ; rdfs:domain base:Price ; rdfs:range xsd:decimal.
