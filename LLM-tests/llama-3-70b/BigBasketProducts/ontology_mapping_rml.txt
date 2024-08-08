@@ -1,0 +1,239 @@
+<http://base_ontology.com#>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+<http://www.w3.org/2000/01/rdf-schema#>
+<http://www.w3.org/2002/07/owl#>
+<http://www.w3.org/2001/XMLSchema#>
+
+<#TriplesMapProduct> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://base_ontology.com/Product/{{Absolute_Url}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [
+            rr:column "ProductName";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate <http://base_ontology.com#hasBrand>;
+        rr:objectMap [
+            rr:template "http://base_ontology.com/Brand/{{Brand}}{{FAIR_URI}}";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate <http://base_ontology.com#hasCategory>;
+        rr:objectMap [
+            rr:template "http://base_ontology.com/Category/{{Category}}{{FAIR_URI}}";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate <http://base_ontology.com#hasImage>;
+        rr:objectMap [
+            rr:template "http://base_ontology.com/Image/{{Image_Url}}{{FAIR_URI}}";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate <http://base_ontology.com#hasQuantity>;
+        rr:objectMap [
+            rr:template "http://base_ontology.com/Quantity/{{Quantity}}{{FAIR_URI}}";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate <http://base_ontology.com#hasPrice>;
+        rr:objectMap [
+            rr:template "http://base_ontology.com/Price/{{Price}}{{FAIR_URI}}";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate <http://base_ontology.com#absoluteUrl>;
+        rr:objectMap [
+            rr:column "Absolute_Url";
+        ];
+    ];
+.
+
+<#TriplesMapBrand> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://base_ontology.com/Brand/{{Brand}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [
+            rr:column "Brand";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate <http://base_ontology.com#brandName>;
+        rr:objectMap [
+            rr:column "Brand";
+        ];
+    ];
+.
+
+<#TriplesMapCategory> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://base_ontology.com/Category/{{Category}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [
+            rr:column "Category";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate <http://base_ontology.com#categoryName>;
+        rr:objectMap [
+            rr:column "Category";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate <http://base_ontology.com#hasSubCategory>;
+        rr:objectMap [
+            rr:template "http://base_ontology.com/SubCategory/{{SubCategory}}{{FAIR_URI}}";
+        ];
+    ];
+.
+
+<#TriplesMapImage> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://base_ontology.com/Image/{{Image_Url}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [
+            rr:column "Image_Url";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate <http://base_ontology.com#imageUrl>;
+        rr:objectMap [
+            rr:column "Image_Url";
+        ];
+    ];
+.
+
+<#TriplesMapQuantity> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://base_ontology.com/Quantity/{{Quantity}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [
+            rr:column "Quantity";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate <http://base_ontology.com#quantityValue>;
+        rr:objectMap [
+            rr:column "Quantity";
+        ];
+    ];
+.
+
+<#TriplesMapPrice> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://base_ontology.com/Price/{{Price}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [
+            rr:column "Price";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate <http://base_ontology.com#originalPriceValue>;
+        rr:objectMap [
+            rr:column "Price";
+        ];
+    ];
+.
+
+<#TriplesMapDiscountPrice> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://base_ontology.com/DiscountPrice/{{DiscountPrice}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [
+            rr:column "DiscountPrice";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate <http://base_ontology.com#discountPriceValue>;
+        rr:objectMap [
+            rr:column "DiscountPrice";
+        ];
+    ];
+.
+
+<#TriplesMapProductName> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://base_ontology.com/Product/{{ProductName}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [
+            rr:column "ProductName";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate <http://base_ontology.com#productName>;
+        rr:objectMap [
+            rr:column "ProductName";
+        ];
+    ];
+.
+
+<#TriplesMapSubCategory> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://base_ontology.com/SubCategory/{{SubCategory}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [
+            rr:column "SubCategory";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate <http://base_ontology.com#subCategoryName>;
+        rr:objectMap [
+            rr:column "SubCategory";
+        ];
+    ];
+.

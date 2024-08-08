@@ -1,0 +1,196 @@
+Here is the generated RML mapping:
+
+<https://base_ontology.com#> a rdf:Prefix;
+    rdf:prefix "base".
+
+<https://w3.org/1999/02/22-rdf-syntax-ns#> a rdf:Prefix;
+    rdf:prefix "rdf".
+
+<https://w3.org/2000/01/rdf-schema#> a rdf:Prefix;
+    rdf:prefix "rdfs".
+
+<https://w3.org/2002/07/owl#> a rdf:Prefix;
+    rdf:prefix "owl".
+
+<#InvoiceTriplesMap> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "https://base_ontology.com/Invoice/{{InvoiceNo}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [
+            rr:column "Description";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate base:hasInvoiceDate;
+        rr:objectMap [
+            rr:column "InvoiceDate";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate base:hasInvoiceNo;
+        rr:objectMap [
+            rr:column "InvoiceNo";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate base:isRelatedTo;
+        rr:objectMap [
+            rr:template "https://base_ontology.com/Customer/{{CustomerID}}{{FAIR_URI}}";
+        ];
+    ].
+
+<#ProductTriplesMap> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "https://base_ontology.com/Product/{{StockCode}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [
+            rr:column "Description";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate base:hasStockCode;
+        rr:objectMap [
+            rr:column "StockCode";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate base:hasQuantity;
+        rr:objectMap [
+            rr:column "Quantity";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate base:hasUnitPrice;
+        rr:objectMap [
+            rr:column "UnitPrice";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate base:isRelatedTo;
+        rr:objectMap [
+            rr:template "https://base_ontology.com/Invoice/{{InvoiceNo}}{{FAIR_URI}}";
+        ];
+    ].
+
+<#CustomerTriplesMap> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "https://base_ontology.com/Customer/{{CustomerID}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [
+            rr:column "Country";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate base:hasCustomerID;
+        rr:objectMap [
+            rr:column "CustomerID";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate base:isRelatedTo;
+        rr:objectMap [
+            rr:template "https://base_ontology.com/Invoice/{{InvoiceNo}}{{FAIR_URI}}";
+        ];
+    ].
+
+<#SalesInvoiceTriplesMap> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "https://base_ontology.com/SalesInvoice/{{InvoiceNo}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:objectMap [
+            rr:template "https://base_ontology.com/SalesInvoice";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:subClassOf;
+        rr:objectMap [
+            rr:template "https://base_ontology.com/Invoice";
+        ];
+    ].
+
+<#ServiceInvoiceTriplesMap> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "https://base_ontology.com/ServiceInvoice/{{InvoiceNo}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:objectMap [
+            rr:template "https://base_ontology.com/ServiceInvoice";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:subClassOf;
+        rr:objectMap [
+            rr:template "https://base_ontology.com/Invoice";
+        ];
+    ].
+
+<#StockItemTriplesMap> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "https://base_ontology.com/StockItem/{{StockCode}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:objectMap [
+            rr:template "https://base_ontology.com/StockItem";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:subClassOf;
+        rr:objectMap [
+            rr:template "https://base_ontology.com/Product";
+        ];
+    ].
+
+<#CustomerAccountTriplesMap> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "https://base_ontology.com/CustomerAccount/{{CustomerID}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:objectMap [
+            rr:template "https://base_ontology.com/CustomerAccount";
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:subClassOf;
+        rr:objectMap [
+            rr:template "https://base_ontology.com/Customer";
+        ];
+    ];
