@@ -1,0 +1,81 @@
+<#TriplesMapClass_entity> a rr:TriplesMap;
+rml:logicalSource [
+rml:source "{csv_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "base:entity_name/{{EntityID}}{{FAIR_URI}}"
+];
+rr:predicateObjectMap [
+{
+rr:predicate rdf:type;
+rr:objectMap [
+rr:blankNode "?class"
+]
+},
+{
+rr:predicate base:has_brand;
+rr:objectMap [
+rr:template "{{Brand}}"
+]
+},
+{
+rr:predicate base:has_category;
+rr:objectMap [
+rr:template "{{Category}}"
+]
+},
+{
+rr:predicate base:has_product_name;
+rr:objectMap [
+rr:template "{{ProductName}}"
+]
+},
+{
+rr:predicate base:has_quantity;
+rr:objectMap [
+rr:template "{{Quantity}}"
+]
+},
+{
+rr:predicate base:has_subcategory;
+rr:objectMap [
+rr:template "{{SubCategory}}"
+]
+},
+{
+rr:predicate base:has_discount_price;
+rr:objectMap [
+rr:template "{{DiscountPrice}}"
+]
+},
+{
+rr:predicate base:has_price;
+rr:objectMap [
+rr:template "{{Price}}"
+]
+},
+{
+rr:predicate rdf:type;
+rr:objectMap [
+rr:template "base:entity_name"
+]
+}
+];
+
+<#TriplesMapClass_entity_name> a rr:TriplesMap;
+rml:logicalSource [
+rml:source "{csv_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "base:entity_name/{{EntityID}}{{FAIR_URI}}"
+];
+rr:predicateObjectMap [
+{
+rr:predicate rdf:type;
+rr:objectMap [
+rr:template "base:entity_name"
+]
+}
+]

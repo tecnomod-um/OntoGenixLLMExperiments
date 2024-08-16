@@ -1,0 +1,349 @@
+**Foundational Prefix:**
+<https://myairlineontology.com#>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+<http://www.w3.org/2000/01/rdf-schema#>
+<http://www.w3.org/2002/07/owl#>
+
+**Data Description:**
+
+{
+ "Age": {
+   "type": "Numerical",
+   "meaning": "The age of a passenger"
+ },
+ "Arrival Delay in Minutes": {
+   "type": "Numerical",
+   "meaning": "The delay in minutes of a flight upon arrival"
+ },
+ "Baggage handling": {
+   "type": "categorical",
+   "meaning": "The quality of baggage handling service"
+ },
+ "Checkin service": {
+   "type": "categorical",
+   "meaning": "The quality of checkin service"
+ },
+ "Cleanliness": {
+   "type": "categorical",
+   "meaning": "The cleanliness of the aircraft or airport"
+ },
+ "Departure Delay in Minutes": {
+   "type": "Numerical",
+   "meaning": "The delay in minutes of a flight upon departure"
+ },
+ "Departure/Arrival time convenient": {
+   "type": "categorical",
+   "meaning": "Whether the departure or arrival time is convenient for the passenger"
+ },
+ "Ease of Online booking": {
+   "type": "categorical",
+   "meaning": "The ease of booking a flight online"
+ },
+ "Flight Distance": {
+   "type": "Numerical",
+   "meaning": "The distance of a flight in miles"
+ },
+ "Food and drink": {
+   "type": "categorical",
+   "meaning": "The quality of food and drink service"
+ },
+ "Gate location": {
+   "type": "categorical",
+   "meaning": "The location of the gate"
+ },
+ "Inflight entertainment": {
+   "type": "categorical",
+   "meaning": "The quality of inflight entertainment"
+ },
+ "Inflight wifi service": {
+   "type": "categorical",
+   "meaning": "The quality of inflight wifi service"
+ },
+ "Leg room service": {
+   "type": "categorical",
+   "meaning": "The quality of leg room service"
+ },
+ "On-board service": {
+   "type": "categorical",
+   "meaning": "The quality of on-board service"
+ },
+ "Online boarding": {
+   "type": "categorical",
+   "meaning": "The availability of online boarding"
+ },
+ "Online support": {
+   "type": "categorical",
+   "meaning": "The quality of online support"
+ },
+ "Seat comfort": {
+   "type": "categorical",
+   "meaning": "The comfort of the aircraft seat"
+ },
+ "Class": {
+   "type": "categorical",
+   "meaning": "The class of the flight"
+ },
+ "Customer Type": {
+   "type": "categorical",
+   "meaning": "The type of customer"
+ },
+ "Gender": {
+   "type": "categorical",
+   "meaning": "The gender of the passenger"
+ },
+ "Type of Travel": {
+   "type": "categorical",
+   "meaning": "The type of travel (business or leisure)"
+ },
+ "satisfaction": {
+   "type": "categorical",
+   "meaning": "The level of passenger satisfaction"
+ }
+}
+
+**classes:**
+
+{
+ "class_entity": {
+   "type": "owl:Class",
+   "meaning": "An entity related to air travel"
+ }
+}
+
+**subclasses:**
+
+{
+ "entity_name": {
+   "type": "owl:Class",
+   "meaning": "A specific type of entity related to air travel",
+   "subclass_of": "<https://myairlineontology.com#class_entity>"
+ }
+}
+
+**Object Properties:**
+
+{
+ "has_age": {
+   "type": "owl:ObjectProperty",
+   "domain": "<https://myairlineontology.com#entity_name>",
+   "range": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#xsd:int>"
+ },
+ "has_baggage_handling": {
+   "type": "owl:ObjectProperty",
+   "domain": "<https://myairlineontology.com#entity_name>",
+   "range": "<https://myairlineontology.com#Baggage_handling>"
+ },
+ "has_checkin_service": {
+   "type": "owl:ObjectProperty",
+   "domain": "<https://myairlineontology.com#entity_name>",
+   "range": "<https://myairlineontology.com#Checkin_service>"
+ },
+ "has_cleanliness": {
+   "type": "owl:ObjectProperty",
+   "domain": "<https://myairlineontology.com#entity_name>",
+   "range": "<https://myairlineontology.com#Cleanliness>"
+ },
+ "has_departure_delay": {
+   "type": "owl:ObjectProperty",
+   "domain": "<https://myairlineontology.com#entity_name>",
+   "range": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#xsd:int>"
+ },
+ "has_departure_arrival_time_convenience": {
+   "type": "owl:ObjectProperty",
+   "domain": "<https://myairlineontology.com#entity_name>",
+   "range": "<https://myairlineontology.com#Departure_arrival_time_convenience>"
+ },
+ "has_ease_of_online_booking": {
+   "type": "owl:ObjectProperty",
+   "domain": "<https://myairlineontology.com#entity_name>",
+   "range": "<https://myairlineontology.com#Ease_of_online_booking>"
+ },
+ "has_flight_distance": {
+   "type": "owl:ObjectProperty",
+   "domain": "<https://myairlineontology.com#entity_name>",
+   "range": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#xsd:int>"
+ },
+ "has_food_and_drink": {
+   "type": "owl:ObjectProperty",
+   "domain": "<https://myairlineontology.com#entity_name>",
+   "range": "<https://myairlineontology.com#Food_and_drink>"
+ },
+ "has_gate_location": {
+   "type": "owl:ObjectProperty",
+   "domain": "<https://myairlineontology.com#entity_name>",
+   "range": "<https://myairlineontology.com#Gate_location>"
+ },
+ "has_inflight_entertainment": {
+   "type": "owl:ObjectProperty",
+   "domain": "<https://myairlineontology.com#entity_name>",
+   "range": "<https://myairlineontology.com#Inflight_entertainment>"
+ },
+ "has_inflight_wifi_service": {
+   "type": "owl:ObjectProperty",
+   "domain": "<https://myairlineontology.com#entity_name>",
+   "range": "<https://myairlineontology.com#Inflight_wifi_service>"
+ },
+ "has_leg_room_service": {
+   "type": "owl:ObjectProperty",
+   "domain": "<https://myairlineontology.com#entity_name>",
+   "range": "<https://myairlineontology.com#Leg_room_service>"
+ },
+ "has_on_board_service": {
+   "type": "owl:ObjectProperty",
+   "domain": "<https://myairlineontology.com#entity_name>",
+   "range": "<https://myairlineontology.com#On_board_service>"
+ },
+ "has_online_boarding": {
+   "type": "owl:ObjectProperty",
+   "domain": "<https://myairlineontology.com#entity_name>",
+   "range": "<https://myairlineontology.com#Online_boarding>"
+ },
+ "has_online_support": {
+   "type": "owl:ObjectProperty",
+   "domain": "<https://myairlineontology.com#entity_name>",
+   "range": "<https://myairlineontology.com#Online_support>"
+ },
+ "has_seat_comfort": {
+   "type": "owl:ObjectProperty",
+   "domain": "<https://myairlineontology.com#entity_name>",
+   "range": "<https://myairlineontology.com#Seat_comfort>"
+ },
+ "has_class": {
+   "type": "owl:ObjectProperty",
+   "domain": "<https://myairlineontology.com#entity_name>",
+   "range": "<https://myairlineontology.com#Class>"
+ },
+ "has_customer_type": {
+   "type": "owl:ObjectProperty",
+   "domain": "<https://myairlineontology.com#entity_name>",
+   "range": "<https://myairlineontology.com#Customer_Type>"
+ },
+ "has_gender": {
+   "type": "owl:ObjectProperty",
+   "domain": "<https://myairlineontology.com#entity_name>",
+   "range": "<https://myairlineontology.com#Gender>"
+ },
+ "has_type_of_travel": {
+   "type": "owl:ObjectProperty",
+   "domain": "<https://myairlineontology.com#entity_name>",
+   "range": "<https://myairlineontology.com#Type_of_Travel>"
+ },
+ "has_satisfaction": {
+   "type": "owl:ObjectProperty",
+   "domain": "<https://myairlineontology.com#entity_name>",
+   "range": "<https://myairlineontology.com#satisfaction>"
+ }
+}
+
+**Data Type Properties:**
+
+{
+ "has_arrival_delay": {
+   "type": "owl:ObjectProperty",
+   "domain": "<https://myairlineontology.com#entity_name>",
+   "range": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#xsd:int>"
+ },
+ "has_departure_delay": {
+   "type": "owl:ObjectProperty",
+   "domain": "<https://myairlineontology.com#entity_name>",
+   "range": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#xsd:int>"
+ }
+}
+
+{
+ "Baggage_handling": {
+   "type": "owl:Class",
+   "meaning": "The quality of baggage handling service",
+   "domain": "<https://myairlineontology.com#entity_name>"
+ },
+ "Checkin_service": {
+   "type": "owl:Class",
+   "meaning": "The quality of checkin service",
+   "domain": "<https://myairlineontology.com#entity_name>"
+ },
+ "Cleanliness": {
+   "type": "owl:Class",
+   "meaning": "The cleanliness of the aircraft or airport",
+   "domain": "<https://myairlineontology.com#entity_name>"
+ },
+ "Departure_arrival_time_convenience": {
+   "type": "owl:Class",
+   "meaning": "Whether the departure or arrival time is convenient for the passenger",
+   "domain": "<https://myairlineontology.com#entity_name>"
+ },
+ "Ease_of_online_booking": {
+   "type": "owl:Class",
+   "meaning": "The ease of booking a flight online",
+   "domain": "<https://myairlineontology.com#entity_name>"
+ },
+ "Food_and_drink": {
+   "type": "owl:Class",
+   "meaning": "The quality of food and drink service",
+   "domain": "<https://myairlineontology.com#entity_name>"
+ },
+ "Gate_location": {
+   "type": "owl:Class",
+   "meaning": "The location of the gate",
+   "domain": "<https://myairlineontology.com#entity_name>"
+ },
+ "Inflight_entertainment": {
+   "type": "owl:Class",
+   "meaning": "The quality of inflight entertainment",
+   "domain": "<https://myairlineontology.com#entity_name>"
+ },
+ "Inflight_wifi_service": {
+   "type": "owl:Class",
+   "meaning": "The quality of inflight wifi service",
+   "domain": "<https://myairlineontology.com#entity_name>"
+ },
+ "Leg_room_service": {
+   "type": "owl:Class",
+   "meaning": "The quality of leg room service",
+   "domain": "<https://myairlineontology.com#entity_name>"
+ },
+ "On_board_service": {
+   "type": "owl:Class",
+   "meaning": "The quality of on-board service",
+   "domain": "<https://myairlineontology.com#entity_name>"
+ },
+ "Online_boarding": {
+   "type": "owl:Class",
+   "meaning": "The availability of online boarding",
+   "domain": "<https://myairlineontology.com#entity_name>"
+ },
+ "Online_support": {
+   "type": "owl:Class",
+   "meaning": "The quality of online support",
+   "domain": "<https://myairlineontology.com#entity_name>"
+ },
+ "Seat_comfort": {
+   "type": "owl:Class",
+   "meaning": "The comfort of the aircraft seat",
+   "domain": "<https://myairlineontology.com#entity_name>"
+ },
+ "Class": {
+   "type": "owl:Class",
+   "meaning": "The class of the flight",
+   "domain": "<https://myairlineontology.com#entity_name>"
+ },
+ "Customer_Type": {
+   "type": "owl:Class",
+   "meaning": "The type of customer",
+   "domain": "<https://myairlineontology.com#entity_name>"
+ },
+ "Gender": {
+   "type": "owl:Class",
+   "meaning": "The gender of the passenger",
+   "domain": "<https://myairlineontology.com#entity_name>"
+ },
+ "Type_of_Travel": {
+   "type": "owl:Class",
+   "meaning": "The type of travel (business or leisure)",
+   "domain": "<https://myairlineontology.com#entity_name>"
+ },
+ "satisfaction": {
+   "type": "owl:Class",
+   "meaning": "The level of passenger satisfaction",
+   "domain": "<https://myairlineontology.com#entity_name>"
+ }
+}

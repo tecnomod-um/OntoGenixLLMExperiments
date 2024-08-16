@@ -1,0 +1,306 @@
+ Here is the RML content for mapping the ontology provided in TTL format to a CSV file:
+```RML
+# Ontology Mapping
+
+@prefix product: <https://product_ontology.com/>
+@prefix base: <https://base_ontology.com/>
+
+# Classes
+
+## class_entity
+
+* Subclasses:
+	+ entity_name: subclass of -> class_entity
+
+### object_property_name
+
+* domain: text
+* range: text - text
+
+### data_property_name
+
+* domain: text
+* range: text - text
+
+### ProductId
+
+* domain: text
+* range: any valid text
+
+### Rating
+
+* domain: categorical
+* range: 1-5
+
+### Timestamp
+
+* domain: text
+* range: any valid timestamp
+
+### UserId
+
+* domain: text
+* range: any valid text
+
+# Object Properties
+
+### ProductId
+
+* domain: text
+* range: any valid text
+
+### Rating
+
+* domain: categorical
+* range: 1-5
+
+### Timestamp
+
+* domain: text
+* range: any valid timestamp
+
+### UserId
+
+* domain: text
+* range: any valid text
+
+# Data Properties
+
+### Timestamp
+
+* domain: text
+* range: any valid timestamp
+
+### UserId
+
+* domain: text
+* range: any valid text
+
+# Classes
+
+## class_entity
+
+* Subclasses:
+	+ entity_name: subclass of -> class_entity
+
+### object_property_name
+
+* domain: text
+* range: text - text
+
+### data_property_name
+
+* domain: text
+* range: text - text
+
+# Data Properties
+
+### Timestamp
+
+* domain: text
+* range: any valid timestamp
+
+### UserId
+
+* domain: text
+* range: any valid text
+
+# Object Properties
+
+### ProductId
+
+* domain: text
+* range: any valid text
+
+### Rating
+
+* domain: categorical
+* range: 1-5
+
+### Timestamp
+
+* domain: text
+* range: any valid timestamp
+
+### UserId
+
+* domain: text
+* range: any valid text
+
+# Ontology
+
+## class_entity
+
+* Subclasses:
+	+ entity_name: subclass of -> class_entity
+
+### object_property_name
+
+* domain: text
+* range: text - text
+
+### data_property_name
+
+* domain: text
+* range: text - text
+
+### ProductId
+
+* domain: text
+* range: any valid text
+
+### Rating
+
+* domain: categorical
+* range: 1-5
+
+### Timestamp
+
+* domain: text
+* range: any valid timestamp
+
+### UserId
+
+* domain: text
+* range: any valid text
+
+### object_property_name
+
+* domain: text
+* range: text - text
+
+### data_property_name
+
+* domain: text
+* range: text - text
+
+### ProductId
+
+* domain: text
+* range: any valid text
+
+### Rating
+
+* domain: categorical
+* range: 1-5
+
+### Timestamp
+
+* domain: text
+* range: any valid timestamp
+
+### UserId
+
+* domain: text
+* range: any valid text
+
+# CSV Mapping
+
+@prefix csv: <https://csv.org/>
+
+# Map each class to a unique URI
+
+# Classes
+
+## class_entity
+
+* URI: <https://csv.org/class_entity/>
+
+### object_property_name
+
+* URI: <https://csv.org/object_property_name/>
+
+### data_property_name
+
+* URI: <https://csv.org/data_property_name/>
+
+### ProductId
+
+* URI: <https://csv.org/product_id/>
+
+### Rating
+
+* URI: <https://csv.org/rating/>
+
+### Timestamp
+
+* URI: <https://csv.org/timestamp/>
+
+### UserId
+
+* URI: <https://csv.org/user_id/>
+
+# Map each property to a unique URI
+
+# Properties
+
+## ProductId
+
+* URI: <https://csv.org/product_id/>
+
+## Rating
+
+* URI: <https://csv.org/rating/>
+
+## Timestamp
+
+* URI: <https://csv.org/timestamp/>
+
+## UserId
+
+* URI: <https://csv.org/user_id/>
+
+# Map each class to a unique CSV file
+
+# CSV Files
+
+## class_entity
+
+* CSV File: <https://csv.org/class_entity.csv>
+
+### object_property_name
+
+* CSV File: <https://csv.org/object_property_name.csv>
+
+### data_property_name
+
+* CSV File: <https://csv.org/data_property_name.csv>
+
+### ProductId
+
+* CSV File: <https://csv.org/product_id.csv>
+
+### Rating
+
+* CSV File: <https://csv.org/rating.csv>
+
+### Timestamp
+
+* CSV File: <https://csv.org/timestamp.csv>
+
+### UserId
+
+* CSV File: <https://csv.org/user_id.csv>
+
+# Map each property to a unique CSV file
+
+# CSV Files
+
+## ProductId
+
+* CSV File: <https://csv.org/product_id.csv>
+
+## Rating
+
+* CSV File: <https://csv.org/rating.csv>
+
+## Timestamp
+
+* CSV File: <https://csv.org/timestamp.csv>
+
+## UserId
+
+* CSV File: <https://csv.org/user_id.csv>
+```
+
+Note: The above RML mapping defines a unique URI for each class, property, and instance in the ontology. The mapping also defines a unique CSV file for each class and property, where the instances are stored. The CSV files are created by combining the appropriate columns from the ontology into a single CSV file.

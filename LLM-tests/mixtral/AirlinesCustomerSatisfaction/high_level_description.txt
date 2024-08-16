@@ -1,0 +1,63 @@
+**Foundational Prefix:**
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX base: <https://base_ontology.com#>
+
+**Data Description:**
+1. Age: numerical - The age of the customer - range: 7 to 85
+2. Arrival Delay in Minutes: numerical - The delay time in minutes upon arrival - range: 0 to 1584
+3. Baggage handling: categorical - The rating of baggage handling service - range: 1 to 5
+4. Checkin service: categorical - The rating of checkin service - range: 0 to 5
+5. Cleanliness: categorical - The rating of cleanliness - range: 0 to 5
+6. Departure Delay in Minutes: numerical - The delay time in minutes upon departure - range: 0 to 1592
+7. Departure/Arrival time convenient: categorical - The rating of departure/arrival time convenience - range: 0 to 5
+8. Ease of Online booking: categorical - The rating of online booking ease - range: 0 to 5
+9. Flight Distance: numerical - The distance of the flight - range: 50 to 6951
+10. Food and drink: categorical - The rating of food and drink service - range: 0 to 5
+11. Gate location: categorical - The rating of gate location - range: 0 to 5
+12. Inflight entertainment: categorical - The rating of inflight entertainment - range: 0 to 5
+13. Inflight wifi service: categorical - The rating of inflight wifi service - range: 0 to 5
+14. Leg room service: categorical - The rating of leg room service - range: 0 to 5
+15. On-board service: categorical - The rating of on-board service - range: 0 to 5
+16. Online boarding: categorical - The rating of online boarding - range: 0 to 5
+17. Online support: categorical - The rating of online support - range: 0 to 5
+18. Seat comfort: categorical - The rating of seat comfort - range: 0 to 5
+19. Class: categorical - The class of the flight ticket - range: 3 options
+20. Customer Type: categorical - The type of the customer - range: 2 options
+21. Gender: categorical - The gender of the customer - range: 2 options
+22. Type of Travel: categorical - The type of travel - range: 2 options
+23. satisfaction: categorical - The overall satisfaction of the customer - range: 2 options
+
+**Classes:**
+1. Class: base:FlightClass
+
+**Subclasses:**
+1. Class: subclass of base:FlightClass
+
+**Object Properties:**
+1. No object properties are defined in the given data.
+
+**Data Type Properties:**
+1. hasAge: base:Age - range: base:Customer
+2. hasArrivalDelay: base:ArrivalDelay - range: base:Flight
+3. hasBaggageHandlingRating: base:BaggageHandlingRating - range: base:Flight
+4. hasCheckinServiceRating: base:CheckinServiceRating - range: base:Flight
+5. hasCleanlinessRating: base:CleanlinessRating - range: base:Flight
+6. hasDepartureDelay: base:DepartureDelay - range: base:Flight
+7. hasDepartureArrivalTimeConvenienceRating: base:DepartureArrivalTimeConvenienceRating - range: base:Flight
+8. hasEaseOfOnlineBookingRating: base:EaseOfOnlineBookingRating - range: base:Flight
+9. hasFlightDistance: base:FlightDistance - range: base:Flight
+10. hasFoodAndDrinkRating: base:FoodAndDrinkRating - range: base:Flight
+11. hasGateLocationRating: base:GateLocationRating - range: base:Flight
+12. hasInflightEntertainmentRating: base:InflightEntertainmentRating - range: base:Flight
+13. hasInflightWifiServiceRating: base:InflightWifiServiceRating - range: base:Flight
+14. hasLegRoomServiceRating: base:LegRoomServiceRating - range: base:Flight
+15. hasOnBoardServiceRating: base:OnBoardServiceRating - range: base:Flight
+16. hasOnlineBoardingRating: base:OnlineBoardingRating - range: base:Flight
+17. hasOnlineSupportRating: base:OnlineSupportRating - range: base:Flight
+18. hasSeatComfortRating: base:SeatComfortRating - range: base:Flight
+19. hasCustomerType: base:CustomerType - range: base:Customer
+20. hasGender: base:Gender - range: base:Customer
+21. hasTravelType: base:TravelType - range: base:Customer
+22. hasSatisfaction: base:Satisfaction - range: base:Customer

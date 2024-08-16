@@ -1,0 +1,52 @@
+<prefix rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<prefix rdfs="http://www.w3.org/2000/01/rdf-schema#">
+<prefix owl="http://www.w3.org/2002/07/owl#">
+<prefix base_ontology="https://base_ontology.com#">
+<prefix xsd="http://www.w3.org/2001/XMLSchema#">
+<prefix rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+Class(base_ontology:Product)
+Class(base_ontology:ProductType)
+Class(base_ontology:ProductImage)
+
+SubClassOf(base_ontology:ProductType base_ontology:Product)
+SubClassOf(base_ontology:ProductImage base_ontology:Product)
+
+ObjectProperty(base_ontology:hasType)
+ObjectProperty(base_ontology:hasImage)
+
+SubPropertyOf(base_ontology:hasType <http://www.w3.org/2002/07/owl#topObjectProperty>)
+SubPropertyOf(base_ontology:hasImage <http://www.w3.org/2002/07/owl#topObjectProperty>)
+
+Functional(base_ontology:hasType)
+Functional(base_ontology:hasImage)
+
+ObjectPropertyRange(base_ontology:hasType base_ontology:ProductType)
+ObjectPropertyRange(base_ontology:hasImage base_ontology:ProductImage)
+
+ObjectPropertyDomain(base_ontology:hasType base_ontology:Product)
+ObjectPropertyDomain(base_ontology:hasImage base_ontology:Product)
+
+DatatypeProperty(base_ontology:hasUrl)
+DatatypeProperty(base_ontology:hasName)
+DatatypeProperty(base_ontology:hasCategory)
+DatatypeProperty(base_ontology:hasSubCategory)
+DatatypeProperty(base_ontology:hasQuantity)
+DatatypeProperty(base_ontology:hasDiscountPrice)
+DatatypeProperty(base_ontology:hasPrice)
+
+DatatypePropertyRange(base_ontology:hasUrl xsd:string)
+DatatypePropertyRange(base_ontology:hasName xsd:string)
+DatatypePropertyRange(base_ontology:hasCategory xsd:string)
+DatatypePropertyRange(base_ontology:hasSubCategory xsd:string)
+DatatypePropertyRange(base_ontology:hasQuantity xsd:string)
+DatatypePropertyRange(base_ontology:hasDiscountPrice xsd:decimal)
+DatatypePropertyRange(base_ontology:hasPrice xsd:decimal)
+
+DatatypePropertyDomain(base_ontology:hasUrl base_ontology:Product)
+DatatypePropertyDomain(base_ontology:hasName base_ontology:Product)
+DatatypePropertyDomain(base_ontology:hasCategory base_ontology:Product)
+DatatypePropertyDomain(base_ontology:hasSubCategory base_ontology:Product)
+DatatypePropertyDomain(base_ontology:hasQuantity base_ontology:Product)
+DatatypePropertyDomain(base_ontology:hasDiscountPrice base_ontology:Product)
+DatatypePropertyDomain(base_ontology:hasPrice base_ontology:Product)

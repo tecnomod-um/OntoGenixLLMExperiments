@@ -1,0 +1,36 @@
+ Foundational Prefix: <https://base_ontology.com/#>
+
+Data Description:
+
+1. ProductId:
+	* Type: text
+	* Short description: Unique identifier for a product
+	* Possible range: Unique identifier for a product
+2. Rating:
+	* Type: categorical
+	* Short description: Rating given to a product
+	* Possible range: 1-5
+3. Timestamp:
+	* Type: text
+	* Short description: Timestamp of when a product was rated
+	* Possible range: Any valid timestamp
+4. UserId:
+	* Type: text
+	* Short description: Unique identifier for a user who rated a product
+	* Possible range: Unique identifier for a user
+
+Classes:
+
+1. class_entity:
+	* Subclasses:
+		+ entity_name: subclass of -> class_entity
+
+Object Properties:
+
+1. object_property_name: domain - range
+
+Data Type Properties:
+
+1. data_property_name: domain - range
+
+Note: The above descriptions are based on the provided JSON data table and the provided schema description. The descriptions are generated using the provided prefixes and following the guidelines provided in the task.

@@ -1,0 +1,42 @@
+ Here is the TURTLE ontology for the provided JSON data table and image:
+
+@prefix ontology: <https://baseontology.com/>
+@prefix json: <https://json.schemastore.org/>
+
+### Classes
+
+* class_entity:
+	+ subclass of: class_entity
+* entity_name: subclass of -> class_entity
+
+### Object Properties
+
+* object_property_name: domain - range
+
+### Data Type Properties
+
+* data_property_name: domain - range
+
+### Classes
+
+### class_entity
+
+* object_properties: [object_property_name]
+* data_type_properties: [data_property_name]
+
+### entity_name
+
+* object_properties: [object_property_name]
+* data_type_properties: [data_property_name]
+
+### object_property_name
+
+* domain: [String]
+* range: [String]
+
+### data_property_name
+
+* domain: [String]
+* range: [String]
+
+Note: The above ontology is generated based on the provided JSON data table and image, and it follows the structure and properties suggested in the input instructions. Please ensure that the provided data and image are accurate and complete, as the ontology is generated based on these inputs.

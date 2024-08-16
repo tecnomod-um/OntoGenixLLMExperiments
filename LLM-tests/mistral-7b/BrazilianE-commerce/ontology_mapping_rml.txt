@@ -1,0 +1,101 @@
+<#TriplesMapClass_entity> a rr:TriplesMap;
+:rml:logicalSource [
+:rml:source "<csv_file>.csv";
+:rml:referenceFormulation ql:CSV
+];
+:rr:subjectMap [
+:rr:template "https://myontology.com/class_entity/{{customer_unique_id}}{{FAIR_URI}}"
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com/customer_city_lives_in>;
+:rr:objectMap [
+:rr:template "https://myontology.com/customer_city/{{customer_city}}"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com/customer_id_has>;
+:rr:objectMap [
+:rr:template "{{customer_id}}"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com/customer_state_resides_in>;
+:rr:objectMap [
+:rr:template "https://myontology.com/customer_state/{{customer_state}}"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com/customer_city_name>;
+:rr:objectMap [
+:rr:template "{{customer_city}}"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com/customer_id_value>;
+:rr:objectMap [
+:rr:template "{{customer_id}}"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com/customer_state_name>;
+:rr:objectMap [
+:rr:template "{{customer_state}}"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com/customer_zip_code_prefix_value>;
+:rr:objectMap [
+:rr:template "{{customer_zip_code_prefix_value}}"
+]
+]
+
+<#TriplesMapEntity_name> a rr:TriplesMap;
+:rml:logicalSource [
+:rml:source "<csv_file>.csv";
+:rml:referenceFormulation ql:CSV
+];
+:rr:subjectMap [
+:rr:template "https://myontology.com/entity_name/{{entity_name}}{{FAIR_URI}}"
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com/customer_city_lives_in>;
+:rr:objectMap [
+:rr:template "https://myontology.com/customer_city/{{customer_city}}"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com/customer_id_has>;
+:rr:objectMap [
+:rr:template "{{customer_id}}"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com/customer_state_resides_in>;
+:rr:objectMap [
+:rr:template "https://myontology.com/customer_state/{{customer_state}}"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com/customer_city_name>;
+:rr:objectMap [
+:rr:template "{{customer_city}}"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com/customer_id_value>;
+:rr:objectMap [
+:rr:template "{{customer_id}}"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com/customer_state_name>;
+:rr:objectMap [
+:rr:template "{{customer_state}}"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com/customer_zip_code_prefix_value>;
+:rr:objectMap [
+:rr:template "{{customer_zip_code_prefix_value}}"
+]
+]

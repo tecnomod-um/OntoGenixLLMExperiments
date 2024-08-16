@@ -1,0 +1,28 @@
+**Foundational Prefix:**
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#>, <http://www.w3.org/2000/01/rdf-schema#>, <http://www.w3.org/2002/07/owl#>, <https://base_ontology.com#>
+
+**Data Description:**
+
+1. ProductId: type - text - Unique identifier for a product.
+2. Rating: type - categorical - Represents the rating given to a product, with possible values ranging from 1 to 5.
+3. Timestamp: type - text - Contains a timestamp representing when the rating was given.
+4. UserId: type - text - Unique identifier for a user who gave the rating.
+
+**Classes:**
+
+1. Product: subclass of <https://base_ontology.com#Entity>
+2. User: subclass of <https://base_ontology.com#Entity>
+
+**Object Properties:**
+
+1. RatedProduct: domain - Product, range - Rating
+2. RatedByUser: domain - Rating, range - User
+
+**Data Type Properties:**
+
+1. HasProductId: domain - Product, range - text
+2. HasRating: domain - Rating, range - float
+3. HasTimestamp: domain - Rating, range - text
+4. HasUserId: domain - User, range - text
+
+Note: The above description assumes that each JSON object in the input data represents a single rating given by a user to a product. The 'Rating' class has a categorical type, which means it is a subclass of 'https://base_ontology.com#Entity' with a limited set of possible values (1-5). The 'Product' and 'User' classes are also subclasses of 'https://base_ontology.com#Entity'. The 'RatedProduct' and 'RatedByUser' object properties represent the relationships between the 'Rating', 'Product', and 'User' classes. The 'HasProductId', 'HasRating', 'HasTimestamp', and 'HasUserId' data type properties describe the properties of the 'Product' and 'User' classes.

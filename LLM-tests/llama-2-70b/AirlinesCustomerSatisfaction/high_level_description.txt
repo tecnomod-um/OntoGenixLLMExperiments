@@ -1,0 +1,67 @@
+ Foundational Prefix:
+https://base_ontology.com#
+http://www.w3.org/1999/02/22-rdf-syntax-ns#
+http://www.w3.org/2000/01/rdf-schema#
+http://www.w3.org/2002/07/owl#
+
+Data Description:
+
+1. Age: type - numerical, short description - Age of the passenger
+2. Arrival Delay in Minutes: type - numerical, short description - Delay in arrival time in minutes
+3. Baggage handling: type - categorical, short description - Baggage handling service selected by the passenger
+4. Checkin service: type - categorical, short description - Check-in service selected by the passenger
+5. Cleanliness: type - categorical, short description - Cleanliness of the aircraft
+6. Departure Delay in Minutes: type - numerical, short description - Delay in departure time in minutes
+7. Departure/Arrival time convenient: type - categorical, short description - Convenience of departure and arrival time
+8. Ease of Online booking: type - categorical, short description - Ease of booking a flight online
+9. Flight Distance: type - numerical, short description - Distance of the flight
+10. Food and drink: type - categorical, short description - Food and drink options available on the flight
+11. Gate location: type - categorical, short description - Gate location of the flight
+12. Inflight entertainment: type - categorical, short description - In-flight entertainment options available
+13. Inflight wifi service: type - categorical, short description - In-flight Wi-Fi service available
+14. Leg room service: type - categorical, short description - Leg room service available on the flight
+15. On-board service: type - categorical, short description - On-board service available on the flight
+16. Online boarding: type - categorical, short description - Online boarding service available
+17. Online support: type - categorical, short description - Online support available for passengers
+18. Seat comfort: type - categorical, short description - Comfort of the seats on the flight
+
+Classes:
+
+1. Flight
+
+Subclasses:
+
+1. Flight - subclass of -> Flight
+
+Object Properties:
+
+1. Flight - departsAt - Departure time
+2. Flight - arrivesAt - Arrival time
+3. Flight - distance - Flight distance
+4. Flight - duration - Flight duration
+5. Flight - gateLocation - Gate location
+6. Flight - inflightEntertainment - In-flight entertainment options
+7. Flight - inflightWifi - In-flight Wi-Fi service
+8. Flight - legRoomService - Leg room service available
+9. Flight - onboardService - On-board service available
+10. Flight - onlineBoarding - Online boarding service available
+11. Flight - onlineSupport - Online support available for passengers
+12. Flight - seatComfort - Seat comfort
+
+Data Type Properties:
+
+1. Flight - departureAirport - Airport
+2. Flight - arrivalAirport - Airport
+3. Flight - departureTime - Time
+4. Flight - arrivalTime - Time
+5. Flight - flightDuration - Duration
+6. Flight - gateLocation - Gate
+7. Flight - inflightEntertainment - Entertainment
+8. Flight - inflightWifi - Wi-Fi
+9. Flight - legRoomService - Leg room service
+10. Flight - onboardService - On-board service
+11. Flight - onlineBoarding - Online boarding
+12. Flight - onlineSupport - Online support
+13. Flight - seatComfort - Seat comfort
+
+Note: The ontology is defined using the OWL syntax and uses the prefixes specified in the task. The classes, subclasses, object properties, and data type properties are defined according to the information provided in the JSON data table.

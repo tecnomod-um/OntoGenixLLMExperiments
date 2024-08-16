@@ -1,0 +1,147 @@
+<PREFIXES>
+Prefix: base = <https://base_ontology.com#>
+Prefix: rdf = <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rr = <http://www.w3.org/ns/r2rml#>
+Prefix: rml = <http://www.w3.org/ns/rml#>
+Prefix: xsd = <http://www.w3.org/2001/XMLSchema#>
+</PREFIXES>
+
+<TRIPLES\_MAP\_INVOICE>
+a rr:TriplesMap ;
+rml:logicalSource [
+rml:source "{csv_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "{{FAIR\_URI}}" ;
+rr:class [ rr:reference <https://base_ontology.com#Invoice> ]
+];
+.
+
+<TRIPLES\_MAP\_COUNTRY>
+a rr:TriplesMap ;
+rml:logicalSource [
+rml:source "{csv_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "EntityURI/Country/{{Country}}{{FAIR\_URI}}" ;
+rr:class [ rr:reference <https://base_ontology.com#Country> ]
+];
+rr:predicateObjectMap [
+rr:predicate <https://base_ontology.com#hasCountry> ;
+rr:objectMap [ rr:column "Country" ]
+];
+.
+
+<TRIPLES\_MAP\_DESCRIPTION>
+a rr:TriplesMap ;
+rml:logicalSource [
+rml:source "{csv_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "EntityURI/Description/{{Description}}{{FAIR\_URI}}" ;
+rr:class [ rr:reference <https://base_ontology.com#Description> ]
+];
+rr:predicateObjectMap [
+rr:predicate <https://base_ontology.com#hasDescription> ;
+rr:objectMap [ rr:column "Description" ]
+];
+.
+
+<TRIPLES\_MAP\_INVOICE\_DATE>
+a rr:TriplesMap ;
+rml:logicalSource [
+rml:source "{csv_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "EntityURI/InvoiceDate/{{InvoiceDate}}{{FAIR\_URI}}" ;
+rr:class [ rr:reference <https://base_ontology.com#InvoiceDate> ]
+];
+rr:predicateObjectMap [
+rr:predicate <https://base_ontology.com#hasInvoiceDate> ;
+rr:objectMap [ rr:column "InvoiceDate" ]
+];
+.
+
+<TRIPLES\_MAP\_INVOICE\_NO>
+a rr:TriplesMap ;
+rml:logicalSource [
+rml:source "{csv_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "EntityURI/InvoiceNo/{{InvoiceNo}}{{FAIR\_URI}}" ;
+rr:class [ rr:reference <https://base_ontology.com#InvoiceNo> ]
+];
+rr:predicateObjectMap [
+rr:predicate <https://base_ontology.com#hasInvoiceNo> ;
+rr:objectMap [ rr:column "InvoiceNo" ]
+];
+.
+
+<TRIPLES\_MAP\_STOCK\_CODE>
+a rr:TriplesMap ;
+rml:logicalSource [
+rml:source "{csv_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "EntityURI/StockCode/{{StockCode}}{{FAIR\_URI}}" ;
+rr:class [ rr:reference <https://base_ontology.com#StockCode> ]
+];
+rr:predicateObjectMap [
+rr:predicate <https://base_ontology.com#hasStockCode> ;
+rr:objectMap [ rr:column "StockCode" ]
+];
+.
+
+<TRIPLES\_MAP\_CUSTOMER\_ID>
+a rr:TriplesMap ;
+rml:logicalSource [
+rml:source "{csv_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "EntityURI/CustomerID/{{CustomerID}}{{FAIR\_URI}}" ;
+rr:class [ rr:reference <https://base_ontology.com#CustomerID> ]
+];
+rr:predicateObjectMap [
+rr:predicate <https://base_ontology.com#hasCustomerID> ;
+rr:objectMap [ rr:column "CustomerID" ]
+];
+.
+
+<TRIPLES\_MAP\_QUANTITY>
+a rr:TriplesMap ;
+rml:logicalSource [
+rml:source "{csv_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "EntityURI/Quantity/{{Quantity}}{{FAIR\_URI}}" ;
+rr:class [ rr:reference <https://base_ontology.com#Quantity> ]
+];
+rr:predicateObjectMap [
+rr:predicate <https://base_ontology.com#hasQuantity> ;
+rr:objectMap [ rr:column "Quantity" ]
+];
+.
+
+<TRIPLES\_MAP\_UNIT\_PRICE>
+a rr:TriplesMap ;
+rml:logicalSource [
+rml:source "{csv_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "EntityURI/UnitPrice/{{UnitPrice}}{{FAIR\_URI}}" ;
+rr:class [ rr:reference <https://base_ontology.com#UnitPrice> ]
+];
+rr:predicateObjectMap [
+rr:predicate <https://base_ontology.com#hasUnitPrice> ;
+rr:objectMap [ rr:column "UnitPrice" ]
+];
+.

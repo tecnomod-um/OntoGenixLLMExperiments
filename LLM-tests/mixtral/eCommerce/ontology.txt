@@ -1,0 +1,188 @@
+Prefix: base = <https://base_ontology.com#>
+Prefix: rdf = <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs = <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: owl = <http://www.w3.org/2002/07/owl#>
+Prefix: xsd = <http://www.w3.org/2001/XMLSchema#>
+
+[] a owl:Ontology.
+
+Class: base:Invoice 
+Class: base:Country 
+Class: base:Description 
+Class: base:InvoiceDate 
+Class: base:InvoiceNo 
+Class: base:StockCode 
+Class: base:CustomerID 
+Class: base:Quantity 
+Class: base:UnitPrice 
+
+base:Invoice 
+SubClassOf rdfs:Class.
+
+base:Country 
+SubClassOf rdfs:Class.
+
+base:Description 
+SubClassOf rdfs:Class.
+
+base:InvoiceDate 
+SubClassOf rdfs:Class.
+
+base:InvoiceNo 
+SubClassOf rdfs:Class.
+
+base:StockCode 
+SubClassOf rdfs:Class.
+
+base:CustomerID 
+SubClassOf rdfs:Class.
+
+base:Quantity 
+SubClassOf rdfs:Class.
+
+base:UnitPrice 
+SubClassOf rdfs:Class.
+
+base:hasCountry 
+SubPropertyOf rdf:Property.
+base:hasCountry 
+SubPropertyOf owl:FunctionalProperty.
+base:hasCountry 
+Domain base:Invoice.
+base:hasCountry 
+Range base:Country.
+
+base:hasDescription 
+SubPropertyOf rdf:Property.
+base:hasDescription 
+SubPropertyOf owl:FunctionalProperty.
+base:hasDescription 
+Domain base:Invoice.
+base:hasDescription 
+Range base:Description.
+
+base:hasInvoiceDate 
+SubPropertyOf rdf:Property.
+base:hasInvoiceDate 
+SubPropertyOf owl:FunctionalProperty.
+base:hasInvoiceDate 
+Domain base:Invoice.
+base:hasInvoiceDate 
+Range base:InvoiceDate.
+
+base:hasInvoiceNo 
+SubPropertyOf rdf:Property.
+base:hasInvoiceNo 
+SubPropertyOf owl:FunctionalProperty.
+base:hasInvoiceNo 
+Domain base:Invoice.
+base:hasInvoiceNo 
+Range base:InvoiceNo.
+
+base:hasStockCode 
+SubPropertyOf rdf:Property.
+base:hasStockCode 
+SubPropertyOf owl:FunctionalProperty.
+base:hasStockCode 
+Domain base:Invoice.
+base:hasStockCode 
+Range base:StockCode.
+
+base:hasCustomerID 
+SubPropertyOf rdf:Property.
+base:hasCustomerID 
+SubPropertyOf owl:FunctionalProperty.
+base:hasCustomerID 
+Domain base:Invoice.
+base:hasCustomerID 
+Range base:CustomerID.
+
+base:hasQuantity 
+SubPropertyOf rdf:Property.
+base:hasQuantity 
+SubPropertyOf owl:FunctionalProperty.
+base:hasQuantity 
+Domain base:Invoice.
+base:hasQuantity 
+Range base:Quantity.
+
+base:hasUnitPrice 
+SubPropertyOf rdf:Property.
+base:hasUnitPrice 
+SubPropertyOf owl:FunctionalProperty.
+base:hasUnitPrice 
+Domain base:Invoice.
+base:hasUnitPrice 
+Range base:UnitPrice.
+
+base:Country 
+SubPropertyOf rdf:Property.
+base:Country 
+SubPropertyOf owl:FunctionalProperty.
+base:Country 
+Domain base:Invoice.
+base:Country 
+Range rdfs:Literal.
+
+base:Description 
+SubPropertyOf rdf:Property.
+base:Description 
+SubPropertyOf owl:FunctionalProperty.
+base:Description 
+Domain base:Invoice.
+base:Description 
+Range rdfs:Literal.
+
+base:InvoiceDate 
+SubPropertyOf rdf:Property.
+base:InvoiceDate 
+SubPropertyOf owl:FunctionalProperty.
+base:InvoiceDate 
+Domain base:Invoice.
+base:InvoiceDate 
+Range rdfs:Literal.
+
+base:InvoiceNo 
+SubPropertyOf rdf:Property.
+base:InvoiceNo 
+SubPropertyOf owl:FunctionalProperty.
+base:InvoiceNo 
+Domain base:Invoice.
+base:InvoiceNo 
+Range rdfs:Literal.
+
+base:StockCode 
+SubPropertyOf rdf:Property.
+base:StockCode 
+SubPropertyOf owl:FunctionalProperty.
+base:StockCode 
+Domain base:Invoice.
+base:StockCode 
+Range rdfs:Literal.
+
+base:CustomerID 
+SubPropertyOf rdf:Property.
+base:CustomerID 
+SubPropertyOf owl:FunctionalProperty.
+base:CustomerID 
+Domain base:Invoice.
+base:CustomerID 
+Range xsd:integer.
+
+base:Quantity 
+SubPropertyOf rdf:Property.
+base:Quantity 
+SubPropertyOf owl:FunctionalProperty.
+base:Quantity 
+Domain base:Invoice.
+base:Quantity 
+Range xsd:integer.
+
+base:UnitPrice 
+SubPropertyOf rdf:Property.
+base:UnitPrice 
+SubPropertyOf owl:FunctionalProperty.
+base:UnitPrice 
+Domain base:Invoice.
+base:UnitPrice 
+Range xsd:integer.

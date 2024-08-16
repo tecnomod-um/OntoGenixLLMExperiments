@@ -1,0 +1,58 @@
+@prefix base: <https://base_ontology.com#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+<owl:Ontology rdf:about="">
+
+  <owl:Class rdf:ID="class_entity"/>
+
+  <owl:Class rdf:ID="entity_name">
+    <rdfs:subClassOf rdf:resource="#class_entity"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="has_city">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="customer_city"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="has_id">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="customer_id"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="has_state">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="customer_state"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="has_unique_id">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="customer_unique_id"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="has_zip_code_prefix">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="customer_zip_code_prefix"/>
+  </owl:ObjectProperty>
+
+  <owl:DatatypeProperty rdf:ID="has_text_data">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:string"/>
+    <owl:propertyChainAxiom>
+      <owl:ObjectProperty rdf:resource="#has_city"/>
+      <owl:ObjectProperty rdf:resource="#has_id"/>
+      <owl:ObjectProperty rdf:resource="#has_state"/>
+      <owl:ObjectProperty rdf:resource="#has_unique_id"/>
+    </owl:propertyChainAxiom>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="has_numerical_data">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:decimal"/>
+    <owl:propertyChainAxiom>
+      <owl:ObjectProperty rdf:resource="#has_zip_code_prefix"/>
+    </owl:propertyChainAxiom>
+  </owl:DatatypeProperty>
+
+</owl:Ontology>

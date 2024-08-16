@@ -1,0 +1,402 @@
+Here is the RML mapping for the given ontology:
+
+```
+@prefix rr: <http://www.w3.org/ns/r2-ramanujan#>.
+@prefix rml: <http://semweb.mimi.io/rml/1.1.0/ontology#>.
+@prefix ql: <http://semweb.mimi.io/rml/1.1.0/querylanguage#>.
+@prefix ex: <https://base_ontology.com#>.
+
+# Triples Map for Age
+<TriplesMapAge> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/Age/{{Age}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasAge;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeNumerical>
+        ];
+    ].
+
+# Triples Map for Arrival Delay in Minutes
+<TriplesMapArrivalDelay> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/Arrival_Delay_in_Minutes/{{Arrival_Delay_in_Minutes}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasArrivalDelay;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeNumerical>
+        ];
+    ].
+
+# Triples Map for Baggage Handling
+<TriplesMapBaggageHandling> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/Baggage_handling/{{Baggage_handling}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasBaggageHandling;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeCategorical>
+        ];
+    ].
+
+# Triples Map for Checkin Service
+<TriplesMapCheckinService> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/Checkin_service/{{Checkin_service}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCheckinService;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeCategorical>
+        ];
+    ].
+
+# Triples Map for Cleanliness
+<TriplesMapCleanliness> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/Cleanliness/{{Cleanliness}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCleanliness;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeCategorical>
+        ];
+    ].
+
+# Triples Map for Departure Delay in Minutes
+<TriplesMapDepartureDelay> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/Departure_Delay_in_Minutes/{{Departure_Delay_in_Minutes}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasDepartureDelay;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeNumerical>
+        ];
+    ].
+
+# Triples Map for Departure/Arrival time convenient
+<TriplesMapDepartureArrivalConvenience> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/Departure_Arrival_time_convenient/{{Departure_Arrival_time_convenient}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasDepartureArrivalConvenience;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeCategorical>
+        ];
+    ].
+
+# Triples Map for Ease of Online booking
+<TriplesMapEaseOfOnlineBooking> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/Ease_of_Online_booking/{{Ease_of_Online_booking}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasEaseOfOnlineBooking;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeCategorical>
+        ];
+    ].
+
+# Triples Map for Flight Distance
+<TriplesMapFlightDistance> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/Flight_Distance/{{Flight_Distance}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasFlightDistance;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeNumerical>
+        ];
+    ].
+
+# Triples Map for Food and drink
+<TriplesMapFoodAndDrink> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/Food_and_drink/{{Food_and_drink}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasFoodAndDrink;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeCategorical>
+        ];
+    ].
+
+# Triples Map for Gate location
+<TriplesMapGateLocation> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/Gate_location/{{Gate_location}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasGateLocation;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeCategorical>
+        ];
+    ].
+
+# Triples Map for Inflight entertainment
+<TriplesMapInflightEntertainment> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/Inflight_entertainment/{{Inflight_entertainment}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasInflightEntertainment;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeCategorical>
+        ];
+    ].
+
+# Triples Map for Inflight wifi service
+<TriplesMapInflightWifiService> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/Inflight_wifi_service/{{Inflight_wifi_service}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasInflightWifiService;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeCategorical>
+        ];
+    ].
+
+# Triples Map for Leg room service
+<TriplesMapLegRoomService> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/Leg_room_service/{{Leg_room_service}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasLegRoomService;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeCategorical>
+        ];
+    ].
+
+# Triples Map for On-board service
+<TriplesMapOnboardService> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/On_board_service/{{On_board_service}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasOnboardService;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeCategorical>
+        ];
+    ].
+
+# Triples Map for Online boarding
+<TriplesMapOnlineBoarding> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/Online_boarding/{{Online_boarding}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasOnlineBoarding;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeCategorical>
+        ];
+    ].
+
+# Triples Map for Online support
+<TriplesMapOnlineSupport> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/Online_support/{{Online_support}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasOnlineSupport;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeCategorical>
+        ];
+    ].
+
+# Triples Map for Seat comfort
+<TriplesMapSeatComfort> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/Seat_comfort/{{Seat_comfort}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasSeatComfort;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeCategorical>
+        ];
+    ].
+
+# Triples Map for Class
+<TriplesMapClass> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/Class/{{Class}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasClass;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeCategorical>
+        ];
+    ].
+
+# Triples Map for Customer Type
+<TriplesMapCustomerType> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/Customer_Type/{{Customer_Type}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCustomerType;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeCategorical>
+        ];
+    ].
+
+# Triples Map for Gender
+<TriplesMapGender> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/Gender/{{Gender}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasGender;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeCategorical>
+        ];
+    ].
+
+# Triples Map for Type of Travel
+<TriplesMapTypeOfTravel> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/Type_of_Travel/{{Type_of_Travel}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasTypeOfTravel;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeCategorical>
+        ];
+    ].
+
+# Triples Map for Satisfaction
+<TriplesMapSatisfaction> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/Satisfaction/{{satisfaction}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasSatisfaction;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeCategorical>
+        ];
+    ].
+
+# Data Type Map for Numerical
+<DataTypeNumerical> a rr:TriplesMap;
+    rr:subjectMap [
+        rr:template "EntityURI/DataTypeNumerical/{{Value}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasValue;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeNumerical>
+        ];
+    ].
+
+# Data Type Map for Categorical
+<DataTypeCategorical> a rr:TriplesMap;
+    rr:subjectMap [
+        rr:template "EntityURI/DataTypeCategorical/{{Value}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:hasValue;
+        rr:objectMap [
+            rr:parentTriplesMap <#DataTypeCategorical>
+        ];
+    ].
+```
+
+Please note that I have used the prefix `ex:` for the ontology namespace and `rr:` for the RML namespace. Also, I have defined the data type maps for numerical and categorical data types separately.

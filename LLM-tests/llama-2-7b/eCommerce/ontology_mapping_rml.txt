@@ -1,0 +1,68 @@
+ Here is the RML content for mapping the TTL ontology to a CSV file:
+```RML
+@prefix turtle: <https://www.w3.org/TR/turtle/>
+@prefix base: <https://baseontology.com/>
+
+# Triples Map Definition
+@base base:InvoiceData
+
+# Subclass of class_entity
+@base:entity_name a base:class_entity;
+
+# Object Properties
+@base:object_property_name a turtle:Domain - Range;
+@base:data_property_name a turtle:Domain - Range;
+
+# Classes
+@base:class_entity a turtle:Class;
+@base:entity_name a turtle:Entity;
+
+# Properties
+@base:class_entity:object_property_name a turtle:Property;
+@base:entity_name:object_property_name a turtle:Property;
+@base:class_entity:data_property_name a turtle:Property;
+@base:entity_name:data_property_name a turtle:Property;
+
+# Definitions
+@base:class_entity:
+   definition: A class representing an entity in the invoice data.
+   comment: Provides a structured understanding of the data and the relationships between the columns and classes.
+@base:entity_name:
+   definition: A unique name assigned to the entity.
+   comment: Represents the name of the entity in the invoice data.
+
+# Triples Mapping
+@base:invoice_data a rr:TriplesMap;
+   rml:logicalSource [
+       rml:source "{csv_data}";
+       rml:referenceFormulation ql:CSV
+   ];
+   rr:subjectMap [
+       rr:template "EntityURI/{{Entity1}}{{FAIR_URI}}";
+   ];
+   rr:predicateObjectMap [
+       rr:predicate ex:Property;
+       rr:objectMap [
+           rr:parentTriplesMap <#Property>
+       ];
+   ];
+
+# Additional Triples Mappings
+@base:invoice_data2 a rr:TriplesMap;
+   rml:logicalSource [
+       rml:source "{csv_data}";
+       rml:referenceFormulation ql:CSV
+   ];
+   rr:subjectMap [
+       rr:template "EntityURI/{{Entity2}}{{FAIR_URI}}";
+   ];
+   rr:predicateObjectMap [
+       rr:predicate ex:Property;
+       rr:objectMap [
+           rr:parentTriplesMap <#Property>
+       ];
+   ];
+```
+Note: The `FAIR_URI` variable should be replaced with the actual FAIR URI of the entity.
+
+Also, please note that this is just an example RML mapping and you may need to adjust it to fit your specific use case.

@@ -1,0 +1,83 @@
+**Foundational Prefix:**
+<https://myontology.com/>, <http://www.w3.org/1999/02/22-rdf-syntax-ns/>, <http://www.w3.org/2000/01/rdf-schema/>, <http://www.w3.org/2002/07/owl/>
+
+**Data Description:**
+
+1. customer_city:
+  - type: TextDomain
+  - description: Represents the city of a customer.
+
+2. customer_id:
+  - type: TextDomain
+  - description: Represents the unique identifier of a customer.
+
+3. customer_state:
+  - type: TextDomain
+  - description: Represents the state of a customer.
+
+4. customer_unique_id:
+  - type: TextDomain
+  - description: Represents the unique identifier of an entity.
+
+5. customer_zip_code_prefix:
+  - type: NumericalDomain
+  - description: Represents the prefix of a customer's zip code.
+
+**classes:**
+
+1. class_entity:
+  - type: OWLClass
+  - description: Represents a general entity.
+
+**subclasses:**
+
+1. entity_name:
+  - type: OWLClass
+  - description: Represents the name of an entity.
+  - subclass_of: class_entity
+
+**Object Properties:**
+
+1. customer_city_lives_in:
+  - type: ObjectProperty
+  - domain: class_entity
+  - range: TextDomain
+  - description: Represents the city where an entity lives.
+
+2. customer_id_has:
+  - type: ObjectProperty
+  - domain: class_entity
+  - range: TextDomain
+  - description: Represents the unique identifier of an entity.
+
+3. customer_state_resides_in:
+  - type: ObjectProperty
+  - domain: class_entity
+  - range: TextDomain
+  - description: Represents the state where an entity resides.
+
+**Data Type Properties:**
+
+1. customer_city_name:
+  - type: DataProperty
+  - domain: class_entity
+  - range: TextDomain
+  - description: Represents the name of a city.
+
+2. customer_id_value:
+  - type: DataProperty
+  - domain: class_entity
+  - range: TextDomain
+  - description: Represents the value of a customer's unique identifier.
+
+3. customer_state_name:
+  - type: DataProperty
+  - domain: class_entity
+  - range: TextDomain
+  - description: Represents the name of a state.
+
+4. customer_zip_code_prefix_value:
+  - type: DataProperty
+  - domain: class_entity
+  - range: NumericalDomain
+  - description: Represents the value of a customer's zip code prefix.

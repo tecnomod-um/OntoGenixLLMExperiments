@@ -1,0 +1,310 @@
+**Foundational Prefix:**
+
+<https://myontology.com/> rdf:namespace .
+<https://myontology.com/> owl:Ontology .
+<https://base_ontology.com/> rdf:namespace .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns/> rdf:namespace .
+<http://www.w3.org/2000/01/rdf-schema/> rdf:namespace .
+<http://www.w3.org/2002/07/owl#> owl:namespace .
+
+**Data Description:**
+
+<https://myontology.com>/Company
+:non_null_count a rdf:DatatypeProperty ;
+rdf:domain <https://myontology.com>/Company ;
+rdf:range xsd:double .
+
+<https://myontology.com>/Company public response
+:non_null_count a rdf:DatatypeProperty ;
+rdf:domain <https://myontology.com>/Company public response ;
+rdf:range xsd:double .
+
+<https://myontology.com>/Company public response :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Company ;
+rdf:range <https://myontology.com>/Text .
+
+<https://myontology.com>/Company response to consumer
+:non_null_count a rdf:DatatypeProperty ;
+rdf:domain <https://myontology.com>/Company response to consumer ;
+rdf:range xsd:double .
+
+<https://myontology.com>/Company response to consumer :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Company ;
+rdf:range <https://myontology.com>/Categorical .
+
+<https://myontology.com>/Consumer complaint narrative
+:non_null_count a rdf:DatatypeProperty ;
+rdf:domain <https://myontology.com>/Consumer complaint narrative ;
+rdf:range xsd:double .
+
+<https://myontology.com>/Consumer complaint narrative :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Consumer ;
+rdf:range <https://myontology.com>/Text .
+
+<https://myontology.com>/Consumer consent provided?
+:non_null_count a rdf:DatatypeProperty ;
+rdf:domain <https://myontology.com>/Consumer consent provided? ;
+rdf:range xsd:double .
+
+<https://myontology.com>/Consumer consent provided? :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Consumer ;
+rdf:range <https://myontology.com>/Categorical .
+
+<https://myontology.com>/Consumer disputed?
+:non_null_count a rdf:DatatypeProperty ;
+rdf:domain <https://myontology.com>/Consumer disputed? ;
+rdf:range xsd:double .
+
+<https://myontology.com>/Consumer disputed? :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Consumer ;
+rdf:range <https://myontology.com>/Categorical .
+
+<https://myontology.com>/Date received
+:non_null_count a rdf:DatatypeProperty ;
+rdf:domain <https://myontology.com>/Date received ;
+rdf:range <https://myontology.com>/Text .
+
+<https://myontology.com>/Date received :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Complaint ;
+rdf:range <https://myontology.com>/Text .
+
+<https://myontology.com>/Date sent to company
+:non_null_count a rdf:DatatypeProperty ;
+rdf:domain <https://myontology.com>/Date sent to company ;
+rdf:range <https://myontology.com>/Text .
+
+<https://myontology.com>/Date sent to company :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Complaint ;
+rdf:range <https://myontology.com>/Text .
+
+<https://myontology.com>/Issue
+:non_null_count a rdf:DatatypeProperty ;
+rdf:domain <https://myontology.com>/Issue ;
+rdf:range <https://myontology.com>/Text .
+
+<https://myontology.com>/Issue :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Complaint ;
+rdf:range <https://myontology.com>/Text .
+
+<https://myontology.com>/Product
+:non_null_count a rdf:DatatypeProperty ;
+rdf:domain <https://myontology.com>/Product ;
+rdf:range <https://myontology.com>/Text .
+
+<https://myontology.com>/Product :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Complaint ;
+rdf:range <https://myontology.com>/Text .
+
+<https://myontology.com>/State
+:non_null_count a rdf:DatatypeProperty ;
+rdf:domain <https://myontology.com>/State ;
+rdf:range <https://myontology.com>/Text .
+
+<https://myontology.com>/State :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Complaint ;
+rdf:range <https://myontology.com>/Text .
+
+<https://myontology.com>/Sub-issue
+:non_null_count a rdf:DatatypeProperty ;
+rdf:domain <https://myontology.com>/Sub-issue ;
+rdf:range <https://myontology.com>/Text .
+
+<https://myontology.com>/Sub-issue :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Complaint ;
+rdf:range <https://myontology.com>/Text .
+
+<https://myontology.com>/Sub-product
+:non_null_count a rdf:DatatypeProperty ;
+rdf:domain <https://myontology.com>/Sub-product ;
+rdf:range <https://myontology.com>/Text .
+
+<https://myontology.com>/Sub-product :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Complaint ;
+rdf:range <https://myontology.com>/Text .
+
+<https://myontology.com>/Submitted via
+:non_null_count a rdf:DatatypeProperty ;
+rdf:domain <https://myontology.com>/Submitted via ;
+rdf:range <https://myontology.com>/Categorical .
+
+<https://myontology.com>/Submitted via :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Complaint ;
+rdf:range <https://myontology.com>/Categorical .
+
+<https://myontology.com>/Tags
+:non_null_count a rdf:DatatypeProperty ;
+rdf:domain <https://myontology.com>/Tags ;
+rdf:range <https://myontology.com>/Categorical .
+
+<https://myontology.com>/Tags :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Complaint ;
+rdf:range <https://myontology.com>/Categorical .
+
+<https://myontology.com>/Timely response?
+:non_null_count a rdf:DatatypeProperty ;
+rdf:domain <https://myontology.com>/Timely response? ;
+rdf:range <https://myontology.com>/Categorical .
+
+<https://myontology.com>/Timely response? :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Complaint ;
+rdf:range <https://myontology.com>/Categorical .
+
+<https://myontology.com>/ZIP code
+:non_null_count a rdf:DatatypeProperty ;
+rdf:domain <https://myontology.com>/ZIP code ;
+rdf:range <https://myontology.com>/Text .
+
+<https://myontology.com>/ZIP code :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Complaint ;
+rdf:range <https://myontology.com>/Text .
+
+<https://myontology.com>/Complaint ID
+:non_null_count a rdf:DatatypeProperty ;
+rdf:domain <https://myontology.com>/Complaint ID ;
+rdf:range xsd:integer .
+
+<https://myontology.com>/Complaint ID :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Complaint ;
+rdf:range xsd:integer .
+
+**classes:**
+
+<https://myontology.com>/Company
+a owl:Class ;
+rdf:label "Company" .
+
+<https://myontology.com>/Consumer
+a owl:Class ;
+rdf:label "Consumer" .
+
+<https://myontology.com>/Complaint
+a owl:Class ;
+rdf:label "Complaint" .
+
+**subclasses:**
+
+<https://myontology.com>/entity_name
+a owl:Class ;
+rdf:subClassOf <https://myontology.com>/class_entity ;
+rdf:label "Entity Name" .
+
+**Object Properties:**
+
+<https://myontology.com>/Company response to consumer :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Company ;
+rdf:range <https://myontology.com>/Consumer .
+
+<https://myontology.com>/Consumer consent provided? :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Consumer ;
+rdf:range <https://myontology.com>/Categorical .
+
+<https://myontology.com>/Consumer disputed? :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Consumer ;
+rdf:range <https://myontology.com>/Categorical .
+
+<https://myontology.com>/Complaint has :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Complaint ;
+rdf:range <https://myontology.com>/Issue .
+
+<https://myontology.com>/Complaint has product :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Complaint ;
+rdf:range <https://myontology.com>/Product .
+
+<https://myontology.com>/Complaint has state :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Complaint ;
+rdf:range <https://myontology.com>/State .
+
+<https://myontology.com>/Complaint has sub-issue :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Complaint ;
+rdf:range <https://myontology.com>/Sub-issue .
+
+<https://myontology.com>/Complaint has sub-product :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Complaint ;
+rdf:range <https://myontology.com>/Sub-product .
+
+<https://myontology.com>/Complaint has submitted via :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Complaint ;
+rdf:range <https://myontology.com>/Categorical .
+
+<https://myontology.com>/Complaint has tags :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Complaint ;
+rdf:range <https://myontology.com>/Categorical .
+
+<https://myontology.com>/Complaint received :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Complaint ;
+rdf:range <https://myontology.com>/Date .
+
+<https://myontology.com>/Complaint sent to company :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Complaint ;
+rdf:range <https://myontology.com>/Date .
+
+<https://myontology.com>/Company has response to consumer :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Company ;
+rdf:range <https://myontology.com>/Consumer .
+
+<https://myontology.com>/Company has public response :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Company ;
+rdf:range <https://myontology.com>/Text .
+
+<https://myontology.com>/Consumer has complaint narrative :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Consumer ;
+rdf:range <https://myontology.com>/Text .
+
+<https://myontology.com>/Consumer has consent provided :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Consumer ;
+rdf:range <https://myontology.com>/Categorical .
+
+<https://myontology.com>/Consumer has disputed :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Consumer ;
+rdf:range <https://myontology.com>/Categorical .
+
+<https://myontology.com>/Date received has date :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Date received ;
+rdf:range <https://myontology.com>/Text .
+
+<https://myontology.com>/Date sent to company has date :type a rdf:Property ;
+rdf:domain <https://myontology.com>/Date sent to company ;
+rdf:range <https://myontology.com>/Text .
+
+**Data Type Properties:**
+
+<https://myontology.com>/Company :non_null_count :type a rdf:DatatypeProperty ;
+rdf:propertyType <https://myontology.com>/Company response to consumer .
+
+<https://myontology.com>/Company public response :non_null_count :type a rdf:DatatypeProperty ;
+rdf:propertyType <https://myontology.com>/Company public response :type .
+
+<https://myontology.com>/Company response to consumer :non_null_count :type a rdf:DatatypeProperty ;
+rdf:propertyType <https://myontology.com>/Company response to consumer .
+
+<https://myontology.com>/Consumer complaint narrative :non_null_count :type a rdf:DatatypeProperty ;
+rdf:propertyType <https://myontology.com>/Consumer consent provided? .
+
+<https://myontology.com>/Consumer consent provided? :non_null_count :type a rdf:DatatypeProperty ;
+rdf:propertyType <https://myontology.com>/Consumer consent provided? .
+
+<https://myontology.com>/Consumer disputed? :non_null_count :type a rdf:DatatypeProperty ;
+rdf:propertyType <https://myontology.com>/Consumer disputed? .
+
+<https://myontology.com>/Date received :non_null_count :type a rdf:DatatypeProperty ;
+rdf:propertyType <https://myontology.com>/Date received .
+
+<https://myontology.com>/Date sent to company :non_null_count :type a rdf:DatatypeProperty ;
+rdf:propertyType <https://myontology.com>/Date sent to company .
+
+<https://myontology.com>/Issue :non_null_count :type a rdf:DatatypeProperty ;
+rdf:propertyType <https://myontology.com>/Issue .
+
+<https://myontology.com>/Product :non_null_count :type a rdf:DatatypeProperty ;
+rdf:propertyType <https://myontology.com>/Product .
+
+<https://myontology.com>/State :non_null_count :type a rdf:DatatypeProperty ;
+rdf:propertyType <https://myontology.com>/State .
+
+<https://myontology.com>/Sub-issue :non_null_count :type a rdf:DatatypeProperty ;
+rdf:propertyType <https://myontology.com>/Sub-issue .
+
+<https://myontology.com>/Sub-product :non_null_count :type a rdf:DatatypeProperty ;
+rdf:propertyType <https://myontology.com>/Sub-product .
+
+<https://myontology.

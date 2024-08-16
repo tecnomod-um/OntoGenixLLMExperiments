@@ -1,0 +1,114 @@
+Here is the generated RML content:
+
+@prefix rml: <http://semweb.mimi.io/rml/1.1>;
+@prefix rr: <http://www.w3.org/ns/r2-rr>;
+@prefix ql: <http://semweb.mimi.io/rml/1.1/ql>;
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>;
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>;
+
+<#TriplesMapEntity> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "{csv_data}";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://base_ontology.com#{EntityName}{{FAIR_URI}}";
+  ];
+  rr:predicateObjectMap [
+    rr:predicate <https://base_ontology.com#has_city>;
+    rr:objectMap [
+      rr:parentTriplesMap <#has_city>
+    ];
+  ];
+
+<#TriplesMapEntity1> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "{csv_data}";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://base_ontology.com#{EntityName}{{FAIR_URI}}";
+  ];
+  rr:predicateObjectMap [
+    rr:predicate <https://base_ontology.com#has_id>;
+    rr:objectMap [
+      rr:parentTriplesMap <#has_id>
+    ];
+  ];
+
+<#TriplesMapEntity2> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "{csv_data}";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://base_ontology.com#{EntityName}{{FAIR_URI}}";
+  ];
+  rr:predicateObjectMap [
+    rr:predicate <https://base_ontology.com#has_state>;
+    rr:objectMap [
+      rr:parentTriplesMap <#has_state>
+    ];
+  ];
+
+<#TriplesMapEntity3> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "{csv_data}";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://base_ontology.com#{EntityName}{{FAIR_URI}}";
+  ];
+  rr:predicateObjectMap [
+    rr:predicate <https://base_ontology.com#has_unique_id>;
+    rr:objectMap [
+      rr:parentTriplesMap <#has_unique_id>
+    ];
+  ];
+
+<#TriplesMapEntity4> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "{csv_data}";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://base_ontology.com#{EntityName}{{FAIR_URI}}";
+  ];
+  rr:predicateObjectMap [
+    rr:predicate <https://base_ontology.com#has_zip_code_prefix>;
+    rr:objectMap [
+      rr:parentTriplesMap <#has_zip_code_prefix>
+    ];
+  ];
+
+<#TriplesMapEntity5> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "{csv_data}";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://base_ontology.com#{EntityName}{{FAIR_URI}}";
+  ];
+  rr:predicateObjectMap [
+    rr:predicate <https://base_ontology.com#has_text_data>;
+    rr:objectMap [
+      rr:parentTriplesMap <#has_text_data>
+    ];
+  ];
+
+<#TriplesMapEntity6> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "{csv_data}";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://base_ontology.com#{EntityName}{{FAIR_URI}}";
+  ];
+  rr:predicateObjectMap [
+    rr:predicate <https://base_ontology.com#has_numerical_data>;
+    rr:objectMap [
+      rr:parentTriplesMap <#has_numerical_data>
+    ];
+  ];
+
+Note: I've created a mapping for each class and generated appropriate URIs and combined columns if necessary.

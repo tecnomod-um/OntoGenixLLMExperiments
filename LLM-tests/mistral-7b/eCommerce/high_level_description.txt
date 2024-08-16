@@ -1,0 +1,88 @@
+**Foundational Prefix:**
+<https://base_ontology.com#> prefix base:.
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix rdf:.
+<http://www.w3.org/2000/01/rdf-schema#> prefix rdfs:.
+<http://www.w3.org/2002/07/owl#> prefix owl:.
+
+**Data Description:**
+
+Country:
+1. Country: type - Identifier of a nation or territory. - String.
+
+Description:
+1. Description: type - A brief explanation or description. - String.
+
+InvoiceDate:
+1. InvoiceDate: type - Date when an invoice was created. - String.
+
+InvoiceNo:
+1. InvoiceNo: type - A unique identifier for an invoice. - String.
+
+StockCode:
+1. StockCode: type - A unique identifier for a stock item. - String.
+
+CustomerID:
+1. CustomerID: type - Unique identifier for a customer. - Integer.
+
+Quantity:
+1. Quantity: type - The number of a particular product or stock item. - Integer.
+
+UnitPrice:
+1. UnitPrice: type - The price of a single unit of a product or stock item. - Float.
+
+**classes:**
+
+class_entity:
+1. class_entity: type - A superclass representing any entity.
+
+**subclasses:**
+
+entity_name:
+1. entity_name: subclass_of -> class_entity.
+
+**Object Properties:**
+
+class_entity:
+1. hasCountry: domain - class_entity, range - Country.
+2. hasDescription: domain - class_entity, range - Description.
+3. hasInvoiceDate: domain - class_entity, range - InvoiceDate.
+4. hasInvoiceNo: domain - class_entity, range - InvoiceNo.
+5. hasStockCode: domain - class_entity, range - StockCode.
+6. hasCustomerID: domain - class_entity, range - CustomerID.
+7. hasQuantity: domain - class_entity, range - Quantity.
+8. hasUnitPrice: domain - class_entity, range - UnitPrice.
+
+entity_name:
+1. hasName: domain - entity_name, range - String.
+
+**Data Type Properties:**
+
+class_entity:
+1. name: domain - class_entity, range - String.
+
+entity_name:
+1. name: domain - entity_name, range - String.
+
+Country:
+1. name: domain - Country, range - String.
+
+Description:
+1. name: domain - Description, range - String.
+
+InvoiceDate:
+1. name: domain - InvoiceDate, range - String.
+
+InvoiceNo:
+1. name: domain - InvoiceNo, range - String.
+
+StockCode:
+1. name: domain - StockCode, range - String.
+
+CustomerID:
+1. name: domain - CustomerID, range - Integer.
+
+Quantity:
+1. name: domain - Quantity, range - Integer.
+
+UnitPrice:
+1. name: domain - UnitPrice, range - Float.

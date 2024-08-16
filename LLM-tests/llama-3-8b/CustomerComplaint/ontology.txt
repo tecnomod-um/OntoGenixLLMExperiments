@@ -1,0 +1,38 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+@prefix base_ontology: <https://base_ontology.com/>
+
+<http://www.example.org/ontology#>
+    class_entity a owl:Class.
+
+entity_name a owl:Class, rdfs:subClassOf <http://www.example.org/ontology#class_entity>.
+
+has_company a owl:ObjectProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range xsd:integer.
+has_public_response a owl:ObjectProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range xsd:integer.
+has_response_to_consumer a owl:ObjectProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range owl:Categorical.
+has_consumer_complaint_narrative a owl:ObjectProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range xsd:string.
+has_consumer_consent a owl:ObjectProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range owl:Categorical.
+has_consumer_dispute a owl:ObjectProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range owl:Categorical.
+has_date_received a owl:ObjectProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range xsd:string.
+has_date_sent_to_company a owl:ObjectProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range xsd:string.
+has_issue a owl:ObjectProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range xsd:string.
+has_product a owl:ObjectProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range xsd:string.
+has_state a owl:ObjectProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range xsd:string.
+has_sub_issue a owl:ObjectProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range xsd:string.
+has_sub_product a owl:ObjectProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range xsd:string.
+has_submitted_via a owl:ObjectProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range owl:Categorical.
+has_tags a owl:ObjectProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range owl:Categorical.
+has_timely_response a owl:ObjectProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range owl:Categorical.
+has_zip_code a owl:ObjectProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range xsd:string.
+has_complaint_id a owl:ObjectProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range xsd:integer.
+
+has_non_null_count a owl:DatatypeProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range xsd:integer.
+has_type a owl:DatatypeProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range xsd:string.
+has_unique_count a owl:DatatypeProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range xsd:integer.
+has_count a owl:DatatypeProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range xsd:integer.
+has_max a owl:DatatypeProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range xsd:integer.
+has_mean a owl:DatatypeProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range xsd:float.
+has_min a owl:DatatypeProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range xsd:integer.
+has_std a owl:DatatypeProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range xsd:float.

@@ -1,0 +1,42 @@
+**Foundational Prefix:** 
+"http://base_ontology.com#", "http://www.w3.org/1999/02/22-rdf-syntax-ns#", "http://www.w3.org/2000/01/rdf-schema#", "http://www.w3.org/2002/07/owl#" 
+
+**Data Description:**
+1. Absolute_Url: type - text, short description of the column data meaning - URL, possible range - any text
+2. Brand: type - text, short description of the column data meaning - product brand, possible range - any text
+3. Category: type - text, short description of the column data meaning - product category, possible range - any text
+4. Image_Url: type - text, short description of the column data meaning - image URL, possible range - any text
+5. ProductName: type - text, short description of the column data meaning - product name, possible range - any text
+6. Quantity: type - text, short description of the column data meaning - product quantity, possible range - any text
+7. SubCategory: type - text, short description of the column data meaning - product subcategory, possible range - any text
+8. DiscountPrice: type - Numerical, short description of the column data meaning - discounted price, possible range - numerical
+9. Price: type - Numerical, short description of the column data meaning - original price, possible range - numerical
+
+**Classes:**
+1. class_entity
+
+**Subclasses:**
+1. entity_name: subclass of -> class_entity
+
+**Object Properties:**
+1. has_absolute_url: domain - class_entity, range - text
+2. has_brand: domain - class_entity, range - text
+3. has_category: domain - class_entity, range - text
+4. has_image_url: domain - class_entity, range - text
+5. has_product_name: domain - class_entity, range - text
+6. has_quantity: domain - class_entity, range - text
+7. has_subcategory: domain - class_entity, range - text
+8. has_discount_price: domain - class_entity, range - numerical
+9. has_price: domain - class_entity, range - numerical
+
+**Data Type Properties:**
+1. entity_name: domain - class_entity, range - text
+2. absolute_url: domain - class_entity, range - text
+3. brand: domain - class_entity, range - text
+4. category: domain - class_entity, range - text
+5. image_url: domain - class_entity, range - text
+6. product_name: domain - class_entity, range - text
+7. quantity: domain - class_entity, range - text
+8. subcategory: domain - class_entity, range - text
+9. discount_price: domain - class_entity, range - numerical
+10. price: domain - class_entity, range - numerical

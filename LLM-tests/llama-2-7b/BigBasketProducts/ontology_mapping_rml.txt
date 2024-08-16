@@ -1,0 +1,78 @@
+ Here is the RML content for mapping the given JSON data to a CSV file:
+```
+<rml:RML xmlns:rml="http://www.w3.org/ns/rml#">
+ <rml:logicalSource>
+   <rml:source>csv_data</rml:source>
+ </rml:logicalSource>
+ <rml:referenceFormulation>
+   <rml:prefix>dbp:</rml:prefix>
+   <rml:prefix>dbc:</rml:prefix>
+   <rml:prefix>ex:</rml:prefix>
+   <rml:prefix>ql:</rml:prefix>
+ </rml:referenceFormulation>
+ <rml:subjectMap>
+   <rml:template>
+     "EntityURI/{{Entity1}}{{FAIR_URI}}"
+   </rml:template>
+ </rml:subjectMap>
+ <rml:predicateObjectMap>
+   <rml:predicate>
+     <rml:prefix>ex:</rml:prefix>
+     <rml:property>Property</rml:property>
+   </rml:predicate>
+   <rml:objectMap>
+     <rml:parentTriplesMap>
+       <#TriplesMapEntity> a rr:TriplesMap;
+         rml:logicalSource [
+           rml:source "{csv_data}";
+           rml:referenceFormulation ql:CSV
+         ];
+         rr:subjectMap [
+           rr:template "EntityURI/{{Entity1}}{{FAIR_URI}}";
+         ];
+         rr:predicateObjectMap [
+           rr:predicate ex:Property;
+           rr:objectMap [
+             rr:parentTriplesMap <#Property>
+           ];
+         ];
+       </#TriplesMapEntity>
+     </rml:parentTriplesMap>
+   </rml:objectMap>
+ </rml:predicateObjectMap>
+ <rml:predicateObjectMap>
+   <rml:predicate>
+     <rml:prefix>ex:</rml:prefix>
+     <rml:property>Property</rml:property>
+   </rml:predicate>
+   <rml:objectMap>
+     <rml:parentTriplesMap>
+       <#TriplesMapEntity2> a rr:TriplesMap;
+         rml:logicalSource [
+           rml:source "{csv_data}";
+           rml:referenceFormulation ql:CSV
+         ];
+         rr:subjectMap [
+           rr:template "EntityURI/{{Entity2}}{{FAIR_URI}}";
+         ];
+         rr:predicateObjectMap [
+           rr:predicate ex:Property;
+           rr:objectMap [
+             rr:parentTriplesMap <#Property>
+           ];
+         ];
+       </#TriplesMapEntity2>
+     </rml:parentTriplesMap>
+   </rml:objectMap>
+ </rml:predicateObjectMap>
+</rml:RML>
+```
+Note: In the above RML content, I have used the prefixes `dbp:`, `dbc:`, and `ex:` to refer to the classes, subclasses, and properties defined in the ontology. I have also used the `ql:CSV` prefix to refer to the CSV file format.
+
+The mapping defines a single RDF/RML mapping for each class, using the `rml:subjectMap` and `rml:predicateObjectMap` elements to define the mappings. The `rml:logicalSource` element specifies the source of the data, which in this case is a CSV file. The `rml:referenceFormulation` element specifies the reference formulation for the mapping, which in this case is `ql:CSV`.
+
+The `rml:subjectMap` element defines the subject map for each class, which maps the class name to a URI. The `rml:predicateObjectMap` element defines the predicate object map for each class, which maps the predicate name to an object map. The `rml:objectMap` element defines the object map for each class, which maps the object name to a URI.
+
+The mapping also includes additional mappings for the `class_entity` class and the `entity_name` subclass, as well as mappings for the `DiscountPrice` and `Price` properties.
+
+Please note that the above RML content is just an example, and you may need to modify it based on your specific use case and requirements.

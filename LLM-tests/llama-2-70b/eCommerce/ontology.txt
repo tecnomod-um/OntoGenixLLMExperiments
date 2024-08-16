@@ -1,0 +1,56 @@
+ Here is the TURTLE ontology based on the provided JSON data table and input related data description:
+
+**Prefixes:**
+<https://baseontology.com/>
+<https://www.w3.org/TR/turtle/>
+
+**Ontology:**
+@baseontology.com/InvoiceData
+
+**Class:** class_entity
+
+**Subclasses:**
+
+* entity_name: subclass of class_entity
+
+**Object Properties:**
+
+* object_property_name: domain - range
+
+**Data Type Properties:**
+
+* data_property_name: domain - range
+
+**Classes:**
+
+* class_entity
+* entity_name
+
+**Properties:**
+
+* class_entity:
+	+ object_property_name: domain - range
+	+ data_property_name: domain - range
+* entity_name:
+	+ object_property_name: domain - range
+	+ data_property_name: domain - range
+
+**Definitions:**
+
+* class_entity:
+	+ definition: A class representing an entity in the invoice data.
+	+ comment: Provides a structured understanding of the data and the relationships between the columns and classes.
+* entity_name:
+	+ definition: A unique name assigned to the entity.
+	+ comment: Represents the name of the entity in the invoice data.
+
+**Properties:**
+
+* object_property_name:
+	+ domain: null, numerical, or text values
+	+ range: null, numerical, or text values
+* data_property_name:
+	+ domain: null, numerical, or text values
+	+ range: null, numerical, or text values
+
+Note: The above ontology is generated based on the provided JSON data table and input related data description, without any additional information or assumptions. The ontology provides a structured understanding of the data and the relationships between the columns and classes, as suggested in the schema.

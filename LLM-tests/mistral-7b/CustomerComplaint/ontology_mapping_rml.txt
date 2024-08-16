@@ -1,0 +1,297 @@
+<#TriplesMapCompany> a rr:TriplesMap;
+:rml:logicalSource [
+:rml:source "<csv_file>.csv";
+:rml:referenceFormulation ql:CSV
+];
+:rr:subjectMap [
+:rr:template "https://myontology.com/Company/{{CompanyID}}{{FAIR_URI}}";
+:rr:class [
+:a <https://myontology.com/Company>
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Company response to consumer ;
+:rr:objectMap [
+:rr:template "https://myontology.com/Consumer/{{ConsumerID}}"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Company public response ;
+:rr:objectMap [
+:rr:template "{{PublicResponse}}"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Company :type ;
+:rr:objectMap [
+:rr:template "<https://myontology.com/Text>"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Company has response to consumer ;
+:rr:objectMap [
+:rr:template "https://myontology.com/Consumer/{{ConsumerID}}"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Company has public response ;
+:rr:objectMap [
+:rr:template "<https://myontology.com/Text>"
+]
+];
+
+<#TriplesMapConsumer> a rr:TriplesMap;
+:rml:logicalSource [
+:rml:source "<csv_file>.csv";
+:rml:referenceFormulation ql:CSV
+];
+:rr:subjectMap [
+:rr:template "https://myontology.com/Consumer/{{ConsumerID}}{{FAIR_URI}}";
+:rr:class [
+:a <https://myontology.com/Consumer>
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Consumer consent provided? ;
+:rr:objectMap [
+:rr:template "<{{ConsumerConsentProvided}}>"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Consumer disputed? ;
+:rr:objectMap [
+:rr:template "<{{ConsumerDisputed}}>"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Consumer complaint narrative ;
+:rr:objectMap [
+:rr:template "{{ConsumerNarrative}}"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Consumer has consent provided ;
+:rr:objectMap [
+:rr:template "<{{ConsumerConsentProvided}}>"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Consumer has disputed ;
+:rr:objectMap [
+:rr:template "<{{ConsumerDisputed}}>"
+]
+];
+
+<#TriplesMapComplaint> a rr:TriplesMap;
+:rml:logicalSource [
+:rml:source "<csv_file>.csv";
+:rml:referenceFormulation ql:CSV
+];
+:rr:subjectMap [
+:rr:template "https://myontology.com/Complaint/{{ComplaintID}}{{FAIR_URI}}";
+:rr:class [
+:a <https://myontology.com/Complaint>
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Complaint has ;
+:rr:objectMap [
+:rr:template [
+:rr:template "https://myontology.com/Issue/{{Issue}}" ;
+:rr:join "," ;
+:rr:template "."
+]
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Complaint has product ;
+:rr:objectMap [
+:rr:template "{{Product}}"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Complaint has state ;
+:rr:objectMap [
+:rr:template "{{State}}"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Complaint has sub-issue ;
+:rr:objectMap [
+:rr:template "{{SubIssue}}"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Complaint has sub-product ;
+:rr:objectMap [
+:rr:template "{{SubProduct}}"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Complaint has submitted via ;
+:rr:objectMap [
+:rr:template "<{{SubmittedVia}}>"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Complaint has tags ;
+:rr:objectMap [
+:rr:template "<{{Tags}}>"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Complaint received ;
+:rr:objectMap [
+:rr:template "{{DateReceived}}"
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Complaint sent to company ;
+:rr:objectMap [
+:rr:template "{{DateSentToCompany}}"
+]
+];
+
+<#TriplesMapIssue> a rr:TriplesMap;
+:rml:logicalSource [
+:rml:source "<csv_file>.csv";
+:rml:referenceFormulation ql:CSV
+];
+:rr:subjectMap [
+:rr:template "https://myontology.com/Issue/{{IssueID}}{{FAIR_URI}}";
+:rr:class [
+:a <https://myontology.com/Issue>
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Issue ;
+:rr:objectMap [
+:rr:template "{{Issue}}"
+]
+];
+
+<#TriplesMapProduct> a rr:TriplesMap;
+:rml:logicalSource [
+:rml:source "<csv_file>.csv";
+:rml:referenceFormulation ql:CSV
+];
+:rr:subjectMap [
+:rr:template "https://myontology.com/Product/{{ProductID}}{{FAIR_URI}}";
+:rr:class [
+:a <https://myontology.com/Product>
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Product ;
+:rr:objectMap [
+:rr:template "{{Product}}"
+]
+];
+
+<#TriplesMapState> a rr:TriplesMap;
+:rml:logicalSource [
+:rml:source "<csv_file>.csv";
+:rml:referenceFormulation ql:CSV
+];
+:rr:subjectMap [
+:rr:template "https://myontology.com/State/{{StateID}}{{FAIR_URI}}";
+:rr:class [
+:a <https://myontology.com/State>
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/State ;
+:rr:objectMap [
+:rr:template "{{State}}"
+]
+];
+
+<#TriplesMapSubIssue> a rr:TriplesMap;
+:rml:logicalSource [
+:rml:source "<csv_file>.csv";
+:rml:referenceFormulation ql:CSV
+];
+:rr:subjectMap [
+:rr:template "https://myontology.com/Sub-issue/{{SubIssueID}}{{FAIR_URI}}";
+:rr:class [
+:a <https://myontology.com/Sub-issue>
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Sub-issue ;
+:rr:objectMap [
+:rr:template "{{SubIssue}}"
+]
+];
+
+<#TriplesMapSubProduct> a rr:TriplesMap;
+:rml:logicalSource [
+:rml:source "<csv_file>.csv";
+:rml:referenceFormulation ql:CSV
+];
+:rr:subjectMap [
+:rr:template "https://myontology.com/Sub-product/{{SubProductID}}{{FAIR_URI}}";
+:rr:class [
+:a <https://myontology.com/Sub-product>
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Sub-product ;
+:rr:objectMap [
+:rr:template "{{SubProduct}}"
+]
+];
+
+<#TriplesMapDate> a rr:TriplesMap;
+:rml:logicalSource [
+:rml:source "<csv_file>.csv";
+:rml:referenceFormulation ql:CSV
+];
+:rr:subjectMap [
+:rr:template "https://myontology.com/Date/{{DateID}}{{FAIR_URI}}";
+:rr:class [
+:a <https://myontology.com/Date>
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Date ;
+:rr:objectMap [
+:rr:template "{{Date}}"
+]
+];
+
+<#TriplesMapCategorical> a rr:TriplesMap;
+:rml:logicalSource [
+:rml:source "<csv_file>.csv";
+:rml:referenceFormulation ql:CSV
+];
+:rr:subjectMap [
+:rr:template "https://myontology.com/Categorical/{{CategoricalID}}{{FAIR_URI}}";
+:rr:class [
+:a <https://myontology.com/Categorical>
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Categorical ;
+:rr:objectMap [
+:rr:template "{{Categorical}}"
+]
+];
+
+<#TriplesMapText> a rr:TriplesMap;
+:rml:logicalSource [
+:rml:source "<csv_file>.csv";
+:rml:referenceFormulation ql:CSV
+];
+:rr:subjectMap [
+:rr:template "https://myontology.com/Text/{{TextID}}{{FAIR_URI}}";
+:rr:class [
+:a <https://myontology.com/Text>
+]
+];
+:rr:predicateObjectMap [
+:rr:predicate <https://myontology.com>/Text ;
+:rr:objectMap [
+:rr:template "{{Text}}"
+]
+];

@@ -1,0 +1,61 @@
+ Here is the TURTLE ontology for the provided JSON data table and task requirements:
+
+**Turtle Ontology**
+@prefix dbp: <https://baseontology.com/> .
+@prefix dbc: <https://baseontology.com/data-ontology/> .
+
+**Class: class_entity**
+@id class_entity
+@type ont:Class
+
+**Subclass: entity_name**
+@id entity_name
+@type ont:SubClass
+
+**Object Property: object_property_name**
+@id object_property_name
+@type ont:ObjectProperty
+
+**Data Property: data_property_name**
+@id data_property_name
+@type ont:DataProperty
+
+**Class: class_entity**
+@id class_entity
+@type ont:Class
+
+* @range Absolute_Url
+* @range Brand
+* @range Category
+* @range Image_Url
+* @range ProductName
+* @range Quantity
+* @range SubCategory
+
+**Subclass: entity_name**
+@id entity_name
+@type ont:SubClass
+
+* @range Absolute_Url
+* @range Brand
+* @range Category
+* @range Image_Url
+* @range ProductName
+* @range Quantity
+
+**Object Property: object_property_name**
+@id object_property_name
+@type ont:ObjectProperty
+
+* @domain text
+* @range Absolute_Url
+
+**Data Property: data_property_name**
+@id data_property_name
+@type ont:DataProperty
+
+* @domain Numerical
+* @range DiscountPrice
+* @range Price
+
+Note: The above ontology is generated based on the provided JSON data table and task requirements. The ontology defines classes, subclasses, object properties, and data properties for the given data. The ontology is structured in a logical manner, with each class and subclass defined in a separate line, and each property defined in a separate line as well. The properties are defined with their respective domains and ranges, which are the types of data that they can represent.

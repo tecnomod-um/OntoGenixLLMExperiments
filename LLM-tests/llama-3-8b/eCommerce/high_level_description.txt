@@ -1,0 +1,49 @@
+https://base_ontology.com#owl:Ontology
+
+**Data Description:**
+
+1. Country: type - text, short description of the column data meaning - country, possible range - null
+2. Description: type - text, short description of the column data meaning - description, possible range - null
+3. InvoiceDate: type - text, short description of the column data meaning - date, possible range - null
+4. InvoiceNo: type - text, short description of the column data meaning - invoice number, possible range - null
+5. StockCode: type - text, short description of the column data meaning - stock code, possible range - null
+6. CustomerID: type - Numerical, short description of the column data meaning - customer identification, possible range - null
+7. Quantity: type - Numerical, short description of the column data meaning - quantity, possible range - null
+8. UnitPrice: type - Numerical, short description of the column data meaning - unit price, possible range - null
+
+**classes:**
+
+1. class_entity
+
+**subclasses:**
+
+1. Country_entity: subclass of -> class_entity
+2. Description_entity: subclass of -> class_entity
+3. InvoiceDate_entity: subclass of -> class_entity
+4. InvoiceNo_entity: subclass of -> class_entity
+5. StockCode_entity: subclass of -> class_entity
+6. CustomerID_entity: subclass of -> class_entity
+7. Quantity_entity: subclass of -> class_entity
+8. UnitPrice_entity: subclass of -> class_entity
+
+**Object Properties:**
+
+1. has_country: domain - Country_entity, range - class_entity
+2. has_description: domain - Description_entity, range - class_entity
+3. has_invoice_date: domain - InvoiceDate_entity, range - class_entity
+4. has_invoice_no: domain - InvoiceNo_entity, range - class_entity
+5. has_stock_code: domain - StockCode_entity, range - class_entity
+6. has_customer_id: domain - CustomerID_entity, range - class_entity
+7. has_quantity: domain - Quantity_entity, range - class_entity
+8. has_unit_price: domain - UnitPrice_entity, range - class_entity
+
+**Data Type Properties:**
+
+1. country_data_type: domain - Country_entity, range - text
+2. description_data_type: domain - Description_entity, range - text
+3. invoice_date_data_type: domain - InvoiceDate_entity, range - text
+4. invoice_no_data_type: domain - InvoiceNo_entity, range - text
+5. stock_code_data_type: domain - StockCode_entity, range - text
+6. customer_id_data_type: domain - CustomerID_entity, range - Numerical
+7. quantity_data_type: domain - Quantity_entity, range - Numerical
+8. unit_price_data_type: domain - UnitPrice_entity, range - Numerical

@@ -1,0 +1,18 @@
+**Foundational Prefix:**
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#>, <http://www.w3.org/2000/01/rdf-schema#>, <http://www.w3.org/2002/07/owl#>, <https://base_ontology.com#>
+
+Define it as an owl type
+
+**Data Description:**
+
+1. Company: text - Name of the company - String
+2. Company public response: text - Public response from the company - String
+3. Company response to consumer: categorical - Company's response to the consumer - Categorical (e.g. 'Yes', 'No', 'N/A')
+4. Consumer complaint narrative: text - Narrative description of the consumer's complaint - String
+5. Consumer consent provided?: categorical - Whether the consumer provided consent - Categorical (e.g. 'Yes', 'No', 'N/A')
+6. Consumer disputed?: categorical - Whether the consumer disputed - Categorical (e.g. 'Yes', 'No')
+7. Date received: text - Date when the complaint was received - String
+8. Date sent to company: text - Date when the complaint was sent to the company - String
+9. Issue: text - General issue category - String
+10. Product: text - Product involved in the complaint - String
+1

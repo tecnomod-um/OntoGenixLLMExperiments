@@ -1,0 +1,28 @@
+https://base_ontology.com#ProductRatingOntology
+
+Data Description:
+1. ProductId: text - Product identifier - string
+2. Rating: categorical - Product rating - [1, 5]
+3. Timestamp: text - Timestamp - string
+4. UserId: text - User identifier - string
+
+Classes:
+1. class_Entity
+
+Subclasses:
+1. entity_Product: subclass of -> class_Entity
+2. entity_Rating: subclass of -> class_Entity
+3. entity_User: subclass of -> class_Entity
+4. entity_Timestamp: subclass of -> class_Entity
+
+Object Properties:
+1. has_Rating: domain - entity_Product, range - entity_Rating
+2. has_ProductId: domain - entity_Product, range - ProductId
+3. has_Timestamp: domain - entity_Product, range - Timestamp
+4. has_User: domain - entity_Product, range - UserId
+
+Data Type Properties:
+1. has_Type: domain - entity_Product, range - text
+2. has_Type: domain - entity_Rating, range - categorical
+3. has_Type: domain - entity_Timestamp, range - text
+4. has_Type: domain - entity_User, range - text

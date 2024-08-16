@@ -1,0 +1,88 @@
+ Foundational Prefix: <https://baseontology.com/#>
+
+Data Description:
+
+1. Company:
+	* Type: Text
+	* Meaning: A company or organization
+	* Possible range: None
+2. Company public response:
+	* Type: Text
+	* Meaning: A public response from a company to a consumer complaint
+	* Possible range: None
+3. Company response to consumer:
+	* Type: Categorical
+	* Meaning: A response from a company to a consumer complaint
+	* Possible range: None
+4. Consumer complaint narrative:
+	* Type: Text
+	* Meaning: A narrative description of a consumer complaint
+	* Possible range: None
+5. Consumer consent provided?:
+	* Type: Categorical
+	* Meaning: Whether a consumer provided consent for a company to collect their personal information
+	* Possible range: None
+6. Consumer disputed?:
+	* Type: Categorical
+	* Meaning: Whether a consumer disputed a charge or transaction with a company
+	* Possible range: None
+7. Date received:
+	* Type: Text
+	* Meaning: The date a consumer received a product or service
+	* Possible range: None
+8. Date sent to company:
+	* Type: Text
+	* Meaning: The date a company received a consumer complaint
+	* Possible range: None
+9. Issue:
+	* Type: Text
+	* Meaning: The issue or problem a consumer is experiencing with a product or service
+	* Possible range: None
+10. Product:
+	* Type: Text
+	* Meaning: The product or service a consumer is experiencing an issue with
+	* Possible range: None
+11. State:
+	* Type: Text
+	* Meaning: The state or location where a consumer is located
+	* Possible range: None
+12. Sub-issue:
+	* Type: Text
+	* Meaning: A sub-issue or detail related to the main issue
+	* Possible range: None
+13. Sub-product:
+	* Type: Text
+	* Meaning: A sub-product or detail related to the main product
+	* Possible range: None
+14. Submitted via:
+	* Type: Categorical
+	* Meaning: The method or channel used to submit a consumer complaint
+	* Possible range: None
+15. Tags:
+	* Type: Categorical
+	* Meaning: A set of keywords or tags associated with a consumer complaint
+	* Possible range: None
+16. Timely response?:
+	* Type: Categorical
+	* Meaning: Whether a company provided a timely response to a consumer complaint
+	* Possible range: None
+17. ZIP code:
+	* Type: Text
+	* Meaning: The ZIP code or location of a consumer
+	* Possible range: None
+
+Classes:
+
+1. class_entity:
+	* Subclasses: entity_name
+2. entity_name: subclass of -> class_entity
+
+Object Properties:
+
+1. object_property_name: domain - range
+
+Data Type Properties:
+
+1. data_property_name: domain - range
+
+Note: The above descriptions are based on the provided JSON data table and the image (if provided). The descriptions are generated to provide a structured approach to creating an ontology from the given data.

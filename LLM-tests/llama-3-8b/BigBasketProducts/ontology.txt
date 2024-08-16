@@ -1,0 +1,59 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<http://base_ontology.com#class_entity>
+  rdfs:subClassOf owl:Thing.
+
+<http://base_ontology.com#entity_name>
+  rdfs:subClassOf <http://base_ontology.com#class_entity>.
+  owl:oneOf
+    (
+      xsd:string
+    ).
+
+<http://base_ontology.com#has_absolute_url>
+  rdf:type owl:ObjectProperty.
+  rdfs:domain <http://base_ontology.com#class_entity>.
+  rdfs:range xsd:string.
+
+<http://base_ontology.com#has_brand>
+  rdf:type owl:ObjectProperty.
+  rdfs:domain <http://base_ontology.com#class_entity>.
+  rdfs:range xsd:string.
+
+<http://base_ontology.com#has_category>
+  rdf:type owl:ObjectProperty.
+  rdfs:domain <http://base_ontology.com#class_entity>.
+  rdfs:range xsd:string.
+
+<http://base_ontology.com#has_image_url>
+  rdf:type owl:ObjectProperty.
+  rdfs:domain <http://base_ontology.com#class_entity>.
+  rdfs:range xsd:string.
+
+<http://base_ontology.com#has_product_name>
+  rdf:type owl:ObjectProperty.
+  rdfs:domain <http://base_ontology.com#class_entity>.
+  rdfs:range xsd:string.
+
+<http://base_ontology.com#has_quantity>
+  rdf:type owl:ObjectProperty.
+  rdfs:domain <http://base_ontology.com#class_entity>.
+  rdfs:range xsd:string.
+
+<http://base_ontology.com#has_subcategory>
+  rdf:type owl:ObjectProperty.
+  rdfs:domain <http://base_ontology.com#class_entity>.
+  rdfs:range xsd:string.
+
+<http://base_ontology.com#has_discount_price>
+  rdf:type owl:ObjectProperty.
+  rdfs:domain <http://base_ontology.com#class_entity>.
+  rdfs:range xsd:decimal.
+
+<http://base_ontology.com#has_price>
+  rdf:type owl:ObjectProperty.
+  rdfs:domain <http://base_ontology.com#class_entity>.
+  rdfs:range xsd:decimal.

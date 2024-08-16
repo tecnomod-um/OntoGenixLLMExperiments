@@ -1,0 +1,62 @@
+https://base_ontology.com# "http://www.w3.org/1999/02/22-rdf-syntax-ns#" "http://www.w3.org/2000/01/rdf-schema#" "http://www.w3.org/2002/07/owl#"
+
+**Data Description:**
+
+1. Company: owl:Integer - Number of companies - range: [0, ∞)
+2. Company public response: owl:Integer - Number of public responses - range: [0, ∞)
+3. Company response to consumer: owl:Categorical - Type of response - range: {"yes", "no", "unknown"}
+4. Consumer complaint narrative: owl:Text - Description of the complaint - range: free text
+5. Consumer consent provided?: owl:Categorical - Consent provided - range: {"yes", "no", "unknown"}
+6. Consumer disputed?: owl:Categorical - Dispute status - range: {"yes", "no", "unknown"}
+7. Date received: owl:Text - Date the complaint was received - range: free text
+8. Date sent to company: owl:Text - Date the complaint was sent to the company - range: free text
+9. Issue: owl:Text - Description of the issue - range: free text
+10. Product: owl:Text - Name of the product - range: free text
+11. State: owl:Text - State where the complaint was received - range: free text
+12. Sub-issue: owl:Text - Description of the sub-issue - range: free text
+13. Sub-product: owl:Text - Name of the sub-product - range: free text
+14. Submitted via: owl:Categorical - Method of submission - range: {"email", "phone", "mail", "online"}
+15. Tags: owl:Categorical - Keywords associated with the complaint - range: {"keyword1", "keyword2", "keyword3"}
+16. Timely response?: owl:Categorical - Timely response status - range: {"yes", "no", "unknown"}
+17. ZIP code: owl:Text - ZIP code where the complaint was received - range: free text
+18. Complaint ID: owl:Integer - Unique identifier for the complaint - range: [1, ∞)
+
+**Classes:**
+
+1. class_entity
+
+**Subclasses:**
+
+1. entity_name: subclass of -> class_entity
+
+**Object Properties:**
+
+1. has_company: domain -> class_entity, range -> owl:Integer
+2. has_public_response: domain -> class_entity, range -> owl:Integer
+3. has_response_to_consumer: domain -> class_entity, range -> owl:Categorical
+4. has_consumer_complaint_narrative: domain -> class_entity, range -> owl:Text
+5. has_consumer_consent: domain -> class_entity, range -> owl:Categorical
+6. has_consumer_dispute: domain -> class_entity, range -> owl:Categorical
+7. has_date_received: domain -> class_entity, range -> owl:Text
+8. has_date_sent_to_company: domain -> class_entity, range -> owl:Text
+9. has_issue: domain -> class_entity, range -> owl:Text
+10. has_product: domain -> class_entity, range -> owl:Text
+11. has_state: domain -> class_entity, range -> owl:Text
+12. has_sub_issue: domain -> class_entity, range -> owl:Text
+13. has_sub_product: domain -> class_entity, range -> owl:Text
+14. has_submitted_via: domain -> class_entity, range -> owl:Categorical
+15. has_tags: domain -> class_entity, range -> owl:Categorical
+16. has_timely_response: domain -> class_entity, range -> owl:Categorical
+17. has_zip_code: domain -> class_entity, range -> owl:Text
+18. has_complaint_id: domain -> class_entity, range -> owl:Integer
+
+**Data Type Properties:**
+
+1. has_non_null_count: domain -> class_entity, range -> owl:Integer
+2. has_type: domain -> class_entity, range -> owl:Text
+3. has_unique_count: domain -> class_entity, range -> owl:Integer
+4. has_count: domain -> class_entity, range -> owl:Integer
+5. has_max: domain -> class_entity, range -> owl:Integer
+6. has_mean: domain -> class_entity, range -> owl:Float
+7. has_min: domain -> class_entity, range -> owl:Integer
+8. has_std: domain -> class_entity, range -> owl:Float

@@ -1,0 +1,319 @@
+<prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rr: <http://www.w3.org/ns/r2rml#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX base: <https://base_ontology.com#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<#TriplesMapFlight> a rr:TriplesMap;
+   rml:logicalSource [
+       rml:source "{CSV_DATA}";
+       rml:referenceFormulation ql:CSV
+   ];
+   rr:subjectMap [
+       rr:template "https://base_ontology.com/Flight/{{FAIR_URI}}";
+   ];
+   rr:predicateObjectMap [
+       rr:predicate base:hasAge;
+       rr:objectMap [
+           rr:column "Age"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasArrivalDelay;
+       rr:objectMap [
+           rr:column "Arrival Delay in Minutes"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasBaggageHandlingRating;
+       rr:objectMap [
+           rr:column "Baggage handling"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasCheckinServiceRating;
+       rr:objectMap [
+           rr:column "Checkin service"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasCleanlinessRating;
+       rr:objectMap [
+           rr:column "Cleanliness"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasDepartureDelay;
+       rr:objectMap [
+           rr:column "Departure Delay in Minutes"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasDepartureArrivalTimeConvenienceRating;
+       rr:objectMap [
+           rr:column "Departure/Arrival time convenient"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasEaseOfOnlineBookingRating;
+       rr:objectMap [
+           rr:column "Ease of Online booking"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasFlightDistance;
+       rr:objectMap [
+           rr:column "Flight Distance"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasFoodAndDrinkRating;
+       rr:objectMap [
+           rr:column "Food and drink"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasGateLocationRating;
+       rr:objectMap [
+           rr:column "Gate location"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasInflightEntertainmentRating;
+       rr:objectMap [
+           rr:column "Inflight entertainment"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasInflightWifiServiceRating;
+       rr:objectMap [
+           rr:column "Inflight wifi service"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasLegRoomServiceRating;
+       rr:objectMap [
+           rr:column "Leg room service"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasOnBoardServiceRating;
+       rr:objectMap [
+           rr:column "On-board service"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasOnlineBoardingRating;
+       rr:objectMap [
+           rr:column "Online boarding"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasOnlineSupportRating;
+       rr:objectMap [
+           rr:column "Online support"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasSeatComfortRating;
+       rr:objectMap [
+           rr:column "Seat comfort"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasCustomerType;
+       rr:objectMap [
+           rr:column "Customer Type"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasGender;
+       rr:objectMap [
+           rr:column "Gender"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasTravelType;
+       rr:objectMap [
+           rr:column "Type of Travel"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasSatisfaction;
+       rr:objectMap [
+           rr:column "satisfaction"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate rdf:type;
+       rr:objectMap [
+           rr:template "https://base_ontology.com/FlightClass/Flight"
+       ]
+   ]
+.
+
+<#TriplesMapCustomer> a rr:TriplesMap;
+   rml:logicalSource [
+       rml:source "{CSV_DATA}";
+       rml:referenceFormulation ql:CSV
+   ];
+   rr:subjectMap [
+       rr:template "https://base_ontology.com/Customer/{{FAIR_URI}}";
+   ];
+   rr:predicateObjectMap [
+       rr:predicate base:hasAge;
+       rr:objectMap [
+           rr:column "Age"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasArrivalDelay;
+       rr:objectMap [
+           rr:constant "0"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasBaggageHandlingRating;
+       rr:objectMap [
+           rr:constant "N/A"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasCheckinServiceRating;
+       rr:objectMap [
+           rr:constant "N/A"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasCleanlinessRating;
+       rr:objectMap [
+           rr:constant "N/A"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasDepartureDelay;
+       rr:objectMap [
+           rr:constant "0"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasDepartureArrivalTimeConvenienceRating;
+       rr:objectMap [
+           rr:constant "N/A"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasEaseOfOnlineBookingRating;
+       rr:objectMap [
+           rr:constant "N/A"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasFlightDistance;
+       rr:objectMap [
+           rr:constant "0"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasFoodAndDrinkRating;
+       rr:objectMap [
+           rr:constant "N/A"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasGateLocationRating;
+       rr:objectMap [
+           rr:constant "N/A"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasInflightEntertainmentRating;
+       rr:objectMap [
+           rr:constant "N/A"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasInflightWifiServiceRating;
+       rr:objectMap [
+           rr:constant "N/A"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasLegRoomServiceRating;
+       rr:objectMap [
+           rr:constant "N/A"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasOnBoardServiceRating;
+       rr:objectMap [
+           rr:constant "N/A"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasOnlineBoardingRating;
+       rr:objectMap [
+           rr:constant "N/A"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasOnlineSupportRating;
+       rr:objectMap [
+           rr:constant "N/A"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasSeatComfortRating;
+       rr:objectMap [
+           rr:constant "N/A"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasCustomerType;
+       rr:objectMap [
+           rr:column "Customer Type"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasGender;
+       rr:objectMap [
+           rr:column "Gender"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasTravelType;
+       rr:objectMap [
+           rr:column "Type of Travel"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate base:hasSatisfaction;
+       rr:objectMap [
+           rr:column "satisfaction"
+       ]
+   ],
+   rr:predicateObjectMap [
+       rr:predicate rdf:type;
+       rr:objectMap [
+           rr:template "https://base_ontology.com/FlightClass/Customer"
+       ]
+   ]
+.
+
+<#TriplesMapProperty> a rr:TriplesMap;
+   rml:logicalSource [
+       rml:source "{CSV_DATA}";
+       rml:referenceFormulation ql:CSV
+   ];
+   rr:subjectMap [
+       rr:template "PropertyURI/{{FAIR_URI}}";
+   ];
+   rr:predicateObjectMap [
+       rr:predicate rdf:type;
+       rr:objectMap [
+           rr:template "https://base_ontology.com/Property/Property"
+       ]
+   ]
+.
+
+Replace "{CSV_DATA}" with the actual CSV data source.

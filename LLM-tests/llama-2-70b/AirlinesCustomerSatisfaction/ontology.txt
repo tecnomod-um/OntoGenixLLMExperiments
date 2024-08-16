@@ -1,0 +1,223 @@
+ @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+class_entity
+   a owl:Class;
+   owl:has_subclass entity_name .
+
+entity_name
+   a owl:Class;
+   owl:has_subclass class_entity .
+
+object_property_name
+   a owl:ObjectProperty;
+   owl:domain class_entity;
+   owl:range class_entity .
+
+data_property_name
+   a owl:DataProperty;
+   owl:domain class_entity;
+   owl:range xsd:string .
+
+Baggage handling
+   a entity_name;
+   owl:has_value 1..5 .
+
+Checkin service
+   a entity_name;
+   owl:has_value 1..6 .
+
+Cleanliness
+   a entity_name;
+   owl:has_value 1..6 .
+
+Departure Delay in Minutes
+   a entity_name;
+   owl:has_value 0..1000 .
+
+Departure/Arrival time convenient
+   a entity_name;
+   owl:has_value 1..6 .
+
+Ease of Online booking
+   a entity_name;
+   owl:has_value 1..6 .
+
+Flight Distance
+   a entity_name;
+   owl:has_value 0..10000 .
+
+Food and drink
+   a entity_name;
+   owl:has_value 1..6 .
+
+Gate location
+   a entity_name;
+   owl:has_value 1..6 .
+
+Inflight entertainment
+   a entity_name;
+   owl:has_value 1..6 .
+
+Inflight wifi service
+   a entity_name;
+   owl:has_value 1..6 .
+
+Leg room service
+   a entity_name;
+   owl:has_value 1..6 .
+
+On-board service
+   a entity_name;
+   owl:has_value 1..6 .
+
+Online boarding
+   a entity_name;
+   owl:has_value 1..6 .
+
+Online support
+   a entity_name;
+   owl:has_value 1..6 .
+
+Seat comfort
+   a entity_name;
+   owl:has_value 1..6 .
+
+Age
+   a data_property_name;
+   owl:domain class_entity;
+   owl:range xsd:integer .
+
+Arrival Delay in Minutes
+   a data_property_name;
+   owl:domain class_entity;
+   owl:range xsd:integer .
+
+Cleanliness
+   a data_property_name;
+   owl:domain class_entity;
+   owl:range xsd:integer .
+
+Departure Delay in Minutes
+   a data_property_name;
+   owl:domain class_entity;
+   owl:range xsd:integer .
+
+Ease of Online booking
+   a data_property_name;
+   owl:domain class_entity;
+   owl:range xsd:integer .
+
+Flight Distance
+   a data_property_name;
+   owl:domain class_entity;
+   owl:range xsd:integer .
+
+Food and drink
+   a data_property_name;
+   owl:domain class_entity;
+   owl:range xsd:integer .
+
+Gate location
+   a data_property_name;
+   owl:domain class_entity;
+   owl:range xsd:integer .
+
+Inflight entertainment
+   a data_property_name;
+   owl:domain class_entity;
+   owl:range xsd:integer .
+
+Inflight wifi service
+   a data_property_name;
+   owl:domain class_entity;
+   owl:range xsd:integer .
+
+Leg room service
+   a data_property_name;
+   owl:domain class_entity;
+   owl:range xsd:integer .
+
+On-board service
+   a data_property_name;
+   owl:domain class_entity;
+   owl:range xsd:integer .
+
+Online boarding
+   a data_property_
+   owl:domain class_
+   owl:range xsd:integer
+   Please provide the owl:domain owl:integer ;  
+   owl:range xsd:integer .
+
+Age
+   owl:domain owl:domain xsd:integer ;
+   owl:
+   a
+   owl:domain xsd:integer xsd:integer
+   owl:domain xsd:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   7433
+   7323043230396323230396323039632303230396323039632303963239639632303963963230323038303963963372330396396323303.03.03.03.03.03.03.03.03.03.03.03.03.03.03.03.03.03.03.03.03.03.03.3.3.3.3.3.3.3.3.3.3.3.3.3.3.3.3.3.3.4,3.4.4.3.4.4.4.4.3.2.3.2.4.3.4.4.56.58.4.2.6.5.1.1.1.2.4.2.1.2.4.2.4.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.10.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.11.11.11.111.11.1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111.1111.111111111111111111111111111111111111111111.11111111111111111119119.119999999.1111119.199.11.1999.1.1.19.1.19.1.19.19.19.119.19.19.1.1.1.1.1.1.1.1.19.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.199.1.199.1.19.199899.1.13.1.1.1.1.1.1.13.13.13.13.139.139993.13.13.13.3.3.13.3999.3999393939939999939999999393998393999838983939889999398988863.3.3.3.3.8,3**,9**38****"3**"88**9.39999**99**,39**,3,399**99899939999999993999999999999999993999939993993999999999838393,398398838939,3939938393,3999983,3838839839393333833383339933338393333333333333333833399838993983383"39939338393,33**3,33,33333"393"3.3,3"3.3.3.3.3.3.3.3.3.3.38333.3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333839338333""3833333333333333338383333333333333333333333333939ll333333333333333333333333333"3333333333333333333333333333333333333333333333333333333333383333338"333333333383838383383338833333333383333333333333333333333833333838333338833333333333333383387"77"33338,90,388"938""8"""""38,,,8",877 " is is is " is are837839898 "3388.8"3,3833939,3,""3,,"338,333338398397,3,330ll""3893876,8ll,3"3,838",338376880386,383783,73 "793 " " "7,3 "9 "79"" ""799,8988799 "73 "3 " ", "999 "39 ",,,,8,,

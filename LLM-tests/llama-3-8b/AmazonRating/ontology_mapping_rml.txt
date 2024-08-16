@@ -1,0 +1,149 @@
+Here is the RML mapping in the required format:
+
+@prefix rr: <http://www.w3.org/ns/r2-ontology#>.
+@prefix rml: <http://semweb.mimi.io/rml/1.1/ontology#>.
+@prefix ql: <http://semweb.mimi.io/rml/1.1/ql#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<#TriplesMapEntity> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/{{class_Entity}}/{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate owl:type;
+        rr:objectMap [
+            rr:parentTriplesMap <#ClassMapEntity>
+        ];
+    ];
+
+<#ClassMapEntity> a rr:TriplesMap;
+    rr:subjectMap [
+        rr:template "EntityURI/{{entity_Product}}/{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:subClassOf;
+        rr:objectMap [
+            rr:parentTriplesMap <#ClassMapClass_Entity>
+        ];
+    ];
+
+<#ClassMapClass_Entity> a rr:TriplesMap;
+    rr:subjectMap [
+        rr:template "EntityURI/{{class_Entity}}/{{FAIR_URI}}";
+    ];
+
+<#TriplesMapEntity_Product> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/{{entity_Product}}/{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:has_Rating;
+        rr:objectMap [
+            rr:parentTriplesMap <#Property>
+        ];
+    ];
+
+<#Property> a rr:TriplesMap;
+    rr:subjectMap [
+        rr:template "EntityURI/{{entity_Rating}}/{{FAIR_URI}}";
+    ];
+
+<#TriplesMapEntity_Product> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/{{entity_Product}}/{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:has_ProductId;
+        rr:objectMap [
+            rr:parentTriplesMap <#Property>
+        ];
+    ];
+
+<#TriplesMapEntity_Product> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/{{entity_Product}}/{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:has_Timestamp;
+        rr:objectMap [
+            rr:parentTriplesMap <#Property>
+        ];
+    ];
+
+<#TriplesMapEntity_Product> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/{{entity_Product}}/{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:has_User;
+        rr:objectMap [
+            rr:parentTriplesMap <#Property>
+        ];
+    ];
+
+<#TriplesMapEntity_Rating> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/{{entity_Rating}}/{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:has_Type;
+        rr:objectMap [
+            rr:parentTriplesMap <#Property>
+        ];
+    ];
+
+<#TriplesMapEntity_Timestamp> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/{{entity_Timestamp}}/{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:has_Type;
+        rr:objectMap [
+            rr:parentTriplesMap <#Property>
+        ];
+    ];
+
+<#TriplesMapEntity_User> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/{{entity_User}}/{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:has_Type;
+        rr:objectMap [
+            rr:parentTriplesMap <#Property>
+        ];
+    ];
+
+Note: I have followed the provided guidelines and generated the RML mapping according to the ontology and data description provided.

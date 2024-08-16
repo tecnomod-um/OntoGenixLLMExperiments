@@ -1,0 +1,43 @@
+ Foundational Prefix: <https://baseontology.com/#>
+
+Data Description:
+
+1. customer_city:
+	* Type: text
+	* Meaning: A city or location where a customer is located
+	* Possible range: Null, numbers, or text values representing a specific location
+2. customer_id:
+	* Type: text
+	* Meaning: A unique identifier for a customer
+	* Possible range: Null, numbers, or text values representing a specific identifier
+3. customer_state:
+	* Type: text
+	* Meaning: A state or region where a customer is located
+	* Possible range: Null, numbers, or text values representing a specific state or region
+4. customer_unique_id:
+	* Type: text
+	* Meaning: A unique identifier for a customer that is not the same as their customer_id
+	* Possible range: Null, numbers, or text values representing a specific identifier
+5. customer_zip_code_prefix:
+	* Type: Numerical
+	* Meaning: The first part of a zip code for a customer's location
+	* Possible range: Null, numbers representing a specific zip code prefix
+
+Classes:
+
+1. class_entity:
+	* Subclasses: entity_name
+
+Object Properties:
+
+1. entity_name:
+	* Domain: class_entity
+	* Range: text values representing a specific entity name
+
+Data Type Properties:
+
+1. data_property_name:
+	* Domain: class_entity
+	* Range: text values representing a specific data type property name
+
+Note: The above descriptions are based on the provided JSON data and the image provided. The descriptions are written in a structured manner to facilitate the creation of an ontology for the provided data.

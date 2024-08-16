@@ -1,0 +1,108 @@
+<prefix rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<prefix rdfs="http://www.w3.org/2000/01/rdf-schema#">
+<prefix owl="http://www.w3.org/2002/07/owl#">
+<prefix base\_ontology="https://base\_ontology.com#">
+<prefix xsd="http://www.w3.org/2001/XMLSchema#">
+<prefix rr="http://www.w3.org/ns/r2rml#">
+<prefix void="http://rdfs.org/ns/void#">
+
+<#TriplesMapProduct>
+a rr:TriplesMap;
+rr:logicalSource [
+rml:source "your\_csv\_data.csv";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "{}Product/{{FAIR\_URI}}"^^xsd:string;
+].
+
+<#TriplesMapProduct>
+rr:predicateObjectMap [
+rr:predicate base\_ontology:hasUrl;
+rr:objectMap [
+rr:column "Absolute\_Url"
+]
+],
+[
+rr:predicate base\_ontology:hasName;
+rr:objectMap [
+rr:column "ProductName"
+]
+],
+[
+rr:predicate base\_ontology:hasCategory;
+rr:objectMap [
+rr:column "Category"
+]
+],
+[
+rr:predicate base\_ontology:hasSubCategory;
+rr:objectMap [
+rr:column "SubCategory"
+]
+],
+[
+rr:predicate base\_ontology:hasQuantity;
+rr:objectMap [
+rr:column "Quantity"
+]
+],
+[
+rr:predicate base\_ontology:hasDiscountPrice;
+rr:objectMap [
+rr:column "DiscountPrice"
+]
+],
+[
+rr:predicate base\_ontology:hasPrice;
+rr:objectMap [
+rr:column "Price"
+]
+],
+[
+rr:predicate base\_ontology:hasType;
+rr:objectMap [
+rr:parentTriplesMap <#TriplesMapProductType>
+]
+],
+[
+rr:predicate base\_ontology:hasImage;
+rr:objectMap [
+rr:parentTriplesMap <#TriplesMapProductImage>
+]
+]
+.
+
+<#TriplesMapProductType>
+a rr:TriplesMap;
+rr:logicalSource [
+rml:source "your\_csv\_data.csv";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "{}ProductType/{{FAIR\_URI}}"^^xsd:string;
+];
+rr:predicateObjectMap [
+rr:predicate rdfs:label;
+rr:objectMap [
+rr:column "Brand"
+]
+]
+.
+
+<#TriplesMapProductImage>
+a rr:TriplesMap;
+rr:logicalSource [
+rml:source "your\_csv\_data.csv";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "{}ProductImage/{{FAIR\_URI}}"^^xsd:string;
+];
+rr:predicateObjectMap [
+rr:predicate rdfs:label;
+rr:objectMap [
+rr:column "Image\_Url"
+]
+]
+.

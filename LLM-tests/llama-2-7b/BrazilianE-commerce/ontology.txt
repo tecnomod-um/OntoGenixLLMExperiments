@@ -1,0 +1,70 @@
+ Here is the TURTLE ontology for the provided data:
+
+@prefix ex: <https://baseontology.com/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dbp: <http://dbp.fnrs.fr/ontology/> .
+
+### Classes
+
+* class_entity:
+	+ subclass: entity_name .
+
+### Object Properties
+
+* entity_name:
+	+ domain: class_entity .
+	+ range: text .
+
+### Data Type Properties
+
+* data_property_name:
+	+ domain: class_entity .
+	+ range: text .
+
+### Objects
+
+* customer_city:
+	+ type: text .
+	+ non_null_count: 99441.0 .
+	+ unique_count: 4119.0 .
+	+ count: null .
+	+ max: null .
+	+ mean: null .
+	+ min: null .
+	+ std: null .
+* customer_id:
+	+ type: text .
+	+ non_null_count: 99441.0 .
+	+ unique_count: 99441.0 .
+	+ count: null .
+	+ max: null .
+	+ mean: null .
+	+ min: null .
+	+ std: null .
+* customer_state:
+	+ type: text .
+	+ non_null_count: 27.0 .
+	+ unique_count: 96096.0 .
+	+ count: null .
+	+ max: null .
+	+ mean: null .
+	+ min: null .
+	+ std: null .
+* customer_unique_id:
+	+ type: text .
+	+ non_null_count: 99441.0 .
+	+ unique_count: 96096.0 .
+	+ count: null .
+	+ max: null .
+	+ mean: null .
+	+ min: null .
+	+ std: null .
+* customer_zip_code_prefix:
+	+ type: numerical .
+	+ non_null_count: null .
+	+ range: 99990.0 .
+	+ mean: 35137.4745829185 .
+	+ min: 1003.0 .
+	+ std: 29797.9389962061 .
+
+Note: The above ontology is generated based on the provided JSON data and image. The properties and classes are defined in a structured manner to facilitate the creation of an ontology for the provided data. However, please note that this is a simplified ontology, and you may need to add or modify properties and classes depending on your specific use case.

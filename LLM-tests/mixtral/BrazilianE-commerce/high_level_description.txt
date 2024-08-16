@@ -1,0 +1,35 @@
+**Foundational Prefix:**
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#>, <http://www.w3.org/2000/01/rdf-schema#>, <http://www.w3.org/2002/07/owl#>, <https://base_ontology.com#>
+
+Define it as an owl type:
+owl:Ontology rdf:about "https://base_ontology.com/customer_data"
+
+**Data Description:**
+1. customer\_city: type - The city where the customer is located - Possible range: text
+2. customer\_id: type - Identifier for a customer - Possible range: text
+3. customer\_state: type - The state where the customer is located - Possible range: text
+4. customer\_unique\_id: type - Unique identifier for a customer - Possible range: text
+5. customer\_zip\_code\_prefix: type - Prefix of the zip code where the customer is located - Possible range: Numerical
+
+**Classes:**
+1. class\_entity: owl:Class
+
+**Subclasses:**
+1. customer: subclass of -> class\_entity
+2. city: subclass of -> class\_entity
+3. state: subclass of -> class\_entity
+4. id: subclass of -> class\_entity
+5. zip\_code: subclass of -> class\_entity
+
+**Object Properties:**
+1. has\_city: domain - customer, range - city
+2. has\_state: domain - customer, range - state
+3. has\_id: domain - customer, range - id
+4. has\_zip\_code: domain - customer, range - zip\_code
+
+**Data Type Properties:**
+1. customer\_city: domain - customer, range - text
+2. customer\_id: domain - customer, range - text
+3. customer\_state: domain - customer, range - text
+4. customer\_unique\_id: domain - customer, range - text
+5. customer\_zip\_code\_prefix: domain - zip\_code, range - Numerical

@@ -1,0 +1,110 @@
+**Foundational Prefix:**
+```rdf@prefix base: <https://base_ontology.com/>
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns/>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema/>
+@prefix owl: <http://www.w3.org/2002/07/owl#>
+```
+
+**Data Description:**
+
+1. Absolute_Url:
+  - type: text
+  - meaning: Unique URL for an item
+  - possible range: rdf:Resource
+
+2. Brand:
+  - type: text
+  - meaning: Name or identifier of the brand
+  - possible range: rdf:Literal
+
+3. Category:
+  - type: text
+  - meaning: The category to which an item belongs
+  - possible range: rdf:Literal
+
+4. Image_Url:
+  - type: text
+  - meaning: Unique URL for an image of an item
+  - possible range: rdf:Resource
+
+5. ProductName:
+  - type: text
+  - meaning: The name of a product
+  - possible range: rdf:Literal
+
+6. Quantity:
+  - type: text
+  - meaning: The quantity of an item
+  - possible range: rdf:Literal
+
+7. SubCategory:
+  - type: text
+  - meaning: The subcategory to which an item belongs
+  - possible range: rdf:Literal
+
+8. DiscountPrice:
+  - type: Numerical
+  - meaning: The discounted price of an item
+  - possible range: rdfs:Real
+
+9. Price:
+  - type: Numerical
+  - meaning: The price of an item
+  - possible range: rdfs:Real
+
+**classes:**
+
+1. class_entity:
+  - type: owl:Class
+  - meaning: A base class for all entities
+
+**subclasses:**
+
+1. entity_name:
+  - type: owl:Class
+  - meaning: A subclass of class_entity
+  - subclass_of: class_entity
+
+**Object Properties:**
+
+1. has_image:
+  - object_property_name: has_image
+  - domain: class_entity
+  - range: Image_Url
+
+**Data Type Properties:**
+
+1. has_brand:
+  - data_property_name: has_brand
+  - domain: class_entity
+  - range: Brand
+
+2. has_category:
+  - data_property_name: has_category
+  - domain: class_entity
+  - range: Category
+
+3. has_product_name:
+  - data_property_name: has_product_name
+  - domain: class_entity
+  - range: ProductName
+
+4. has_quantity:
+  - data_property_name: has_quantity
+  - domain: class_entity
+  - range: Quantity
+
+5. has_subcategory:
+  - data_property_name: has_subcategory
+  - domain: class_entity
+  - range: SubCategory
+
+6. has_discount_price:
+  - data_property_name: has_discount_price
+  - domain: class_entity
+  - range: DiscountPrice
+
+7. has_price:
+  - data_property_name: has_price
+  - domain: class_entity
+  - range: Price

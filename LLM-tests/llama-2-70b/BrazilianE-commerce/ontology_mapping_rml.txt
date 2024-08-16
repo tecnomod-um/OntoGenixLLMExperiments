@@ -1,0 +1,100 @@
+ Here is the RML content for mapping the provided JSON data to a CSV file:
+```raml
+# Define the ontology prefixes
+@prefix ex: <https://baseontology.com/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dbp: <http://dbp.fnrs.fr/ontology/> .
+
+# Define the classes
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+
+### Classes
+
+* class_entity:
+	+ subclass: entity_name .
+
+### Object Properties
+
+* entity_name:
+	+ domain: class_entity .
+	+ range: text .
+
+### Data Type Properties
+
+* data_property_name:
+	+ domain: class_entity .
+	+ range: text .
+
+### Objects
+
+* customer_city:
+	+ type: text .
+	+ non_null_count: 99441.0 .
+	+ unique_count: 4119.0 .
+	+ count: null .
+	+ max: null .
+	+ mean: null .
+	+ min: null .
+	+ std: null .
+* customer_id:
+	+ type: text .
+	+ non_null_count: 99441.0 .
+	+ unique_count: 99441.0 .
+	+ count: null .
+	+ max: null .
+	+ mean: null .
+	+ min: null .
+	+ std: null .
+* customer_state:
+	+ type: text .
+	+ non_null_count: 27.0 .
+	+ unique_count: 96096.0 .
+	+ count: null .
+	+ max: null .
+	+ mean: null .
+	+ min: null .
+	+ std: null .
+* customer_unique_id:
+	+ type: text .
+	+ non_null_count: 99441.0 .
+	+ unique_count: 96096.0 .
+	+ count: null .
+	+ max: null .
+	+ mean: null .
+	+ min: null .
+	+ std: null .
+* customer_zip_code_prefix:
+	+ type: numerical .
+	+ non_null_count: null .
+	+ range: 99990.0 .
+	+ mean: 35137.4745829185 .
+	+ min: 1003.0 .
+	+ std: 29797.9389962061 .
+
+# Map each class to a unique URI
+customer_city: ex:CustomerCity/{{customer_city}}{{FAIR_URI}}
+customer_id: ex:CustomerId/{{customer_id}}{{FAIR_URI}}
+customer_state: ex:CustomerState/{{customer_state}}{{FAIR_URI}}
+customer_unique_id: ex:CustomerUniqueId/{{customer_unique_id}}{{FAIR_URI}}
+customer_zip_code_prefix: ex:CustomerZipCodePrefix/{{customer_zip_code_prefix}}{{FAIR_URI}}
+
+# Map the object properties to the corresponding CSV columns
+entity_name: ex:EntityName/{{entity_name}}{{FAIR_URI}}
+data_property_name: ex:DataPropertyName/{{data_property_name}}{{FAIR_URI}}
+
+# Add additional mappings for each class
+* class_entity:
+	+ subclass: entity_name .
+	+ map: ex:EntityName/{{entity_name}}{{FAIR_URI}}
+* entity_name:
+	+ domain: class_entity .
+	+ range: text .
+	+ map: ex:EntityName/{{entity_name}}{{FAIR_URI}}
+
+# Define the CSV file reference
+rml:logicalSource [
+   rml:source "{csv_data}";
+   rml:referenceFormulation ql:CSV
+]
+
+Note: The above RML mapping defines the ontology for the provided JSON data and generates a CSV file with the appropriate column names and data types. Please ensure that the CSV file is properly formatted and contains the necessary data for the ontology mapping.

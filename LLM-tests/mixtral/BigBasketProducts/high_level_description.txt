@@ -1,0 +1,38 @@
+**Foundational Prefix:**
+<prefix rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<prefix rdfs="http://www.w3.org/2000/01/rdf-schema#">
+<prefix owl="http://www.w3.org/2002/07/owl#">
+<prefix base_ontology="https://base_ontology.com#">
+
+**Data Description:**
+1. Absolute\_Url: text - the absolute URL of a product - a string of characters representing a web address
+2. Brand: text - the brand of a product - a string of characters representing the brand name
+3. Category: text - the category of a product - a string of characters representing the category name
+4. Image\_Url: text - the image URL of a product - a string of characters representing a web address for the product image
+5. ProductName: text - the name of a product - a string of characters representing the product name
+6. Quantity: text - the quantity of a product - a string of characters representing the quantity
+7. SubCategory: text - the subcategory of a product - a string of characters representing the subcategory name
+8. DiscountPrice: Numerical - the discounted price of a product - real number, non-negative, representing the price after discount
+9. Price: Numerical - the price of a product - real number, non-negative, representing the original price
+
+**Classes:**
+1. Product: owl:Class
+
+**Subclasses:**
+1. ProductType: subclass of Product
+2. ProductImage: subclass of Product
+
+**Object Properties:**
+1. hasType: Product - ProductType
+2. hasImage: Product - ProductImage
+
+**Data Type Properties:**
+1. hasUrl: Product - rdf:Resource
+2. hasName: Product - rdf:Resource
+3. hasCategory: Product - rdf:Resource
+4. hasSubCategory: Product - rdf:Resource
+5. hasQuantity: Product - rdf:Resource
+6. hasDiscountPrice: Product - rdf:Resource
+7. hasPrice: Product - rdf:Resource
+
+Note: The rdf:Resource type is used for the ranges of the data type properties to indicate that the values are resources, such as URLs or strings.

@@ -1,0 +1,125 @@
+ Here is the TURTLE ontology for the provided data and schema:
+
+@prefix base: <https://base_ontology.com/>
+@prefix product: <https://product_ontology.com/>
+
+# Classes
+
+## class_entity
+
+* Subclasses:
+	+ entity_name: subclass of -> class_entity
+
+### object_property_name
+
+* domain: text
+* range: domain - range
+
+### data_property_name
+
+* domain: text
+* range: domain - range
+
+# Classes
+
+## class_entity
+
+* Subclasses:
+	+ entity_name: subclass of -> class_entity
+
+### object_property_name
+
+* domain: text
+* range: text - text
+
+### data_property_name
+
+* domain: text
+* range: text - text
+
+# Data Properties
+
+### Timestamp
+
+* domain: text
+* range: any valid timestamp
+
+### UserId
+
+* domain: text
+* range: any valid text
+
+# Object Properties
+
+### ProductId
+
+* domain: text
+* range: any valid text
+
+### Rating
+
+* domain: categorical
+* range: 1-5
+
+### Timestamp
+
+* domain: text
+* range: any valid timestamp
+
+### UserId
+
+* domain: text
+* range: any valid text
+
+# Classes
+
+## class_entity
+
+* Subclasses:
+	+ entity_name: subclass of -> class_entity
+
+### object_property_name
+
+* domain: text
+* range: text - text
+
+### data_property_name
+
+* domain: text
+* range: text - text
+
+# Data Properties
+
+### Timestamp
+
+* domain: text
+* range: any valid timestamp
+
+### UserId
+
+* domain: text
+* range: any valid text
+
+# Object Properties
+
+### ProductId
+
+* domain: text
+* range: any valid text
+
+### Rating
+
+* domain: categorical
+* range: 1-5
+
+### Timestamp
+
+* domain: text
+* range: any valid timestamp
+
+### UserId
+
+* domain: text
+* range: any valid text
+
+Note: The above ontology is generated based on the provided JSON data table and schema description. The ontology includes classes, object properties, and data properties that are defined in the schema. The ontology is structured in a logical manner, with classes and their corresponding object and data properties interconnected as suggested in the schema.

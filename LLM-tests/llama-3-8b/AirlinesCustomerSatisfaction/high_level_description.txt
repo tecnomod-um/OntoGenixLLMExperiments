@@ -1,0 +1,87 @@
+https://base_ontology.com#ontology
+
+**Data Description:**
+
+1. Age: Numerical - Age of the customer - 0-85
+2. Arrival Delay in Minutes: Numerical - Time taken for arrival - 0-1584
+3. Baggage handling: Categorical - Handling of baggage - 1-5
+4. Checkin service: Categorical - Check-in service - 0-5
+5. Cleanliness: Categorical - Cleanliness - 0-5
+6. Departure Delay in Minutes: Numerical - Time taken for departure - 0-1592
+7. Departure/Arrival time convenient: Categorical - Convenience of time - 0-5
+8. Ease of Online booking: Categorical - Ease of online booking - 0-5
+9. Flight Distance: Numerical - Distance of flight - 50-6951
+10. Food and drink: Categorical - Food and drink services - 0-5
+11. Gate location: Categorical - Gate location - 0-5
+12. Inflight entertainment: Categorical - In-flight entertainment - 0-5
+13. Inflight wifi service: Categorical - In-flight wifi service - 0-5
+14. Leg room service: Categorical - Leg room service - 0-5
+15. On-board service: Categorical - On-board service - 0-5
+16. Online boarding: Categorical - Online boarding - 0-5
+17. Online support: Categorical - Online support - 0-5
+18. Seat comfort: Categorical - Seat comfort - 0-5
+19. Class: Categorical - Class of travel - 1-3
+20. Customer Type: Categorical - Type of customer - 1-2
+21. Gender: Categorical - Gender - 1-2
+22. Type of Travel: Categorical - Type of travel - 1-2
+23. satisfaction: Categorical - Satisfaction - 1-2
+
+**Classes:**
+
+1. class_entity
+
+**Subclasses:**
+
+1. Age: subclass of -> class_entity
+2. Arrival Delay in Minutes: subclass of -> class_entity
+3. Baggage handling: subclass of -> class_entity
+4. Checkin service: subclass of -> class_entity
+5. Cleanliness: subclass of -> class_entity
+6. Departure Delay in Minutes: subclass of -> class_entity
+7. Departure/Arrival time convenient: subclass of -> class_entity
+8. Ease of Online booking: subclass of -> class_entity
+9. Flight Distance: subclass of -> class_entity
+10. Food and drink: subclass of -> class_entity
+11. Gate location: subclass of -> class_entity
+12. Inflight entertainment: subclass of -> class_entity
+13. Inflight wifi service: subclass of -> class_entity
+14. Leg room service: subclass of -> class_entity
+15. On-board service: subclass of -> class_entity
+16. Online boarding: subclass of -> class_entity
+17. Online support: subclass of -> class_entity
+18. Seat comfort: subclass of -> class_entity
+19. Class: subclass of -> class_entity
+20. Customer Type: subclass of -> class_entity
+21. Gender: subclass of -> class_entity
+22. Type of Travel: subclass of -> class_entity
+23. satisfaction: subclass of -> class_entity
+
+**Object Properties:**
+
+1. hasAge: domain - class_entity, range - Age
+2. hasArrivalDelay: domain - class_entity, range - Arrival Delay in Minutes
+3. hasBaggageHandling: domain - class_entity, range - Baggage handling
+4. hasCheckinService: domain - class_entity, range - Checkin service
+5. hasCleanliness: domain - class_entity, range - Cleanliness
+6. hasDepartureDelay: domain - class_entity, range - Departure Delay in Minutes
+7. hasDepartureArrivalConvenience: domain - class_entity, range - Departure/Arrival time convenient
+8. hasEaseOfOnlineBooking: domain - class_entity, range - Ease of Online booking
+9. hasFlightDistance: domain - class_entity, range - Flight Distance
+10. hasFoodAndDrink: domain - class_entity, range - Food and drink
+11. hasGateLocation: domain - class_entity, range - Gate location
+12. hasInflightEntertainment: domain - class_entity, range - Inflight entertainment
+13. hasInflightWifiService: domain - class_entity, range - Inflight wifi service
+14. hasLegRoomService: domain - class_entity, range - Leg room service
+15. hasOnboardService: domain - class_entity, range - On-board service
+16. hasOnlineBoarding: domain - class_entity, range - Online boarding
+17. hasOnlineSupport: domain - class_entity, range - Online support
+18. hasSeatComfort: domain - class_entity, range - Seat comfort
+19. hasClass: domain - class_entity, range - Class
+20. hasCustomerType: domain - class_entity, range - Customer Type
+21. hasGender: domain - class_entity, range - Gender
+22. hasTypeOfTravel: domain - class_entity, range - Type of Travel
+23. hasSatisfaction: domain - class_entity, range - satisfaction
+
+**Data Type Properties:**
+
+1. hasDataType: domain - class_entity, range - Numerical/Categorical

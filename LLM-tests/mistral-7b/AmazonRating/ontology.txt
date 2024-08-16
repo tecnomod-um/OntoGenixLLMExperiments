@@ -1,0 +1,82 @@
+@prefix : <https://myontology.com/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl/> .
+
+:class_entity a owl:Class .
+
+:ProductId a rdfs:DatatypeProperty ;
+rdfs:domain :class_entity ;
+rdfs:range rdf:String ;
+rdfs:subPropertyOf owl:hasValue .
+
+:Rating a rdfs:DatatypeProperty ;
+rdfs:domain :class_entity ;
+rdfs:range :RatingValue .
+
+:Timestamp a rdfs:DatatypeProperty ;
+rdfs:domain :class_entity ;
+rdfs:range rdf:String ;
+rdfs:subPropertyOf owl:hasValue .
+
+:UserId a rdfs:DatatypeProperty ;
+rdfs:domain :class_entity ;
+rdfs:range rdf:String ;
+rdfs:subPropertyOf owl:hasValue .
+
+:Product a owl:Class .
+
+:RatingValue a owl:Class .
+
+:Time a owl:Class .
+
+:User a owl:Class .
+
+:entity_name a owl:Class ;
+rdfs:subclassOf :class_entity .
+
+:ProductId hasEntityNameValue rdf:id "ProductId" ;
+rdfs:domain :ProductId ;
+rdfs:range rdf:String .
+
+:Rating hasEntityNameValue rdf:id "Rating" ;
+rdfs:domain :Rating ;
+rdfs:range rdf:String .
+
+:Timestamp hasEntityNameValue rdf:id "Timestamp" ;
+rdfs:domain :Timestamp ;
+rdfs:range rdf:String .
+
+:UserId hasEntityNameValue rdf:id "UserId" ;
+rdfs:domain :UserId ;
+rdfs:range rdf:String .
+
+:class_entity :hasProductId rdf:id "hasProductId" ;
+rdfs:domain :class_entity ;
+rdfs:range :ProductId ;
+rdfs:subPropertyOf rdfs:propertyChain [ a rdfs:PropertyChain ;
+rdfs:property [ a rdf:Property ; rdfs:domain :class_entity ; rdfs:range :Product ] ] .
+
+:class_entity :hasRating rdf:id "hasRating" ;
+rdfs:domain :class_entity ;
+rdfs:range :RatingValue ;
+rdfs:subPropertyOf rdfs:propertyChain [ a rdfs:PropertyChain ;
+rdfs:property [ a rdf:Property ; rdfs:domain :class_entity ; rdfs:range :Rating ] ] .
+
+:class_entity :hasTimestamp rdf:id "hasTimestamp" ;
+rdfs:domain :class_entity ;
+rdfs:range :Time ;
+rdfs:subPropertyOf rdfs:propertyChain [ a rdfs:PropertyChain ;
+rdfs:property [ a rdf:Property ; rdfs:domain :class_entity ; rdfs:range :Time ] ] .
+
+:class_entity :hasUserId rdf:id "hasUserId" ;
+rdfs:domain :class_entity ;
+rdfs:range :User ;
+rdfs:subPropertyOf rdfs:propertyChain [ a rdfs:PropertyChain ;
+rdfs:property [ a rdf:Property ; rdfs:domain :class_entity ; rdfs:range :User ] ] .
+
+:entity_name :hasEntityName rdf:id "hasEntityName" ;
+rdfs:domain :entity_name ;
+rdfs:range rdf:String ;
+rdfs:subPropertyOf rdfs:propertyChain [ a rdfs:PropertyChain ;
+rdfs:property [ a rdf:Property ; rdfs:domain :entity_name ; rdfs:range rdf:String ] ] .

@@ -1,0 +1,136 @@
+@prefix base: <https://base_ontology.com/>
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns/>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema/>
+@prefix owl: <http://www.w3.org/2002/07/owl#>
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#> rdf:namespace base:
+
+class_entity a owl:Class ;
+rdfs:subClassOf class_entity .
+
+Country a owl:Class ;
+rdfs:subClassOf class_entity ;
+rdf:label "Country" .
+
+Description a owl:Class ;
+rdfs:subClassOf class_entity ;
+rdf:label "Description" .
+
+InvoiceDate a owl:Class ;
+rdfs:subClassOf class_entity ;
+rdf:label "InvoiceDate" .
+
+InvoiceNo a owl:Class ;
+rdfs:subClassOf class_entity ;
+rdf:label "InvoiceNo" .
+
+StockCode a owl:Class ;
+rdfs:subClassOf class_entity ;
+rdf:label "StockCode" .
+
+CustomerID a owl:Class ;
+rdfs:subClassOf class_entity ;
+rdf:label "CustomerID" .
+
+Quantity a owl:Class ;
+rdfs:subClassOf class_entity ;
+rdf:label "Quantity" .
+
+UnitPrice a owl:Class ;
+rdfs:subClassOf class_entity ;
+rdf:label "UnitPrice" .
+
+entity_name a owl:Class ;
+rdfs:subClassOf class_entity ;
+rdf:label "entity_name" .
+
+hasCountry a rdf:Property ;
+domain class_entity ;
+range Country ;
+rdf:label "hasCountry" .
+
+hasDescription a rdf:Property ;
+domain class_entity ;
+range Description ;
+rdf:label "hasDescription" .
+
+hasInvoiceDate a rdf:Property ;
+domain class_entity ;
+range InvoiceDate ;
+rdf:label "hasInvoiceDate" .
+
+hasInvoiceNo a rdf:Property ;
+domain class_entity ;
+range InvoiceNo ;
+rdf:label "hasInvoiceNo" .
+
+hasStockCode a rdf:Property ;
+domain class_entity ;
+range StockCode ;
+rdf:label "hasStockCode" .
+
+hasCustomerID a rdf:Property ;
+domain class_entity ;
+range CustomerID ;
+rdf:label "hasCustomerID" .
+
+hasQuantity a rdf:Property ;
+domain class_entity ;
+range Quantity ;
+rdf:label "hasQuantity" .
+
+hasUnitPrice a rdf:Property ;
+domain class_entity ;
+range UnitPrice ;
+rdf:label "hasUnitPrice" .
+
+hasName a rdf:Property ;
+domain entity_name ;
+range rdfs:Literal ;
+rdf:typedBy rdf:XMLSchema datatype "http://www.w3.org/2001/XMLSchema#string" ;
+rdf:label "hasName" .
+
+name a rdf:Property ;
+domain Country ;
+range rdfs:Literal ;
+rdf:typedBy rdf:XMLSchema datatype "http://www.w3.org/2001/XMLSchema#string" ;
+rdf:label "name" .
+
+name a rdf:Property ;
+domain Description ;
+range rdfs:Literal ;
+rdf:typedBy rdf:XMLSchema datatype "http://www.w3.org/2001/XMLSchema#string" ;
+rdf:label "name" .
+
+name a rdf:Property ;
+domain InvoiceDate ;
+range rdfs:Literal ;
+rdf:typedBy rdf:XMLSchema datatype "http://www.w3.org/2001/XMLSchema#string" ;
+rdf:label "name" .
+
+name a rdf:Property ;
+domain InvoiceNo ;
+range rdfs:Literal ;
+rdf:typedBy rdf:XMLSchema datatype "http://www.w3.org/2001/XMLSchema#string" ;
+rdf:label "name" .
+
+name a rdf:Property ;
+domain StockCode ;
+range rdfs:Literal ;
+rdf:typedBy rdf:XMLSchema datatype "http://www.w3.org/2001/XMLSchema#string" ;
+rdf:label "name" .
+
+name a rdf:Property ;
+domain CustomerID ;
+range xsd:int ;
+rdf:label "name" .
+
+name a rdf:Property ;
+domain Quantity ;
+range xsd:int ;
+rdf:label "name" .
+
+name a rdf:Property ;
+domain UnitPrice ;
+range xsd:float ;
+rdf:label "name" .

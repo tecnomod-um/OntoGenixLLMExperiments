@@ -1,0 +1,71 @@
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#>, <http://www.w3.org/2000/01/rdf-schema#>, <http://www.w3.org/2002/07/owl#>, <https://base_ontology.com#>, <http://www.w3.org/2001/XMLSchema#>
+
+owl:Ontology rdf:about "https://base_ontology.com/customer_data" ;
+   owl:versionInfo "Created by AI model"^^xsd:string .
+
+class_entity owl:Class .
+
+customer owl:Class ;
+   rdfs:subClassOf class_entity ;
+   rdfs:comment "Subclass of all class_entity related to customer data" .
+
+city owl:Class ;
+   rdfs:subClassOf class_entity ;
+   rdfs:comment "Subclass of class_entity representing city" .
+
+state owl:Class ;
+   rdfs:subClassOf class_entity ;
+   rdfs:comment "Subclass of class_entity representing state" .
+
+id owl:Class ;
+   rdfs:subClassOf class_entity ;
+   rdfs:comment "Subclass of class_entity representing id" .
+
+zip_code owl:Class ;
+   rdfs:subClassOf class_entity ;
+   rdfs:comment "Subclass of class_entity representing zip code" .
+
+has_city owl:ObjectProperty ;
+   rdfs:domain customer ;
+   rdfs:range city ;
+   rdfs:comment "Object property from customer to city" .
+
+has_state owl:ObjectProperty ;
+   rdfs:domain customer ;
+   rdfs:range state ;
+   rdfs:comment "Object property from customer to state" .
+
+has_id owl:ObjectProperty ;
+   rdfs:domain customer ;
+   rdfs:range id ;
+   rdfs:comment "Object property from customer to id" .
+
+has_zip_code owl:ObjectProperty ;
+   rdfs:domain customer ;
+   rdfs:range zip_code ;
+   rdfs:comment "Object property from customer to zip code" .
+
+customer_city owl:DatatypeProperty ;
+   rdfs:domain customer ;
+   rdfs:range xsd:string ;
+   rdfs:comment "Datatype property from customer to text" .
+
+customer_id owl:DatatypeProperty ;
+   rdfs:domain customer ;
+   rdfs:range xsd:string ;
+   rdfs:comment "Datatype property from customer to text" .
+
+customer_state owl:DatatypeProperty ;
+   rdfs:domain customer ;
+   rdfs:range xsd:string ;
+   rdfs:comment "Datatype property from customer to text" .
+
+customer_unique_id owl:DatatypeProperty ;
+   rdfs:domain customer ;
+   rdfs:range xsd:string ;
+   rdfs:comment "Datatype property from customer to text" .
+
+customer_zip_code_prefix owl:DatatypeProperty ;
+   rdfs:domain zip_code ;
+   rdfs:range xsd:integer ;
+   rdfs:comment "Datatype property from zip code to numerical" .

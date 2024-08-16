@@ -1,0 +1,218 @@
+Here is the RML mapping for the given ontology:
+
+```rml
+@prefix rr: <http://www.w3.org/ns/r2-rdfize#>
+@prefix rml: <http://semweb.mimi.io/rml/1.1/>
+@prefix ql: <http://semweb.mimi.io/querylanguage/1.1/>
+@prefix ex: <https://base_ontology.com/>
+
+<#CountryEntity> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/country/{{Country}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:has_country;
+        rr:objectMap [
+            rr:parentTriplesMap <#country_data_type>
+        ];
+    ];
+
+<#DescriptionEntity> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/description/{{Description}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:has_description;
+        rr:objectMap [
+            rr:parentTriplesMap <#description_data_type>
+        ];
+    ];
+
+<#InvoiceDateEntity> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/invoice_date/{{InvoiceDate}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:has_invoice_date;
+        rr:objectMap [
+            rr:parentTriplesMap <#invoice_date_data_type>
+        ];
+    ];
+
+<#InvoiceNoEntity> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/invoice_no/{{InvoiceNo}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:has_invoice_no;
+        rr:objectMap [
+            rr:parentTriplesMap <#invoice_no_data_type>
+        ];
+    ];
+
+<#StockCodeEntity> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/stock_code/{{StockCode}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:has_stock_code;
+        rr:objectMap [
+            rr:parentTriplesMap <#stock_code_data_type>
+        ];
+    ];
+
+<#CustomerIDEntity> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/customer_id/{{CustomerID}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:has_customer_id;
+        rr:objectMap [
+            rr:parentTriplesMap <#customer_id_data_type>
+        ];
+    ];
+
+<#QuantityEntity> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/quantity/{{Quantity}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:has_quantity;
+        rr:objectMap [
+            rr:parentTriplesMap <#quantity_data_type>
+        ];
+    ];
+
+<#UnitPriceEntity> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/unit_price/{{UnitPrice}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:has_unit_price;
+        rr:objectMap [
+            rr:parentTriplesMap <#unit_price_data_type>
+        ];
+    ];
+
+<#country_data_type> a rr:TriplesMap;
+    rr:subjectMap [
+        rr:template ""
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:objectMap [
+            rr:parentTriplesMap xsd:string
+        ];
+    ];
+
+<#description_data_type> a rr:TriplesMap;
+    rr:subjectMap [
+        rr:template ""
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:objectMap [
+            rr:parentTriplesMap xsd:string
+        ];
+    ];
+
+<#invoice_date_data_type> a rr:TriplesMap;
+    rr:subjectMap [
+        rr:template ""
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:objectMap [
+            rr:parentTriplesMap xsd:string
+        ];
+    ];
+
+<#invoice_no_data_type> a rr:TriplesMap;
+    rr:subjectMap [
+        rr:template ""
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:objectMap [
+            rr:parentTriplesMap xsd:string
+        ];
+    ];
+
+<#stock_code_data_type> a rr:TriplesMap;
+    rr:subjectMap [
+        rr:template ""
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:objectMap [
+            rr:parentTriplesMap xsd:string
+        ];
+    ];
+
+<#customer_id_data_type> a rr:TriplesMap;
+    rr:subjectMap [
+        rr:template ""
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:objectMap [
+            rr:parentTriplesMap xsd:integer
+        ];
+    ];
+
+<#quantity_data_type> a rr:TriplesMap;
+    rr:subjectMap [
+        rr:template ""
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:objectMap [
+            rr:parentTriplesMap xsd:integer
+        ];
+    ];
+
+<#unit_price_data_type> a rr:TriplesMap;
+    rr:subjectMap [
+        rr:template ""
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:objectMap [
+            rr:parentTriplesMap xsd:integer
+        ];
+    ];
+```
+
+Note that the `rml:logicalSource` block references the CSV file as the source of the data. You will need to replace `{csv_data}` with the actual path to your CSV file.

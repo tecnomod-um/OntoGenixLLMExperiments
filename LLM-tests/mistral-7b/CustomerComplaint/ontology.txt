@@ -1,0 +1,280 @@
+@prefix : <https://myontology.com/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Company
+ a owl:Class ;
+ rdf:label "Company" .
+
+:Company
+ :non_null_count [ a rdf:DatatypeProperty ;
+                  rdf:propertyType :Company response to consumer ;
+                  rdf:domain :Company ] .
+
+:Company response to consumer
+ a owl:ObjectProperty ;
+ rdf:domain :Company ;
+ rdf:range :Consumer .
+
+:Consumer
+ a owl:Class ;
+ rdf:label "Consumer" .
+
+:Consumer
+ :non_null_count [ a rdf:DatatypeProperty ;
+                  rdf:propertyType :Consumer consent provided? ;
+                  rdf:domain :Consumer ] .
+
+:Consumer consent provided?
+ a owl:ObjectProperty ;
+ rdf:domain :Consumer ;
+ rdf:range :Categorical .
+
+:Consumer
+ :non_null_count [ a rdf:DatatypeProperty ;
+                  rdf:propertyType :Consumer disputed? ;
+                  rdf:domain :Consumer ] .
+
+:Consumer disputed?
+ a owl:ObjectProperty ;
+ rdf:domain :Consumer ;
+ rdf:range :Categorical .
+
+:Complaint
+ a owl:Class ;
+ rdf:label "Complaint" .
+
+:Issue
+ a owl:Class ;
+ rdf:label "Issue" ;
+ rdf:subClassOf :Complaint .
+
+:Product
+ a owl:Class ;
+ rdf:label "Product" ;
+ rdf:subClassOf :Complaint .
+
+:Company
+ :has response to consumer [ a owl:ObjectProperty ;
+                           rdf:domain :Company ;
+                           rdf:range :Consumer ] .
+
+:Company
+ :has public response [ a rdf:DatatypeProperty ;
+                       rdf:propertyType :Company public response :type ;
+                       rdf:domain :Company ] .
+
+:Consumer
+ :has complaint narrative [ a rdf:DatatypeProperty ;
+                           rdf:propertyType :Consumer complaint narrative :type ;
+                           rdf:domain :Consumer ] .
+
+:Consumer
+ :has consent provided [ a rdf:DatatypeProperty ;
+                         rdf:propertyType :Consumer consent provided? ;
+                         rdf:domain :Consumer ] .
+
+:Consumer
+ :has disputed [ a rdf:DatatypeProperty ;
+                rdf:propertyType :Consumer disputed? ;
+                rdf:domain :Consumer ] .
+
+:Date received
+ a owl:Class ;
+ rdf:label "Date received" ;
+ rdf:subClassOf :Complaint .
+
+:Date sent to company
+ a owl:Class ;
+ rdf:label "Date sent to company" ;
+ rdf:subClassOf :Complaint .
+
+:Complaint
+ :has received [ a rdf:DatatypeProperty ;
+                rdf:propertyType :Date received ;
+                rdf:domain :Complaint ] .
+
+:Complaint
+ :has sent to company [ a rdf:DatatypeProperty ;
+                       rdf:propertyType :Date sent to company ;
+                       rdf:domain :Complaint ] .
+
+:Company
+ :has public response [ a rdf:DatatypeProperty ;
+                       rdf:propertyType :Company public response :type ;
+                       rdf:domain :Company ] .
+
+:Issue
+ :non_null_count [ a rdf:DatatypeProperty ;
+                  rdf:propertyType :Issue ;
+                  rdf:domain :Issue ] .
+
+:Product
+ :non_null_count [ a rdf:DatatypeProperty ;
+                  rdf:propertyType :Product ;
+                  rdf:domain :Product ] .
+
+:State
+ a owl:Class ;
+ rdf:label "State" ;
+ rdf:subClassOf :Complaint .
+
+:Sub-issue
+ a owl:Class ;
+ rdf:label "Sub-issue" ;
+ rdf:subClassOf :Complaint .
+
+:Sub-product
+ a owl:Class ;
+ rdf:label "Sub-product" ;
+ rdf:subClassOf :Complaint .
+
+:Company
+ :has product [ a rdf:ObjectProperty ;
+              rdf:domain :Company ;
+              rdf:range :Product ] .
+
+:Complaint
+ :has issue [ a rdf:ObjectProperty ;
+             rdf:domain :Complaint ;
+             rdf:range :Issue ] .
+
+:Complaint
+ :has state [ a rdf:ObjectProperty ;
+              rdf:domain :Complaint ;
+              rdf:range :State ] .
+
+:Complaint
+ :has sub-issue [ a rdf:ObjectProperty ;
+                rdf:domain :Complaint ;
+                rdf:range :Sub-issue ] .
+
+:Complaint
+ :has sub-product [ a rdf:ObjectProperty ;
+                   rdf:domain :Complaint ;
+                   rdf:range :Sub-product ] .
+
+:Complaint
+ :has submitted via [ a rdf:ObjectProperty ;
+                      rdf:domain :Complaint ;
+                      rdf:range :Categorical ] .
+
+:Complaint
+ :has tags [ a rdf:ObjectProperty ;
+             rdf:domain :Complaint ;
+             rdf:range :Categorical ] .
+
+:Complaint
+ :non_null_count [ a rdf:DatatypeProperty ;
+                  rdf:propertyType :Complaint ID ;
+                  rdf:domain :Complaint ] .
+
+:Categorical
+ a owl:Class ;
+ rdf:label "Categorical" .
+
+:Text
+ a owl:Class ;
+ rdf:label "Text" .
+
+:Date
+ a owl:Class ;
+ rdf:label "Date" ;
+ rdf:subClassOf :Text .
+
+:ZIP_code
+ a owl:Class ;
+ rdf:label "ZIP code" ;
+ rdf:subClassOf :Text .
+
+:Complaint_ID
+ a owl:Class ;
+ rdf:label "Complaint ID" ;
+ rdf:subClassOf :Text .
+
+:Company public response :type
+ a owl:DatatypeProperty ;
+ rdf:domain :Company ;
+ rdf:range :Text .
+
+:Company response to consumer :type
+ a owl:DatatypeProperty ;
+ rdf:domain :Company ;
+ rdf:range :Consumer .
+
+:Consumer complaint narrative :type
+ a owl:DatatypeProperty ;
+ rdf:domain :Consumer ;
+ rdf:range :Text .
+
+:Consumer consent provided? :type
+ a owl:DatatypeProperty ;
+ rdf:domain :Consumer ;
+ rdf:range :Categorical .
+
+:Consumer disputed? :type
+ a owl:DatatypeProperty ;
+ rdf:domain :Consumer ;
+ rdf:range :Categorical .
+
+:Date received :type
+ a owl:DatatypeProperty ;
+ rdf:domain :Date received ;
+ rdf:range :Text .
+
+:Date sent to company :type
+ a owl:DatatypeProperty ;
+ rdf:domain :Date sent to company ;
+ rdf:range :Text .
+
+:Issue :type
+ a owl:DatatypeProperty ;
+ rdf:domain :Issue ;
+ rdf:range :Text .
+
+:Product :type
+ a owl:DatatypeProperty ;
+ rdf:domain :Product ;
+ rdf:range :Text .
+
+:State :type
+ a owl:DatatypeProperty ;
+ rdf:domain :State ;
+ rdf:range :Text .
+
+:Sub-issue :type
+ a owl:DatatypeProperty ;
+ rdf:domain :Sub-issue ;
+ rdf:range :Text .
+
+:Sub-product :type
+ a owl:DatatypeProperty ;
+ rdf:domain :Sub-product ;
+ rdf:range :Text .
+
+:Submitted_via :type
+ a owl:DatatypeProperty ;
+ rdf:domain :Submitted_via ;
+ rdf:range :Categorical .
+
+:Tags :type
+ a owl:DatatypeProperty ;
+ rdf:domain :Tags ;
+ rdf:range :Categorical .
+
+:Timely_response? :type
+ a owl:DatatypeProperty ;
+ rdf:domain :Timely_response? ;
+ rdf:range :Categorical .
+
+:ZIP_code :type
+ a owl:DatatypeProperty ;
+ rdf:domain :ZIP_code ;
+ rdf:range :Text .
+
+:Complaint_ID :type
+ a owl:DatatypeProperty ;
+ rdf:domain :Complaint_ID ;
+ rdf:range xsd:integer .

@@ -1,0 +1,187 @@
+<prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> />
+<prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> />
+<prefix owl: <http://www.w3.org/2002/07/owl#> />
+<prefix onto: <https://base_ontology.com#> />
+<prefix rr: <http://www.w3.org/ns/r2rml#> />
+<prefix xsd: <http://www.w3.org/2001/XMLSchema#> />
+
+<TriplesMapEntity> a rr:TriplesMap;
+rml:logicalSource [
+rml:source "{csv\_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "https://base\_ontology.com/Complaint/{{FAIR\_URI}}" ;
+rr:class onto:Complaint
+];
+rr:predicateObjectMap [
+rr:predicate onto:hasCompany ;
+rr:objectMap [
+rr:parentTriplesMap <#TriplesMapEntity2>
+]
+],
+[
+rr:predicate onto:hasCompanyPublicResponse ;
+rr:objectMap [
+rr:parentTriplesMap <#TriplesMapEntity3>
+]
+],
+[
+rr:predicate onto:hasCompanyResponseToConsumer ;
+rr:objectMap [
+rr:parentTriplesMap <#TriplesMapEntity4>
+]
+],
+[
+rr:predicate onto:hasConsumerComplaintNarrative ;
+rr:objectMap [
+rr:parentTriplesMap <#TriplesMapEntity5>
+]
+],
+[
+rr:predicate onto:hasConsumerConsentProvided ;
+rr:objectMap [
+rr:parentTriplesMap <#TriplesMapEntity6>
+]
+],
+[
+rr:predicate onto:hasConsumerDisputed ;
+rr:objectMap [
+rr:parentTriplesMap <#TriplesMapEntity7>
+]
+],
+[
+rr:predicate onto:hasDateReceived ;
+rr:objectMap [
+rr:parentTriplesMap <#TriplesMapEntity8>
+]
+],
+[
+rr:predicate onto:hasDateSentToCompany ;
+rr:objectMap [
+rr:parentTriplesMap <#TriplesMapEntity9>
+]
+],
+[
+rr:predicate onto:hasIssue ;
+rr:objectMap [
+rr:parentTriplesMap <#TriplesMapEntity10>
+]
+],
+[
+rr:predicate onto:hasProduct ;
+rr:objectMap [
+rr:parentTriplesMap <#TriplesMapEntity11>
+]
+]
+.
+
+<TriplesMapEntity2> a rr:TriplesMap;
+rml:logicalSource [
+rml:source "{csv\_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "Company/{{Company}}{{FAIR\_URI}}" ;
+rr:class onto:Company
+]
+.
+
+<TriplesMapEntity3> a rr:TriplesMap;
+rml:logicalSource [
+rml:source "{csv\_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "CompanyPublicResponse/{{CompanyPublicResponse}}{{FAIR\_URI}}" ;
+rr:class onto:CompanyPublicResponse
+]
+.
+
+<TriplesMapEntity4> a rr:TriplesMap;
+rml:logicalSource [
+rml:source "{csv\_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "CompanyResponseToConsumer/{{CompanyResponseToConsumer}}{{FAIR\_URI}}" ;
+rr:class onto:CompanyResponseToConsumer
+]
+.
+
+<TriplesMapEntity5> a rr:TriplesMap;
+rml:logicalSource [
+rml:source "{csv\_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "ConsumerComplaintNarrative/{{ConsumerComplaintNarrative}}{{FAIR\_URI}}" ;
+rr:class onto:ConsumerComplaintNarrative
+]
+.
+
+<TriplesMapEntity6> a rr:TriplesMap;
+rml:logicalSource [
+rml:source "{csv\_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "ConsumerConsentProvided/{{ConsumerConsentProvided}}{{FAIR\_URI}}" ;
+rr:class onto:ConsumerConsentProvided
+]
+.
+
+<TriplesMapEntity7> a rr:TriplesMap;
+rml:logicalSource [
+rml:source "{csv\_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "ConsumerDisputed/{{ConsumerDisputed}}{{FAIR\_URI}}" ;
+rr:class onto:ConsumerDisputed
+]
+.
+
+<TriplesMapEntity8> a rr:TriplesMap;
+rml:logicalSource [
+rml:source "{csv\_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "DateReceived/{{DateReceived}}{{FAIR\_URI}}" ;
+rr:class onto:DateReceived
+]
+.
+
+<TriplesMapEntity9> a rr:TriplesMap;
+rml:logicalSource [
+rml:source "{csv\_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "DateSentToCompany/{{DateSentToCompany}}{{FAIR\_URI}}" ;
+rr:class onto:DateSentToCompany
+]
+.
+
+<TriplesMapEntity10> a rr:TriplesMap;
+rml:logicalSource [
+rml:source "{csv\_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "Issue/{{Issue}}{{FAIR\_URI}}" ;
+rr:class onto:Issue
+]
+.
+
+<TriplesMapEntity11> a rr:TriplesMap;
+rml:logicalSource [
+rml:source "{csv\_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "Product/{{Product}}{{FAIR\_URI}}" ;
+rr:class onto:Product
+]
+.

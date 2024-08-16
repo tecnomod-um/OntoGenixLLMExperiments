@@ -1,0 +1,57 @@
+**Foundational Prefix:**
+<https://myontology.com/>, <http://www.w3.org/1999/02/22-rdf-syntax-ns/>, <http://www.w3.org/2000/01/rdf-schema/>, <http://www.w3.org/2002/07/owl/>
+
+**Data Description:**
+
+ProductId:
+1. ProductId
+2. type: Text
+3. possible range: Product
+
+Rating:
+1. Rating
+2. type: Categorical
+3. possible range: RatingValue
+
+Timestamp:
+1. Timestamp
+2. type: Text
+3. possible range: Time
+
+UserId:
+1. UserId
+2. type: Text
+3. possible range: User
+
+**classes:**
+
+class_entity:
+1. class_entity
+
+**subclasses:**
+
+entity_name:
+1. entity_name
+2. subclass of: class_entity
+
+**Object Properties:**
+
+class_entity:
+1. hasProductId: ProductId -> class_entity
+2. hasRating: RatingValue -> class_entity
+3. hasTimestamp: Time -> class_entity
+4. hasUserId: User -> class_entity
+
+entity_name:
+1. hasEntityName: Text -> entity_name
+
+**Data Type Properties:**
+
+class_entity:
+1. hasProductIdValue: DataProperty(ProductId) -> class_entity
+2. hasRatingValue: DataProperty(Rating) -> class_entity
+3. hasTimestampValue: DataProperty(Timestamp) -> class_entity
+4. hasUserIdValue: DataProperty(UserId) -> class_entity
+
+entity_name:
+1. hasEntityNameValue: DataProperty(Text) -> entity_name

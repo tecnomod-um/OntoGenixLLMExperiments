@@ -1,0 +1,130 @@
+@prefix base: <https://base_ontology.com/>
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns/>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema/>
+@prefix owl: <http://www.w3.org/2002/07/owl#>
+
+:class_entity a owl:Class .
+
+:entity_name a owl:Class ;
+rdfs:subClassOf :class_entity .
+
+:Absolute_Url a rdf:Property ;
+rdfs:domain :class_entity ;
+rdfs:range rdf:Resource .
+
+:Brand a rdf:Property ;
+rdfs:domain :class_entity ;
+rdfs:range rdfs:Literal .
+
+:Category a rdf:Property ;
+rdfs:domain :class_entity ;
+rdfs:range rdfs:Literal .
+
+:Image_Url a rdf:Property ;
+rdfs:domain :class_entity ;
+rdfs:range rdf:Resource .
+
+:ProductName a rdf:Property ;
+rdfs:domain :class_entity ;
+rdfs:range rdfs:Literal .
+
+:Quantity a rdf:Property ;
+rdfs:domain :class_entity ;
+rdfs:range rdfs:Literal .
+
+:SubCategory a rdf:Property ;
+rdfs:domain :class_entity ;
+rdfs:range rdfs:Literal .
+
+:DiscountPrice a rdfs:Property ;
+rdfs:domain :class_entity ;
+rdfs:range rdfs:Real .
+
+:Price a rdfs:Property ;
+rdfs:domain :class_entity ;
+rdfs:range rdfs:Real .
+
+:class_entity owl:equivalentClass [
+rdfs:subClassOf [ rdfs:Class ;
+rdfs:label "class_entity" ] ] .
+
+:entity_name owl:equivalentClass [
+rdfs:subClassOf [ :class_entity ;
+rdfs:label "entity_name" ] ] .
+
+:class_entity rdfs:subClassOf owl:NamedIndividual .
+
+base:has_image a owl:ObjectProperty ;
+rdfs:domain :class_entity ;
+rdfs:range :Image_Url ;
+rdfs:label "has_image" .
+
+base:has_brand a owl:ObjectProperty ;
+rdfs:domain :class_entity ;
+rdfs:range :Brand ;
+rdfs:label "has_brand" .
+
+base:has_category a owl:ObjectProperty ;
+rdfs:domain :class_entity ;
+rdfs:range :Category ;
+rdfs:label "has_category" .
+
+base:has_product_name a owl:ObjectProperty ;
+rdfs:domain :class_entity ;
+rdfs:range :ProductName ;
+rdfs:label "has_product_name" .
+
+base:has_quantity a owl:ObjectProperty ;
+rdfs:domain :class_entity ;
+rdfs:range :Quantity ;
+rdfs:label "has_quantity" .
+
+base:has_subcategory a owl:ObjectProperty ;
+rdfs:domain :class_entity ;
+rdfs:range :SubCategory ;
+rdfs:label "has_subcategory" .
+
+base:has_discount_price a owl:ObjectProperty ;
+rdfs:domain :class_entity ;
+rdfs:range :DiscountPrice ;
+rdfs:label "has_discount_price" .
+
+base:has_price a owl:ObjectProperty ;
+rdfs:domain :class_entity ;
+rdfs:range :Price ;
+rdfs:label "has_price" .
+
+base:has_brand a owl:DatatypeProperty ;
+rdfs:domain :class_entity ;
+rdfs:range rdfs:Literal ;
+rdfs:label "has_brand" .
+
+base:has_category a owl:DatatypeProperty ;
+rdfs:domain :class_entity ;
+rdfs:range rdfs:Literal ;
+rdfs:label "has_category" .
+
+base:has_product_name a owl:DatatypeProperty ;
+rdfs:domain :class_entity ;
+rdfs:range rdfs:Literal ;
+rdfs:label "has_product_name" .
+
+base:has_quantity a owl:DatatypeProperty ;
+rdfs:domain :class_entity ;
+rdfs:range rdfs:Literal ;
+rdfs:label "has_quantity" .
+
+base:has_subcategory a owl:DatatypeProperty ;
+rdfs:domain :class_entity ;
+rdfs:range rdfs:Literal ;
+rdfs:label "has_subcategory" .
+
+base:has_discount_price a owl:DatatypeProperty ;
+rdfs:domain :class_entity ;
+rdfs:range rdfs:Real ;
+rdfs:label "has_discount_price" .
+
+base:has_price a owl:DatatypeProperty ;
+rdfs:domain :class_entity ;
+rdfs:range rdfs:Real ;
+rdfs:label "has_price" .

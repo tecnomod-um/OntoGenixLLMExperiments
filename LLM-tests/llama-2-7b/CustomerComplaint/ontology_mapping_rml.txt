@@ -1,0 +1,134 @@
+ Here is the RML content for mapping the ontology to a CSV file:
+```rml
+@prefix ontology: <https://baseontology.com/>
+@prefix json: <https://json.schemastore.org/>
+
+### Classes
+
+### class_entity
+
+* rml:logicalSource [
+   rml:source "{csv_data}";
+   rml:referenceFormulation ql:CSV
+];
+
+* rr:subjectMap [
+   rr:template "EntityURI/{{Entity}}{{FAIR_URI}}";
+];
+
+* rr:predicateObjectMap [
+   rr:predicate ex:Property;
+   rr:objectMap [
+       rr:parentTriplesMap <#Property>
+   ];
+];
+
+### entity_name
+
+* rml:logicalSource [
+   rml:source "{csv_data}";
+   rml:referenceFormulation ql:CSV
+];
+
+* rr:subjectMap [
+   rr:template "EntityURI/{{Entity}}{{FAIR_URI}}";
+];
+
+* rr:predicateObjectMap [
+   rr:predicate ex:Property;
+   rr:objectMap [
+       rr:parentTriplesMap <#Property>
+   ];
+];
+
+### object_property_name
+
+* rml:logicalSource [
+   rml:source "{csv_data}";
+   rml:referenceFormulation ql:CSV
+];
+
+* rr:subjectMap [
+   rr:template "EntityURI/{{Entity}}{{FAIR_URI}}";
+];
+
+* rr:predicateObjectMap [
+   rr:predicate ex:Property;
+   rr:objectMap [
+       rr:parentTriplesMap <#Property>
+   ];
+];
+
+### data_property_name
+
+* rml:logicalSource [
+   rml:source "{csv_data}";
+   rml:referenceFormulation ql:CSV
+];
+
+* rr:subjectMap [
+   rr:template "EntityURI/{{Entity}}{{FAIR_URI}}";
+];
+
+* rr:predicateObjectMap [
+   rr:predicate ex:Property;
+   rr:objectMap [
+       rr:parentTriplesMap <#Property>
+   ];
+];
+
+# Additional mappings for entities
+
+* class_entity
+   + rr:subjectMap [
+       rr:template "EntityURI/{{Entity}}{{FAIR_URI}}";
+   ];
+   + rr:predicateObjectMap [
+       rr:predicate ex:Property;
+       rr:objectMap [
+           rr:parentTriplesMap <#Property>
+       ];
+   ];
+
+* entity_name
+   + rr:subjectMap [
+       rr:template "EntityURI/{{Entity}}{{FAIR_URI}}";
+   ];
+   + rr:predicateObjectMap [
+       rr:predicate ex:Property;
+       rr:objectMap [
+           rr:parentTriplesMap <#Property>
+       ];
+   ];
+
+* object_property_name
+   + rr:subjectMap [
+       rr:template "EntityURI/{{Entity}}{{FAIR_URI}}";
+   ];
+   + rr:predicateObjectMap [
+       rr:predicate ex:Property;
+       rr:objectMap [
+           rr:parentTriplesMap <#Property>
+       ];
+   ];
+
+* data_property_name
+   + rr:subjectMap [
+       rr:template "EntityURI/{{Entity}}{{FAIR_URI}}";
+   ];
+   + rr:predicateObjectMap [
+       rr:predicate ex:Property;
+       rr:objectMap [
+           rr:parentTriplesMap <#Property>
+       ];
+   ];
+```
+Note: The `rml` prefix is used to indicate that the content is in RML format. The `ontology` and `json` prefixes are used to indicate the ontology and JSON data sources, respectively. The `FAIR_URI` prefix is used to indicate the FAIR (Fair Data) URI prefix.
+
+In this RML content, we define mappings for each class, entity, property, and data type. We use the `rr` prefix to indicate that the content is in RR (Resource Description Framework) format. The `rr` prefix is used to indicate that the content is in RR format, and the `template` prefix is used to indicate the template for the subject and predicate maps.
+
+The mappings are defined using the `rr:subjectMap` and `rr:predicateObjectMap` blocks, which are used to define the subject and predicate maps, respectively. The `rr:subjectMap` block is used to define the subject map for a class, entity, property, or data type, and the `rr:predicateObjectMap` block is used to define the predicate object map for a class, entity, property, or data type.
+
+In addition to the mappings defined in the RML content, we also define additional mappings for each class, entity, property, and data type. These additional mappings are defined using the `rr:subjectMap` and `rr:predicateObjectMap` blocks, and they are used to provide additional mappings for each class, entity, property, and data type.
+
+Note that the `rml` prefix is used to indicate that the content is in RML format, and the `ontology` and `json` prefixes are used to indicate the ontology and JSON data sources, respectively. The `FAIR_URI` prefix is used to indicate the FAIR URI prefix.

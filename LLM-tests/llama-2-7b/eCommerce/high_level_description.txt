@@ -1,0 +1,52 @@
+ Foundational Prefix: <https://baseontology.com/#>
+
+Data Description:
+
+1. Country:
+	* Type: text
+	* Meaning: A country or geographical region with defined borders and sovereignty.
+	* Possible range: null, numerical, or text values.
+2. Description:
+	* Type: text
+	* Meaning: A brief description or summary of the data.
+	* Possible range: null, numerical, or text values.
+3. InvoiceDate:
+	* Type: text
+	* Meaning: The date the invoice was issued.
+	* Possible range: null, numerical, or text values.
+4. InvoiceNo:
+	* Type: text
+	* Meaning: The invoice number assigned to the invoice.
+	* Possible range: null, numerical, or text values.
+5. StockCode:
+	* Type: text
+	* Meaning: A unique code assigned to the stock item.
+	* Possible range: null, numerical, or text values.
+6. CustomerID:
+	* Type: Numerical
+	* Meaning: A unique identifier for the customer.
+	* Possible range: null, numerical values.
+7. Quantity:
+	* Type: Numerical
+	* Meaning: The quantity of stock items in the invoice.
+	* Possible range: null, numerical values.
+8. UnitPrice:
+	* Type: Numerical
+	* Meaning: The price of each stock item in the invoice.
+	* Possible range: null, numerical values.
+
+Classes:
+
+1. class_entity:
+	* Subclasses:
+		+ entity_name: subclass of -> class_entity
+
+Object Properties:
+
+1. object_property_name: domain - range
+
+Data Type Properties:
+
+1. data_property_name: domain - range
+
+Note: The above descriptions are based on the provided JSON data table, and the image (if provided) is not taken into account. The descriptions are generated to provide a structured understanding of the data, and the relationships between the columns and classes are highlighted.

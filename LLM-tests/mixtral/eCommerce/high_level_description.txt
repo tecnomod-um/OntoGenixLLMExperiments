@@ -1,0 +1,115 @@
+**Foundational Prefix:**
+
+`Prefix: base = <https://base_ontology.com#>`
+`Prefix: rdf = <http://www.w3.org/1999/02/22-rdf-syntax-ns#>`
+`Prefix: rdfs = <http://www.w3.org/2000/01/rdf-schema#>`
+`Prefix: owl = <http://www.w3.org/2002/07/owl#>
+
+**Data Description:**
+
+1. Country: type - text - Describes the country of origin for the invoice. Possible range: various countries.
+2. Description: type - text - Describes the product or service. Possible range: various textual descriptions.
+3. InvoiceDate: type - text - Describes the date when the invoice was generated. Possible range: various dates.
+4. InvoiceNo: type - text - Describes the unique identifier for the invoice. Possible range: various unique text strings.
+5. StockCode: type - text - Describes the stock code for the product or service. Possible range: various text strings.
+6. CustomerID: type - Numerical - Represents the unique identifier for the customer. Possible range: integers from 12346 to 18287.
+7. Quantity: type - Numerical - Describes the quantity of the product or service. Possible range: integers from -80995 to 80995.
+8. UnitPrice: type - Numerical - Describes the price per unit of the product or service. Possible range: integers from -11062 to 38970.
+
+**Classes:**
+
+1. Class: Invoice
+	* Subclass: base:Invoice
+
+**Subclasses:**
+
+1. Entity: Invoice
+	* Subclass: base:Invoice
+		+ Domain: base:Invoice
+		+ Range: rdf:Resource
+2. Entity: Country
+	* Subclass: base:Country
+		+ Domain: base:Invoice
+		+ Range: rdfs:Literal
+3. Entity: Description
+	* Subclass: base:Description
+		+ Domain: base:Invoice
+		+ Range: rdfs:Literal
+4. Entity: InvoiceDate
+	* Subclass: base:InvoiceDate
+		+ Domain: base:Invoice
+		+ Range: rdfs:Literal
+5. Entity: InvoiceNo
+	* Subclass: base:InvoiceNo
+		+ Domain: base:Invoice
+		+ Range: rdfs:Literal
+6. Entity: StockCode
+	* Subclass: base:StockCode
+		+ Domain: base:Invoice
+		+ Range: rdfs:Literal
+7. Entity: CustomerID
+	* Subclass: base:CustomerID
+		+ Domain: base:Invoice
+		+ Range: rdfs:Literal
+8. Entity: Quantity
+	* Subclass: base:Quantity
+		+ Domain: base:Invoice
+		+ Range: rdfs:Literal
+9. Entity: UnitPrice
+	* Subclass: base:UnitPrice
+		+ Domain: base:Invoice
+		+ Range: rdfs:Literal
+
+**Object Properties:**
+
+1. Property: base:hasCountry
+	* Domain: base:Invoice
+	* Range: base:Country
+2. Property: base:hasDescription
+	* Domain: base:Invoice
+	* Range: base:Description
+3. Property: base:hasInvoiceDate
+	* Domain: base:Invoice
+	* Range: base:InvoiceDate
+4. Property: base:hasInvoiceNo
+	* Domain: base:Invoice
+	* Range: base:InvoiceNo
+5. Property: base:hasStockCode
+	* Domain: base:Invoice
+	* Range: base:StockCode
+6. Property: base:hasCustomerID
+	* Domain: base:Invoice
+	* Range: base:CustomerID
+7. Property: base:hasQuantity
+	* Domain: base:Invoice
+	* Range: base:Quantity
+8. Property: base:hasUnitPrice
+	* Domain: base:Invoice
+	* Range: base:UnitPrice
+
+**Data Type Properties:**
+
+1. Property: base:Country
+	* Domain: base:Invoice
+	* Range: rdfs:Literal
+2. Property: base:Description
+	* Domain: base:Invoice
+	* Range: rdfs:Literal
+3. Property: base:InvoiceDate
+	* Domain: base:Invoice
+	* Range: rdfs:Literal
+4. Property: base:InvoiceNo
+	* Domain: base:Invoice
+	* Range: rdfs:Literal
+5. Property: base:StockCode
+	* Domain: base:Invoice
+	* Range: rdfs:Literal
+6. Property: base:CustomerID
+	* Domain: base:Invoice
+	* Range: rdfs:Literal
+7. Property: base:Quantity
+	* Domain: base:Invoice
+	* Range: rdfs:Literal
+8. Property: base:UnitPrice
+	* Domain: base:Invoice
+	* Range: rdfs:Literal

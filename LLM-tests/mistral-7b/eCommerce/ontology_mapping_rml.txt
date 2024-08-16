@@ -1,0 +1,135 @@
+<#CountryMapping> a rr:TriplesMap;
+rml:logicalSource [
+rml:source "{csv_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "<https://base_ontology.com/Country/{{CountryID}}>"
+];
+rr:predicateObjectMap [
+<#hasCountry>
+rr:predicate rdf:type rdf:Property;
+rr:objectMap [
+rr:template "<{base}:Country/{{CountryName}}>"
+]
+]
+];
+
+<#DescriptionMapping> a rr:TriplesMap;
+rml:logicalSource [
+rml:source "{csv_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "<https://base_ontology.com/Description/{{DescriptionID}}>"
+];
+rr:predicateObjectMap [
+<#hasDescription>
+rr:predicate rdf:type rdf:Property;
+rr:objectMap [
+rr:template "<{base}:Description/{{DescriptionText}}>"
+]
+]
+];
+
+<#InvoiceDateMapping> a rr:TriplesMap;
+rml:logicalSource [
+rml:source "{csv_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "<https://base_ontology.com/InvoiceDate/{{InvoiceID}}>"
+];
+rr:predicateObjectMap [
+<#hasInvoiceDate>
+rr:predicate rdf:type rdf:Property;
+rr:objectMap [
+rr:template "<{base}:InvoiceDate/{{InvoiceDate}}>"
+]
+]
+];
+
+<#InvoiceNoMapping> a rr:TriplesMap;
+rml:logicalSource [
+rml:source "{csv_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "<https://base_ontology.com/InvoiceNo/{{InvoiceID}}>"
+];
+rr:predicateObjectMap [
+<#hasInvoiceNo>
+rr:predicate rdf:type rdf:Property;
+rr:objectMap [
+rr:template "<{base}:InvoiceNo/{{InvoiceNumber}}>"
+]
+]
+];
+
+<#StockCodeMapping> a rr:TriplesMap;
+rml:logicalSource [
+rml:source "{csv_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "<https://base_ontology.com/StockCode/{{StockID}}>"
+];
+rr:predicateObjectMap [
+<#hasStockCode>
+rr:predicate rdf:type rdf:Property;
+rr:objectMap [
+rr:template "<{base}:StockCode/{{StockCode}}>"
+]
+]
+];
+
+<#CustomerIDMapping> a rr:TriplesMap;
+rml:logicalSource [
+rml:source "{csv_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "<https://base_ontology.com/CustomerID/{{CustomerID}}>"
+];
+rr:predicateObjectMap [
+<#hasCustomerID>
+rr:predicate rdf:type rdf:Property;
+rr:objectMap [
+rr:template "<{base}:CustomerID/{{CustomerName}}>"
+]
+]
+];
+
+<#QuantityMapping> a rr:TriplesMap;
+rml:logicalSource [
+rml:source "{csv_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "<https://base_ontology.com/Quantity/{{QuantityID}}>"
+];
+rr:predicateObjectMap [
+<#hasQuantity>
+rr:predicate rdf:type rdf:Property;
+rr:objectMap [
+rr:template "<{base}:Quantity/{{QuantityValue}}>"
+]
+]
+];
+
+<#UnitPriceMapping> a rr:TriplesMap;
+rml:logicalSource [
+rml:source "{csv_data}";
+rml:referenceFormulation ql:CSV
+];
+rr:subjectMap [
+rr:template "<https://base_ontology.com/UnitPrice/{{PriceID}}>"
+];
+rr:predicateObjectMap [
+<#hasUnitPrice>
+rr:predicate rdf:type rdf:Property;
+rr:objectMap [
+rr:template "<{base}:UnitPrice/{{UnitPriceValue}}>"
+]
+]
+];

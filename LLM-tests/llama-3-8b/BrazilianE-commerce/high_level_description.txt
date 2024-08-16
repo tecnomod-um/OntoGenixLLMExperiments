@@ -1,0 +1,32 @@
+Here is the synthesized description of the data:
+
+**Foundational Prefix:** https://base_ontology.com#, http://www.w3.org/1999/02/22-rdf-syntax-ns#, http://www.w3.org/2000/01/rdf-schema#, http://www.w3.org/2002/07/owl#
+
+**Data Description:**
+
+* customer_city: type - text, short description of the column data meaning - city name, possible range - any text
+* customer_id: type - text, short description of the column data meaning - customer identifier, possible range - any text
+* customer_state: type - text, short description of the column data meaning - state, possible range - any text
+* customer_unique_id: type - text, short description of the column data meaning - unique customer identifier, possible range - any text
+* customer_zip_code_prefix: type - Numerical, short description of the column data meaning - zip code prefix, possible range - numbers from 1003 to 99990
+
+**Classes:**
+
+1. class_entity
+
+**Subclasses:**
+
+1. entity_name: subclass of -> class_entity
+
+**Object Properties:**
+
+1. has_city: domain - class_entity, range - customer_city
+2. has_id: domain - class_entity, range - customer_id
+3. has_state: domain - class_entity, range - customer_state
+4. has_unique_id: domain - class_entity, range - customer_unique_id
+5. has_zip_code_prefix: domain - class_entity, range - customer_zip_code_prefix
+
+**Data Type Properties:**
+
+1. has_text_data: domain - class_entity, range - customer_city, customer_id, customer_state, customer_unique_id
+2. has_numerical_data: domain - class_entity, range - customer_zip_code_prefix

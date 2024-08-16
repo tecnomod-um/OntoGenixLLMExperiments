@@ -1,0 +1,220 @@
+Here is the RML mapping for the given ontology:
+
+@prefix rr: <http://www.w3.org/ns/r2-ontology#>.
+@prefix rml: <http://semweb.mimi.edu/rml/1.0#>.
+@prefix ql: <http://semweb.mimi.edu/ql/1.0#>.
+@prefix ex: <http://example.org/ontology#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<#TriplesMapEntity> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://base_ontology.com#{EntityName}/{FAIR_URI}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate <http://base_ontology.com#has_absolute_url>;
+        rr:objectMap [
+            rr:parentTriplesMap <#AbsoluteUrl>
+        ];
+    ],
+    rr:predicateObjectMap [
+        rr:predicate <http://base_ontology.com#has_brand>;
+        rr:objectMap [
+            rr:parentTriplesMap <#Brand>
+        ];
+    ],
+    rr:predicateObjectMap [
+        rr:predicate <http://base_ontology.com#has_category>;
+        rr:objectMap [
+            rr:parentTriplesMap <#Category>
+        ];
+    ],
+    rr:predicateObjectMap [
+        rr:predicate <http://base_ontology.com#has_image_url>;
+        rr:objectMap [
+            rr:parentTriplesMap <#Image Url>
+        ];
+    ],
+    rr:predicateObjectMap [
+        rr:predicate <http://base_ontology.com#has_product_name>;
+        rr:objectMap [
+            rr:parentTriplesMap <#ProductName>
+        ];
+    ],
+    rr:predicateObjectMap [
+        rr:predicate <http://base_ontology.com#has_quantity>;
+        rr:objectMap [
+            rr:parentTriplesMap <#Quantity>
+        ];
+    ],
+    rr:predicateObjectMap [
+        rr:predicate <http://base_ontology.com#has_subcategory>;
+        rr:objectMap [
+            rr:parentTriplesMap <#SubCategory>
+        ];
+    ],
+    rr:predicateObjectMap [
+        rr:predicate <http://base_ontology.com#has_discount_price>;
+        rr:objectMap [
+            rr:parentTriplesMap <#DiscountPrice>
+        ];
+    ],
+    rr:predicateObjectMap [
+        rr:predicate <http://base_ontology.com#has_price>;
+        rr:objectMap [
+            rr:parentTriplesMap <#Price>
+        ];
+    ];
+
+<#AbsoluteUrl> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://base_ontology.com#{EntityName}/{FAIR_URI}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rr:subject;
+        rr:objectMap [
+            rr:parentTriplesMap <#EntityName>
+        ];
+    ];
+
+<#EntityName> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://base_ontology.com#{EntityName}/{FAIR_URI}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [
+            rr:parentTriplesMap <#EntityName>
+        ];
+    ];
+
+<#Brand> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://base_ontology.com#{EntityName}/{FAIR_URI}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [
+            rr:parentTriplesMap <#Brand>
+        ];
+    ];
+
+<#Category> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://base_ontology.com#{EntityName}/{FAIR_URI}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [
+            rr:parentTriplesMap <#Category>
+        ];
+    ];
+
+<#Image Url> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://base_ontology.com#{EntityName}/{FAIR_URI}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rr:subject;
+        rr:objectMap [
+            rr:parentTriplesMap <#EntityName>
+        ];
+    ];
+
+<#ProductName> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://base_ontology.com#{EntityName}/{FAIR_URI}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [
+            rr:parentTriplesMap <#ProductName>
+        ];
+    ];
+
+<#Quantity> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://base_ontology.com#{EntityName}/{FAIR_URI}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rr:subject;
+        rr:objectMap [
+            rr:parentTriplesMap <#EntityName>
+        ];
+    ];
+
+<#SubCategory> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://base_ontology.com#{EntityName}/{FAIR_URI}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [
+            rr:parentTriplesMap <#SubCategory>
+        ];
+    ];
+
+<#DiscountPrice> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://base_ontology.com#{EntityName}/{FAIR_URI}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rr:subject;
+        rr:objectMap [
+            rr:parentTriplesMap <#EntityName>
+        ];
+    ];
+
+<#Price> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://base_ontology.com#{EntityName}/{FAIR_URI}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rr:subject;
+        rr:objectMap [
+            rr:parentTriplesMap <#EntityName>
+        ];
+    ];

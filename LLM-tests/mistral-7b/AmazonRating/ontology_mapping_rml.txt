@@ -1,0 +1,239 @@
+<#ClassMap_class_entity> a rr:TriplesMap;
+<#ClassMap_class_entity> rml:logicalSource [
+rml:source "<csv_file>.csv";
+rml:referenceFormulation ql:CSV
+];
+<#ClassMap_class_entity> rr:subjectMap [
+rr:template "<https://myontology.com/class_entity/{{ProductId}}{{FAIR_URI}}>"
+];
+<#ClassMap_class_entity> rr:predicateObjectMap [
+<#ClassMap_ProductId>
+];
+
+<#ClassMap_ProductId> a rr:TriplesMap;
+<#ClassMap_ProductId> rml:logicalSource [
+rml:source "<csv_file>.csv";
+rml:referenceFormulation ql:CSV
+];
+<#ClassMap_ProductId> rr:subjectMap [
+rr:template "<https://myontology.com/ProductId/{{ProductId}}>"
+];
+<#ClassMap_ProductId> rr:predicateObjectMap [
+<#Property_hasProductIdValue>
+];
+
+<#ClassMap_entity_name> a rr:TriplesMap;
+<#ClassMap_entity_name> rml:logicalSource [
+rml:source "<csv_file>.csv";
+rml:referenceFormulation ql:CSV
+];
+<#ClassMap_entity_name> rr:subjectMap [
+rr:template "<https://myontology.com/entity_name/{{EntityName}}{{FAIR_URI}}>"
+];
+<#ClassMap_entity_name> rr:predicateObjectMap [
+<#Property_hasEntityNameValue>
+];
+
+<#ClassMap_class_entity_hasProductId> a rr:TriplesMap;
+<#ClassMap_class_entity_hasProductId> rml:logicalSource [
+rml:source "<csv_file>.csv";
+rml:referenceFormulation ql:CSV
+];
+<#ClassMap_class_entity_hasProductId> rr:subjectMap [
+rr:template "<https://myontology.com/class_entity/{{ProductId}}{{FAIR_URI}}>"
+];
+<#ClassMap_class_entity_hasProductId> rr:predicateObjectMap [
+<#ClassMap_ProductId>
+];
+
+<#ClassMap_class_entity_hasRating> a rr:TriplesMap;
+<#ClassMap_class_entity_hasRating> rml:logicalSource [
+rml:source "<csv_file>.csv";
+rml:referenceFormulation ql:CSV
+];
+<#ClassMap_class_entity_hasRating> rr:subjectMap [
+rr:template "<https://myontology.com/class_entity/{{ProductId}}{{FAIR_URI}}>"
+];
+<#ClassMap_class_entity_hasRating> rr:predicateObjectMap [
+<#ClassMap_RatingValue>
+];
+
+<#ClassMap_class_entity_hasTimestamp> a rr:TriplesMap;
+<#ClassMap_class_entity_hasTimestamp> rml:logicalSource [
+rml:source "<csv_file>.csv";
+rml:referenceFormulation ql:CSV
+];
+<#ClassMap_class_entity_hasTimestamp> rr:subjectMap [
+rr:template "<https://myontology.com/class_entity/{{ProductId}}{{FAIR_URI}}>"
+];
+<#ClassMap_class_entity_hasTimestamp> rr:predicateObjectMap [
+<#ClassMap_Time>
+];
+
+<#ClassMap_class_entity_hasUserId> a rr:TriplesMap;
+<#ClassMap_class_entity_hasUserId> rml:logicalSource [
+rml:source "<csv_file>.csv";
+rml:referenceFormulation ql:CSV
+];
+<#ClassMap_class_entity_hasUserId> rr:subjectMap [
+rr:template "<https://myontology.com/class_entity/{{ProductId}}{{FAIR_URI}}>"
+];
+<#ClassMap_class_entity_hasUserId> rr:predicateObjectMap [
+<#ClassMap_User>
+];
+
+<#ClassMap_entity_name> a rr:TriplesMap;
+<#ClassMap_entity_name> rml:logicalSource [
+rml:source "<csv_file>.csv";
+rml:referenceFormulation ql:CSV
+];
+<#ClassMap_entity_name> rr:subjectMap [
+rr:template "<https://myontology.com/entity_name/{{EntityName}}{{FAIR_URI}}>"
+];
+<#ClassMap_entity_name> rr:predicateObjectMap [
+<#Property_hasEntityNameValue>
+];
+
+<#ClassMap_ProductId_hasEntityName> a rr:TriplesMap;
+<#ClassMap_ProductId_hasEntityName> rml:logicalSource [
+rml:source "<csv_file>.csv";
+rml:referenceFormulation ql:CSV
+];
+<#ClassMap_ProductId_hasEntityName> rr:subjectMap [
+rr:template "<https://myontology.com/ProductId/{{ProductId}}>"
+];
+<#ClassMap_ProductId_hasEntityName> rr:predicateObjectMap [
+<#ClassMap_entity_name>
+];
+
+<#ClassMap_RatingValue> a rr:TriplesMap;
+<#ClassMap_RatingValue> rml:logicalSource [
+rml:source "<csv_file>.csv";
+rml:referenceFormulation ql:CSV
+];
+<#ClassMap_RatingValue> rr:subjectMap [
+rr:template "<https://myontology.com/RatingValue/{{RatingValue}}>"
+];
+<#ClassMap_RatingValue> rr:predicateObjectMap [
+<#Property_hasRatingValue>
+];
+
+<#ClassMap_Time> a rr:TriplesMap;
+<#ClassMap_Time> rml:logicalSource [
+rml:source "<csv_file>.csv";
+rml:referenceFormulation ql:CSV
+];
+<#ClassMap_Time> rr:subjectMap [
+rr:template "<https://myontology.com/Time/{{Timestamp}}>"
+];
+<#ClassMap_Time> rr:predicateObjectMap [
+<#Property_hasTimestampValue>
+];
+
+<#ClassMap_User> a rr:TriplesMap;
+<#ClassMap_User> rml:logicalSource [
+rml:source "<csv_file>.csv";
+rml:referenceFormulation ql:CSV
+];
+<#ClassMap_User> rr:subjectMap [
+rr:template "<https://myontology.com/User/{{UserId}}>"
+];
+<#ClassMap_User> rr:predicateObjectMap [
+<#Property_hasUserIdValue>
+];
+
+<#Property_ProductId> a rr:TriplesMap;
+<#Property_ProductId> rml:logicalSource [
+rml:source "<csv_file>.csv";
+rml:referenceFormulation ql:CSV
+];
+<#Property_ProductId> rr:subjectMap [
+rr:template "<https://myontology.com/ProductId/{{ProductId}}>"
+];
+<#Property_ProductId> rr:predicateObjectMap [
+<#Property_hasProductIdValue>
+];
+
+<#Property_Rating> a rr:TriplesMap;
+<#Property_Rating> rml:logicalSource [
+rml:source "<csv_file>.csv";
+rml:referenceFormulation ql:CSV
+];
+<#Property_Rating> rr:subjectMap [
+rr:template "<https://myontology.com/class_entity/{{ProductId}}{{FAIR_URI}}>"
+];
+<#Property_Rating> rr:predicateObjectMap [
+<#ClassMap_RatingValue>
+];
+
+<#Property_Timestamp> a rr:TriplesMap;
+<#Property_Timestamp> rml:logicalSource [
+rml:source "<csv_file>.csv";
+rml:referenceFormulation ql:CSV
+];
+<#Property_Timestamp> rr:subjectMap [
+rr:template "<https://myontology.com/class_entity/{{ProductId}}{{FAIR_URI}}>"
+];
+<#Property_Timestamp> rr:predicateObjectMap [
+<#ClassMap_Time>
+];
+
+<#Property_UserId> a rr:TriplesMap;
+<#Property_UserId> rml:logicalSource [
+rml:source "<csv_file>.csv";
+rml:referenceFormulation ql:CSV
+];
+<#Property_UserId> rr:subjectMap [
+rr:template "<https://myontology.com/class_entity/{{ProductId}}{{FAIR_URI}}>"
+];
+<#Property_UserId> rr:predicateObjectMap [
+<#ClassMap_User>
+];
+
+<#Property_hasProductIdValue> a rr:TriplesMap;
+<#Property_hasProductIdValue> rml:logicalSource [
+rml:source "<csv_file>.csv";
+rml:referenceFormulation ql:CSV
+];
+<#Property_hasProductIdValue> rr:subjectMap [
+rr:template "<https://myontology.com/ProductId/{{ProductId}}>"
+];
+<#Property_hasProductIdValue> rr:predicateObjectMap [
+rr:blankNode [ rr:iris "ProductID-{{ProductId}}" ] ]
+];
+
+<#Property_hasRatingValue> a rr:TriplesMap;
+<#Property_hasRatingValue> rml:logicalSource [
+rml:source "<csv_file>.csv";
+rml:referenceFormulation ql:CSV
+];
+<#Property_hasRatingValue> rr:subjectMap [
+rr:template "<https://myontology.com/class_entity/{{ProductId}}{{FAIR_URI}}>"
+];
+<#Property_hasRatingValue> rr:predicateObjectMap [
+rr:blankNode [ rr:iris "RatingValue-{{RatingValue}}" ] ]
+];
+
+<#Property_hasTimestampValue> a rr:TriplesMap;
+<#Property_hasTimestampValue> rml:logicalSource [
+rml:source "<csv_file>.csv";
+rml:referenceFormulation ql:CSV
+];
+<#Property_hasTimestampValue> rr:subjectMap [
+rr:template "<https://myontology.com/class_entity/{{ProductId}}{{FAIR_URI}}>"
+];
+<#Property_hasTimestampValue> rr:predicateObjectMap [
+rr:blankNode [ rr:iris "Timestamp-{{Timestamp}}" ] ]
+];
+
+<#Property_hasUserIdValue> a rr:TriplesMap;
+<#Property_hasUserIdValue> rml:logicalSource [
+rml:source "<csv_file>.csv";
+rml:referenceFormulation ql:CSV
+];
+<#Property_hasUserIdValue> rr:subjectMap [
+rr:template "<https://myontology.com/class_entity/{{ProductId}}{{FAIR_URI}}>"
+];
+<#Property_hasUserIdValue> rr:predicateObjectMap [
+rr:blankNode [ rr:iris "UserID-{{UserId}}" ] ]
+];

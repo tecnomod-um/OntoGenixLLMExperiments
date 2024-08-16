@@ -1,0 +1,31 @@
+ Foundational Prefix: <https://baseontology.com/#>
+
+Data Description:
+
+1. Absolute_Url: A column with a non-null count of 8208.0, representing the absolute URL of a product. The type is text, and the possible range is a string of characters.
+2. Brand: A column with a non-null count of 8208.0, representing the brand of a product. The type is text, and the possible range is a string of characters.
+3. Category: A column with a non-null count of 8208.0, representing the category of a product. The type is text, and the possible range is a string of characters.
+4. Image_Url: A column with a non-null count of 8208.0, representing the image URL of a product. The type is text, and the possible range is a string of characters.
+5. ProductName: A column with a non-null count of 8208.0, representing the product name. The type is text, and the possible range is a string of characters.
+6. Quantity: A column with a non-null count of 8208.0, representing the quantity of a product. The type is text, and the possible range is a string of characters.
+7. SubCategory: A column with a non-null count of 8208.0, representing the subcategory of a product. The type is text, and the possible range is a string of characters.
+8. DiscountPrice: A column with a non-null count of null, representing the discount price of a product. The type is numerical, and the possible range is a number.
+9. Price: A column with a non-null count of null, representing the price of a product. The type is numerical, and the possible range is a number.
+
+Classes:
+
+1. class_entity: A class representing the entity of a product.
+
+Subclasses:
+
+1. entity_name: A subclass of class_entity, representing the name of a product entity.
+
+Object Properties:
+
+1. object_property_name: domain - range
+
+Data Type Properties:
+
+1. data_property_name: domain - range
+
+Note: The above descriptions are generated based on the provided JSON data table and the given task requirements. The descriptions are meant to provide a structured and organized way of understanding the data, but they do not include any additional explanations or notes.

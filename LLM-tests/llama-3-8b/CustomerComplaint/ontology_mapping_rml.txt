@@ -1,0 +1,80 @@
+Here is the RML mapping for the given ontology:
+
+```
+@prefix rr: <http://www.w3.org/ns/r2-semantic-triples#>
+@prefix rml: <http://semweb.mimi.io/rml/1.1/>
+@prefix ql: <http://semweb.mimi.io/rml/1.1/query-language/>
+@prefix ex: <https://base_ontology.com/>
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# TriplesMap for class_entity
+<#TriplesMapClassEntity> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/{{Entity1}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:has_company;
+        rr:objectMap [
+            rr:parentTriplesMap <#HasCompany>
+        ];
+    ],
+    rr:predicateObjectMap [
+        rr:predicate ex:has_public_response;
+        rr:objectMap [
+            rr:parentTriplesMap <#HasPublicResponse>
+        ];
+    ],
+    rr:predicateObjectMap [
+        rr:predicate ex:has_response_to_consumer;
+        rr:objectMap [
+            rr:parentTriplesMap <#HasResponseToConsumer>
+        ];
+    ],
+    #... (rest of the predicateObjectMaps for each property)
+    rr:predicateObjectMap [
+        rr:predicate ex:has_complaint_id;
+        rr:objectMap [
+            rr:parentTriplesMap <#HasComplaintId>
+        ];
+    ];
+
+# TriplesMap for entity_name
+<#TriplesMapEntityName> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/{{EntityName}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:has_type;
+        rr:objectMap [
+            rr:parentTriplesMap <#HasType>
+        ];
+    ];
+
+# TriplesMap for has_company
+<#HasCompany> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "{csv_data}";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "EntityURI/{{Entity1}}{{FAIR_URI}}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate xsd:integer;
+        rr:objectMap [
+            rr:parentTriplesMap <#HasCompanyObject>
+        ];
+    ];
+
+#... (rest of the TriplesMaps for each property)
+```
+
+Please note that I have not included the TriplesMaps for the DatatypeProperties (`has_non_null_count`, `has_type`, etc.) as they are not necessary for the given ontology.

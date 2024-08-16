@@ -1,0 +1,43 @@
+<#AirlineOntologyMapping> a rr:Mapping;
+rml:logicalSource [
+rml:source "<https://myairlineontology.com/ontology.ttl>";
+rml:referenceFormulation rdf:RDF
+];
+
+<#ClassMapping> a rr:TriplesMap;
+<#ClassMapping> rml:logicalSource <rml:logicalSource>;
+<#ClassMapping> rr:subjectMap [
+rr:template "<https://myairlineontology.com/#entity_name/{{EntityName}}{{FAIR_URI}}>"
+];
+<#ClassMapping> rr:predicateObjectMap [
+<#BaggageHandlingMapping> a rr:TriplesMap;
+<#BaggageHandlingMapping> rml:logicalSource <rml:logicalSource>;
+<#BaggageHandlingMapping> rr:predicate <https://myairlineontology.com#has_baggage_handling>;
+<#BaggageHandlingMapping> rr:objectMap [
+rr:template "<https://myairlineontology.com/#Baggage_handling/{{BaggageHandlingValue}}>"
+]
+];
+<#ClassMapping> rr:predicateObjectMap [
+<#CheckinServiceMapping> a rr:TriplesMap;
+<#CheckinServiceMapping> rml:logicalSource <rml:logicalSource>;
+<#CheckinServiceMapping> rr:predicate <https://myairlineontology.com#has_checkin_service>;
+<#CheckinServiceMapping> rr:objectMap [
+rr:template "<https://myairlineontology.com/#Checkin_service/{{CheckinServiceValue}}>"
+]
+];
+<!-- Add mappings for other classes in the same way as above -->
+
+<#PropertyMapping> a rr:TriplesMap;
+<#PropertyMapping> rml:logicalSource <rml:logicalSource>;
+<#PropertyMapping> rr:subjectMap [
+rr:template "<https://myairlineontology.com/#entity_name/{{EntityName}}{{FAIR_URI}}>"
+];
+<#PropertyMapping> rr:predicateObjectMap [
+<#AgeMapping> a rr:TriplesMap;
+<#AgeMapping> rml:logicalSource <rml:logicalSource>;
+<#AgeMapping> rr:predicate <https://myairlineontology.com#has_age>;
+<#AgeMapping> rr:objectMap [
+rr:template "<{xsd:int}{AgeValue}>"
+]
+];
+<!-- Add mappings for other properties in the same way as above -->
