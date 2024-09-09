@@ -1,0 +1,59 @@
+@prefix um: <https://vocab.um.es#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Classes
+um:Order a owl:Class ;
+    rdfs:label "Order" .
+
+um:Customer a owl:Class ;
+    rdfs:label "Customer" .
+
+# Data Properties
+um:hasOrderId a owl:DatatypeProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range xsd:string ;
+    rdfs:label "has order ID" .
+
+um:hasCustomerId a owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:string ;
+    rdfs:label "has customer ID" .
+
+um:hasOrderStatus a owl:DatatypeProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range xsd:string ;
+    rdfs:label "has order status" .
+
+um:hasOrderPurchaseTimestamp a owl:DatatypeProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range xsd:dateTime ;
+    rdfs:label "has order purchase timestamp" .
+
+um:hasOrderApprovedAt a owl:DatatypeProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range xsd:dateTime ;
+    rdfs:label "has order approved at" .
+
+um:hasOrderDeliveredCarrierDate a owl:DatatypeProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range xsd:dateTime ;
+    rdfs:label "has order delivered carrier date" .
+
+um:hasOrderDeliveredCustomerDate a owl:DatatypeProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range xsd:dateTime ;
+    rdfs:label "has order delivered customer date" .
+
+um:hasOrderEstimatedDeliveryDate a owl:DatatypeProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range xsd:dateTime ;
+    rdfs:label "has order estimated delivery date" .
+
+# Object Properties
+um:placedBy a owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:Customer ;
+    rdfs:label "placed by" .

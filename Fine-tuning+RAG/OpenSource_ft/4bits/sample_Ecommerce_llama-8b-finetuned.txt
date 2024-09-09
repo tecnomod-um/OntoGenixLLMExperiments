@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix um: <https://vocab.um.es#>.
+
+um:EnfoqueRentaOntology rdf:type owl:Ontology.
+
+### Classes ###
+
+um:Transaction rdf:type owl:Class ;
+    rdfs:label "Transaction".
+
+um:Customer rdf:type owl:Class ;
+    rdfs:label "Customer".
+
+um:Product rdf:type owl:Class ;
+    rdfs:label "Product".
+
+um:Country rdf:type owl:Class ;
+    rdfs:label "Country". 
+
+
+### Data Properties ###
+
+um:TransactionID rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "Transaction ID".
+
+um:TransactionDate rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range xsd:date ;
+    rdfs:label "Transaction date".
+
+um:Quantity rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Quantity".
+
+um:Description rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string ;
+    rdfs:label "Description".
+
+um:UnitPrice rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Unit price".
+
+um:CustomerName rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:string ;
+    rdfs:label "Customer name".
+
+um:CustomerCountry rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:string ;
+    rdfs:label "Customer country".
+
+um:CountryName rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Country ;
+    rdfs:range xsd:string ;
+    rdfs:label "Country name". 
+
+
+### Object Properties ###
+
+um:hasProduct rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range um:Product ;
+    rdfs:label "Has product".
+
+um:hasCustomer rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range um:Customer ;
+    rdfs:label "Has customer".

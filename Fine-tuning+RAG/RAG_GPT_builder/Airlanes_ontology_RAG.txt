@@ -1,0 +1,67 @@
+@prefix um: <https://vocab.um.es#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Classes
+um:Passenger a owl:Class ;
+    rdfs:label "Passenger" .
+
+um:Flight a owl:Class ;
+    rdfs:label "Flight" .
+
+um:Review a owl:Class ;
+    rdfs:label "Review" .
+
+# Data Properties
+um:hasSatisfaction a owl:DatatypeProperty ;
+    rdfs:domain um:Review ;
+    rdfs:range xsd:string ;
+    rdfs:label "has satisfaction" .
+
+um:hasGender a owl:DatatypeProperty ;
+    rdfs:domain um:Passenger ;
+    rdfs:range xsd:string ;
+    rdfs:label "has gender" .
+
+um:hasCustomerType a owl:DatatypeProperty ;
+    rdfs:domain um:Passenger ;
+    rdfs:range xsd:string ;
+    rdfs:label "has customer type" .
+
+um:hasAge a owl:DatatypeProperty ;
+    rdfs:domain um:Passenger ;
+    rdfs:range xsd:int ;
+    rdfs:label "has age" .
+
+um:hasTypeOfTravel a owl:DatatypeProperty ;
+    rdfs:domain um:Flight ;
+    rdfs:range xsd:string ;
+    rdfs:label "has type of travel" .
+
+um:hasClass a owl:DatatypeProperty ;
+    rdfs:domain um:Flight ;
+    rdfs:range xsd:string ;
+    rdfs:label "has class" .
+
+um:hasFlightDistance a owl:DatatypeProperty ;
+    rdfs:domain um:Flight ;
+    rdfs:range xsd:int ;
+    rdfs:label "has flight distance" .
+
+um:hasServiceRating a owl:DatatypeProperty ;
+    rdfs:domain um:Review ;
+    rdfs:range xsd:int ;
+    rdfs:label "has service rating" .
+
+# Object Properties
+um:reviewedBy a owl:ObjectProperty ;
+    rdfs:domain um:Review ;
+    rdfs:range um:Passenger ;
+    rdfs:label "reviewed by" .
+
+um:forFlight a owl:ObjectProperty ;
+    rdfs:domain um:Review ;
+    rdfs:range um:Flight ;
+    rdfs:label "for flight" .
