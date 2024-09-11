@@ -29,20 +29,20 @@ The used methodolgy in this step is treating two columns of the dataset `A` and 
 mathematical sets and study its possible relationships. In order to do so, we study if they follow the definition of function or not,
 in the following way:
 
-<a align="center" width="100%" onclick="window.location.href=https://en.wikipedia.org/wiki/Bijection,_injection_and_surjection">
+<p align="center" width="100%" onclick="window.location.href=https://en.wikipedia.org/wiki/Bijection,_injection_and_surjection">
   <img width="auto" src="https://github.com/user-attachments/assets/be552db3-f263-4460-9703-05e25780502f" 
     alt="Classes of functions distinguished by the manner in which arguments and images are related or mapped to each other">
-</a>
+</p>
 
 
-<a align="center" width="100%" onclick="window.location.href=https://www.mathsisfun.com/sets/injective-surjective-bijective.html">
+<p align="center" width="100%" onclick="window.location.href=https://www.mathsisfun.com/sets/injective-surjective-bijective.html">
   <img width="auto" src="https://github.com/user-attachments/assets/9d537924-5dcd-4bd6-a054-50c2ce34d536" 
     alt="'Injective, Surjective and Bijective' tells us about how a function behaves. A function is a way of matching the members of a set 'A' to a set 'B'">
-</a>
+</p>
 
 As we can see, there's 4 cases where the relation `A -> B` can be a function and 1 where it's not a function. Among these cases, we
 also study the data, i.e. if it contains duplicates, if it contains NAs, etc. Taking that into account, we show, as an example, the
-resulting `cardinality matrix` for the "processed eCommerce dataset":
+resulting `cardinality matrix` (8x8) for the "processed eCommerce dataset":
 
 |FIELD      |InvoiceNo|StockCode|Description|Quantity|InvoiceDate|UnitPrice|CustomerID|Country|
 |-----------|---------|---------|-----------|--------|-----------|---------|----------|-------|
@@ -55,8 +55,11 @@ resulting `cardinality matrix` for the "processed eCommerce dataset":
 |CustomerID |0:N      |0:N      |0:N        |0:N     |0:N        |0:N      |-         |0:N    |
 |Country    |0:N      |0:N      |0:N        |0:N     |0:N        |0:N      |0:N       |-      |
 
-The previous table result came from transforming the studied conditions of the `A -> B` relationships. The expanded table from which the 
-`cardinality matrix` came is the following:
+The previous table result came from transforming the studied conditions of the `A -> B` relationships. Note that the relationships are not 
+bidirectional. Thus, another processing step may be required to infer a more ER Model alike cardinality matrix, so the LLM may allucinate less.
+
+This information is extracted form a expanded table where all the mathematical definition of `function` and its classes are studied. The 
+expanded table (8x64) from which the `cardinality matrix` came is the following:
 
 |FIELD      |IndexA|IndexB|ColumnA|ColumnB|Not a Function (N)|General Function (G)|Injective (I)|Surjective (S)|Bijective (B)|Cardinality (C)|
 |-----------|------|------|-------|-------|------------------|--------------------|-------------|--------------|-------------|---------------|
