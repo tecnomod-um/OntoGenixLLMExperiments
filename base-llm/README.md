@@ -1,15 +1,17 @@
-# OntoGenixOpenSourceLLM
-This repository describes and reports the results obtained by applying the OntoGenix pipeline with open source large language models (openLLMs).
+# Experiments with base openLLMs
 
-## openLLMs used
-* [Llama-2](https://huggingface.co/meta-llama/Llama-2-7b): 7B and 70B
-* [Llama-3](https://github.com/meta-llama/llama3): 8B and 70B
-* [Mixtral](https://huggingface.co/docs/transformers/en/model_doc/mixtral): base and 7B
+This page reports the process followed and the results obtained for each openLLLM in the use of the OntoGenix prompts with their base models.
 
-## Experiments 
 
-The experiments consisted on generating ontologies from the Kaggle Datasets used in the [original experiments with OpenAI GPT](https://github.com/tecnomod-um/OntoGenixEvaluation).
+## Experiments by openLLM
 
-Therefore, each experiment with a particular configuration of an OpenLLM consisted in generating an ontology from one of those datasets
+For each LLM we must report in the README.md file: work done to set to be able to use the LLM; adaptation of the OntoGenix prompts; link to the result obtained; analysis of the result and the process (without ontology quality analysis which will come later)
 
-The result of the different LLM's outputs can be found in its correspondent subfolder.
+* [LLama-2-7b](./llama-2-7b/README.md)
+* [LLama-2-70b](./llama-2-70b/README.md)
+* [LLama-3-8b](./llama-3-8b/README.md)
+* [LLama-3-70b](./llama-3-70b/README.md)
+* [Mistral-7b](./mistral-7b/README.md)
+* [Mixtral](./mixtral/README.md)
+
+## Summary of the findings
