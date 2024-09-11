@@ -3,7 +3,7 @@ In this file I'll try to deeepen in and tackle all the topics related to the cur
 OntoGenix pipeline/workflow.
 
 # 0. Introduction/Abstract
-This briefing section is needed for people who suffer from "tldr;" condition and want the conclusions before even started reading it. 
+This briefing section is needed for people who suffer from `tldr;` condition and want the conclusions before even started reading it. 
 So, in conclusion, all the code implemented in this folder helps us have a better understandment of how the data behave and is related 
 without a prior knowledge of the area that the data is modeling. In other words, and thanks to human+LLM work, we're now able to provide 
 an efficient and improved way to tackle larger datasets so that we can provide to the LLM with more specific information to tackle the 
@@ -21,7 +21,7 @@ that NAs have indeed a meaning while interpreting the data. Doing so helped us r
 
 [...]
 
-# 2. Cardinality matrix (doc)
+# 2. Cardinality matrix
 In this section we're going to explain the methodology followed to determine the relationships between columns of a dataset and the 
 cardinality of that relationship. However, right now, the results are experimental and maybe not all the cases can be represented here.
 
@@ -42,7 +42,7 @@ in the following way:
 
 As we can see, there's 4 cases where the relation `A -> B` can be a function and 1 where it's not a function. Among these cases, we
 also study the data, i.e. if it contains duplicates, if it contains NAs, etc. Taking that into account, we show, as an example, the
-resulting `cardinality matrix` (8x8) for the "processed eCommerce dataset":
+resulting `cardinality matrix` (8x8) for the ["processed eCommerce dataset"](https://github.com/jesualdotomasfernandezbreis/KGCF/blob/main/files/sources/eCommerce/processed_data.csv):
 
 |FIELD      |InvoiceNo|StockCode|Description|Quantity|InvoiceDate|UnitPrice|CustomerID|Country|
 |-----------|---------|---------|-----------|--------|-----------|---------|----------|-------|
@@ -131,9 +131,102 @@ expanded table (8x64) from which the `cardinality matrix` came is the following:
 As we can see, we can easily observe what case is found in each `A -> B` relationship. If the reader wants to deepen in all the current studied
 cases, they can be seen in the current [code](https://github.com/tecnomod-um/OntoGenixOpenSourceLLM/edit/main/Preprocessing%2BPartitioning/csv_matrix_analysis.py).
 
+NOTE: it took `4.1982338428497314 seconds` to execute the script.
+
 # 3. Feature vector (doc)
+In this section we're going to explain the methodology followed to determine the inferred datatypes of the dataset's columns and maybe
+some other statistical information about the data distribution. However, right now, the results are experimental and not all the types 
+may be represented here.
+
+The used methodolgy in this step is reading through the dataset's elements of each column and try to infer the more alike type for each
+element. After that, we sort the results following a ranking method (yet to determine) and we expain the type of data of that column with
+the best found datatype (for that column).
+
+## Feature Vector Example:
+Here we have the resulting `feature vector (FV)` table for the `ratings_Beauty.csv` (4 x 2023070) dataset:
+
+|FIELD      |XsdDataTypes|Total|NoNull|Unique|
+|-----------|------------|-----|------|------|
+|UserId     |xsd:string  |2023070|2023070|1210271|
+|ProductId  |xsd:string  |2023070|2023070|249274|
+|Rating     |xsd:integer |2023070|2023070|5     |
+|Timestamp  |xsd:integer |2023070|2023070|4231  |
+
+This result come from the following resulting analysis dictionary, where we only take the most likely datatype as the result 
+(however, some hierachy between datatypes may be needed to have better inferred and more descriptive datatypes):
+```json
+"Feature Vector": {
+    "UserId": {
+      "xsd:string": 2022969,
+      "xsd:hexBinary": 88,
+      "xsd:dateTime": 13
+    },
+    "ProductId": {
+      "xsd:string": 2001981,
+      "xsd:hexBinary": 19062,
+      "xsd:integer": 2027
+    },
+    "Rating": {
+      "xsd:integer": 2023070
+    },
+    "Timestamp": {
+      "xsd:integer": 2023070
+    }
+  }
+```
+
+NOTE: This dataset took `88.04153227806091 seconds` to execute. Smaller dataset may take lesser time.
+
+
+## NOTES:
+All the information and REGEX about the FV's inferred types come from the following URLs:
+  - XSD Primitive datatypes: https://www.w3.org/TR/xmlschema11-2/#built-in-primitive-datatypes
+    
+  - Regex verbose: https://docs.python.org/3/howto/regex.html#:~:text=For%20example%2C%20here%E2%80%99s%20a%20RE%20that%20uses%20re.VERBOSE%3B%20see%20how%20much%20easier%20it%20is%20to%20read%3F
+
+Standards to be followed in order to have more FAIR alike data:
+  - ISO 11179-5: https://en.wikipedia.org/wiki/Data_element_name
+  - ISO 8601: https://es.wikipedia.org/wiki/ISO_8601
+
+Some considerations to take into account while formatting the data:
+  - No white space (at the beginning or end). Thus, use `strip()`
+  - The decimal separator in numbers must be `.`
+  - The date separator may be `-`, but the `/` seperator is allowed if the `strict` case flag is not set.
+  - The time sepator must be `:`.
+
+Full Python dictionary:
+  xsd_type_dict = {
+      # Booleans
+          "xsd:boolean":  REGEX_XSD_BOOLEAN, # `boolean` represents the values of two-valued logic.
+      # Numeric values
+          "xsd:integer":  REGEX_XSD_INTEGER, # `integer` is ·derived· from decimal by fixing the value of ·fractionDigits· to be 0 and disallowing the trailing decimal point. This results in the standard mathematical concept of the integer numbers.  The ·value space· of integer is the infinite set {...,-2,-1,0,1,2,...}. The ·base type· of integer is decimal.
+          "xsd:decimal":  REGEX_XSD_DECIMAL, # `decimal` represents a subset of the real numbers, which can be represented by decimal numerals. The ·value space· of decimal is the set of numbers that can be obtained by dividing an integer by a non-negative power of ten, i.e., expressible as i / 10n where i and n are integers and n ≥ 0. Precision is not reflected in this value space; the number 2.0 is not distinct from the number 2.00. The order relation on decimal is the order relation on real numbers, restricted to this subset.
+          "xsd:float":    REGEX_XSD_FLOAT, # The `float` datatype is patterned after the IEEE single-precision 32-bit floating point datatype [IEEE 754-2008]. Its value space is a subset of the rational numbers. Floating point numbers are often used to approximate arbitrary real numbers.
+          "xsd:double":   REGEX_XSD_DOUBLE, # The `double` datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008]. Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximate arbitrary real numbers.
+      # Dates, times, and durations. According to the Seven-property Model: https://www.w3.org/TR/xmlschema11-2/#theSevenPropertyModel
+          "xsd:date": REGEX_XSD_DATE, # `date` represents top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day, up to but not including the beginning moment of the next day). For non-timezoned values, the top-open intervals disjointly cover the non-timezoned timeline, one per day.  For timezoned values, the intervals begin at every minute and therefore overlap.
+          "xsd:time": REGEX_XSD_TIME, # `time` represents instants of time that recur at the same point in each calendar day, or that occur in some arbitrary calendar day.
+          "xsd:dateTime": REGEX_XSD_DATETIME, # `dateTime` represents instants of time, optionally marked with a particular time zone offset.  Values representing the same instant but having different time zone offsets are equal but not identical.
+          "xsd:dateTimeStamp": REGEX_XSD_DATETIMESTAMP, # The `dateTimeStamp` datatype is ·derived· from dateTime by giving the value required to its explicitTimezone facet. The result is that all values of dateTimeStamp are required to have explicit time zone offsets and the datatype is totally ordered.
+          "xsd:duration": REGEX_XSD_DURATION, # `duration` is a datatype that represents durations of time. The concept of duration being captured is drawn from those of [ISO 8601], specifically durations without fixed endpoints. For example, "15 days" (whose most common lexical representation in duration is "'P15D'") is a duration value; "15 days beginning 12 July 1995" and "15 days ending 12 July 1995" are not duration values. duration can provide addition and subtraction operations between duration values and between duration/dateTime value pairs, and can be the result of subtracting dateTime values. However, only addition to dateTime is required for XML Schema processing and is defined in the function ·dateTimePlusDuration·.
+          "xsd:gYear": REGEX_XSD_GYEAR, # `gYear` represents Gregorian calendar years.
+          "xsd:gMonth": REGEX_XSD_GMONTH, # `gMonth` represents whole (Gregorian) months within an arbitrary year—months that recur at the same point in each year. It might be used, for example, to say what month annual Thanksgiving celebrations fall in different countries (--11 in the United States, --10 in Canada, and possibly other months in other countries).
+          "xsd:gDay": REGEX_XSD_GDAY, # `gDay` represents whole days within an arbitrary month—days that recur at the same point in each (Gregorian) month. This datatype is used to represent a specific day of the month. To indicate, for example, that an employee gets a paycheck on the 15th of each month. (Obviously, days beyond 28 cannot occur in all months; they are nonetheless permitted, up to 31.)
+          "xsd:gYearMonth": REGEX_XSD_GYEARMONTH, # `gYearMonth` represents specific whole Gregorian months in specific Gregorian years.
+          "xsd:gMonthDay": REGEX_XSD_GMONTHDAY, # `gMonthDay` represents whole calendar days that recur at the same point in each calendar year, or that occur in some arbitrary calendar year. (Obviously, days beyond 28 cannot occur in all Februaries; 29 is nonetheless permitted.)
+      # Binaries
+          "xsd:hexBinary": REGEX_XSD_HEXBINARY, # `hexBinary` represents arbitrary hex-encoded binary data.
+          "xsd:base64Binary": REGEX_XSD_BASE64BINARY, # `base64Binary` represents arbitrary Base64-encoded binary data. For base64Binary data the entire binary stream is encoded using the Base64 Encoding defined in [RFC 3548], which is derived from the encoding described in [RFC 2045].
+      # Text based
+          "xsd:anyURI": REGEX_XSD_ANYURI, # `anyURI` represents an Internationalized Resource Identifier Reference (IRI). An anyURI value can be absolute or relative, and may have an optional fragment identifier (i.e., it may be an IRI Reference). This type should be used when the value fulfills the role of an IRI, as defined in [RFC 3987] or its successor(s) in the IETF Standards Track.
+  }
+
+Other URLS:
+    - TODO: Check other date formats: https://en.wikipedia.org/wiki/List_of_date_formats_by_country
+
 
 # 4. Functional Dependencies (doc)
+
 
 # 5. Final conclusions (and future work?)
 
