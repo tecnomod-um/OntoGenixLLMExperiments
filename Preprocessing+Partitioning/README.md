@@ -29,9 +29,9 @@ The used methodolgy in this step is treating two columns of the dataset `A` and 
 mathematical sets and study its possible relationships. In order to do so, we study if they follow the definition of function or not,
 in the following way:
 
-<p align="center" width="100%">
-  <img width="auto" src="https://github.com/user-attachments/assets/be552db3-f263-4460-9703-05e25780502f">
-  <p src="https://en.wikipedia.org/wiki/Bijection,_injection_and_surjection">Source</p>
+<p align="center" width="100%" onclick="href=https://en.wikipedia.org/wiki/Bijection,_injection_and_surjection">
+  <img width="33%" src="https://github.com/user-attachments/assets/be552db3-f263-4460-9703-05e25780502f" 
+    alt="classes of functions distinguished by the manner in which arguments and images are related or mapped to each other">
 </p>
 
 <p align="center" width="100%">
