@@ -29,11 +29,11 @@ The used methodolgy in this step is treating two columns of the dataset `A` and 
 mathematical sets and study its possible relationships. In order to do so, we study if they follow the definition of function or not,
 in the following way:
 
-![image](https://github.com/user-attachments/assets/be552db3-f263-4460-9703-05e25780502f)
-Source: https://en.wikipedia.org/wiki/Bijection,_injection_and_surjection
+![https://en.wikipedia.org/wiki/Bijection,_injection_and_surjection](https://github.com/user-attachments/assets/be552db3-f263-4460-9703-05e25780502f){ width="800" height="600" style="display: block; margin: 0 auto" }
 
-![image](https://github.com/user-attachments/assets/9d537924-5dcd-4bd6-a054-50c2ce34d536)
-Source: https://www.mathsisfun.com/sets/injective-surjective-bijective.html
+
+![https://www.mathsisfun.com/sets/injective-surjective-bijective.html](https://github.com/user-attachments/assets/9d537924-5dcd-4bd6-a054-50c2ce34d536){ width="800" height="600" style="display: block; margin: 0 auto" }
+
 
 As we can see, there's 4 cases where the relation `A -> B` can be a function and 1 where it's not a function. Among these cases, we
 also study the data, i.e. if it contains duplicates, if it contains NAs, etc. Taking that into account, we show, as an example, the
