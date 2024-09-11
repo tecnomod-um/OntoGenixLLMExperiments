@@ -22,6 +22,21 @@ that NAs have indeed a meaning while interpreting the data. Doing so helped us r
 [...]
 
 # 2. Cardinality matrix (doc)
+In this section we're going to explain the methodology followed to determine the relationships between columns of a dataset and the 
+cardinality of that relationship. However, right now, the results are experimental and maybe not all the cases can be represented here.
+
+The used methodolgy in this step is treating two columns of the dataset `A` and `B` where we'll somehow transform these columns to 
+mathematical sets and study its possible relationships. In order to do so, we study if they follow the definition of function or not,
+in the following way:
+
+![image](https://github.com/user-attachments/assets/68ca8305-cef5-4bad-9386-d7e874d40fde)
+Source: https://en.wikipedia.org/wiki/Bijection,_injection_and_surjection
+
+![image](https://github.com/user-attachments/assets/9d537924-5dcd-4bd6-a054-50c2ce34d536)
+Source: https://www.mathsisfun.com/sets/injective-surjective-bijective.html
+
+As we can see, there's 4 cases where the relation `A -> B` can be a function and 1 where it's not a function. Among these cases, we
+also study the data, i.e. if it contains duplicates, if it contains NAs, etc.
 
 # 3. Feature vector (doc)
 
