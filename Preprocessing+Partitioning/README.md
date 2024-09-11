@@ -34,6 +34,7 @@ in the following way:
     alt="Classes of functions distinguished by the manner in which arguments and images are related or mapped to each other">
 </a>
 
+
 <a align="center" width="100%" onclick="window.location.href=https://www.mathsisfun.com/sets/injective-surjective-bijective.html">
   <img width="auto" src="https://github.com/user-attachments/assets/9d537924-5dcd-4bd6-a054-50c2ce34d536" 
     alt="'Injective, Surjective and Bijective' tells us about how a function behaves. A function is a way of matching the members of a set 'A' to a set 'B'">
