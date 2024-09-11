@@ -195,6 +195,7 @@ Some considerations to take into account while formatting the data:
   - The time sepator must be `:`.
 
 Full Python dictionary:
+```python
   xsd_type_dict = {
       # Booleans
           "xsd:boolean":  REGEX_XSD_BOOLEAN, # `boolean` represents the values of two-valued logic.
@@ -220,6 +221,7 @@ Full Python dictionary:
       # Text based
           "xsd:anyURI": REGEX_XSD_ANYURI, # `anyURI` represents an Internationalized Resource Identifier Reference (IRI). An anyURI value can be absolute or relative, and may have an optional fragment identifier (i.e., it may be an IRI Reference). This type should be used when the value fulfills the role of an IRI, as defined in [RFC 3987] or its successor(s) in the IETF Standards Track.
   }
+```
 
 Other URLS:
     - TODO: Check other date formats: https://en.wikipedia.org/wiki/List_of_date_formats_by_country
