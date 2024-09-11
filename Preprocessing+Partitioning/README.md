@@ -30,7 +30,8 @@ mathematical sets and study its possible relationships. In order to do so, we st
 in the following way:
 
 <p align="center" width="100%">
-![https://en.wikipedia.org/wiki/Bijection,_injection_and_surjection](https://github.com/user-attachments/assets/be552db3-f263-4460-9703-05e25780502f){ width="800" height="600" style="display: block; margin: 0 auto" }
+  <img width="33%" src="https://github.com/user-attachments/assets/be552db3-f263-4460-9703-05e25780502f">
+  <p src="https://en.wikipedia.org/wiki/Bijection,_injection_and_surjection">Source</p>
 </p>
 
 <p align="center" width="100%">
