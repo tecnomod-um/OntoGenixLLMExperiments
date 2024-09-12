@@ -181,8 +181,8 @@ NOTE: This dataset took `88.04153227806091 seconds` to execute. Smaller dataset 
 ## NOTES:
 All the information and REGEX about the FV's inferred types come from the following URLs:
   - XSD Primitive datatypes: https://www.w3.org/TR/xmlschema11-2/#built-in-primitive-datatypes
-    
-  - Regex verbose: https://docs.python.org/3/howto/regex.html#:~:text=For%20example%2C%20here%E2%80%99s%20a%20RE%20that%20uses%20re.VERBOSE%3B%20see%20how%20much%20easier%20it%20is%20to%20read%3F
+  - Valid Any URI: https://www.w3.org/2011/04/XMLSchema/TypeLibrary-IRI-RFC3987.xsd
+  - IANA URI Schemes (Permanent ones only): https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml
 
 Standards to be followed in order to have more FAIR alike data:
   - ISO 11179-5: https://en.wikipedia.org/wiki/Data_element_name
@@ -225,12 +225,14 @@ Full Python dictionary:
 
 Other URLS:
     - TODO: Check other date formats: https://en.wikipedia.org/wiki/List_of_date_formats_by_country
-
+    - TODO: Regex verbose: https://docs.python.org/3/howto/regex.html#:~:text=For%20example%2C%20here%E2%80%99s%20a%20RE%20that%20uses%20re.VERBOSE%3B%20see%20how%20much%20easier%20it%20is%20to%20read%3F
 
 # 4. Functional Dependencies (doc)
 
 
 # 5. Final conclusions (and future work?)
 
-# 6. NOTES
+
+
+# 6. NOTES (Tools)
 1. CSV to Markdown table converter: https://www.convertcsv.com/csv-to-markdown.htm
