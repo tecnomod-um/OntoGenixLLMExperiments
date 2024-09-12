@@ -230,9 +230,54 @@ Other URLS:
 # 4. Functional Dependencies (doc)
 
 
-# 5. Final conclusions (and future work?)
+# 5. ER Model
+The main goal is using all the 3 previous matrixes to summarize the dataset and pass that information to the LLM. With that information and some prompt engineering 
+we aim for building a relational database (ER Model)[https://www.visual-paradigm.com/VPGallery/datamodeling/EntityRelationshipDiagram.html] alike format:
+
+![image](https://github.com/user-attachments/assets/a4ca81f8-808a-4d21-9743-ddadcd5ee48d)
+
+This is because LLM are more prepared and better trained with format that strictly follows the industry standards, such as UML. In particular, we are going to use
+the (PlantUML standard)[https://plantuml.com/stdlib]. Some example of this is the following diagram:
+
+![image](https://github.com/user-attachments/assets/367d9f1d-8470-440d-aeba-d8a5e7aa3616)
+
+Which come from the following PlantUML text:
+
+```
+@startuml
+
+skin rose
+
+title Relationships - Class Diagram
 
 
+class Dwelling {
+  +Int Windows
+  +void LockTheDoor()
+}
 
-# 6. NOTES (Tools)
+class Apartment
+class House
+class Commune
+class Window
+class Door
+
+Dwelling <|-down- Apartment: Inheritance
+Dwelling <|-down- Commune: Inheritance
+Dwelling <|-down- House: Inheritance
+Dwelling "1" *-up- "many" Window: Composition
+Dwelling "1" *-up- "many" Door: Composition
+
+@enduml
+```
+
+From this point, we transform the UML text formatted diagram into a ontology through prompt engineering using our chosen LLM. 
+
+
+# 6. Final conclusions (and future work?)
+[...]
+
+
+# 7. NOTES (Tools)
 1. CSV to Markdown table converter: https://www.convertcsv.com/csv-to-markdown.htm
+2. PlantUML online diagram viewer: https://www.planttext.com/
