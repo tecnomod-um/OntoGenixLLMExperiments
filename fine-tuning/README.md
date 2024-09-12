@@ -28,15 +28,19 @@ Next, using the API provided by OpenAI, the training and validation data are upl
 Once the new fine-tuned model is created using the data of interest, the **learning curves** are analyzed. These learning curves are mathematical representations of the model's learning process during training, helping to assess whether the fine-tuned model is overfitted or underfitted. They provide insight into the model's performance over time, guiding further adjustments if necessary.
 
 ### Open-source models (collaboration with Ronghao Pan)
-The **Llama 3 (8B) model** is trained and tested using the same method as the GPT-4o model to compare the results of the fine-tuning process in both models. 
+The **Llama 3 (8B) model** is trained and tested using the same method as the GPT-4o model to compare the results of the fine-tuning process in both models. The Llama 3 (8B) model is quantized at both **4-bit** and **8-bit** levels, and the comparison of the fine-tuning process will be conducted to assess how quantization impacts the accuracy of the Llama 3 (8B) model.
 
-The Llama 3 (8B) model is quantized at both **4-bit** and **8-bit** levels, and the comparison of the fine-tuning process will be conducted to assess how quantization impacts the accuracy of the Llama 3 (8B) model.
+The **Llama 2 (13B) model** (without being quantized) is trained and tested using the same method as the GPT-4o model to compare the results of the fine-tuning process in both models.
+
+With this, nearly the entire family of Llama models will have been evaluated, providing a comprehensive understanding of their performance across different versions and sizes. This analysis will offer valuable insights into the strengths and weaknesses of each model, particularly in tasks such as ontology building, helping to determine the most suitable model for achieving optimal results in such specialized tasks.
 
 ### Findings
 * From the fine-tuning process, the ontologies are more concise than the base model using the prompt, that is, the redundacy observed with the base model is solved.
 * The fine-tuning process addresses the issue where open-source tools failed to display the correct standardized format during ontology building.
 * With the same training, the GPT-4o-mini model outperforms the Llama 3 model (8B) quantized at 4 bits, particularly in its ability to create classes that are related through object properties. However, given that the training dataset is small, increasing the dataset size could potentially enhance the performance of the Llama 3 model, allowing it to compete more effectively with the GPT-4o-mini model.
 * With the same training, the Llama 3 (8B) model quantized at 8 bits outperforms the Llama 3 (8B) model quantized at 4 bits, having fewer single classes, tending to relate classes by object properties. Also, quantized at 8 bits is capable of defining sub-classes.
+* The Llama 2 (13B) is twice as large as the Llama 3 (8B) model and therefore has required more time for its training.
+* With the same training, the Llama 2 (13B) model without quantization outperforms the Llama 3 (8B) model quantized at 8 bits, having better performance in identifying appropriate classes from the CSV file, offering more precise and concrete classes compared to the Llama 3 (8B) model when quantized at 8 bits. 
 ***
 ## Instruct the model to use a specific ontology of interest.
 * **Through prompt**: The complete ontology is included in the prompt in turtle format, as the model is able to understand ontologies in RDF, RDFS and OWL. 
@@ -46,5 +50,4 @@ The system prompt can be very concise, so most of the token cost comes from the 
 ### Findings
 * Instruct the model to use a specific ontology of interest through the prompt fits perfectly with the ontology of interest, not including new classes or properties. However, some of the information contained in the text is lost.
 * Instruct the model to use a specific ontology of interest through a fine-tuning process, the fine-tuned model tends to create new properties that do not exist in the ontology of interest, gathering more information from the text. This could be useful for updating the ontology with new information.
-
 
