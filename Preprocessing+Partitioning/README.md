@@ -143,6 +143,11 @@ element. After that, we sort the results following a ranking method (yet to dete
 the best found datatype (for that column).
 
 ## Feature Vector Example:
+
+[...]
+
+The datatypes inferred for the columns comes from python's [pandas's primitive datatypes](https://pbpython.com/pandas_dtypes.html).
+
 Here we have the resulting `feature vector (FV)` table for the `ratings_Beauty.csv` (4 x 2023070) dataset:
 
 |FIELD      |XsdDataTypes|Total|NoNull|Unique|
@@ -327,6 +332,9 @@ From this point, we transform the UML text formatted diagram into a ontology thr
 
 # 6. Final conclusions (and future work?)
 [...]
+
+For Python code optimization we have use an [LRU Cache](https://realpython.com/lru-cache-python/) system. This way we've greatly
+increase the speedup of the code execution.
 
 
 # 7. NOTES (Tools)
