@@ -1,4 +1,4 @@
-# Fine-tuning and RAG experiments
+# RAG experiments
 ## Ontology building
 Study the ontology-building capabilities of the **Retrival-Augmented Generation** (RAG) process, where the model is provided with files to use as a reference for future queries. 
 ***
