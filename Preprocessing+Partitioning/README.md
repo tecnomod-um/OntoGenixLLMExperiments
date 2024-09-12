@@ -187,6 +187,7 @@ All the information and REGEX about the FV's inferred types come from the follow
 Standards to be followed in order to have more FAIR alike data:
   - ISO 11179-5: https://en.wikipedia.org/wiki/Data_element_name
   - ISO 8601: https://es.wikipedia.org/wiki/ISO_8601
+  - RFC 3987 (IRI): https://www.ietf.org/rfc/rfc3987.txt
 
 Some considerations to take into account while formatting the data:
   - No white space (at the beginning or end). Thus, use `strip()`
@@ -227,19 +228,69 @@ Other URLS:
     - TODO: Check other date formats: https://en.wikipedia.org/wiki/List_of_date_formats_by_country
     - TODO: Regex verbose: https://docs.python.org/3/howto/regex.html#:~:text=For%20example%2C%20here%E2%80%99s%20a%20RE%20that%20uses%20re.VERBOSE%3B%20see%20how%20much%20easier%20it%20is%20to%20read%3F
 
+
 # 4. Functional Dependencies (doc)
+In this section we're going to explain the methodology followed to determine the relationships between columns of a dataset and the 
+functional dependencies between them. However, right now, the results are experimental and maybe not all the cases can be represented.
+
+The used methodology in this step is studying mathematically, and with already existing algorithms, when exists between two columns `A` and `B`
+a Functional Dependency (`FD`) or a Multi-Valued Dependency (`MVD`). This can be represented the following way: `A -> B` and `A ->> B`, respectively. 
+
+Knowing the functional dependencies of the columns in the dataset we can now study the relational database normal forms ([NF](https://www.bkent.net/Doc/simple5.htm)).
+This methodology follows the [normalization theory in databases](http://www.inf-cr.uclm.es/www/fruiz/bda/doc/teo/bda-t71.pdf). In this theory, we study the fourth
+and fifth normal forms (`4NF` and `5NF`) that states if the relation between two columns `A` and `B` can be represented in a similar way as in relational databases.
+
+[...]
+
+Using all the previous information we can create a criterion to separate large datasets into smaller more digestive datasets. This is good for us, so we can create,
+in the case of OntoGenx, create smaller ontologies and then its triplets, where we can join those triplets in a common node with the same ID of the smaller datasets.
+
+Now we'll so an example of output for the `AmazonRatings_20k.csv` dataset. This dataset in particular doesn't have any NA value, thus making it easier to process:
+```txt
+[FD] Functional Dependencies:
+        {UserId,ProductId} -> {Rating,Timestamp}
+
+[MVD] Multi-Valued Dependencies:
+        {UserId,ProductId} ->> {Rating,Timestamp}
+
+[4NF] Decomposed Tables:
+* Decomposition 1:
+        Table 1 columns: ['UserId', 'ProductId', 'Rating']
+        Table 2 columns: ['UserId', 'ProductId', 'Timestamp']
+[5NF] No join dependencies found.
+
+[Chunks] Optimal Partitions:
+        Chunk 1: ['UserId', 'ProductId', 'Rating', 'Timestamp']
+```
+NOTE: The execution of this code took `0.887751579284668 seconds` with a dataset of size 4x20000.
+
+As we can see, we find that both an FD and a MVD exist with the determinant `{UserId,ProductId}` and the implicants `{Rating,Timestamp}`. From that information we
+can infer that the determinant could make a great primary key (PK) when trying to access any row of the dataset. 
+
+However, this is just for this particular dataset. It could also happen that an user may purchase again a product so, while the rating and the timestamp may differ, 
+the PK would not be valid. For those cases, we propose the use of a new column `FAIR_URI` which will undoubtly identify the instace/row of the dataset we are
+trying to access.
 
 
 # 5. ER Model
 The main goal is using all the 3 previous matrixes to summarize the dataset and pass that information to the LLM. With that information and some prompt engineering 
-we aim for building a relational database (ER Model)[https://www.visual-paradigm.com/VPGallery/datamodeling/EntityRelationshipDiagram.html] alike format:
+we aim for building a relational database [ER Model](https://www.visual-paradigm.com/VPGallery/datamodeling/EntityRelationshipDiagram.html) alike format:
 
-![image](https://github.com/user-attachments/assets/a4ca81f8-808a-4d21-9743-ddadcd5ee48d)
+
+<p align="center" width="100%" onclick="window.location.href=https://nulab.com/learn/software-development/er-diagrams-vs-eer-diagrams-whats-the-difference/">
+  <img width="auto" src="https://github.com/user-attachments/assets/a4ca81f8-808a-4d21-9743-ddadcd5ee48d" 
+    alt="Example of ER Model">
+</p>
+
 
 This is because LLM are more prepared and better trained with format that strictly follows the industry standards, such as UML. In particular, we are going to use
-the (PlantUML standard)[https://plantuml.com/stdlib]. Some example of this is the following diagram:
+the [PlantUML standard](https://plantuml.com/stdlib). Some example of this is the following diagram:
 
-![image](https://github.com/user-attachments/assets/367d9f1d-8470-440d-aeba-d8a5e7aa3616)
+<p align="center" width="100%" onclick="window.location.href=https://www.planttext.com/?text=XP6nJiCm48RtUufJ9YZom5enj6e7AZ5LICnMScfEjUyYdzCA0U-EGn9GfGARV_dpzv_jbMMVSXy3W1rPCAaHGEOS2FSKV6OLQxapTBW9tWotx0_9Hm2entoc45WE-0Q8Tpl9-CBIwDc6U59ky4dhutDBMzLqSmiVyy5rLveZIPxoe_QbUrnlDCPUvZGAvxwY0VXkVNXtPK_SZsw9EsafSVPIqnLmSl-7VOtp2rJTLxXmVUUmYbvUgsd2vU3kr7XujJ_euGgNBAn8cl8Bdm00">
+  <img width="auto" src="https://github.com/user-attachments/assets/367d9f1d-8470-440d-aeba-d8a5e7aa3616" 
+    alt="Example of PlantUML Class diagram">
+</p>
+
 
 Which come from the following PlantUML text:
 
