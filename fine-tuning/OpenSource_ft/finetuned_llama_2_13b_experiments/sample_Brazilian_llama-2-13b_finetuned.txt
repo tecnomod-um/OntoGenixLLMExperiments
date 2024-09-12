@@ -1,0 +1,182 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:OrderSalesOntology rdf:type owl:Ontology .
+
+### Classes ###
+
+um:Order rdf:type owl:Class ;
+   rdfs:label "Order" .
+
+um:Customer rdf:type owl:Class ;
+   rdfs:label "Customer" .
+
+um:Product rdf:type owl:Class ;
+   rdfs:label "Product" .
+
+um:SalesTeam rdf:type owl:Class ;
+   rdfs:label "Sales Team" .
+
+um:State rdf:type owl:Class ;
+   rdfs:label "State" .
+
+um:Country rdf:type owl:Class ;
+   rdfs:label "Country" .
+
+um:OrderDate rdf:type owl:Class ;
+   rdfs:label "Order Date" .
+
+um:OrderStatus rdf:type owl:Class ;
+   rdfs:label "Order Status" .
+
+um:OrderPurchaseDate rdf:type owl:Class ;
+   rdfs:label "Order Purchase Date" .
+
+um:OrderPurchaseTime rdf:type owl:Class ;
+   rdfs:label "Order Purchase Time" .
+
+um:OrderEstimatedDeliveryDate rdf:type owl:Class ;
+   rdfs:label "Order Estimated Delivery Date" .
+
+um:OrderDeliveredDate rdf:type owl:Class ;
+   rdfs:label "Order Delivered Date" .
+
+um:OrderDeliveredCity rdf:type owl:Class ;
+   rdfs:label "Order Delivered City" .
+
+um:OrderDeliveredState rdf:type owl:Class ;
+   rdfs:label "Order Delivered State" .
+
+um:OrderDeliveredCountry rdf:type owl:Class ;
+   rdfs:label "Order Delivered Country" .
+
+um:OrderLineItem rdf:type owl:Class ;
+   rdfs:label "Order Line Item" .
+
+um:SalesTeamName rdf:type owl:Class ;
+   rdfs:label "Sales Team Name" .
+
+um:SalesTeamState rdf:type owl:Class ;
+   rdfs:label "Sales Team State" .
+
+### Data Properties ###
+
+um:hasCustomer rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range xsd:string ;
+   rdfs:label "Customer" .
+
+um:hasOrderLineItems rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range um:OrderLineItem ;
+   rdfs:label "Order Line Items" .
+
+um:hasOrderPurchaseDate rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range xsd:date ;
+   rdfs:label "Order Purchase Date" .
+
+um:hasOrderPurchaseTime rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range xsd:time ;
+   rdfs:label "Order Purchase Time" .
+
+um:hasOrderStatus rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range xsd:string ;
+   rdfs:label "Order Status" .
+
+um:hasOrderEstimatedDeliveryDate rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range xsd:date ;
+   rdfs:label "Order Estimated Delivery Date" .
+
+um:hasOrderDeliveredDate rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range xsd:date ;
+   rdfs:label "Order Delivered Date" .
+
+um:hasOrderDeliveredCity rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range xsd:string ;
+   rdfs:label "Order Delivered City" .
+
+um:hasOrderDeliveredState rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range um:State ;
+   rdfs:label "Order Delivered State" .
+
+um:hasOrderDeliveredCountry rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range um:Country ;
+   rdfs:label "Order Delivered Country" .
+
+### Object Properties ###
+
+um:hasCustomerName rdf:type owl:ObjectProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range um:SalesTeamName ;
+   rdfs:label "Has Customer Name" .
+
+um:hasOrder rdf:type owl:ObjectProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range um:Order ;
+   rdfs:label "Has Order" .
+
+um:hasProductName rdf:type owl:ObjectProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range um:SalesTeamName ;
+   rdfs:label "Has Product Name" .
+
+um:hasOrderLineItemName rdf:type owl:ObjectProperty ;
+   rdfs:domain um:OrderLineItem ;
+   rdfs:range um:Product ;
+   rdfs:label "Has Order Line Item Name" .
+
+um:hasOrderLineItemQuantity rdf:type owl:ObjectProperty ;
+   rdfs:domain um:OrderLineItem ;
+   rdfs:range xsd:integer ;
+   rdfs:label "Has Order Line Item Quantity" .
+
+um:hasOrderLineItemPriceEach rdf:type owl:ObjectProperty ;
+   rdfs:domain um:OrderLineItem ;
+   rdfs:range xsd:decimal ;
+   rdfs:label "Has Order Line Item Price Each" .
+
+um:hasOrderLineItemPriceTotal rdf:type owl:ObjectProperty ;
+   rdfs:domain um:OrderLineItem ;
+   rdfs:range xsd:decimal ;
+   rdfs:label "Has Order Line Item Price Total" .
+
+um:hasOrderStatusName rdf:type owl:ObjectProperty ;
+   rdfs:domain um:OrderStatus ;
+   rdfs:range um:SalesTeamName ;
+   rdfs:label "Has Order Status Name" .
+
+um:hasOrderEstimatedDeliveryDate rdf:type owl:ObjectProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range um:OrderEstimatedDeliveryDate ;
+   rdfs:label "Has Order Estimated Delivery Date" .
+
+um:hasOrderDeliveredDate rdf:type owl:ObjectProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range um:OrderDeliveredDate ;
+   rdfs:label "Has Order Delivered Date" .
+
+um:hasOrderDeliveredCity rdf:type owl:ObjectProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range um:OrderDeliveredCity ;
+   rdfs:label "Has Order Delivered City" .
+
+um:hasOrderDeliveredState rdf:type owl:ObjectProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range um:OrderDeliveredState ;
+   rdfs:label "Has Order Delivered State" .
+
+um:hasOrderDeliveredCountry rdf:type owl:ObjectProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range um:OrderDeliveredCountry ;
+   rdfs:label "Has Order Delivered Country" .
