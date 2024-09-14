@@ -190,6 +190,7 @@ All the information and REGEX about the FV's inferred types come from the follow
   - IANA URI Schemes (Permanent ones only): https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml
 
 Standards to be followed in order to have more FAIR alike data:
+  - OWL 2 Web Ontology Language: https://www.w3.org/2007/OWL/wiki/Quick_Reference_Guide
   - ISO 11179-5: https://en.wikipedia.org/wiki/Data_element_name
   - ISO 8601: https://es.wikipedia.org/wiki/ISO_8601
   - RFC 3987 (IRI): https://www.ietf.org/rfc/rfc3987.txt
