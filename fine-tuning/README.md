@@ -53,7 +53,7 @@ There is a considerable **token cost** in the system prompt, as the full ontolog
 The system prompt can be very concise, so most of the token cost comes from the unstructured text to be transformed.
 
 The LLM model itself (**GPT-4o**) is asked to build the training dataset for the fine-tuning process in the JSONL format, generating 187 examples (pairs unstructured text-KG) corresponding to the custom ontology. In this case, for the fine-tuning process, the LLM model GPT-4o is asked to build the **training dataset** in the JSONL format, generating 187 examples (pairs unstructured text-KG) corresponding to the custom ontology. 
-Here is one of the examples, where um corresponds to the prefix of our ontology of interest:
+Here is one of the examples, where "um:" corresponds to the prefix of our ontology of interest:
 ```
 {"messages": [
   {"role": "system", "content": "Translate the user text to an RDF graph using the country1 ontology."}, 
@@ -72,7 +72,7 @@ Additionally, a dataset containing information of diverse countries will be used
 ### GPT models
 The **GPT-4o-mini model** is trained using the training dataset to learn how to use a specific ontology. 
 
-First, the training and validation data are transformed into the JSONL format required by the OpenAI model to perform the fine-tuning task. This message format consists of three roles (a message is generated for each CSV file from the training and validation subset): 
+First, the training and validation data are transformed into the JSONL format required by the OpenAI model to perform the fine-tuning task. This message format consists of three roles: 
 * **system**, to indicate the function the model will perform.
 * **user**, to indicate the prompt of the task to be performed.
 * **assistant**, to indicate the output that the model should display.
