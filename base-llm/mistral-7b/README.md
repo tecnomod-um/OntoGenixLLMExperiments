@@ -13,7 +13,7 @@ To maximize hardware efficiency, the model was quantized to 8 bits, a method tha
 
 ## Adaptation of OntoGenix prompts
 
-We have adapted the OntoGenix prompts to the format of the official Llama 3 template. To achieve this, we used the AutoTokenizer class from the Transformers library, which allows the use of the conversation template defined by the model. These conversation templates are part of the tokenizer and dictate how interactions structured as lists of messages are converted into a tokenizable text string that follows the expected format of the model.
+We have adapted the OntoGenix prompts to the format of the official mistral template. To achieve this, we used the AutoTokenizer class from the Transformers library, which allows the use of the conversation template defined by the model. These conversation templates are part of the tokenizer and dictate how interactions structured as lists of messages are converted into a tokenizable text string that follows the expected format of the model.
 
 In a conversational context, instead of continuing a single string of text (as in typical language templates), the template handles a conversation consisting of one or more messages, each of which is assigned a specific role. These roles include
 
