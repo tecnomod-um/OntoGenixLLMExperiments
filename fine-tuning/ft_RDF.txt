@@ -1,0 +1,31 @@
+@prefix ex: <http://example.com/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix um: <https://vocab.um.es/country1#> .
+
+ex:Afghanistan a um:Country ;
+    um:hasCapital "Kabul" ;
+    um:hasGeography [ 
+	a um:Geography ; 
+	um:hasDensity 60.0^^xsd:float ; 
+	um:hasLandArea 652230.0^^xsd:float ; 
+	um:hasLatitude 33.93911^^xsd:float ; 
+	um:hasLongitude 67.709953^^xsd:float ] ;
+
+    um:hasEconomy [ 
+	a um:Economy ; 
+	um:hasTaxRevenue 9.3^^xsd:float ;
+	um:hasTotalTaxRate 71.4^^xsd:float ; 
+	um:hasUnemploymentRate 11.12^^xsd:float ] ;
+
+    um:hasDemographics [
+        a um:Demographics ;
+        um:hasAgriculturalLand 58.1^^xsd:float ;
+        um:hasBirthRate 32.49^^xsd:float ;
+        um:hasCallCode 93 ;
+        um:hasPopulation 38041754 ;
+        um:hasUrbanPopulation 9797273^^xsd:float
+    ] .
+
