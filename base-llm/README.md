@@ -1,6 +1,6 @@
 # Experiments with base openLLMs
 
-Study of the ontology generation capacity of different current base openLLMs with the defined * [OntoGenix]([./llama-2-7b/README.md](https://github.com/tecnomod-um/OntoGenix_BASF/tree/main/GUI)) prompts. 
+Study of the ontology generation capacity of different current base openLLMs with the defined [OntoGenix](https://github.com/tecnomod-um/OntoGenix_BASF/tree/main/GUI) prompts. 
 
 The aim of this experiment is to use the OntoGenix approach, but changing the generation engine, that instead of GPT-4, an opensource LLM is used for high-level description generation, ontology generation and ontology mapping to YML format. 
 
@@ -15,7 +15,7 @@ The generation parameters are:
 
 ## Experiments by openLLM
 
-For each LLM, we have evaluated a series of Kaggle datasets related to commercial activities of organizations (Airlines, Amazon, Brazilian, BigBasket, Consumer, and E-commerce), which are the same as those evaluated in the Ontogenix Evaluation project (without ontology quality analysis which will come later).
+For each LLM, we have evaluated a series of Kaggle datasets related to commercial activities of organizations (Airlines, Amazon, Brazilian, BigBasket, Consumer, and E-commerce), which are the same as those evaluated in the [Ontogenix Evaluation](https://github.com/tecnomod-um/OntoGenixEvaluation) project (without ontology quality analysis which will come later).
 
 * [LLama-2-7b](./llama-2-7b/README.md)
 * [LLama-2-70b](./llama-2-70b/README.md)
