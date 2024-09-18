@@ -12,6 +12,8 @@ Due to the limitations of the API regarding file upload formats, the RAG process
 ## Ontology population - Instruct the model to use a specific ontology of interest
 Explore the capabilities of a RAG process using a specific ontology of interest and compare it to a baseline model that directly integrates this ontology into its prompt. The goal is to perform ontology population, which involves updating an ontology with new facts extracted from an input knowledge resource. To achieve this, each line of a CSV file is translated into an RDF graph that aligns with the ontology of interest.
 
+In this experiment, an ontology about countries is used as the ontology of interest. The CSV file utilized for the ontology population contains information about various countries around the world. Since the CSV is large and we aim to conduct a pilot experiment, we will use information from only three countries (three lines of the CSV).
+
 ### GPT models
 As in the other experiment, the RAG process will be tested using the GPT-builder tool. The ontology of interest is made available to the model to use it to translate each line of the CSV file to an RDF graph that conforms to the ontology of interest.
 
