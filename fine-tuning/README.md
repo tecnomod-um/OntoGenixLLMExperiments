@@ -67,7 +67,7 @@ Of the training dataset containing 187 pairs of unstructured text and their corr
 * 144 pairs will be used for training.
 * The remaining 43 pairs will be reserved for validation.
 
-Additionally, a dataset containing information on various countries will be used as **test data** to evaluate the fine-tuned model's ability to utilize the new ontology of interest. For this evaluation, only the first line of the dataset, which contains information about Afghanistan, will be used. 
+In this experiment, an ontology about countries is used as the ontology of interest. Additionally, a dataset containing information on various countries will be used as **test data** to evaluate the fine-tuned model's ability to utilize the new ontology of interest. For this evaluation, only the first three lines of the dataset will be used. 
 
 ### GPT models
 The **GPT-4o-mini model** is trained using the training dataset to learn how to use a specific ontology. 
