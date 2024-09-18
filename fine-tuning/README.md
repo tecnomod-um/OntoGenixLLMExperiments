@@ -43,8 +43,8 @@ With this, nearly the entire family of Llama models will have been evaluated, pr
 * The Llama 2 (13B) is twice as large as the Llama 3 (8B) model and therefore has required more time for its training.
 * With the same training, the Llama 2 (13B) model without quantization outperforms the Llama 3 (8B) model quantized at 8 bits, having better performance in identifying appropriate classes from the CSV file, offering more precise and concrete classes compared to the Llama 3 (8B) model when quantized at 8 bits. 
 ***
-## Instruct the model to use a specific ontology of interest
-Investigate the capabilities of a fine-tuned model using a specific ontology of interest and compare it to a base model that incorporates the ontology of interest directly in its prompt.
+## Ontology population - Instruct the model to use a specific ontology of interest
+Explore the capabilities of a fine-tuned model using a specific ontology of interest and compare it to a baseline model that directly integrates this ontology into its prompt. The goal is to perform ontology population, which involves updating an ontology with new facts extracted from an input knowledge resource. To achieve this, each line of a CSV file is translated into an RDF graph that aligns with the ontology of interest.
 
 The two approaches are explained below:
 * **Through prompt**: The complete ontology is included in the prompt in turtle format, as the model is able to understand ontologies in RDF, RDFS and OWL. 
