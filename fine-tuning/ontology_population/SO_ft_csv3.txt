@@ -1,0 +1,84 @@
+@prefix ex: <http://example.com/> .
+@prefix um: <https://vocab.um.es/country1#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Afghanistan a um:Country ;
+    um:hasEconomy [ 
+        a um:Economy ;
+        um:hasAverageIncome 60.0 
+    ] ;
+    um:hasGeography [ 
+        a um:Geography ;
+        um:hasArea 652230.0 ;
+        um:hasDensity 60.0 ;
+        um:hasPopulation 38041754 
+    ] ;
+    um:hasGovernment [ 
+        a um:Government ;
+        um:hasTaxRevenue 9.3 
+    ] ;
+    um:hasDemographics [ 
+        a um:Demographics ;
+        um:hasBirthRate 32.49 ;
+        um:hasUrbanPopulation 9797273 ;
+        um:hasUnemploymentRate 11.12 ;
+        um:hasPhysiciansPerThousand 0.28 
+    ] ;
+    um:hasName "Afghanistan" ;
+    um:hasCapital "Kabul"^^xsd:string ;
+    um:hasAbbreviation "AF"^^xsd:string ;
+    um:hasAgriculturalLand 58.1 .
+
+ex:Albania a um:Country ;
+    um:hasEconomy [ 
+        a um:Economy ;
+        um:hasAverageIncome 105.0 
+    ] ;
+    um:hasGeography [ 
+        a um:Geography ;
+        um:hasArea 28748.0 ;
+        um:hasDensity 105.0 ;
+        um:hasPopulation 2854191 
+    ] ;
+    um:hasGovernment [ 
+        a um:Government ;
+        um:hasTaxRevenue 18.6 
+    ] ;
+    um:hasDemographics [ 
+        a um:Demographics ;
+        um:hasBirthRate 11.78 ;
+        um:hasUrbanPopulation 1747593 ;
+        um:hasUnemploymentRate 12.33 ;
+        um:hasPhysiciansPerThousand 1.2 
+    ] ;
+    um:hasName "Albania" ;
+    um:hasCapital "Tirana"^^xsd:string ;
+    um:hasAbbreviation "AL"^^xsd:string ;
+    um:hasAgriculturalLand 43.1 .
+
+ex:Algeria a um:Country ;
+    um:hasEconomy [ 
+        a um:Economy ;
+        um:hasAverageIncome 18.0 
+    ] ;
+    um:hasGeography [ 
+        a um:Geography ;
+        um:hasArea 2381741.0 ;
+        um:hasDensity 18.0 ;
+        um:hasPopulation 43053054 
+    ] ;
+    um:hasGovernment [ 
+        a um:Government ;
+        um:hasTaxRevenue 37.2 
+    ] ;
+    um:hasDemographics [ 
+        a um:Demographics ;
+        um:hasBirthRate 24.28 ;
+        um:hasUrbanPopulation 31510100 ;
+        um:hasUnemploymentRate 11.7 ;
+        um:hasPhysiciansPerThousand 1.72 
+    ] ;
+    um:hasName "Algeria" ;
+    um:hasCapital "Algiers"^^xsd:string ;
+    um:hasAbbreviation "DZ"^^xsd:string ;
+    um:hasAgriculturalLand 17.4 .
