@@ -1,0 +1,33 @@
+@prefix country: <https://vocab.um.es/country1#> .
+@prefix ex: <http://example.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Country_AF a country:Country ;
+    country:hasAgriculturalLand "58.1"^^xsd:float ;
+    country:hasArmedForcesSize 323000 ;
+    country:hasCapital "Kabul"^^xsd:string ;
+    country:hasLatitude "33.93911"^^xsd:float ;
+    country:hasLongitude "67.709953"^^xsd:float ;
+    country:hasName "Afghanistan"^^xsd:string ;
+    country:hasPopulation "38,041,754"^^xsd:integer ;
+    country:hasTotalTaxRate "71.4"^^xsd:float .
+
+ex:Country_AL a country:Country ;
+    country:hasAgriculturalLand "43.1"^^xsd:float ;
+    country:hasArmedForcesSize 9000 ;
+    country:hasCapital "Tirana"^^xsd:string ;
+    country:hasLatitude "41.153332"^^xsd:float ;
+    country:hasLongitude "20.168331"^^xsd:float ;
+    country:hasName "Albania"^^xsd:string ;
+    country:hasPopulation "2,854,191"^^xsd:integer ;
+    country:hasTotalTaxRate "36.6"^^xsd:float .
+
+ex:Country_DZ a country:Country ;
+    country:hasAgriculturalLand "17.4"^^xsd:float ;
+    country:hasArmedForcesSize 317000 ;
+    country:hasCapital "Algiers"^^xsd:string ;
+    country:hasLatitude "28.033886"^^xsd:float ;
+    country:hasLongitude "1.659626"^^xsd:float ;
+    country:hasName "Algeria"^^xsd:string ;
+    country:hasPopulation "43,053,054"^^xsd:integer ;
+    country:hasTotalTaxRate "66.1"^^xsd:float .

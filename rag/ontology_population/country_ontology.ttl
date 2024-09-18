@@ -1,0 +1,177 @@
+@prefix um: <https://vocab.um.es/country1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://vocab.um.es/country1#hasDemographics
+um:hasDemographics rdf:type owl:ObjectProperty ;
+                   rdfs:domain um:Country ;
+                   rdfs:range um:Demographics ;
+                   rdfs:label "has Demographics" .
+
+
+###  https://vocab.um.es/country1#hasEconomy
+um:hasEconomy rdf:type owl:ObjectProperty ;
+              rdfs:domain um:Country ;
+              rdfs:range um:Economy ;
+              rdfs:label "has Economy" .
+
+
+###  https://vocab.um.es/country1#hasGeography
+um:hasGeography rdf:type owl:ObjectProperty ;
+                rdfs:domain um:Country ;
+                rdfs:range um:Geography ;
+                rdfs:label "has Geography" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://vocab.um.es/country1#hasAbbreviation
+um:hasAbbreviation rdf:type owl:DatatypeProperty ;
+                   rdfs:domain um:Country ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "Abbreviation" .
+
+
+###  https://vocab.um.es/country1#hasAgriculturalLand
+um:hasAgriculturalLand rdf:type owl:DatatypeProperty ;
+                       rdfs:domain um:Geography ;
+                       rdfs:range xsd:float ;
+                       rdfs:label "Agricultural Land" .
+
+
+###  https://vocab.um.es/country1#hasArmedForcesSize
+um:hasArmedForcesSize rdf:type owl:DatatypeProperty ;
+                      rdfs:domain um:Economy ;
+                      rdfs:range xsd:float ;
+                      rdfs:label "Armed Forces Size" .
+
+
+###  https://vocab.um.es/country1#hasBirthRate
+um:hasBirthRate rdf:type owl:DatatypeProperty ;
+                rdfs:domain um:Demographics ;
+                rdfs:range xsd:float ;
+                rdfs:label "Birth Rate" .
+
+
+###  https://vocab.um.es/country1#hasCallingCode
+um:hasCallingCode rdf:type owl:DatatypeProperty ;
+                  rdfs:domain um:Country ;
+                  rdfs:range xsd:integer ;
+                  rdfs:label "Calling Code" .
+
+
+###  https://vocab.um.es/country1#hasCapital
+um:hasCapital rdf:type owl:DatatypeProperty ;
+              rdfs:domain um:Country ;
+              rdfs:range xsd:string ;
+              rdfs:label "Capital/Major City" .
+
+
+###  https://vocab.um.es/country1#hasDensity
+um:hasDensity rdf:type owl:DatatypeProperty ;
+              rdfs:domain um:Geography ;
+              rdfs:range xsd:float ;
+              rdfs:label "Density" .
+
+
+###  https://vocab.um.es/country1#hasLaborForceParticipation
+um:hasLaborForceParticipation rdf:type owl:DatatypeProperty ;
+                              rdfs:domain um:Economy ;
+                              rdfs:range xsd:float ;
+                              rdfs:label "Labor Force Participation" .
+
+
+###  https://vocab.um.es/country1#hasLandArea
+um:hasLandArea rdf:type owl:DatatypeProperty ;
+               rdfs:domain um:Geography ;
+               rdfs:range xsd:float ;
+               rdfs:label "Land Area" .
+
+
+###  https://vocab.um.es/country1#hasLatitude
+um:hasLatitude rdf:type owl:DatatypeProperty ;
+               rdfs:domain um:Geography ;
+               rdfs:range xsd:float ;
+               rdfs:label "Latitude" .
+
+
+###  https://vocab.um.es/country1#hasLongitude
+um:hasLongitude rdf:type owl:DatatypeProperty ;
+                rdfs:domain um:Geography ;
+                rdfs:range xsd:float ;
+                rdfs:label "Longitude" .
+
+
+###  https://vocab.um.es/country1#hasPopulation
+um:hasPopulation rdf:type owl:DatatypeProperty ;
+                 rdfs:domain um:Demographics ;
+                 rdfs:range xsd:integer ;
+                 rdfs:label "Population" .
+
+
+###  https://vocab.um.es/country1#hasTaxRevenue
+um:hasTaxRevenue rdf:type owl:DatatypeProperty ;
+                 rdfs:domain um:Economy ;
+                 rdfs:range xsd:float ;
+                 rdfs:label "Tax Revenue" .
+
+
+###  https://vocab.um.es/country1#hasTotalTaxRate
+um:hasTotalTaxRate rdf:type owl:DatatypeProperty ;
+                   rdfs:domain um:Economy ;
+                   rdfs:range xsd:float ;
+                   rdfs:label "Total Tax Rate" .
+
+
+###  https://vocab.um.es/country1#hasUnemploymentRate
+um:hasUnemploymentRate rdf:type owl:DatatypeProperty ;
+                       rdfs:domain um:Economy ;
+                       rdfs:range xsd:float ;
+                       rdfs:label "Unemployment Rate" .
+
+
+###  https://vocab.um.es/country1#hasUrbanPopulation
+um:hasUrbanPopulation rdf:type owl:DatatypeProperty ;
+                      rdfs:domain um:Demographics ;
+                      rdfs:range xsd:integer ;
+                      rdfs:label "Urban Population" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://vocab.um.es/country1#Country
+um:Country rdf:type owl:Class ;
+           rdfs:label "Country" .
+
+
+###  https://vocab.um.es/country1#Demographics
+um:Demographics rdf:type owl:Class ;
+                rdfs:label "Demographics" .
+
+
+###  https://vocab.um.es/country1#Economy
+um:Economy rdf:type owl:Class ;
+           rdfs:label "Economy" .
+
+
+###  https://vocab.um.es/country1#Geography
+um:Geography rdf:type owl:Class ;
+             rdfs:label "Geography" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
