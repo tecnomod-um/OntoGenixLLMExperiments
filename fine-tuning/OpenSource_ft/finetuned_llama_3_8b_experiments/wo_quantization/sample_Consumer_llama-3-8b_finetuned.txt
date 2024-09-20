@@ -1,0 +1,197 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix um: <https://vocab.um.es#>.
+
+um:CreditComplaintOntology rdf:type owl:Ontology.
+
+### Classes ###
+
+um:CreditComplaint rdf:type owl:Class ;
+    rdfs:label "Credit Complaint".
+
+um:DateReceived rdf:type owl:Class ;
+    rdfs:label "Date Received".
+
+um:Product rdf:type owl:Class ;
+    rdfs:label "Product".
+
+um:SubProduct rdf:type owl:Class ;
+    rdfs:label "Sub-Product".
+
+um:Issue rdf:type owl:Class ;
+    rdfs:label "Issue".
+
+um:SubIssue rdf:type owl:Class ;
+    rdfs:label "Sub-Issue".
+
+um:ConsumerComplaintNarrative rdf:type owl:Class ;
+    rdfs:label "Consumer Complaint Narrative".
+
+um:CompanyResponse rdf:type owl:Class ;
+    rdfs:label "Company Response".
+
+um:State rdf:type owl:Class ;
+    rdfs:label "State".
+
+um:ZIPCode rdf:type owl:Class ;
+    rdfs:label "ZIP Code".
+
+um:Tags rdf:type owl:Class ;
+    rdfs:label "Tags".
+
+um:ConsumerConsent rdf:type owl:Class ;
+    rdfs:label "Consumer Consent".
+
+um:SubmittedVia rdf:type owl:Class ;
+    rdfs:label "Submitted Via".
+
+um:DateSentToCompany rdf:type owl:Class ;
+    rdfs:label "Date Sent to Company".
+
+um:CompanyResponseToConsumer rdf:type owl:Class ;
+    rdfs:label "Company Response to Consumer".
+
+um:TimelyResponse rdf:type owl:Class ;
+    rdfs:label "Timely Response".
+
+um:Disputed rdf:type owl:Class ;
+    rdfs:label "Disputed".
+
+um:ComplaintID rdf:type owl:Class ;
+    rdfs:label "Complaint ID".
+
+### Data Properties ###
+
+um:hasTypeOfComplaint a owl:DatatypeProperty ;
+    rdfs:domain um:CreditComplaint ;
+    rdfs:range xsd:string ;
+    rdfs:label "Type of Complaint".
+
+um:hasCompanyResponse a owl:DatatypeProperty ;
+    rdfs:domain um:CompanyResponse ;
+    rdfs:range xsd:string ;
+    rdfs:label "Company Response".
+
+um:hasTags a owl:DatatypeProperty ;
+    rdfs:domain um:Tags ;
+    rdfs:range xsd:string ;
+    rdfs:label "Tags".
+
+um:hasSubmittedVia a owl:DatatypeProperty ;
+    rdfs:domain um:SubmittedVia ;
+    rdfs:range xsd:string ;
+    rdfs:label "Submitted Via".
+
+um:hasDateSentToCompany a owl:DatatypeProperty ;
+    rdfs:domain um:DateSentToCompany ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date Sent to Company".
+
+um:hasCompanyResponseToConsumer a owl:DatatypeProperty ;
+    rdfs:domain um:CompanyResponseToConsumer ;
+    rdfs:range xsd:string ;
+    rdfs:label "Company Response to Consumer".
+
+um:hasTimelyResponse a owl:DatatypeProperty ;
+    rdfs:domain um:TimelyResponse ;
+    rdfs:range xsd:string ;
+    rdfs:label "Timely Response".
+
+um:hasDisputed a owl:DatatypeProperty ;
+    rdfs:domain um:Disputed ;
+    rdfs:range xsd:string ;
+    rdfs:label "Disputed".
+
+um:hasComplaintID a owl:DatatypeProperty ;
+    rdfs:domain um:ComplaintID ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Complaint ID".
+
+### Object Properties ###
+
+um:hasCreditComplaint a owl:ObjectProperty ;
+    rdfs:domain um:DateReceived ;
+    rdfs:range um:CreditComplaint ;
+    rdfs:label "Has Credit Complaint".
+
+um:hasRelatedToProduct a owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:SubProduct ;
+    rdfs:label "Related To Product".
+
+um:hasRelatedToIssue a owl:ObjectProperty ;
+    rdfs:domain um:Issue ;
+    rdfs:range um:SubIssue ;
+    rdfs:label "Related To Issue".
+
+um:hasAffectingState a owl:ObjectProperty ;
+    rdfs:domain um:State ;
+    rdfs:range um:ZIPCode ;
+    rdfs:label "Affecting State".
+
+um:hasRelatedToTags a owl:ObjectProperty ;
+    rdfs:domain um:Tags ;
+    rdfs:range um:ConsumerComplaintNarrative ;
+    rdfs:label "Related To Tags".
+
+um:hasRelatedToConsumer a owl:ObjectProperty ;
+    rdfs:domain um:ConsumerConsent ;
+    rdfs:range um:SubmittedVia ;
+    rdfs:label "Related To Consumer".
+
+um:hasRelatedToDateSent a owl:ObjectProperty ;
+    rdfs:domain um:DateSentToCompany ;
+    rdfs:range um:CompanyResponse ;
+    rdfs:label "Related To Date Sent".
+
+um:hasRelatedToCompanyResponse a owl:ObjectProperty ;
+    rdfs:domain um:CompanyResponseToConsumer ;
+    rdfs:range um:CompanyResponse ;
+    rdfs:label "Related To Company Response".
+
+um:hasRelatedToState a owl:ObjectProperty ;
+    rdfs:domain um:State ;
+    rdfs:range um:ZIPCode ;
+    rdfs:label "Related To State".
+
+um:hasRelatedToConsumerConsent a owl:ObjectProperty ;
+    rdfs:domain um:ConsumerConsent ;
+    rdfs:range um:SubmittedVia ;
+    rdfs:label "Related To Consumer Consent".
+
+um:hasRelatedToDateSent a owl:ObjectProperty ;
+    rdfs:domain um:DateSentToCompany ;
+    rdfs:range um:CompanyResponse ;
+    rdfs:label "Related To Date Sent".
+
+um:hasRelatedToCompanyResponse a owl:ObjectProperty ;
+    rdfs:domain um:CompanyResponseToConsumer ;
+    rdfs:range um:CompanyResponse ;
+    rdfs:label "Related To Company Response".
+
+um:hasRelatedToSubmittedVia a owl:ObjectProperty ;
+    rdfs:domain um:SubmittedVia ;
+    rdfs:range um:DateSentToCompany ;
+    rdfs:label "Related To Submitted Via".
+
+um:hasRelatedToDateReceived a owl:ObjectProperty ;
+    rdfs:domain um:DateReceived ;
+    rdfs:range um:CreditComplaint ;
+    rdfs:label "Related To Date Received".
+
+um:hasRelatedToTimelyResponse a owl:ObjectProperty ;
+    rdfs:domain um:TimelyResponse ;
+    rdfs:range um:CompanyResponse ;
+    rdfs:label "Related To Timely Response".
+
+um:hasRelatedToDisputed a owl:ObjectProperty ;
+    rdfs:domain um:Disputed ;
+    rdfs:range um:CompanyResponse ;
+    rdfs:label "Related To Disputed".
+
+um:hasComplaintID a owl:ObjectProperty ;
+    rdfs:domain um:ComplaintID ;
+    rdfs:range xsd:string ;
+    rdfs:label "Has Complaint ID".

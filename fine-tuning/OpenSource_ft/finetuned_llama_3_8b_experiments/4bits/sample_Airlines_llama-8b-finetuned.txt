@@ -1,0 +1,120 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix um: <https://vocab.um.es#>.
+
+um:SatisfactionOntology rdf:type owl:Ontology.
+
+### Classes ###
+
+um:Customer rdf:type owl:Class ;
+    rdfs:label "Customer"@en.
+
+um:CustomerType rdf:type owl:Class ;
+    rdfs:label "Customer Type"@en.
+
+um:Gender rdf:type owl:Class ;
+    rdfs:label "Gender"@en.
+
+um:Airline rdf:type owl:Class ;
+    rdfs:label "Airline"@en.
+
+um:AirlineService rdf:type owl:Class ;
+    rdfs:label "Airline Service"@en.
+
+um:Class rdf:type owl:Class ;
+    rdfs:label "Class"@en.
+
+um:Age rdf:type owl:Class ;
+    rdfs:label "Age"@en.
+
+um:TypeOfTravel rdf:type owl:Class ;
+    rdfs:label "Type of Travel"@en.
+
+um:Position rdf:type owl:Class ;
+    rdfs:label "Position"@en.
+
+### Data Properties ###
+
+um:hasSatisfaction rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:string ;
+    rdfs:label "Satisfaction"@en.
+
+um:hasGender rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range um:Gender ;
+    rdfs:label "Gender"@en.
+
+um:hasCustomerType rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range um:CustomerType ;
+    rdfs:label "Customer Type"@en.
+
+um:hasAge rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Age"@en.
+
+um:hasAirline rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:AirlineService ;
+    rdfs:range um:Airline ;
+    rdfs:label "Airline"@en.
+
+um:hasClass rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Class ;
+    rdfs:range xsd:string ;
+    rdfs:label "Class"@en.
+
+um:hasTypeOfTravel rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:TypeOfTravel ;
+    rdfs:range xsd:string ;
+    rdfs:label "Type of Travel"@en.
+
+um:hasPosition rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Position ;
+    rdfs:range xsd:string ;
+    rdfs:label "Position"@en.
+
+um:hasAgeRange rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Age ;
+    rdfs:range xsd:string ;
+    rdfs:label "Age Range"@en.
+
+### Object Properties ###
+
+um:hasInflightEntertainment rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Airline ;
+    rdfs:range um:Class ;
+    rdfs:label "Inflight Entertainment"@en.
+
+um:hasOnlineBooking rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Airline ;
+    rdfs:range um:TypeOfTravel ;
+    rdfs:label "Online Booking"@en.
+
+um:hasBoarding rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Position ;
+    rdfs:range um:Class ;
+    rdfs:label "Boarding"@en.
+
+um:hasLegRoomService rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Class ;
+    rdfs:range um:Position ;
+    rdfs:label "Leg Room Service"@en.
+
+um:hasBaggageHandling rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Position ;
+    rdfs:range um:Class ;
+    rdfs:label "Baggage Handling"@en.
+
+um:hasArrivalDelay rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Position ;
+    rdfs:range um:Class ;
+    rdfs:label "Arrival Delay"@en.
+
+um:hasDepartureDelay rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Position ;
+    rdfs:range um:Class ;
+    rdfs:label "Departure Delay"@en.

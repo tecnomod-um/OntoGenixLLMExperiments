@@ -1,0 +1,91 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix um: <https://vocab.um.es#>.
+
+um:ElectronicsSalesOntology rdf:type owl:Ontology.
+
+### Classes ###
+
+um:Product rdf:type owl:Class ;
+    rdfs:label "Product".
+
+um:Brand rdf:type owl:Class ;
+    rdfs:label "Brand".
+
+um:Price rdf:type owl:Class ;
+    rdfs:label "Price".
+
+um:DiscountPrice rdf:type owl:Class ;
+    rdfs:label "Discount Price".
+
+um:Quantity rdf:type owl:Class ;
+    rdfs:label "Quantity".
+
+um:Category rdf:type owl:Class ;
+    rdfs:label "Category".
+
+um:SubCategory rdf:type owl:Class ;
+    rdfs:label "Sub-Category" 
+
+
+### Data Properties ###
+
+um:productName rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string ;
+    rdfs:label "Product Name".
+
+um:brand rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string ;
+    rdfs:label "Brand".
+
+um:price rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Price ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Price".
+
+um:discountPrice rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:DiscountPrice ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Discount Price".
+
+um:quantity rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Quantity ;
+    rdfs:range xsd:string ;
+    rdfs:label "Quantity".
+
+um:category rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category".
+
+um:subCategory rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sub-Category" 
+
+
+### Object Properties ###
+
+um:hasPrice rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:Price ;
+    rdfs:label "Has Price".
+
+um:hasDiscountPrice rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:DiscountPrice ;
+    rdfs:label "Has Discount Price".
+
+um:belongsToCategory rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:Category ;
+    rdfs:label "Belongs to Category".
+
+um:belongsToSubCategory rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:SubCategory ;
+    rdfs:label "Belongs to Sub-Category".
