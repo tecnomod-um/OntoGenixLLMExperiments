@@ -28,7 +28,7 @@ Next, using the API provided by OpenAI, the training and validation data are upl
 Once the new fine-tuned model is created using the data of interest, the **learning curves** are analyzed. These learning curves are mathematical representations of the model's learning process during training, helping to assess whether the fine-tuned model is overfitted or underfitted. They provide insight into the model's performance over time, guiding further adjustments if necessary.
 
 ### Open-source models (collaboration with Ronghao Pan)
-The **Llama 3 (8B) model** is trained and tested using the same method as the GPT-4o model to compare the results of the fine-tuning process in both models. The Llama 3 (8B) model is quantized at both **4-bit** and **8-bit** levels, and the comparison of the fine-tuning process will be conducted to assess how quantization impacts the accuracy of the Llama 3 (8B) model.
+The **Llama 3 (8B) model** is trained and tested using the same method as the GPT-4o model to compare the results of the fine-tuning process in both models. The Llama 3 (8B) model is quantized at both **4-bit** and **8-bit** levels, and the comparison of the fine-tuning process will be conducted to assess how quantization impacts the accuracy of the Llama 3 (8B) model. In addition, the model without quantization is also evaluated and compared with the Llama 2 (13B) model.
 
 The **Llama 2 (13B) model** (without being quantized) is trained and tested using the same method as the GPT-4o model to compare the results of the fine-tuning process in both models.
 
