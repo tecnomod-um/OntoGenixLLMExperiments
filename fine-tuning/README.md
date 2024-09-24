@@ -52,7 +52,7 @@ There is a considerable **token cost** in the system prompt, as the full ontolog
 * **Fine-tuning process**: Train the model with pairs unstructured text-KG where the KG conforms to the ontology of interest. It is like showing the model's use cases.
 The system prompt can be very concise, so most of the token cost comes from the unstructured text to be transformed.
 
-The LLM model itself (**GPT-4o**) is asked to build the training dataset for the fine-tuning process in the JSONL format, generating 187 examples (pairs unstructured text-KG) corresponding to the custom ontology. In this case, for the fine-tuning process, the LLM model GPT-4o is asked to build the **training dataset** in the JSONL format, generating 187 examples (pairs unstructured text-KG) corresponding to the custom ontology. 
+In this case, for the fine-tuning process, the LLM model GPT-4o is asked to build the **training dataset** in the JSONL format, generating 187 examples (pairs unstructured text-KG) corresponding to the custom ontology. 
 Here is one of the examples, where "um:" corresponds to the prefix of our ontology of interest:
 ```
 {"messages": [
