@@ -42,15 +42,25 @@ Additionally, six datasets related to commercial activities (Airlines, Amazon, B
 * The ontologies obtained with the RAG process are more concise than the base model using the prompt, that is, the redundancy observed with the base model is solved.
 * The RAG process is the best or one of the best methods for the ontology-building process.
 ***
-## Ontology population - Instruct the model to use a specific ontology of interest
-Explore the capabilities of an RAG process using a specific ontology of interest and compare it to a baseline model that directly integrates this ontology into its prompt. The goal is to perform ontology population, which involves updating an ontology with new facts extracted from an input knowledge resource. To achieve this, each line of a CSV file is translated into an RDF graph that aligns with the ontology of interest.
+## CSV-Ontology Alignment 
+Explore the capabilities of an RAG process using ontologies of interest and compare it to a baseline model that directly integrates this ontology into its prompt. The goal is to perform a CSV-Ontology Alignment, which involves providing the model with the ontologies to be used and attempting to find in those ontologies a class that matches each of the column names in the CSV file.
 
-In this experiment, an ontology about countries is used as the ontology of interest. The CSV file utilized for the ontology population contains information about various countries around the world. Since the CSV is large and we aim to conduct a pilot experiment, we will use information from only three countries (three lines of the CSV).
+In this experiment, the ontologies used are:
+* AFO ontology: The AFO is an ontology suite that provides a standard vocabulary and semantic model for the representation of laboratory analytical processes. 
+* Country ontology (made by me): Describes the demographics, economics, and geography of a country.
+* CHEMINF ontology: The chemical information ontology (cheminf) describes information entities about chemical entities. It provides qualitative and quantitative attributes to richly describe chemicals.
 
 ### GPT models
-As in the other experiment, the RAG process will be tested using the GPT-builder tool. The ontology of interest is made available to the model to use it to translate each line of the CSV file to an RDF graph that conforms to the ontology of interest.
+As in the other experiment, the RAG process is performed through an **assistant agent**. Assistants can call OpenAI’s models with specific instructions to tune their personality and capabilities and can also access multiple tools in parallel, like the File Search tool. The **File Search tool** augments the Assistant with knowledge from outside its model, such as proprietary product information or documents provided by your users.
 
-**The implementation of RAG via API is still pending.**
+In this case, the assistant will use the **GPT-4o model** and the previous three mentioned ontologies will be provided for the alignment task. So, when the model is asked to assign an IRI class to a column name of a CSV file, it will consult the ontologies previously included in a vector store.
+
+<p align="center">
+<img width="586" alt="image" src="https://github.com/user-attachments/assets/f2a677f1-60d4-435a-bd24-9f23edd66de9" />
+</p>
+
 ### Findings
-* Instruct the model to use a specific ontology of interest through an RAG process, which allows the model to use the properties of the ontology of interest adequately (without creating new ones). However, it only uses one class of the ontology, ignoring the others. Nor does it create new classes.
+* The ragged model can assign an adequate IRI to a column name using the classes of the ontologies of interest.
+* The search can be limited to only those ontologies included in the RAG process, avoiding the use of other external ontologies.
+* The RAG process via OpenAI API seems to underperform when the ontology included in the RAG is large. The larger the ontology, the more difficult it is for the model to interact with it.
 
