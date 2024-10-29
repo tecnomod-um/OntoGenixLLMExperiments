@@ -1,10 +1,15 @@
 # Experiments with base openLLMs
 
-Study of the ontology generation capacity of different current base openLLMs with the defined [OntoGenix](https://github.com/tecnomod-um/OntoGenix_BASF/tree/main/GUI) prompts. 
+## Objective
 
-The aim of this experiment is to use the OntoGenix approach, but changing the generation engine, that instead of GPT-4, an opensource LLM is used for high-level description generation, ontology generation and ontology mapping to YML format. 
+The objective of these experiments is to study the ontology generation capacity of different base openLLMs
 
-The experiments used the same generation parameters for different LLMs to ensure comparability of results and to fairly assess the performance of each model under similar conditions. 
+
+## The approach
+
+The aim of this experiment is to use the OntoGenix approach and the the defined [OntoGenix](https://github.com/tecnomod-um/OntoGenix_BASF/tree/main/GUI) prompts, but changing the generation engine. Instead of GPT-4, an opensource LLM is used for high-level description generation, ontology generation and ontology mapping to YML format in each experiment
+
+All the experiments used the same generation parameters for different LLMs to ensure comparability of results and to fairly assess the performance of each model under similar conditions. 
 
 The generation parameters are: 
 
