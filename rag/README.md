@@ -1,66 +1,7 @@
 # RAG experiments
-## Ontology building
-Study the ontology-building capabilities of the **Retrival-Augmented Generation** (RAG) process, where the model is provided with files to use as a reference for future queries. In this case, some ontologies are made available to the model to serve as references that the model will consult to accurately translate a given CSV file into an ontology.
-***
-### GPT models
-#### GPT-builder (GPT-4)
-Due to the limitations of the API regarding file upload formats, the RAG process will be tested using the GPT-builder tool instead. This tool, available on the OpenAI website, is currently powered by GPT-4 and supports the use of the Turtle format, which is necessary for uploading various ontology files. These ontology files will serve as references that the model will consult to accurately translate a given CSV file into an ontology.
 
-#### RAG through OpenAI API (GPT-4o)
-Using OpenAI's API, the RAG process is performed through an **assistant agent**. Assistants can call OpenAI’s models with specific instructions to tune their personality and capabilities and can also access multiple tools in parallel, like the File Search tool. The **File Search tool** augments the Assistant with knowledge from outside its model, such as proprietary product information or documents provided by your users.
+The objective is to study the ontology-building and matching capabilities of LLM models with the contribution of the **Retrieval-Augmented Generation** (RAG). Each type of experiment is reported in separate pages:
 
-In this case, the assistant will use the **GPT-4o model** and five ontologies will be provided as a reference for the ontology-building task. So, when the model is asked to translate a CSV file to an ontology, it will consult the ontologies of reference to understand the structure of an ontology.
-
-<p align="center">
-  <img width="586" alt="image" src="https://github.com/user-attachments/assets/419e90f7-e802-4c3a-88ea-f742bda65a58" />
-</p>
-
-The steps to perform the RAG process are as follows:
-
-**1. Create an assistant with the File Search tool enabled.**
-  * An assistant is a purpose-built AI that uses OpenAI’s models and calls tools.
-  * File Search is a tool that augments the Assistant with knowledge from outside its model, such as proprietary product information or documents provided by your users.
-  * Once the file_search tool is enabled, the model decides when to retrieve content based on user messages.
-    
-**2. Make the files available for the assistant.**
-  * Create a vector store.
-  * Upload the files.
-  * Add the files to the vector store.
-  * Update the assistant with the new vector store.
-    
-**3. Launch the query (translate CSV file into an ontology) using the assistant.**
-
-Additionally, six datasets related to commercial activities (Airlines, Amazon, Brazilian, BigBasket, Consumer, and E-commerce) will be used as test data to evaluate the ontology construction of the ragged model.
-
-#### Limitations of the RAG process using the OpenAI API
-* The maximum file size is **512 MB**. 
-* Each file should contain no more than **2 million tokens per file** (computed automatically when you attach a file).
-* Each vector_store can hold up to **10,000 files**.
-* You can attach **at most one vector store** to an assistant.
-
-### Findings
-* The ontologies obtained with the RAG process are more concise than the base model using the prompt, that is, the redundancy observed with the base model is solved.
-* The RAG process is the best or one of the best methods for the ontology-building process.
-***
-## CSV-Ontology Alignment 
-Explore the capabilities of an RAG process using ontologies of interest and compare it to a baseline model that directly integrates this ontology into its prompt. The goal is to perform a CSV-Ontology Alignment, which involves providing the model with the ontologies to be used and attempting to find in those ontologies a class that matches each of the column names in the CSV file.
-
-In this experiment, the ontologies used are:
-* AFO ontology: The AFO is an ontology suite that provides a standard vocabulary and semantic model for the representation of laboratory analytical processes. 
-* Country ontology (made by me): Describes the demographics, economics, and geography of a country.
-* CHEMINF ontology: The chemical information ontology (cheminf) describes information entities about chemical entities. It provides qualitative and quantitative attributes to richly describe chemicals.
-
-### GPT models
-As in the other experiment, the RAG process is performed through an **assistant agent**. Assistants can call OpenAI’s models with specific instructions to tune their personality and capabilities and can also access multiple tools in parallel, like the File Search tool. The **File Search tool** augments the Assistant with knowledge from outside its model, such as proprietary product information or documents provided by your users.
-
-In this case, the assistant will use the **GPT-4o model** and the previous three mentioned ontologies will be provided for the alignment task. So, when the model is asked to assign an IRI class to a column name of a CSV file, it will consult the ontologies previously included in a vector store.
-
-<p align="center">
-<img width="586" alt="image" src="https://github.com/user-attachments/assets/f2a677f1-60d4-435a-bd24-9f23edd66de9" />
-</p>
-
-### Findings
-* The ragged model can assign an adequate IRI to a column name using the classes of the ontologies of interest.
-* The search can be limited to only those ontologies included in the RAG process, avoiding the use of other external ontologies.
-* The RAG process via OpenAI API seems to underperform when the ontology included in the RAG is large. The larger the ontology, the more difficult it is for the model to interact with it.
+* [Ontology building with RAG models](./ontology-building.md)
+* [Data to ontology matching](./data-ontology.md)
 
