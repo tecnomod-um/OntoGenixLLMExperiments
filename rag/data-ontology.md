@@ -24,8 +24,11 @@ In this case, the assistant used the **GPT-4o model** and the previous three men
 To evaluate the performance of the RAG models in the task of matching data to ontologies, four CSV files have been used.
 
 TP: When the model proposes a correct IRI for the column name.
+
 FP: When the model proposes an incorrect IRI for the column name.
+
 TN: When the model indicates that an adequate IRI does not exist, it is real.
+
 FN: When the model indicates that an adequate IRI does not exist, it is not real.
 
 
