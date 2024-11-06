@@ -21,15 +21,29 @@ In this case, the assistant used the **GPT-4o model** and the previous three men
 </p>
 
 ### Evaluation of the RAG models
-To evaluate the performance of the RAG models in the task of matching data to ontologies, four CSV files have been used.
+To evaluate the performance of the RAG models in the task of matching data to ontologies, four CSV files have been used. We classified the model predictions as:
+* True Positives (TP): When the model proposes a correct IRI for the column name.
+* False Positives (FP): When the model proposes an incorrect IRI for the column name.
+* True Negatives (TN): When the model indicates that an adequate IRI does not exist and it is real.
+* False Negatives (FN): When the model indicates that an adequate IRI does not exist and it is not real.
+#### Metrics 
+**Precision** is the proportion of correctly identified IRIs (true positives) out of all IRIs returned by the LLM (both true positives and false positives). It measures the accuracy of the LLM in retrieving relevant IRIs when it decides to return one.
 
-TP: When the model proposes a correct IRI for the column name.
+$$
+\text{Precisión} = \frac{TP}{TP + FP}
+$$
 
-FP: When the model proposes an incorrect IRI for the column name.
+**Recall** is the proportion of correctly identified IRIs (true positives) out of all actual correct IRIs available in the dataset (the sum of true positives and false negatives). It measures the LLM's ability to find all relevant IRIs for the terms in question.
 
-TN: When the model indicates that an adequate IRI does not exist, it is real.
+$$
+\text{Recall} = \frac{TP}{TP + FN}
+$$
 
-FN: When the model indicates that an adequate IRI does not exist, it is not real.
+The **F1-score** is the harmonic mean of precision and recall, balancing the two metrics to provide a single score that accounts for both false positives and false negatives. It’s particularly useful when you need to weigh precision and recall equally.
+
+$$
+\text{F1-score} = \frac{2TP}{2TP + FP + FN}
+$$
 
 
 ### Findings
