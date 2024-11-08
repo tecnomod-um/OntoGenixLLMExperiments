@@ -30,7 +30,7 @@ To evaluate the performance of the RAG models in the task of matching data to on
 **Precision** is the proportion of correctly identified IRIs (true positives) out of all IRIs returned by the LLM (both true positives and false positives). It measures the accuracy of the LLM in retrieving relevant IRIs when it decides to return one.
 
 $$
-\text{Precisión} = \frac{TP}{TP + FP}
+\text{Precision} = \frac{TP}{TP + FP}
 $$
 
 **Recall** is the proportion of correctly identified IRIs (true positives) out of all actual correct IRIs available in the dataset (the sum of true positives and false negatives). It measures the LLM's ability to find all relevant IRIs for the terms in question.
@@ -39,7 +39,7 @@ $$
 \text{Recall} = \frac{TP}{TP + FN}
 $$
 
-The **F1-score** is the harmonic mean of precision and recall, balancing the two metrics to provide a single score that accounts for both false positives and false negatives. It’s particularly useful when you need to weigh precision and recall equally.
+The **F1-score** is the harmonic mean of precision and recall, balancing the two metrics to provide a single score that accounts for both false positives and false negatives. 
 
 $$
 \text{F1-score} = \frac{2TP}{2TP + FP + FN}
