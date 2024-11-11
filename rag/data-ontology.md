@@ -70,6 +70,9 @@ $$
   </tr>
 </table>
 
+* This relatively high coefficient of variation for the precision suggests that the precision of the model is somewhat inconsistent across different tests. THat is, the performance of the model in terms of precision varies considerably.
+* The low recall observed indicates that some IRIs are not retrieved by the model, despite having suitable matches within the ontologies used in the RAG process.
+
 #### Using 10 rows as context
 <table>
   <tr>
@@ -118,8 +121,12 @@ $$
   </tr>
 </table>
 
+* As in the case of the column names, the high coefficient of variation for the precision suggests that the precision of the model is somewhat inconsistent across different tests.
+
 ### Findings
 * The ragged model can assign an adequate IRI to a column name using the classes of the ontologies of interest.
 * The search can be limited to only those ontologies included in the RAG process, avoiding the use of other external ontologies.
 * The RAG process via OpenAI API seems to underperform when the ontology included in the RAG is large. The larger the ontology, the more difficult it is for the model to interact with it.
+* Using 10 rows from the CSV file yields the highest precision and F1-score, making it the most effective of the three methods studied. However, the improvement achieved by the rows approach is modest and the coefficient of variation also remains high.
+
 
