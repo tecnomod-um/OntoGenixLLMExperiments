@@ -24,8 +24,8 @@ In this case, the assistant used the **GPT-4o model** and the previous three men
 To evaluate the performance of the RAG models in the task of matching data to ontologies, four CSV files have been used. We classified the model predictions as:
 * True Positives (TP): When the model proposes a correct IRI for the column name.
 * False Positives (FP): When the model proposes an incorrect IRI for the column name.
-* True Negatives (TN): When the model indicates that an adequate IRI does not exist and it is real.
-* False Negatives (FN): When the model indicates that an adequate IRI does not exist and it is not real.
+* True Negatives (TN): When the model indicates that an adequate IRI does not exist and it is true.
+* False Negatives (FN): When the model indicates that an adequate IRI does not exist and it is not true.
 #### Metrics 
 **Precision** is the proportion of correctly identified IRIs (true positives) out of all IRIs returned by the LLM (both true positives and false positives). It measures the accuracy of the LLM in retrieving relevant IRIs when it decides to return one.
 
@@ -45,6 +45,78 @@ $$
 \text{F1-score} = \frac{2TP}{2TP + FP + FN}
 $$
 
+### Results
+#### With only column names 
+<table>
+  <tr>
+    <td>
+     
+| Metric     | Mean |
+|------------|-------|
+| Precision  | 0.746 |
+| Recall     | 0.555 |
+| F1-score   | 0.597 |
+
+   </td>
+   <td>
+    
+| Metric               | Coefficient of Variation |
+|----------------------|--------------------------|
+| Precision            | 36.786                   |
+| Recall               | 38.033                   |
+| F1-score             | 32.289                   |
+
+   </td>
+  </tr>
+</table>
+
+#### Using 10 rows as context
+<table>
+  <tr>
+    <td>
+     
+| Metric     | Mean |
+|------------|-------|
+| Precision  | 0.764 |
+| Recall     | 0.535 |
+| F1-score   | 0.613 |
+
+   </td>
+   <td>
+
+| Metric               | Coefficient of Variation |
+|----------------------|--------------------------|
+| Precision            | 31.016                   |
+| Recall               | 33.215                   |
+| F1-score             | 29.279                   |
+
+   </td>
+  </tr>
+</table>
+
+#### Description of the CSV file as context
+<table>
+  <tr>
+    <td>
+     
+| Metric     | Mean |
+|------------|-------|
+| Precision  | 0.650 |
+| Recall     | 0.347 |
+| F1-score   | 0.433 |
+
+   </td>
+   <td>
+
+| Metric               | Coefficient of Variation |
+|----------------------|--------------------------|
+| Precision            | 70.252                   |
+| Recall               | 94.434                   |
+| F1-score             | 87.422                   |
+
+   </td>
+  </tr>
+</table>
 
 ### Findings
 * The ragged model can assign an adequate IRI to a column name using the classes of the ontologies of interest.
