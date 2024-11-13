@@ -33,7 +33,7 @@ First, we indicate which approach most closely replicated the gold standard huma
 | Airlines          |             |                    | X          |
 | BigBasket         |             |                    | X          |
 | Brazilian         |             | X                  |            |
-| CustomerFeedback  |             |                    |            |
+| CustomerFeedback  | X           |                    |            |
 | eCommerce         |             | X                  | X          |
 
 
