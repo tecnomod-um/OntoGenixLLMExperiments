@@ -1,0 +1,12 @@
+```
+PrefLabel: No match available.
+AltLabels: No match available.
+Domain: No match available.
+TermType: No match available.
+Definition: http://purl.allotrope.org/ontologies/result#AFR_0001561 definition afo.txt【78:10†source】
+ScopeNote: http://purl.allotrope.org/ontologies/quality#AFQ_0000299 columnar particle shape afo.txt【82:2†source】
+Source: No match available.
+Examples: No match available.
+Parents: No match available.
+TermIRI: No match available.
+```

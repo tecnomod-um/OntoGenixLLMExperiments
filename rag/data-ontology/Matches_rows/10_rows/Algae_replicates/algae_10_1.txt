@@ -1,0 +1,10 @@
+```
+Light: No match available.
+Nitrate: http://purl.allotrope.org/ontologies/material#AFM_0001110 silver nitrate titrant solution afo.txt【148:1†afo.txt】
+Iron: No match available.
+Phosphate: http://purl.allotrope.org/ontologies/result#AFR_0002092 phosphate analysis document (cell-culture) afo.txt【148:9†afo.txt】
+Temperature: No match available.
+pH: http://semanticscience.org/resource/CHEMINF_000442 pH descriptor cheminf.txt【206:14†cheminf.txt】
+CO2: No match available.
+Population: No match available.
+```
