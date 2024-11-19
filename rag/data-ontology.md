@@ -22,7 +22,7 @@ In this case, the assistant used the **GPT-4o model** and the previous three men
 <img width="586" alt="image" src="https://github.com/user-attachments/assets/f2a677f1-60d4-435a-bd24-9f23edd66de9" />
 </p>
 
-All the scripts used during the project are included in the directory [ontologies](rag/data-ontology/scripts)
+All the scripts used during the project are included in the directory [scripts](rag/data-ontology/scripts).
 
 ### Evaluation of the RAG models
 To evaluate the performance of the RAG models in the task of matching data to ontologies, four CSV files have been used. We classified the model predictions as:
