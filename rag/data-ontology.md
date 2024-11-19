@@ -45,6 +45,12 @@ $$
 \text{F1-score} = \frac{2TP}{2TP + FP + FN}
 $$
 
+The **coefficient of variation** (CV) is a statistical measure that represents the ratio of the standard deviation to the mean, usually expressed as a percentage. It is used to assess how much a metric varies depending on the dataset. A higher CV indicates greater relative variability, implying that the metrics for a dataset are more spread out around the mean, while a lower CV suggests more consistency. 
+
+$$
+\text{CV} = \frac{\text{Standard deviation}}{Mean} x 100
+$$
+
 ### Results
 #### With only column names 
 <table>
@@ -70,10 +76,10 @@ $$
   </tr>
 </table>
 
-* This relatively high coefficient of variation for the precision suggests that the precision of the model is somewhat inconsistent across different tests. THat is, the performance of the model in terms of precision varies considerably.
+* This relatively high CV for the precision suggests that the precision of the model is somewhat inconsistent across different tests. That is, the performance of the model in terms of precision varies considerably.
 * The low recall observed indicates that some IRIs are not retrieved by the model, despite having suitable matches within the ontologies used in the RAG process.
 
-#### Using 10 rows as context
+#### Using 10 rows as context (+ column names)
 <table>
   <tr>
     <td>
@@ -97,7 +103,7 @@ $$
   </tr>
 </table>
 
-#### Description of the CSV file as context
+#### Description of the CSV file as context (+ column names)
 <table>
   <tr>
     <td>
@@ -121,12 +127,40 @@ $$
   </tr>
 </table>
 
-* As in the case of the column names, the high coefficient of variation for the precision suggests that the precision of the model is somewhat inconsistent across different tests.
+* As in the case of the column names, the high CV for the precision suggests that the precision of the model is somewhat inconsistent across different tests.
+
+#### Using 10 rows + CSV file description (+ column names)
+<table>
+  <tr>
+    <td>
+     
+| Metric     | Mean |
+|------------|-------|
+| Precision  | 0.819 |
+| Recall     | 0.556 |
+| F1-score   | 0.655 |
+
+   </td>
+   <td>
+
+| Metric               | Coefficient of Variation |
+|----------------------|--------------------------|
+| Precision            | 8.531                    |
+| Recall               | 11.790                   |
+| F1-score             |  7.485                   |
+
+   </td>
+  </tr>
+</table>
+
+* The precision of each CSV test file is high, indicating that when the model suggests an identifier, it is correct 8 out of 10 times. 
+* However, the low recall percentage reveals that the model struggles to identify all the correct IRIs present in the dataset.
+* This approach results in the lowest CV, indicating that the model demonstrates greater consistency compared to the other approaches.
 
 ### Findings
 * The ragged model can assign an adequate IRI to a column name using the classes of the ontologies of interest.
 * The search can be limited to only those ontologies included in the RAG process, avoiding the use of other external ontologies.
 * The RAG process via OpenAI API seems to underperform when the ontology included in the RAG is large. The larger the ontology, the more difficult it is for the model to interact with it.
-* Using 10 rows from the CSV file yields the highest precision and F1-score, making it the most effective of the three methods studied. However, the improvement achieved by the rows approach is modest and the coefficient of variation also remains high.
+* Using 10 rows from the CSV file along with its description yields the highest precision, recall, and F1-score, making it the most effective of the four methods studied. This approach also demonstrates the highest consistency, as evidenced by the lowest CV.
 
 
