@@ -1,0 +1,11 @@
+```
+Education: No match available.
+JoiningYear: No match available.
+Country: http://purl.allotrope.org/ontologies/result#AFR_0001064 country name afo.txt【254:11†afo.txt】
+PaymentTier: No match available.
+Age: No match available.
+Gender: No match available.
+EverBenched: http://purl.allotrope.org/ontologies/property#AFX_0002716 has identifier afo.txt【218:1†afo.txt】
+ExperienceInCurrentDomain: No match available.
+LeaveOrNot: No match available.
+```

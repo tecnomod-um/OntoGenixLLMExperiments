@@ -1,0 +1,37 @@
+```
+Country: https://vocab.um.es/country1#Country Country country.txt【218:5†country.txt】
+Density(P/Km2): https://vocab.um.es/country1#hasDensity Density country.txt
+Abbreviation: https://vocab.um.es/country1#hasAbbreviation Abbreviation country.txt
+Agricultural Land(%): https://vocab.um.es/country1#hasAgriculturalLand Agricultural Land country.txt
+Land Area(Km2): https://vocab.um.es/country1#hasLandArea Land Area country.txt
+Armed Forces size: https://vocab.um.es/country1#hasArmedForcesSize Armed Forces size country.txt
+Birth Rate: https://vocab.um.es/country1#hasBirthRate Birth Rate country.txt
+Calling Code: https://vocab.um.es/country1#hasCallingCode Calling Code country.txt
+Capital/Major City: https://vocab.um.es/country1#hasCapital Capital/Major City country.txt
+Co2-Emissions: No match available.
+CPI: No match available.
+CPI Change (%): No match available.
+Currency-Code: No match available.
+Fertility Rate: No match available.
+Forested Area (%): No match available.
+Gasoline Price: No match available.
+GDP: No match available.
+Gross primary education enrollment (%): No match available.
+Gross tertiary education enrollment (%): No match available.
+Infant mortality: No match available.
+Largest city: No match available.
+Life expectancy: No match available.
+Maternal mortality ratio: No match available.
+Minimum wage: No match available.
+Official language: No match available.
+Out of pocket health expenditure: No match available.
+Physicians per thousand: No match available.
+Population: https://vocab.um.es/country1#hasPopulation Population country.txt
+Population: Labor force participation (%): https://vocab.um.es/country1#hasLaborForceParticipation Population country.txt
+Tax revenue (%): https://vocab.um.es/country1#hasTaxRevenue Tax revenue country.txt
+Total tax rate: https://vocab.um.es/country1#hasTotalTaxRate Total tax rate country.txt
+Unemployment rate: No match available.
+Urban_population: No match available.
+Latitude: https://vocab.um.es/country1#hasLatitude Latitude country.txt
+Longitude: https://vocab.um.es/country1#hasLongitude Longitude country.txt
+```
