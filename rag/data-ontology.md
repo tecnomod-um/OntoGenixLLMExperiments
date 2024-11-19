@@ -56,7 +56,7 @@ $$
 $$
 
 ### Results (4 different approaches)
-All the results for each different approaches are located in the directory [data-ontology](rag/data-ontology).
+All the results for each different approach are located in the directory [data-ontology](rag/data-ontology).
 #### With only column names 
 <table>
   <tr>
