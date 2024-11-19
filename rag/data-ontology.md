@@ -11,6 +11,8 @@ In this experiment, the RAG consisted of the following ontologies:
 * Country ontology (made by me): Describes the demographics, economics, and geography of a country.
 * CHEMINF ontology: The chemical information ontology (cheminf) describes information entities about chemical entities. It provides qualitative and quantitative attributes to richly describe chemicals.
 
+The ontologies are available in the directory [ontologies](rag/data-ontology/ontologies).
+
 ## GPT models
 As in the other experiment, the RAG process is performed through an **assistant agent**. Assistants can call OpenAI’s models with specific instructions to tune their personality and capabilities and can also access multiple tools in parallel, like the File Search tool. The **File Search tool** augments the Assistant with knowledge from outside its model, such as proprietary product information or documents provided by your users.
 
@@ -19,6 +21,8 @@ In this case, the assistant used the **GPT-4o model** and the previous three men
 <p align="center">
 <img width="586" alt="image" src="https://github.com/user-attachments/assets/f2a677f1-60d4-435a-bd24-9f23edd66de9" />
 </p>
+
+All the scripts used during the project are included in the directory [ontologies](rag/data-ontology/scripts)
 
 ### Evaluation of the RAG models
 To evaluate the performance of the RAG models in the task of matching data to ontologies, four CSV files have been used. We classified the model predictions as:
