@@ -1,0 +1,14 @@
+﻿Description of the CSV files
+
+
+AFO: The AFO CSV file serves as a structured reference table, capturing key elements of the Allotrope Foundation Ontology (AFO).
+It includes columns detailing terms, corresponding definitions, unique identifiers, and source attribution, ensuring clarity and ease of access to ontology-specific information. This file is designed to support users in navigating and understanding the terminology within the AFO, facilitating its integration into various data management and interoperability applications.
+
+
+Algae: This dataset provides a detailed repository of environmental parameters related to algae populations, which are vital components of aquatic ecosystems. It captures essential data points for analyzing algae distribution, abundance, and diversity, offering insights into ecological dynamics and the health of water bodies. The dataset is an invaluable resource for environmental studies, conservation efforts, and research on ecosystem balance, supporting a deeper understanding of algae's role within aquatic habitats.
+
+
+Employee: This CSV file contains comprehensive data on enterprise employees, structured to facilitate efficient workforce analysis and HR management. It includes essential employee details such as unique identifiers, job titles, department names, employment status, and relevant contact information. This file provides an organized overview, supporting various operational, reporting, and data-driven decision-making tasks related to human resources and organizational planning.
+
+
+World data: This CSV file encompasses a broad dataset from 195 countries, featuring an extensive range of social, economic, and geographic indicators. The data provides insights into each country’s unique characteristics, including metrics on population demographics, economic performance, environmental factors, healthcare, education, and infrastructure. This structured dataset is an invaluable resource for comparative analyses, global studies, and research, offering a comprehensive view of worldwide trends and conditions as of 2023.
