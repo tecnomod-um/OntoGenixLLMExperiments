@@ -1,0 +1,12 @@
+```
+PrefLabel: http://www.w3.org/2004/02/skos/core#prefLabel PrefLabel afo.txt
+AltLabels: No match available.
+Domain: http://purl.allotrope.org/ontologies/role#AFRL_0000336 domain afo.txt
+TermType: No match available.
+Definition: http://purl.allotrope.org/ontologies/quality#AFQ_0000241 definition characteristic afo.txt
+ScopeNote: No match available.
+Source: http://purl.org/dc/terms/source Source afo.txt
+Examples: No match available.
+Parents: No match available.
+TermIRI: No match available.
+```

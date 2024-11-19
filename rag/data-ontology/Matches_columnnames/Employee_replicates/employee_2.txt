@@ -1,0 +1,11 @@
+```
+Education: No match available.
+JoiningYear: No match available.
+Country: http://purl.allotrope.org/ontologies/result#AFR_0001064 country name afo.txt【130:5†afo.txt】
+PaymentTier: No match available.
+Age: No match available.
+Gender: No match available.
+EverBenched: http://purl.allotrope.org/ontologies/result#AFR_0002667 foam detection result afo.txt【130:16†afo.txt】
+ExperienceInCurrentDomain: No match available.
+LeaveOrNot: No match available.
+```

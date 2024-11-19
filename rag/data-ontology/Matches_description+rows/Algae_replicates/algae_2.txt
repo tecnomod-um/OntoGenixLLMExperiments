@@ -1,0 +1,12 @@
+```
+Light: http://purl.allotrope.org/ontologies/material#AFM_0001055 visible light afo.txt【56:4†afo.txt】
+Nitrate: http://purl.allotrope.org/ontologies/material#AFM_0001110 silver nitrate titrant solution afo.txt【56:0†afo.txt】
+Iron: No match available.
+Phosphate: http://purl.allotrope.org/ontologies/result#AFR_0002092 phosphate analysis document (cell-culture) afo.txt【56:2†afo.txt】
+Temperature: http://purl.allotrope.org/ontologies/process#AFP_0002833 temperature control afo.txt【56:18†afo.txt】
+pH: No match available.
+CO2: No match available.
+Population: No match available.
+```
+
+The columns "Light," "Nitrate," "Phosphate," and "Temperature" each have found corresponding IRIs in the Allotrope Foundation ontology. However, no corresponding IRIs were found for "Iron," "pH," "CO2," or "Population" based on the provided files.
