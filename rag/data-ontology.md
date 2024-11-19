@@ -51,7 +51,7 @@ $$
 \text{CV} = \frac{\text{Standard deviation}}{Mean} x 100
 $$
 
-### Results
+### Results (4 different approaches)
 #### With only column names 
 <table>
   <tr>
