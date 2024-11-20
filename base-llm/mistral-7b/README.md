@@ -81,7 +81,7 @@ Description: Transactions for a UK-based and registered non-store online retail.
 
 Analysis: 
 
-## Summary and findings 
+## Summary of the findings 
 - Correctly generates the high-level description of the input data.
 - Sometimes, when generating ontologies in Turtle format, it does not follow the instructions given in the prompt and hallucinations occur.
 - It does not understand the instructions for mapping to RML or YAML format well and does not produce standardised output.
