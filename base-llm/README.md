@@ -32,7 +32,7 @@ For each LLM, we have evaluated a series of Kaggle datasets related to commercia
 ## Summary of the findings
 
 - The Mixtral, Mistral and Llama-2 family models produce numerous hallucinations and generate response that do not align with the standardized format specified in the prompt.
-- The Llama-3 family was trained on over 15 trillion tokens, resulting in fewer hallucinations and generally aligning with the standardized format defined in the prompt.
+- The Llama-3 family was trained on over 15 trillion tokens, resulting in fewer hallucinations and generally aligning with the standardized format defined in the prompt. Therefore, we discarded them for detailed analysis. 
 - Main limitations include the tendency of the latest open-source LLMs used as ontology generation engines to produce hallucinations and deviate from the prompt's defined standardization, as well as the difficulty in evaluating the generated ontologies.
 - Proposed solutions to address the identified limitations include fine-tuning LLMs to model new data within the same domain of interest and in a specified format, and implementing a RAG (Retrieval-Augmented Generation) architecture with sample ontologies and schemas stored in a vector database.
 
