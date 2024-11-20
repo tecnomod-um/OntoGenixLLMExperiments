@@ -78,4 +78,9 @@ Link: https://github.com/tecnomod-um/OntoGenixOpenSourceLLM/tree/main/base-llm/l
 
 Description: Transactions for a UK-based and registered non-store online retail.
 
+## Summary and findings
+
+- As a 70B parameter model, we had to quantize it to 4 bits due to the limited hardware resources available, which reduced its accuracy in generating ontogies, high-level description and mapping.
+- It works better than Llama-3-8b in generating ontologies in TURTLE format.
+  
 Analysis: 
