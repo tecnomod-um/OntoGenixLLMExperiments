@@ -49,6 +49,12 @@ $$
 \text{F1-score} = \frac{2TP}{2TP + FP + FN}
 $$
 
+**Accuracy** measures the proportion of correct predictions (both positive and negative) made by the model relative to the total predictions. That is, it indicates how well the model is performing overall in correctly identifying when it should assign an IRI and when it should not.
+
+$$
+\text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}
+$$
+
 The **coefficient of variation** (CV) is a statistical measure that represents the ratio of the standard deviation to the mean, usually expressed as a percentage. It is used to assess how much a metric varies depending on the dataset. A higher CV indicates greater relative variability, implying that the metrics for a dataset are more spread out around the mean, while a lower CV suggests more consistency. 
 
 $$
@@ -67,6 +73,7 @@ All the results for each different approach are located in the directory [data-o
 | Precision  | 0.746 |
 | Recall     | 0.555 |
 | F1-score   | 0.597 |
+| Accuracy   | 0.661 |
 
    </td>
    <td>
@@ -76,6 +83,7 @@ All the results for each different approach are located in the directory [data-o
 | Precision            | 36.786                   |
 | Recall               | 38.033                   |
 | F1-score             | 32.289                   |
+| Accuracy             | 32.427                   |
 
    </td>
   </tr>
@@ -94,6 +102,7 @@ All the results for each different approach are located in the directory [data-o
 | Precision  | 0.764 |
 | Recall     | 0.535 |
 | F1-score   | 0.613 |
+| Accuracy   | 0.667 |
 
    </td>
    <td>
@@ -103,6 +112,7 @@ All the results for each different approach are located in the directory [data-o
 | Precision            | 31.016                   |
 | Recall               | 33.215                   |
 | F1-score             | 29.279                   |
+| Accuracy             | 30.292                   |
 
    </td>
   </tr>
@@ -118,6 +128,7 @@ All the results for each different approach are located in the directory [data-o
 | Precision  | 0.650 |
 | Recall     | 0.347 |
 | F1-score   | 0.433 |
+| Accuracy   | 0.505 |
 
    </td>
    <td>
@@ -127,6 +138,7 @@ All the results for each different approach are located in the directory [data-o
 | Precision            | 70.252                   |
 | Recall               | 94.434                   |
 | F1-score             | 87.422                   |
+| Accuracy             | 53.149                   |
 
    </td>
   </tr>
@@ -144,6 +156,7 @@ All the results for each different approach are located in the directory [data-o
 | Precision  | 0.819 |
 | Recall     | 0.556 |
 | F1-score   | 0.655 |
+| Accuracy   | 0.720 |
 
    </td>
    <td>
@@ -153,6 +166,7 @@ All the results for each different approach are located in the directory [data-o
 | Precision            | 8.531                    |
 | Recall               | 11.790                   |
 | F1-score             |  7.485                   |
+| Accuracy             | 14.922                   |
 
    </td>
   </tr>
