@@ -79,3 +79,8 @@ Link: https://github.com/tecnomod-um/OntoGenixOpenSourceLLM/tree/main/base-llm/m
 Description: Transactions for a UK-based and registered non-store online retail.
 
 Analysis: 
+
+## Summary and findings 
+- Mixtral is a model that combines 8 models with 7 billion parameters, so it generates the high-level description correctly, but loses some information. 
+- It does not generate output in the format defined in the ontology and mapping generation prompt.
+- It produces a lot of hallucinations, especially in ontology generation and mapping. 
