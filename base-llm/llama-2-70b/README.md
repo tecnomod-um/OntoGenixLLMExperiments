@@ -70,3 +70,9 @@ Link: https://github.com/tecnomod-um/OntoGenixOpenSourceLLM/tree/main/base-llm/l
 Description: Transactions for a UK-based and registered non-store online retail.
 
 Analysis: 
+
+## Summary and findings
+
+- As a model with 70 billion parameters, it requires a greater amount of hardware resources to infer.
+- The model generates the high-level description correctly.
+- The model does not correctly interpret the instructions to generate ontologies in Turtle and map to RML or YAML.
