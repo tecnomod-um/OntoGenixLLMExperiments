@@ -80,7 +80,7 @@ Description: Transactions for a UK-based and registered non-store online retail.
 
 Analysis: 
 
-## Summary and findings
+## Summary of the findings
 
 - Being a newer model with more parameters than Llama-2, it better understands the instructions for both ontology generation and mapping.
 - It produces certain hallucinations in the mapping part, for example, it adds a few more characters or changes some characters for others. 
