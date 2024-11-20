@@ -71,7 +71,7 @@ Description: Transactions for a UK-based and registered non-store online retail.
 
 Analysis: 
 
-## Summary and findings
+## Summary of the findings
 
 - As a model with 70 billion parameters, it requires a greater amount of hardware resources to infer.
 - The model generates the high-level description correctly.
