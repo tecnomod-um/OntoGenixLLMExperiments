@@ -68,3 +68,10 @@ Link: https://github.com/tecnomod-um/OntoGenixOpenSourceLLM/tree/main/base-llm/l
 Description: Transactions for a UK-based and registered non-store online retail.
 
 Analysis: 
+
+## Summary of finding
+
+- The model does not correctly generate the mapping to RML format.
+- It generates a lot of hallucinations because it does not understand the instructions based on the TURTLE format for ontology generation.
+- Correctly generates high level description.
+
