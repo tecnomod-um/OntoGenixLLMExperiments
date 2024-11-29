@@ -23,13 +23,13 @@ In a chat context, instead of continuing a single string of text (as is the case
 
 ## Results obtained
 
+The results obtained with this LLM are shown next, although the model was discarded for a detailed analysis, as explained in the general summary of findings.
+
 ### Airlines Customer satisfaction
 
 Link: https://github.com/tecnomod-um/OntoGenixOpenSourceLLM/tree/main/base-llm/llama-2-70b/AirlinesCustomerSatisfaction
 
 Description: Customers who have already flown with them, including the feedback of the customers on various contexts. 
-
-Analysis: 
 
 ### Amazon Rating
 
@@ -37,15 +37,12 @@ Link: https://github.com/tecnomod-um/OntoGenixOpenSourceLLM/tree/main/base-llm/l
 
 Description: Customer reviews and ratings of Beauty related products sold on their website.
 
-Analysis: 
-
 ### BigBasket Products
 
 Link: https://github.com/tecnomod-um/OntoGenixOpenSourceLLM/tree/main/base-llm/llama-2-70b/BigBasketProducts
 
 Description: Products listed on the website of online grocery store Big Basket.
 
-Analysis: 
 
 ###  Brazilian e-commerce
 
@@ -53,7 +50,6 @@ Link: https://github.com/tecnomod-um/OntoGenixOpenSourceLLM/tree/main/base-llm/l
 
 Description: Brazilian e-commerce public dataset of orders made at Olist Store.
 
-Analysis: 
 
 ### Customer complaint
 
@@ -61,7 +57,6 @@ Link: https://github.com/tecnomod-um/OntoGenixOpenSourceLLM/tree/main/base-llm/l
 
 Description: Collection of complaints about consumer financial products.
 
-Analysis: 
 
 ### E-commerce
 
@@ -69,7 +64,6 @@ Link: https://github.com/tecnomod-um/OntoGenixOpenSourceLLM/tree/main/base-llm/l
 
 Description: Transactions for a UK-based and registered non-store online retail.
 
-Analysis: 
 
 ## Summary of the findings
 

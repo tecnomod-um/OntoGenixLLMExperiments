@@ -33,13 +33,14 @@ As shown in the example above, the prompt must be enclosed by [INST] and [/INST]
 
 ## Results obtained
 
+The results obtained with this LLM are shown next, although the model was discarded for a detailed analysis, as explained in the general summary of findings.
+
 ### Airlines Customer satisfaction
 
 Link: https://github.com/tecnomod-um/OntoGenixOpenSourceLLM/tree/main/base-llm/mistral-7b/AirlinesCustomerSatisfaction
 
 Description: Customers who have already flown with them, including the feedback of the customers on various contexts. 
 
-Analysis: 
 
 ### Amazon Rating
 
@@ -47,7 +48,6 @@ Link: https://github.com/tecnomod-um/OntoGenixOpenSourceLLM/tree/main/base-llm/m
 
 Description: Customer reviews and ratings of Beauty related products sold on their website.
 
-Analysis: 
 
 ### BigBasket Products
 
@@ -55,7 +55,6 @@ Link: https://github.com/tecnomod-um/OntoGenixOpenSourceLLM/tree/main/base-llm/m
 
 Description: Products listed on the website of online grocery store Big Basket.
 
-Analysis: 
 
 ###  Brazilian e-commerce
 
@@ -63,15 +62,13 @@ Link: https://github.com/tecnomod-um/OntoGenixOpenSourceLLM/tree/main/base-llm/m
 
 Description: Brazilian e-commerce public dataset of orders made at Olist Store.
 
-Analysis: 
 
 ### Customer complaint
 
 Link: https://github.com/tecnomod-um/OntoGenixOpenSourceLLM/tree/main/base-llm/mistral-7b/CustomerComplaint
 
 Description: Collection of complaints about consumer financial products.
-
-Analysis: 
+ 
 
 ### E-commerce
 
@@ -79,7 +76,6 @@ Link: https://github.com/tecnomod-um/OntoGenixOpenSourceLLM/tree/main/base-llm/m
 
 Description: Transactions for a UK-based and registered non-store online retail.
 
-Analysis: 
 
 ## Summary of the findings 
 - Correctly generates the high-level description of the input data.

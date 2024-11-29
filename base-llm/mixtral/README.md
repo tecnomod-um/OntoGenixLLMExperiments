@@ -32,13 +32,13 @@ Note that `<s>` and `</s>` are special tokens for beginning of string (BOS) and 
 
 ## Results obtained
 
+The results obtained with this LLM are shown next, although the model was discarded for a detailed analysis, as explained in the general summary of findings.
+
 ### Airlines Customer satisfaction
 
 Link: https://github.com/tecnomod-um/OntoGenixOpenSourceLLM/tree/main/base-llm/mixtral/AirlinesCustomerSatisfaction
 
 Description: Customers who have already flown with them, including the feedback of the customers on various contexts. 
-
-Analysis: 
 
 ### Amazon Rating
 
@@ -46,7 +46,6 @@ Link: https://github.com/tecnomod-um/OntoGenixOpenSourceLLM/tree/main/base-llm/m
 
 Description: Customer reviews and ratings of Beauty related products sold on their website.
 
-Analysis: 
 
 ### BigBasket Products
 
@@ -54,7 +53,6 @@ Link: https://github.com/tecnomod-um/OntoGenixOpenSourceLLM/tree/main/base-llm/m
 
 Description: Products listed on the website of online grocery store Big Basket.
 
-Analysis: 
 
 ###  Brazilian e-commerce
 
@@ -62,7 +60,6 @@ Link: https://github.com/tecnomod-um/OntoGenixOpenSourceLLM/tree/main/base-llm/m
 
 Description: Brazilian e-commerce public dataset of orders made at Olist Store.
 
-Analysis: 
 
 ### Customer complaint
 
@@ -70,7 +67,6 @@ Link: https://github.com/tecnomod-um/OntoGenixOpenSourceLLM/tree/main/base-llm/m
 
 Description: Collection of complaints about consumer financial products.
 
-Analysis: 
 
 ### E-commerce
 
@@ -78,7 +74,6 @@ Link: https://github.com/tecnomod-um/OntoGenixOpenSourceLLM/tree/main/base-llm/m
 
 Description: Transactions for a UK-based and registered non-store online retail.
 
-Analysis: 
 
 ## Summary of the findings 
 - Mixtral is a model that combines 8 models with 7 billion parameters, so it generates the high-level description correctly, but loses some information. 
