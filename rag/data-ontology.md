@@ -80,7 +80,7 @@ $$
 ## Results (4 different approaches)
 All the results for each different approach are located in the directory [data-ontology](rag/data-ontology).
 ###  RAG performed through OpenAI platform
-#### With only column names 
+#### 1 - With only column names 
 <table>
   <tr>
     <td>
@@ -109,7 +109,7 @@ All the results for each different approach are located in the directory [data-o
 * This relatively high CV for the precision suggests that the precision of the model is somewhat inconsistent across different tests. That is, the performance of the model in terms of precision varies considerably.
 * The low recall observed indicates that some IRIs are not retrieved by the model, despite having suitable matches within the ontologies used in the RAG process.
 
-#### Using 10 rows as context (+ column names)
+#### 2 - Using 10 rows as context (+ column names)
 <table>
   <tr>
     <td>
@@ -135,7 +135,7 @@ All the results for each different approach are located in the directory [data-o
   </tr>
 </table>
 
-#### Description of the CSV file as context (+ column names)
+#### 3 - Description of the CSV file as context (+ column names)
 <table>
   <tr>
     <td>
@@ -163,7 +163,7 @@ All the results for each different approach are located in the directory [data-o
 
 * As in the case of the column names, the high CV for the precision suggests that the precision of the model is somewhat inconsistent across different tests.
 
-#### Using 10 rows + CSV file description (+ column names)
+#### 4 - Using 10 rows + CSV file description (+ column names)
 <table>
   <tr>
     <td>
@@ -194,7 +194,7 @@ All the results for each different approach are located in the directory [data-o
 * This approach results in the lowest CV, indicating that the model demonstrates greater consistency compared to the other approaches.
 
 ###  RAG performed through an external vector database
-#### Using 10 rows + CSV file description (+ column names)
+####  1 - Using 10 rows + CSV file description (+ column names)
 <table>
   <tr>
     <td>
