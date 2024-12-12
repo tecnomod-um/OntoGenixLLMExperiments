@@ -1,0 +1,13 @@
+```
+Education: No match available.
+JoiningYear: No match available.
+Country: http://purl.allotrope.org/ontologies/result#AFR_0001064 country name afo.txt【16:0†afo.txt】
+PaymentTier: No match available.
+Age: No match available.
+Gender: No match available.
+EverBenched: No match available.
+ExperienceInCurrentDomain: No match available.
+LeaveOrNot: No match available.
+```
+
+I found a relevant match for the "Country" column in the Allotrope foundation ontology with the label "country name"【16:0†afo.txt】. Unfortunately, there were no corresponding matches found for the other columns in the available ontologies.

@@ -1,0 +1,10 @@
+PrefLabel: skos:prefLabel  
+AltLabels: skos:altLabel  
+Domain: IRI not available.  
+TermType: IRI not available.  
+Definition: skos:definition  
+ScopeNote: skos:scopeNote  
+Source: IRI not available.  
+Examples: IRI not available.  
+Parents: IRI not available.  
+TermIRI: IRI not available.

@@ -1,0 +1,8 @@
+Light: http://purl.allotrope.org/ontologies/material#AFM_0001055  
+Nitrate: http://purl.obolibrary.org/obo/CHEBI_17632  
+Iron: IRI not available.  
+Phosphate: IRI not available.  
+Temperature: http://purl.allotrope.org/ontologies/result#AFR_0002157  
+pH: http://purl.allotrope.org/ontologies/result#AFR_0001142  
+CO2: IRI not available.  
+Population: http://purl.allotrope.org/ontologies/role#AFRL_0000370  
