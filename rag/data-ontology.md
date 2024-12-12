@@ -78,7 +78,7 @@ $$
 $$
 
 ## Results (4 different approaches)
-All the results for each different approach are located in the directory [data-ontology](rag/data-ontology).
+All the results for each different approach are located in the directory [results](rag/data-ontology/results).
 ###  RAG performed through OpenAI platform
 #### 1 - With only column names 
 <table>
