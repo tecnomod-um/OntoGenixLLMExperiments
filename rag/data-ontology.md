@@ -14,6 +14,7 @@ In this experiment, the RAG consisted of the following ontologies:
 The ontologies are available in the directory [ontologies](rag/data-ontology/ontologies).
 
 ## GPT models
+### RAG performed through OpenAI platform
 As in the other experiment, the RAG process is performed through an **assistant agent**. Assistants can call OpenAI’s models with specific instructions to tune their personality and capabilities and can also access multiple tools in parallel, like the File Search tool. The **File Search tool** augments the Assistant with knowledge from outside its model, such as proprietary product information or documents provided by your users.
 
 In this case, the assistant used the **GPT-4o model** and the previous three mentioned ontologies will be provided for the alignment task. So, when the model is asked to assign an IRI class to a column name of a CSV file, it will consult the ontologies previously included in a vector store.
@@ -24,13 +25,28 @@ In this case, the assistant used the **GPT-4o model** and the previous three men
 
 All the scripts used during the project are included in the directory [scripts](rag/data-ontology/scripts).
 
-### Evaluation of the RAG models
+### RAG performed through an external vector database
+In this process, the three ontologies of interest are divided into parts, which are then transformed into vector embeddings using the Hugging Face model "all-MiniLM-L6-v2." These embeddings are stored in an external vector database (Chroma DB).
+
+Subsequently, the user provides a query to the embedding model by uploading a CSV file. The model performs a similarity search for each column in the CSV, comparing the column names to the stored ontology parts. The goal is to identify and return a set of identifiers from the ontologies that best match the column names.
+
+<p align="center">
+ <img width="586" alt="image" src="https://github.com/user-attachments/assets/7b5296ef-3a14-461d-8c8b-8c1692602d60" />
+</p>
+
+The set of identifiers is then provided as context to the GPT-4o-mini model by including them in the prompt. This facilitates few-shot prompting, where examples are embedded in the prompt to guide the model toward better performance. These examples serve as conditioning, enabling the model to generate more accurate responses for subsequent queries. From the provided set of identifiers, the model's task is to select the most appropriate identifiers that correspond to the given column name.
+
+<p align="center">
+<img width="586" alt="image" src="https://github.com/user-attachments/assets/5b94ccda-0cda-41cf-a93e-6fbdaa6cc8f9" />
+</p>
+
+## Evaluation of the RAG models
 To evaluate the performance of the RAG models in the task of matching data to ontologies, four CSV files have been used. We classified the model predictions as:
 * True Positives (TP): When the model proposes a correct IRI for the column name.
 * False Positives (FP): When the model proposes an incorrect IRI for the column name.
 * True Negatives (TN): When the model indicates that an adequate IRI does not exist and it is true.
 * False Negatives (FN): When the model indicates that an adequate IRI does not exist and it is not true.
-#### Metrics 
+### Metrics 
 **Precision** is the proportion of correctly identified IRIs (true positives) out of all IRIs returned by the LLM (both true positives and false positives). It measures the accuracy of the LLM in retrieving relevant IRIs when it decides to return one.
 
 $$
@@ -61,8 +77,9 @@ $$
 \text{CV} = \frac{\text{Standard deviation}}{Mean} x 100
 $$
 
-### Results (4 different approaches)
+## Results (4 different approaches)
 All the results for each different approach are located in the directory [data-ontology](rag/data-ontology).
+###  RAG performed through OpenAI platform
 #### With only column names 
 <table>
   <tr>
@@ -172,14 +189,47 @@ All the results for each different approach are located in the directory [data-o
   </tr>
 </table>
 
-* The precision of each CSV test file is high, indicating that when the model suggests an identifier, it is correct 8 out of 10 times. 
-* However, the low recall percentage reveals that the model struggles to identify all the correct IRIs present in the dataset.
+* The precision of each CSV test file is high, indicating that when the model suggests an identifier, it is correct 8 out of 10 times. This reflects a strong ability to avoid false positives.
+* However, the low recall percentage reveals that the model struggles to identify all the correct IRIs present in the dataset. This indicates the model misses a significant number of correct IRIs (false negatives).
 * This approach results in the lowest CV, indicating that the model demonstrates greater consistency compared to the other approaches.
+
+###  RAG performed through an external vector database
+#### Using 10 rows + CSV file description (+ column names)
+<table>
+  <tr>
+    <td>
+     
+| Metric     | Mean |
+|------------|-------|
+| Precision  | 0.986 |
+| Recall     | 0.766 |
+| F1-score   | 0.848 |
+| Accuracy   | 0.838 |
+
+   </td>
+   <td>
+
+| Metric               | Coefficient of Variation |
+|----------------------|--------------------------|
+| Precision            | 2.817                    |
+| Recall               | 20.906                   |
+| F1-score             | 10.933                   |
+| Accuracy             | 15.754                   |
+
+   </td>
+  </tr>
+</table>
+
+* A precision of 0.986 indicates that when the model suggests an IRI for a column name, 98.6% of the suggestions are correct. This exceptionally high precision demonstrates that the model is highly effective at avoiding false positives, almost exclusively proposing correct IRIs.
+* A recall of 0.766 means the model correctly identifies 76.6% of the actual matching IRIs. This indicates improved performance in capturing true matches, though some false negatives still persist.
+* The F1-score of 0.848, being the harmonic mean of precision and recall, suggests a well-balanced performance that heavily benefits from the high precision while maintaining strong recall.
+* An accuracy of 0.838 indicates that 83.8% of all predictions (both identifying correct IRIs and rejecting incorrect ones) are correct. This is a strong indicator of overall performance, showing the model is reliable in the majority of cases.
+* The coefficient of variation of the precision is the lowest of all approaches.
 
 ### Findings
 * The ragged model can assign an adequate IRI to a column name using the classes of the ontologies of interest.
 * The search can be limited to only those ontologies included in the RAG process, avoiding the use of other external ontologies.
 * The RAG process via OpenAI API seems to underperform when the ontology included in the RAG is large. The larger the ontology, the more difficult it is for the model to interact with it.
-* Using 10 rows from the CSV file along with its description yields the highest precision, recall, and F1-score, making it the most effective of the four methods studied. This approach also demonstrates the highest consistency, as evidenced by the lowest CV.
+* RAG performed through an external vector database using 10 rows from the CSV file along with its description yields the highest precision, recall, and F1-score, making it the most effective of the five methods studied.  Its much higher precision and balanced F1-score make it especially suited for tasks where avoiding false positives is critical. However, its recall, while improved, indicates there is still potential for refinement to ensure fewer correct matches are missed. This approach is much more consistent in precision (lower CV), making it highly reliable for applications where avoiding false positives is crucial. However, the increased variability in recall, F1-score, and slightly in accuracy suggests that while the model performs better overall, its results might fluctuate more depending on the evaluation dataset. These fluctuations are likely tied to the model's difficulty in capturing all true matches (recall).
 
 
