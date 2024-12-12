@@ -11,7 +11,7 @@ In this experiment, the RAG consisted of the following ontologies:
 * Country ontology (made by me): Describes the demographics, economics, and geography of a country.
 * CHEMINF ontology: The chemical information ontology (cheminf) describes information entities about chemical entities. It provides qualitative and quantitative attributes to richly describe chemicals.
 
-The ontologies are available in the directory [ontologies](rag/data-ontology/ontologies).
+The ontologies are available in the directory [ontologies](data-ontology/ontologies).
 
 ## GPT models
 ### RAG performed through OpenAI platform
@@ -23,7 +23,7 @@ In this case, the assistant used the **GPT-4o model** and the previous three men
 <img width="586" alt="image" src="https://github.com/user-attachments/assets/f2a677f1-60d4-435a-bd24-9f23edd66de9" />
 </p>
 
-All the scripts used during the project are included in the directory [scripts](rag/data-ontology/scripts).
+All the scripts used during the project are included in the directory [scripts](data-ontology/scripts).
 
 ### RAG performed through an external vector database
 In this process, the three ontologies of interest are divided into parts, which are then transformed into vector embeddings using the Hugging Face model "all-MiniLM-L6-v2." These embeddings are stored in an external vector database (Chroma DB).
@@ -78,7 +78,7 @@ $$
 $$
 
 ## Results (4 different approaches)
-All the results for each different approach are located in the directory [results](rag/data-ontology/results).
+All the results for each different approach are located in the directory [results](data-ontology/results).
 ###  RAG performed through OpenAI platform
 #### 1 - With only column names 
 <table>
