@@ -14,6 +14,10 @@ In this experiment, the RAG consisted of the following ontologies:
 The ontologies are available in the directory [ontologies](data-ontology/ontologies).
 
 ## GPT models
+
+### GPT model without RAG
+In this case, the performance of the GPT model has been evaluated without employing the RAG. In this approach, the model is provided with a CSV file and its corresponding description as input to carry out the IRI (Internationalized Resource Identifier) search. However, the model relies solely on its pre-existing knowledge to perform this task, as it does not have access to any external data sources or retrieval mechanisms. This evaluation aims to understand the model's baseline capability for IRI search when operating independently, without leveraging additional context or external support.
+
 ### RAG performed through OpenAI platform
 As in the other experiment, the RAG process is performed through an **assistant agent**. Assistants can call OpenAI’s models with specific instructions to tune their personality and capabilities and can also access multiple tools in parallel, like the File Search tool. The **File Search tool** augments the Assistant with knowledge from outside its model, such as proprietary product information or documents provided by your users.
 
@@ -77,8 +81,33 @@ $$
 \text{CV} = \frac{\text{Standard deviation}}{Mean} x 100
 $$
 
-## Results (4 different approaches)
+## Results 
 All the results for each different approach are located in the directory [results](data-ontology/results).
+
+### GPT model without RAG
+#### Using 10 rows + CSV file description (+ column names)
+In this case, only precision is calculated, as the specific ontologies included in the model's training data are unknown. Consequently, the True Negative (TN) and False Negative (FN) values cannot be determined, limiting the evaluation to precision alone.
+<table>
+  <tr>
+    <td>
+     
+| Metric     | Mean |
+|------------|-------|
+| Precision  | 0.281 |
+
+   </td>
+   <td>
+
+| Metric               | Coefficient of Variation |
+|----------------------|--------------------------|
+| Precision            | 116,388                  |
+
+   </td>
+  </tr>
+</table>
+
+* 
+
 ###  RAG performed through OpenAI platform
 #### 1 - With only column names 
 <table>
