@@ -24,7 +24,7 @@ As in the other experiment, the RAG process is performed through an **assistant 
 In this case, the assistant used the **GPT-4o model** and the previous three mentioned ontologies will be provided for the alignment task. So, when the model is asked to assign an IRI class to a column name of a CSV file, it will consult the ontologies previously included in a vector store.
 
 <p align="center">
-<img width="586" alt="image" src="https://github.com/user-attachments/assets/f2a677f1-60d4-435a-bd24-9f23edd66de9" />
+<img width="600" alt="image" src="./images/OpenAI_RAG.png" />
 </p>
 
 All the scripts used during the project are included in the directory [scripts](data-ontology/scripts).
@@ -35,13 +35,13 @@ In this process, the three ontologies of interest are divided into parts, which 
 Subsequently, the user provides a query to the embedding model by uploading a CSV file. The model performs a similarity search for each column in the CSV, comparing the column names to the stored ontology parts. The goal is to identify and return a set of identifiers from the ontologies that best match the column names.
 
 <p align="center">
- <img width="586" alt="image" src="https://github.com/user-attachments/assets/7b5296ef-3a14-461d-8c8b-8c1692602d60" />
+ <img width="600" alt="image" src="./images/external_RAG_1.png" />
 </p>
 
 The set of identifiers is then provided as context to the GPT-4o-mini model by including them in the prompt. This facilitates few-shot prompting, where examples are embedded in the prompt to guide the model toward better performance. These examples serve as conditioning, enabling the model to generate more accurate responses for subsequent queries. From the provided set of identifiers, the model's task is to select the most appropriate identifiers that correspond to the given column name.
 
 <p align="center">
-<img width="586" alt="image" src="https://github.com/user-attachments/assets/5b94ccda-0cda-41cf-a93e-6fbdaa6cc8f9" />
+<img width="600" alt="image" src="./images/external_RAG_2.png" />
 </p>
 
 ## Evaluation of the RAG models
