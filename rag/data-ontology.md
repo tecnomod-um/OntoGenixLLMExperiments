@@ -18,6 +18,8 @@ The ontologies are available in the directory [ontologies](data-ontology/ontolog
 ### GPT model without RAG
 In this case, the performance of the GPT model has been evaluated without employing the RAG. In this approach, the model is provided with a CSV file and its corresponding description as input to carry out the IRI (Internationalized Resource Identifier) search. However, the model relies solely on its pre-existing knowledge to perform this task, as it does not have access to any external data sources or retrieval mechanisms. This evaluation aims to understand the model's baseline capability for IRI search when operating independently, without leveraging additional context or external support.
 
+All the scripts used for these approach are included in the directory [scripts](data-ontology/scripts/without_RAG).
+
 ### RAG performed through OpenAI platform
 As in the other experiment, the RAG process is performed through an **assistant agent**. Assistants can call OpenAI’s models with specific instructions to tune their personality and capabilities and can also access multiple tools in parallel, like the File Search tool. The **File Search tool** augments the Assistant with knowledge from outside its model, such as proprietary product information or documents provided by your users.
 
@@ -27,7 +29,7 @@ In this case, the assistant used the **GPT-4o model** and the previous three men
 <img width="600" alt="image" src="./images/OpenAI_RAG.png" />
 </p>
 
-All the scripts used during the project are included in the directory [scripts](data-ontology/scripts).
+All the scripts used for these approach are included in the directory [scripts](data-ontology/scripts).
 
 ### RAG performed through an external vector database
 In this process, the three ontologies of interest are divided into parts, which are then transformed into vector embeddings using the Hugging Face model "all-MiniLM-L6-v2." These embeddings are stored in an external vector database (Chroma DB).
@@ -43,6 +45,8 @@ The set of identifiers is then provided as context to the GPT-4o-mini model by i
 <p align="center">
 <img width="600" alt="image" src="./images/external_RAG_2.png" />
 </p>
+
+All the scripts used for these approach are included in the directory [scripts](data-ontology/scripts/RAG_external_VBD).
 
 ## Evaluation of the RAG models
 To evaluate the performance of the RAG models in the task of matching data to ontologies, four CSV files have been used. We classified the model predictions as:
