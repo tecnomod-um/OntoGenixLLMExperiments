@@ -1,0 +1,8 @@
+Light: http://www.w3.org/2003/01/geo/wgs84_pos#LightIntensity  
+Nitrate: http://www.w3.org/2003/01/geo/wgs84_pos#NitrateConcentration  
+Iron: http://www.w3.org/2003/01/geo/wgs84_pos#IronConcentration  
+Phosphate: http://www.w3.org/2003/01/geo/wgs84_pos#PhosphateConcentration  
+Temperature: http://www.w3.org/2003/01/geo/wgs84_pos#Temperature  
+pH: http://www.w3.org/2003/01/geo/wgs84_pos#pHLevel  
+CO2: http://www.w3.org/2003/01/geo/wgs84_pos#CO2Concentration  
+Population: http://www.w3.org/2003/01/geo/wgs84_pos#AlgaePopulationDensity  
