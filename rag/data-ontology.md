@@ -106,7 +106,7 @@ In this case, only precision is calculated, as the specific ontologies included 
   </tr>
 </table>
 
-* 
+* This approach demonstrates the lowest precision and the highest coefficient of variation for precision among all the methods analyzed. As a result, it is regarded as the least effective or worst-performing approach in the study.
 
 ###  RAG performed through OpenAI platform
 #### 1 - With only column names 
