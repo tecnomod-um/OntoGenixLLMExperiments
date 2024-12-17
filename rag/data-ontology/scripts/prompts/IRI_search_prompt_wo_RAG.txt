@@ -1,0 +1,17 @@
+Please assign an IRI to each column in the provided CSV file. Each IRI should correspond to a class or an object property from the ontologies you know.
+The CSV data is provided in JSON format, where each row is a key, and each key contains the column name and its corresponding value for that row.
+To do the matching, the CSV file as JSON format and a description of the CSV file is given.
+For each column name, search for an appropriate IRI from the ontologies.
+
+**CSV file (in JSON format):**
+{json_data}
+
+**Description of the CSV file:**
+{description}
+
+Structure your output in the following format: <Column_name>: <IRI_selected>
+If you consider that there is not an adequate identifier, then: <Column_name>: IRI not available.
+
+Generate appropriate identifiers.
+Do not explain your answer, just write the identifiers.
+Do not write notes at the end of your writing.
