@@ -22,12 +22,12 @@ The generation parameters are:
 
 For each LLM, we have evaluated a series of Kaggle datasets related to commercial activities of organizations (Airlines, Amazon, Brazilian, BigBasket, Consumer, and E-commerce), which are the same as those evaluated in the [Ontogenix Evaluation](https://github.com/tecnomod-um/OntoGenixEvaluation) project (without ontology quality analysis which will come later).
 
-* [LLama-2-7b](./llama-2-7b/README.md)
-* [LLama-2-70b](./llama-2-70b/README.md)
-* [LLama-3-8b](./llama-3-8b/README.md)
-* [LLama-3-70b](./llama-3-70b/README.md)
-* [Mistral-7b](./mistral-7b/README.md)
-* [Mixtral](./mixtral/README.md)
+* [LLama-2-7b](./llama-2-7b/README.md): The ontologies generated from this model of different datasets are available in the [LLama-2-7b ontologies directory] (./llama-2-7b).
+* [LLama-2-70b](./llama-2-70b/README.md): The ontologies generated from this model of different datasets are available in the [LLama-2-70b ontologies directory] (./llama-2-70b).
+* [LLama-3-8b](./llama-3-8b/README.md): The ontologies generated from this model of different datasets are available in the [LLama-3-8b ontologies directory] (./llama-3-8b).
+* [LLama-3-70b](./llama-3-70b/README.md): The ontologies generated from this model of different datasets are available in the [LLama-3-70b ontologies directory] (./llama-3-70b).
+* [Mistral-7b](./mistral-7b/README.md): The ontologies generated from this model of different datasets are available in the [Mistral-7b ontologies directory] (./Mistral-7b).
+* [Mixtral](./mixtral/README.md): The ontologies generated from this model of different datasets are available in the [Mixtral ontologies directory] (./Mixtral). 
 
 ## Summary of the findings
 
