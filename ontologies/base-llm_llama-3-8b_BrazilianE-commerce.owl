@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/TEMP#"
+     xml:base="http://purl.obolibrary.org/obo/TEMP"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:prefix="http://www.geneontology.org/formats/oboInOwl#@prefix "
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#&lt;"
+     xmlns:oboInOwl1="http://www.geneontology.org/formats/oboInOwl#&lt;/">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/TEMP">
+        <oboInOwl:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Class rdf:ID=&quot;class_entity&quot;/&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Class rdf:ID=&quot;entity_name&quot;&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DatatypeProperty rdf:ID=&quot;has_numerical_data&quot;&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DatatypeProperty rdf:ID=&quot;has_text_data&quot;&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObjectProperty rdf:ID=&quot;has_city&quot;&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObjectProperty rdf:ID=&quot;has_id&quot;&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObjectProperty rdf:ID=&quot;has_state&quot;&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObjectProperty rdf:ID=&quot;has_unique_id&quot;&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObjectProperty rdf:ID=&quot;has_zip_code_prefix&quot;&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObjectProperty rdf:resource=&quot;#has_city&quot;/&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObjectProperty rdf:resource=&quot;#has_id&quot;/&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObjectProperty rdf:resource=&quot;#has_state&quot;/&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObjectProperty rdf:resource=&quot;#has_unique_id&quot;/&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObjectProperty rdf:resource=&quot;#has_zip_code_prefix&quot;/&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontology rdf:about=&quot;&quot;&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">domain rdf:resource=&quot;#class_entity&quot;/&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">propertyChainAxiom&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">range rdf:resource=&quot;customer_city&quot;/&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">range rdf:resource=&quot;customer_id&quot;/&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">range rdf:resource=&quot;customer_state&quot;/&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">range rdf:resource=&quot;customer_unique_id&quot;/&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">range rdf:resource=&quot;customer_zip_code_prefix&quot;/&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">range rdf:resource=&quot;xsd:decimal&quot;/&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">range rdf:resource=&quot;xsd:string&quot;/&gt;</oboInOwl:owl>
+        <oboInOwl:rdfs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subClassOf rdf:resource=&quot;#class_entity&quot;/&gt;</oboInOwl:rdfs>
+        <oboInOwl1:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Class&gt;</oboInOwl1:owl>
+        <oboInOwl1:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DatatypeProperty&gt;</oboInOwl1:owl>
+        <oboInOwl1:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObjectProperty&gt;</oboInOwl1:owl>
+        <oboInOwl1:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontology&gt;</oboInOwl1:owl>
+        <oboInOwl1:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">propertyChainAxiom&gt;</oboInOwl1:owl>
+        <prefix:base rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;https://base_ontology.com#&gt;.</prefix:base>
+        <prefix:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;http://www.w3.org/2002/07/owl#&gt;.</prefix:owl>
+        <prefix:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;.</prefix:rdf>
+        <prefix:rdfs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;.</prefix:rdfs>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#&lt;owl -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#&lt;owl"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#&lt;rdfs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#&lt;rdfs"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#&lt;/owl -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#&lt;/owl"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#@prefix base -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#@prefix base"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#@prefix owl -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#@prefix owl"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#@prefix rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#@prefix rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#@prefix rdfs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#@prefix rdfs"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
