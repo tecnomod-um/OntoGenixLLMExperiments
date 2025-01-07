@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es/> .
+
+um:Customer a owl:Class ;
+    rdfs:label "Customer" .
+
+um:customer_id a owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:string ;
+    rdfs:label "Customer ID" .
+
+um:customer_unique_id a owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:string ;
+    rdfs:label "Customer Unique ID" .
+
+um:customer_zip_code_prefix a owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Customer Zip Code Prefix" .
+
+um:customer_city a owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:string ;
+    rdfs:label "Customer City" .
+
+um:customer_state a owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:string ;
+    rdfs:label "Customer State" .

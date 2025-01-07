@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:SalesDataOntology rdf:type owl:Ontology .
+
+### Classes ###
+
+um:Invoice rdf:type owl:Class ;
+    rdfs:label "Invoice" .
+
+um:Product rdf:type owl:Class ;
+    rdfs:label "Product" .
+
+um:Customer rdf:type owl:Class ;
+    rdfs:label "Customer" .
+
+um:Country rdf:type owl:Class ;
+    rdfs:label "Country" .
+
+### Data Properties ###
+
+um:invoiceNo rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Invoice ;
+    rdfs:range xsd:string ;
+    rdfs:label "invoice number" .
+
+um:quantity rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Invoice ;
+    rdfs:range xsd:integer ;
+    rdfs:label "quantity" .
+
+um:unitPrice rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "unit price" .
+
+um:invoiceDate rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Invoice ;
+    rdfs:range xsd:dateTime ;
+    rdfs:label "invoice date" .
+
+um:productDescription rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string ;
+    rdfs:label "product description" .
+
+um:customerID rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:integer ;
+    rdfs:label "customer ID" .
+
+um:stockCode rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string ;
+    rdfs:label "stock code" .
+
+### Object Properties ###
+
+um:includesProduct rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Invoice ;
+    rdfs:range um:Product ;
+    rdfs:label "includes product" .
+
+um:hasCustomer rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Invoice ;
+    rdfs:range um:Customer ;
+    rdfs:label "has customer" .
+
+um:fromCountry rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range um:Country ;
+    rdfs:label "from country" .
