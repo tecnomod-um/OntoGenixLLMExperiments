@@ -1,0 +1,7 @@
+Uncommented text:
+
+Here is the TURTLE ontology:
+
+
+Incorrect statement of the ontology:
+owl:Ontology( <https://base_ontology.com#> )

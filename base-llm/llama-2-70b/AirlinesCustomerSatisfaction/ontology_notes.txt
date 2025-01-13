@@ -1,0 +1,26 @@
+Incorrect shortnames, like class_entity:
+
+class_entity
+   a owl:Class;
+   owl:has_subclass entity_name .
+   
+
+Incorrect numeric values. Example:
+
+Baggage handling
+   a entity_name;
+   owl:has_value 1..5 .
+
+
+Incomplete ontology due to an entity modelling in a loop:
+
+Age
+   owl:domain owl:domain xsd:integer ;
+   owl:
+   a
+   owl:domain xsd:integer xsd:integer
+   owl:domain xsd:integer
+   owl:integer
+   owl:integer
+   owl:integer
+   owl:integer

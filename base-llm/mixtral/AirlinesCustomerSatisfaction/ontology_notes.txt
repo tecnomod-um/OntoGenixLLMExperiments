@@ -1,0 +1,3 @@
+Uncommented text:
+
+Here is the TURTLE syntax for the ontology based on the provided JSON data and schema description

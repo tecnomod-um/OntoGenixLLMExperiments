@@ -1,0 +1,4 @@
+Incorrect IDs with spaces between words. Examples:
+
+:Company public response
+:Consumer complaint narrative

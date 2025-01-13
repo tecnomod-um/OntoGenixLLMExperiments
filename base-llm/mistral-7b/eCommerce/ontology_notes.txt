@@ -1,0 +1,4 @@
+Incorrect use of shortnames, like class_entity. Example:
+
+class_entity a owl:Class ;
+rdfs:subClassOf class_entity .

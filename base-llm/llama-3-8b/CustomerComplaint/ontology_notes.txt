@@ -1,0 +1,14 @@
+Missing ending dots in the prefixes. Example:
+
+@prefix owl: <http://www.w3.org/2002/07/owl#>
+
+
+Incorrect use of commas instead of semicolons. Example:
+
+has_company a owl:ObjectProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range xsd:integer.
+
+
+Incorrect use of shortnames. Example: has company in the previous statement
+
+	
+	

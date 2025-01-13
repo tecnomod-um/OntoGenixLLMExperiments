@@ -1,0 +1,22 @@
+Missing ending dots in the prefixes. Example:
+
+@prefix owl: <http://www.w3.org/2002/07/owl#>
+
+
+Incorrect use of the ending dots in the statements, and missing semicolons. Example:
+
+<http://base_ontology.com#has_absolute_url>
+  rdf:type owl:ObjectProperty.
+  rdfs:domain <http://base_ontology.com#class_entity>.
+  rdfs:range xsd:string.
+
+
+Incorrect statements:
+<http://base_ontology.com#entity_name>
+  rdfs:subClassOf <http://base_ontology.com#class_entity>.
+  owl:oneOf
+    (
+      xsd:string
+    ).
+	
+	

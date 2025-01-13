@@ -1,0 +1,4 @@
+Incorrect use of shortnames. Example:
+
+@prefix class_entity: <https://base_ontology.com#class_entity>.
+class_entity rdfs:subClassOf owl:Thing.

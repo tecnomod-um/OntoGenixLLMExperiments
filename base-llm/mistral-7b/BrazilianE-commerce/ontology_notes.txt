@@ -1,0 +1,4 @@
+Incorrect use of shortnames, like TextDomain and NumericalDomain. Examples:
+
+:customer_id a TextDomain .
+:customer_zip_code_prefix a NumericalDomain .

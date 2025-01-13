@@ -1,0 +1,7 @@
+Incorrect serialization in the declarations of blank nodes in properties. Example:
+
+base_ontology:hasProductId [ a rdf:Property ; 
+    rdfs:domain base_ontology:Product ;
+    rdfs:range xsd:string ;
+    rdf:type rdf:Property ;
+].

@@ -1,0 +1,14 @@
+Incorrect restriction declaration:
+
+base:Rating rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+  owl:onClass [
+     owl:intersectionOf (
+        [ rdf:type owl:Restriction ;
+          owl:onProperty base:RatedProduct ;
+          owl:someValuesFrom base:Product ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty base:RatedByUser ;
+          owl:someValuesFrom base:User ]
+     )
+  ] .

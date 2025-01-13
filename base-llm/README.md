@@ -36,3 +36,27 @@ For each LLM, we have evaluated a series of Kaggle datasets related to commercia
 - Main limitations include the tendency of the latest open-source LLMs used as ontology generation engines to produce hallucinations and deviate from the prompt's defined standardization, as well as the difficulty in evaluating the generated ontologies.
 - Proposed solutions to address the identified limitations include fine-tuning LLMs to model new data within the same domain of interest and in a specified format, and implementing a RAG (Retrieval-Augmented Generation) architecture with sample ontologies and schemas stored in a vector database.
 
+The following table shows with an X when the LLM model was able to generate the ontology in question:
+
+| LLM model    | AirlinesCustomerSatisfaction | AmazonRating | BigBasketProducts | BrazilianE-commerce | CustomerComplaint | eCommerce |
+|--------------|------------------------------|--------------|-------------------|---------------------|-------------------|-----------|
+| Llama-2-7b   | -                            | -            | -                 | -                   | -                 | -         |
+| Llama-2-70b  | -                            | -            | -                 | -                   | -                 | -         |
+| Llama-3-8b   | -                            | -            | -                 | -                   | -                 | -         |
+| Llama-3-70b  | -                            | -            | X                 | X                   | -                 | X         |
+| Mistral-7b   | -                            | -            | -                 | -                   | -                 | -         |
+| Mixtral      | -                            | -            | -                 | -                   | X                 | -         |
+
+
+The following table shows the main errors made by LLM models in the generation of ontologies:
+
+| LLM model    | AirlinesCustomerSatisfaction                            | AmazonRating                                        | BigBasketProducts                          | BrazilianE-commerce                     | CustomerComplaint                              | eCommerce                                     |
+|--------------|---------------------------------------------------------|-----------------------------------------------------|--------------------------------------------|-----------------------------------------|------------------------------------------------|-----------------------------------------------|
+| Llama-2-7b   | Incorrect format                                        | Incorrect format, and uncommented text              | Incorrect format, and uncommented text     | Incorrect format, and uncommented text  | Incorrect format, and uncommented text         | Incorrect format, and uncommented text        |
+| Llama-2-70b  | Loop, incorrect shortnames and numeric values           | Incorrect format, and uncommented text              | Incorrect format, and uncommented text     | Incorrect format, and uncommented text  | Incorrect format, and uncommented text         | Incorrect format, and uncommented text        |
+| Llama-3-8b   | Incorrect shortnames                                    | Missing end dots in the prefix declarations         | Incorrect serializations (use of end dots) | Incorrect rdf/xml serialization         | Incorrect serializations (use of end dots, semicolons, shortnames) | Incorrect rdf/xml serialization |
+| Llama-3-70b  | Uncommented text and incorrect owl:Ontology declaration | Incorrect serialization (blank nodes in properties) | X                                          | X                                       | Uncommented text and prefix used but not declared | X                                          |
+| Mistral-7b   | Prefix not defined                                      | Incorrect serializations (shortnames and number of elements in the triples) | Incorrect serializations (missing end dots, prefixes) | Incorrect use of shortnames | Incorrect IDs (with spaces) | Incorrect use of shortnames               |
+| Mixtral      | Uncommented text                                        | Incorrect restriction declaration                   | Incorrect format                           | Incorrect serializations (prefix declarations, use of shortnames) | X                    | Incorrect shortnames and prefix declarations  |
+
+

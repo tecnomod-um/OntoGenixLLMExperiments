@@ -1,0 +1,6 @@
+Incorrect shortnames and prefix declarations. Examples:
+
+Prefix: base = <https://base_ontology.com#>
+
+base:Invoice 
+SubClassOf rdfs:Class.
