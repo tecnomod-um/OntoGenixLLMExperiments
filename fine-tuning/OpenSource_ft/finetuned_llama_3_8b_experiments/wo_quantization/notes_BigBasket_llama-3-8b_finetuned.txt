@@ -1,0 +1,5 @@
+Missing end dots at the end of "Classes" and "Datatype properties" sections. Example:
+
+um:SubCategory rdf:type owl:Class ;
+    rdfs:label "Sub-Category" 
+ 

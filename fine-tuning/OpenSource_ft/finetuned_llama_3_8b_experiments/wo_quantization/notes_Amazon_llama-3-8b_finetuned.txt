@@ -1,0 +1,4 @@
+Missing end dots at the end of "Classes" and "Datatype properties" sections. Example:
+
+um:Timestamp rdf:type owl:Class ;
+    rdfs:label "Timestamp" 
