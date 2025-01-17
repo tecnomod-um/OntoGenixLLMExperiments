@@ -1,6 +1,5 @@
-Missing end dots in the prefixes:
-
+Missing end dots in the prefixes. Example:
 @prefix base: <https://base_ontology.com/>
 
-
-Missing : prefix
+Prefix ":" used, but not declarated. Example:
+:class_entity a owl:Class .
