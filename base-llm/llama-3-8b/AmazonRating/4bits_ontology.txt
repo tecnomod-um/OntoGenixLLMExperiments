@@ -1,0 +1,51 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+@prefix base_ontology: <https://base_ontology.com/>
+
+<https://base_ontology.com#ProductReview>
+    a owl:Ontology;
+
+    <https://base_ontology.com#class_entity>
+        a owl:Class;
+
+    <https://base_ontology.com#entity_name>
+        rdfs:subClassOf <https://base_ontology.com#class_entity>;
+        owl:property <https://base_ontology.com#hasProductId>
+            rdfs:domain <https://base_ontology.com#entity_name>;
+            rdfs:range xsd:text;
+        owl:property <https://base_ontology.com#hasRating>
+            rdfs:domain <https://base_ontology.com#entity_name>;
+            rdfs:range xsd:categorical;
+        owl:property <https://base_ontology.com#hasTimestamp>
+            rdfs:domain <https://base_ontology.com#entity_name>;
+            rdfs:range xsd:text;
+        owl:property <https://base_ontology.com#hasUserId>
+            rdfs:domain <https://base_ontology.com#entity_name>;
+            rdfs:range xsd:text;
+
+    <https://base_ontology.com#class_entity>
+        owl:property <https://base_ontology.com#hasNonNullCount>
+            rdfs:domain <https://base_ontology.com#class_entity>;
+            rdfs:range xsd:integer;
+        owl:property <https://base_ontology.com#hasType>
+            rdfs:domain <https://base_ontology.com#class_entity>;
+            rdfs:range xsd:text;
+        owl:property <https://base_ontology.com#hasUniqueCount>
+            rdfs:domain <https://base_ontology.com#class_entity>;
+            rdfs:range xsd:integer;
+        owl:property <https://base_ontology.com#hasCount>
+            rdfs:domain <https://base_ontology.com#class_entity>;
+            rdfs:range xsd:real;
+        owl:property <https://base_ontology.com#hasMax>
+            rdfs:domain <https://base_ontology.com#class_entity>;
+            rdfs:range xsd:real;
+        owl:property <https://base_ontology.com#hasMean>
+            rdfs:domain <https://base_ontology.com#class_entity>;
+            rdfs:range xsd:real;
+        owl:property <https://base_ontology.com#hasMin>
+            rdfs:domain <https://base_ontology.com#class_entity>;
+            rdfs:range xsd:real;
+        owl:property <https://base_ontology.com#hasStd>
+            rdfs:domain <https://base_ontology.com#class_entity>;
+            rdfs:range xsd:real;

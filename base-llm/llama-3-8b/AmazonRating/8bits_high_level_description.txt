@@ -1,0 +1,30 @@
+<https://base_ontology.com#> <owl:Ontology>
+
+**Data Description:**
+
+1. ProductId: <https://base_ontology.com#ProductId> - type: text - short description: Product identifier - possible range: null
+2. Rating: <https://base_ontology.com#Rating> - type: categorical - short description: Product rating - possible range: 1.0 to 5.0
+3. Timestamp: <https://base_ontology.com#Timestamp> - type: text - short description: Timestamp - possible range: null
+4. UserId: <https://base_ontology.com#UserId> - type: text - short description: User identifier - possible range: null
+
+**Classes:**
+
+1. <https://base_ontology.com#class_entity>
+
+**Subclasses:**
+
+1. <https://base_ontology.com#entity_name> - subclass of -> <https://base_ontology.com#class_entity>
+
+**Object Properties:**
+
+1. has_ProductId: <https://base_ontology.com#class_entity> - <https://base_ontology.com#ProductId>
+2. has_Rating: <https://base_ontology.com#class_entity> - <https://base_ontology.com#Rating>
+3. has_Timestamp: <https://base_ontology.com#class_entity> - <https://base_ontology.com#Timestamp>
+4. has_UserId: <https://base_ontology.com#class_entity> - <https://base_ontology.com#UserId>
+
+**Data Type Properties:**
+
+1. ProductId_type: <https://base_ontology.com#class_entity> - <https://base_ontology.com#text>
+2. Rating_type: <https://base_ontology.com#class_entity> - <https://base_ontology.com#categorical>
+3. Timestamp_type: <https://base_ontology.com#class_entity> - <https://base_ontology.com#text>
+4. UserId_type: <https://base_ontology.com#class_entity> - <https://base_ontology.com#text>

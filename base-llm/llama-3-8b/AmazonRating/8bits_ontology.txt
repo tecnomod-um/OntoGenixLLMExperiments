@@ -1,0 +1,43 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix base_ontology: <https://base_ontology.com#>.
+
+base_ontology:Ontology a owl:Ontology.
+
+base_ontology:Class_Entity a owl:Class.
+
+base_ontology:Entity_Name a owl:Class;
+  rdfs:subClassOf base_ontology:Class_Entity.
+
+base_ontology:has_ProductId a owl:ObjectProperty;
+  rdfs:domain base_ontology:Class_Entity;
+  rdfs:range base_ontology:ProductId.
+
+base_ontology:has_Rating a owl:ObjectProperty;
+  rdfs:domain base_ontology:Class_Entity;
+  rdfs:range base_ontology:Rating.
+
+base_ontology:has_Timestamp a owl:ObjectProperty;
+  rdfs:domain base_ontology:Class_Entity;
+  rdfs:range base_ontology:Timestamp.
+
+base_ontology:has_UserId a owl:ObjectProperty;
+  rdfs:domain base_ontology:Class_Entity;
+  rdfs:range base_ontology:UserId.
+
+base_ontology:ProductId_Type a owl:DatatypeProperty;
+  rdfs:domain base_ontology:Class_Entity;
+  rdfs:range xsd:text.
+
+base_ontology:Rating_Type a owl:DatatypeProperty;
+  rdfs:domain base_ontology:Class_Entity;
+  rdfs:range xsd:categorical.
+
+base_ontology:Timestamp_Type a owl:DatatypeProperty;
+  rdfs:domain base_ontology:Class_Entity;
+  rdfs:range xsd:text.
+
+base_ontology:UserId_Type a owl:DatatypeProperty;
+  rdfs:domain base_ontology:Class_Entity;
+  rdfs:range xsd:text.
