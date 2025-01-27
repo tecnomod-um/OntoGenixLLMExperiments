@@ -1,0 +1,76 @@
+ Here is the TURTLE syntax content for the proposed ontology, without any abbreviations or shortening, and with strict compliance to the instructions provided:
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://base_ontology.com/entity> a owl:Ontology .
+
+<http://base_ontology.com/entity> owl:imports <http://www.w3.org/2002/07/owl#> .
+
+<http://base_ontology.com/entity> owl:class <class_entity> .
+
+<class_entity> a owl:Class .
+
+<class_entity> rdf:type owl:Class .
+
+<class_entity> owl:subClassOf <class_entity_name> .
+
+<class_entity_name> a owl:Class .
+
+<class_entity_name> rdf:type owl:Class .
+
+<class_entity_name> owl:hasSelf <class_entity> .
+
+<class_entity> owl:property <object_property_name> .
+
+<object_property_name> a owl:ObjectProperty .
+
+<object_property_name> rdf:type owl:ObjectProperty .
+
+<object_property_name> owl:domain <class_entity> .
+
+<object_property_name> owl:range <Numerical> .
+
+<class_entity> owl:property <data_property_name> .
+
+<data_property_name> a owl:DataProperty .
+
+<data_property_name> rdf:type owl:DataProperty .
+
+<data_property_name> owl:domain <class_entity> .
+
+<data_property_name> owl:range <Text> .
+
+<class_entity> owl:property <data_property_name> .
+
+<data_property_name> owl:dataRange <FAIR_URI> .
+
+<FAIR_URI> a owl:URI .
+
+<FAIR_URI> rdf:type owl:URI .
+
+<FAIR_URI> owl:value <http://base_ontology.com/entity> .
+
+<data_property_name> owl:dataRange <Image_Url> .
+
+<Image_Url> a owl:URI .
+
+<Image_Url> rdf:type owl:URI .
+
+<Image_Url> owl:value <http://base_ontology.com/entity> .
+
+<class_entity> owl:property <data_property_name> .
+
+<data_property_name> owl:dataRange <Quantity> .
+
+<Quantity> a owl:Text .
+
+<Quantity> rdf:type owl:Text .
+
+<Quantity> owl:value <"1"> .
+
+</http://base_ontology.com/entity>
+
+Note that I have included all the other prefixes you provided in the ontology, and I have not added any labels or comments or descriptions, and I have not added instances. Also, I have not used any special block code format with triple quotes.

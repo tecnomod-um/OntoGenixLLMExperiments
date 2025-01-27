@@ -1,0 +1,47 @@
+ ```
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+class class_entity {
+ owl:ontologyProperty rdf:type owl:Class .
+ owl:hasValue rdf:type owl:Class .
+ owl:inverseOf rdf:type owl:Property .
+
+ object_property_name entity_name {
+   domain class_entity .
+   range text .
+ }
+
+ object_property_name description {
+   domain entity_name .
+   range text .
+ }
+
+ data_property_name customer_city {
+   domain class_entity .
+   range text .
+ }
+
+ data_property_name customer_id {
+   domain class_entity .
+   range text .
+ }
+
+ data_property_name customer_state {
+   domain class_entity .
+   range text .
+ }
+
+ data_property_name customer_unique_id {
+   domain class_entity .
+   range text .
+ }
+
+ data_property_name customer_zip_code_prefix {
+   domain class_entity .
+   range Numerical .
+ }
+}
+```
+Note: The above Turtle syntax content is based on the provided JSON data and does not include any additional information or explanations. The structure and formatting of the content are strictly based on the provided guidelines.

@@ -1,0 +1,70 @@
+ **Foundational Prefix:**
+
+<https://base_ontology.com#, http://www.w3.org/1999/02/22-rdf-syntax-ns#, http://www.w3.org/2000/01/rdf-schema#, http://www.w3.org/2002/07/owl#>
+
+**Data Description:**
+
+1. "customer_city":
+	* Type: text
+	* Short description: The city where the customer resides
+	* Possible range: Any city name
+2. "customer_id":
+	* Type: text
+	* Short description: A unique identifier for the customer
+	* Possible range: Any string of characters
+3. "customer_state":
+	* Type: text
+	* Short description: The state where the customer resides
+	* Possible range: Any state name
+4. "customer_unique_id":
+	* Type: text
+	* Short description: A unique identifier for the customer
+	* Possible range: Any string of characters
+5. "customer_zip_code_prefix":
+	* Type: Numerical
+	* Short description: The zip code prefix for the customer's location
+	* Possible range: Any positive integer
+
+**Classes:**
+
+1. class_entity
+
+**Subclasses:**
+
+1. entity_name: subclass of -> class_entity
+
+**Object Properties:**
+
+1. class_entity:
+	* object_property_name: entity_name
+		+ domain: class_entity
+		+ range: text
+2. entity_name:
+	* object_property_name: description
+		+ domain: entity_name
+		+ range: text
+
+**Data Type Properties:**
+
+1. class_entity:
+	* data_property_name: customer_city
+		+ domain: class_entity
+		+ range: text
+2. class_entity:
+	* data_property_name: customer_id
+		+ domain: class_entity
+		+ range: text
+3. class_entity:
+	* data_property_name: customer_state
+		+ domain: class_entity
+		+ range: text
+4. class_entity:
+	* data_property_name: customer_unique_id
+		+ domain: class_entity
+		+ range: text
+5. class_entity:
+	* data_property_name: customer_zip_code_prefix
+		+ domain: class_entity
+		+ range: Numerical
+
+Note: The above description is based on the provided JSON data and does not include any additional information or explanations. The structure and formatting of the description are strictly based on the provided guidelines.

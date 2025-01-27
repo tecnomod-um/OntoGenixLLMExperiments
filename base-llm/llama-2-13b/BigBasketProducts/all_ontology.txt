@@ -1,0 +1,77 @@
+ Sure, here is the TURTLE syntax content for the proposed ontology based on the provided JSON data and schema:
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ontology (rdf:type owl:Ontology)
+
+class class_entity (rdf:type owl:Class)
+   owl:hasSelf rdf:type owl:Class
+   owl:hasKey rdf:type owl:ObjectProperty
+
+class entity_name (rdf:type owl:Class)
+   owl:hasSelf rdf:type owl:Class
+   owl:hasKey rdf:type owl:ObjectProperty
+
+object property class_entity (rdf:type owl:ObjectProperty)
+   owl:hasSelf rdf:type owl:ObjectProperty
+   owl:hasDomain rdf:type owl:Class
+   owl:hasRange rdf:type owl:Class
+
+object property entity_name (rdf:type owl:ObjectProperty)
+   owl:hasSelf rdf:type owl:ObjectProperty
+   owl:hasDomain rdf:type owl:Class
+   owl:hasRange rdf:type owl:Class
+
+data property Absolute_Url_idx (rdf:type owl:DatatypeProperty)
+   owl:hasSelf rdf:type owl:DatatypeProperty
+   owl:hasDomain rdf:type owl:Class
+   owl:hasRange rdf:type owl:NumericDatatype
+
+data property Brand_idx (rdf:type owl:DatatypeProperty)
+   owl:hasSelf rdf:type owl:DatatypeProperty
+   owl:hasDomain rdf:type owl:Class
+   owl:hasRange rdf:type owl:NumericDatatype
+
+data property Category_idx (rdf:type owl:DatatypeProperty)
+   owl:hasSelf rdf:type owl:DatatypeProperty
+   owl:hasDomain rdf:type owl:Class
+   owl:hasRange rdf:type owl:NumericDatatype
+
+data property DiscountPrice_idx (rdf:type owl:DatatypeProperty)
+   owl:hasSelf rdf:type owl:DatatypeProperty
+   owl:hasDomain rdf:type owl:Class
+   owl:hasRange rdf:type owl:NumericDatatype
+
+data property Price_idx (rdf:type owl:DatatypeProperty)
+   owl:hasSelf rdf:type owl:DatatypeProperty
+   owl:hasDomain rdf:type owl:Class
+   owl:hasRange rdf:type owl:NumericDatatype
+
+data property ProductName_idx (rdf:type owl:DatatypeProperty)
+   owl:hasSelf rdf:type owl:DatatypeProperty
+   owl:hasDomain rdf:type owl:Class
+   owl:hasRange rdf:type owl:NumericDatatype
+
+data property SubCategory_idx (rdf:type owl:DatatypeProperty)
+   owl:hasSelf rdf:type owl:DatatypeProperty
+   owl:hasDomain rdf:type owl:Class
+   owl:hasRange rdf:type owl:NumericDatatype
+
+data property FAIR_URI (rdf:type owl:DatatypeProperty)
+   owl:hasSelf rdf:type owl:DatatypeProperty
+   owl:hasDomain rdf:type owl:Class
+   owl:hasRange rdf:type owl:StringDatatype
+
+data property Image_Url (rdf:type owl:DatatypeProperty)
+   owl:hasSelf rdf:type owl:DatatypeProperty
+   owl:hasDomain rdf:type owl:Class
+   owl:hasRange rdf:type owl:StringDatatype
+
+data property Quantity (rdf:type owl:DatatypeProperty)
+   owl:hasSelf rdf:type owl:DatatypeProperty
+   owl:hasDomain rdf:type owl:Class
+   owl:hasRange rdf:type owl:StringDatatype
+
+Note that I have not added any descriptions or explanations outside the required format, and I have not condensed or shortened any part of the syntax. Also, I have not added any instances to the ontology.

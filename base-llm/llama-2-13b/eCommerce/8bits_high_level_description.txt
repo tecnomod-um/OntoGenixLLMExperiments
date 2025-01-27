@@ -1,0 +1,65 @@
+ **Foundational Prefix:**
+<https://base_ontology.com#, http://www.w3.org/1999/02/22-rdf-syntax-ns#, http://www.w3.org/2000/01/rdf-schema#, http://www.w3.org/2002/07/owl#>
+
+**Data Description:**
+
+1. "Country":
+	* type: text
+	* short description: A two-letter country code (e.g., "US", "GB")
+	* possible range: two-letter codes representing countries
+2. "Description":
+	* type: text
+	* short description: A brief description of the invoice (e.g., "Invoice for January sales")
+	* possible range: text descriptions of varying lengths
+3. "InvoiceDate":
+	* type: text
+	* short description: The date of the invoice (e.g., "2022-01-01")
+	* possible range: dates in the format of "YYYY-MM-DD"
+4. "InvoiceNo":
+	* type: text
+	* short description: A unique identifier for the invoice (e.g., "INV-001")
+	* possible range: text strings of varying lengths
+5. "StockCode":
+	* type: text
+	* short description: A unique identifier for the stock item (e.g., "ABC123")
+	* possible range: text strings of varying lengths
+6. "CustomerID":
+	* type: Numerical
+	* short description: A unique identifier for the customer (e.g., 12345)
+	* possible range: integers
+7. "Quantity":
+	* type: Numerical
+	* short description: The quantity of the stock item purchased (e.g., 10)
+	* possible range: integers
+8. "UnitPrice":
+	* type: Numerical
+	* short description: The unit price of the stock item (e.g., 10.99)
+	* possible range: integers and decimals
+
+**Classes:**
+
+1. class_entity
+
+**Subclasses:**
+
+1. entity_name: subclass of -> class_entity
+
+**Object Properties:**
+
+1. object_property_name: domain - range
+	* "Country": domain: class_entity; range: string
+	* "Description": domain: class_entity; range: string
+	* "InvoiceDate": domain: class_entity; range: string
+	* "InvoiceNo": domain: class_entity; range: string
+	* "StockCode": domain: class_entity; range: string
+	* "CustomerID": domain: class_entity; range: integer
+	* "Quantity": domain: class_entity; range: integer
+	* "UnitPrice": domain: class_entity; range: numerical
+
+**Data Type Properties:**
+
+1. data_property_name: domain - range
+	* "Quantity": domain: class_entity; range: integer
+	* "UnitPrice": domain: class_entity; range: numerical
+
+Please note that the above description is based on the provided JSON data and the given directives. If any additional information is needed, please provide it in the input.

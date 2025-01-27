@@ -1,0 +1,71 @@
+ Sure, here is the TURTLE syntax content for the proposed ontology based on the provided JSON data table and schema:
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://baseontology.com/customer> a owl:Class .
+
+subclassOf (http://baseontology.com/entity)
+
+entity_name a owl:ObjectProperty .
+range (Text)
+
+data_property (entity_type) a owl:DataProperty .
+domain (http://baseontology.com/customer)
+range (Text)
+
+name a owl:ObjectProperty .
+range (Text)
+
+data_property (name) a owl:DataProperty .
+domain (http://baseontology.com/entity_name)
+range (Text)
+
+class_entity a owl:Class .
+
+subclassOf (http://baseontology.com/customer)
+
+entity_type a owl:ObjectProperty .
+range (Text)
+
+data_property (entity_type) a owl:DataProperty .
+domain (http://baseontology.com/class_entity)
+range (Text)
+
+http://baseontology.com/customer_city a owl:ObjectProperty .
+range (Text)
+
+data_property (customer_city) a owl:DataProperty .
+domain (http://baseontology.com/customer)
+range (Text)
+
+http://baseontology.com/customer_id a owl:ObjectProperty .
+range (Text)
+
+data_property (customer_id) a owl:DataProperty .
+domain (http://baseontology.com/customer)
+range (Text)
+
+http://baseontology.com/customer_state a owl:ObjectProperty .
+range (Text)
+
+data_property (customer_state) a owl:DataProperty .
+domain (http://baseontology.com/customer)
+range (Text)
+
+http://baseontology.com/customer_unique_id a owl:ObjectProperty .
+range (Text)
+
+data_property (customer_unique_id) a owl:DataProperty .
+domain (http://baseontology.com/customer)
+range (Text)
+
+http://baseontology.com/customer_zip_code_prefix a owl:ObjectProperty .
+range (Numerical)
+
+data_property (customer_zip_code_prefix) a owl:DataProperty .
+domain (http://baseontology.com/customer)
+range (Numerical)
+
+Note that I have not included any labels or comments in the ontology, as per your instructions. Also, I have not added any instances to the ontology.

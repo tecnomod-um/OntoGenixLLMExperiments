@@ -1,0 +1,65 @@
+ Sure, I'd be happy to help you with synthesizing the JSON data table and creating a schema description!
+
+Foundational Prefix:
+<https://base_ontology.com#, http://www.w3.org/1999/02/22-rdf-syntax-ns#, http://www.w3.org/2000/01/rdf-schema#, http://www.w3.org/2002/07/owl#>
+
+Data Description:
+
+1. Absolute_Url_idx: Numerical - The absolute URL of the product, possible range: strings of URLs.
+2. Brand_idx: Numerical - The brand name of the product, possible range: strings of brand names.
+3. Category_idx: Numerical - The category name of the product, possible range: strings of category names.
+4. DiscountPrice_idx: Numerical - The discount price of the product, possible range: strings of numbers representing prices.
+5. Price_idx: Numerical - The price of the product, possible range: strings of numbers representing prices.
+6. ProductName_idx: Numerical - The product name, possible range: strings of product names.
+7. SubCategory_idx: Numerical - The subcategory name of the product, possible range: strings of subcategory names.
+8. FAIR_URI: Text - The FAIR URI of the product, possible range: strings of URIs.
+9. Image_Url: Text - The image URL of the product, possible range: strings of URLs.
+10. Quantity: Text - The quantity of the product, possible range: strings of numbers representing quantities.
+
+Classes:
+
+1. class_entity
+
+Subclasses:
+
+1. entity_name: subclass of -> class_entity
+
+Object Properties:
+
+1. class_entity:
+	* object_property_name: Absolute_Url_idx
+		+ domain: class_entity
+		+ range: Numerical
+	* object_property_name: Brand_idx
+		+ domain: class_entity
+		+ range: Numerical
+	* object_property_name: Category_idx
+		+ domain: class_entity
+		+ range: Numerical
+	* object_property_name: DiscountPrice_idx
+		+ domain: class_entity
+		+ range: Numerical
+	* object_property_name: Price_idx
+		+ domain: class_entity
+		+ range: Numerical
+	* object_property_name: ProductName_idx
+		+ domain: class_entity
+		+ range: Numerical
+	* object_property_name: SubCategory_idx
+		+ domain: class_entity
+		+ range: Numerical
+
+Data Type Properties:
+
+1. class_entity:
+	* data_property_name: FAIR_URI
+		+ domain: class_entity
+		+ range: Text
+	* data_property_name: Image_Url
+		+ domain: class_entity
+		+ range: Text
+	* data_property_name: Quantity
+		+ domain: class_entity
+		+ range: Text
+
+Note that I have inferred the structure based on the given format and left ambiguous parts blank. Please let me know if there is any additional information you would like me to include in the schema description.

@@ -1,0 +1,137 @@
+ Sure, here is the TURTLE syntax for the proposed ontology based on the provided JSON data and instructions:
+
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix base_ontology: <https://base_ontology.com#>.
+
+class Country (owl:Class)
+   rdf:type owl:Class.
+   rdfs:label "Country";
+   owl:oneOf (
+       base_ontology:Country_1,
+       base_ontology:Country_2,
+       base_ontology:Country_3
+   );
+   owl:hasValue (
+       base_ontology:Country_1 "Australia",
+       base_ontology:Country_2 "Austria",
+       base_ontology:Country_3 "Belgium"
+   );
+   owl:inverseOf base_ontology:has_Country.
+
+class Description (owl:Class)
+   rdf:type owl:Class.
+   rdfs:label "Description";
+   owl:oneOf (
+       base_ontology:Description_1,
+       base_ontology:Description_2,
+       base_ontology:Description_3
+   );
+   owl:hasValue (
+       base_ontology:Description_1 "A brief description of the invoice",
+       base_ontology:Description_2 "A detailed description of the invoice",
+       base_ontology:Description_3 "A summary of the invoice"
+   );
+   owl:inverseOf base_ontology:has_Description.
+
+class InvoiceDate (owl:Class)
+   rdf:type owl:Class.
+   rdfs:label "Invoice Date";
+   owl:oneOf (
+       base_ontology:InvoiceDate_1,
+       base_ontology:InvoiceDate_2,
+       base_ontology:InvoiceDate_3
+   );
+   owl:hasValue (
+       base_ontology:InvoiceDate_1 "2022-01-01",
+       base_ontology:InvoiceDate_2 "2022-01-15",
+       base_ontology:InvoiceDate_3 "2022-02-01"
+   );
+   owl:inverseOf base_ontology:has_InvoiceDate.
+
+class InvoiceNo (owl:Class)
+   rdf:type owl:Class.
+   rdfs:label "Invoice No";
+   owl:oneOf (
+       base_ontology:InvoiceNo_1,
+       base_ontology:InvoiceNo_2,
+       base_ontology:InvoiceNo_3
+   );
+   owl:hasValue (
+       base_ontology:InvoiceNo_1 "INV-001",
+       base_ontology:InvoiceNo_2 "INV-002",
+       base_ontology:InvoiceNo_3 "INV-003"
+   );
+   owl:inverseOf base_ontology:has_InvoiceNo.
+
+class StockCode (owl:Class)
+   rdf:type owl:Class.
+   rdfs:label "Stock Code";
+   owl:oneOf (
+       base_ontology:StockCode_1,
+       base_ontology:StockCode_2,
+       base_ontology:StockCode_3
+   );
+   owl:hasValue (
+       base_ontology:StockCode_1 "ABC123",
+       base_ontology:StockCode_2 "XYZ456",
+       base_ontology:StockCode_3 "MNO789"
+   );
+   owl:inverseOf base_ontology:has_StockCode.
+
+class CustomerID (owl:Class)
+   rdf:type owl:Class.
+   rdfs:label "Customer ID";
+   owl:oneOf (
+       base_ontology:CustomerID_1,
+       base_ontology:CustomerID_2,
+       base_ontology:CustomerID_3
+   );
+   owl:hasValue (
+       base_ontology:CustomerID_1 "1234",
+       base_ontology:CustomerID_2 "5678",
+       base_ontology:CustomerID_3 "9012"
+   );
+   owl:inverseOf base_ontology:has_CustomerID.
+
+class Quantity (owl:Class)
+   rdf:type owl:Class.
+   rdfs:label "Quantity";
+   owl:oneOf (
+       base_ontology:Quantity_1,
+       base_ontology:Quantity_2,
+       base_ontology:Quantity_3
+   );
+   owl:hasValue (
+       base_ontology:Quantity_1 "5",
+       base_ontology:Quantity_2 "10",
+       base_ontology:Quantity_3 "15"
+   );
+   owl:inverseOf base_ontology:has_Quantity.
+
+class UnitPrice (owl:Class)
+   rdf:type owl:Class.
+   rdfs:label "Unit Price";
+   owl:oneOf (
+       base_ontology:UnitPrice_1,
+       base_ontology:UnitPrice_2,
+       base_ontology:UnitPrice_3
+   );
+   owl:hasValue (
+       base_ontology:UnitPrice_1 "10.99",
+       base_ontology:UnitPrice_2 "12.99",
+       base_ontology:UnitPrice_3 "14.99"
+   );
+   owl:inverseOf base_ontology:has_UnitPrice.
+
+base_ontology:has_Country owl:hasValue base_ontology:Country_1.
+base_ontology:has_Description owl:hasValue base_ontology:Description_1.
+base_ontology:has_InvoiceDate owl:hasValue base_ontology:InvoiceDate_1.
+base_ontology:has_InvoiceNo owl:hasValue base_ontology:InvoiceNo_1.
+base_ontology:has_StockCode owl:hasValue base_ontology:StockCode_1.
+base_ontology:has_CustomerID owl:hasValue base_ontology:CustomerID_1.
+base_ontology:has_Quantity owl:hasValue base_ontology:Quantity_1.
+base_ontology:has_UnitPrice owl:hasValue base_ontology:UnitPrice_1.
+
+Note that this is just one possible way to represent the provided JSON data as an ontology using TURTLE syntax. There may be other ways to do it depending on the specific requirements and constraints of the project.

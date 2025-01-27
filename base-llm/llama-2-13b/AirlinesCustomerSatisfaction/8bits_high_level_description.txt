@@ -1,0 +1,100 @@
+ **Foundational Prefix:**
+<https://base_ontology.com#, http://www.w3.org/1999/02/22-rdf-syntax-ns#, http://www.w3.org/2000/01/rdf-schema#, http://www.w3.org/2002/07/owl#>
+
+**Data Description:**
+
+1. Age:
+	* Data Type: Numerical
+	* Possible Range: [12, 85]
+	* Short Description: The age of the passengers.
+2. Arrival Delay in Minutes:
+	* Data Type: Numerical
+	* Possible Range: [0, 1592]
+	* Short Description: The delay in minutes between the scheduled and actual arrival times.
+3. Baggage handling:
+	* Data Type: Categorical
+	* Possible Values: [1, 5]
+	* Short Description: The baggage handling service level.
+4. Checkin service:
+	* Data Type: Categorical
+	* Possible Values: [1, 5]
+	* Short Description: The check-in service level.
+5. Cleanliness:
+	* Data Type: Categorical
+	* Possible Values: [1, 5]
+	* Short Description: The cleanliness of the flight.
+6. Departure Delay in Minutes:
+	* Data Type: Numerical
+	* Possible Range: [0, 1592]
+	* Short Description: The delay in minutes between the scheduled and actual departure times.
+7. Departure/Arrival time convenient:
+	* Data Type: Categorical
+	* Possible Values: [1, 6]
+	* Short Description: Whether the departure/arrival time is convenient or not.
+8. Ease of Online booking:
+	* Data Type: Categorical
+	* Possible Values: [1, 6]
+	* Short Description: The ease of online booking.
+9. Flight Distance:
+	* Data Type: Numerical
+	* Possible Range: [50, 6951]
+	* Short Description: The distance of the flight.
+10. Food and drink:
+	* Data Type: Categorical
+	* Possible Values: [1, 6]
+	* Short Description: The quality of food and drink.
+11. Gate location:
+	* Data Type: Categorical
+	* Possible Values: [1, 6]
+	* Short Description: The location of the gate.
+12. Inflight entertainment:
+	* Data Type: Categorical
+	* Possible Values: [1, 6]
+	* Short Description: The quality of inflight entertainment.
+13. Inflight wifi service:
+	* Data Type: Categorical
+	* Possible Values: [1, 6]
+	* Short Description: The availability of inflight wifi service.
+14. Leg room service:
+	* Data Type: Categorical
+	* Possible Values: [1, 6]
+	* Short Description: The leg room service.
+15. On-board service:
+	* Data Type: Categorical
+	* Possible Values: [1, 6]
+	* Short Description: The quality of on-board service.
+16. Online boarding:
+	* Data Type: Categorical
+	* Possible Values: [1, 6]
+	* Short Description: The availability of online boarding.
+17. Online support:
+	* Data Type: Categorical
+	* Possible Values: [1, 6]
+	* Short Description: The availability of online support.
+18. Seat comfort:
+	* Data Type: Categorical
+	* Possible Values: [1, 6]
+	* Short Description: The comfort level of the seats.
+
+**Classes:**
+
+1. class_entity
+
+**Subclasses:**
+
+1. entity_name: subclass of -> class_entity
+
+
+**Object Properties:**
+
+
+1. object_property_name: domain -> range
+
+
+**Data Type Properties:**
+
+
+1. data_property_name: domain -> range
+
+
+Note: The above information is just an example, the actual data may vary.

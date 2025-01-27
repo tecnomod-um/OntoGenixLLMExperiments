@@ -1,0 +1,41 @@
+ **Foundational Prefix:**
+<https://base_ontology.com#, http://www.w3.org/1999/02/22-rdf-syntax-ns#, http://www.w3.org/2000/01/rdf-schema#, http://www.w3.org/2002/07/owl#>
+
+**Data Description:**
+
+1. Absolute_Url_idx: Numerical - counts the number of absolute URLs in the dataset. Possible range: [8208.0, 8307.0, 4203.5, 100.0, 2369.5898379255]
+2. Brand_idx: Numerical - counts the number of brands in the dataset. Possible range: [15918.0, 15312.8251705653, 210.0417627826]
+3. Category_idx: Numerical - counts the number of categories in the dataset. Possible range: [15929.0, 15925.2091861598, 2.4639678836]
+4. DiscountPrice_idx: Numerical - counts the number of discount prices in the dataset. Possible range: [19486.0, 18014.8109161793, 584.1878644871]
+5. Price_idx: Numerical - counts the number of prices in the dataset. Possible range: [17306.0, 16551.40082846, 244.2799529544]
+6. ProductName_idx: Numerical - counts the number of product names in the dataset. Possible range: [15076.0, 11404.1884746589, 2018.8175992438]
+7. SubCategory_idx: Numerical - counts the number of subcategories in the dataset. Possible range: [16263.0, 16046.3218810916, 82.1676564786]
+8. FAIR_URI: Text - provides a unique identifier for each product in the dataset. Possible range: [null, null, null]
+9. Image_Url: Text - provides a URL for each product image in the dataset. Possible range: [null, null, null]
+10. Quantity: Text - provides the quantity of each product in the dataset. Possible range: [null, null, null]
+
+**Classes:**
+
+1. class_entity
+
+**Subclasses:**
+
+1. entity_name: subclass of -> class_entity
+
+**Object Properties:**
+
+1. class_entity:
+	* entity_name: domain - range
+2. entity_name:
+	* domain: class_entity
+	* range: Text
+
+**Data Type Properties:**
+
+1. class_entity:
+	* data_type: domain - range
+2. data_type:
+	* domain: class_entity
+	* range: Numerical
+
+Note: The above description is based on the provided JSON data and does not include any additional information or explanations. The structure and content of the description are strictly based on the specified format and titles.

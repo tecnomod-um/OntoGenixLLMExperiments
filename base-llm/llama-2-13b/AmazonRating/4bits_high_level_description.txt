@@ -1,0 +1,49 @@
+ **Foundational Prefix:**
+<https://base_ontology.com#, http://www.w3.org/1999/02/22-rdf-syntax-ns#, http://www.w3.org/2000/01/rdf-schema#, http://www.w3.org/2002/07/owl#>
+
+**Data Description:**
+
+1. ProductId:
+	* Type: text
+	* Short description: Unique identifier for a product
+	* Possible range: Any string of characters
+2. Rating:
+	* Type: categorical
+	* Short description: Customer rating for a product
+	* Possible range: Any integer between 1 and 5
+3. Timestamp:
+	* Type: text
+	* Short description: Timestamp for when the product was reviewed
+	* Possible range: Any string of characters representing a date and time
+4. UserId:
+	* Type: text
+	* Short description: Unique identifier for the customer who reviewed the product
+	* Possible range: Any string of characters
+
+**Classes:**
+
+1. class_entity
+
+**Subclasses:**
+
+1. entity_name: subclass of -> class_entity
+
+**Object Properties:**
+
+1. class_entity:
+	* domain: class_entity
+	* range: entity_name
+2. entity_name:
+	* domain: entity_name
+	* range: text
+
+**Data Type Properties:**
+
+1. class_entity:
+	* domain: class_entity
+	* range: owl:String
+2. entity_name:
+	* domain: entity_name
+	* range: owl:String
+
+Note: The above description is based on the provided JSON data and the given directives. It is important to note that the description is not exhaustive and may not capture all possible relationships or properties in the data.

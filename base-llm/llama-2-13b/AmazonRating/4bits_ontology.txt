@@ -1,0 +1,30 @@
+ ```
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+ontology (class: class_entity)
+   entity_name (domain: class_entity; range: owl:String)
+   ProductId (domain: class_entity; range: owl:String)
+   Rating (domain: class_entity; range: owl:Integer)
+   Timestamp (domain: class_entity; range: owl:String)
+   UserId (domain: class_entity; range: owl:String)
+
+class_entity (subclassOf: owl:Thing)
+
+entity_name (subclassOf: class_entity)
+   domain: entity_name; range: owl:String
+
+ProductId (subclassOf: entity_name)
+   domain: ProductId; range: owl:String
+
+Rating (subclassOf: entity_name)
+   domain: Rating; range: owl:Integer
+
+Timestamp (subclassOf: entity_name)
+   domain: Timestamp; range: owl:String
+
+UserId (subclassOf: entity_name)
+   domain: UserId; range: owl:String
+```
+Note: The above ontology is based on the provided JSON data and the given directives. It is important to note that the ontology is not exhaustive and may not capture all possible relationships or properties in the data.

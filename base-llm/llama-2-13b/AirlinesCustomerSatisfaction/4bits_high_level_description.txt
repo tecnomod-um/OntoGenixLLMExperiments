@@ -1,0 +1,43 @@
+ **Foundational Prefix:**
+<https://base_ontology.com#, http://www.w3.org/1999/02/22-rdf-syntax-ns#, http://www.w3.org/2000/01/rdf-schema#, http://www.w3.org/2002/07/owl>
+
+**Data Description:**
+
+1. column data name: Age - short description of the column data meaning: Passenger age - possible range: [0, 129880] (Numerical)
+2. column data name: Arrival Delay in Minutes - short description of the column data meaning: Passenger arrival delay in minutes - possible range: [0, 1592] (Numerical)
+3. column data name: Baggage handling - short description of the column data meaning: Passenger baggage handling - possible range: [1, 5] (categorical)
+4. column data name: Checkin service - short description of the column data meaning: Passenger checkin service - possible range: [1, 6] (categorical)
+5. column data name: Cleanliness - short description of the column data meaning: Passenger cleanliness - possible range: [1, 6] (categorical)
+6. column data name: Departure Delay in Minutes - short description of the column data meaning: Passenger departure delay in minutes - possible range: [0, 1592] (Numerical)
+7. column data name: Departure/Arrival time convenient - short description of the column data meaning: Passenger departure/arrival time convenience - possible range: [1, 6] (categorical)
+8. column data name: Ease of Online booking - short description of the column data meaning: Passenger ease of online booking - possible range: [1, 6] (categorical)
+9. column data name: Flight Distance - short description of the column data meaning: Passenger flight distance - possible range: [0, 6951] (Numerical)
+10. column data name: Food and drink - short description of the column data meaning: Passenger food and drink - possible range: [1, 6] (categorical)
+11. column data name: Gate location - short description of the column data meaning: Passenger gate location - possible range: [1, 6] (categorical)
+12. column data name: Inflight entertainment - short description of the column data meaning: Passenger inflight entertainment - possible range: [1, 6] (categorical)
+13. column data name: Inflight wifi service - short description of the column data meaning: Passenger inflight wifi service - possible range: [1, 6] (categorical)
+14. column data name: Leg room service - short description of the column data meaning: Passenger leg room service - possible range: [1, 6] (categorical)
+15. column data name: On-board service - short description of the column data meaning: Passenger on-board service - possible range: [1, 6] (categorical)
+16. column data name: Online boarding - short description of the column data meaning: Passenger online boarding - possible range: [1, 6] (categorical)
+17. column data name: Online support - short description of the column data meaning: Passenger online support - possible range: [1, 6] (categorical)
+18. column data name: Seat comfort - short description of the column data meaning: Passenger seat comfort - possible range: [1, 6] (categorical)
+
+**Classes:**
+
+1. class_entity
+
+**Subclasses:**
+
+1. entity_name: subclass of -> class_entity
+
+**Object Properties:**
+
+1. object_property_name: domain - range
+
+
+**Data Type Properties:**
+
+1. data_property_name: domain - range
+
+
+Please note that the above data description is based on the provided JSON data and the specified structure. If any information is missing in the input, inferred structure based on the given format but leave ambiguous parts blank.

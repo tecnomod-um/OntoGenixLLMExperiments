@@ -1,0 +1,87 @@
+ **Foundational Prefix:**
+<https://base_ontology.com#, http://www.w3.org/1999/02/22-rdf-syntax-ns#, http://www.w3.org/2000/01/rdf-schema#, http://www.w3.org/2002/07/owl>
+
+**Data Description:**
+
+1. "Company":
+	* type: text
+	* short description: The name of the company
+	* possible range: A string of characters representing the name of a company
+2. "Company public response":
+	* type: text
+	* short description: The public response of the company
+	* possible range: A string of characters representing the public response of the company
+3. "Company response to consumer":
+	* type: categorical
+	* short description: The response of the company to the consumer
+	* possible range: A category representing the response of the company to the consumer
+4. "Consumer complaint narrative":
+	* type: text
+	* short description: The narrative of the consumer's complaint
+	* possible range: A string of characters representing the narrative of the consumer's complaint
+5. "Consumer consent provided?":
+	* type: categorical
+	* short description: Whether the consumer has provided consent
+	* possible range: A category representing whether the consumer has provided consent
+6. "Consumer disputed?":
+	* type: categorical
+	* short description: Whether the consumer has disputed the issue
+	* possible range: A category representing whether the consumer has disputed the issue
+7. "Date received":
+	* type: text
+	* short description: The date the issue was received
+	* possible range: A string of characters representing the date the issue was received
+8. "Date sent to company":
+	* type: text
+	* short description: The date the issue was sent to the company
+	* possible range: A string of characters representing the date the issue was sent to the company
+9. "Issue":
+	* type: text
+	* short description: The issue the consumer has reported
+	* possible range: A string of characters representing the issue the consumer has reported
+10. "Product":
+	* type: text
+	* short description: The product the consumer has reported an issue with
+	* possible range: A string of characters representing the product the consumer has reported an issue with
+11. "State":
+	* type: text
+	* short description: The state where the issue was reported
+	* possible range: A string of characters representing the state where the issue was reported
+12. "Sub-issue":
+	* type: text
+	* short description: A more specific description of the issue
+	* possible range: A string of characters representing a more specific description of the issue
+13. "Sub-product":
+	* type: text
+	* short description: A more specific description of the product
+	* possible range: A string of characters representing a more specific description of the product
+14. "Submitted via":
+	* type: categorical
+	* short description: The channel through which the issue was submitted
+	* possible range: A category representing the channel through which the issue was submitted
+15. "Tags":
+	* type: categorical
+	* short description: Additional tags related to the issue
+	* possible range: A category representing additional tags related to the issue
+16. "Timely response?":
+	* type: categorical
+	* short description: Whether the company has responded to the issue in a timely manner
+	* possible range: A category representing whether the company has responded to the issue in a timely manner
+
+**Classes:**
+
+1. class_entity
+
+**Subclasses:**
+
+1. entity_name: subclass of -> class_entity
+
+**Object Properties:**
+
+1. object_property_name: domain - range
+
+**Data Type Properties:**
+
+1. data_property_name: domain - range
+
+Note: The above description is based on the provided JSON data and the given guidelines. If any information is missing in the input, infer structure based on the given format but leave ambiguous parts blank.

@@ -1,0 +1,91 @@
+ **Foundational Prefix:**
+<https://base_ontology.com#, http://www.w3.org/1999/02/22-rdf-syntax-ns#, http://www.w3.org/2000/01/rdf-schema#, http://www.w3.org/2002/07/owl#>
+
+**Data Description:**
+
+1. "Country":
+	* Type: Text
+	* Short description: The name of the country where the invoice is issued.
+	* Possible range: A string representing the name of a country.
+2. "Description":
+	* Type: Text
+	* Short description: A brief description of the invoice.
+	* Possible range: A string representing the description of the invoice.
+3. "InvoiceDate":
+	* Type: Text
+	* Short description: The date the invoice was issued.
+	* Possible range: A string representing the date in the format of "YYYY-MM-DD".
+4. "InvoiceNo":
+	* Type: Text
+	* Short description: The unique identifier for the invoice.
+	* Possible range: A string representing a unique identifier for the invoice.
+5. "StockCode":
+	* Type: Text
+	* Short description: The code for the stock or item being invoiced.
+	* Possible range: A string representing the code for the stock or item.
+6. "CustomerID":
+	* Type: Numerical
+	* Short description: The unique identifier for the customer.
+	* Possible range: A numerical value representing the unique identifier for the customer.
+7. "Quantity":
+	* Type: Numerical
+	* Short description: The quantity of the item being invoiced.
+	* Possible range: A numerical value representing the quantity of the item.
+8. "UnitPrice":
+	* Type: Numerical
+	* Short description: The unit price of the item being invoiced.
+	* Possible range: A numerical value representing the unit price of the item.
+
+**Classes:**
+
+1. class_entity
+
+**Subclasses:**
+
+1. entity_name: subclass of -> class_entity
+
+**Object Properties:**
+
+1. "Country":
+	* Domain: class_entity
+	* Range: Text
+2. "Description":
+	* Domain: class_entity
+	* Range: Text
+3. "InvoiceDate":
+	* Domain: class_entity
+	* Range: Text
+4. "InvoiceNo":
+	* Domain: class_entity
+	* Range: Text
+5. "StockCode":
+	* Domain: class_entity
+	* Range: Text
+6. "CustomerID":
+	* Domain: class_entity
+	* Range: Numerical
+7. "Quantity":
+	* Domain: class_entity
+	* Range: Numerical
+8. "UnitPrice":
+	* Domain: class_entity
+	* Range: Numerical
+
+**Data Type Properties:**
+
+1. "Country":
+	* Data type: Text
+2. "Description":
+	* Data type: Text
+3. "InvoiceDate":
+	* Data type: Text
+4. "InvoiceNo":
+	* Data type: Text
+5. "StockCode":
+	* Data type: Text
+6. "CustomerID":
+	* Data type: Numerical
+7. "Quantity":
+	* Data type: Numerical
+8. "UnitPrice":
+	* Data type: Numerical

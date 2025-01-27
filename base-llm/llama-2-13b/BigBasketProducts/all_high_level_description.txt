@@ -1,0 +1,42 @@
+ Sure, I'd be happy to help you with synthesizing the provided JSON data table and schema #description! Here's the structured output for the data description, classes, subclasses, object properties, and data type properties, following the guidelines you provided:
+
+**Data Description:**
+
+1. Absolute_Url_idx: Numerical - the absolute URL of the product image
+2. Brand_idx: Numerical - the brand name of the product
+3. Category_idx: Numerical - the category name of the product
+4. DiscountPrice_idx: Numerical - the discount price of the product
+5. Price_idx: Numerical - the price of the product
+6. ProductName_idx: Numerical - the product name
+7. SubCategory_idx: Numerical - the subcategory name of the product
+8. FAIR_URI: text - the FAIR URI of the product
+9. Image_Url: text - the image URL of the product
+10. Quantity: text - the quantity of the product
+
+**Classes:**
+
+1. class_entity
+
+**Subclasses:**
+
+1. entity_name: subclass of -> class_entity
+
+**Object Properties:**
+
+1. class_entity:
+	* domain: class_entity
+	* range: entity_name
+2. entity_name:
+	* domain: entity_name
+	* range: string
+
+**Data Type Properties:**
+
+1. class_entity:
+	* domain: class_entity
+	* range: Numerical
+2. entity_name:
+	* domain: entity_name
+	* range: string
+
+Please note that I have inferred the structure for the missing information in the input, but left ambiguous parts blank. Also, I have not added any descriptions or explanations outside the required format.

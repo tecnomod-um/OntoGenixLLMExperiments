@@ -1,0 +1,169 @@
+ **Foundational Prefix:**
+<https://base_ontology.com#, http://www.w3.org/1999/02/22-rdf-syntax-ns#, http://www.w3.org/2000/01/rdf-schema#, http://www.w3.org/2002/07/owl#>
+
+**Data Description:**
+
+1. "Company":
+	* type: text
+	* short description: The name of the company that the consumer is filing a complaint against.
+	* possible range: A string of text representing the name of the company.
+2. "Company public response":
+	* type: text
+	* short description: The public response from the company regarding the consumer's complaint.
+	* possible range: A string of text representing the company's public response.
+3. "Company response to consumer":
+	* type: categorical
+	* short description: The response from the company to the consumer's complaint.
+	* possible range: A categorical value representing the company's response to the consumer (e.g. "acknowledged", "resolved", "rejected").
+4. "Consumer complaint narrative":
+	* type: text
+	* short description: The narrative description of the consumer's complaint.
+	* possible range: A string of text representing the consumer's complaint narrative.
+5. "Consumer consent provided?":
+	* type: categorical
+	* short description: Indicates if the consumer has provided consent for the company to respond to the complaint.
+	* possible range: A categorical value representing whether the consumer has provided consent (e.g. "yes", "no").
+6. "Consumer disputed?":
+	* type: categorical
+	* short description: Indicates if the consumer has disputed the company's response to the complaint.
+	* possible range: A categorical value representing whether the consumer has disputed the company's response (e.g. "yes", "no").
+7. "Date received":
+	* type: text
+	* short description: The date the complaint was received by the company.
+	* possible range: A string of text representing the date the complaint was received.
+8. "Date sent to company":
+	* type: text
+	* short description: The date the complaint was sent to the company.
+	* possible range: A string of text representing the date the complaint was sent to the company.
+9. "Issue":
+	* type: text
+	* short description: The issue or problem the consumer is filing a complaint about.
+	* possible range: A string of text representing the issue or problem.
+10. "Product":
+	* type: text
+	* short description: The product or service the consumer is filing a complaint about.
+	* possible range: A string of text representing the product or service.
+11. "State":
+	* type: text
+	* short description: The state or location where the consumer is filing the complaint.
+	* possible range: A string of text representing the state or location.
+12. "Sub-issue":
+	* type: text
+	* short description: A more specific description of the issue the consumer is filing a complaint about.
+	* possible range: A string of text representing the more specific issue description.
+13. "Sub-product":
+	* type: text
+	* short description: A more specific description of the product or service the consumer is filing a complaint about.
+	* possible range: A string of text representing the more specific product or service description.
+14. "Submitted via":
+	* type: categorical
+	* short description: The method by which the complaint was submitted to the company (e.g. online, phone, email).
+	* possible range: A categorical value representing the method by which the complaint was submitted (e.g. "online", "phone", "email").
+15. "Tags":
+	* type: categorical
+	* short description: Any additional tags or keywords related to the complaint.
+	* possible range: A categorical value representing any additional tags or keywords related to the complaint.
+
+**Classes:**
+
+1. class_entity
+
+**Subclasses:**
+
+1. entity_name: subclass of -> class_entity
+
+**Object Properties:**
+
+1. "Company":
+	* domain: class_entity
+	* range: text
+2. "Company public response":
+	* domain: class_entity
+	* range: text
+3. "Company response to consumer":
+	* domain: class_entity
+	* range: categorical
+4. "Consumer complaint narrative":
+	* domain: class_entity
+	* range: text
+5. "Consumer consent provided?":
+	* domain: class_entity
+	* range: categorical
+6. "Consumer disputed?":
+	* domain: class_entity
+	* range: categorical
+7. "Date received":
+	* domain: class_entity
+	* range: text
+8. "Date sent to company":
+	* domain: class_entity
+	* range: text
+9. "Issue":
+	* domain: class_entity
+	* range: text
+10. "Product":
+	* domain: class_entity
+	* range: text
+11. "State":
+	* domain: class_entity
+	* range: text
+12. "Sub-issue":
+	* domain: class_entity
+	* range: text
+13. "Sub-product":
+	* domain: class_entity
+	* range: text
+14. "Submitted via":
+	* domain: class_entity
+	* range: categorical
+15. "Tags":
+	* domain: class_entity
+	* range: categorical
+
+**Data Type Properties:**
+
+1. "Company":
+	* domain: class_entity
+	* range: text
+2. "Company public response":
+	* domain: class_entity
+	* range: text
+3. "Company response to consumer":
+	* domain: class_entity
+	* range: categorical
+4. "Consumer complaint narrative":
+	* domain: class_entity
+	* range: text
+5. "Consumer consent provided?":
+	* domain: class_entity
+	* range: categorical
+6. "Consumer disputed?":
+	* domain: class_entity
+	* range: categorical
+7. "Date received":
+	* domain: class_entity
+	* range: text
+8. "Date sent to company":
+	* domain: class_entity
+	* range: text
+9. "Issue":
+	* domain: class_entity
+	* range: text
+10. "Product":
+	* domain: class_entity
+	* range: text
+11. "State":
+	* domain: class_entity
+	* range: text
+12. "Sub-issue":
+	* domain: class_entity
+	* range: text
+13. "Sub-product":
+	* domain: class_entity
+	* range: text
+14. "Submitted via":
+	* domain: class_entity
+	* range: categorical
+15. "Tags":
+	* domain: class_entity
+	* range: categorical
