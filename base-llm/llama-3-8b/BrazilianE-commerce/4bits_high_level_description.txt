@@ -1,0 +1,39 @@
+https://base_ontology.com#CustomerDataOntology
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Ontology
+http://www.w3.org/2000/01/rdf-schema#Ontology
+http://www.w3.org/2002/07/owl#Ontology
+
+**Data Description:**
+
+1. customer_city: text - Customer city - ["",...]
+2. customer_id: text - Customer ID - ["",...]
+3. customer_state: text - Customer state - ["",...]
+4. customer_unique_id: text - Customer unique ID - ["",...]
+5. customer_zip_code_prefix: Numerical - Customer zip code prefix - [1003.0, 99990.0]
+
+**Classes:**
+
+1. class_entity
+
+**Subclasses:**
+
+1. entity_name: subclass of -> class_entity
+
+**Object Properties:**
+
+1. has_city: domain - class_entity, range - customer_city
+2. has_id: domain - class_entity, range - customer_id
+3. has_state: domain - class_entity, range - customer_state
+4. has_unique_id: domain - class_entity, range - customer_unique_id
+5. has_zip_code_prefix: domain - class_entity, range - customer_zip_code_prefix
+
+**Data Type Properties:**
+
+1. has_non_null_count: domain - class_entity, range - Numerical
+2. has_type: domain - class_entity, range - text
+3. has_unique_count: domain - class_entity, range - Numerical
+4. has_count: domain - class_entity, range - Numerical
+5. has_max: domain - class_entity, range - Numerical
+6. has_mean: domain - class_entity, range - Numerical
+7. has_min: domain - class_entity, range - Numerical
+8. has_std: domain - class_entity, range - Numerical

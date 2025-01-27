@@ -1,0 +1,66 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix base: <https://base_ontology.com#>.
+
+base:Class_Entity
+    a owl:Class;
+
+base:Entity_Name
+    a owl:Class;
+    rdfs:subClassOf base:Class_Entity;
+
+base:Has_City
+    a owl:ObjectProperty;
+    rdfs:domain base:Entity_Name;
+    rdfs:range base:Customer_City;
+
+base:Has_Id
+    a owl:ObjectProperty;
+    rdfs:domain base:Entity_Name;
+    rdfs:range base:Customer_Id;
+
+base:Has_State
+    a owl:ObjectProperty;
+    rdfs:domain base:Entity_Name;
+    rdfs:range base:Customer_State;
+
+base:Has_Unique_Id
+    a owl:ObjectProperty;
+    rdfs:domain base:Entity_Name;
+    rdfs:range base:Customer_Unique_Id;
+
+base:Has_Zip_Code_Prefix
+    a owl:ObjectProperty;
+    rdfs:domain base:Entity_Name;
+    rdfs:range base:Customer_Zip_Code_Prefix;
+
+base:Customer_City
+    a owl:Class;
+    rdfs:subClassOf owl:Thing;
+    base:Type xsd:string;
+
+base:Customer_Id
+    a owl:Class;
+    rdfs:subClassOf owl:Thing;
+    base:Type xsd:string;
+
+base:Customer_State
+    a owl:Class;
+    rdfs:subClassOf owl:Thing;
+    base:Type xsd:string;
+
+base:Customer_Unique_Id
+    a owl:Class;
+    rdfs:subClassOf owl:Thing;
+    base:Type xsd:string;
+
+base:Customer_Zip_Code_Prefix
+    a owl:Class;
+    rdfs:subClassOf owl:Thing;
+    base:Type xsd:decimal;
+
+base:Type
+    a owl:DatatypeProperty;
+    rdfs:domain base:Entity_Name;
+    rdfs:range xsd:string.

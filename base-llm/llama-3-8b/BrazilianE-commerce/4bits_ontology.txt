@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix base: <https://base_ontology.com#>.
+
+<https://base_ontology.com#class_entity>
+  a owl:Class;
+  rdfs:label "Class_Entity".
+
+<https://base_ontology.com#entity_name>
+  a owl:Class;
+  rdfs:subClassOf <https://base_ontology.com#class_entity>;
+  rdfs:label "Entity_Name".
+
+<https://base_ontology.com#has_city>
+  a owl:ObjectProperty;
+  rdfs:domain <https://base_ontology.com#entity_name>;
+  rdfs:range <https://base_ontology.com#customer_city>.
+
+<https://base_ontology.com#has_id>
+  a owl:ObjectProperty;
+  rdfs:domain <https://base_ontology.com#entity_name>;
+  rdfs:range <https://base_ontology.com#customer_id>.
+
+<https://base_ontology.com#has_state>
+  a owl:ObjectProperty;
+  rdfs:domain <https://base_ontology.com#entity_name>;
+  rdfs:range <https://base_ontology.com#customer_state>.
+
+<https://base_ontology.com#has_unique_id>
+  a owl:ObjectProperty;
+  rdfs:domain <https://base_ontology.com#entity_name>;
+  rdfs:range <https://base_ontology.com#customer_unique_id>.
+
+<https://base_ontology.com#has_zip_code_prefix>
+  a owl:ObjectProperty;
+  rdfs:domain <https://base_ontology.com#entity_name>;
+  rdfs:range <https://base_ontology.com#customer_zip_code_prefix>.
+
+<https://base_ontology.com#has_non_null_count>
+  a owl:DatatypeProperty;
+  rdfs:domain <https://base_ontology.com#entity_name>;
+  rdfs:range xsd:decimal.
+
+<https://base_ontology.com#has_type>
+  a owl:DatatypeProperty;
+  rdfs:domain <https://base_ontology.com#entity_name>;
+  rdfs:range xsd:string.
+
+<https://base_ontology.com#has_unique_count>
+  a owl:DatatypeProperty;
+  rdfs:domain <https://base_ontology.com#entity_name>;
+  rdfs:range xsd:decimal.
+
+<https://base_ontology.com#has_count>
+  a owl:DatatypeProperty;
+  rdfs:domain <https://base_ontology.com#entity_name>;
+  rdfs:range xsd:decimal.
+
+<https://base_ontology.com#has_max>
+  a owl:DatatypeProperty;
+  rdfs:domain <https://base_ontology.com#entity_name>;
+  rdfs:range xsd:decimal.
+
+<https://base_ontology.com#has_mean>
+  a owl:DatatypeProperty;
+  rdfs:domain <https://base_ontology.com#entity_name>;
+  rdfs:range xsd:decimal.
+
+<https://base_ontology.com#has_min>
+  a owl:DatatypeProperty;
+  rdfs:domain <https://base_ontology.com#entity_name>;
+  rdfs:range xsd:decimal.
+
+<https://base_ontology.com#has_std>
+  a owl:DatatypeProperty;
+  rdfs:domain <https://base_ontology.com#entity_name>;
+  rdfs:range xsd:decimal.

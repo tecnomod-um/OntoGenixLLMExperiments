@@ -1,0 +1,28 @@
+https://base_ontology.com#Ontology
+
+Data Description:
+1. customer_city: text - customer city - possible range: null
+2. customer_id: text - customer id - possible range: null
+3. customer_state: text - customer state - possible range: null
+4. customer_unique_id: text - customer unique id - possible range: null
+5. customer_zip_code_prefix: Numerical - customer zip code prefix - possible range: 1003.0 - 99990.0
+
+Classes:
+1. class_entity
+
+Subclasses:
+1. entity_name: subclass of -> class_entity
+
+Object Properties:
+1. has_city: domain - class_entity, range - customer_city
+2. has_id: domain - class_entity, range - customer_id
+3. has_state: domain - class_entity, range - customer_state
+4. has_unique_id: domain - class_entity, range - customer_unique_id
+5. has_zip_code_prefix: domain - class_entity, range - customer_zip_code_prefix
+
+Data Type Properties:
+1. type: domain - class_entity, range - text
+2. type: domain - class_entity, range - text
+3. type: domain - class_entity, range - text
+4. type: domain - class_entity, range - text
+5. type: domain - class_entity, range - Numerical
