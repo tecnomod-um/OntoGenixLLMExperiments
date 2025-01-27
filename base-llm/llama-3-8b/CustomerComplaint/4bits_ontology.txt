@@ -1,0 +1,116 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+@prefix base: <https://base_ontology.com/>
+
+<owl:Ontology>
+  <owl:Class rdf:ID="class_entity">
+    <owl:Class rdf:ID="entity_name">
+      <rdfs:subClassOf rdf:resource="#class_entity"/>
+    </owl:Class>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="has_company">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:string"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="has_public_response">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:string"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="has_consumer_response">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:string"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="has_complaint_narrative">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:string"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="has_consumer_consent">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:string"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="has_consumer_dispute">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:string"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="has_date_received">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:string"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="has_date_sent">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:string"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="has_issue">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:string"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="has_product">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:string"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="has_state">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:string"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="has_sub_issue">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:string"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="has_sub_product">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:string"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="has_submission_method">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:string"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="has_tags">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:string"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="has_timely_response">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:string"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="has_zip_code">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:string"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="has_complaint_id">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:integer"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="has_non_null_count">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="has_type">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="has_unique_count">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="has_count">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="has_max">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="has_mean">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:decimal"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="has_min">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="has_std">
+    <owl:domain rdf:resource="#class_entity"/>
+    <owl:range rdf:resource="xsd:decimal"/>
+  </owl:DatatypeProperty>
+</owl:Ontology>

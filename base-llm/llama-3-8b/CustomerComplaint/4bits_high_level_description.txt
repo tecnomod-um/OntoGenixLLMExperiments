@@ -1,0 +1,62 @@
+https://base_ontology.com#owl:Ontology
+
+**Data Description:**
+
+1. Company: owl:text - Number of companies - [0, ∞)
+2. Company public response: owl:text - Public response from companies - [0, ∞)
+3. Company response to consumer: owl:categorical - Response type from companies - {yes, no, other}
+4. Consumer complaint narrative: owl:text - Consumer complaint description - [0, ∞)
+5. Consumer consent provided?: owl:categorical - Consumer consent status - {yes, no}
+6. Consumer disputed?: owl:categorical - Consumer dispute status - {yes, no}
+7. Date received: owl:text - Date received by consumer - [0, ∞)
+8. Date sent to company: owl:text - Date sent to company - [0, ∞)
+9. Issue: owl:text - Consumer issue description - [0, ∞)
+10. Product: owl:text - Product description - [0, ∞)
+11. State: owl:text - State where complaint was filed - [0, ∞)
+12. Sub-issue: owl:text - Sub-issue description - [0, ∞)
+13. Sub-product: owl:text - Sub-product description - [0, ∞)
+14. Submitted via: owl:categorical - Submission method - {online, phone, mail}
+15. Tags: owl:categorical - Complaint tags - {tag1, tag2,...}
+16. Timely response?: owl:categorical - Timely response status - {yes, no}
+17. ZIP code: owl:text - ZIP code where complaint was filed - [0, ∞)
+18. Complaint ID: owl:Numerical - Unique complaint ID - [1, 6906012]
+
+**Classes:**
+
+1. class_entity
+
+**Subclasses:**
+
+1. entity_name: subclass of -> class_entity
+
+**Object Properties:**
+
+1. has_company: domain - class_entity, range - owl:text
+2. has_public_response: domain - class_entity, range - owl:text
+3. has_consumer_response: domain - class_entity, range - owl:categorical
+4. has_complaint_narrative: domain - class_entity, range - owl:text
+5. has_consumer_consent: domain - class_entity, range - owl:categorical
+6. has_consumer_dispute: domain - class_entity, range - owl:categorical
+7. has_date_received: domain - class_entity, range - owl:text
+8. has_date_sent: domain - class_entity, range - owl:text
+9. has_issue: domain - class_entity, range - owl:text
+10. has_product: domain - class_entity, range - owl:text
+11. has_state: domain - class_entity, range - owl:text
+12. has_sub_issue: domain - class_entity, range - owl:text
+13. has_sub_product: domain - class_entity, range - owl:text
+14. has_submission_method: domain - class_entity, range - owl:categorical
+15. has_tags: domain - class_entity, range - owl:categorical
+16. has_timely_response: domain - class_entity, range - owl:categorical
+17. has_zip_code: domain - class_entity, range - owl:text
+18. has_complaint_id: domain - class_entity, range - owl:Numerical
+
+**Data Type Properties:**
+
+1. has_non_null_count: domain - class_entity, range - owl:Numerical
+2. has_type: domain - class_entity, range - owl:text
+3. has_unique_count: domain - class_entity, range - owl:Numerical
+4. has_count: domain - class_entity, range - owl:Numerical
+5. has_max: domain - class_entity, range - owl:Numerical
+6. has_mean: domain - class_entity, range - owl:Numerical
+7. has_min: domain - class_entity, range - owl:Numerical
+8. has_std: domain - class_entity, range - owl:Numerical

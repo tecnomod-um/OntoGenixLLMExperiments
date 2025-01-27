@@ -1,0 +1,62 @@
+https://base_ontology.com#Ontology
+
+Data Description:
+
+1. Company: text - Company information - null
+2. Company public response: text - Public response from company - null
+3. Company response to consumer: categorical - Company response to consumer - null
+4. Consumer complaint narrative: text - Consumer complaint narrative - null
+5. Consumer consent provided?: categorical - Consumer consent provided - null
+6. Consumer disputed?: categorical - Consumer disputed - null
+7. Date received: text - Date received - null
+8. Date sent to company: text - Date sent to company - null
+9. Issue: text - Issue - null
+10. Product: text - Product - null
+11. State: text - State - null
+12. Sub-issue: text - Sub-issue - null
+13. Sub-product: text - Sub-product - null
+14. Submitted via: categorical - Submitted via - null
+15. Tags: categorical - Tags - null
+16. Timely response?: categorical - Timely response - null
+17. ZIP code: text - ZIP code - null
+18. Complaint ID: Numerical - Complaint ID - 1.0 to 6906012.0
+
+Classes:
+
+1. class_entity
+
+Subclasses:
+
+1. entity_name: subclass of -> class_entity
+
+Object Properties:
+
+1. has_company: domain - class_entity, range - Company
+2. has_public_response: domain - class_entity, range - Company public response
+3. has_consumer_response: domain - class_entity, range - Company response to consumer
+4. has_complaint_narrative: domain - class_entity, range - Consumer complaint narrative
+5. has_consumer_consent: domain - class_entity, range - Consumer consent provided?
+6. has_consumer_disputed: domain - class_entity, range - Consumer disputed?
+7. has_date_received: domain - class_entity, range - Date received
+8. has_date_sent: domain - class_entity, range - Date sent to company
+9. has_issue: domain - class_entity, range - Issue
+10. has_product: domain - class_entity, range - Product
+11. has_state: domain - class_entity, range - State
+12. has_sub_issue: domain - class_entity, range - Sub-issue
+13. has_sub_product: domain - class_entity, range - Sub-product
+14. has_submitted_via: domain - class_entity, range - Submitted via
+15. has_tags: domain - class_entity, range - Tags
+16. has_timely_response: domain - class_entity, range - Timely response?
+17. has_zip_code: domain - class_entity, range - ZIP code
+18. has_complaint_id: domain - class_entity, range - Complaint ID
+
+Data Type Properties:
+
+1. has_type: domain - class_entity, range - owl:Class
+2. has_non_null_count: domain - class_entity, range - owl:Integer
+3. has_unique_count: domain - class_entity, range - owl:Integer
+4. has_count: domain - class_entity, range - owl:Integer
+5. has_max: domain - class_entity, range - owl:Integer
+6. has_mean: domain - class_entity, range - owl:Float
+7. has_min: domain - class_entity, range - owl:Integer
+8. has_std: domain - class_entity, range - owl:Float

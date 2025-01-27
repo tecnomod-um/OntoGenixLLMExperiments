@@ -1,0 +1,173 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix base_ontology: <https://base_ontology.com#>.
+
+<https://base_ontology.com#Ontology>
+  a owl:Ontology ;
+  rdfs:comment "".
+
+class_entity
+  a owl:Class ;
+  rdfs:label "class_entity".
+
+entity_name
+  a owl:Class ;
+  rdfs:label "entity_name" ;
+  rdfs:subClassOf <https://base_ontology.com#class_entity>.
+
+has_company
+  a owl:ObjectProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range <https://base_ontology.com#Company>.
+
+has_public_response
+  a owl:ObjectProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range <https://base_ontology.com#Company_public_response>.
+
+has_consumer_response
+  a owl:ObjectProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range <https://base_ontology.com#Company_response_to_consumer>.
+
+has_complaint_narrative
+  a owl:ObjectProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range <https://base_ontology.com#Consumer_complaint_narrative>.
+
+has_consumer_consent
+  a owl:ObjectProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range <https://base_ontology.com#Consumer_consent_provided?>.
+
+has_consumer_disputed
+  a owl:ObjectProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range <https://base_ontology.com#Consumer_disputed?>.
+
+has_date_received
+  a owl:ObjectProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range <https://base_ontology.com#Date_received>.
+
+has_date_sent
+  a owl:ObjectProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range <https://base_ontology.com#Date_sent_to_company>.
+
+has_issue
+  a owl:ObjectProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range <https://base_ontology.com#Issue>.
+
+has_product
+  a owl:ObjectProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range <https://base_ontology.com#Product>.
+
+has_state
+  a owl:ObjectProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range <https://base_ontology.com#State>.
+
+has_sub_issue
+  a owl:ObjectProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range <https://base_ontology.com#Sub_issue>.
+
+has_sub_product
+  a owl:ObjectProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range <https://base_ontology.com#Sub_product>.
+
+has_submitted_via
+  a owl:ObjectProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range <https://base_ontology.com#Submitted_via>.
+
+has_tags
+  a owl:ObjectProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range <https://base_ontology.com#Tags>.
+
+has_timely_response
+  a owl:ObjectProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range <https://base_ontology.com#Timely_response?>.
+
+has_zip_code
+  a owl:ObjectProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range <https://base_ontology.com#ZIP_code>.
+
+has_complaint_id
+  a owl:ObjectProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range <https://base_ontology.com#Complaint_ID>.
+
+has_type
+  a owl:DatatypeProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range owl:Class.
+
+has_non_null_count
+  a owl:DatatypeProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range xsd:integer.
+
+has_unique_count
+  a owl:DatatypeProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range xsd:integer.
+
+has_count
+  a owl:DatatypeProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range xsd:integer.
+
+has_max
+  a owl:DatatypeProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range xsd:integer.
+
+has_mean
+  a owl:DatatypeProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range xsd:float.
+
+has_min
+  a owl:DatatypeProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range xsd:integer.
+
+has_std
+  a owl:DatatypeProperty ;
+  rdfs:label "" ;
+  rdfs:domain <https://base_ontology.com#class_entity> ;
+  rdfs:range xsd:float.
