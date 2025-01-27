@@ -1,0 +1,110 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+@prefix base_ontology: <https://base_ontology.com#>
+
+<owl:Ontology rdf:about="">
+
+  <owl:Class rdf:ID="class_entity">
+    <owl:oneOf rdf:parseType="Collection">
+      <owl:Class rdf:ID="entity_name">
+        <owl:oneOf rdf:parseType="Collection">
+          <owl:ObjectProperty rdf:ID="has_age">
+            <owl:domain rdf:resource="#class_entity"/>
+            <owl:range rdf:resource="xsd:integer"/>
+          </owl:ObjectProperty>
+          <owl:ObjectProperty rdf:ID="has_arrival_delay">
+            <owl:domain rdf:resource="#class_entity"/>
+            <owl:range rdf:resource="xsd:integer"/>
+          </owl:ObjectProperty>
+          <owl:ObjectProperty rdf:ID="has_baggage_handling">
+            <owl:domain rdf:resource="#class_entity"/>
+            <owl:range rdf:resource="owl:Categorical"/>
+          </owl:ObjectProperty>
+          <owl:ObjectProperty rdf:ID="has_checkin_service">
+            <owl:domain rdf:resource="#class_entity"/>
+            <owl:range rdf:resource="owl:Categorical"/>
+          </owl:ObjectProperty>
+          <owl:ObjectProperty rdf:ID="has_cleanliness">
+            <owl:domain rdf:resource="#class_entity"/>
+            <owl:range rdf:resource="owl:Categorical"/>
+          </owl:ObjectProperty>
+          <owl:ObjectProperty rdf:ID="has_departure_delay">
+            <owl:domain rdf:resource="#class_entity"/>
+            <owl:range rdf:resource="xsd:integer"/>
+          </owl:ObjectProperty>
+          <owl:ObjectProperty rdf:ID="has_departure_arrival_time_convenient">
+            <owl:domain rdf:resource="#class_entity"/>
+            <owl:range rdf:resource="owl:Categorical"/>
+          </owl:ObjectProperty>
+          <owl:ObjectProperty rdf:ID="has_ease_of_online_booking">
+            <owl:domain rdf:resource="#class_entity"/>
+            <owl:range rdf:resource="owl:Categorical"/>
+          </owl:ObjectProperty>
+          <owl:ObjectProperty rdf:ID="has_flight_distance">
+            <owl:domain rdf:resource="#class_entity"/>
+            <owl:range rdf:resource="xsd:integer"/>
+          </owl:ObjectProperty>
+          <owl:ObjectProperty rdf:ID="has_food_and_drink">
+            <owl:domain rdf:resource="#class_entity"/>
+            <owl:range rdf:resource="owl:Categorical"/>
+          </owl:ObjectProperty>
+          <owl:ObjectProperty rdf:ID="has_gate_location">
+            <owl:domain rdf:resource="#class_entity"/>
+            <owl:range rdf:resource="owl:Categorical"/>
+          </owl:ObjectProperty>
+          <owl:ObjectProperty rdf:ID="has_inflight_entertainment">
+            <owl:domain rdf:resource="#class_entity"/>
+            <owl:range rdf:resource="owl:Categorical"/>
+          </owl:ObjectProperty>
+          <owl:ObjectProperty rdf:ID="has_inflight_wifi_service">
+            <owl:domain rdf:resource="#class_entity"/>
+            <owl:range rdf:resource="owl:Categorical"/>
+          </owl:ObjectProperty>
+          <owl:ObjectProperty rdf:ID="has_leg_room_service">
+            <owl:domain rdf:resource="#class_entity"/>
+            <owl:range rdf:resource="owl:Categorical"/>
+          </owl:ObjectProperty>
+          <owl:ObjectProperty rdf:ID="has_on_board_service">
+            <owl:domain rdf:resource="#class_entity"/>
+            <owl:range rdf:resource="owl:Categorical"/>
+          </owl:ObjectProperty>
+          <owl:ObjectProperty rdf:ID="has_online_boarding">
+            <owl:domain rdf:resource="#class_entity"/>
+            <owl:range rdf:resource="owl:Categorical"/>
+          </owl:ObjectProperty>
+          <owl:ObjectProperty rdf:ID="has_online_support">
+            <owl:domain rdf:resource="#class_entity"/>
+            <owl:range rdf:resource="owl:Categorical"/>
+          </owl:ObjectProperty>
+          <owl:ObjectProperty rdf:ID="has_seat_comfort">
+            <owl:domain rdf:resource="#class_entity"/>
+            <owl:range rdf:resource="owl:Categorical"/>
+          </owl:ObjectProperty>
+          <owl:ObjectProperty rdf:ID="has_class">
+            <owl:domain rdf:resource="#class_entity"/>
+            <owl:range rdf:resource="owl:Categorical"/>
+          </owl:ObjectProperty>
+          <owl:ObjectProperty rdf:ID="has_customer_type">
+            <owl:domain rdf:resource="#class_entity"/>
+            <owl:range rdf:resource="owl:Categorical"/>
+          </owl:ObjectProperty>
+          <owl:ObjectProperty rdf:ID="has_gender">
+            <owl:domain rdf:resource="#class_entity"/>
+            <owl:range rdf:resource="owl:Categorical"/>
+          </owl:ObjectProperty>
+          <owl:ObjectProperty rdf:ID="has_type_of_travel">
+            <owl:domain rdf:resource="#class_entity"/>
+            <owl:range rdf:resource="owl:Categorical"/>
+          </owl:ObjectProperty>
+          <owl:ObjectProperty rdf:ID="has_satisfaction">
+            <owl:domain rdf:resource="#class_entity"/>
+            <owl:range rdf:resource="owl:Categorical"/>
+          </owl:ObjectProperty>
+        </owl:oneOf>
+      </owl:Class>
+    </owl:oneOf>
+  </owl:Class>
+
+</owl:Ontology>

@@ -1,0 +1,68 @@
+**Foundational Prefix:** 
+"https://base_ontology.com#", "http://www.w3.org/1999/02/22-rdf-syntax-ns#", "http://www.w3.org/2000/01/rdf-schema#", "http://www.w3.org/2002/07/owl#"
+Defined as an owl type: owl:Ontology
+
+**Data Description:**
+
+1. Age: owl:Integer - Age of the passenger - [0, 85]
+2. Arrival Delay in Minutes: owl:Integer - Delay in minutes of the arrival time - [0, 1584]
+3. Baggage handling: owl:Categorical - Handling of baggage - [1, 5]
+4. Checkin service: owl:Categorical - Quality of check-in service - [0, 5]
+5. Cleanliness: owl:Categorical - Cleanliness of the aircraft - [0, 5]
+6. Departure Delay in Minutes: owl:Integer - Delay in minutes of the departure time - [0, 1592]
+7. Departure/Arrival time convenient: owl:Categorical - Convenience of departure/arrival time - [0, 5]
+8. Ease of Online booking: owl:Categorical - Ease of online booking - [0, 5]
+9. Flight Distance: owl:Integer - Distance of the flight - [50, 6951]
+10. Food and drink: owl:Categorical - Quality of food and drink - [0, 5]
+11. Gate location: owl:Categorical - Location of the gate - [0, 5]
+12. Inflight entertainment: owl:Categorical - Quality of inflight entertainment - [0, 5]
+13. Inflight wifi service: owl:Categorical - Quality of inflight wifi service - [0, 5]
+14. Leg room service: owl:Categorical - Quality of leg room service - [0, 5]
+15. On-board service: owl:Categorical - Quality of on-board service - [0, 5]
+16. Online boarding: owl:Categorical - Quality of online boarding - [0, 5]
+17. Online support: owl:Categorical - Quality of online support - [0, 5]
+18. Seat comfort: owl:Categorical - Comfort of the seat - [0, 5]
+19. Class: owl:Categorical - Class of the flight - [1, 3]
+20. Customer Type: owl:Categorical - Type of customer - [1, 2]
+21. Gender: owl:Categorical - Gender of the passenger - [1, 2]
+22. Type of Travel: owl:Categorical - Type of travel - [1, 2]
+23. satisfaction: owl:Categorical - Satisfaction of the passenger - [1, 2]
+
+**Classes:**
+
+1. class_entity
+
+**Subclasses:**
+
+1. entity_name: subclass of -> class_entity
+
+**Object Properties:**
+
+1. has_age: domain - class_entity, range - owl:Integer
+2. has_arrival_delay: domain - class_entity, range - owl:Integer
+3. has_baggage_handling: domain - class_entity, range - owl:Categorical
+4. has_checkin_service: domain - class_entity, range - owl:Categorical
+5. has_cleanliness: domain - class_entity, range - owl:Categorical
+6. has_departure_delay: domain - class_entity, range - owl:Integer
+7. has_departure_arrival_time_convenient: domain - class_entity, range - owl:Categorical
+8. has_ease_of_online_booking: domain - class_entity, range - owl:Categorical
+9. has_flight_distance: domain - class_entity, range - owl:Integer
+10. has_food_and_drink: domain - class_entity, range - owl:Categorical
+11. has_gate_location: domain - class_entity, range - owl:Categorical
+12. has_inflight_entertainment: domain - class_entity, range - owl:Categorical
+13. has_inflight_wifi_service: domain - class_entity, range - owl:Categorical
+14. has_leg_room_service: domain - class_entity, range - owl:Categorical
+15. has_on_board_service: domain - class_entity, range - owl:Categorical
+16. has_online_boarding: domain - class_entity, range - owl:Categorical
+17. has_online_support: domain - class_entity, range - owl:Categorical
+18. has_seat_comfort: domain - class_entity, range - owl:Categorical
+19. has_class: domain - class_entity, range - owl:Categorical
+20. has_customer_type: domain - class_entity, range - owl:Categorical
+21. has_gender: domain - class_entity, range - owl:Categorical
+22. has_type_of_travel: domain - class_entity, range - owl:Categorical
+23. has_satisfaction: domain - class_entity, range - owl:Categorical
+
+**Data Type Properties:**
+
+1. has_type: domain - class_entity, range - owl:Categorical
+2. has_value: domain - class_entity, range - owl:Integer
