@@ -1,0 +1,51 @@
+https://base_ontology.com#owl:Ontology
+https://base_ontology.com#owl:Class
+https://base_ontology.com#owl:DatatypeProperty
+https://base_ontology.com#owl:ObjectProperty
+
+**Data Description:**
+
+1. Absolute_Url_idx: Numerical - The absolute URL index - (0, ∞)
+2. Brand_idx: Numerical - The brand index - (0, ∞)
+3. Category_idx: Numerical - The category index - (0, ∞)
+4. DiscountPrice_idx: Numerical - The discount price index - (0, ∞)
+5. Price_idx: Numerical - The price index - (0, ∞)
+6. ProductName_idx: Numerical - The product name index - (0, ∞)
+7. SubCategory_idx: Numerical - The subcategory index - (0, ∞)
+8. FAIR_URI: text - The FAIR URI - (string)
+9. Image_Url: text - The image URL - (string)
+10. Quantity: text - The quantity - (string)
+
+**Classes:**
+
+1. class_entity
+
+**Subclasses:**
+
+1. entity_name: subclass of -> class_entity
+
+**Object Properties:**
+
+1. has_absolute_url_idx: domain - class_entity, range - Numerical
+2. has_brand_idx: domain - class_entity, range - Numerical
+3. has_category_idx: domain - class_entity, range - Numerical
+4. has_discount_price_idx: domain - class_entity, range - Numerical
+5. has_price_idx: domain - class_entity, range - Numerical
+6. has_product_name_idx: domain - class_entity, range - Numerical
+7. has_subcategory_idx: domain - class_entity, range - Numerical
+8. has_fair_uri: domain - class_entity, range - text
+9. has_image_url: domain - class_entity, range - text
+10. has_quantity: domain - class_entity, range - text
+
+**Data Type Properties:**
+
+1. has_absolute_url_idx_type: domain - class_entity, range - Numerical
+2. has_brand_idx_type: domain - class_entity, range - Numerical
+3. has_category_idx_type: domain - class_entity, range - Numerical
+4. has_discount_price_idx_type: domain - class_entity, range - Numerical
+5. has_price_idx_type: domain - class_entity, range - Numerical
+6. has_product_name_idx_type: domain - class_entity, range - Numerical
+7. has_subcategory_idx_type: domain - class_entity, range - Numerical
+8. has_fair_uri_type: domain - class_entity, range - text
+9. has_image_url_type: domain - class_entity, range - text
+10. has_quantity_type: domain - class_entity, range - text

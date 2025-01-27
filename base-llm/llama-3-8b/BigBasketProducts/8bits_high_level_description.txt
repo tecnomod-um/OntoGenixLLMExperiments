@@ -1,0 +1,40 @@
+https://base_ontology.com#ontology.owl
+
+Data Description:
+
+1. Absolute_Url_idx: Numerical - Total count of URLs - [100.0, 8307.0]
+2. Brand_idx: Numerical - Total count of brands - [15077.0, 15918.0]
+3. Category_idx: Numerical - Total count of categories - [15919.0, 15929.0]
+4. DiscountPrice_idx: Numerical - Total count of discount prices - [17307.0, 19486.0]
+5. Price_idx: Numerical - Total count of prices - [16264.0, 17306.0]
+6. ProductName_idx: Numerical - Total count of product names - [8308.0, 15076.0]
+7. SubCategory_idx: Numerical - Total count of subcategories - [15930.0, 16263.0]
+8. FAIR_URI: text - Unique identifier for each product - [no range]
+9. Image_Url: text - URL of the product image - [no range]
+10. Quantity: text - Quantity of each product - [no range]
+
+Classes:
+
+1. class_entity
+
+Subclasses:
+
+1. entity_name: subclass of -> class_entity
+
+Object Properties:
+
+1. has_absolute_url: domain - class_entity, range - Numerical
+2. has_brand: domain - class_entity, range - Numerical
+3. has_category: domain - class_entity, range - Numerical
+4. has_discount_price: domain - class_entity, range - Numerical
+5. has_price: domain - class_entity, range - Numerical
+6. has_product_name: domain - class_entity, range - Numerical
+7. has_subcategory: domain - class_entity, range - Numerical
+8. has_fair_uri: domain - class_entity, range - text
+9. has_image_url: domain - class_entity, range - text
+10. has_quantity: domain - class_entity, range - text
+
+Data Type Properties:
+
+1. has_data_type: domain - class_entity, range - Numerical
+2. has_data_type: domain - class_entity, range - text
