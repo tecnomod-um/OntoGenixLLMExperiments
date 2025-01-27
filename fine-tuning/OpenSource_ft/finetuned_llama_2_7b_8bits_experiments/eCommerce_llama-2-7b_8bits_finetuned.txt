@@ -1,0 +1,162 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:ShopSalesOntology rdf:type owl:Ontology .
+
+### Classes ###
+
+um:Customer rdf:type owl:Class ;
+   rdfs:label "Customer"@en .
+
+um:Order rdf:type owl:Class ;
+   rdfs:label "Order"@en .
+
+um:Product rdf:type owl:Class ;
+   rdfs:label "Product"@en .
+
+um:Payment rdf:type owl:Class ;
+   rdfs:label "Payment"@en .
+
+um:Country rdf:type owl:Class ;
+   rdfs:label "Country"@en .
+
+
+### Data Properties ###
+
+um:customerID rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:integer ;
+   rdfs:label "customer ID"@en .
+
+um:orderID rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range xsd:integer ;
+   rdfs:label "order ID"@en .
+
+um:productName rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:string ;
+   rdfs:label "product name"@en .
+
+um:unitPrice rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:decimal ;
+   rdfs:label "unit price"@en .
+
+um:quantity rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range xsd:integer ;
+   rdfs:label "quantity"@en .
+
+um:invoiceNumber rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range xsd:string ;
+   rdfs:label "invoice number"@en .
+
+um:date rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range xsd:date ;
+   rdfs:label "date"@en .
+
+um:customerLocation rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:string ;
+   rdfs:label "customer location"@en .
+
+um:productCategory rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:string ;
+   rdfs:label "product category"@en .
+
+um:productType rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:string ;
+   rdfs:label "product type"@en .
+
+um:salesAmount rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range xsd:decimal ;
+   rdfs:label "sales amount"@en .
+
+um:orderDate rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range xsd:date ;
+   rdfs:label "order date"@en .
+
+um:salesAmountWithCurrency rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:SalesAmount ;
+   rdfs:range xsd:string ;
+   rdfs:label "sales amount with currency"@en .
+
+um:productCategoryWithCurrency rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:ProductCategory ;
+   rdfs:range xsd:string ;
+   rdfs:label "product category with currency"@en .
+
+um:productTypeWithCurrency rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:ProductType ;
+   rdfs:range xsd:string ;
+   rdfs:label "product type with currency"@en .
+
+um:salesAmountWithCurrencyAfterTranslated rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:SalesAmount ;
+   rdfs:range xsd:string ;
+   rdfs:label "sales amount with currency after translated"@en .
+
+um:productNameWithCurrencyAfterTranslated rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:string ;
+   rdfs:label "product name with currency after translated"@en .
+
+um:productCategoryWithCurrencyAfterTranslated rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:ProductCategory ;
+   rdfs:range xsd:string ;
+   rdfs:label "product category with currency after translated"@en .
+
+um:productTypeWithCurrencyAfterTranslated rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:ProductType ;
+   rdfs:range xsd:string ;
+   rdfs:label "product type with currency after translated"@en .
+
+um:salesAmountWithCurrencyAfterTranslatedWithUnits rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:SalesAmount ;
+   rdfs:range xsd:string ;
+   rdfs:label "sales amount with currency after translated and units"@en .
+
+um:productNameWithCurrencyAfterTranslatedWithUnits rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:string ;
+   rdfs:label "product name with currency after translated and units"@en .
+
+um:productCategoryWithCurrencyAfterTranslatedWithUnits rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:ProductCategory ;
+   rdfs:range xsd:string ;
+   rdfs:label "product category with currency after translated and units"@en .
+
+um:productTypeWithCurrencyAfterTranslatedWithUnits rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:ProductType ;
+   rdfs:range xsd:string ;
+   rdfs:label "product type with currency after translated and units"@en .
+
+um:salesAmountWithCurrencyAfterTranslatedWithUnitsWithoutUnit rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:SalesAmount ;
+   rdfs:range xsd:string ;
+   rdfs:label "sales amount with currency after translated and units without unit"@en .
+
+um:productNameWithCurrencyAfterTranslatedWithoutUnit rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:string ;
+   rdfs:label "product name with currency after translated and units without unit"@en .
+
+um:productCategoryWithCurrencyAfterTranslatedWithoutUnit rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:ProductCategory ;
+   rdfs:range xsd:string ;
+   rdfs:label "product category with currency after translated and units without unit"@en .
+
+um:productTypeWithCurrencyAfterTranslatedWithoutUnit rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:ProductType ;
+   rdfs:range xsd:string ;
+   rdfs:label "product type with currency after translated and units without unit"@en .

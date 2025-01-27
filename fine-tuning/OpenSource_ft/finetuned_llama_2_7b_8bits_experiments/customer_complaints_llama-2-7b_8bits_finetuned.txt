@@ -1,0 +1,93 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:Complaint a owl:Class .
+
+um:hasOntology a owl:Ontology .
+
+um:hasName a owl:DatatypeProperty ;
+   rdfs:domain um:Complaint ;
+   rdfs:range xsd:string .
+
+um:hasReason a owl:DatatypeProperty ;
+   rdfs:domain um:Complaint ;
+   rdfs:range xsd:string .
+
+um:hasDateSentToCompany a owl:DatatypeProperty ;
+   rdfs:domain um:Complaint ;
+   rdfs:range xsd:dateTime .
+
+um:hasDateReceivedByCompany a owl:DatatypeProperty ;
+   rdfs:domain um:Complaint ;
+   rdfs:range xsd:dateTime .
+
+um:hasTags a owl:DatatypeProperty ;
+   rdfs:domain um:Complaint ;
+   rdfs:range xsd:string .
+
+um:hasLinkedProduct a owl:DatatypeProperty ;
+   rdfs:domain um:Complaint ;
+   rdfs:range xsd:string .
+
+um:hasLinkedSubProduct a owl:DatatypeProperty ;
+   rdfs:domain um:Complaint ;
+   rdfs:range xsd:string .
+
+um:hasIssue a owl:ObjectProperty ;
+   rdfs:domain um:Complaint ;
+   rdfs:range um:HasIssue .
+
+um:hasSubIssue a owl:ObjectProperty ;
+   rdfs:domain um:Complaint ;
+   rdfs:range um:HasSubIssue .
+
+um:hasConsumerComplaintNarrative a owl:ObjectProperty ;
+   rdfs:domain um:Complaint ;
+   rdfs:range um:HasConsumerComplaintNarrative .
+
+um:hasCompanyPublicResponse a owl:ObjectProperty ;
+   rdfs:domain um:Complaint ;
+   rdfs:range um:HasCompanyPublicResponse .
+
+um:hasState a owl:DatatypeProperty ;
+   rdfs:domain um:Complaint ;
+   rdfs:range xsd:string .
+
+um:hasZipCode a owl:DatatypeProperty ;
+   rdfs:domain um:Complaint ;
+   rdfs:range xsd:string .
+
+um:hasTags a owl:DatatypeProperty ;
+   rdfs:domain um:Complaint ;
+   rdfs:range xsd:string .
+
+um:hasConsumerConsentProvided a owl:DatatypeProperty ;
+   rdfs:domain um:Complaint ;
+   rdfs:range xsd:string .
+
+um:hasSubmittedVia a owl:DatatypeProperty ;
+   rdfs:domain um:Complaint ;
+   rdfs:range xsd:string .
+
+um:hasDateSentToCompanyWithinXDays a owl:DatatypeProperty ;
+   rdfs:domain um:Complaint ;
+   rdfs:range xsd:integer .
+
+um:hasDateReceivedByCompanyWithinXDays a owl:DatatypeProperty ;
+   rdfs:domain um:Complaint ;
+   rdfs:range xsd:integer .
+
+um:hasTimelyResponse a owl:DatatypeProperty ;
+   rdfs:domain um:Complaint ;
+   rdfs:range xsd:string .
+
+um:hasConsumerDisputed a owl:DatatypeProperty ;
+   rdfs:domain um:Complaint ;
+   rdfs:range xsd:string .
+
+um:hasComplaintID a owl:DatatypeProperty ;
+   rdfs:domain um:Complaint ;
+   rdfs:range um:ComplaintID .

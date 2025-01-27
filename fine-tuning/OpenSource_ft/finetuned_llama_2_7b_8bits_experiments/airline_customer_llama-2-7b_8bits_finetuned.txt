@@ -1,0 +1,141 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:AirlineCustomerOntology rdf:type owl:Ontology .
+
+### Classes ###
+
+um:Customer rdf:type owl:Class ;
+   rdfs:label "Customer"@en .
+
+um:Airline rdf:type owl:Class ;
+   rdfs:label "Airline"@en .
+
+um:Booking rdf:type owl:Class ;
+   rdfs:label "Booking"@en .
+
+um:Flight rdf:type owl:Class ;
+   rdfs:label "Flight"@en .
+
+um:Class rdf:type owl:Class ;
+   rdfs:label "Class"@en .
+
+### Data Properties ###
+
+um:bookingDate rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Booking ;
+   rdfs:range xsd:date ;
+   rdfs:label "booking date"@en .
+
+um:bookingTime rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Booking ;
+   rdfs:range xsd:time ;
+   rdfs:label "booking time"@en .
+
+um:satisfaction rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:string ;
+   rdfs:label "satisfaction"@en .
+
+um:gender rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:string ;
+   rdfs:label "gender"@en .
+
+um:customerType rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:string ;
+   rdfs:label "customer type"@en .
+
+um:age rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:integer ;
+   rdfs:label "age"@en .
+
+um:typeOfTravel rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Flight ;
+   rdfs:range xsd:string ;
+   rdfs:label "type of travel"@en .
+
+um:seatComfort rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Flight ;
+   rdfs:range xsd:string ;
+   rdfs:label "seat comfort"@en .
+
+um:departureArrivalTimeConvenient rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Flight ;
+   rdfs:range xsd:string ;
+   rdfs:label "departure/arrival time convenient"@en .
+
+um:foodAndDrink rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Flight ;
+   rdfs:range xsd:string ;
+   rdfs:label "food and drink"@en .
+
+um:gateLocation rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Booking ;
+   rdfs:range xsd:string ;
+   rdfs:label "gate location"@en .
+
+um:inflightWifiService rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Flight ;
+   rdfs:range xsd:string ;
+   rdfs:label "inflight wifi service"@en .
+
+um:inflightEntertainment rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Flight ;
+   rdfs:range xsd:string ;
+   rdfs:label "inflight entertainment"@en .
+
+um:onlineSupport rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Booking ;
+   rdfs:range xsd:string ;
+   rdfs:label "online support"@en .
+
+um:easeOfOnlineBooking rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Booking ;
+   rdfs:range xsd:string ;
+   rdfs:label "ease of online booking"@en .
+
+um:onBoardService rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Booking ;
+   rdfs:range xsd:string ;
+   rdfs:label "on-board service"@en .
+
+um:legRoomService rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Booking ;
+   rdfs:range xsd:string ;
+   rdfs:label "leg room service"@en .
+
+um:baggageHandling rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Booking ;
+   rdfs:range xsd:string ;
+   rdfs:label "baggage handling"@en .
+
+um:checkinService rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Booking ;
+   rdfs:range xsd:string ;
+   rdfs:label "checkin service"@en .
+
+um:cleanliness rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Flight ;
+   rdfs:range xsd:string ;
+   rdfs:label "cleanliness"@en .
+
+um:onlineBoardring rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Booking ;
+   rdfs:range xsd:string ;
+   rdfs:label "online boardring"@en .
+
+um:DepartureDelayInMinutes rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Booking ;
+   rdfs:range xsd:integer ;
+   rdfs:label "departure delay in minutes"@en .
+
+um:ArrivalDelayInMinutes rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Booking ;
+   rdfs:range xsd:integer ;
+   rdfs:label "arrival delay in minutes"@en .

@@ -1,0 +1,200 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:USPCommercialDataOntology rdf:type owl:Ontology .
+
+### Classes ###
+
+um:Transaction rdf:type owl:Class ;
+   rdfs:label "Transaction" .
+
+um:Customer rdf:type owl:Class ;
+   rdfs:label "Customer" .
+
+um:Product rdf:type owl:Class ;
+   rdfs:label "Product" .
+
+um:City rdf:type owl:Class ;
+   rdfs:label "City" .
+
+um:State rdf:type owl:Class ;
+   rdfs:label "State" .
+
+um:Country rdf:type owl:Class ;
+   rdfs:label "Country" .
+
+
+### Data Properties ###
+
+um:transactionDate rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Transaction ;
+   rdfs:range xsd:date ;
+   rdfs:label "transaction date" .
+
+um:transactionAmount rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Transaction ;
+   rdfs:range xsd:decimal ;
+   rdfs:label "transaction amount" .
+
+um:customerName rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:string ;
+   rdfs:label "customer name" .
+
+um:customerEmail rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:string ;
+   rdfs:label "customer email" .
+
+um:customerPhone rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:string ;
+   rdfs:label "customer phone" .
+
+um:productName rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:string ;
+   rdfs:label "product name" .
+
+um:productType rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:string ;
+   rdfs:label "product type" .
+
+um:productCategory rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:string ;
+   rdfs:label "product category" .
+
+um:productSubCategory rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:string ;
+   rdfs:label "product sub category" .
+
+um:productBrand rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:string ;
+   rdfs:label "product brand" .
+
+um:productTypeBrand rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:string ;
+   rdfs:label "product type brand" .
+
+um:productImage rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:string ;
+   rdfs:label "product image" .
+
+um:productPrice rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:decimal ;
+   rdfs:label "product price" .
+
+um:productDiscount rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:decimal ;
+   rdfs:label "product discount" .
+
+um:customerGender rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:string ;
+   rdfs:label "customer gender" .
+
+um:customerAge rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:integer ;
+   rdfs:label "customer age" .
+
+um:customerOccupation rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:string ;
+   rdfs:label "customer occupation" .
+
+um:customerMaritalStatus rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:string ;
+   rdfs:label "customer marital status" .
+
+um:customerCountryOfBirth rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:string ;
+   rdfs:label "customer country of birth" .
+
+um:customerStateOfBirth rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:string ;
+   rdfs:label "customer state of birth" .
+
+um:customerCityOfBirth rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:string ;
+   rdfs:label "customer city of birth" .
+
+um:customerStateOfResidence rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:string ;
+   rdfs:label "customer state of residence" .
+
+um:customerCityOfResidence rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:string ;
+   rdfs:label "customer city of residence" .
+
+um:customerCountryOfResidence rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:string ;
+   rdfs:label "customer country of residence" .
+
+um:customerStateOfResidenceCode rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:string ;
+   rdfs:label "customer state of residence code" .
+
+um:customerCityOfResidenceCode rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:string ;
+   rdfs:label "customer city of residence code" .
+
+um:customerCountryOfResidenceCode rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:string ;
+   rdfs:label "customer country of residence code" .
+
+um:transactionDateYear rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Transaction ;
+   rdfs:range xsd:gYear ;
+   rdfs:label "transaction date year" .
+
+um:transactionDateMonth rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Transaction ;
+   rdfs:range xsd:gMonth ;
+   rdfs:label "transaction date month" .
+
+um:transactionDateDay rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Transaction ;
+   rdfs:range xsd:gDay ;
+   rdfs:label "transaction date day" .
+
+um:transactionDateHour rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Transaction ;
+   rdfs:range xsd:gHour ;
+   rdfs:label "transaction date hour" .
+
+um:transactionDateMinute rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Transaction ;
+   rdfs:range xsd:gMinute ;
+   rdfs:label "transaction date minute" .
+
+um:transactionDateSecond rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Transaction ;
+   rdfs:range xsd:gSecond ;
+   rdfs:label "transaction date second" .
+
+um:customerLastPurchase rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:dateTime ;
+   rdfs:label "customer last purchase" .

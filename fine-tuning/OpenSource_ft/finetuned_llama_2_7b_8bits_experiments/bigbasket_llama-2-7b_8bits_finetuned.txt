@@ -1,0 +1,194 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:MensShoesOntology rdf:type owl:Ontology .
+
+### Classes ###
+
+um:Shoe rdf:type owl:Class ;
+   rdfs:label "Shoe" .
+
+um:Brand rdf:type owl:Class ;
+   rdfs:label "Brand" .
+
+um:Category rdf:type owl:Class ;
+   rdfs:label "Category" .
+
+um:SubCategory rdf:type owl:Class ;
+   rdfs:label "Sub-Category" .
+
+um:Product rdf:type owl:Class ;
+   rdfs:label "Product" .
+
+
+### Data Properties ###
+
+um:productName rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:string ;
+   rdfs:label "product name" .
+
+um:productCode rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:string ;
+   rdfs:label "product code" .
+
+um:price rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:decimal ;
+   rdfs:label "price" .
+
+um:discountPrice rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:decimal ;
+   rdfs:label "discount price" .
+
+um:available rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:integer ;
+   rdfs:label "available" .
+
+um:quantity rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:integer ;
+   rdfs:label "quantity" .
+
+um:absoluteUrl rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:string ;
+   rdfs:label "absolute URL" .
+
+um:productNameInRDF rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:string ;
+   rdfs:label "product name in RDF" .
+
+um:brandNameInRDF rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Brand ;
+   rdfs:range xsd:string ;
+   rdfs:label "brand name in RDF" .
+
+um:categoryNameInRDF rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Category ;
+   rdfs:range xsd:string ;
+   rdfs:label "category name in RDF" .
+
+um:subCategoryNameInRDF rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:SubCategory ;
+   rdfs:range xsd:string ;
+   rdfs:label "sub-category name in RDF" .
+
+um:productNameInRDF rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Brand ;
+   rdfs:range xsd:string ;
+   rdfs:label "brand name in RDF" .
+
+um:productCodeInRDF rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Brand ;
+   rdfs:range xsd:string ;
+   rdfs:label "product code in RDF" .
+
+um:priceInRDF rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Brand ;
+   rdfs:range xsd:decimal ;
+   rdfs:label "price in RDF" .
+
+um:discountPriceInRDF rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Brand ;
+   rdfs:range xsd:decimal ;
+   rdfs:label "discount price in RDF" .
+
+um:availableInRDF rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Brand ;
+   rdfs:range xsd:integer ;
+   rdfs:label "available in RDF" .
+
+um:quantityInRDF rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Brand ;
+   rdfs:range xsd:integer ;
+   rdfs:label "quantity in RDF" .
+
+um:productName rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:string ;
+   rdfs:label "product name" .
+
+um:productCode rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:string ;
+   rdfs:label "product code" .
+
+um:price rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:decimal ;
+   rdfs:label "price" .
+
+um:discountPrice rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:decimal ;
+   rdfs:label "discount price" .
+
+um:availableInRDF rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:integer ;
+   rdfs:label "available in RDF" .
+
+um:quantityInRDF rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:integer ;
+   rdfs:label "quantity in RDF" .
+
+um:productNameInRDF rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Brand ;
+   rdfs:range xsd:string ;
+   rdfs:label "product name in RDF" .
+
+um:productCodeInRDF rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Brand ;
+   rdfs:range xsd:string ;
+   rdfs:label "product code in RDF" .
+
+um:priceInRDF rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Brand ;
+   rdfs:range xsd:decimal ;
+   rdfs:label "price in RDF" .
+
+um:discountPriceInRDF rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Brand ;
+   rdfs:range xsd:decimal ;
+   rdfs:label "discount price in RDF" .
+
+um:availableInRDF rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Brand ;
+   rdfs:range xsd:integer ;
+   rdfs:label "available in RDF" .
+
+um:quantityInRDF rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Brand ;
+   rdfs:range xsd:integer ;
+   rdfs:label "quantity in RDF" .
+
+### Object Properties ###
+
+um:hasBrand rdf:type owl:ObjectProperty ;
+   rdfs:domain um:Shoe ;
+   rdfs:range um:Brand ;
+   rdfs:label "has brand" .
+
+um:belongsToCategory rdf:type owl:ObjectProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range um:Category ;
+   rdfs:label "belongs to category" .
+
+um:belongsToSubCategory rdf:type owl:ObjectProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range um:SubCategory ;
+   rdfs:label "belongs to sub-category" .
+
+um:hasProduct rdf:type owl:ObjectProperty ;
+   rdfs:domain um:Brand ;
+   rdfs:range um:Product ;
+   rdfs:label "has product" .

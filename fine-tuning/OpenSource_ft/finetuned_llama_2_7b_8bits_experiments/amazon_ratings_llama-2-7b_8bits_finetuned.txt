@@ -1,0 +1,100 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:BooksSalesOntology rdf:type owl:Ontology .
+
+### Classes ###
+
+um:Book rdf:type owl:Class ;
+   rdfs:label "Book" .
+
+um:Author rdf:type owl:Class ;
+   rdfs:label "Author" .
+
+um:Publisher rdf:type owl:Class ;
+   rdfs:label "Publisher" .
+
+um:Genre rdf:type owl:Class ;
+   rdfs:label "Genre" .
+
+um:Format rdf:type owl:Class ;
+   rdfs:label "Format" .
+
+um:Language rdf:type owl:Class ;
+   rdfs:label "Language" .
+
+um:PublishingYear rdf:type owl:Class ;
+   rdfs:label "Publishing Year" .
+
+um:Age rdf:type owl:Class ;
+   rdfs:label "Age" .
+
+um:Gender rdf:type owl:Class ;
+   rdfs:label "Gender" .
+
+um:Rating rdf:type owl:Class ;
+   rdfs:label "Rating" .
+
+um:ProductId rdf:type owl:Class ;
+   rdfs:label "Product Id" .
+
+
+### Data Properties ###
+
+um:bookTitle rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Book ;
+   rdfs:range xsd:string ;
+   rdfs:label "book title" .
+
+um:authorLastName rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Author ;
+   rdfs:range xsd:string ;
+   rdfs:label "author last name" .
+
+um:authorFirstName rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Author ;
+   rdfs:range xsd:string ;
+   rdfs:label "author first name" .
+
+um:publisherName rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Publisher ;
+   rdfs:range xsd:string ;
+   rdfs:label "publisher name" .
+
+um:format rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Format ;
+   rdfs:range xsd:string ;
+   rdfs:label "format" .
+
+um:language rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Language ;
+   rdfs:range xsd:string ;
+   rdfs:label "language" .
+
+um:publishingYear rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:PublishingYear ;
+   rdfs:range xsd:integer ;
+   rdfs:label "publishing year" .
+
+um:age rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Age ;
+   rdfs:range xsd:integer ;
+   rdfs:label "age" .
+
+um:gender rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Gender ;
+   rdfs:range xsd:string ;
+   rdfs:label "gender" .
+
+um:rating rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Rating ;
+   rdfs:range xsd:float ;
+   rdfs:label "rating" .
+
+um:productId rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:ProductId ;
+   rdfs:range xsd:string ;
+   rdfs:label "product id" .
