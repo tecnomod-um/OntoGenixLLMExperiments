@@ -1,0 +1,90 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+@prefix base_ontology: <https://base_ontology.com#>
+
+base_ontology:class_entity
+    rdfs:subClassOf owl:Thing.
+
+base_ontology:entity_name
+    rdfs:subClassOf base_ontology:class_entity.
+
+base_ontology:has_country
+    a owl:ObjectProperty ;
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range base_ontology:Country.
+
+base_ontology:has_description
+    a owl:ObjectProperty ;
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range base_ontology:Description.
+
+base_ontology:has_invoice_date
+    a owl:ObjectProperty ;
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range base_ontology:InvoiceDate.
+
+base_ontology:has_invoice_no
+    a owl:ObjectProperty ;
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range base_ontology:InvoiceNo.
+
+base_ontology:has_stock_code
+    a owl:ObjectProperty ;
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range base_ontology:StockCode.
+
+base_ontology:has_customer_id
+    a owl:ObjectProperty ;
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range base_ontology:CustomerID.
+
+base_ontology:has_quantity
+    a owl:ObjectProperty ;
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range base_ontology:Quantity.
+
+base_ontology:has_unit_price
+    a owl:ObjectProperty ;
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range base_ontology:UnitPrice.
+
+base_ontology:has_non_null_count
+    a owl:ObjectProperty ;
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range xsd:decimal.
+
+base_ontology:has_type
+    a owl:ObjectProperty ;
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range xsd:string.
+
+base_ontology:has_unique_count
+    a owl:ObjectProperty ;
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range xsd:decimal.
+
+base_ontology:has_count
+    a owl:ObjectProperty ;
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range xsd:decimal.
+
+base_ontology:has_max
+    a owl:ObjectProperty ;
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range xsd:decimal.
+
+base_ontology:has_mean
+    a owl:ObjectProperty ;
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range xsd:decimal.
+
+base_ontology:has_min
+    a owl:ObjectProperty ;
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range xsd:decimal.
+
+base_ontology:has_std
+    a owl:ObjectProperty ;
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range xsd:decimal.

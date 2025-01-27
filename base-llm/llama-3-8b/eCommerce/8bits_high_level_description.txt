@@ -1,0 +1,42 @@
+https://base_ontology.com#Ontology
+
+Data Description:
+
+1. Country: text - Country name - null
+2. Description: text - Description of the item - null
+3. InvoiceDate: text - Invoice date - null
+4. InvoiceNo: text - Invoice number - null
+5. StockCode: text - Stock code - null
+6. CustomerID: Numerical - Customer ID - 12346.0 to 18287.0
+7. Quantity: Numerical - Quantity of items - -80995.0 to 80995.0
+8. UnitPrice: Numerical - Unit price of items - -11062.06 to 38970.0
+
+Classes:
+
+1. class_entity
+
+Subclasses:
+
+1. entity_name: subclass of -> class_entity
+
+Object Properties:
+
+1. has_country: domain - class_entity, range - Country
+2. has_description: domain - class_entity, range - Description
+3. has_invoice_date: domain - class_entity, range - InvoiceDate
+4. has_invoice_no: domain - class_entity, range - InvoiceNo
+5. has_stock_code: domain - class_entity, range - StockCode
+6. has_customer_id: domain - class_entity, range - CustomerID
+7. has_quantity: domain - class_entity, range - Quantity
+8. has_unit_price: domain - class_entity, range - UnitPrice
+
+Data Type Properties:
+
+1. has_non_null_count: domain - class_entity, range - Numerical
+2. has_type: domain - class_entity, range - text
+3. has_unique_count: domain - class_entity, range - Numerical
+4. has_count: domain - class_entity, range - Numerical
+5. has_max: domain - class_entity, range - Numerical
+6. has_mean: domain - class_entity, range - Numerical
+7. has_min: domain - class_entity, range - Numerical
+8. has_std: domain - class_entity, range - Numerical
