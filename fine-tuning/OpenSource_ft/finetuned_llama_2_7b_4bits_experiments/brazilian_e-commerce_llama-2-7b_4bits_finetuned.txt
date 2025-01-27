@@ -1,0 +1,161 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:CustomerOntology rdf:type owl:Ontology .
+
+### Classes ###
+um:Customer rdf:type owl:Class ;
+   rdfs:label "Customer" .
+
+um:Order rdf:type owl:Class ;
+   rdfs:label "Order" .
+
+um:OrderDate rdf:type owl:Class ;
+   rdfs:label "Order Date" .
+
+um:CustomerLocation rdf:type owl:Class ;
+   rdfs:label "Customer Location" .
+
+um:State rdf:type owl:Class ;
+   rdfs:label "State" .
+
+um:City rdf:type owl:Class ;
+   rdfs:label "City" .
+
+um:Product rdf:type owl:Class ;
+   rdfs:label "Product" .
+
+um:ProductCategory rdf:type owl:Class ;
+   rdfs:subClassOf um:Product ;
+   rdfs:label "Product Category" .
+
+um:QuantityOrdered rdf:type owl:Class ;
+   rdfs:subClassOf um:Product ;
+   rdfs:label "Quantity Ordered" .
+
+um:PricePerUnit rdf:type owl:Class ;
+   rdfs:subClassOf um:Product ;
+   rdfs:label "Price Per Unit" .
+
+um:TotalAmount rdf:type owl:Class ;
+   rdfs:subClassOf um:Product ;
+   rdfs:label "Total Amount" .
+
+### Data Properties ###
+um:customerID rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:string ;
+   rdfs:label "customer ID" .
+
+um:customerUniqueID rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:string ;
+   rdfs:label "customer unique ID" .
+
+um:customerLocationCode rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:CustomerLocation ;
+   rdfs:range xsd:string ;
+   rdfs:label "customer location code" .
+
+um:orderDateText rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:OrderDate ;
+   rdfs:range xsd:string ;
+   rdfs:label "order date text" .
+
+um:orderDate rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range xsd:dateTime ;
+   rdfs:label "order date" .
+
+um:productName rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:string ;
+   rdfs:label "product name" .
+
+um:productCategoryName rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:ProductCategory ;
+   rdfs:range xsd:string ;
+   rdfs:label "product category name" .
+
+um:quantityOrderedText rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:integer ;
+   rdfs:label "quantity ordered text" .
+
+um:pricePerUnitText rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:string ;
+   rdfs:label "price per unit text" .
+
+um:totalAmountText rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:string ;
+   rdfs:label "total amount text" .
+
+um:orderDateOrdered rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range xsd:dateTime ;
+   rdfs:label "order date ordered" .
+
+um:orderDateDelivered rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range xsd:dateTime ;
+   rdfs:label "order date delivered" .
+
+um:orderDateShipped rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range xsd:dateTime ;
+   rdfs:label "order date shipped" .
+
+um:productCategoryNameEn rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:ProductCategory ;
+   rdfs:range xsd:string ;
+   rdfs:label "product category name (en)" .
+
+um:productCategoryNameEs rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:ProductCategory ;
+   rdfs:range xsd:string ;
+   rdfs:label "product category name (es)" .
+
+um:customerLocationNameEn rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:CustomerLocation ;
+   rdfs:range xsd:string ;
+   rdfs:label "customer location name (en)" .
+
+um:customerLocationNameEs rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:CustomerLocation ;
+   rdfs:range xsd:string ;
+   rdfs:label "customer location name (es)" .
+
+um:orderDateOrderedTextEn rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range xsd:string ;
+   rdfs:label "order date ordered (en)" .
+
+um:orderDateOrderedTextEs rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range xsd:string ;
+   rdfs:label "order date ordered (es)" .
+
+um:orderDateDeliveredTextEn rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range xsd:string ;
+   rdfs:label "order date delivered (en)" .
+
+um:orderDateDeliveredTextEs rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range xsd:string ;
+   rdfs:label "order date delivered (es)" .
+
+um:orderDateShippedTextEn rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range xsd:string ;
+   rdfs:label "order date shipped (en)" .
+
+um:orderDateShippedTextEs rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range xsd:string ;
+   rdfs:label "order date shipped (es)" .

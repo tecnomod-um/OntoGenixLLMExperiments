@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:RetailSalesOntology rdf:type owl:Ontology .
+
+### Classes ###
+um:Customer rdf:type owl:Class ;
+   rdfs:label "Customer" .
+
+um:Order rdf:type owl:Class ;
+   rdfs:label "Order" .
+
+um:OrderLine rdf:type owl:Class ;
+   rdfs:subClassOf um:Order ;
+   rdfs:label "Order Line" .
+
+um:Product rdf:type owl:Class ;
+   rdfs:label "Product" .
+
+um:StockCode rdf:type owl:Class ;
+   rdfs:label "Stock Code" .
+
+### Data Properties ###
+um:hasCustomerID rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range xsd:integer ;
+   rdfs:label "has Customer ID" .
+
+um:hasOrderDate rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range xsd:date ;
+   rdfs:label "has Order Date" .
+
+um:hasUnitPrice rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:OrderLine ;
+   rdfs:range xsd:decimal ;
+   rdfs:label "has Unit Price" .
+
+um:hasQuantity rdf:type owl:DatatypeProperty ;
+   rdfs:domain um:OrderLine ;
+   rdfs:range xsd:integer ;
+   rdfs:label "has Quantity" .
+
+### Object Properties ###
+um:hasOrder rdf:type owl:ObjectProperty ;
+   rdfs:domain um:Customer ;
+   rdfs:range um:Order ;
+   rdfs:label "has Order" .
+
+um:hasOrderLine rdf:type owl:ObjectProperty ;
+   rdfs:domain um:Order ;
+   rdfs:range um:OrderLine ;
+   rdfs:label "has Order Line" .
+
+um:hasProduct rdf:type owl:ObjectProperty ;
+   rdfs:domain um:OrderLine ;
+   rdfs:range um:Product ;
+   rdfs:label "has Product" .
+
+um:hasStockCode rdf:type owl:ObjectProperty ;
+   rdfs:domain um:Product ;
+   rdfs:range um:StockCode ;
+   rdfs:label "has Stock Code" .
+
+um:hasCustomer rdf:type owl:ObjectProperty ;
+   rdfs:domain um:OrderLine ;
+   rdfs:range um:Customer ;
+   rdfs:label "has Customer" .

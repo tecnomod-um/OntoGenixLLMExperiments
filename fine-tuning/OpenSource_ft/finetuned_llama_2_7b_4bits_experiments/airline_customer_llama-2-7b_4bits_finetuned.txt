@@ -1,0 +1,89 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:Satisfaction a rdf:Class ;
+   rdfs:label "Satisfaction" .
+
+um:Gender a rdf:Class ;
+   rdfs:label "Gender" .
+
+um:CustomerType a rdf:Class ;
+   rdfs:label "Customer Type" .
+
+um:Age a rdf:Class ;
+   rdfs:label "Age" .
+
+um:TypeOfTravel a rdf:Class ;
+   rdfs:label "Type of Travel" .
+
+um:Class a rdf:Class ;
+   rdfs:label "Class" .
+
+um:FlightDistance a rdf:Class ;
+   rdfs:label "Flight Distance" .
+
+um:SeatComfort a rdf:Class ;
+   rdfs:label "Seat comfort" .
+
+um:DepartureArrivalTimeConvenient a rdf:Class ;
+   rdfs:label "Departure/Arrival time convenient" .
+
+um:FoodAndDrink a rdf:Class ;
+   rdfs:label "Food and drink" .
+
+um:GateLocation a rdf:Class ;
+   rdfs:label "Gate location" .
+
+um:InflightWifiService a rdf:Class ;
+   rdfs:label "Inflight wifi service" .
+
+um:InflightEntertainment a rdf:Class ;
+   rdfs:label "Inflight entertainment" .
+
+um:OnlineSupport a rdf:Class ;
+   rdfs:label "Online support" .
+
+um:EaseOfOnlineBooking a rdf:Class ;
+   rdfs:label "Ease of Online booking" .
+
+um:OnBoardService a rdf:Class ;
+   rdfs:label "On-board service" .
+
+um:LegRoomService a rdf:Class ;
+   rdfs:label "Leg room service" .
+
+um:BaggageHandling a rdf:Class ;
+   rdfs:label "Baggage handling" .
+
+um:CheckinService a rdf:Class ;
+   rdfs:label "Checkin service" .
+
+um:Cleanliness a rdf:Class ;
+   rdfs:label "Cleanliness" .
+
+um:OnlineBoard a rdf:Class ;
+   rdfs:label "Online boarding" .
+
+um:DepartureDelayMinutes a rdf:Class ;
+   rdfs:label "Departure Delay in Minutes" .
+
+um:ArrivalDelayMinutes a rdf:Class ;
+   rdfs:label "Arrival Delay in Minutes" .
+
+um:SatisfactionWithTravel a rdf:Class ;
+   rdfs:label "Satisfaction with Travel" .
+
+um:SatisfactionWithFlight a rdf:Class ;
+   rdfs:label "Satisfaction with Flight" .
+
+um:SatisfactionWithService a rdf:Class ;
+   rdfs:label "Satisfaction with Service" .
+
+um:SatisfactionWithOverallExperience a rdf:Class ;
+   rdfs:label "Satisfaction with Overall Experience" .
+
+um:Flight a rdf:Class ;
+   rdfs:label "Flight" .
