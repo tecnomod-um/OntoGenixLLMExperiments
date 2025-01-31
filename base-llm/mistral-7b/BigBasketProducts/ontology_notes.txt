@@ -1,5 +1,24 @@
 Missing end dots in the prefixes. Example:
 @prefix base: <https://base_ontology.com/>
 
+
 Prefix ":" used, but not declarated. Example:
 :class_entity a owl:Class .
+
+
+Wrong URIs. Example:
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema/>.
+
+rdf:Resource --> rdfs:Resource
+rdfs:Real does not exist
+
+
+Incorrect sintaxis in:
+base:class_entity owl:equivalentClass [
+rdfs:subClassOf [ rdfs:Class ;
+rdfs:label "class_entity" ] ] .
+
+base:entity_name owl:equivalentClass [
+rdfs:subClassOf [ base:class_entity ;
+rdfs:label "entity_name" ] ] .

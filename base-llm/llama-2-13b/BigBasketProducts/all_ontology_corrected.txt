@@ -1,0 +1,74 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix : <https://base_ontology.com#> .
+
+:ontology rdf:type owl:Ontology .
+
+:class_entity rdf:type owl:Class ;
+   owl:hasSelf owl:Class ;
+   owl:hasKey owl:ObjectProperty .
+
+:entity_name rdf:type owl:Class ;
+   owl:hasSelf owl:Class ;
+   owl:hasKey owl:ObjectProperty .
+
+:class_entity rdf:type owl:ObjectProperty ;
+   owl:hasSelf owl:ObjectProperty ;
+   owl:hasDomain owl:Class ;
+   owl:hasRange owl:Class.
+
+:entity_name rdf:type owl:ObjectProperty ;
+   owl:hasSelf owl:ObjectProperty ;
+   owl:hasDomain owl:Class ;
+   owl:hasRange owl:Class.
+
+:Absolute_Url_idx rdf:type owl:DatatypeProperty ;
+   owl:hasSelf owl:DatatypeProperty ;
+   owl:hasDomain owl:Class ;
+   owl:hasRange owl:NumericDatatype.
+
+:Brand_idx rdf:type owl:DatatypeProperty ;
+   owl:hasSelf owl:DatatypeProperty ;
+   owl:hasDomain owl:Class ;
+   owl:hasRange owl:NumericDatatype.
+
+:Category_idx rdf:type owl:DatatypeProperty ;
+   owl:hasSelf owl:DatatypeProperty ;
+   owl:hasDomain owl:Class ;
+   owl:hasRange owl:NumericDatatype.
+
+:DiscountPrice_idx rdf:type owl:DatatypeProperty ;
+   owl:hasSelf owl:DatatypeProperty ;
+   owl:hasDomain owl:Class ;
+   owl:hasRange owl:NumericDatatype.
+
+:Price_idx rdf:type owl:DatatypeProperty ;
+   owl:hasSelf owl:DatatypeProperty ;
+   owl:hasDomain owl:Class ;
+   owl:hasRange owl:NumericDatatype.
+
+:ProductName_idx rdf:type owl:DatatypeProperty ;
+   owl:hasSelf owl:DatatypeProperty ;
+   owl:hasDomain owl:Class ;
+   owl:hasRange owl:NumericDatatype.
+
+:SubCategory_idx rdf:type owl:DatatypeProperty ;
+   owl:hasSelf owl:DatatypeProperty ;
+   owl:hasDomain owl:Class ;
+   owl:hasRange owl:NumericDatatype.
+
+:FAIR_URI rdf:type owl:DatatypeProperty ;
+   owl:hasSelf owl:DatatypeProperty ;
+   owl:hasDomain owl:Class ;
+   owl:hasRange owl:StringDatatype.
+
+:Image_Url rdf:type owl:DatatypeProperty ;
+   owl:hasSelf owl:DatatypeProperty ;
+   owl:hasDomain owl:Class ;
+   owl:hasRange owl:StringDatatype.
+
+:Quantity rdf:type owl:DatatypeProperty ;
+   owl:hasSelf owl:DatatypeProperty ;
+   owl:hasDomain owl:Class ;
+   owl:hasRange owl:StringDatatype.

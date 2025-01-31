@@ -1,0 +1,5 @@
+Incorrect serialization due to lack of shortnames. Example:
+
+class_entity
+  a owl:Class ;
+  rdfs:label "class_entity".

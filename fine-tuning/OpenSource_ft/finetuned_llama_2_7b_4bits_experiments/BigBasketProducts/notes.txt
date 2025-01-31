@@ -1,0 +1,17 @@
+Incorrect serialization due to:
+
+- Incorrect use of dots instead of semicolons:
+um:ProductLinks a rdf:Property ;
+   rdfs:domain um:Product .
+   rdfs:range xsd:string .
+   rdfs:label "Product Links" .
+
+um:ProductNameLinks a rdf:Property ;
+   rdfs:domain um:ProductName .
+   rdfs:range xsd:string .
+   rdfs:label "Product Name Links" .
+   
+   
+- Incorrect number of elements in some statement. Example:
+um:ProductLinksToProductNameLinks a rdf:Class ;
+rdfs:subProperty of um:ProductLinksToProductName .

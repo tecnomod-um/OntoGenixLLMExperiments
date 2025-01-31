@@ -1,0 +1,126 @@
+@prefix base: <https://base_ontology.com/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+base:class_entity a owl:Class .
+
+base:entity_name a owl:Class ;
+rdfs:subClassOf base:class_entity .
+
+base:Absolute_Url a rdf:Property ;
+rdfs:domain base:class_entity ;
+rdfs:range rdfs:Resource .
+
+base:Brand a rdf:Property ;
+rdfs:domain base:class_entity ;
+rdfs:range rdfs:Literal .
+
+base:Category a rdf:Property ;
+rdfs:domain base:class_entity ;
+rdfs:range rdfs:Literal .
+
+base:Image_Url a rdf:Property ;
+rdfs:domain base:class_entity ;
+rdfs:range rdfs:Resource .
+
+base:ProductName a rdf:Property ;
+rdfs:domain base:class_entity ;
+rdfs:range rdfs:Literal .
+
+base:Quantity a rdf:Property ;
+rdfs:domain base:class_entity ;
+rdfs:range rdfs:Literal .
+
+base:SubCategory a rdf:Property ;
+rdfs:domain base:class_entity ;
+rdfs:range rdfs:Literal .
+
+base:DiscountPrice a rdfs:Property ;
+rdfs:domain base:class_entity ;
+rdfs:range rdfs:Real .
+
+base:Price a rdfs:Property ;
+rdfs:domain base:class_entity ;
+rdfs:range rdfs:Real .
+
+base:class_entity rdfs:label "class_entity".
+
+base:entity_name rdfs:label "entity_name".
+
+base:class_entity rdfs:subClassOf owl:NamedIndividual .
+
+base:has_image a owl:ObjectProperty ;
+rdfs:domain base:class_entity ;
+rdfs:range base:Image_Url ;
+rdfs:label "has_image" .
+
+base:has_brand a owl:ObjectProperty ;
+rdfs:domain base:class_entity ;
+rdfs:range base:Brand ;
+rdfs:label "has_brand" .
+
+base:has_category a owl:ObjectProperty ;
+rdfs:domain base:class_entity ;
+rdfs:range base:Category ;
+rdfs:label "has_category" .
+
+base:has_product_name a owl:ObjectProperty ;
+rdfs:domain base:class_entity ;
+rdfs:range base:ProductName ;
+rdfs:label "has_product_name" .
+
+base:has_quantity a owl:ObjectProperty ;
+rdfs:domain base:class_entity ;
+rdfs:range base:Quantity ;
+rdfs:label "has_quantity" .
+
+base:has_subcategory a owl:ObjectProperty ;
+rdfs:domain base:class_entity ;
+rdfs:range base:SubCategory ;
+rdfs:label "has_subcategory" .
+
+base:has_discount_price a owl:ObjectProperty ;
+rdfs:domain base:class_entity ;
+rdfs:range base:DiscountPrice ;
+rdfs:label "has_discount_price" .
+
+base:has_price a owl:ObjectProperty ;
+rdfs:domain base:class_entity ;
+rdfs:range base:Price ;
+rdfs:label "has_price" .
+
+base:has_brand a owl:DatatypeProperty ;
+rdfs:domain base:class_entity ;
+rdfs:range rdfs:Literal ;
+rdfs:label "has_brand" .
+
+base:has_category a owl:DatatypeProperty ;
+rdfs:domain base:class_entity ;
+rdfs:range rdfs:Literal ;
+rdfs:label "has_category" .
+
+base:has_product_name a owl:DatatypeProperty ;
+rdfs:domain base:class_entity ;
+rdfs:range rdfs:Literal ;
+rdfs:label "has_product_name" .
+
+base:has_quantity a owl:DatatypeProperty ;
+rdfs:domain base:class_entity ;
+rdfs:range rdfs:Literal ;
+rdfs:label "has_quantity" .
+
+base:has_subcategory a owl:DatatypeProperty ;
+rdfs:domain base:class_entity ;
+rdfs:range rdfs:Literal ;
+rdfs:label "has_subcategory" .
+
+base:has_discount_price a owl:DatatypeProperty ;
+rdfs:domain base:class_entity ;
+rdfs:range rdfs:Real ;
+rdfs:label "has_discount_price" .
+
+base:has_price a owl:DatatypeProperty ;
+rdfs:domain base:class_entity ;
+rdfs:range rdfs:Real ;
+rdfs:label "has_price" .

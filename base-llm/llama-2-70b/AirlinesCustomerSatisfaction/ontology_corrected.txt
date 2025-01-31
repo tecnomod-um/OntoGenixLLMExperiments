@@ -1,0 +1,147 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <https://base_ontology.com#> .
+
+:class_entity
+   a owl:Class;
+   owl:has_subclass :entity_name .
+
+:entity_name
+   a owl:Class;
+   owl:has_subclass :class_entity .
+
+:object_property_name
+   a owl:ObjectProperty;
+   owl:domain :class_entity;
+   owl:range :class_entity .
+
+:data_property_name
+   a owl:DataProperty;
+   owl:domain :class_entity;
+   owl:range xsd:string .
+
+:Baggage_handling
+   a :entity_name;
+   owl:has_value "1..5" .
+
+:Checkin_service
+   a :entity_name;
+   owl:has_value "1..6" .
+
+:Cleanliness
+   a :entity_name;
+   owl:has_value "1..6" .
+
+:Departure_Delay_in_Minutes
+   a :entity_name;
+   owl:has_value "0..1000" .
+
+:Departure_Arrival_time:convenient
+   a :entity_name;
+   owl:has_value "1..6" .
+
+:Ease_of_Online_booking
+   a :entity_name;
+   owl:has_value "1..6" .
+
+:Flight_Distance
+   a :entity_name;
+   owl:has_value "0..10000" .
+
+:Food_and_drink
+   a :entity_name;
+   owl:has_value "1..6" .
+
+:Gate_location
+   a :entity_name;
+   owl:has_value "1..6" .
+
+:Inflight_entertainment
+   a :entity_name;
+   owl:has_value "1..6" .
+
+:Inflight_wifi_service
+   a :entity_name;
+   owl:has_value "1..6" .
+
+:Leg_room_service
+   a :entity_name;
+   owl:has_value "1..6" .
+
+:On-board_service
+   a :entity_name;
+   owl:has_value "1..6" .
+
+:Online_boarding
+   a :entity_name;
+   owl:has_value "1..6" .
+
+:Online_support
+   a :entity_name;
+   owl:has_value "1..6" .
+
+:Seat_comfort
+   a :entity_name;
+   owl:has_value "1..6" .
+
+:Age
+   a :data_property_name;
+   owl:domain :class_entity;
+   owl:range xsd:integer .
+
+:Arrival_Delay_in_Minutes
+   a :data_property_name;
+   owl:domain :class_entity;
+   owl:range xsd:integer .
+
+:Cleanliness
+   a :data_property_name;
+   owl:domain :class_entity;
+   owl:range xsd:integer .
+
+:Departure_Delay_in_Minutes
+   a :data_property_name;
+   owl:domain :class_entity;
+   owl:range xsd:integer .
+
+:Ease_of_Online_booking
+   a :data_property_name;
+   owl:domain :class_entity;
+   owl:range xsd:integer .
+
+:Flight_Distance
+   a :data_property_name;
+   owl:domain :class_entity;
+   owl:range xsd:integer .
+
+:Food_and_drink
+   a :data_property_name;
+   owl:domain :class_entity;
+   owl:range xsd:integer .
+
+:Gate_location
+   a :data_property_name;
+   owl:domain :class_entity;
+   owl:range xsd:integer .
+
+:Inflight_entertainment
+   a :data_property_name;
+   owl:domain :class_entity;
+   owl:range xsd:integer .
+
+:Inflight_wifi_service
+   a :data_property_name;
+   owl:domain :class_entity;
+   owl:range xsd:integer .
+
+:Leg_room_service
+   a :data_property_name;
+   owl:domain :class_entity;
+   owl:range xsd:integer .
+
+:On-board_service
+   a :data_property_name;
+   owl:domain :class_entity;
+   owl:range xsd:integer .

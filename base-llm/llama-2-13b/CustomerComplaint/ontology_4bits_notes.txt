@@ -1,0 +1,10 @@
+Incorrect format and serialization (shortnames, dots, URIs). Example:
+
+ class CompanyPublicResponse {
+   owl:Class(CompanyPublicResponse)
+   rdf:type owl:Class
+   xsd:string text
+   owl:oneOf(
+     owl:NamedIndividual(CompanyPublicResponse)
+   )
+ }

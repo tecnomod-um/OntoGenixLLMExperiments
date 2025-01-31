@@ -1,0 +1,36 @@
+@prefix owl: <https://www.w3.org/2002/07/owl#>
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+<owl:Ontology rdf:about="https://base_ontology.com#owl:Ontology">
+    <owl:imports rdf:resource="https://www.w3.org/2002/07/owl#"/>
+    <owl:imports rdf:resource="http://www.w3.org/2001/XMLSchema#"/>
+    <owl:imports rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <owl:imports rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
+    <owl:Class rdf:ID="class_entity"/>
+    <owl:Class rdf:ID="Country_entity" rdfs:subClassOf rdf:resource="#class_entity"/>
+    <owl:Class rdf:ID="Description_entity" rdfs:subClassOf rdf:resource="#class_entity"/>
+    <owl:Class rdf:ID="InvoiceDate_entity" rdfs:subClassOf rdf:resource="#class_entity"/>
+    <owl:Class rdf:ID="InvoiceNo_entity" rdfs:subClassOf rdf:resource="#class_entity"/>
+    <owl:Class rdf:ID="StockCode_entity" rdfs:subClassOf rdf:resource="#class_entity"/>
+    <owl:Class rdf:ID="CustomerID_entity" rdfs:subClassOf rdf:resource="#class_entity"/>
+    <owl:Class rdf:ID="Quantity_entity" rdfs:subClassOf rdf:resource="#class_entity"/>
+    <owl:Class rdf:ID="UnitPrice_entity" rdfs:subClassOf rdf:resource="#class_entity"/>
+    <owl:ObjectProperty rdf:ID="has_country" rdfs:domain rdf:resource="#Country_entity" rdfs:range rdf:resource="#class_entity"/>
+    <owl:ObjectProperty rdf:ID="has_description" rdfs:domain rdf:resource="#Description_entity" rdfs:range rdf:resource="#class_entity"/>
+    <owl:ObjectProperty rdf:ID="has_invoice_date" rdfs:domain rdf:resource="#InvoiceDate_entity" rdfs:range rdf:resource="#class_entity"/>
+    <owl:ObjectProperty rdf:ID="has_invoice_no" rdfs:domain rdf:resource="#InvoiceNo_entity" rdfs:range rdf:resource="#class_entity"/>
+    <owl:ObjectProperty rdf:ID="has_stock_code" rdfs:domain rdf:resource="#StockCode_entity" rdfs:range rdf:resource="#class_entity"/>
+    <owl:ObjectProperty rdf:ID="has_customer_id" rdfs:domain rdf:resource="#CustomerID_entity" rdfs:range rdf:resource="#class_entity"/>
+    <owl:ObjectProperty rdf:ID="has_quantity" rdfs:domain rdf:resource="#Quantity_entity" rdfs:range rdf:resource="#class_entity"/>
+    <owl:ObjectProperty rdf:ID="has_unit_price" rdfs:domain rdf:resource="#UnitPrice_entity" rdfs:range rdf:resource="#class_entity"/>
+    <owl:DatatypeProperty rdf:ID="country_data_type" rdfs:domain rdf:resource="#Country_entity" rdfs:range xsd:string/>
+    <owl:DatatypeProperty rdf:ID="description_data_type" rdfs:domain rdf:resource="#Description_entity" rdfs:range xsd:string/>
+    <owl:DatatypeProperty rdf:ID="invoice_date_data_type" rdfs:domain rdf:resource="#InvoiceDate_entity" rdfs:range xsd:string/>
+    <owl:DatatypeProperty rdf:ID="invoice_no_data_type" rdfs:domain rdf:resource="#InvoiceNo_entity" rdfs:range xsd:string/>
+    <owl:DatatypeProperty rdf:ID="stock_code_data_type" rdfs:domain rdf:resource="#StockCode_entity" rdfs:range xsd:string/>
+    <owl:DatatypeProperty rdf:ID="customer_id_data_type" rdfs:domain rdf:resource="#CustomerID_entity" rdfs:range xsd:integer/>
+    <owl:DatatypeProperty rdf:ID="quantity_data_type" rdfs:domain rdf:resource="#Quantity_entity" rdfs:range xsd:integer/>
+    <owl:DatatypeProperty rdf:ID="unit_price_data_type" rdfs:domain rdf:resource="#UnitPrice_entity" rdfs:range xsd:integer/>
+</owl:Ontology>

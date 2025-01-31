@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/ontology#> a owl:Ontology .
+
+<http://example.com/ontology#ClassEntity> a owl:Class ;
+   rdfs:subClassOf <http://example.com/ontology#entity_name> .
+
+<http://example.com/ontology#EntityName> a owl:Class ;
+   rdfs:subClassOf <http://example.com/ontology#class_entity> .
+
+<http://example.com/ontology#ProductId> a owl:ObjectProperty ;
+   rdfs:domain <http://example.com/ontology#class_entity> ;
+   rdfs:range xsd:string .
+
+<http://example.com/ontology#Rating> a owl:ObjectProperty ;
+   rdfs:domain <http://example.com/ontology#class_entity> ;
+   rdfs:range xsd:integer .
+
+<http://example.com/ontology#Timestamp> a owl:ObjectProperty ;
+   rdfs:domain <http://example.com/ontology#class_entity> ;
+   rdfs:range xsd:string .
+
+<http://example.com/ontology#UserId> a owl:ObjectProperty ;
+   rdfs:domain <http://example.com/ontology#class_entity> ;
+   rdfs:range xsd:string .
+
+<http://example.com/ontology#class_entity> a owl:Class ;
+   rdfs:subClassOf <http://example.com/ontology#entity_name> ;
+   owl:hasSelf <http://example.com/ontology#class_entity> .
+
+<http://example.com/ontology#entity_name> a owl:Class ;
+   rdfs:subClassOf <http://example.com/ontology#class_entity> ;
+   owl:hasSelf <http://example.com/ontology#entity_name> .
+
+<http://example.com/ontology#product_id> a owl:DatatypeProperty ;
+   rdfs:domain <http://example.com/ontology#class_entity> ;
+   rdfs:range xsd:string .
+
+<http://example.com/ontology#rating> a owl:DatatypeProperty ;
+   rdfs:domain <http://example.com/ontology#class_entity> ;
+   rdfs:range xsd:integer .
+
+<http://example.com/ontology#timestamp> a owl:DatatypeProperty ;
+   rdfs:domain <http://example.com/ontology#class_entity> ;
+   rdfs:range xsd:string .
+
+<http://example.com/ontology#user_id> a owl:DatatypeProperty ;
+   rdfs:domain <http://example.com/ontology#class_entity> ;
+   rdfs:range xsd:string .

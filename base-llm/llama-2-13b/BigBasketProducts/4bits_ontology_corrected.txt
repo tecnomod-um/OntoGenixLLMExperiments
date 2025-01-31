@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://base_ontology.com/class_entity> a owl:Class ;
+   owl:inverseOf <http://base_ontology.com/entity_name> .
+
+<http://base_ontology.com/entity_name> a owl:ObjectProperty ;
+   rdfs:domain <http://base_ontology.com/class_entity> ;
+   rdfs:range xsd:string .
+
+<http://base_ontology.com/class_entity>
+ <http://base_ontology.com/entity_name> "domain" ;
+ <http://base_ontology.com/data_type> "range" .
+
+<http://base_ontology.com/data_type> a owl:Class ;
+   owl:inverseOf <http://base_ontology.com/class_entity> .
+
+<http://base_ontology.com/class_entity>
+ <http://base_ontology.com/Absolute_Url_idx> "count" ;
+ <http://base_ontology.com/Brand_idx> "count" ;
+ <http://base_ontology.com/Category_idx> "count" ;
+ <http://base_ontology.com/DiscountPrice_idx> "count" ;
+ <http://base_ontology.com/Price_idx> "count" ;
+ <http://base_ontology.com/ProductName_idx> "count" ;
+ <http://base_ontology.com/SubCategory_idx> "count" ;
+ <http://base_ontology.com/FAIR_URI> "text" ;
+ <http://base_ontology.com/Image_Url> "text" ;
+ <http://base_ontology.com/Quantity> "text" .

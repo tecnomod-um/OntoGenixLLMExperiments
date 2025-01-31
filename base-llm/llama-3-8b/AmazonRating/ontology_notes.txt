@@ -1,0 +1,6 @@
+Missing end dots in the prefix declarations. Examples:
+
+@prefix owl: <http://www.w3.org/2002/07/owl#>
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+@prefix base: <https://base_ontology.com#>

@@ -2,3 +2,6 @@ Incorrect use of shortnames. Example:
 
 @prefix class_entity: <https://base_ontology.com#class_entity>.
 class_entity rdfs:subClassOf owl:Thing.
+
+
+Ontology without sense. All the classes are subClassOf class_entity, and class_entity is also used as object property to link the classes together

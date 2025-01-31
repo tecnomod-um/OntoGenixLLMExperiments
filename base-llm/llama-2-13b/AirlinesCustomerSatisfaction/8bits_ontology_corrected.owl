@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:ns0="http://example.com/ontology/">
+
+  <owl:Ontology rdf:about="http://example.com/ontology/Passenger">
+    <owl:imports rdf:resource="http://example.com/ontology/Flight"/>
+    <owl:imports rdf:resource="http://example.com/ontology/Airline"/>
+    <owl:class rdf:resource="http://example.com/ontology/Passenger"/>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</owl:hasValue>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">85</owl:hasValue>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1590</owl:hasValue>
+    <ns0:Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</ns0:Age>
+  </owl:Ontology>
+
+</rdf:RDF>

@@ -1,0 +1,13 @@
+Incorrect serialization (number of elements in the triples). Example:
+
+<http://base_ontology.com/class_entity>
+ owl:hasValue <http://base_ontology.com/Absolute_Url_idx> "count" ;
+ owl:hasValue <http://base_ontology.com/Brand_idx> "count" ;
+ owl:hasValue <http://base_ontology.com/Category_idx> "count" ;
+ owl:hasValue <http://base_ontology.com/DiscountPrice_idx> "count" ;
+ owl:hasValue <http://base_ontology.com/Price_idx> "count" ;
+ owl:hasValue <http://base_ontology.com/ProductName_idx> "count" ;
+ owl:hasValue <http://base_ontology.com/SubCategory_idx> "count" ;
+ owl:hasValue <http://base_ontology.com/FAIR_URI> "text" ;
+ owl:hasValue <http://base_ontology.com/Image_Url> "text" ;
+ owl:hasValue <http://base_ontology.com/Quantity> "text" .

@@ -1,0 +1,6 @@
+Uncommented text and wrong URIs. Examples:
+
+ Here is the TURTLE syntax content for the proposed ontology, without any abbreviations or shortening, and with strict compliance to the instructions provided:
+
+<data_property_name> owl:domain <class_entity> .
+

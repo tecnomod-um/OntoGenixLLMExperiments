@@ -1,0 +1,82 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix um: <https://vocab.um.es#>.
+
+um:OnlineSalesOntology rdf:type owl:Ontology.
+
+### Classes ###
+
+um:Order rdf:type owl:Class ;
+    rdfs:label "Order".
+
+um:Customer rdf:type owl:Class ;
+    rdfs:label "Customer".
+
+um:Product rdf:type owl:Class ;
+    rdfs:label "Product".
+
+um:City rdf:type owl:Class ;
+    rdfs:label "City" 
+
+
+### Data Properties ###
+
+um:orderId rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range xsd:string ;
+    rdfs:label "order ID".
+
+um:customerID rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:string ;
+    rdfs:label "customer ID".
+
+um:orderStatus rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range xsd:string ;
+    rdfs:label "order status".
+
+um:orderPurchaseTimestamp rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range xsd:date ;
+    rdfs:label "order purchase timestamp".
+
+um:orderApprovedAt rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range xsd:date ;
+    rdfs:label "order approved at".
+
+um:orderDeliveredCarrierDate rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range xsd:date ;
+    rdfs:label "order delivered carrier date".
+
+um:orderDeliveredCustomerDate rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range xsd:date ;
+    rdfs:label "order delivered customer date".
+
+um:orderEstimatedDeliveryDate rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range xsd:date ;
+    rdfs:label "order estimated delivery date" 
+
+
+### Object Properties ###
+
+um:hasCustomer rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:Customer ;
+    rdfs:label "has customer".
+
+um:hasProduct rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:Product ;
+    rdfs:label "has product".
+
+um:occursInCity rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:City ;
+    rdfs:label "occurs in city".

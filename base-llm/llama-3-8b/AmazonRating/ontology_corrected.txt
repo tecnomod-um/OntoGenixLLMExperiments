@@ -1,0 +1,63 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix base: <https://base_ontology.com#>.
+
+<https://base_ontology.com#class_Entity>
+    a owl:Class.
+
+<https://base_ontology.com#entity_Product>
+    a owl:Class ;
+    rdfs:subClassOf <https://base_ontology.com#class_Entity>.
+
+<https://base_ontology.com#entity_Rating>
+    a owl:Class ;
+    rdfs:subClassOf <https://base_ontology.com#class_Entity>.
+
+<https://base_ontology.com#entity_User>
+    a owl:Class ;
+    rdfs:subClassOf <https://base_ontology.com#class_Entity>.
+
+<https://base_ontology.com#entity_Timestamp>
+    a owl:Class ;
+    rdfs:subClassOf <https://base_ontology.com#class_Entity>.
+
+<https://base_ontology.com#has_Rating>
+    a owl:ObjectProperty ;
+    rdfs:domain <https://base_ontology.com#entity_Product> ;
+    rdfs:range <https://base_ontology.com#entity_Rating>.
+
+<https://base_ontology.com#has_ProductId>
+    a owl:ObjectProperty ;
+    rdfs:domain <https://base_ontology.com#entity_Product> ;
+    rdfs:range xsd:string.
+
+<https://base_ontology.com#has_Timestamp>
+    a owl:ObjectProperty ;
+    rdfs:domain <https://base_ontology.com#entity_Product> ;
+    rdfs:range xsd:string.
+
+<https://base_ontology.com#has_User>
+    a owl:ObjectProperty ;
+    rdfs:domain <https://base_ontology.com#entity_Product> ;
+    rdfs:range xsd:string.
+
+<https://base_ontology.com#has_Type>
+    a owl:ObjectProperty ;
+    rdfs:domain <https://base_ontology.com#entity_Product> ;
+    rdfs:range xsd:string.
+
+<https://base_ontology.com#has_Type>
+    a owl:ObjectProperty ;
+    rdfs:domain <https://base_ontology.com#entity_Rating> ;
+    rdfs:range xsd:string.
+
+<https://base_ontology.com#has_Type>
+    a owl:ObjectProperty ;
+    rdfs:domain <https://base_ontology.com#entity_Timestamp> ;
+    rdfs:range xsd:string.
+
+<https://base_ontology.com#has_Type>
+    a owl:ObjectProperty ;
+    rdfs:domain <https://base_ontology.com#entity_User> ;
+    rdfs:range xsd:string.

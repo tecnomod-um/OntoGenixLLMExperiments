@@ -1,0 +1,18 @@
+Incorrect format and serialization (number of elements in the triples, and dots). Example:
+
+ class class_entity {
+   owl:ontology owl:version "1.0" .
+   rdfs:subClassOf rdf:Resource .
+   rdfs:label "Invoice" ;
+       owl:oneOf ( "Country" "Description" "InvoiceDate" "InvoiceNo" "StockCode" "CustomerID" "Quantity" "UnitPrice" ) .
+   rdfs:comment "An invoice is a document issued by a seller to a buyer for the sale and delivery of goods or services." .
+   rdfs:domain "http://base_ontology.com/" .
+   rdfs:range "http://www.w3.org/1999/02/22-rdf-syntax-ns#, http://www.w3.org/2000/01/rdf-schema#, http://www.w3.org/2002/07/owl#" .
+   owl:inverseOf "CustomerID" "Quantity" .
+   owl:inverseOf "InvoiceDate" "InvoiceNo" .
+   owl:inverseOf "StockCode" "Quantity" .
+}
+   
+   
+The use of owl:oneOf is not appropiate because limit the individuals.
+owl:inverseOf can only be applied to object properties, and cannot be used with more than one value.

@@ -10,6 +10,9 @@ Incorrect numeric values. Example:
 Baggage handling
    a entity_name;
    owl:has_value 1..5 .
+   
+
+Incorrect IDs. Example: Checkin service
 
 
 Incomplete ontology due to an entity modelling in a loop:

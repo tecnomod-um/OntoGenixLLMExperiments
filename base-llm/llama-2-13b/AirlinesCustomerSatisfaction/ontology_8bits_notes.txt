@@ -1,0 +1,15 @@
+Incorrect format:
+<http/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/
+
+
+Incorrect serialization due to the number of elements in the triples. Example:
+<http://example.com/ontology/Passenger> owl:class <http://example.com/ontology/Age> "120"^^xsd:integer" .
+<http://example.com/Flight> "10"^^xsd:integer" .
+
+
+And uncommented text: 
+ Here is the TURTLE syntax for the proposed ontology
+
+
+Used of owl:class instead of owl:Class, and used as property.
+owl:hasValue used in an inappropriate way

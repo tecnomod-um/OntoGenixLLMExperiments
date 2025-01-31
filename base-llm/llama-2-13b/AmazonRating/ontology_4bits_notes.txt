@@ -1,0 +1,4 @@
+Incorrect format and serialization due to lack of shortnames, IDs and dots. Example:
+
+entity_name (subclassOf: class_entity)
+   domain: entity_name; range: owl:String

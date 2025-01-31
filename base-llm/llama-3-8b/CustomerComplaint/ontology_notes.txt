@@ -8,7 +8,7 @@ Incorrect use of commas instead of semicolons. Example:
 has_company a owl:ObjectProperty, rdfs:domain <http://www.example.org/ontology#entity_name>, rdfs:range xsd:integer.
 
 
-Incorrect use of shortnames. Example: has company in the previous statement
+Incorrect use of shortnames. Example: has_company in the previous statement
 
 	
 	

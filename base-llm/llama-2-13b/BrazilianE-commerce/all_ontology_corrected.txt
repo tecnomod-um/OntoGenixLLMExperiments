@@ -1,0 +1,62 @@
+@prefix : <https://base_ontology.com#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+### Classes
+
+:class_entity a owl:Class ;
+   rdfs:subClassOf owl:Object.
+
+:entity_name a owl:Class ;
+   rdfs:subClassOf :class_entity ;
+   rdfs:domain owl:Thing ;
+   rdfs:range owl:String.
+
+### Object Properties
+
+:class_entity
+   rdfs:domain :class_entity;
+   rdfs:range :entity_name.
+
+:entity_name
+   rdfs:domain :entity_name;
+   rdfs:range owl:String.
+
+### Data Type Properties
+
+:class_entity
+   rdfs:domain :class_entity;
+   rdfs:range owl:String.
+
+:entity_name
+   rdfs:domain :entity_name;
+   rdfs:range owl:String.
+
+### Individuals
+
+:customer_city
+   a owl:Literal;
+   rdf:value "New York".
+
+:customer_id
+   a owl:Literal;
+   rdf:value "12345".
+
+:customer_state
+   a owl:Literal;
+   rdf:value "NY".
+
+:customer_unique_id
+   a owl:Literal;
+   rdf:value "67890".
+
+:customer_zip_code_prefix
+   a owl:Literal;
+   rdf:value "10001".
+
+### Relationships
+
+:customer_city owl:hasValue :customer_id.
+:customer_id owl:hasValue :customer_unique_id.
+:customer_state owl:hasValue :customer_zip_code_prefix.

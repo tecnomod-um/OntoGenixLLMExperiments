@@ -1,0 +1,161 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix um: <https://vocab.um.es#>.
+
+um:AirlineOntology rdf:type owl:Ontology.
+
+### Classes ###
+
+um:Customer rdf:type owl:Class ;
+    rdfs:label "Customer".
+
+um:Flight rdf:type owl:Class ;
+    rdfs:label "Flight".
+
+um:CustomerType rdf:type owl:Class ;
+    rdfs:label "Customer Type".
+
+um:TravelType rdf:type owl:Class ;
+    rdfs:label "Travel Type".
+
+um:Class rdf:type owl:Class ;
+    rdfs:label "Class".
+
+um:Service rdf:type owl:Class ;
+    rdfs:label "Service".
+
+um:Delay rdf:type owl:Class ;
+    rdfs:label "Delay" .
+
+
+### Data Properties ###
+
+um:hasSatisfaction rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:string ;
+    rdfs:label "satisfaction".
+
+um:hasAge rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:integer ;
+    rdfs:label "age".
+
+um:hasFlightDistance rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Flight ;
+    rdfs:range xsd:integer ;
+    rdfs:label "flight distance".
+
+um:hasSeatComfort rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Service ;
+    rdfs:range xsd:integer ;
+    rdfs:label "seat comfort".
+
+um:hasDepartureArrivalTime rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Service ;
+    rdfs:range xsd:integer ;
+    rdfs:label "departure/arrival time".
+
+um:hasFoodDrink rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Service ;
+    rdfs:range xsd:integer ;
+    rdfs:label "food and drink".
+
+um:hasGateLocation rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Service ;
+    rdfs:range xsd:integer ;
+    rdfs:label "gate location".
+
+um:hasInflightWifiService rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Service ;
+    rdfs:range xsd:integer ;
+    rdfs:label "inflight wifi service".
+
+um:hasInflightEntertainment rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Service ;
+    rdfs:range xsd:integer ;
+    rdfs:label "inflight entertainment".
+
+um:hasOnlineSupport rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Service ;
+    rdfs:range xsd:integer ;
+    rdfs:label "online support".
+
+um:hasEaseOfOnlineBooking rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Service ;
+    rdfs:range xsd:integer ;
+    rdfs:label "ease of online booking".
+
+um:hasOnboardService rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Service ;
+    rdfs:range xsd:integer ;
+    rdfs:label "on-board service".
+
+um:hasLegRoomService rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Service ;
+    rdfs:range xsd:integer ;
+    rdfs:label "leg room service".
+
+um:hasBaggageHandling rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Service ;
+    rdfs:range xsd:integer ;
+    rdfs:label "baggage handling".
+
+um:hasCheckinService rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Service ;
+    rdfs:range xsd:integer ;
+    rdfs:label "checkin service".
+
+um:hasCleanliness rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Service ;
+    rdfs:range xsd:integer ;
+    rdfs:label "cleanliness".
+
+um:hasOnlineBoarding rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Service ;
+    rdfs:range xsd:integer ;
+    rdfs:label "online boarding".
+
+um:hasDepartureDelay rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Flight ;
+    rdfs:range um:Delay ;
+    rdfs:label "departure delay".
+
+um:hasArrivalDelay rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Flight ;
+    rdfs:range um:Delay ;
+    rdfs:label "arrival delay" .
+
+
+### Object Properties ###
+
+um:hasCustomer rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range um:Customer ;
+    rdfs:label "has customer".
+
+um:hasType rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range um:CustomerType ;
+    rdfs:label "has type".
+
+um:hasTravelType rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range um:TravelType ;
+    rdfs:label "has travel type".
+
+um:belongsToClass rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Flight ;
+    rdfs:range um:Class ;
+    rdfs:label "belongs to class".
+
+um:hasService rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Flight ;
+    rdfs:range um:Service ;
+    rdfs:label "has service".
+
+um:hasDelay rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Flight ;
+    rdfs:range um:Delay ;
+    rdfs:label "has delay".

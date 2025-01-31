@@ -1,0 +1,7 @@
+Incorrect format and serialization (number of elements, dots). Example:
+
+<https://base_ontology.com#entity_name>
+        rdfs:subClassOf <https://base_ontology.com#class_entity>;
+        owl:property <https://base_ontology.com#hasProductId>
+            rdfs:domain <https://base_ontology.com#entity_name>;
+            rdfs:range xsd:text;

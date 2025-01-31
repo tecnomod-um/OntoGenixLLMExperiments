@@ -1,0 +1,22 @@
+Incorrect serialization (number of elements in the triples, and dots), and uncommented text. Example:
+
+ Sure, here is the TURTLE syntax for the proposed ontology based on the provided JSON data and instructions:
+ 
+class Country (owl:Class)
+   rdf:type owl:Class.
+   rdfs:label "Country";
+   owl:oneOf (
+       base_ontology:Country_1,
+       base_ontology:Country_2,
+       base_ontology:Country_3
+   );
+   owl:hasValue (
+       base_ontology:Country_1 "Australia",
+       base_ontology:Country_2 "Austria",
+       base_ontology:Country_3 "Belgium"
+   );
+   owl:inverseOf base_ontology:has_Country.
+   
+   
+   
+The use of owl:oneOf is not appropiate because limit the individuals.

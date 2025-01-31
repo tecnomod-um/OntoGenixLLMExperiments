@@ -1,0 +1,7 @@
+Incorrect format and serialization (number of elements, shortnames and dots). Example:
+
+class class_entity {
+ owl:ontologyProperty rdf:type owl:Class .
+ owl:hasValue rdf:type owl:Class .
+ owl:inverseOf rdf:type owl:Property .
+ }

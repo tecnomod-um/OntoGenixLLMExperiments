@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<http://example.com/ontology/ProductReview>
+a owl:Ontology .
+
+<http://example.com/ontology/ProductReview/ProductId>
+a owl:Class .
+
+<http://example.com/ontology/ProductReview/Rating>
+a owl:Class .
+
+<http://example.com/ontology/ProductReview/Timestamp>
+a owl:Class .
+
+<http://example.com/ontology/ProductReview/UserId>
+a owl:Class .
+
+<http://example.com/ontology/ProductReview/class_entity>
+a rdfs:subClassOf .
+
+<http://example.com/ontology/ProductReview/entity_name>
+a rdfs:subClassOf .
+
+<http://example.com/ontology/ProductReview/class_entity>
+	owl:hasKey <http://example.com/ontology/ProductReview/name> .
+
+<http://example.com/ontology/ProductReview/entity_name>
+	owl:hasKey <http://example.com/ontology/ProductReview/name> .
+
+<http://example.com/ontology/ProductReview/class_entity>
+	owl:hasValue <http://example.com/ontology/ProductReview/description> .
+
+<http://example.com/ontology/ProductReview/entity_name>
+	owl:hasValue <http://example.com/ontology/ProductReview/name> .
+
+<http://example.com/ontology/ProductReview/ProductId>
+	owl:hasValue <http://example.com/ontology/ProductReview/text> .
+
+<http://example.com/ontology/ProductReview/Rating>
+	owl:hasValue <http://example.com/ontology/ProductReview/categorical> .
+
+<http://example.com/ontology/ProductReview/Timestamp>
+	owl:hasValue <http://example.com/ontology/ProductReview/text> .
+
+<http://example.com/ontology/ProductReview/UserId>
+	owl:hasValue <http://example.com/ontology/ProductReview/text> .

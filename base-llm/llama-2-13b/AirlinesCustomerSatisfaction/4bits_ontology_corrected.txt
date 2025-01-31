@@ -1,0 +1,32 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <https://base_ontology.com#> .
+
+<http://example.com/ontology/Passenger> a owl:Ontology ;
+   owl:version "1.0" .
+
+<http://example.com/ontology/Passenger/Age> a rdf:Property ;
+   rdf:type owl:DatatypeProperty ;
+   rdfs:domain :HTTP_timestamp ;
+   rdfs:range xsd:integer .
+
+<http://example.com/ontology/Passenger/Arrival_Delay_in_Minutes> a rdf:Property ;
+   rdf:type owl:DatatypeProperty ;
+   rdfs:domain :HTTP_timestamp ;
+   rdfs:range xsd:integer .
+
+<http://example.com/ontology/Passenger/Baggage_handling> a owl:ObjectProperty ;
+   rdfs:range :HTTP_timestamp .
+
+<http://example.com/ontology/Passenger/Checkin_service> a owl:ObjectProperty ;
+   rdfs:range :HTTP_timestamp .
+
+<http://example.com/ontology/Passenger/Cleanliness> a owl:ObjectProperty ;
+   rdfs:range :HTTP_timestamp .
+
+<http://example.com/ontology/Passenger/Departure_delay> a owl:ObjectProperty ;
+   rdfs:range :HTTP_timestamp .
+
+<http://example.com/ontology/Passenger/Online_boarding> a owl:ObjectProperty ;
+   owl:version "1.0" .

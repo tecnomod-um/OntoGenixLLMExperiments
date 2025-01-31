@@ -1,4 +1,26 @@
-Incorrect use of shortnames, like class_entity. Example:
+Lack of dots in the prefix declarations. Examples:
+@prefix base: <https://base_ontology.com/>
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns/>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema/>
+@prefix owl: <http://www.w3.org/2002/07/owl#>
 
+
+Prefix xsd used but not defined.
+
+
+Incorrect use of shortnames, like class_entity. Example:
 class_entity a owl:Class ;
 rdfs:subClassOf class_entity .
+
+
+Wrong URIs:
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns/>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema/>
+
+
+Incorrect number of elements in the triples. Example:
+name a rdf:Property ;
+domain StockCode ;
+range rdfs:Literal ;
+rdf:typedBy rdf:XMLSchema datatype "http://www.w3.org/2001/XMLSchema#string" ;
+rdf:label "name" .

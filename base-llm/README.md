@@ -36,27 +36,52 @@ For each LLM, we have evaluated a series of Kaggle datasets related to commercia
 - Main limitations include the tendency of the latest open-source LLMs used as ontology generation engines to produce hallucinations and deviate from the prompt's defined standardization, as well as the difficulty in evaluating the generated ontologies.
 - Proposed solutions to address the identified limitations include fine-tuning LLMs to model new data within the same domain of interest and in a specified format, and implementing a RAG (Retrieval-Augmented Generation) architecture with sample ontologies and schemas stored in a vector database.
 
-The following table shows with an X when the LLM model was able to generate the ontology in question:
+The following table shows with an X when the LLM model was able to generate the ontology in question with an appropiate syntax. We also include the total number of these ontologies:
 
-| LLM model    | AirlinesCustomerSatisfaction | AmazonRating | BigBasketProducts | BrazilianE-commerce | CustomerComplaint | eCommerce |
-|--------------|------------------------------|--------------|-------------------|---------------------|-------------------|-----------|
-| Llama-2-7b   | -                            | -            | -                 | -                   | -                 | -         |
-| Llama-2-70b  | -                            | -            | -                 | -                   | -                 | -         |
-| Llama-3-8b   | -                            | -            | -                 | -                   | -                 | -         |
-| Llama-3-70b  | -                            | -            | X                 | X                   | -                 | X         |
-| Mistral-7b   | -                            | -            | -                 | -                   | -                 | -         |
-| Mixtral      | -                            | -            | -                 | -                   | X                 | -         |
+| LLM model         | AirlinesCustomerSatisfaction | AmazonRating | BigBasketProducts | BrazilianE-commerce | CustomerComplaint | eCommerce | Total |
+|-------------------|------------------------------|--------------|-------------------|---------------------|-------------------|-----------|-------|
+| Llama-2-7b        | -                            | -            | -                 | -                   | -                 | -         | 0     |
+| Llama-2-13b-4bits | -                            | -            | -                 | -                   | -                 | -         | 0     |
+| Llama-2-13b-8bits | -                            | -            | -                 | -                   | -                 | -         | 0     |
+| Llama-2-13b-all   | -                            | -            | -                 | -                   | -                 | -         | 0     |
+| Llama-2-70b       | -                            | -            | -                 | -                   | -                 | -         | 0     |
+| Llama-3-8b-4bits  | -                            | -            | -                 | X                   | -                 | -         | 1     |
+| Llama-3-8b-8bits  | -                            | X            | -                 | -                   | -                 | -         | 1     |
+| Llama-3-8b        | -                            | -            | -                 | -                   | -                 | -         | 0     |
+| Llama-3-70b       | -                            | -            | X                 | X                   | -                 | X         | 3     |
+| Mistral-7b        | -                            | -            | -                 | -                   | -                 | -         | 0     |
+| Mixtral           | -                            | -            | -                 | -                   | X                 | -         | 1     |
+| **Total**         | **0**                        | **1**        | **1**             | **2**               | **1**             | **1**     | **6** |
 
 
 The following table shows the main errors made by LLM models in the generation of ontologies:
 
-| LLM model    | AirlinesCustomerSatisfaction                            | AmazonRating                                        | BigBasketProducts                          | BrazilianE-commerce                     | CustomerComplaint                              | eCommerce                                     |
-|--------------|---------------------------------------------------------|-----------------------------------------------------|--------------------------------------------|-----------------------------------------|------------------------------------------------|-----------------------------------------------|
-| Llama-2-7b   | Incorrect format                                        | Incorrect format, and uncommented text              | Incorrect format, and uncommented text     | Incorrect format, and uncommented text  | Incorrect format, and uncommented text         | Incorrect format, and uncommented text        |
-| Llama-2-70b  | Loop, incorrect shortnames and numeric values           | Incorrect format, and uncommented text              | Incorrect format, and uncommented text     | Incorrect format, and uncommented text  | Incorrect format, and uncommented text         | Incorrect format, and uncommented text        |
-| Llama-3-8b   | Incorrect shortnames                                    | Missing end dots in the prefix declarations         | Incorrect serializations (use of end dots) | Incorrect rdf/xml serialization         | Incorrect serializations (use of end dots, semicolons, shortnames) | Incorrect rdf/xml serialization |
-| Llama-3-70b  | Uncommented text and incorrect owl:Ontology declaration | Incorrect serialization (blank nodes in properties) | X                                          | X                                       | Uncommented text and prefix used but not declared | X                                          |
-| Mistral-7b   | Prefix not defined                                      | Incorrect serializations (shortnames and number of elements in the triples) | Incorrect serializations (missing end dots, prefixes) | Incorrect use of shortnames | Incorrect IDs (with spaces) | Incorrect use of shortnames               |
-| Mixtral      | Uncommented text                                        | Incorrect restriction declaration                   | Incorrect format                           | Incorrect serializations (prefix declarations, use of shortnames) | X                    | Incorrect shortnames and prefix declarations  |
+| LLM model         | AirlinesCustomerSatisfaction                         | AmazonRating                                                | BigBasketProducts                                        | BrazilianE-commerce                                      | CustomerComplaint                                       | eCommerce                                               |
+|-------------------|------------------------------------------------------|-------------------------------------------------------------|----------------------------------------------------------|----------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------|
+| Llama-2-7b        | Incorrect format                                     | Incorrect format, and uncommented text                      | Incorrect format, and uncommented text                   | Incorrect format, and uncommented text                   | Incorrect format, and uncommented text                  | Incorrect format, and uncommented text                  |
+| Llama-2-13b-4bits | Incorrect serialization (number of elements, loop at the end, and wrong URIs) | Incorrect format and serialization (shortnames, IDs and dots) | Incorrect serialization (number of elements in the triples, and wrong URIs) | Incorrect format and serialization (number of elements, shortnames and dots), and uncommented text | Incorrect format and serialization (shortnames, dots, URIs) | Incorrect format and serialization (number of elements, shortnames, and dots) |
+| Llama-2-13b-8bits | Incorrect format and serialization (number of elements in the triples, ending loop, and wrong URIs), and uncommented text | Uncommented text | Uncommented text and wrong URIs | Incorrect format and serialization (shortnames, dots, URIs), and uncommented text | Incorrect serialization (loop at the end), and uncommented text | Incorrect serialization (number of elements, shortnames, and dots), and uncommented text |
+| Llama-2-13b       | Incorrect format                                     | Incorrect serialization (number of elements in the triples) and uncommented text | Incorrect serialization (number of elements, shortnames, dots), and uncommented text | Incorrect serialization (number of elements, shortnames and dots), and uncommented text | Incorrect serialization (number of elements and ending loop), and uncommented text | Incorrect serialization (number of elements, shortnames, and dots), and uncommented text |
+| Llama-2-70b       | Incorrect serialization (loop, shortnames, IDs, and numeric values) | Incorrect format, and uncommented text | Incorrect format, and uncommented text | Incorrect format, and uncommented text | Incorrect format, and uncommented text  | Incorrect format, and uncommented text |
+| Llama-3-8b-4bits  | Incorrect rdf/xml serialization                      | Incorrect format and serialization (number of elements, and dots) | Incorrect serialization (missing end dots in the prefix declarations) | X | Incorrect rdf/xml serialization   | Incorrect serialization (dots) |
+| Llama-3-8b-8bits  | Incorrect serialization (number of elements)         | X                                                           | Incorrect serialization (number of elements and dots)    | Incorrect serialization (dots, prefix used but not defined) | Incorrect serialization (shortnames) | Incorrect serialization (missing end dots in the prefix declarations) |
+| Llama-3-8b        | Incorrect serialization (shortnames)                 | Incorrect serialization (missing end dots in the prefix declarations) | Incorrect serialization (dots) | Incorrect rdf/xml serialization | Incorrect serialization (dots, and shortnames) | Incorrect rdf/xml serialization |
+| Llama-3-70b       | Incorrect serialization (dots, prefix and owl:Ontology declarations), and uncommented text | Incorrect serialization (blank nodes declarations) | X | X | Uncommented text, and prefix used but not declared | X |
+| Mistral-7b        | Incorrect serialization (prefix not defined)         | Incorrect format and serialization (shortnames, wrong URIs, and number of elements in the triples) | Incorrect serialization (missing end dots, prefix not defined, syntax error) | Incorrect serialization (shortnames, and wrong URIs) | Incorrect format and serialization (number of elements in the triples, IDs with spaces, and wrong URIs) | Incorrect serialization (number of elements, dots, shortnames, wrong URIs, prefix used but not declared) |
+| Mixtral           | Uncommented text                                     | Incorrect serialization (restrictions)                      | Incorrect format                                         | Incorrect serialization (prefix declarations, number of elements, use of shortnames) | X | Incorrect serialization (number of elements, shortnames, dots, prefix declarations, wrong IDs) |
 
 
+We talk about:
+- 'Incorrect format' when the model returns a serialization of RDF triples that does not correspond to the requested turtle. Instead, it returns another inappropriate format that cannot be converted, i.e., the result generates an output that does not pass the validation tests, and therefore cannot be converted to a different type of RDF serialization.
+- 'Incorrect serialization' when the model returns a turtle serialization, but contains syntax errors that hinder the validation of the ontology. The type of the error is included in brackets.
+- 'Uncommented text' when the model does not return only the requested ontology, but includes text messages that are not properly included as comments. This result also prevents the validation of the ontology.
+- 'Incorrect rdf/xml serialization' when the model returns an ontology with incorrect rdf/xml serialization instead of turtle.
+
+Errors associated with incorrect serialization are usually common, being:
+- Incorrect number of elements in a triplet (2 or more than 3). When the triplet includes two elements it is because the model omits the property rdf:type (a). When the triplet has more than 3 elements, it is typically due to an inadequate concatenation of statements, inclusion of redundancies ( repeating the type of entity: Class, ObjectProperty, DatatypeProperty) or wrong syntax constraints/axioms.
+- Loop at the end: the model is not able to finalize the ontology and includes random characters, or repeats a triplet or a fragment of it.
+- Shortnames: shortnames without the prefix (only ID is included).
+- IDs: lack of IDs, only the prefix is included. It is the inverse error of the previous one.
+- Dots: mistakes in the ending dots. This includes lack of dots and/or semicolons at the end of statements, or an inappropriate use ( dot instead of semicolon). 
+- Prefix: prefix used but not declarated.
+- Wrong URIs: incorrect or inexistent URIs when a certain vocabulary such as rdf, rdfs, owl or xsd is reused. Inappropriate uses of resources are also frequent.

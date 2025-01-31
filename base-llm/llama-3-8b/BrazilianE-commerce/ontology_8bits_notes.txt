@@ -1,0 +1,5 @@
+Use of semicolons instead of dots at the end of each statement. Example:
+
+base:Entity_Name
+    a owl:Class;
+    rdfs:subClassOf base:Class_Entity;

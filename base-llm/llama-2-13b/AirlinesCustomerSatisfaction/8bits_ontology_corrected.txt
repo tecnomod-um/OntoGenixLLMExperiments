@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/ontology/Passenger> a owl:Ontology;
+   rdf:type owl:Ontology .
+
+<http://example.com/ontology/Passenger> owl:imports <http://example.com/ontology/Flight> ;
+   owl:imports <http://example.com/ontology/Airline> .
+
+<http://example.com/ontology/Passenger> owl:Class <http://example.com/ontology/Passenger> .
+
+<http://example.com/ontology/Passenger> owl:hasValue "12"^^xsd:integer .
+<http://example.com/ontology/Passenger> owl:hasValue "85"^^xsd:integer .
+
+<http://example.com/ontology/Passenger> owl:hasValue "1590"^^xsd:integer .
+<http://example.com/ontology/Passenger> owl:hasValue "1590"^^xsd:integer .
+
+
+<http://example.com/ontology/Passenger> <http://example.com/ontology/Age> "120"^^xsd:integer .

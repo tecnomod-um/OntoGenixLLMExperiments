@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix um: <https://vocab.um.es#>.
+
+um:AmazonReviewsOntology rdf:type owl:Ontology.
+
+### Classes ###
+
+um:Review rdf:type owl:Class ;
+    rdfs:label "Review".
+
+um:Product rdf:type owl:Class ;
+    rdfs:label "Product".
+
+um:User rdf:type owl:Class ;
+    rdfs:label "User".
+
+um:Rating rdf:type owl:Class ;
+    rdfs:label "Rating".
+
+um:Timestamp rdf:type owl:Class ;
+    rdfs:label "Timestamp" .
+
+
+### Data Properties ###
+
+um:hasReviewValue rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Review ;
+    rdfs:range xsd:string ;
+    rdfs:label "Review Value".
+
+um:hasRatingValue rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Rating ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Rating Value".
+
+um:hasTimestamp rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Timestamp ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Timestamp" .
+
+
+### Object Properties ###
+
+um:hasProduct rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Review ;
+    rdfs:range um:Product ;
+    rdfs:label "Has Product".
+
+um:hasUser rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Review ;
+    rdfs:range um:User ;
+    rdfs:label "Has User".
+
+um:hasRating rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Review ;
+    rdfs:range um:Rating ;
+    rdfs:label "Has Rating".
+
+um:hasTimestamp rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Review ;
+    rdfs:range um:Timestamp ;
+    rdfs:label "Has Timestamp".

@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix um: <https://vocab.um.es#>.
+
+um:ElectronicsSales rdf:type owl:Ontology.
+
+### Classes ###
+
+um:Product rdf:type owl:Class ;
+    rdfs:label "Product".
+
+um:Invoice rdf:type owl:Class ;
+    rdfs:label "Invoice".
+
+um:Customer rdf:type owl:Class ;
+    rdfs:label "Customer" .
+
+
+### Data Properties ###
+
+um:productId rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string ;
+    rdfs:label "product ID".
+
+um:productDescription rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string ;
+    rdfs:label "product description".
+
+um:unitPrice rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "unit price".
+
+um:quantity rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:integer ;
+    rdfs:label "quantity".
+
+um:invoiceDate rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Invoice ;
+    rdfs:range xsd:date ;
+    rdfs:label "invoice date".
+
+um:customerCountry rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:string ;
+    rdfs:label "customer country" .
+
+
+### Object Properties ###
+
+um:hasProduct rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Invoice ;
+    rdfs:range um:Product ;
+    rdfs:label "has product".
+
+um:hasCustomer rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Invoice ;
+    rdfs:range um:Customer ;
+    rdfs:label "has customer".

@@ -1,0 +1,3 @@
+Incorrect serialization due to incorrect number of elements in the triples. Example:
+
+base_ontology:class_entity owl:Class.

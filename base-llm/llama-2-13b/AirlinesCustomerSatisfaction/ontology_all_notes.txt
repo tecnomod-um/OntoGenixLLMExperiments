@@ -1,0 +1,1 @@
+Incorrect format, that is, the file do not follow a Turtle structure to serialize RDF triples

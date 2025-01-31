@@ -1,0 +1,11 @@
+Incorrect serialization (number of elements, shortnames and dots), and uncommented text. Some URIs do not exist:
+
+Sure, here is the TURTLE syntax content for the proposed ontology based on the provided JSON data and input related data description:
+
+class entity_name
+   subClassOf class_entity.
+   domain owl:Thing.
+   range owl:String.
+   
+   
+The URI owl:String do not exist.

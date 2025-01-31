@@ -66,7 +66,8 @@ Description: Transactions for a UK-based and registered non-store online retail.
 
 ## Summary of the findings
 
-- The model does not correctly generate the mapping to RML format.
-- It generates a lot of hallucinations because it does not understand the instructions based on the TURTLE format for ontology generation.
 - Correctly generates high level description.
+- The model does not generate an ontology with a valid syntax in any of the 6 datasets. It generates a lot of hallucinations because it does not understand the instructions based on the TURTLE format for ontology generation.
+- The model does not correctly generate the mapping to RML format.
+
 

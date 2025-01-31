@@ -1,0 +1,19 @@
+Incorrect serialization (number of elements and ending loop), and uncommented text. Example:
+
+ Here is the TURTLE syntax for the proposed ontology:
+
+<http://example.com/Company> owl:type owl:Class> , 
+<http://example.com/Company> owl:Class> , 
+<http://example.com/Company> owl:Class> .
+<http://example.com/Consumer> owl:Class> , 
+<http://example.com/Company> owl:Class> , 
+<http://example.com/Company> owl:Class> , 
+<http://example.com/Company> owl:Class> , 
+<http://example.com/Company> owl:Class> , 
+<http://example.com/Company> owl:Class> , 
+<http://Company> owl:Class> , 
+<http://Company> , 
+<http://Company> , 
+<http://Company> , 
+<http://Company> , 
+<http://Company> , 

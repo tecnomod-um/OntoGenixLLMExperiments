@@ -1,0 +1,7 @@
+Incorrect format and serialization (lack of shortnames, IDs and serialization dots, incorrect number of elements in the triples), and uncommented text. Examples:
+
+Sure, here is the TURTLE syntax content for the proposed ontology based on the provided JSON data and schema:
+
+class class_entity (rdf:type owl:Class)
+   owl:hasSelf rdf:type owl:Class
+   owl:hasKey rdf:type owl:ObjectProperty

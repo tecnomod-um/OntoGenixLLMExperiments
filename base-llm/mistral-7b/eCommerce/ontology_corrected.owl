@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:base="https://base_ontology.com/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#label -->
+
+    <AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#label"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#typedBy -->
+
+    <AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#typedBy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com/hasCountry -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com/hasCountry">
+        <rdfs:domain rdf:resource="https://base_ontology.com/class_entity"/>
+        <rdfs:range rdf:resource="https://base_ontology.com/Country"/>
+        <rdf:label>hasCountry</rdf:label>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com/hasCustomerID -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com/hasCustomerID">
+        <rdfs:domain rdf:resource="https://base_ontology.com/class_entity"/>
+        <rdfs:range rdf:resource="https://base_ontology.com/CustomerID"/>
+        <rdf:label>hasCustomerID</rdf:label>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com/hasDescription -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com/hasDescription">
+        <rdfs:domain rdf:resource="https://base_ontology.com/class_entity"/>
+        <rdfs:range rdf:resource="https://base_ontology.com/Description"/>
+        <rdf:label>hasDescription</rdf:label>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com/hasInvoiceDate -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com/hasInvoiceDate">
+        <rdfs:domain rdf:resource="https://base_ontology.com/class_entity"/>
+        <rdfs:range rdf:resource="https://base_ontology.com/InvoiceDate"/>
+        <rdf:label>hasInvoiceDate</rdf:label>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com/hasInvoiceNo -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com/hasInvoiceNo">
+        <rdfs:domain rdf:resource="https://base_ontology.com/class_entity"/>
+        <rdfs:range rdf:resource="https://base_ontology.com/InvoiceNo"/>
+        <rdf:label>hasInvoiceNo</rdf:label>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com/hasQuantity -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com/hasQuantity">
+        <rdfs:domain rdf:resource="https://base_ontology.com/class_entity"/>
+        <rdfs:range rdf:resource="https://base_ontology.com/Quantity"/>
+        <rdf:label>hasQuantity</rdf:label>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com/hasStockCode -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com/hasStockCode">
+        <rdfs:domain rdf:resource="https://base_ontology.com/class_entity"/>
+        <rdfs:range rdf:resource="https://base_ontology.com/StockCode"/>
+        <rdf:label>hasStockCode</rdf:label>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com/hasUnitPrice -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com/hasUnitPrice">
+        <rdfs:domain rdf:resource="https://base_ontology.com/class_entity"/>
+        <rdfs:range rdf:resource="https://base_ontology.com/UnitPrice"/>
+        <rdf:label>hasUnitPrice</rdf:label>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com/hasName -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com/hasName">
+        <rdfs:domain rdf:resource="https://base_ontology.com/entity_name"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdf:label>hasName</rdf:label>
+        <rdf:typedBy>http://www.w3.org/2001/XMLSchema#string</rdf:typedBy>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com/name -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com/name">
+        <rdfs:domain rdf:resource="https://base_ontology.com/Country"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com/CustomerID"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com/Description"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com/InvoiceDate"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com/InvoiceNo"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com/Quantity"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com/StockCode"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com/UnitPrice"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdf:label>name</rdf:label>
+        <rdf:typedBy>http://www.w3.org/2001/XMLSchema#string</rdf:typedBy>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com/Country -->
+
+    <Class rdf:about="https://base_ontology.com/Country">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com/class_entity"/>
+        <rdf:label>Country</rdf:label>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com/CustomerID -->
+
+    <Class rdf:about="https://base_ontology.com/CustomerID">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com/class_entity"/>
+        <rdf:label>CustomerID</rdf:label>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com/Description -->
+
+    <Class rdf:about="https://base_ontology.com/Description">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com/class_entity"/>
+        <rdf:label>Description</rdf:label>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com/InvoiceDate -->
+
+    <Class rdf:about="https://base_ontology.com/InvoiceDate">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com/class_entity"/>
+        <rdf:label>InvoiceDate</rdf:label>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com/InvoiceNo -->
+
+    <Class rdf:about="https://base_ontology.com/InvoiceNo">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com/class_entity"/>
+        <rdf:label>InvoiceNo</rdf:label>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com/Quantity -->
+
+    <Class rdf:about="https://base_ontology.com/Quantity">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com/class_entity"/>
+        <rdf:label>Quantity</rdf:label>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com/StockCode -->
+
+    <Class rdf:about="https://base_ontology.com/StockCode">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com/class_entity"/>
+        <rdf:label>StockCode</rdf:label>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com/UnitPrice -->
+
+    <Class rdf:about="https://base_ontology.com/UnitPrice">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com/class_entity"/>
+        <rdf:label>UnitPrice</rdf:label>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com/class_entity -->
+
+    <Class rdf:about="https://base_ontology.com/class_entity">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com/class_entity"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com/entity_name -->
+
+    <Class rdf:about="https://base_ontology.com/entity_name">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com/class_entity"/>
+        <rdf:label>entity_name</rdf:label>
+    </Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,207 @@
+@prefix : <https://myairlineontology.com/> .
+@prefix rdf: <http://www.w3.org/1999/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://myairlineontology.com#class_entity> a owl:Class ;
+rdf:label "An entity related to air travel" .
+
+:entity_name a owl:Class ;
+rdf:label "A specific type of entity related to air travel" ;
+rdf:subclass_of <https://myairlineontology.com#class_entity> .
+
+:Baggage_handling a owl:Class ;
+rdf:label "The quality of baggage handling service" ;
+rdf:domain <https://myairlineontology.com#entity_name> .
+
+:Checkin_service a owl:Class ;
+rdf:label "The quality of checkin service" ;
+rdf:domain <https://myairlineontology.com#entity_name> .
+
+:Cleanliness a owl:Class ;
+rdf:label "The cleanliness of the aircraft or airport" ;
+rdf:domain <https://myairlineontology.com#entity_name> .
+
+:Departure_arrival_time_convenience a owl:Class ;
+rdf:label "Whether the departure or arrival time is convenient for the passenger" ;
+rdf:domain <https://myairlineontology.com#entity_name> .
+
+:Ease_of_online_booking a owl:Class ;
+rdf:label "The ease of booking a flight online" ;
+rdf:domain <https://myairlineontology.com#entity_name> .
+
+:Food_and_drink a owl:Class ;
+rdf:label "The quality of food and drink service" ;
+rdf:domain <https://myairlineontology.com#entity_name> .
+
+:Gate_location a owl:Class ;
+rdf:label "The location of the gate" ;
+rdf:domain <https://myairlineontology.com#entity_name> .
+
+:Inflight_entertainment a owl:Class ;
+rdf:label "The quality of inflight entertainment" ;
+rdf:domain <https://myairlineontology.com#entity_name> .
+
+:Inflight_wifi_service a owl:Class ;
+rdf:label "The quality of inflight wifi service" ;
+rdf:domain <https://myairlineontology.com#entity_name> .
+
+:Leg_room_service a owl:Class ;
+rdf:label "The quality of leg room service" ;
+rdf:domain <https://myairlineontology.com#entity_name> .
+
+:On_board_service a owl:Class ;
+rdf:label "The quality of on-board service" ;
+rdf:domain <https://myairlineontology.com#entity_name> .
+
+:Online_boarding a owl:Class ;
+rdf:label "The availability of online boarding" ;
+rdf:domain <https://myairlineontology.com#entity_name> .
+
+:Online_support a owl:Class ;
+rdf:label "The quality of online support" ;
+rdf:domain <https://myairlineontology.com#entity_name> .
+
+:Seat_comfort a owl:Class ;
+rdf:label "The comfort of the aircraft seat" ;
+rdf:domain <https://myairlineontology.com#entity_name> .
+
+:Class a owl:Class ;
+rdf:label "The class of the flight" ;
+rdf:domain <https://myairlineontology.com#entity_name> .
+
+:Customer_Type a owl:Class ;
+rdf:label "The type of customer" ;
+rdf:domain <https://myairlineontology.com#entity_name> .
+
+:Gender a owl:Class ;
+rdf:label "The gender of the passenger" ;
+rdf:domain <https://myairlineontology.com#entity_name> .
+
+:Type_of_Travel a owl:Class ;
+rdf:label "The type of travel (business or leisure)" ;
+rdf:domain <https://myairlineontology.com#entity_name> .
+
+:satisfaction a owl:Class ;
+rdf:label "The level of passenger satisfaction" ;
+rdf:domain <https://myairlineontology.com#entity_name> .
+
+:Age a owl:ObjectProperty ;
+rdf:label "The age of a passenger" ;
+rdf:domain <https://myairlineontology.com#entity_name> ;
+rdf:range xsd:int .
+
+:has_age a owl:ObjectProperty ;
+rdf:label "The age of an entity related to air travel" ;
+rdf:domain <https://myairlineontology.com#entity_name> ;
+rdf:range xsd:int .
+
+:has_baggage_handling a owl:ObjectProperty ;
+rdf:label "The quality of baggage handling service for an entity related to air travel" ;
+rdf:domain <https://myairlineontology.com#entity_name> ;
+rdf:range <https://myairlineontology.com#Baggage_handling> .
+
+:has_checkin_service a owl:ObjectProperty ;
+rdf:label "The quality of checkin service for an entity related to air travel" ;
+rdf:domain <https://myairlineontology.com#entity_name> ;
+rdf:range <https://myairlineontology.com#Checkin_service> .
+
+:has_cleanliness a owl:ObjectProperty ;
+rdf:label "The cleanliness of an entity related to air travel" ;
+rdf:domain <https://myairlineontology.com#entity_name> ;
+rdf:range <https://myairlineontology.com#Cleanliness> .
+
+:has_departure_arrival_time_convenience a owl:ObjectProperty ;
+rdf:label "Whether the departure or arrival time is convenient for the passenger of an entity related to air travel" ;
+rdf:domain <https://myairlineontology.com#entity_name> ;
+rdf:range <https://myairlineontology.com#Departure_arrival_time_convenience> .
+
+:has_ease_of_online_booking a owl:ObjectProperty ;
+rdf:label "The ease of booking a flight online for an entity related to air travel" ;
+rdf:domain <https://myairlineontology.com#entity_name> ;
+rdf:range <https://myairlineontology.com#Ease_of_online_booking> .
+
+:has_flight_distance a owl:ObjectProperty ;
+rdf:label "The distance of a flight in miles for an entity related to air travel" ;
+rdf:domain <https://myairlineontology.com#entity_name> ;
+rdf:range xsd:int .
+
+:has_food_and_drink a owl:ObjectProperty ;
+rdf:label "The quality of food and drink service for an entity related to air travel" ;
+rdf:domain <https://myairlineontology.com#entity_name> ;
+rdf:range <https://myairlineontology.com#Food_and_drink> .
+
+:has_gate_location a owl:ObjectProperty ;
+rdf:label "The location of the gate for an entity related to air travel" ;
+rdf:domain <https://myairlineontology.com#entity_name> ;
+rdf:range <https://myairlineontology.com#Gate_location> .
+
+:has_inflight_entertainment a owl:ObjectProperty ;
+rdf:label "The quality of inflight entertainment for an entity related to air travel" ;
+rdf:domain <https://myairlineontology.com#entity_name> ;
+rdf:range <https://myairlineontology.com#Inflight_entertainment> .
+
+:has_inflight_wifi_service a owl:ObjectProperty ;
+rdf:label "The quality of inflight wifi service for an entity related to air travel" ;
+rdf:domain <https://myairlineontology.com#entity_name> ;
+rdf:range <https://myairlineontology.com#Inflight_wifi_service> .
+
+:has_leg_room_service a owl:ObjectProperty ;
+rdf:label "The quality of leg room service for an entity related to air travel" ;
+rdf:domain <https://myairlineontology.com#entity_name> ;
+rdf:range <https://myairlineontology.com#Leg_room_service> .
+
+:has_on_board_service a owl:ObjectProperty ;
+rdf:label "The quality of on-board service for an entity related to air travel" ;
+rdf:domain <https://myairlineontology.com#entity_name> ;
+rdf:range <https://myairlineontology.com#On_board_service> .
+
+:has_online_boarding a owl:ObjectProperty ;
+rdf:label "The availability of online boarding for an entity related to air travel" ;
+rdf:domain <https://myairlineontology.com#entity_name> ;
+rdf:range <https://myairlineontology.com#Online_boarding> .
+
+:has_online_support a owl:ObjectProperty ;
+rdf:label "The quality of online support for an entity related to air travel" ;
+rdf:domain <https://myairlineontology.com#entity_name> ;
+rdf:range <https://myairlineontology.com#Online_support> .
+
+:has_seat_comfort a owl:ObjectProperty ;
+rdf:label "The comfort of the aircraft seat for an entity related to air travel" ;
+rdf:domain <https://myairlineontology.com#entity_name> ;
+rdf:range <https://myairlineontology.com#Seat_comfort> .
+
+:has_class a owl:ObjectProperty ;
+rdf:label "The class of the flight for an entity related to air travel" ;
+rdf:domain <https://myairlineontology.com#entity_name> ;
+rdf:range <https://myairlineontology.com#Class> .
+
+:has_customer_type a owl:ObjectProperty ;
+rdf:label "The type of customer for an entity related to air travel" ;
+rdf:domain <https://myairlineontology.com#entity_name> ;
+rdf:range <https://myairlineontology.com#Customer_Type> .
+
+:has_gender a owl:ObjectProperty ;
+rdf:label "The gender of the passenger for an entity related to air travel" ;
+rdf:domain <https://myairlineontology.com#entity_name> ;
+rdf:range <https://myairlineontology.com#Gender> .
+
+:has_type_of_travel a owl:ObjectProperty ;
+rdf:label "The type of travel (business or leisure) for an entity related to air travel" ;
+rdf:domain <https://myairlineontology.com#entity_name> ;
+rdf:range <https://myairlineontology.com#Type_of_Travel> .
+
+:has_satisfaction a owl:ObjectProperty ;
+rdf:label "The level of passenger satisfaction for an entity related to air travel" ;
+rdf:domain <https://myairlineontology.com#entity_name> ;
+rdf:range <https://myairlineontology.com#satisfaction> .
+
+:has_arrival_delay a owl:ObjectProperty ;
+rdf:label "The delay in minutes of a flight upon arrival for an entity related to air travel" ;
+rdf:domain <https://myairlineontology.com#entity_name> ;
+rdf:range xsd:int .
+
+:has_departure_delay a owl:ObjectProperty ;
+rdf:label "The delay in minutes of a flight upon departure for an entity related to air travel" ;
+rdf:domain <https://myairlineontology.com#entity_name> ;
+rdf:range xsd:int .

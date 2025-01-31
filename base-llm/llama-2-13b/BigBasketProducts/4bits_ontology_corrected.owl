@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:base_ontology="http://base_ontology.com/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://base_ontology.com/Absolute_Url_idx -->
+
+    <AnnotationProperty rdf:about="http://base_ontology.com/Absolute_Url_idx"/>
+    
+
+
+    <!-- http://base_ontology.com/Brand_idx -->
+
+    <AnnotationProperty rdf:about="http://base_ontology.com/Brand_idx"/>
+    
+
+
+    <!-- http://base_ontology.com/Category_idx -->
+
+    <AnnotationProperty rdf:about="http://base_ontology.com/Category_idx"/>
+    
+
+
+    <!-- http://base_ontology.com/DiscountPrice_idx -->
+
+    <AnnotationProperty rdf:about="http://base_ontology.com/DiscountPrice_idx"/>
+    
+
+
+    <!-- http://base_ontology.com/FAIR_URI -->
+
+    <AnnotationProperty rdf:about="http://base_ontology.com/FAIR_URI"/>
+    
+
+
+    <!-- http://base_ontology.com/Image_Url -->
+
+    <AnnotationProperty rdf:about="http://base_ontology.com/Image_Url"/>
+    
+
+
+    <!-- http://base_ontology.com/Price_idx -->
+
+    <AnnotationProperty rdf:about="http://base_ontology.com/Price_idx"/>
+    
+
+
+    <!-- http://base_ontology.com/ProductName_idx -->
+
+    <AnnotationProperty rdf:about="http://base_ontology.com/ProductName_idx"/>
+    
+
+
+    <!-- http://base_ontology.com/Quantity -->
+
+    <AnnotationProperty rdf:about="http://base_ontology.com/Quantity"/>
+    
+
+
+    <!-- http://base_ontology.com/SubCategory_idx -->
+
+    <AnnotationProperty rdf:about="http://base_ontology.com/SubCategory_idx"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://base_ontology.com/class_entity -->
+
+    <ObjectProperty rdf:about="http://base_ontology.com/class_entity">
+        <inverseOf rdf:resource="http://base_ontology.com/data_type"/>
+        <inverseOf rdf:resource="http://base_ontology.com/entity_name"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://base_ontology.com/data_type -->
+
+    <ObjectProperty rdf:about="http://base_ontology.com/data_type"/>
+    
+
+
+    <!-- http://base_ontology.com/entity_name -->
+
+    <ObjectProperty rdf:about="http://base_ontology.com/entity_name">
+        <rdfs:domain rdf:resource="http://base_ontology.com/class_entity"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://base_ontology.com/entity_name -->
+
+    <DatatypeProperty rdf:about="http://base_ontology.com/entity_name">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://base_ontology.com/class_entity -->
+
+    <Class rdf:about="http://base_ontology.com/class_entity"/>
+    
+
+
+    <!-- http://base_ontology.com/data_type -->
+
+    <Class rdf:about="http://base_ontology.com/data_type"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://base_ontology.com/class_entity -->
+
+    <NamedIndividual rdf:about="http://base_ontology.com/class_entity">
+        <base_ontology:entity_name>domain</base_ontology:entity_name>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://base_ontology.com/class_entity">
+        <base_ontology:Absolute_Url_idx>count</base_ontology:Absolute_Url_idx>
+        <base_ontology:ProductName_idx>count</base_ontology:ProductName_idx>
+        <base_ontology:Brand_idx>count</base_ontology:Brand_idx>
+        <base_ontology:Category_idx>count</base_ontology:Category_idx>
+        <base_ontology:SubCategory_idx>count</base_ontology:SubCategory_idx>
+        <base_ontology:Image_Url>text</base_ontology:Image_Url>
+        <base_ontology:DiscountPrice_idx>count</base_ontology:DiscountPrice_idx>
+        <base_ontology:Quantity>text</base_ontology:Quantity>
+        <base_ontology:FAIR_URI>text</base_ontology:FAIR_URI>
+        <base_ontology:Price_idx>count</base_ontology:Price_idx>
+        <base_ontology:data_type>range</base_ontology:data_type>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

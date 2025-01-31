@@ -1,0 +1,100 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix base_ontology: <http://base_ontology.com#>.
+
+<http://base_ontology.com#class_entity>
+    rdfs:subClassOf owl:Thing.
+
+<http://base_ontology.com#entity_name>
+    rdfs:subClassOf <http://base_ontology.com#class_entity> ;
+    owl:oneOf (
+        <http://base_ontology.com#Country>
+        <http://base_ontology.com#Description>
+        <http://base_ontology.com#InvoiceDate>
+        <http://base_ontology.com#InvoiceNo>
+        <http://base_ontology.com#StockCode>
+        <http://base_ontology.com#CustomerID>
+        <http://base_ontology.com#Quantity>
+        <http://base_ontology.com#UnitPrice>
+    ).
+
+<http://base_ontology.com#has_country>
+    a owl:ObjectProperty ;
+    rdfs:domain <http://base_ontology.com#class_entity> ;
+    rdfs:range <http://base_ontology.com#Country>.
+
+<http://base_ontology.com#has_description>
+    a owl:ObjectProperty ;
+    rdfs:domain <http://base_ontology.com#class_entity> ;
+    rdfs:range <http://base_ontology.com#Description>.
+
+<http://base_ontology.com#has_invoice_date>
+    a owl:ObjectProperty ;
+    rdfs:domain <http://base_ontology.com#class_entity> ;
+    rdfs:range <http://base_ontology.com#InvoiceDate>.
+
+<http://base_ontology.com#has_invoice_no>
+    a owl:ObjectProperty ;
+    rdfs:domain <http://base_ontology.com#class_entity> ;
+    rdfs:range <http://base_ontology.com#InvoiceNo>.
+
+<http://base_ontology.com#has_stock_code>
+    a owl:ObjectProperty ;
+    rdfs:domain <http://base_ontology.com#class_entity> ;
+    rdfs:range <http://base_ontology.com#StockCode>.
+
+<http://base_ontology.com#has_customer_id>
+    a owl:ObjectProperty ;
+    rdfs:domain <http://base_ontology.com#class_entity> ;
+    rdfs:range <http://base_ontology.com#CustomerID>.
+
+<http://base_ontology.com#has_quantity>
+    a owl:ObjectProperty ;
+    rdfs:domain <http://base_ontology.com#class_entity> ;
+    rdfs:range <http://base_ontology.com#Quantity>.
+
+<http://base_ontology.com#has_unit_price>
+    a owl:ObjectProperty ;
+    rdfs:domain <http://base_ontology.com#class_entity> ;
+    rdfs:range <http://base_ontology.com#UnitPrice>.
+
+<http://base_ontology.com#has_non_null_count>
+    a owl:ObjectProperty ;
+    rdfs:domain <http://base_ontology.com#class_entity> ;
+    rdfs:range xsd:double.
+
+<http://base_ontology.com#has_type>
+    a owl:ObjectProperty ;
+    rdfs:domain <http://base_ontology.com#class_entity> ;
+    rdfs:range xsd:string.
+
+<http://base_ontology.com#has_unique_count>
+    a owl:ObjectProperty ;
+    rdfs:domain <http://base_ontology.com#class_entity> ;
+    rdfs:range xsd:double.
+
+<http://base_ontology.com#has_count>
+    a owl:ObjectProperty ;
+    rdfs:domain <http://base_ontology.com#class_entity> ;
+    rdfs:range xsd:double.
+
+<http://base_ontology.com#has_max>
+    a owl:ObjectProperty ;
+    rdfs:domain <http://base_ontology.com#class_entity> ;
+    rdfs:range xsd:double.
+
+<http://base_ontology.com#has_mean>
+    a owl:ObjectProperty ;
+    rdfs:domain <http://base_ontology.com#class_entity> ;
+    rdfs:range xsd:double.
+
+<http://base_ontology.com#has_min>
+    a owl:ObjectProperty ;
+    rdfs:domain <http://base_ontology.com#class_entity> ;
+    rdfs:range xsd:double.
+
+<http://base_ontology.com#has_std>
+    a owl:ObjectProperty ;
+    rdfs:domain <http://base_ontology.com#class_entity> ;
+    rdfs:range xsd:double.

@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://base_ontology.com#Ontology#"
+     xml:base="https://base_ontology.com#Ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:base_ontology="https://base_ontology.com#">
+    <owl:Ontology rdf:about="https://base_ontology.com#Ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#ProductId_Type -->
+
+    <owl:ObjectProperty rdf:about="https://base_ontology.com#ProductId_Type">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Class_Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#text"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#Rating_Type -->
+
+    <owl:ObjectProperty rdf:about="https://base_ontology.com#Rating_Type">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Class_Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#categorical"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#Timestamp_Type -->
+
+    <owl:ObjectProperty rdf:about="https://base_ontology.com#Timestamp_Type">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Class_Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#text"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#UserId_Type -->
+
+    <owl:ObjectProperty rdf:about="https://base_ontology.com#UserId_Type">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Class_Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#text"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#has_ProductId -->
+
+    <owl:ObjectProperty rdf:about="https://base_ontology.com#has_ProductId">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Class_Entity"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#ProductId"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#has_Rating -->
+
+    <owl:ObjectProperty rdf:about="https://base_ontology.com#has_Rating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Class_Entity"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#Rating"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#has_Timestamp -->
+
+    <owl:ObjectProperty rdf:about="https://base_ontology.com#has_Timestamp">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Class_Entity"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#Timestamp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#has_UserId -->
+
+    <owl:ObjectProperty rdf:about="https://base_ontology.com#has_UserId">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Class_Entity"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#UserId"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#ProductId_Type -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#ProductId_Type"/>
+    
+
+
+    <!-- https://base_ontology.com#Rating_Type -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#Rating_Type"/>
+    
+
+
+    <!-- https://base_ontology.com#Timestamp_Type -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#Timestamp_Type"/>
+    
+
+
+    <!-- https://base_ontology.com#UserId_Type -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#UserId_Type"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#categorical -->
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#categorical"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#text -->
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#text"/>
+    
+
+
+    <!-- https://base_ontology.com#Class_Entity -->
+
+    <owl:Class rdf:about="https://base_ontology.com#Class_Entity"/>
+    
+
+
+    <!-- https://base_ontology.com#Entity_Name -->
+
+    <owl:Class rdf:about="https://base_ontology.com#Entity_Name">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Class_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://base_ontology.com#ProductId -->
+
+    <owl:Class rdf:about="https://base_ontology.com#ProductId"/>
+    
+
+
+    <!-- https://base_ontology.com#Rating -->
+
+    <owl:Class rdf:about="https://base_ontology.com#Rating"/>
+    
+
+
+    <!-- https://base_ontology.com#Timestamp -->
+
+    <owl:Class rdf:about="https://base_ontology.com#Timestamp"/>
+    
+
+
+    <!-- https://base_ontology.com#UserId -->
+
+    <owl:Class rdf:about="https://base_ontology.com#UserId"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

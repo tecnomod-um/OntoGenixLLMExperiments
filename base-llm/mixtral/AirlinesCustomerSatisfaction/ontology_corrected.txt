@@ -1,0 +1,102 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix base: <https://base_ontology.com#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+base:Numerical a owl:Class .
+base:Categorical a owl:Class .
+
+base:Flight a owl:Class .
+base:Customer a owl:Class .
+
+base:FlightClass owl:unionOf (base:Flight base:Customer) .
+
+base:hasAge a owl:ObjectProperty ;
+   rdfs:domain base:Customer ;
+   rdfs:range base:Numerical .
+
+base:hasArrivalDelay a owl:ObjectProperty ;
+   rdfs:domain base:Flight ;
+   rdfs:range base:Numerical .
+
+base:hasBaggageHandlingRating a owl:ObjectProperty ;
+   rdfs:domain base:Flight ;
+   rdfs:range base:Categorical .
+
+base:hasCheckinServiceRating a owl:ObjectProperty ;
+   rdfs:domain base:Flight ;
+   rdfs:range base:Categorical .
+
+base:hasCleanlinessRating a owl:ObjectProperty ;
+   rdfs:domain base:Flight ;
+   rdfs:range base:Categorical .
+
+base:hasDepartureDelay a owl:ObjectProperty ;
+   rdfs:domain base:Flight ;
+   rdfs:range base:Numerical .
+
+base:hasDepartureArrivalTimeConvenienceRating a owl:ObjectProperty ;
+   rdfs:domain base:Flight ;
+   rdfs:range base:Categorical .
+
+base:hasEaseOfOnlineBookingRating a owl:ObjectProperty ;
+   rdfs:domain base:Flight ;
+   rdfs:range base:Categorical .
+
+base:hasFlightDistance a owl:ObjectProperty ;
+   rdfs:domain base:Flight ;
+   rdfs:range base:Numerical .
+
+base:hasFoodAndDrinkRating a owl:ObjectProperty ;
+   rdfs:domain base:Flight ;
+   rdfs:range base:Categorical .
+
+base:hasGateLocationRating a owl:ObjectProperty ;
+   rdfs:domain base:Flight ;
+   rdfs:range base:Categorical .
+
+base:hasInflightEntertainmentRating a owl:ObjectProperty ;
+   rdfs:domain base:Flight ;
+   rdfs:range base:Categorical .
+
+base:hasInflightWifiServiceRating a owl:ObjectProperty ;
+   rdfs:domain base:Flight ;
+   rdfs:range base:Categorical .
+
+base:hasLegRoomServiceRating a owl:ObjectProperty ;
+   rdfs:domain base:Flight ;
+   rdfs:range base:Categorical .
+
+base:hasOnBoardServiceRating a owl:ObjectProperty ;
+   rdfs:domain base:Flight ;
+   rdfs:range base:Categorical .
+
+base:hasOnlineBoardingRating a owl:ObjectProperty ;
+   rdfs:domain base:Flight ;
+   rdfs:range base:Categorical .
+
+base:hasOnlineSupportRating a owl:ObjectProperty ;
+   rdfs:domain base:Flight ;
+   rdfs:range base:Categorical .
+
+base:hasSeatComfortRating a owl:ObjectProperty ;
+   rdfs:domain base:Flight ;
+   rdfs:range base:Categorical .
+
+base:hasCustomerType a owl:ObjectProperty ;
+   rdfs:domain base:Customer ;
+   rdfs:range base:Categorical .
+
+base:hasGender a owl:ObjectProperty ;
+   rdfs:domain base:Customer ;
+   rdfs:range base:Categorical .
+
+base:hasTravelType a owl:ObjectProperty ;
+   rdfs:domain base:Customer ;
+   rdfs:range base:Categorical .
+
+base:hasSatisfaction a owl:ObjectProperty ;
+   rdfs:domain base:Customer ;
+   rdfs:range base:Categorical .

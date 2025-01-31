@@ -1,6 +1,18 @@
-Incorrect shortnames and prefix declarations. Examples:
-
+Incorrect prefix declarations. Examples:
 Prefix: base = <https://base_ontology.com#>
 
+Incorrect use of shortnames. Example:
 base:Invoice 
 SubClassOf rdfs:Class.
+
+
+Wrong IDs. Example: SubClassOf instead of subClassOf.
+
+
+Lack of ending dots at the end of the prefix declarations and other statements.
+
+
+Incorrect sintaxis. Example:
+Class: base:Invoice
+- instead of -
+base:Invoice a owl:Class .

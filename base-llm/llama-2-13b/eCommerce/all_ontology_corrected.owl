@@ -1,0 +1,468 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:base_ontology="https://base_ontology.com#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#Country -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#Country">
+        <inverseOf rdf:resource="https://base_ontology.com#has_Country"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#CustomerID -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#CustomerID">
+        <inverseOf rdf:resource="https://base_ontology.com#has_CustomerID"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#Description -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#Description">
+        <inverseOf rdf:resource="https://base_ontology.com#has_Description"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#InvoiceDate -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#InvoiceDate">
+        <inverseOf rdf:resource="https://base_ontology.com#has_InvoiceDate"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#InvoiceNo -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#InvoiceNo">
+        <inverseOf rdf:resource="https://base_ontology.com#has_InvoiceNo"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#Quantity -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#Quantity">
+        <inverseOf rdf:resource="https://base_ontology.com#has_Quantity"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#StockCode -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#StockCode">
+        <inverseOf rdf:resource="https://base_ontology.com#has_StockCode"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#UnitPrice -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#UnitPrice">
+        <inverseOf rdf:resource="https://base_ontology.com#has_UnitPrice"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#has_Country -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#has_Country"/>
+    
+
+
+    <!-- https://base_ontology.com#has_CustomerID -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#has_CustomerID"/>
+    
+
+
+    <!-- https://base_ontology.com#has_Description -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#has_Description"/>
+    
+
+
+    <!-- https://base_ontology.com#has_InvoiceDate -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#has_InvoiceDate"/>
+    
+
+
+    <!-- https://base_ontology.com#has_InvoiceNo -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#has_InvoiceNo"/>
+    
+
+
+    <!-- https://base_ontology.com#has_Quantity -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#has_Quantity"/>
+    
+
+
+    <!-- https://base_ontology.com#has_StockCode -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#has_StockCode"/>
+    
+
+
+    <!-- https://base_ontology.com#has_UnitPrice -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#has_UnitPrice"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#Country -->
+
+    <Class rdf:about="https://base_ontology.com#Country">
+        <equivalentClass>
+            <Class>
+                <oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://base_ontology.com#Country_1"/>
+                    <rdf:Description rdf:about="https://base_ontology.com#Country_2"/>
+                    <rdf:Description rdf:about="https://base_ontology.com#Country_3"/>
+                </oneOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#CustomerID -->
+
+    <Class rdf:about="https://base_ontology.com#CustomerID">
+        <equivalentClass>
+            <Class>
+                <oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://base_ontology.com#CustomerID_1"/>
+                    <rdf:Description rdf:about="https://base_ontology.com#CustomerID_2"/>
+                    <rdf:Description rdf:about="https://base_ontology.com#CustomerID_3"/>
+                </oneOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Description -->
+
+    <Class rdf:about="https://base_ontology.com#Description">
+        <equivalentClass>
+            <Class>
+                <oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://base_ontology.com#Description_1"/>
+                    <rdf:Description rdf:about="https://base_ontology.com#Description_2"/>
+                    <rdf:Description rdf:about="https://base_ontology.com#Description_3"/>
+                </oneOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#InvoiceDate -->
+
+    <Class rdf:about="https://base_ontology.com#InvoiceDate">
+        <equivalentClass>
+            <Class>
+                <oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://base_ontology.com#InvoiceDate_1"/>
+                    <rdf:Description rdf:about="https://base_ontology.com#InvoiceDate_2"/>
+                    <rdf:Description rdf:about="https://base_ontology.com#InvoiceDate_3"/>
+                </oneOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#InvoiceNo -->
+
+    <Class rdf:about="https://base_ontology.com#InvoiceNo">
+        <equivalentClass>
+            <Class>
+                <oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://base_ontology.com#InvoiceNo_1"/>
+                    <rdf:Description rdf:about="https://base_ontology.com#InvoiceNo_2"/>
+                    <rdf:Description rdf:about="https://base_ontology.com#InvoiceNo_3"/>
+                </oneOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Quantity -->
+
+    <Class rdf:about="https://base_ontology.com#Quantity">
+        <equivalentClass>
+            <Class>
+                <oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://base_ontology.com#Quantity_1"/>
+                    <rdf:Description rdf:about="https://base_ontology.com#Quantity_2"/>
+                    <rdf:Description rdf:about="https://base_ontology.com#Quantity_3"/>
+                </oneOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#StockCode -->
+
+    <Class rdf:about="https://base_ontology.com#StockCode">
+        <equivalentClass>
+            <Class>
+                <oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://base_ontology.com#StockCode_1"/>
+                    <rdf:Description rdf:about="https://base_ontology.com#StockCode_2"/>
+                    <rdf:Description rdf:about="https://base_ontology.com#StockCode_3"/>
+                </oneOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#UnitPrice -->
+
+    <Class rdf:about="https://base_ontology.com#UnitPrice">
+        <equivalentClass>
+            <Class>
+                <oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://base_ontology.com#UnitPrice_1"/>
+                    <rdf:Description rdf:about="https://base_ontology.com#UnitPrice_2"/>
+                    <rdf:Description rdf:about="https://base_ontology.com#UnitPrice_3"/>
+                </oneOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#Country_1 -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Country_1"/>
+    
+
+
+    <!-- https://base_ontology.com#Country_2 -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Country_2"/>
+    
+
+
+    <!-- https://base_ontology.com#Country_3 -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Country_3"/>
+    
+
+
+    <!-- https://base_ontology.com#CustomerID_1 -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#CustomerID_1"/>
+    
+
+
+    <!-- https://base_ontology.com#CustomerID_2 -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#CustomerID_2"/>
+    
+
+
+    <!-- https://base_ontology.com#CustomerID_3 -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#CustomerID_3"/>
+    
+
+
+    <!-- https://base_ontology.com#Description_1 -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Description_1"/>
+    
+
+
+    <!-- https://base_ontology.com#Description_2 -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Description_2"/>
+    
+
+
+    <!-- https://base_ontology.com#Description_3 -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Description_3"/>
+    
+
+
+    <!-- https://base_ontology.com#InvoiceDate_1 -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#InvoiceDate_1"/>
+    
+
+
+    <!-- https://base_ontology.com#InvoiceDate_2 -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#InvoiceDate_2"/>
+    
+
+
+    <!-- https://base_ontology.com#InvoiceDate_3 -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#InvoiceDate_3"/>
+    
+
+
+    <!-- https://base_ontology.com#InvoiceNo_1 -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#InvoiceNo_1"/>
+    
+
+
+    <!-- https://base_ontology.com#InvoiceNo_2 -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#InvoiceNo_2"/>
+    
+
+
+    <!-- https://base_ontology.com#InvoiceNo_3 -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#InvoiceNo_3"/>
+    
+
+
+    <!-- https://base_ontology.com#Quantity_1 -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Quantity_1"/>
+    
+
+
+    <!-- https://base_ontology.com#Quantity_2 -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Quantity_2"/>
+    
+
+
+    <!-- https://base_ontology.com#Quantity_3 -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Quantity_3"/>
+    
+
+
+    <!-- https://base_ontology.com#StockCode_1 -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#StockCode_1"/>
+    
+
+
+    <!-- https://base_ontology.com#StockCode_2 -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#StockCode_2"/>
+    
+
+
+    <!-- https://base_ontology.com#StockCode_3 -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#StockCode_3"/>
+    
+
+
+    <!-- https://base_ontology.com#UnitPrice_1 -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#UnitPrice_1"/>
+    
+
+
+    <!-- https://base_ontology.com#UnitPrice_2 -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#UnitPrice_2"/>
+    
+
+
+    <!-- https://base_ontology.com#UnitPrice_3 -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#UnitPrice_3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="https://base_ontology.com#Country">
+        <rdfs:label>Country</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://base_ontology.com#CustomerID">
+        <rdfs:label>Customer ID</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://base_ontology.com#Description">
+        <rdfs:label>Description</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://base_ontology.com#InvoiceDate">
+        <rdfs:label>Invoice Date</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://base_ontology.com#InvoiceNo">
+        <rdfs:label>Invoice No</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://base_ontology.com#Quantity">
+        <rdfs:label>Quantity</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://base_ontology.com#StockCode">
+        <rdfs:label>Stock Code</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://base_ontology.com#UnitPrice">
+        <rdfs:label>Unit Price</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

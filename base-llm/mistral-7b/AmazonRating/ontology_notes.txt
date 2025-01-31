@@ -1,5 +1,13 @@
 Incorrect use of shortnames and number of elements in the triplets. Example:
 
-:ProductId hasEntityNameValue rdf:id "ProductId" ;
-rdfs:domain :ProductId ;
-rdfs:range rdf:String .
+:class_entity :hasTimestamp rdf:id "hasTimestamp" ;
+rdfs:domain :class_entity ;
+rdfs:range :Time ;
+rdfs:subPropertyOf rdfs:propertyChain [ a rdfs:PropertyChain ;
+rdfs:property [ a rdf:Property ; rdfs:domain :class_entity ; rdfs:range :Time ] ] .
+
+
+Wrong URIs. Example:
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl/> .

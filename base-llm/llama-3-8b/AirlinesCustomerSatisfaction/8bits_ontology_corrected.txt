@@ -1,0 +1,102 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix base_ontology: <https://base_ontology.com#>.
+
+base_ontology:class_entity a owl:Class.
+
+base_ontology:entity_name a owl:ObjectProperty;
+    rdfs:domain base_ontology:class_entity;
+    rdfs:range xsd:string.
+
+base_ontology:has_age a owl:ObjectProperty;
+    rdfs:domain base_ontology:class_entity;
+    rdfs:range xsd:integer.
+
+base_ontology:has_arrival_delay a owl:ObjectProperty;
+    rdfs:domain base_ontology:class_entity;
+    rdfs:range xsd:integer.
+
+base_ontology:has_baggage_handling a owl:ObjectProperty;
+    rdfs:domain base_ontology:class_entity;
+    rdfs:range xsd:integer.
+
+base_ontology:has_checkin_service a owl:ObjectProperty;
+    rdfs:domain base_ontology:class_entity;
+    rdfs:range xsd:integer.
+
+base_ontology:has_cleanliness a owl:ObjectProperty;
+    rdfs:domain base_ontology:class_entity;
+    rdfs:range xsd:integer.
+
+base_ontology:has_departure_delay a owl:ObjectProperty;
+    rdfs:domain base_ontology:class_entity;
+    rdfs:range xsd:integer.
+
+base_ontology:has_departure_arrival_convenience a owl:ObjectProperty;
+    rdfs:domain base_ontology:class_entity;
+    rdfs:range xsd:integer.
+
+base_ontology:has_ease_of_online_booking a owl:ObjectProperty;
+    rdfs:domain base_ontology:class_entity;
+    rdfs:range xsd:integer.
+
+base_ontology:has_flight_distance a owl:ObjectProperty;
+    rdfs:domain base_ontology:class_entity;
+    rdfs:range xsd:integer.
+
+base_ontology:has_food_and_drink a owl:ObjectProperty;
+    rdfs:domain base_ontology:class_entity;
+    rdfs:range xsd:integer.
+
+base_ontology:has_gate_location a owl:ObjectProperty;
+    rdfs:domain base_ontology:class_entity;
+    rdfs:range xsd:integer.
+
+base_ontology:has_inflight_entertainment a owl:ObjectProperty;
+    rdfs:domain base_ontology:class_entity;
+    rdfs:range xsd:integer.
+
+base_ontology:has_inflight_wifi_service a owl:ObjectProperty;
+    rdfs:domain base_ontology:class_entity;
+    rdfs:range xsd:integer.
+
+base_ontology:has_leg_room_service a owl:ObjectProperty;
+    rdfs:domain base_ontology:class_entity;
+    rdfs:range xsd:integer.
+
+base_ontology:has_on_board_service a owl:ObjectProperty;
+    rdfs:domain base_ontology:class_entity;
+    rdfs:range xsd:integer.
+
+base_ontology:has_online_boarding a owl:ObjectProperty;
+    rdfs:domain base_ontology:class_entity;
+    rdfs:range xsd:integer.
+
+base_ontology:has_online_support a owl:ObjectProperty;
+    rdfs:domain base_ontology:class_entity;
+    rdfs:range xsd:integer.
+
+base_ontology:has_seat_comfort a owl:ObjectProperty;
+    rdfs:domain base_ontology:class_entity;
+    rdfs:range xsd:integer.
+
+base_ontology:has_class a owl:ObjectProperty;
+    rdfs:domain base_ontology:class_entity;
+    rdfs:range xsd:string.
+
+base_ontology:has_customer_type a owl:ObjectProperty;
+    rdfs:domain base_ontology:class_entity;
+    rdfs:range xsd:string.
+
+base_ontology:has_gender a owl:ObjectProperty;
+    rdfs:domain base_ontology:class_entity;
+    rdfs:range xsd:string.
+
+base_ontology:has_type_of_travel a owl:ObjectProperty;
+    rdfs:domain base_ontology:class_entity;
+    rdfs:range xsd:string.
+
+base_ontology:has_satisfaction a owl:ObjectProperty;
+    rdfs:domain base_ontology:class_entity;
+    rdfs:range xsd:string.

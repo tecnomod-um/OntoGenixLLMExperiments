@@ -1,0 +1,22 @@
+Incorrect serialization due to dots:
+- Missing end dots in the prefix declarations. Example:
+
+@prefix owl: <http://www.w3.org/2002/07/owl#>
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+@prefix base_ontology: <http://base_ontology.com#>
+
+- Use of "." instead of ";" in the declaration of entity-associated statements:
+
+<http://base_ontology.com#entity_name>
+    rdfs:subClassOf <http://base_ontology.com#class_entity> .
+    owl:oneOf (
+        <http://base_ontology.com#Country>
+        <http://base_ontology.com#Description>
+        <http://base_ontology.com#InvoiceDate>
+        <http://base_ontology.com#InvoiceNo>
+        <http://base_ontology.com#StockCode>
+        <http://base_ontology.com#CustomerID>
+        <http://base_ontology.com#Quantity>
+        <http://base_ontology.com#UnitPrice>
+    ).

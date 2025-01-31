@@ -1,0 +1,21 @@
+classDiagram
+  class ClassEntity {
+  }
+
+  class EntityName {
+  }
+
+  class class_entity {
+    +product_id xsd:string
+    +rating xsd:integer
+    +timestamp xsd:string
+    +uset_id xsd:string
+  }
+
+  class entity_name {
+  }
+
+  EntityName --> class_entity : subClassOf
+  ClassEntity --> entity_name : subClassOf
+
+  entity_name --> class_entity : subClassOf
