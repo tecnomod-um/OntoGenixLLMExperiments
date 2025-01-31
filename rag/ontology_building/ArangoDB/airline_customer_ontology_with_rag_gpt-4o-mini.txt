@@ -1,0 +1,158 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix base: <https://base_ontology.com#> .
+
+base:Passenger a owl:Class ;
+    rdfs:label "Passenger" .
+
+base:AdultPassenger a owl:Class ;
+    rdfs:subClassOf base:Passenger ;
+    rdfs:label "Adult Passenger" .
+
+base:ChildPassenger a owl:Class ;
+    rdfs:subClassOf base:Passenger ;
+    rdfs:label "Child Passenger" .
+
+base:EconomyClass a owl:Class ;
+    rdfs:subClassOf base:Passenger ;
+    rdfs:label "Economy Class" .
+
+base:BusinessClass a owl:Class ;
+    rdfs:subClassOf base:Passenger ;
+    rdfs:label "Business Class" .
+
+base:FirstClass a owl:Class ;
+    rdfs:subClassOf base:Passenger ;
+    rdfs:label "First Class" .
+
+base:FlightExperience a owl:Class ;
+    rdfs:label "Flight Experience" .
+
+base:DelayedFlightExperience a owl:Class ;
+    rdfs:subClassOf base:FlightExperience ;
+    rdfs:label "Delayed Flight Experience" .
+
+base:OnTimeFlightExperience a owl:Class ;
+    rdfs:subClassOf base:FlightExperience ;
+    rdfs:label "On-Time Flight Experience" .
+
+base:hasFlightExperience a owl:ObjectProperty ;
+    rdfs:label "has Flight Experience" ;
+    rdfs:domain base:Passenger ;
+    rdfs:range base:FlightExperience .
+
+base:belongsToClass a owl:ObjectProperty ;
+    rdfs:label "belongs to Class" ;
+    rdfs:domain base:Passenger ;
+    rdfs:range base:Passenger .
+
+base:hasAge a owl:DatatypeProperty ;
+    rdfs:label "has Age" ;
+    rdfs:domain base:Passenger ;
+    rdfs:range xsd:decimal .
+
+base:hasGender a owl:DatatypeProperty ;
+    rdfs:label "has Gender" ;
+    rdfs:domain base:Passenger ;
+    rdfs:range xsd:string .
+
+base:hasCustomerType a owl:DatatypeProperty ;
+    rdfs:label "has Customer Type" ;
+    rdfs:domain base:Passenger ;
+    rdfs:range xsd:string .
+
+base:hasTypeOfTravel a owl:DatatypeProperty ;
+    rdfs:label "has Type of Travel" ;
+    rdfs:domain base:Passenger ;
+    rdfs:range xsd:string .
+
+base:hasSatisfaction a owl:DatatypeProperty ;
+    rdfs:label "has Satisfaction" ;
+    rdfs:domain base:Passenger ;
+    rdfs:range xsd:string .
+
+base:hasArrivalDelay a owl:DatatypeProperty ;
+    rdfs:label "has Arrival Delay" ;
+    rdfs:domain base:FlightExperience ;
+    rdfs:range xsd:decimal .
+
+base:hasDepartureDelay a owl:DatatypeProperty ;
+    rdfs:label "has Departure Delay" ;
+    rdfs:domain base:FlightExperience ;
+    rdfs:range xsd:decimal .
+
+base:hasFlightDistance a owl:DatatypeProperty ;
+    rdfs:label "has Flight Distance" ;
+    rdfs:domain base:FlightExperience ;
+    rdfs:range xsd:decimal .
+
+base:hasBaggageHandling a owl:DatatypeProperty ;
+    rdfs:label "has Baggage Handling" ;
+    rdfs:domain base:FlightExperience ;
+    rdfs:range xsd:string .
+
+base:hasCheckinService a owl:DatatypeProperty ;
+    rdfs:label "has Check-in Service" ;
+    rdfs:domain base:FlightExperience ;
+    rdfs:range xsd:string .
+
+base:hasCleanliness a owl:DatatypeProperty ;
+    rdfs:label "has Cleanliness" ;
+    rdfs:domain base:FlightExperience ;
+    rdfs:range xsd:string .
+
+base:hasConvenience a owl:DatatypeProperty ;
+    rdfs:label "has Convenience" ;
+    rdfs:domain base:FlightExperience ;
+    rdfs:range xsd:string .
+
+base:hasEaseOfOnlineBooking a owl:DatatypeProperty ;
+    rdfs:label "has Ease of Online Booking" ;
+    rdfs:domain base:FlightExperience ;
+    rdfs:range xsd:string .
+
+base:hasFoodAndDrink a owl:DatatypeProperty ;
+    rdfs:label "has Food and Drink" ;
+    rdfs:domain base:FlightExperience ;
+    rdfs:range xsd:string .
+
+base:hasGateLocation a owl:DatatypeProperty ;
+    rdfs:label "has Gate Location" ;
+    rdfs:domain base:FlightExperience ;
+    rdfs:range xsd:string .
+
+base:hasInflightEntertainment a owl:DatatypeProperty ;
+    rdfs:label "has Inflight Entertainment" ;
+    rdfs:domain base:FlightExperience ;
+    rdfs:range xsd:string .
+
+base:hasInflightWifiService a owl:DatatypeProperty ;
+    rdfs:label "has Inflight Wifi Service" ;
+    rdfs:domain base:FlightExperience ;
+    rdfs:range xsd:string .
+
+base:hasLegRoomService a owl:DatatypeProperty ;
+    rdfs:label "has Leg Room Service" ;
+    rdfs:domain base:FlightExperience ;
+    rdfs:range xsd:string .
+
+base:hasOnBoardService a owl:DatatypeProperty ;
+    rdfs:label "has On-board Service" ;
+    rdfs:domain base:FlightExperience ;
+    rdfs:range xsd:string .
+
+base:hasOnlineBoarding a owl:DatatypeProperty ;
+    rdfs:label "has Online Boarding" ;
+    rdfs:domain base:FlightExperience ;
+    rdfs:range xsd:string .
+
+base:hasOnlineSupport a owl:DatatypeProperty ;
+    rdfs:label "has Online Support" ;
+    rdfs:domain base:FlightExperience ;
+    rdfs:range xsd:string .
+
+base:hasSeatComfort a owl:DatatypeProperty ;
+    rdfs:label "has Seat Comfort" ;
+    rdfs:domain base:FlightExperience ;
+    rdfs:range xsd:string .

@@ -1,0 +1,119 @@
+@prefix um: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+um:class_entity rdf:type owl:Class .
+
+um:Country rdf:type owl:Class ;
+    rdfs:subClassOf um:class_entity ;
+    rdfs:label "Country" .
+
+um:Description rdf:type owl:Class ;
+    rdfs:subClassOf um:class_entity ;
+    rdfs:label "Description" .
+
+um:InvoiceDate rdf:type owl:Class ;
+    rdfs:subClassOf um:class_entity ;
+    rdfs:label "Invoice Date" .
+
+um:InvoiceNo rdf:type owl:Class ;
+    rdfs:subClassOf um:class_entity ;
+    rdfs:label "Invoice No" .
+
+um:StockCode rdf:type owl:Class ;
+    rdfs:subClassOf um:class_entity ;
+    rdfs:label "Stock Code" .
+
+um:CustomerID rdf:type owl:Class ;
+    rdfs:subClassOf um:class_entity ;
+    rdfs:label "Customer ID" .
+
+um:Quantity rdf:type owl:Class ;
+    rdfs:subClassOf um:class_entity ;
+    rdfs:label "Quantity" .
+
+um:UnitPrice rdf:type owl:Class ;
+    rdfs:subClassOf um:class_entity ;
+    rdfs:label "Unit Price" .
+
+um:hasCountry rdf:type owl:ObjectProperty ;
+    rdfs:domain um:class_entity ;
+    rdfs:range um:Country ;
+    rdfs:label "has country" .
+
+um:hasDescription rdf:type owl:ObjectProperty ;
+    rdfs:domain um:class_entity ;
+    rdfs:range um:Description ;
+    rdfs:label "has description" .
+
+um:hasInvoiceDate rdf:type owl:ObjectProperty ;
+    rdfs:domain um:class_entity ;
+    rdfs:range um:InvoiceDate ;
+    rdfs:label "has invoice date" .
+
+um:hasInvoiceNo rdf:type owl:ObjectProperty ;
+    rdfs:domain um:class_entity ;
+    rdfs:range um:InvoiceNo ;
+    rdfs:label "has invoice number" .
+
+um:hasStockCode rdf:type owl:ObjectProperty ;
+    rdfs:domain um:class_entity ;
+    rdfs:range um:StockCode ;
+    rdfs:label "has stock code" .
+
+um:hasCustomerID rdf:type owl:ObjectProperty ;
+    rdfs:domain um:class_entity ;
+    rdfs:range um:CustomerID ;
+    rdfs:label "has customer ID" .
+
+um:hasQuantity rdf:type owl:ObjectProperty ;
+    rdfs:domain um:class_entity ;
+    rdfs:range um:Quantity ;
+    rdfs:label "has quantity" .
+
+um:hasUnitPrice rdf:type owl:ObjectProperty ;
+    rdfs:domain um:class_entity ;
+    rdfs:range um:UnitPrice ;
+    rdfs:label "has unit price" .
+
+um:countryName rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Country ;
+    rdfs:range xsd:string ;
+    rdfs:label "country name" .
+
+um:descriptionText rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Description ;
+    rdfs:range xsd:string ;
+    rdfs:label "description text" .
+
+um:invoiceDateValue rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:InvoiceDate ;
+    rdfs:range xsd:string ;
+    rdfs:label "invoice date value" .
+
+um:invoiceNumber rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:InvoiceNo ;
+    rdfs:range xsd:string ;
+    rdfs:label "invoice number" .
+
+um:stockCodeValue rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:StockCode ;
+    rdfs:range xsd:string ;
+    rdfs:label "stock code value" .
+
+um:customerIDValue rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:CustomerID ;
+    rdfs:range xsd:integer ;
+    rdfs:label "customer ID value" .
+
+um:quantityValue rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Quantity ;
+    rdfs:range xsd:integer ;
+    rdfs:label "quantity value" .
+
+um:unitPriceValue rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:UnitPrice ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "unit price value" .

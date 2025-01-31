@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://base_ontology.com#> .
+
+um:EcommerceOntology rdf:type owl:Ontology .
+
+### Classes ###
+
+um:Product rdf:type owl:Class ;
+    rdfs:label "Product" .
+
+um:User rdf:type owl:Class ;
+    rdfs:label "User" .
+
+um:RatingEntry rdf:type owl:Class ;
+    rdfs:label "Rating Entry" .
+
+### Object Properties ###
+
+um:ratedBy rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:User ;
+    rdfs:label "rated by" .
+
+um:hasRating rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:RatingEntry ;
+    rdfs:label "has rating" .
+
+um:submittedBy rdf:type owl:ObjectProperty ;
+    rdfs:domain um:RatingEntry ;
+    rdfs:range um:User ;
+    rdfs:label "submitted by" .
+
+um:rates rdf:type owl:ObjectProperty ;
+    rdfs:domain um:User ;
+    rdfs:range um:RatingEntry ;
+    rdfs:label "rates" .
+
+### Data Properties ###
+
+um:productId rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string ;
+    rdfs:label "product ID" .
+
+um:ratingValue rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:RatingEntry ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "rating value" .
+
+um:timestamp rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:RatingEntry ;
+    rdfs:range xsd:string ;
+    rdfs:label "timestamp" .
+
+um:userId rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:User ;
+    rdfs:range xsd:string ;
+    rdfs:label "user ID" .
