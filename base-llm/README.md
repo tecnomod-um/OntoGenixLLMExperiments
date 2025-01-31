@@ -85,3 +85,20 @@ Errors associated with incorrect serialization are usually common, being:
 - Dots: mistakes in the ending dots. This includes lack of dots and/or semicolons at the end of statements, or an inappropriate use ( dot instead of semicolon). 
 - Prefix: prefix used but not declarated.
 - Wrong URIs: incorrect or inexistent URIs when a certain vocabulary such as rdf, rdfs, owl or xsd is reused. Inappropriate uses of resources are also frequent.
+
+
+
+| LLM model         | AirlinesCustomerSatisfaction | AmazonRating | BigBasketProducts | BrazilianE-commerce | CustomerComplaint | eCommerce | Total |
+|-------------------|------------------------------|--------------|-------------------|---------------------|-------------------|-----------|-------|
+| Llama-2-7b        | -                            | -            | -                 | -                   | -                 | -         | 0     |
+| Llama-2-13b-4bits | X                            | -            | X                 | -                   | -                 | -         | 2     |
+| Llama-2-13b-8bits | -                            | X            | X                 | -                   | X                 | X         | 4     |
+| Llama-2-13b       | -                            | X            | X                 | X                   | X                 | X         | 5     |
+| Llama-2-70b       | X                            | -            | -                 | -                   | -                 | -         | 1     |
+| Llama-3-8b-4bits  | -                            | -            | X                 | X                   | -                 | X         | 3     |
+| Llama-3-8b-8bits  | X                            | X            | X                 | X                   | X                 | X         | 6     |
+| Llama-3-8b        | X                            | X            | X                 | -                   | X                 | -         | 4     |
+| Llama-3-70b       | X                            | X            | X                 | X                   | X                 | X         | 6     |
+| Mistral-7b        | X                            | -            | X                 | X                   | -                 | X         | 4     |
+| Mixtral           | X                            | X            | -                 | X                   | X                 | X         | 5     |
+| *Total*           | **7**                        | **6**        | **8**             | **6**               | **6**             | **7**     | **40**|
