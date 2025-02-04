@@ -1,4 +1,4 @@
-# Comparasion of external databases - Ontology building
+# Comparison of external databases - Ontology building
 ## The external databases
 1. **Arango.** Allows the semantic and structural similarity search, weighing 0.7 for semantic similarity and 0.3 for structural similarity.
 2. **Chroma.** Allows vector similarity search.
