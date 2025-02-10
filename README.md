@@ -1,5 +1,5 @@
-# Evaluation of Open Source LLMs for OntoGenix
-This repository describes and reports the results obtained by applying the OntoGenix pipeline with open source large language models (openLLMs).
+# Evaluation of LLMs for OntoGenix
+This repository describes and reports the results obtained by applying the OntoGenix pipeline with different large language models. The repository includes the experiments with base versions of open source LLMs and fine-tuned and RAG experiments with both open source and GPT models.
 
 ## openLLMs used
 * [Llama-2](https://huggingface.co/meta-llama/Llama-2-7b): 7B and 70B
