@@ -12,6 +12,8 @@ In RAG, the model is provided with files to use as a reference for the queries. 
 ### GPT-builder (GPT-4)
 Due to the limitations of the API regarding file upload formats, the RAG process will be tested using the GPT-builder tool instead. This tool, available on the OpenAI website, is currently powered by GPT-4 and supports the use of the Turtle format, which is necessary for uploading various ontology files. These ontology files will serve as references that the model will consult to accurately translate a given CSV file into an ontology.
 
+The ontologies obtained following this approach are stored in the directory [RAG_GPT_builder](./RAG_GPT_builder/).
+
 ### RAG through OpenAI API (GPT-4o)
 Using OpenAI's API, the RAG process is performed through an **assistant agent**. Assistants can call OpenAI’s models with specific instructions to tune their personality and capabilities and can also access multiple tools in parallel, like the File Search tool. The **File Search tool** augments the Assistant with knowledge from outside its model, such as proprietary product information or documents provided by your users.
 
@@ -44,8 +46,9 @@ Additionally, six datasets related to commercial activities (Airlines, Amazon, B
 * Each vector_store can hold up to **10,000 files**.
 * You can attach **at most one vector store** to an assistant.
 
+The ontologies obtained following this approach are stored in the directory [RAG_API](./RAG_API/).
 
-### Evaluation of the RAG models
+## Evaluation of the RAG models
 
 The capacity of the RAG models to create the ontologies are tested using **six datasets** related to commercial activities:
 
@@ -56,7 +59,6 @@ The capacity of the RAG models to create the ontologies are tested using **six d
 * Consumer
 * E-commerce
 
-
-### Findings
+## Findings
 * The ontologies obtained with the RAG process are more concise than the base model using the prompt, that is, the redundancy observed with the base model is solved.
 * The RAG process is the best or one of the best methods for the ontology-building process.
