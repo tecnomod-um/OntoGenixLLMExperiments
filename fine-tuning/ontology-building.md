@@ -17,7 +17,7 @@ The training dataset containing 40 pairs of CSV files and their corresponding on
 ## The fine-tuned models
 
 ### GPT models
-The **GPT-4-0613** and **GPT-4o-mini model** are trained using the training dataset to learn how to translate a CSV file into an ontology. 
+The **GPT-4o-mini model** is trained using the training dataset to learn how to translate a CSV file into an ontology. 
 
 First, the training and validation data are transformed into the JSONL format required by the OpenAI model to perform the fine-tuning task. This message format consists of three roles (a message is generated for each CSV file from the training and validation subset): 
 * **system**, to indicate the function the model will perform.
