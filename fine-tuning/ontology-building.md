@@ -17,7 +17,7 @@ The training dataset containing 40 pairs of CSV files and their corresponding on
 ## The fine-tuned models
 
 ### GPT models
-The **GPT-4o-mini model** is trained using the training dataset to learn how to translate a CSV file into an ontology. 
+The **GPT-3.5 model** and **GPT-4o-mini model** are trained using the training dataset to learn how to translate a CSV file into an ontology. 
 
 First, the training and validation data are transformed into the JSONL format required by the OpenAI model to perform the fine-tuning task. This message format consists of three roles (a message is generated for each CSV file from the training and validation subset): 
 * **system**, to indicate the function the model will perform.
@@ -31,7 +31,10 @@ Next, using the API provided by OpenAI, the training and validation data are upl
 
 Once the new fine-tuned model is created using the data of interest, the **learning curves** are analyzed. These learning curves are mathematical representations of the model's learning process during training, helping to assess whether the fine-tuned model is overfitted or underfitted. They provide insight into the model's performance over time, guiding further adjustments if necessary.
 
-The ontologies obtained with this model are located in the directory [GPT_ft](./GPT_ft/).
+The ontologies obtained with the fine-tuned GPT-4o-mini model are located in the directory [GPT_ft](./GPT_ft/4o-mini).
+
+The ontologies obtained with the fine-tuned GPT-3.5 model are located in the directory [GPT_ft](./GPT_ft/3_5).
+
 
 ### The open-source models 
 
