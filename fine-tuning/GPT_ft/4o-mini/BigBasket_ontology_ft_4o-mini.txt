@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:Food_Products rdf:type owl:Class ;
+    rdfs:label "Food Products" .
+
+um:Personal_Care_Products rdf:type owl:Class ;
+    rdfs:label "Personal Care Products" .
+
+um:Household_Products rdf:type owl:Class ;
+    rdfs:label "Household Products".
+
+um:Brand rdf:type owl:Class ;
+    rdfs:label "Brand" .
+
+um:Product_Name rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Food_Products ;
+    rdfs:range xsd:string ;
+    rdfs:label "Product Name" .
+
+um:Category rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Food_Products ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category" .
+
+um:SubCategory rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Food_Products ;
+    rdfs:range xsd:string ;
+    rdfs:label "SubCategory" .
+
+um:Price rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Food_Products ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Price" .
+
+um:Discount_Price rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Food_Products ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Discount Price" .
+
+um:Quantity rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Food_Products ;
+    rdfs:range xsd:string ;
+    rdfs:label "Quantity" .
+
+um:Image_Url rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Food_Products ;
+    rdfs:range xsd:anyURI ;
+    rdfs:label "Image URL" .
+
+um:Absolute_Url rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Food_Products ;
+    rdfs:range xsd:anyURI ;
+    rdfs:label "Absolute URL" .
+
+um:has_Brand rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Food_Products ;
+    rdfs:range um:Brand ;
+    rdfs:label "is from Brand" .
