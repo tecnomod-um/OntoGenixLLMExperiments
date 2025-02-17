@@ -31,7 +31,7 @@ In this case, the assistant used the **GPT-4o model** and the previous three men
 
 All the scripts used for these approach are included in the directory [scripts](data-ontology/scripts).
 
-### RAG performed through an external vector database
+### RAG performed through an external vector database - Whole ontologies
 In this process, the three ontologies of interest are divided into parts, which are then transformed into vector embeddings using the Hugging Face model "all-MiniLM-L6-v2." These embeddings are stored in an external vector database (Chroma DB).
 
 Subsequently, the user provides a query to the embedding model by uploading a CSV file. The model performs a similarity search for each column in the CSV, comparing the column names to the stored ontology parts. The goal is to identify and return a set of identifiers from the ontologies that best match the column names.
@@ -47,6 +47,17 @@ The set of identifiers is then provided as context to the GPT-4o-mini model by i
 </p>
 
 All the scripts used for these approach are included in the directory [scripts](data-ontology/scripts/RAG_external_VBD).
+
+### RAG performed through an external vector database - Reduced ontologies
+In this case, a SPARQL query is executed on the three ontologies of interest to retrieve only the label and IRI for each ontology term. Then, the reduced ontologies are divided into parts, which are then transformed into vector embeddings using the Hugging Face model "all-MiniLM-L6-v2." These embeddings are stored in an external vector database (Chroma DB).
+
+Subsequently, the user provides a query to the embedding model by uploading a CSV file. The model performs a similarity search for each column in the CSV, comparing the column names to the stored ontology parts. The goal is to identify and return a set of identifiers from the ontologies that best match the column names.
+
+<p align="center">
+ <img width="600" alt="image" src="./images/reduced_ontologies_RAG.png" />
+</p>
+
+The set of identifiers is then provided as context to the GPT-4o-mini model by including them in the prompt. This facilitates few-shot prompting, where examples are embedded in the prompt to guide the model toward better performance. These examples serve as conditioning, enabling the model to generate more accurate responses for subsequent queries. From the provided set of identifiers, the model's task is to select the most appropriate identifiers that correspond to the given column name.
 
 ## Evaluation of the RAG models
 To evaluate the performance of the RAG models in the task of matching data to ontologies, four CSV files have been used. We classified the model predictions as:
