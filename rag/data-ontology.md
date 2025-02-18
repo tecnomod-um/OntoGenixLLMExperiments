@@ -18,7 +18,9 @@ The ontologies are available in the directory [ontologies](data-ontology/ontolog
 ### GPT model without RAG
 In this case, the performance of the GPT model has been evaluated without employing the RAG. In this approach, the model is provided with a CSV file and its corresponding description as input to carry out the IRI (Internationalized Resource Identifier) search. However, the model relies solely on its pre-existing knowledge to perform this task, as it does not have access to any external data sources or retrieval mechanisms. This evaluation aims to understand the model's baseline capability for IRI search when operating independently, without leveraging additional context or external support.
 
-All the scripts used for these approach are included in the directory [scripts](data-ontology/scripts/without_RAG).
+All the scripts used for this approach are included in the directory [scripts](data-ontology/scripts/without_RAG).
+
+The annotation obtained with this approach can be found in the directory [results/without_RAG](data-ontology/results/without_RAG).
 
 ### RAG performed through OpenAI platform
 As in the other experiment, the RAG process is performed through an **assistant agent**. Assistants can call OpenAI’s models with specific instructions to tune their personality and capabilities and can also access multiple tools in parallel, like the File Search tool. The **File Search tool** augments the Assistant with knowledge from outside its model, such as proprietary product information or documents provided by your users.
@@ -29,7 +31,9 @@ In this case, the assistant used the **GPT-4o model** and the previous three men
 <img width="600" alt="image" src="./images/OpenAI_RAG.png" />
 </p>
 
-All the scripts used for these approach are included in the directory [scripts](data-ontology/scripts).
+All the scripts used for this approach are included in the directory [scripts](data-ontology/scripts).
+
+The annotation obtained with this approach can be found in the directory [results/RAG_OpenAI_platform](data-ontology/results/RAG_OpenAI_platform).
 
 ### RAG performed through an external vector database - Whole ontologies
 In this process, the three ontologies of interest are divided into parts, which are then transformed into vector embeddings using the Hugging Face model "all-MiniLM-L6-v2." These embeddings are stored in an external vector database (Chroma DB).
@@ -46,7 +50,10 @@ The set of identifiers is then provided as context to the GPT-4o-mini model by i
 <img width="600" alt="image" src="./images/external_RAG_2.png" />
 </p>
 
-All the scripts used for these approach are included in the directory [scripts](data-ontology/scripts/RAG_external_VBD).
+All the scripts used for this approach are included in the directory [scripts](data-ontology/scripts/RAG_external_VBD).
+
+
+The annotation obtained with this approach can be found in the directory [results/RAG_external_VDB](data-ontology/results/RAG_external_VDB).
 
 ### RAG performed through an external vector database - Reduced ontologies
 In this case, a SPARQL query is executed on the three ontologies of interest to retrieve only the label and IRI for each ontology term. Then, the reduced ontologies are divided into parts, which are then transformed into vector embeddings using the Hugging Face model "all-MiniLM-L6-v2." These embeddings are stored in an external vector database (Chroma DB).
@@ -58,6 +65,11 @@ Subsequently, the user provides a query to the embedding model by uploading a CS
 </p>
 
 The set of identifiers is then provided as context to the GPT-4o-mini model by including them in the prompt. This facilitates few-shot prompting, where examples are embedded in the prompt to guide the model toward better performance. These examples serve as conditioning, enabling the model to generate more accurate responses for subsequent queries. From the provided set of identifiers, the model's task is to select the most appropriate identifiers that correspond to the given column name.
+
+
+All the scripts used for this approach are included in the directory [scripts](data-ontology/scripts/RAG_external_VBD), including the [script](data-ontology/scripts/RAG_external_VBD/filter.py) to execute the SPARQL query.
+
+The annotation obtained with this approach can be found in the directory [results/RAG_external_VDB+reduced_ontologies](data-ontology/results/RAG_external_VDB+reduced_ontologies).
 
 ## Evaluation of the RAG models
 To evaluate the performance of the RAG models in the task of matching data to ontologies, four CSV files have been used. We classified the model predictions as:
@@ -262,13 +274,42 @@ In this case, only precision is calculated, as the specific ontologies included 
 
    </td>
   </tr>
-</table>
+</table
+
 
 * A precision of 0.986 indicates that when the model suggests an IRI for a column name, 98.6% of the suggestions are correct. This exceptionally high precision demonstrates that the model is highly effective at avoiding false positives, almost exclusively proposing correct IRIs.
 * A recall of 0.766 means the model correctly identifies 76.6% of the actual matching IRIs. This indicates improved performance in capturing true matches, though some false negatives still persist.
 * The F1-score of 0.848, being the harmonic mean of precision and recall, suggests a well-balanced performance that heavily benefits from the high precision while maintaining strong recall.
 * An accuracy of 0.838 indicates that 83.8% of all predictions (both identifying correct IRIs and rejecting incorrect ones) are correct. This is a strong indicator of overall performance, showing the model is reliable in the majority of cases.
+
+####  2 - Using 10 rows + CSV file description (+ column names) with reduced ontologies
+<table>
+  <tr>
+    <td>
+     
+| Metric     | Mean |
+|------------|-------|
+| Precision  | 1.000 |
+| Recall     | 0.870 |
+| F1-score   | 0.929 |
+| Accuracy   | 0.898 |
+
+   </td>
+   <td>
+
+| Metric               | Coefficient of Variation |
+|----------------------|--------------------------|
+| Precision            | 0.000                    |
+| Recall               | 16.615                   |
+| F1-score             | 9.165                    |
+| Accuracy             | 14.594                   |
+
+   </td>
+  </tr>
+</table>
+
 * The coefficient of variation of the precision is the lowest of all approaches.
+* When the model assigns an IRI, it does so correctly every time, resulting in zero false positives.
 
 ### Findings
 * The ragged model can assign an adequate IRI to a column name using the classes of the ontologies of interest.
