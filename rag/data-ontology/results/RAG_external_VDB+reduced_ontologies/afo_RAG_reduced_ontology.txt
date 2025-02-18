@@ -1,0 +1,12 @@
+```
+PrefLabel: IRI not available
+AltLabels: IRI not available
+Domain: IRI not available
+TermType: IRI not available
+Definition: http://purl.allotrope.org/ontologies/property#AFX_0002843
+ScopeNote: IRI not available
+Source: IRI not available
+Examples: IRI not available
+Parents: IRI not available
+TermIRI: IRI not available
+```
