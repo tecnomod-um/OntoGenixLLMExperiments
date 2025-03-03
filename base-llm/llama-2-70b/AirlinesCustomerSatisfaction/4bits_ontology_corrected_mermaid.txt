@@ -1,0 +1,25 @@
+classDiagram
+    class class_entity {
+        + Age xsd:integer
+        + Arrival_Delay_in_Minutes xsd:integer
+        + Cleanliness xsd:integer
+        + data_property_name xsd:string
+        + Departure_Delay_in_Minutes xsd:integer
+        + Ease_of_Online_booking xsd:integer
+        + Flight_Distance xsd:integer
+        + Food_and_drink xsd:integer
+        + Gate_location xsd:integer
+        + Inflight_entertainment xsd:integer
+        + Inflight_wifi_service xsd:integer
+        + Leg_room_service xsd:integer
+        + On-board_service xsd:integer
+    }
+    
+    class entity_name {
+    }
+    
+    
+    class_entity <-- entity_name : has_subclass
+    entity_name <-- class_entity : has_subclass
+    class_entity --> class_entity : object_property_name
+    

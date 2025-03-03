@@ -68,11 +68,12 @@
 -   Incorrect serialization (number of elements in the triples, shortnames and dots), and uncommented text:
     <br>
     Here is the proposed ontology for the given JSON data in TURTLE syntax:
-    <br>
+    ```
     class Country (owl:Class)
         rdf:type owl:Class.
         rdfs:subClassOf owl:Entity.
         owl:hasSelf rdf:type owl:Class.
+    ```
 
 -   Wrong URIs. Example: owl:Entity
 
@@ -113,7 +114,7 @@
 -   Incorrect serialization (number of elements in the triples, and dots), and uncommented text. Example:
     <br>
     Sure, here is the TURTLE syntax for the proposed ontology based on the provided JSON data and instructions:
-    <br>
+    ```
     class Country (owl:Class)
         rdf:type owl:Class.
         rdfs:label "Country";
@@ -128,6 +129,7 @@
             base_ontology:Country_3 "Belgium"
         );
         owl:inverseOf base_ontology:has_Country.
+    ```
    
 -   URIs used incorrectly. Example: owl:hasValue to link two classes (rdfs:domain owl:Restriction).
 
