@@ -2,69 +2,70 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix base: <http://base_ontology.com/> .
 
-<http://base_ontology.com/entity> a owl:Ontology .
+base:entity a owl:Ontology .
 
-<http://base_ontology.com/entity> owl:imports <http://www.w3.org/2002/07/owl#> .
+base:entity owl:imports <http://www.w3.org/2002/07/owl#> .
 
-<http://base_ontology.com/entity> owl:class <class_entity> .
+base:entity owl:Class base:class_entity .
 
-<class_entity> a owl:Class .
+base:class_entity a owl:Class .
 
-<class_entity> rdf:type owl:Class .
+base:class_entity rdf:type owl:Class .
 
-<class_entity> owl:subClassOf <class_entity_name> .
+base:class_entity rdfs:subClassOf base:class_entity_name .
 
-<class_entity_name> a owl:Class .
+base:class_entity_name a owl:Class .
 
-<class_entity_name> rdf:type owl:Class .
+base:class_entity_name rdf:type owl:Class .
 
-<class_entity_name> owl:hasSelf <class_entity> .
+base:class_entity_name owl:hasSelf base:class_entity .
 
-<class_entity> owl:property <object_property_name> .
+base:class_entity owl:Property base:object_property_name .
 
-<object_property_name> a owl:ObjectProperty .
+base:object_property_name a owl:ObjectProperty .
 
-<object_property_name> rdf:type owl:ObjectProperty .
+base:object_property_name rdf:type owl:ObjectProperty .
 
-<object_property_name> owl:domain <class_entity> .
+base:object_property_name rdfs:domain base:class_entity .
 
-<object_property_name> owl:range <Numerical> .
+base:object_property_name rdfs:range xsd:integer .
 
-<class_entity> owl:property <data_property_name> .
+base:class_entity owl:Property base:data_property_name .
 
-<data_property_name> a owl:DataProperty .
+base:data_property_name a owl:DatatypeProperty .
 
-<data_property_name> rdf:type owl:DataProperty .
+base:data_property_name rdf:type owl:DatatypeProperty .
 
-<data_property_name> owl:domain <class_entity> .
+base:data_property_name rdfs:domain base:class_entity .
 
-<data_property_name> owl:range <Text> .
+base:data_property_name rdfs:range xsd:string .
 
-<class_entity> owl:property <data_property_name> .
+base:class_entity owl:Property base:data_property_name .
 
-<data_property_name> owl:dataRange <FAIR_URI> .
+base:data_property_name owl:DataRange base:FAIR_URI .
 
-<FAIR_URI> a owl:URI .
+base:FAIR_URI a base:URI .
 
-<FAIR_URI> rdf:type owl:URI .
+base:FAIR_URI rdf:type base:URI .
 
-<FAIR_URI> owl:value <http://base_ontology.com/entity> .
+base:FAIR_URI rdf:value base:entity .
 
-<data_property_name> owl:dataRange <Image_Url> .
+base:data_property_name owl:DataRange base:Image_Url .
 
-<Image_Url> a owl:URI .
+base:Image_Url a base:URI .
 
-<Image_Url> rdf:type owl:URI .
+base:Image_Url rdf:type base:URI .
 
-<Image_Url> owl:value <http://base_ontology.com/entity> .
+base:Image_Url rdf:value base:entity .
 
-<class_entity> owl:property <data_property_name> .
+base:class_entity owl:Property base:data_property_name .
 
-<data_property_name> owl:dataRange <Quantity> .
+base:data_property_name owl:DataRange base:Quantity .
 
-<Quantity> a owl:Text .
+base:Quantity a base:Text .
 
-<Quantity> rdf:type owl:Text .
+base:Quantity rdf:type base:Text .
 
-<Quantity> owl:value <"1"> .
+base:Quantity rdf:value "1"^^xsd:integer .

@@ -21,16 +21,10 @@
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#Entity -->
-
-    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Entity"/>
-    
-
-
     <!-- https://base_ontology.com#Country -->
 
     <owl:Class rdf:about="https://base_ontology.com#Country">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Entity"/>
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Entity"/>
     </owl:Class>
     
 
@@ -38,7 +32,7 @@
     <!-- https://base_ontology.com#CustomerID -->
 
     <owl:Class rdf:about="https://base_ontology.com#CustomerID">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Entity"/>
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Entity"/>
     </owl:Class>
     
 
@@ -46,15 +40,21 @@
     <!-- https://base_ontology.com#Description -->
 
     <owl:Class rdf:about="https://base_ontology.com#Description">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Entity"/>
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Entity"/>
     </owl:Class>
+    
+
+
+    <!-- https://base_ontology.com#Entity -->
+
+    <owl:Class rdf:about="https://base_ontology.com#Entity"/>
     
 
 
     <!-- https://base_ontology.com#InvoiceDate -->
 
     <owl:Class rdf:about="https://base_ontology.com#InvoiceDate">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Entity"/>
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Entity"/>
     </owl:Class>
     
 
@@ -62,7 +62,7 @@
     <!-- https://base_ontology.com#InvoiceNo -->
 
     <owl:Class rdf:about="https://base_ontology.com#InvoiceNo">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Entity"/>
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Entity"/>
     </owl:Class>
     
 
@@ -70,7 +70,7 @@
     <!-- https://base_ontology.com#Quantity -->
 
     <owl:Class rdf:about="https://base_ontology.com#Quantity">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Entity"/>
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Entity"/>
     </owl:Class>
     
 
@@ -78,7 +78,7 @@
     <!-- https://base_ontology.com#StockCode -->
 
     <owl:Class rdf:about="https://base_ontology.com#StockCode">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Entity"/>
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Entity"/>
     </owl:Class>
     
 
@@ -86,7 +86,7 @@
     <!-- https://base_ontology.com#UnitPrice -->
 
     <owl:Class rdf:about="https://base_ontology.com#UnitPrice">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Entity"/>
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Entity"/>
     </owl:Class>
 </rdf:RDF>
 

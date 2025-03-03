@@ -17,3 +17,8 @@ Incorrect serialization (number of elements and ending loop), and uncommented te
 <http://Company> , 
 <http://Company> , 
 <http://Company> , 
+
+
+Statements duplicated. Example: 
+<http://example.com/CompanyPublicResponse> a owl:Class .
+<http://example.com/CompanyPublicResponse> rdf:type owl:Class .

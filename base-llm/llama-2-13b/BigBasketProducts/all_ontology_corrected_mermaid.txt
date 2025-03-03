@@ -1,0 +1,6 @@
+classDiagram
+    class class_entity {
+    }
+
+    class entity_name {
+    }

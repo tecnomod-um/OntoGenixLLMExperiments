@@ -1,0 +1,36 @@
+classDiagram
+    class Entity {
+    }
+    
+    class Country {
+    }
+    
+    class Description {
+    }
+    
+    class InvoiceDate {
+    }
+    
+    class InvoiceNo {
+    }
+    
+    class StockCode {
+    }
+    
+    class CustomerID {
+    }
+    
+    class Quantity {
+    }
+    
+    class UnitPrice {
+    }
+
+    Entity <-- Country : subClassOf
+    Entity <-- Description : subClassOf
+    Entity <-- InvoiceDate : subClassOf
+    Entity <-- InvoiceNo : subClassOf
+    Entity <-- StockCode : subClassOf
+    Entity <-- CustomerID : subClassOf
+    Entity <-- Quantity : subClassOf
+    Entity <-- UnitPrice : subClassOf

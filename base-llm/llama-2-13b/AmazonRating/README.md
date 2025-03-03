@@ -4,27 +4,30 @@
 
 [Generated ontology](./4bits_ontology.txt)
 
+
 ### Errors
 
-Incorrect format and serialization due to lack of shortnames, IDs and dots. Example:
-entity_name (subclassOf: class_entity)
-   domain: entity_name; range: owl:String
+-   Incorrect format and serialization due to lack of shortnames, IDs and dots. Example:<br>
+    ontology (class: class_entity) <br>
+        entity_name (domain: class_entity; range: owl:String)
 
 
 ## Llama-2-13B-8bits
 
 [Generated ontology](./8bits_ontology.txt)
+<br>
 [Corrected ontology](./8bits_ontology_corrected.txt)
+<br>
 ![](./8bits_ontology_corrected.png)
 
 ### Errors
 
--   Uncommented text at the begining and ending of the ontology:
+-   Uncommented text at the begining and ending of the ontology:<br>
 
-    Sure, here is the TURTLE syntax content for the proposed ontology, without any condensing or shortening, and with strict compliance to the instructions provided:
-    ...
-    Ontology
-    ...
+    Sure, here is the TURTLE syntax content for the proposed ontology, without any condensing or shortening, and with strict compliance to the instructions provided:<br>
+    ...<br>
+    Ontology<br>
+    ...<br>
     Note that I have not included any labels or comments or descriptions, as requested. Also, I have not added any instances to the ontology.
 
 -   Wrong URIs due to the use of inappropriate prefixes and IDs. Examples: rdf:domain and rdf:range instead of rdfs:domain and rdfs:range, and owl:DataProperty instead of owl:DatatypeProperty.
@@ -55,29 +58,30 @@ entity_name (subclassOf: class_entity)
 | xsd:integer        | X        | -                    |
 | *Total*            | **8**    | **3**                |
 
-owl:hasSelf used in an inappropriate way.
-
-Multiple Datatype Properties and Object Properties use the same URIs.
+-   owl:hasSelf used in an inappropriate way.
+-   Multiple Datatype Properties and Object Properties use the same URIs.
 
 
 ## Llama-2-13B without quantization
 
 [Generated ontology](./all_ontology.txt)
+<br>
 [Corrected ontology](./all_ontology_corrected.txt)
+<br>
 ![](./all_ontology_corrected.png)
 
 ### Errors
 
--   Incorrect serialization due to the number of elements in the triples, and uncommented text. Examples:
-     Sure, here is the thorough and exhaustive TURTLE syntax content for the proposed ontology, without condensing or shortening any part of it, ensuring strict compliance with the instructions provided:
-
+-   Incorrect serialization due to the number of elements in the triples. Examples:<br>
     <http://example.com/ontology/ProductReview/class_entity> owl:has_key owl:ObjectProperty <http://example.com/ontology/ProductReview/name> .
+
+-    Uncommented text: <br>
+     Sure, here is the thorough and exhaustive TURTLE syntax content for the proposed ontology, without condensing or shortening any part of it, ensuring strict compliance with the instructions provided:
 	
-	
--   Some triples make no sense:
+-   Some triples make no sense:<br>
     <http://example.com/ontology/ProductReview/entity_name> a owl:SubClassOf .
 
--   Wrong URIs. Example: owl:SubClassOf instead of rdfs:subClassOf
+-   Wrong URIs. Example: owl:SubClassOf instead of rdfs:subClassOf.
 
 
 ### URIs
@@ -99,6 +103,6 @@ Multiple Datatype Properties and Object Properties use the same URIs.
 | rdf:type (a)    | X        | -               |
 | *Total*         | **3**    | **3**           |
 
-owl:has_key (owl:hasKey) and owl:has_value (owl:hasValue) used in an inappropriate way.
-owl:SubClassOf (rdfs:subClassOf) used as node instead of such property.
+-   owl:has_key (owl:hasKey) and owl:has_value (owl:hasValue) used in an inappropriate way.
+-   owl:SubClassOf (rdfs:subClassOf) used as node instead of such property.
 

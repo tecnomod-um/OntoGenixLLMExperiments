@@ -1,7 +1,9 @@
-Incorrect format and serialization (number of elements, shortnames and dots). Example:
+Incorrect format and serialization (number of elements, shortnames, dots, and wrong URIs). Example:
 
 class class_entity {
  owl:ontologyProperty rdf:type owl:Class .
  owl:hasValue rdf:type owl:Class .
  owl:inverseOf rdf:type owl:Property .
  }
+ 
+ Example of wrong URI: owl:ontologyProperty instead of owl:OntologyProperty. Some URIs are also used incorrectly.

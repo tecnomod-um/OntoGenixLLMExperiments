@@ -1,0 +1,12 @@
+Incorrect format and serialization (number of elements, shortnames, dots). Example:
+
+data_property (entity_type) a owl:DataProperty .
+domain (http://baseontology.com/customer)
+range (Text)
+
+
+Uncommented text:
+Note that I have not included any labels or comments in the ontology, as per your instructions. Also, I have not added any instances to the ontology.
+
+
+And wrong URIs. Example: owl:DataProperty

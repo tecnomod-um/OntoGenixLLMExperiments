@@ -72,10 +72,10 @@ The following table shows the main errors made by LLM models in the generation o
 
 
 We talk about:
-- 'Incorrect format' when the model returns a serialization of RDF triples that does not correspond to the requested turtle. Instead, it returns another inappropriate format that cannot be converted, i.e., the result generates an output that does not pass the validation tests, and therefore cannot be converted to a different type of RDF serialization.
-- 'Incorrect serialization' when the model returns a turtle serialization, but contains syntax errors that hinder the validation of the ontology. The type of the error is included in brackets.
-- 'Uncommented text' when the model does not return only the requested ontology, but includes text messages that are not properly included as comments. This result also prevents the validation of the ontology.
-- 'Incorrect rdf/xml serialization' when the model returns an ontology with incorrect rdf/xml serialization instead of turtle.
+- 'Incorrect format' when the model returns a serialization of RDF triples that does not correspond to the requested turtle, or other alternative ontology serialization format. Instead, it returns another inappropriate format that cannot be converted, i.e., the result generates an output that does not pass the validation tests, and therefore cannot be converted to a different type of RDF serialization. These errors were not corrected in most cases due to the incomprehensible output or the relatively high effort required by the user, based on the size of the ontology.
+- 'Incorrect serialization' when the model returns a turtle serialization, but contains syntax errors that hinder the validation of the ontology. The type of the error is included in brackets. some of these errors can be corrected manually with relatively little effort, depending on the size of the ontology.
+- 'Uncommented text' when the model does not return only the requested ontology, but includes text messages that are not properly included as comments. This result also prevents the validation of the ontology. These errors can be corrected easily
+- 'Incorrect rdf/xml serialization' when the model returns an ontology with incorrect rdf/xml serialization instead of turtle. These errors were not corrected.
 
 Errors associated with incorrect serialization are usually common, being:
 - Incorrect number of elements in a triplet (2 or more than 3). When the triplet includes two elements it is because the model omits the property rdf:type (a). When the triplet has more than 3 elements, it is typically due to an inadequate concatenation of statements, inclusion of redundancies ( repeating the type of entity: Class, ObjectProperty, DatatypeProperty) or wrong syntax constraints/axioms.
@@ -86,12 +86,12 @@ Errors associated with incorrect serialization are usually common, being:
 - Prefix: prefix used but not declarated.
 - Wrong URIs: incorrect or inexistent URIs when a certain vocabulary such as rdf, rdfs, owl or xsd is reused. Inappropriate uses of resources are also frequent.
 
-
+Below we include a new table with those ontologies that could be developed after a human intervention. These were the ontologies with serialization, and format errors, where a human intervention for correction implies a lower effort than a de novo development.
 
 | LLM model         | AirlinesCustomerSatisfaction | AmazonRating | BigBasketProducts | BrazilianE-commerce | CustomerComplaint | eCommerce | Total |
 |-------------------|------------------------------|--------------|-------------------|---------------------|-------------------|-----------|-------|
 | Llama-2-7b        | -                            | -            | -                 | -                   | -                 | -         | 0     |
-| Llama-2-13b-4bits | X                            | -            | X                 | -                   | -                 | -         | 2     |
+| Llama-2-13b-4bits | X                            | -            | X                 | X                   | -                 | -         | 2     |
 | Llama-2-13b-8bits | -                            | X            | X                 | -                   | X                 | X         | 4     |
 | Llama-2-13b       | -                            | X            | X                 | X                   | X                 | X         | 5     |
 | Llama-2-70b       | X                            | -            | -                 | -                   | -                 | -         | 1     |

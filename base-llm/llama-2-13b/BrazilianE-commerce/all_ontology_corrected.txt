@@ -1,17 +1,18 @@
-@prefix : <https://base_ontology.com#> .
+@prefix : <https://base_ontology.com#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
 ### Classes
 
 :class_entity a owl:Class ;
-   rdfs:subClassOf owl:Object.
+   rdfs:subClassOf :Object.
 
 :entity_name a owl:Class ;
    rdfs:subClassOf :class_entity ;
    rdfs:domain owl:Thing ;
-   rdfs:range owl:String.
+   rdfs:range xsd:string.
 
 ### Object Properties
 
@@ -21,38 +22,38 @@
 
 :entity_name
    rdfs:domain :entity_name;
-   rdfs:range owl:String.
+   rdfs:range xsd:string.
 
 ### Data Type Properties
 
 :class_entity
    rdfs:domain :class_entity;
-   rdfs:range owl:String.
+   rdfs:range xsd:string.
 
 :entity_name
    rdfs:domain :entity_name;
-   rdfs:range owl:String.
+   rdfs:range xsd:string.
 
 ### Individuals
 
 :customer_city
-   a owl:Literal;
+   a rdfs:Literal;
    rdf:value "New York".
 
 :customer_id
-   a owl:Literal;
+   a rdfs:Literal;
    rdf:value "12345".
 
 :customer_state
-   a owl:Literal;
+   a rdfs:Literal;
    rdf:value "NY".
 
 :customer_unique_id
-   a owl:Literal;
+   a rdfs:Literal;
    rdf:value "67890".
 
 :customer_zip_code_prefix
-   a owl:Literal;
+   a rdfs:Literal;
    rdf:value "10001".
 
 ### Relationships

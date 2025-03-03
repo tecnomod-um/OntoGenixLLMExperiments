@@ -3,19 +3,21 @@
 ## Llama-2-13B-4bits
 
 [Generated ontology](./4bits_ontology.txt)
+<br>
 [Corrected ontology](./4bits_ontology_corrected.txt)
+<br>
 ![](./4bits_ontology_corrected.png)
 
 ### Errors
 
 Incorrect serialization: 
--   Incorrect format and number of elements in the triples. Example:
+-   Incorrect format and number of elements in the triples. Example:<br>
     <http://example.com/ontology/Passenger/Age> a owl:type rdf:HTTP_timestamp">
 
--   And loop in the last triple:
+-   And loop in the last triple:<br>
     <http://Cleaning> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a/pass/passing theprior/passing the_passing/passing_passing_passing",p"pt",p
 
--   Incorrect URIs. Some URIs do not exist, like rdf:HTTP_timestamp
+-   Incorrect URIs. Some URIs do not exist, like rdf:HTTP_timestamp.
 
 
 ### URIs
@@ -46,22 +48,25 @@ Incorrect serialization:
 ## Llama-2-13B-8bits
 
 [Generated ontology](./8bits_ontology.txt)
+<br>
 [Corrected ontology](./8bits_ontology_corrected.txt)
+<br>
 ![](./8bits_ontology_corrected.png)
+
 
 ### Errors
 
-Incorrect format and serialization:
--   Loop at the end of the ontology:
+Incorrect serialization:
+-   Loop at the end of the ontology:<br>
     <http/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight
 
--   Incorrect serialization due to the number of elements in the triples. Example:
+-   Incorrect serialization due to the number of elements in the triples. Example:<br>
     <http://example.com/ontology/Passenger> owl:class <http://example.com/ontology/Age> "120"^^xsd:integer" .
     <http://example.com/Flight> "10"^^xsd:integer" .
 
 -   Incorrect URIs. Used of owl:class instead of owl:Class, and used as property.
 
--   Uncommented text: 
+-   Uncommented text: <br>
     Here is the TURTLE syntax for the proposed ontology
 
 
@@ -84,8 +89,9 @@ Incorrect format and serialization:
 | xsd:integer   | X        | -           |
 | *Total*       | **5**    | **1**       |
 
-owl:class used as property
-owl:hasValue used in an inappropriate way
+-   owl:class used as property.
+<br>
+-   owl:hasValue used in an inappropriate way.
 
 
 ## Llama-2-13B

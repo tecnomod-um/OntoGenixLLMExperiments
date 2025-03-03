@@ -19,3 +19,4 @@ classDiagram
   ClassEntity --> entity_name : subClassOf
 
   entity_name --> class_entity : subClassOf
+  class_entity --> entity_name : subClassOf

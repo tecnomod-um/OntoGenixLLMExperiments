@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <https://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <http://baseontology.com/> .
+
+<http://baseontology.com/customer> a owl:Class .
+
+:entity_name a owl:ObjectProperty ;
+rdfs:range xsd:string .
+
+:entity_type a owl:DatatypeProperty ;
+rdfs:domain <http://baseontology.com/customer> ;
+rdfs:range xsd:string .
+
+:name a owl:ObjectProperty ;
+rdfs:range xsd:string .
+
+:name a owl:DatatypeProperty ;
+rdfs:domain <http://baseontology.com/entity_name> ;
+rdfs:range xsd:string .
+
+:class_entity a owl:Class .
+
+:entity_type a owl:ObjectProperty ;
+rdfs:range xsd:string .
+
+:entity_type a owl:DatatypeProperty ;
+rdfs:domain <http://baseontology.com/class_entity> ;
+rdfs:range xsd:string .
+
+<http://baseontology.com/customer_city> a owl:ObjectProperty ;
+rdfs:range xsd:string .
+
+:customer_city a owl:DatatypeProperty ;
+rdfs:domain <http://baseontology.com/customer> ;
+rdfs:range xsd:string .
+
+<http://baseontology.com/customer_id> a owl:ObjectProperty ;
+rdfs:range xsd:string .
+
+:customer_id a owl:DatatypeProperty ;
+rdfs:domain <http://baseontology.com/customer> ;
+rdfs:range xsd:string .
+
+<http://baseontology.com/customer_state> a owl:ObjectProperty ;
+rdfs:range xsd:string .
+
+:customer_state a owl:DatatypeProperty ;
+rdfs:domain <http://baseontology.com/customer> ;
+rdfs:range xsd:string .
+
+<http://baseontology.com/customer_unique_id> a owl:ObjectProperty ;
+rdfs:range xsd:string .
+
+:customer_unique_id a owl:DatatypeProperty ;
+rdfs:domain <http://baseontology.com/customer> ;
+rdfs:range xsd:string .
+
+<http://baseontology.com/customer_zip_code_prefix> a owl:ObjectProperty ;
+rdfs:range xsd:numeric .
+
+:customer_zip_code_prefix a owl:DatatypeProperty ;
+rdfs:domain <http://baseontology.com/customer> ;
+rdfs:range xsd:numeric .

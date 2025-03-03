@@ -1,0 +1,36 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix : <https://base_ontology.com#> .
+
+ owl:OntologyProperty rdf:type owl:Class .
+ owl:hasValue rdf:type owl:Class .
+ owl:inverseOf rdf:type rdf:Property .
+
+ :entity_name rdf:type :object_property_name ;
+   rdfs:domain :class_entity ;
+   rdfs:range :text .
+
+ :description rdf:type :object_property_name ;
+   rdfs:rdfs:domain :entity_name ;
+   rdfs:range :text .
+
+ :data_property_name rdf:type :customer_city ;
+   rdfs:domain :class_entity ;
+   rdfs:range :text .
+
+ :data_property_name rdf:type :customer_id ;
+   rdfs:domain :class_entity ;
+   rdfs:range :text .
+
+ :data_property_name rdf:type :customer_state ;
+   rdfs:domain :class_entity ;
+   rdfs:range :text .
+
+ :data_property_name rdf:type :customer_unique_id ;
+   rdfs:domain :class_entity ;
+   rdfs:range :text .
+
+ :data_property_name rdf:type :customer_zip_code_prefix ;
+   rdfs:domain :class_entity ;
+   rdfs:range :Numerical .

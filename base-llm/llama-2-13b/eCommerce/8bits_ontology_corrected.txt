@@ -5,40 +5,40 @@
 
 :Country
    rdf:type owl:Class;
-   rdfs:subClassOf owl:Entity;
+   rdfs:subClassOf :Entity;
    owl:hasSelf owl:Class.
 
 :Description
    rdf:type owl:Class;
-   rdfs:subClassOf owl:Entity;
+   rdfs:subClassOf :Entity;
    owl:hasSelf owl:Class.
 
 :InvoiceDate
    rdf:type owl:Class;
-   rdfs:subClassOf owl:Entity;
+   rdfs:subClassOf :Entity;
    owl:hasSelf owl:Class.
 
 :InvoiceNo
    rdf:type owl:Class;
-   rdfs:subClassOf owl:Entity;
+   rdfs:subClassOf :Entity;
    owl:hasSelf owl:Class.
 
 :StockCode
    rdf:type owl:Class;
-   rdfs:subClassOf owl:Entity;
+   rdfs:subClassOf :Entity;
    owl:hasSelf owl:Class.
 
 :CustomerID
    rdf:type owl:Class;
-   rdfs:subClassOf owl:Entity;
+   rdfs:subClassOf :Entity;
    owl:hasSelf owl:Class.
 
 :Quantity
    rdf:type owl:Class;
-   rdfs:subClassOf owl:Entity;
+   rdfs:subClassOf :Entity;
    owl:hasSelf owl:Class.
 
 :UnitPrice
    rdf:type owl:Class;
-   rdfs:subClassOf owl:Entity;
+   rdfs:subClassOf :Entity;
    owl:hasSelf owl:Class.

@@ -1,6 +1,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <http://baseontology.com/complaint> a owl:Ontology .
 
@@ -10,7 +11,7 @@
 
 <http://baseontology.com/foundational> owl:imports <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-<http://baseontology.com/complaint> owl:class <http://baseontology.com/Company> .
+<http://baseontology.com/complaint> owl:Class <http://baseontology.com/Company> .
 
 <http://baseontology.com/Company> a owl:Class .
 
@@ -18,78 +19,78 @@
 
 <http://baseontology.com/non_null_count> a owl:ObjectProperty .
 
-<http://baseontology.com/non_null_count> owl:domain <http://baseontology.com/Company> .
+<http://baseontology.com/non_null_count> rdfs:domain <http://baseontology.com/Company> .
 
-<http://baseontology.com/non_null_count> owl:range xsd:integer .
+<http://baseontology.com/non_null_count> rdfs:range xsd:integer .
 
 <http://baseontology.com/Company> owl:hasValue <http://baseontology.com/Company_public_response> .
 
 <http://baseontology.com/Company_public_response> a owl:ObjectProperty .
 
-<http://baseontology.com/Company_public_response> owl:domain <http://baseontology.com/Company> .
+<http://baseontology.com/Company_public_response> rdfs:domain <http://baseontology.com/Company> .
 
-<http://baseontology.com/Company_public_response> owl:range xsd:string .
+<http://baseontology.com/Company_public_response> rdfs:range xsd:string .
 
 <http://baseontology.com/Company> owl:hasValue <http://baseontology.com/Company_response_to_consumer> .
 
 <http://baseontology.com/Company_response_to_consumer> a owl:ObjectProperty .
 
-<http://baseontology.com/Company_response_to_consumer> owl:domain <http://baseontology.com/Company> .
+<http://baseontology.com/Company_response_to_consumer> rdfs:domain <http://baseontology.com/Company> .
 
-<http://baseontology.com/Company_response_to_consumer> owl:range xsd:string .
+<http://baseontology.com/Company_response_to_consumer> rdfs:range xsd:string .
 
 <http://baseontology.com/Company> owl:hasValue <http://baseontology.com/Consumer_complaint_narrative> .
 
 <http://baseontology.com/Consumer_complaint_narrative> a owl:ObjectProperty .
 
-<http://baseontology.com/Consumer_complaint_narrative> owl:domain <http://baseontology.com/Company> .
+<http://baseontology.com/Consumer_complaint_narrative> rdfs:domain <http://baseontology.com/Company> .
 
-<http://baseontology.com/Consumer_complaint_narrative> owl:range xsd:string .
+<http://baseontology.com/Consumer_complaint_narrative> rdfs:range xsd:string .
 
 <http://baseontology.com/Company> owl:hasValue <http://baseontology.com/Consumer_consent_provided> .
 
 <http://baseontology.com/Consumer_consent_provided> a owl:ObjectProperty .
 
-<http://baseontology.com/Consumer_consent_provided> owl:domain <http://baseontology.com/Company> .
+<http://baseontology.com/Consumer_consent_provided> rdfs:domain <http://baseontology.com/Company> .
 
-<http://baseontology.com/Consumer_consent_provided> owl:range xsd:boolean .
+<http://baseontology.com/Consumer_consent_provided> rdfs:range xsd:boolean .
 
 <http://baseontology.com/Company> owl:hasValue <http://baseontology.com/Consumer_disputed> .
 
 <http://baseontology.com/Consumer_disputed> a owl:ObjectProperty .
 
-<http://baseontology.com/Consumer_disputed> owl:domain <http://baseontology.com/Company> .
+<http://baseontology.com/Consumer_disputed> rdfs:domain <http://baseontology.com/Company> .
 
-<http://baseontology.com/Consumer_disputed> owl:range xsd:boolean .
+<http://baseontology.com/Consumer_disputed> rdfs:range xsd:boolean .
 
 <http://baseontology.com/Company> owl:hasValue <http://baseontology.com/Date_received> .
 
 <http://baseontology.com/Date_received> a owl:ObjectProperty .
 
-<http://baseontology.com/Date_received> owl:domain <http://baseontology.com/Company> .
+<http://baseontology.com/Date_received> rdfs:domain <http://baseontology.com/Company> .
 
-<http://baseontology.com/Date_received> owl:range xsd:date .
+<http://baseontology.com/Date_received> rdfs:range xsd:date .
 
 <http://baseontology.com/Company> owl:hasValue <http://baseontology.com/Date_sent_to_company> .
 
 <http://baseontology.com/Date_sent_to_company> a owl:ObjectProperty .
 
-<http://baseontology.com/Date_sent_to_company> owl:domain <http://baseontology.com/Company> .
+<http://baseontology.com/Date_sent_to_company> rdfs:domain <http://baseontology.com/Company> .
 
-<http://baseontology.com/Date_sent_to_company> owl:range xsd:date .
+<http://baseontology.com/Date_sent_to_company> rdfs:range xsd:date .
 
 <http://baseontology.com/Company> owl:hasValue <http://baseontology.com/Issue> .
 
 <http://baseontology.com/Issue> a owl:ObjectProperty .
 
-<http://baseontology.com/Issue> owl:domain <http://baseontology.com/Company> .
+<http://baseontology.com/Issue> rdfs:domain <http://baseontology.com/Company> .
 
-<http://baseontology.com/Issue> owl:range xsd:string .
+<http://baseontology.com/Issue> rdfs:range xsd:string .
 
 <http://baseontology.com/Company> owl:hasValue <http://baseontology.com/Product> .
 
 <http://baseontology.com/Product> a owl:ObjectProperty .
 
-<http://baseontology.com/Product> owl:domain <http://baseontology.com/Company> .
+<http://baseontology.com/Product> rdfs:domain <http://baseontology.com/Company> .
 
-<http://baseontology.com/Product> owl:range xsd:string .
+<http://baseontology.com/Product> rdfs:range xsd:string .

@@ -42,19 +42,37 @@
 
     <owl:ObjectProperty rdf:about="https://base_ontology.com#class_entity">
         <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#String"/>
         <rdfs:range rdf:resource="https://base_ontology.com#entity_name"/>
     </owl:ObjectProperty>
     
 
 
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#class_entity -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#class_entity">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://base_ontology.com#entity_name -->
 
-    <owl:ObjectProperty rdf:about="https://base_ontology.com#entity_name">
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#entity_name">
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:domain rdf:resource="https://base_ontology.com#entity_name"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#String"/>
-    </owl:ObjectProperty>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -69,28 +87,22 @@
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#Literal -->
+    <!-- http://www.w3.org/2000/01/rdf-schema#Literal -->
 
-    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Literal"/>
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#Object -->
+    <!-- https://base_ontology.com#Object -->
 
-    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Object"/>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#String -->
-
-    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#String"/>
+    <owl:Class rdf:about="https://base_ontology.com#Object"/>
     
 
 
     <!-- https://base_ontology.com#class_entity -->
 
     <owl:Class rdf:about="https://base_ontology.com#class_entity">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Object"/>
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Object"/>
     </owl:Class>
     
 
@@ -117,7 +129,7 @@
     <!-- https://base_ontology.com#customer_city -->
 
     <owl:NamedIndividual rdf:about="https://base_ontology.com#customer_city">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Literal"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdf:value>New York</rdf:value>
     </owl:NamedIndividual>
     
@@ -126,7 +138,7 @@
     <!-- https://base_ontology.com#customer_id -->
 
     <owl:NamedIndividual rdf:about="https://base_ontology.com#customer_id">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Literal"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdf:value>12345</rdf:value>
     </owl:NamedIndividual>
     
@@ -135,7 +147,7 @@
     <!-- https://base_ontology.com#customer_state -->
 
     <owl:NamedIndividual rdf:about="https://base_ontology.com#customer_state">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Literal"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdf:value>NY</rdf:value>
     </owl:NamedIndividual>
     
@@ -144,7 +156,7 @@
     <!-- https://base_ontology.com#customer_unique_id -->
 
     <owl:NamedIndividual rdf:about="https://base_ontology.com#customer_unique_id">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Literal"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdf:value>67890</rdf:value>
     </owl:NamedIndividual>
     
@@ -153,7 +165,7 @@
     <!-- https://base_ontology.com#customer_zip_code_prefix -->
 
     <owl:NamedIndividual rdf:about="https://base_ontology.com#customer_zip_code_prefix">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Literal"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdf:value>10001</rdf:value>
     </owl:NamedIndividual>
 </rdf:RDF>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+  <owl:Class rdf:about="http://example.com/ontology/class_entity">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:label>Invoice</rdfs:label>
+    <owl:oneOf>
+      <rdf:Description>
+        <rdf:first>Country</rdf:first>
+        <rdf:rest>
+          <rdf:Description>
+            <rdf:first>Description</rdf:first>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first>InvoiceDate</rdf:first>
+                <rdf:rest>
+                  <rdf:Description>
+                    <rdf:first>InvoiceNo</rdf:first>
+                    <rdf:rest>
+                      <rdf:Description>
+                        <rdf:first>StockCode</rdf:first>
+                        <rdf:rest>
+                          <rdf:Description>
+                            <rdf:first>CustomerID</rdf:first>
+                            <rdf:rest>
+                              <rdf:Description>
+                                <rdf:first>Quantity</rdf:first>
+                                <rdf:rest>
+                                  <rdf:Description>
+                                    <rdf:first>UnitPrice</rdf:first>
+                                    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                  </rdf:Description>
+                                </rdf:rest>
+
+                              </rdf:Description>
+                            </rdf:rest>
+
+                          </rdf:Description>
+                        </rdf:rest>
+
+                      </rdf:Description>
+                    </rdf:rest>
+
+                  </rdf:Description>
+                </rdf:rest>
+
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </rdf:rest>
+
+      </rdf:Description>
+    </owl:oneOf>
+
+    <rdfs:comment>An invoice is a document issued by a seller to a buyer for the sale and delivery of goods or services.</rdfs:comment>
+    <rdfs:domain>http://base_ontology.com/</rdfs:domain>
+    <rdfs:range>http://www.w3.org/1999/02/22-rdf-syntax-ns#, http://www.w3.org/2000/01/rdf-schema#, http://www.w3.org/2002/07/owl#</rdfs:range>
+    <owl:inverseOf>CustomerID</owl:inverseOf>
+    <owl:inverseOf>Quantity</owl:inverseOf>
+    <owl:inverseOf>InvoiceDate</owl:inverseOf>
+    <owl:inverseOf>InvoiceNo</owl:inverseOf>
+    <owl:inverseOf>StockCode</owl:inverseOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://example.com/ontology/Country">
+    <rdfs:subClassOf rdf:resource="http://example.com/ontology/class_entity"/>
+    <rdfs:label>Country</rdfs:label>
+    <owl:oneOf>
+      <rdf:Description>
+        <rdf:first>Australia</rdf:first>
+        <rdf:rest>
+          <rdf:Description>
+            <rdf:first>Canada</rdf:first>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first>China</rdf:first>
+                <rdf:rest>
+                  <rdf:Description>
+                    <rdf:first>France</rdf:first>
+                    <rdf:rest>
+                      <rdf:Description>
+                        <rdf:first>Germany</rdf:first>
+                        <rdf:rest>
+                          <rdf:Description>
+                            <rdf:first>India</rdf:first>
+                            <rdf:rest>
+                              <rdf:Description>
+                                <rdf:first>Italy</rdf:first>
+                                <rdf:rest>
+                                  <rdf:Description>
+                                    <rdf:first>Japan</rdf:first>
+                                    <rdf:rest>
+                                      <rdf:Description>
+                                        <rdf:first>Mexico</rdf:first>
+                                        <rdf:rest>
+                                          <rdf:Description>
+                                            <rdf:first>Spain</rdf:first>
+                                            <rdf:rest>
+                                              <rdf:Description>
+                                                <rdf:first>United Kingdom</rdf:first>
+                                                <rdf:rest>
+                                                  <rdf:Description>
+                                                    <rdf:first>United States</rdf:first>
+                                                    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                  </rdf:Description>
+                                                </rdf:rest>
+
+                                              </rdf:Description>
+                                            </rdf:rest>
+
+                                          </rdf:Description>
+                                        </rdf:rest>
+
+                                      </rdf:Description>
+                                    </rdf:rest>
+
+                                  </rdf:Description>
+                                </rdf:rest>
+
+                              </rdf:Description>
+                            </rdf:rest>
+
+                          </rdf:Description>
+                        </rdf:rest>
+
+                      </rdf:Description>
+                    </rdf:rest>
+
+                  </rdf:Description>
+                </rdf:rest>
+
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </rdf:rest>
+
+      </rdf:Description>
+    </owl:oneOf>
+
+    <rdfs:comment>A country is a political entity that is defined by a specific territory and government.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://base_ontology.com/"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://example.com/ontology/Description">
+    <rdfs:subClassOf rdf:resource="http://example.com/ontology/class_entity"/>
+    <rdfs:label>Description</rdfs:label>
+    <owl:oneOf>
+      <rdf:Description>
+        <rdf:first>A brief description of the invoice.</rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </rdf:Description>
+    </owl:oneOf>
+
+    <rdfs:comment>A brief description of the invoice.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://base_ontology.com/"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://example.com/ontology/InvoiceDate">
+    <rdfs:subClassOf rdf:resource="http://example.com/ontology/class_entity"/>
+    <rdfs:label>InvoiceDate</rdfs:label>
+    <owl:oneOf>
+      <rdf:Description>
+        <rdf:first>The date the invoice was issued.</rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </rdf:Description>
+    </owl:oneOf>
+
+    <rdfs:comment>The date the invoice was issued.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://base_ontology.com/"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://example.com/ontology/InvoiceNo">
+    <rdfs:subClassOf rdf:resource="http://example.com/ontology/class_entity"/>
+    <rdfs:label>InvoiceNo</rdfs:label>
+    <owl:oneOf>
+      <rdf:Description>
+        <rdf:first>The unique identifier for the invoice.</rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </rdf:Description>
+    </owl:oneOf>
+
+    <rdfs:comment>The unique identifier for the invoice.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://base_ontology.com/"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://example.com/ontology/StockCode">
+    <rdfs:subClassOf rdf:resource="http://example.com/ontology/class_entity"/>
+    <rdfs:label>StockCode</rdfs:label>
+    <owl:oneOf>
+      <rdf:Description>
+        <rdf:first>The code for the stock or item being invoiced.</rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </rdf:Description>
+    </owl:oneOf>
+
+    <rdfs:comment>The code for the stock or item being invoiced.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://base_ontology.com/"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://example.com/ontology/CustomerID">
+    <rdfs:subClassOf rdf:resource="http://example.com/ontology/class_entity"/>
+    <rdfs:label>CustomerID</rdfs:label>
+    <owl:oneOf>
+      <rdf:Description>
+        <rdf:first>The unique identifier for the customer.</rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </rdf:Description>
+    </owl:oneOf>
+
+    <rdfs:comment>The unique identifier for the customer.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://base_ontology.com/"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#, &lt;http://www.w3.org/2000/01/rdf-schema#"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://example.com/ontology/Quantity">
+    <rdfs:subClassOf rdf:resource="http://example.com/ontology/class_entity"/>
+    <rdfs:label>Quantity</rdfs:label>
+    <owl:oneOf>
+      <rdf:Description>
+        <rdf:first>The quantity of the item being invoiced.</rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </rdf:Description>
+    </owl:oneOf>
+
+    <rdfs:comment>The quantity of the item being invoiced.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://base_ontology.com/"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://example.com/ontology/UnitPrice">
+    <rdfs:subClassOf rdf:resource="http://example.com/ontology/class_entity"/>
+    <rdfs:label>UnitPrice</rdfs:label>
+    <owl:oneOf>
+      <rdf:Description>
+        <rdf:first>The unit price of the item being invoiced.</rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </rdf:Description>
+    </owl:oneOf>
+
+    <rdfs:comment>The unit price of the item being invoiced.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://base_ontology.com/"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#"/>
+  </owl:Class>
+
+</rdf:RDF>

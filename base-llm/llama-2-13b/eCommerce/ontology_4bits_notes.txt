@@ -1,6 +1,6 @@
-Incorrect format and serialization (number of elements in the triples, and dots). Example:
+Incorrect format and serialization (number of elements in the triples, dots, and incorrect representation of URIs with quotes). Example:
 
- class class_entity {
+class class_entity {
    owl:ontology owl:version "1.0" .
    rdfs:subClassOf rdf:Resource .
    rdfs:label "Invoice" ;
@@ -14,5 +14,6 @@ Incorrect format and serialization (number of elements in the triples, and dots)
 }
    
    
+Wrong URIs and incorrect use. Example:
 The use of owl:oneOf is not appropiate because limit the individuals.
 owl:inverseOf can only be applied to object properties, and cannot be used with more than one value.

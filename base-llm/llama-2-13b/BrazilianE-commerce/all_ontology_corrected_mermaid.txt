@@ -1,0 +1,23 @@
+classDiagram
+    class Thing {
+        +entity_name xsd:string
+    }
+
+    class class_entity {
+    }
+
+    class entity_name {
+        +entity_name xsd:string
+    }
+
+    class Object {
+    }
+
+    class Literal {
+    }
+
+    Object --> Thing : subClassOf
+    class_entity --> Object : subClassOf
+    entity_name --> class_entity : subClassOf
+    Literal --> Thing : subClassOf
+    class_entity --> entity_name : class_entity

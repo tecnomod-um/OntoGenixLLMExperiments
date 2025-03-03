@@ -1,0 +1,67 @@
+classDiagram
+    class Company {
+    }
+
+    class CompanyPublicResponse {
+    }
+
+    class CompanyResponseToConsumer {
+    }
+
+    class ConsumerComplaintNarrative {
+    }
+
+    class ConsumerConsentProvided {
+    }
+
+    class ConsumerDisputed {
+    }
+
+    class DateReceived {
+    }
+
+    class DateSentToCompany {
+    }
+
+    class Issue {
+    }
+
+    class Product {
+    }
+
+    class State {
+    }
+
+    class SubIssue {
+    }
+
+    class SubmittedVia {
+    }
+
+    class SubProduct {
+    }
+
+    class Tags {
+    }
+
+    class TimelyResponse {
+    }
+
+    class ZIPCode {
+    }
+
+    Company --> CompanyPublicResponse : hasValue
+    Company --> CompanyResponseToConsumer : hasValue
+    Company --> ConsumerComplaintNarrative : hasValue
+    Company --> ConsumerConsentProvided : hasValue
+    Company --> ConsumerDisputed : hasValue
+    Company --> DateReceived : hasValue
+    Company --> DateSentToCompany : hasValue
+
+    CompanyPublicResponse --> Company : hasValue
+    CompanyResponseToConsumer --> Company : hasValue
+    ConsumerComplaintNarrative --> Company : hasValue
+    ConsumerConsentProvided --> Company : hasValue
+    ConsumerDisputed --> Company : hasValue
+    DateReceived --> Company : hasValue
+    DateSentToCompany --> Company : hasValue
