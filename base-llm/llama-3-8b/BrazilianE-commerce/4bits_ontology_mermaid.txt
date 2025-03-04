@@ -1,0 +1,38 @@
+classDiagram
+    class Class_Entity {
+    }
+
+    class Entity_Name {
+        + has_non_null_count: xsd:decimal
+        + has_type: xsd:string
+        + has_unique_count: xsd:decimal
+        + has_count: xsd:decimal
+        + has_max: xsd:decimal
+        + has_mean: xsd:decimal
+        + has_min: xsd:decimal
+        + has_std: xsd:decimal
+    }
+
+    class Customer_City {
+    }
+
+    class Customer_ID {
+    }
+
+    class Customer_State {
+    }
+
+    class Customer_Unique_ID {
+    }
+
+    class Customer_Zip_Code_Prefix {
+    }
+
+    Class_Entity <|-- Entity_Name : subClassOf
+
+    Entity_Name --> Customer_City : has_city
+    Entity_Name --> Customer_ID : has_id
+    Entity_Name --> Customer_State : has_state
+    Entity_Name --> Customer_Unique_ID : has_unique_id
+    Entity_Name --> Customer_Zip_Code_Prefix : has_zip_code_prefix
+

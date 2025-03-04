@@ -1,0 +1,74 @@
+classDiagram
+    class class_entity {
+    }
+    
+    class Age {
+    }
+    class Arrival_Delay_in_Minutes {
+    }
+    class Baggage_handling {
+    }
+    class Checkin_service {
+    }
+    class Cleanliness {
+    }
+    class Departure_Delay_in_Minutes {
+    }
+    class Departure_Arrival_time_convenient {
+    }
+    class Ease_of_Online_booking {
+    }
+    class Flight_Distance {
+    }
+    class Food_and_drink {
+    }
+    class Gate_location {
+    }
+    class Inflight_entertainment {
+    }
+    class Inflight_wifi_service {
+    }
+    class Leg_room_service {
+    }
+    class On_board_service {
+    }
+    class Online_boarding {
+    }
+    class Online_support {
+    }
+    class Seat_comfort {
+    }
+    class Class {
+    }
+    class Customer_Type {
+    }
+    class Gender {
+    }
+    class Type_of_Travel {
+    }
+    class Satisfaction {
+    }
+    
+    class_entity <|-- Age : subClassOf 
+    class_entity <|-- Arrival_Delay_in_Minutes : subClassOf 
+    class_entity <|-- Baggage_handling : subClassOf 
+    class_entity <|-- Checkin_service : subClassOf 
+    class_entity <|-- Cleanliness : subClassOf 
+    class_entity <|-- Departure_Delay_in_Minutes : subClassOf 
+    class_entity <|-- Departure_Arrival_time_convenient : subClassOf 
+    class_entity <|-- Ease_of_Online_booking : subClassOf 
+    class_entity <|-- Flight_Distance : subClassOf 
+    class_entity <|-- Food_and_drink : subClassOf 
+    class_entity <|-- Gate_location : subClassOf 
+    class_entity <|-- Inflight_entertainment : subClassOf 
+    class_entity <|-- Inflight_wifi_service : subClassOf 
+    class_entity <|-- Leg_room_service : subClassOf 
+    class_entity <|-- On_board_service : subClassOf 
+    class_entity <|-- Online_boarding : subClassOf 
+    class_entity <|-- Online_support : subClassOf 
+    class_entity <|-- Seat_comfort : subClassOf 
+    class_entity <|-- Class : subClassOf 
+    class_entity <|-- Customer_Type : subClassOf 
+    class_entity <|-- Gender : subClassOf 
+    class_entity <|-- Type_of_Travel : subClassOf 
+    class_entity <|-- Satisfaction : subClassOf 

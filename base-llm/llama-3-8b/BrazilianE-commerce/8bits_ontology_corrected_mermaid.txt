@@ -1,0 +1,30 @@
+classDiagram
+    class Class_Entity {
+    }
+
+    class Entity_Name {
+        + Type: xsd:string
+    }
+
+    class Customer_City {
+    }
+
+    class Customer_Id {
+    }
+
+    class Customer_State {
+    }
+
+    class Customer_Unique_Id {
+    }
+
+    class Customer_Zip_Code_Prefix {
+    }
+
+    Class_Entity <|-- Entity_Name : subClassOf
+
+    Entity_Name --> Customer_City : Has_City
+    Entity_Name --> Customer_Id : Has_Id
+    Entity_Name --> Customer_State : Has_State
+    Entity_Name --> Customer_Unique_Id : Has_Unique_Id
+    Entity_Name --> Customer_Zip_Code_Prefix : Has_Zip_Code_Prefix

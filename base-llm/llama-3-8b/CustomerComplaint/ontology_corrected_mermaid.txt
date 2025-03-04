@@ -1,0 +1,22 @@
+classDiagram
+    class ex_class_entity {
+    }
+
+    class base_class_entity { 
+    }
+
+    class base_entity_name {
+        has_non_null_count : xsd:integer
+        has_type : xsd:string
+        has_unique_count : xsd:integer
+        has_count : xsd:integer
+        has_max : xsd:integer
+        has_mean : xsd:float
+        has_min : xsd:integer
+        has_std : xsd:float
+    }
+
+    class ex_entity_name {
+    }
+
+    ex_class_entity <|-- base_entity_name : subClassOf

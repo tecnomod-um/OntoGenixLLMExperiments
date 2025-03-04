@@ -1,0 +1,20 @@
+classDiagram
+    class class_Entity {
+    }
+
+    class entity_Product {
+    }
+
+    class entity_Rating {
+    }
+
+    class entity_User {
+    }
+
+    class entity_Timestamp {
+    }
+
+    class_Entity <|-- entity_Product : subClassOf
+    class_Entity <|-- entity_Rating : subClassOf
+    class_Entity <|-- entity_User : subClassOf
+    class_Entity <|-- entity_Timestamp : subClassOf

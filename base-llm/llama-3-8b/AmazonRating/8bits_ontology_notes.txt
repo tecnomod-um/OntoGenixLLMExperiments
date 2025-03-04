@@ -1,0 +1,1 @@
+Wrong URIs. Example: xsd:text

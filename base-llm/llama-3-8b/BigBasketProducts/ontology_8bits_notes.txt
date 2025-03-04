@@ -3,3 +3,6 @@ Incorrect serialization due to incorrect number of elements in the triples and m
 base_ontology:has_absolute_url owl:ObjectProperty
     owl:domain base_ontology:class_entity
     owl:range xsd:integer.
+
+
+Wrong URIs. Example: owl:subclassOf

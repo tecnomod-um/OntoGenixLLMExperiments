@@ -1,56 +1,57 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix base_ontology: <https://base_ontology.com#ontology.owl>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix base_ontology: <https://base_ontology.com#>.
 
-base_ontology:class_entity owl:subclassOf owl:Thing.
+base_ontology:class_entity rdfs:subClassOf owl:Thing.
 
-base_ontology:entity_name owl:subclassOf base_ontology:class_entity.
+base_ontology:entity_name rdfs:subClassOf base_ontology:class_entity.
 
 base_ontology:has_absolute_url a owl:ObjectProperty ;
-    owl:domain base_ontology:class_entity ;
-    owl:range xsd:integer.
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range xsd:integer.
 
 base_ontology:has_brand a owl:ObjectProperty ;
-    owl:domain base_ontology:class_entity ;
-    owl:range xsd:integer.
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range xsd:integer.
 
 base_ontology:has_category a owl:ObjectProperty ;
-    owl:domain base_ontology:class_entity ;
-    owl:range xsd:integer.
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range xsd:integer.
 
 base_ontology:has_discount_price a owl:ObjectProperty ;
-    owl:domain base_ontology:class_entity ;
-    owl:range xsd:integer.
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range xsd:integer.
 
 base_ontology:has_price a owl:ObjectProperty ;
-    owl:domain base_ontology:class_entity ;
-    owl:range xsd:integer.
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range xsd:integer.
 
 base_ontology:has_product_name a owl:ObjectProperty ;
-    owl:domain base_ontology:class_entity ;
-    owl:range xsd:integer.
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range xsd:integer.
 
 base_ontology:has_subcategory a owl:ObjectProperty ;
-    owl:domain base_ontology:class_entity ;
-    owl:range xsd:integer.
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range xsd:integer.
 
 base_ontology:has_fair_uri a owl:ObjectProperty ;
-    owl:domain base_ontology:class_entity ;
-    owl:range xsd:string.
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range xsd:string.
 
 base_ontology:has_image_url a owl:ObjectProperty ;
-    owl:domain base_ontology:class_entity ;
-    owl:range xsd:string.
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range xsd:string.
 
 base_ontology:has_quantity a owl:ObjectProperty ;
-    owl:domain base_ontology:class_entity ;
-    owl:range xsd:string.
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range xsd:string.
 
 base_ontology:has_data_type a owl:ObjectProperty ;
-    owl:domain base_ontology:class_entity ;
-    owl:range xsd:string.
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range xsd:string.
 
 base_ontology:has_data_type a owl:ObjectProperty ;
-    owl:domain base_ontology:class_entity ;
-    owl:range xsd:integer. 
+    rdfs:domain base_ontology:class_entity ;
+    rdfs:range xsd:integer. 

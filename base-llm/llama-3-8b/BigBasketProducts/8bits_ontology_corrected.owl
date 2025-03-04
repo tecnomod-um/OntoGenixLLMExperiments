@@ -6,7 +6,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:base_ontology="https://base_ontology.com#ontology.owl">
+     xmlns:base_ontology="https://base_ontology.com#">
     <Ontology/>
     
 
@@ -22,69 +22,218 @@
     
 
 
-    <!-- https://base_ontology.com#ontology.owlhas_absolute_url -->
+    <!-- https://base_ontology.com#has_absolute_url -->
 
-    <ObjectProperty rdf:about="https://base_ontology.com#ontology.owlhas_absolute_url"/>
+    <ObjectProperty rdf:about="https://base_ontology.com#has_absolute_url">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+    </ObjectProperty>
     
 
 
-    <!-- https://base_ontology.com#ontology.owlhas_brand -->
+    <!-- https://base_ontology.com#has_brand -->
 
-    <ObjectProperty rdf:about="https://base_ontology.com#ontology.owlhas_brand"/>
+    <ObjectProperty rdf:about="https://base_ontology.com#has_brand">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+    </ObjectProperty>
     
 
 
-    <!-- https://base_ontology.com#ontology.owlhas_category -->
+    <!-- https://base_ontology.com#has_category -->
 
-    <ObjectProperty rdf:about="https://base_ontology.com#ontology.owlhas_category"/>
+    <ObjectProperty rdf:about="https://base_ontology.com#has_category">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+    </ObjectProperty>
     
 
 
-    <!-- https://base_ontology.com#ontology.owlhas_data_type -->
+    <!-- https://base_ontology.com#has_data_type -->
 
-    <ObjectProperty rdf:about="https://base_ontology.com#ontology.owlhas_data_type"/>
+    <ObjectProperty rdf:about="https://base_ontology.com#has_data_type">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+    </ObjectProperty>
     
 
 
-    <!-- https://base_ontology.com#ontology.owlhas_discount_price -->
+    <!-- https://base_ontology.com#has_discount_price -->
 
-    <ObjectProperty rdf:about="https://base_ontology.com#ontology.owlhas_discount_price"/>
+    <ObjectProperty rdf:about="https://base_ontology.com#has_discount_price">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+    </ObjectProperty>
     
 
 
-    <!-- https://base_ontology.com#ontology.owlhas_fair_uri -->
+    <!-- https://base_ontology.com#has_fair_uri -->
 
-    <ObjectProperty rdf:about="https://base_ontology.com#ontology.owlhas_fair_uri"/>
+    <ObjectProperty rdf:about="https://base_ontology.com#has_fair_uri">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+    </ObjectProperty>
     
 
 
-    <!-- https://base_ontology.com#ontology.owlhas_image_url -->
+    <!-- https://base_ontology.com#has_image_url -->
 
-    <ObjectProperty rdf:about="https://base_ontology.com#ontology.owlhas_image_url"/>
+    <ObjectProperty rdf:about="https://base_ontology.com#has_image_url">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+    </ObjectProperty>
     
 
 
-    <!-- https://base_ontology.com#ontology.owlhas_price -->
+    <!-- https://base_ontology.com#has_price -->
 
-    <ObjectProperty rdf:about="https://base_ontology.com#ontology.owlhas_price"/>
+    <ObjectProperty rdf:about="https://base_ontology.com#has_price">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+    </ObjectProperty>
     
 
 
-    <!-- https://base_ontology.com#ontology.owlhas_product_name -->
+    <!-- https://base_ontology.com#has_product_name -->
 
-    <ObjectProperty rdf:about="https://base_ontology.com#ontology.owlhas_product_name"/>
+    <ObjectProperty rdf:about="https://base_ontology.com#has_product_name">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+    </ObjectProperty>
     
 
 
-    <!-- https://base_ontology.com#ontology.owlhas_quantity -->
+    <!-- https://base_ontology.com#has_quantity -->
 
-    <ObjectProperty rdf:about="https://base_ontology.com#ontology.owlhas_quantity"/>
+    <ObjectProperty rdf:about="https://base_ontology.com#has_quantity">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+    </ObjectProperty>
     
 
 
-    <!-- https://base_ontology.com#ontology.owlhas_subcategory -->
+    <!-- https://base_ontology.com#has_subcategory -->
 
-    <ObjectProperty rdf:about="https://base_ontology.com#ontology.owlhas_subcategory"/>
+    <ObjectProperty rdf:about="https://base_ontology.com#has_subcategory">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#has_absolute_url -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_absolute_url">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#has_brand -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_brand">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#has_category -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_category">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#has_data_type -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_data_type">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#has_discount_price -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_discount_price">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#has_fair_uri -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_fair_uri">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#has_image_url -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_image_url">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#has_price -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_price">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#has_product_name -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_product_name">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#has_quantity -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_quantity">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#has_subcategory -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_subcategory">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#class_entity -->
+
+    <Class rdf:about="https://base_ontology.com#class_entity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#entity_name -->
+
+    <Class rdf:about="https://base_ontology.com#entity_name">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#class_entity"/>
+    </Class>
 </rdf:RDF>
 
 

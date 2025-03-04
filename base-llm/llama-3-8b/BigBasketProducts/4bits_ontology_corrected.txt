@@ -14,128 +14,128 @@
 <https://base_ontology.com#class_entity>
   a owl:Class;
   rdfs:label "Class Entity";
-  owl:subClassOf <https://base_ontology.com#owl:Class>.
+  rdfs:subClassOf <https://base_ontology.com#owl:Class>.
 
 <https://base_ontology.com#entity_name>
   a owl:Class;
-  owl:subClassOf <https://base_ontology.com#class_entity>.
+  rdfs:subClassOf <https://base_ontology.com#class_entity>.
 
 <https://base_ontology.com#has_absolute_url_idx>
   a owl:ObjectProperty;
   rdfs:label "Has Absolute URL Index";
-  owl:domain <https://base_ontology.com#class_entity>;
-  owl:range xsd:float.
+  rdfs:domain <https://base_ontology.com#class_entity>;
+  rdfs:range xsd:float.
 
 <https://base_ontology.com#has_brand_idx>
   a owl:ObjectProperty;
   rdfs:label "Has Brand Index";
-  owl:domain <https://base_ontology.com#class_entity>;
-  owl:range xsd:float.
+  rdfs:domain <https://base_ontology.com#class_entity>;
+  rdfs:range xsd:float.
 
 <https://base_ontology.com#has_category_idx>
   a owl:ObjectProperty;
   rdfs:label "Has Category Index";
-  owl:domain <https://base_ontology.com#class_entity>;
-  owl:range xsd:float.
+  rdfs:domain <https://base_ontology.com#class_entity>;
+  rdfs:range xsd:float.
 
 <https://base_ontology.com#has_discount_price_idx>
   a owl:ObjectProperty;
   rdfs:label "Has Discount Price Index";
-  owl:domain <https://base_ontology.com#class_entity>;
-  owl:range xsd:float.
+  rdfs:domain <https://base_ontology.com#class_entity>;
+  rdfs:range xsd:float.
 
 <https://base_ontology.com#has_price_idx>
   a owl:ObjectProperty;
   rdfs:label "Has Price Index";
-  owl:domain <https://base_ontology.com#class_entity>;
-  owl:range xsd:float.
+  rdfs:domain <https://base_ontology.com#class_entity>;
+  rdfs:range xsd:float.
 
 <https://base_ontology.com#has_product_name_idx>
   a owl:ObjectProperty;
   rdfs:label "Has Product Name Index";
-  owl:domain <https://base_ontology.com#class_entity>;
-  owl:range xsd:float.
+  rdfs:domain <https://base_ontology.com#class_entity>;
+  rdfs:range xsd:float.
 
 <https://base_ontology.com#has_subcategory_idx>
   a owl:ObjectProperty;
   rdfs:label "Has Subcategory Index";
-  owl:domain <https://base_ontology.com#class_entity>;
-  owl:range xsd:float.
+  rdfs:domain <https://base_ontology.com#class_entity>;
+  rdfs:range xsd:float.
 
 <https://base_ontology.com#has_fair_uri>
   a owl:ObjectProperty;
   rdfs:label "Has FAIR URI";
-  owl:domain <https://base_ontology.com#class_entity>;
-  owl:range xsd:string.
+  rdfs:domain <https://base_ontology.com#class_entity>;
+  rdfs:range xsd:string.
 
 <https://base_ontology.com#has_image_url>
   a owl:ObjectProperty;
   rdfs:label "Has Image URL";
-  owl:domain <https://base_ontology.com#class_entity>;
-  owl:range xsd:string.
+  rdfs:domain <https://base_ontology.com#class_entity>;
+  rdfs:range xsd:string.
 
 <https://base_ontology.com#has_quantity>
   a owl:ObjectProperty;
   rdfs:label "Has Quantity";
-  owl:domain <https://base_ontology.com#class_entity>;
-  owl:range xsd:string.
+  rdfs:domain <https://base_ontology.com#class_entity>;
+  rdfs:range xsd:string.
 
 <https://base_ontology.com#has_absolute_url_idx_type>
   a owl:DatatypeProperty;
   rdfs:label "Has Absolute URL Index Type";
-  owl:domain <https://base_ontology.com#class_entity>;
-  owl:range xsd:string.
+  rdfs:domain <https://base_ontology.com#class_entity>;
+  rdfs:range xsd:string.
 
 <https://base_ontology.com#has_brand_idx_type>
   a owl:DatatypeProperty;
   rdfs:label "Has Brand Index Type";
-  owl:domain <https://base_ontology.com#class_entity>;
-  owl:range xsd:string.
+  rdfs:domain <https://base_ontology.com#class_entity>;
+  rdfs:range xsd:string.
 
 <https://base_ontology.com#has_category_idx_type>
   a owl:DatatypeProperty;
   rdfs:label "Has Category Index Type";
-  owl:domain <https://base_ontology.com#class_entity>;
-  owl:range xsd:string.
+  rdfs:domain <https://base_ontology.com#class_entity>;
+  rdfs:range xsd:string.
 
 <https://base_ontology.com#has_discount_price_idx_type>
   a owl:DatatypeProperty;
   rdfs:label "Has Discount Price Index Type";
-  owl:domain <https://base_ontology.com#class_entity>;
-  owl:range xsd:string.
+  rdfs:domain <https://base_ontology.com#class_entity>;
+  rdfs:range xsd:string.
 
 <https://base_ontology.com#has_price_idx_type>
   a owl:DatatypeProperty;
   rdfs:label "Has Price Index Type";
-  owl:domain <https://base_ontology.com#class_entity>;
-  owl:range xsd:string.
+  rdfs:domain <https://base_ontology.com#class_entity>;
+  rdfs:range xsd:string.
 
 <https://base_ontology.com#has_product_name_idx_type>
   a owl:DatatypeProperty;
   rdfs:label "Has Product Name Index Type";
-  owl:domain <https://base_ontology.com#class_entity>;
-  owl:range xsd:string.
+  rdfs:domain <https://base_ontology.com#class_entity>;
+  rdfs:range xsd:string.
 
 <https://base_ontology.com#has_subcategory_idx_type>
   a owl:DatatypeProperty;
   rdfs:label "Has Subcategory Index Type";
-  owl:domain <https://base_ontology.com#class_entity>;
-  owl:range xsd:string.
+  rdfs:domain <https://base_ontology.com#class_entity>;
+  rdfs:range xsd:string.
 
 <https://base_ontology.com#has_fair_uri_type>
   a owl:DatatypeProperty;
   rdfs:label "Has FAIR URI Type";
-  owl:domain <https://base_ontology.com#class_entity>;
-  owl:range xsd:string.
+  rdfs:domain <https://base_ontology.com#class_entity>;
+  rdfs:range xsd:string.
 
 <https://base_ontology.com#has_image_url_type>
   a owl:DatatypeProperty;
   rdfs:label "Has Image URL Type";
-  owl:domain <https://base_ontology.com#class_entity>;
-  owl:range xsd:string.
+  rdfs:domain <https://base_ontology.com#class_entity>;
+  rdfs:range xsd:string.
 
 <https://base_ontology.com#has_quantity_type>
   a owl:DatatypeProperty;
   rdfs:label "Has Quantity Type";
-  owl:domain <https://base_ontology.com#class_entity>;
-  owl:range xsd:string.
+  rdfs:domain <https://base_ontology.com#class_entity>;
+  rdfs:range xsd:string.

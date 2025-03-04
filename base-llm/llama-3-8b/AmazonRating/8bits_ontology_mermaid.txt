@@ -1,0 +1,28 @@
+classDiagram
+    class Class_Entity {
+    }
+    class Entity_Name {
+    }
+    class ProductId {
+    }
+    class Rating {
+    }
+    class Timestamp {
+    }
+    class UserId {
+    }
+    class categorical {
+    }
+    class text {
+    }
+    
+    Entity_Name --|> Class_Entity : subClassOf
+    
+    Class_Entity --> ProductId : has_ProductId
+    Class_Entity --> Rating : has_Rating
+    Class_Entity --> Timestamp : has_Timestamp
+    Class_Entity --> UserId : has_UserId
+    Class_Entity --> text : ProductId_Type
+    Class_Entity --> categorical : Rating_Type
+    Class_Entity --> text : Timestamp_Type
+    Class_Entity --> text : UserId_Type

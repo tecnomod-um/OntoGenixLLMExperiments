@@ -12,7 +12,7 @@ This repository describes and reports the results obtained by applying the OntoG
 
 ### Open source LLMs 
 
-* [Llama-2](https://huggingface.co/meta-llama/Llama-2-7b): 7B and 70B
+* [Llama-2](https://huggingface.co/meta-llama/Llama-2-7b): 7B, 13B, and 70B
 * [Llama-3](https://github.com/meta-llama/llama3): 8B and 70B
 * [Mixtral](https://huggingface.co/docs/transformers/en/model_doc/mixtral)
 * [Mistral](https://mistral.ai): 7B

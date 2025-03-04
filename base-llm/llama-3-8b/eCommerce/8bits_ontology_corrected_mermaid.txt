@@ -1,0 +1,24 @@
+classDiagram
+    class class_entity {
+    }
+
+    class entity_name
+
+    class Country
+    class Description
+    class InvoiceDate
+    class InvoiceNo
+    class StockCode
+    class CustomerID
+    class Quantity
+    class UnitPrice
+
+    class_entity <|-- entity_name : subClassOf
+    class_entity --> Country : has_country
+    class_entity --> Description : has_description
+    class_entity --> InvoiceDate : has_invoice_date
+    class_entity --> InvoiceNo : has_invoice_no
+    class_entity --> StockCode : has_stock_code
+    class_entity --> CustomerID : has_customer_id
+    class_entity --> Quantity : has_quantity
+    class_entity --> UnitPrice : has_unit_price

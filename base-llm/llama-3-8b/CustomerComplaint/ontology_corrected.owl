@@ -58,7 +58,6 @@
 
     <ObjectProperty rdf:about="https://base_ontology.com/has_consumer_consent">
         <rdfs:domain rdf:resource="http://www.example.org/ontology#entity_name"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Categorical"/>
     </ObjectProperty>
     
 
@@ -67,7 +66,6 @@
 
     <ObjectProperty rdf:about="https://base_ontology.com/has_consumer_dispute">
         <rdfs:domain rdf:resource="http://www.example.org/ontology#entity_name"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Categorical"/>
     </ObjectProperty>
     
 
@@ -108,7 +106,6 @@
 
     <ObjectProperty rdf:about="https://base_ontology.com/has_response_to_consumer">
         <rdfs:domain rdf:resource="http://www.example.org/ontology#entity_name"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Categorical"/>
     </ObjectProperty>
     
 
@@ -141,7 +138,6 @@
 
     <ObjectProperty rdf:about="https://base_ontology.com/has_submitted_via">
         <rdfs:domain rdf:resource="http://www.example.org/ontology#entity_name"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Categorical"/>
     </ObjectProperty>
     
 
@@ -150,7 +146,6 @@
 
     <ObjectProperty rdf:about="https://base_ontology.com/has_tags">
         <rdfs:domain rdf:resource="http://www.example.org/ontology#entity_name"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Categorical"/>
     </ObjectProperty>
     
 
@@ -159,7 +154,6 @@
 
     <ObjectProperty rdf:about="https://base_ontology.com/has_timely_response">
         <rdfs:domain rdf:resource="http://www.example.org/ontology#entity_name"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Categorical"/>
     </ObjectProperty>
     
 
@@ -211,6 +205,22 @@
 
     <DatatypeProperty rdf:about="https://base_ontology.com/has_consumer_complaint_narrative">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com/has_consumer_consent -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com/has_consumer_consent">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com/has_consumer_dispute -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com/has_consumer_dispute">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </DatatypeProperty>
     
 
@@ -292,6 +302,14 @@
     
 
 
+    <!-- https://base_ontology.com/has_response_to_consumer -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com/has_response_to_consumer">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </DatatypeProperty>
+    
+
+
     <!-- https://base_ontology.com/has_state -->
 
     <DatatypeProperty rdf:about="https://base_ontology.com/has_state">
@@ -321,6 +339,30 @@
 
     <DatatypeProperty rdf:about="https://base_ontology.com/has_sub_product">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com/has_submitted_via -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com/has_submitted_via">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com/has_tags -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com/has_tags">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com/has_timely_response -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com/has_timely_response">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </DatatypeProperty>
     
 
@@ -371,12 +413,6 @@
     <!-- http://www.example.org/ontology#entity_name -->
 
     <Class rdf:about="http://www.example.org/ontology#entity_name"/>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#Categorical -->
-
-    <Class rdf:about="http://www.w3.org/2002/07/owl#Categorical"/>
     
 
 

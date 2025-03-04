@@ -1,0 +1,8 @@
+classDiagram
+    class class_entity {
+    }
+
+    class entity_name {
+    }
+
+    class_entity <|-- entity_name : subClassOf

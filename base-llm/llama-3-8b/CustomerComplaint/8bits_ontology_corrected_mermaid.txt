@@ -1,0 +1,68 @@
+classDiagram
+    class class_entity {
+        + has_non_null_count : xsd:integer
+        + has_unique_count : xsd:integer
+        + has_count : xsd:integer
+        + has_max : xsd:integer
+        + has_mean : xsd:float
+        + has_min : xsd:integer
+        + has_std : xsd:float
+    }
+    class entity_name {
+    }
+    class Company {
+    }
+    class Company_public_response {
+    }
+    class Company_response_to_consumer {
+    }
+    class Consumer_complaint_narrative {
+    }
+    class Consumer_consent_provided {
+    }
+    class Consumer_disputed {
+    }
+    class Date_received {
+    }
+    class Date_sent_to_company {  
+    }
+    class Issue {  
+    }
+    class Product {  
+    }
+    class State {  
+    }
+    class Sub_issue {  
+    }
+    class Sub_product { 
+    }
+    class Submitted_via {
+    }
+    class Tags {  
+    }
+    class Timely_response { 
+    }
+    class ZIP_code {
+    }
+    class Complaint_ID {
+    }
+
+    class_entity <|-- entity_name : subClassOf
+    class_entity --> Company : has_company
+    class_entity --> Company_public_response : has_public_response
+    class_entity --> Company_response_to_consumer : has_consumer_response
+    class_entity --> Consumer_complaint_narrative : has_complaint_narrative
+    class_entity --> Consumer_consent_provided : has_consumer_consent
+    class_entity --> Consumer_disputed : has_consumer_disputed
+    class_entity --> Date_received : has_date_received
+    class_entity --> Date_sent_to_company : has_date_sent
+    class_entity --> Issue : has_issue
+    class_entity --> Product : has_product
+    class_entity --> State : has_state
+    class_entity --> Sub_issue : has_sub_issue
+    class_entity --> Sub_product : has_sub_product
+    class_entity --> Submitted_via : has_submitted_via
+    class_entity --> Tags : has_tags
+    class_entity --> Timely_response : has_timely_response
+    class_entity --> ZIP_code : has_zip_code
+    class_entity --> Complaint_ID : has_complaint_id
