@@ -1,0 +1,52 @@
+classDiagram
+    class Flight {
+        has_departure_delay : xsd:integer
+        has_arrival_delay : xsd:integer
+        has_flight_distance : xsd:integer
+        has_baggage_handling_rating : xsd:integer
+        has_checkin_service_rating : xsd:integer
+        has_cleanliness_rating : xsd:integer
+        has_departure_time_convenience : xsd:integer
+        has_ease_of_online_booking : xsd:integer
+        has_food_and_drink_rating : xsd:integer
+        has_gate_location_convenience : xsd:integer
+        has_inflight_entertainment_rating : xsd:integer
+        has_inflight_wifi_service_rating : xsd:integer
+        has_leg_room_service_rating : xsd:integer
+        has_on_board_service_rating : xsd:integer
+        has_online_boarding_rating : xsd:integer
+        has_online_support_rating : xsd:integer
+        has_seat_comfort_rating : xsd:integer
+    }
+    
+    class Passenger {
+        has_age : xsd:integer
+    }
+    
+    class Class
+    class Economy
+    class Business
+    class FirstClass
+    class Travel
+    class Leisure
+    class Business
+    class Satisfaction
+    class CustomerType
+    class Gender
+    class Male
+    class Female
+
+    Flight --> Passenger : has_passenger
+    Flight --> Class : has_class
+    Flight --> Travel : has_travel_type
+    Passenger --> Gender : has_gender
+    Passenger --> CustomerType : has_customer_type
+    Passenger --> Satisfaction : has_satisfaction
+
+    Class <|-- Economy : subClassOf
+    Class <|-- Business : subClassOf
+    Class <|-- FirstClass : subClassOf
+    Travel <|-- Leisure : subClassOf
+    Travel <|-- Business : subClassOf
+    Passenger <|-- Male : subClassOf
+    Passenger <|-- Female : subClassOf

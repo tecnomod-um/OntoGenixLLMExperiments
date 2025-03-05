@@ -1,0 +1,17 @@
+classDiagram
+    class Customer {
+        city : xsd:string
+        id : xsd:string
+        state : xsd:string
+        uniqueId : xsd:string
+        zipCodePrefix : xsd:integer
+    }
+    class City
+    class State
+    class UniqueId
+    class ZipCodePrefix
+
+    Customer --> City : hasCity
+    Customer --> State : hasState
+    Customer --> UniqueId : hasUniqueId
+    Customer --> ZipCodePrefix : hasZipCodePrefix

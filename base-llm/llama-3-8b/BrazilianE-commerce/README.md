@@ -9,7 +9,7 @@
 
 ### Errors
 
-Ontology without sintaxis errors.
+Ontology without syntax errors.
 
 ### URIs
 

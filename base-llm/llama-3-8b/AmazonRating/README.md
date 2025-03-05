@@ -28,7 +28,7 @@ Incorrect format and serialization (number of elements, dots). Example:
 
 ### Errors
 
-Ontology without sintaxis errors, but wrong URIs.
+Ontology without syntax errors, but wrong URIs.
 
 
 ### URIs

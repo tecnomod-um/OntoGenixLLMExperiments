@@ -1,47 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://myairlineontology.com/"
-     xml:base="https://myairlineontology.com/"
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:base="https://base_ontology.com#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.w3.org/1999/01/rdf-schema#domain -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/01/rdf-schema#domain"/>
-    
-
-
-    <!-- http://www.w3.org/1999/01/rdf-schema#label -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/01/rdf-schema#label"/>
-    
-
-
-    <!-- http://www.w3.org/1999/01/rdf-schema#range -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/01/rdf-schema#range"/>
-    
-
-
-    <!-- http://www.w3.org/1999/01/rdf-schema#subclass_of -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/01/rdf-schema#subclass_of"/>
+    <Ontology/>
     
 
 
@@ -56,243 +22,230 @@
     
 
 
-    <!-- https://myairlineontology.com/Age -->
+    <!-- https://base_ontology.com#has_class -->
 
-    <owl:ObjectProperty rdf:about="https://myairlineontology.com/Age">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The age of a passenger</rdf:label>
-        <rdf:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:ObjectProperty>
+    <ObjectProperty rdf:about="https://base_ontology.com#has_class">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Flight"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#Class"/>
+    </ObjectProperty>
     
 
 
-    <!-- https://myairlineontology.com/has_age -->
+    <!-- https://base_ontology.com#has_customer_type -->
 
-    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_age">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The age of an entity related to air travel</rdf:label>
-        <rdf:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:ObjectProperty>
+    <ObjectProperty rdf:about="https://base_ontology.com#has_customer_type">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Passenger"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#CustomerType"/>
+    </ObjectProperty>
     
 
 
-    <!-- https://myairlineontology.com/has_arrival_delay -->
+    <!-- https://base_ontology.com#has_gender -->
 
-    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_arrival_delay">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The delay in minutes of a flight upon arrival for an entity related to air travel</rdf:label>
-        <rdf:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:ObjectProperty>
+    <ObjectProperty rdf:about="https://base_ontology.com#has_gender">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Passenger"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#Gender"/>
+    </ObjectProperty>
     
 
 
-    <!-- https://myairlineontology.com/has_baggage_handling -->
+    <!-- https://base_ontology.com#has_passenger -->
 
-    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_baggage_handling">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The quality of baggage handling service for an entity related to air travel</rdf:label>
-        <rdf:range rdf:resource="https://myairlineontology.com#Baggage_handling"/>
-    </owl:ObjectProperty>
+    <ObjectProperty rdf:about="https://base_ontology.com#has_passenger">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Flight"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#Passenger"/>
+    </ObjectProperty>
     
 
 
-    <!-- https://myairlineontology.com/has_checkin_service -->
+    <!-- https://base_ontology.com#has_satisfaction -->
 
-    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_checkin_service">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The quality of checkin service for an entity related to air travel</rdf:label>
-        <rdf:range rdf:resource="https://myairlineontology.com#Checkin_service"/>
-    </owl:ObjectProperty>
+    <ObjectProperty rdf:about="https://base_ontology.com#has_satisfaction">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Passenger"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#Satisfaction"/>
+    </ObjectProperty>
     
 
 
-    <!-- https://myairlineontology.com/has_class -->
+    <!-- https://base_ontology.com#has_travel_type -->
 
-    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_class">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The class of the flight for an entity related to air travel</rdf:label>
-        <rdf:range rdf:resource="https://myairlineontology.com#Class"/>
-    </owl:ObjectProperty>
+    <ObjectProperty rdf:about="https://base_ontology.com#has_travel_type">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Flight"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#Travel"/>
+    </ObjectProperty>
     
 
 
-    <!-- https://myairlineontology.com/has_cleanliness -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_cleanliness">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The cleanliness of an entity related to air travel</rdf:label>
-        <rdf:range rdf:resource="https://myairlineontology.com#Cleanliness"/>
-    </owl:ObjectProperty>
     
 
 
-    <!-- https://myairlineontology.com/has_customer_type -->
+    <!-- https://base_ontology.com#has_age -->
 
-    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_customer_type">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The type of customer for an entity related to air travel</rdf:label>
-        <rdf:range rdf:resource="https://myairlineontology.com#Customer_Type"/>
-    </owl:ObjectProperty>
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_age">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Passenger"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
     
 
 
-    <!-- https://myairlineontology.com/has_departure_arrival_time_convenience -->
+    <!-- https://base_ontology.com#has_arrival_delay -->
 
-    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_departure_arrival_time_convenience">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>Whether the departure or arrival time is convenient for the passenger of an entity related to air travel</rdf:label>
-        <rdf:range rdf:resource="https://myairlineontology.com#Departure_arrival_time_convenience"/>
-    </owl:ObjectProperty>
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_arrival_delay">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Flight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
     
 
 
-    <!-- https://myairlineontology.com/has_departure_delay -->
+    <!-- https://base_ontology.com#has_baggage_handling_rating -->
 
-    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_departure_delay">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The delay in minutes of a flight upon departure for an entity related to air travel</rdf:label>
-        <rdf:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:ObjectProperty>
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_baggage_handling_rating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Flight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
     
 
 
-    <!-- https://myairlineontology.com/has_ease_of_online_booking -->
+    <!-- https://base_ontology.com#has_checkin_service_rating -->
 
-    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_ease_of_online_booking">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The ease of booking a flight online for an entity related to air travel</rdf:label>
-        <rdf:range rdf:resource="https://myairlineontology.com#Ease_of_online_booking"/>
-    </owl:ObjectProperty>
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_checkin_service_rating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Flight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
     
 
 
-    <!-- https://myairlineontology.com/has_flight_distance -->
+    <!-- https://base_ontology.com#has_cleanliness_rating -->
 
-    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_flight_distance">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The distance of a flight in miles for an entity related to air travel</rdf:label>
-        <rdf:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:ObjectProperty>
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_cleanliness_rating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Flight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
     
 
 
-    <!-- https://myairlineontology.com/has_food_and_drink -->
+    <!-- https://base_ontology.com#has_departure_delay -->
 
-    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_food_and_drink">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The quality of food and drink service for an entity related to air travel</rdf:label>
-        <rdf:range rdf:resource="https://myairlineontology.com#Food_and_drink"/>
-    </owl:ObjectProperty>
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_departure_delay">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Flight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
     
 
 
-    <!-- https://myairlineontology.com/has_gate_location -->
+    <!-- https://base_ontology.com#has_departure_time_convenience -->
 
-    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_gate_location">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The location of the gate for an entity related to air travel</rdf:label>
-        <rdf:range rdf:resource="https://myairlineontology.com#Gate_location"/>
-    </owl:ObjectProperty>
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_departure_time_convenience">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Flight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
     
 
 
-    <!-- https://myairlineontology.com/has_gender -->
+    <!-- https://base_ontology.com#has_ease_of_online_booking -->
 
-    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_gender">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The gender of the passenger for an entity related to air travel</rdf:label>
-        <rdf:range rdf:resource="https://myairlineontology.com#Gender"/>
-    </owl:ObjectProperty>
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_ease_of_online_booking">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Flight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
     
 
 
-    <!-- https://myairlineontology.com/has_inflight_entertainment -->
+    <!-- https://base_ontology.com#has_flight_distance -->
 
-    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_inflight_entertainment">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The quality of inflight entertainment for an entity related to air travel</rdf:label>
-        <rdf:range rdf:resource="https://myairlineontology.com#Inflight_entertainment"/>
-    </owl:ObjectProperty>
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_flight_distance">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Flight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
     
 
 
-    <!-- https://myairlineontology.com/has_inflight_wifi_service -->
+    <!-- https://base_ontology.com#has_food_and_drink_rating -->
 
-    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_inflight_wifi_service">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The quality of inflight wifi service for an entity related to air travel</rdf:label>
-        <rdf:range rdf:resource="https://myairlineontology.com#Inflight_wifi_service"/>
-    </owl:ObjectProperty>
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_food_and_drink_rating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Flight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
     
 
 
-    <!-- https://myairlineontology.com/has_leg_room_service -->
+    <!-- https://base_ontology.com#has_gate_location_convenience -->
 
-    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_leg_room_service">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The quality of leg room service for an entity related to air travel</rdf:label>
-        <rdf:range rdf:resource="https://myairlineontology.com#Leg_room_service"/>
-    </owl:ObjectProperty>
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_gate_location_convenience">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Flight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
     
 
 
-    <!-- https://myairlineontology.com/has_on_board_service -->
+    <!-- https://base_ontology.com#has_inflight_entertainment_rating -->
 
-    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_on_board_service">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The quality of on-board service for an entity related to air travel</rdf:label>
-        <rdf:range rdf:resource="https://myairlineontology.com#On_board_service"/>
-    </owl:ObjectProperty>
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_inflight_entertainment_rating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Flight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
     
 
 
-    <!-- https://myairlineontology.com/has_online_boarding -->
+    <!-- https://base_ontology.com#has_inflight_wifi_service_rating -->
 
-    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_online_boarding">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The availability of online boarding for an entity related to air travel</rdf:label>
-        <rdf:range rdf:resource="https://myairlineontology.com#Online_boarding"/>
-    </owl:ObjectProperty>
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_inflight_wifi_service_rating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Flight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
     
 
 
-    <!-- https://myairlineontology.com/has_online_support -->
+    <!-- https://base_ontology.com#has_leg_room_service_rating -->
 
-    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_online_support">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The quality of online support for an entity related to air travel</rdf:label>
-        <rdf:range rdf:resource="https://myairlineontology.com#Online_support"/>
-    </owl:ObjectProperty>
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_leg_room_service_rating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Flight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
     
 
 
-    <!-- https://myairlineontology.com/has_satisfaction -->
+    <!-- https://base_ontology.com#has_on_board_service_rating -->
 
-    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_satisfaction">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The level of passenger satisfaction for an entity related to air travel</rdf:label>
-        <rdf:range rdf:resource="https://myairlineontology.com#satisfaction"/>
-    </owl:ObjectProperty>
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_on_board_service_rating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Flight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
     
 
 
-    <!-- https://myairlineontology.com/has_seat_comfort -->
+    <!-- https://base_ontology.com#has_online_boarding_rating -->
 
-    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_seat_comfort">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The comfort of the aircraft seat for an entity related to air travel</rdf:label>
-        <rdf:range rdf:resource="https://myairlineontology.com#Seat_comfort"/>
-    </owl:ObjectProperty>
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_online_boarding_rating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Flight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
     
 
 
-    <!-- https://myairlineontology.com/has_type_of_travel -->
+    <!-- https://base_ontology.com#has_online_support_rating -->
 
-    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_type_of_travel">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The type of travel (business or leisure) for an entity related to air travel</rdf:label>
-        <rdf:range rdf:resource="https://myairlineontology.com#Type_of_Travel"/>
-    </owl:ObjectProperty>
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_online_support_rating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Flight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#has_seat_comfort_rating -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#has_seat_comfort_rating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Flight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
     
 
 
@@ -307,191 +260,119 @@
     
 
 
-    <!-- https://myairlineontology.com#class_entity -->
+    <!-- https://base_ontology.com# -->
 
-    <owl:Class rdf:about="https://myairlineontology.com#class_entity">
-        <rdf:label>An entity related to air travel</rdf:label>
-    </owl:Class>
+    <Class rdf:about="https://base_ontology.com#"/>
     
 
 
-    <!-- https://myairlineontology.com/Baggage_handling -->
+    <!-- https://base_ontology.com#Business -->
 
-    <owl:Class rdf:about="https://myairlineontology.com/Baggage_handling">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The quality of baggage handling service</rdf:label>
-    </owl:Class>
+    <Class rdf:about="https://base_ontology.com#Business">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Class"/>
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Travel"/>
+    </Class>
     
 
 
-    <!-- https://myairlineontology.com/Checkin_service -->
+    <!-- https://base_ontology.com#Class -->
 
-    <owl:Class rdf:about="https://myairlineontology.com/Checkin_service">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The quality of checkin service</rdf:label>
-    </owl:Class>
+    <Class rdf:about="https://base_ontology.com#Class"/>
     
 
 
-    <!-- https://myairlineontology.com/Class -->
+    <!-- https://base_ontology.com#CustomerType -->
 
-    <owl:Class rdf:about="https://myairlineontology.com/Class">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The class of the flight</rdf:label>
-    </owl:Class>
+    <Class rdf:about="https://base_ontology.com#CustomerType"/>
     
 
 
-    <!-- https://myairlineontology.com/Cleanliness -->
+    <!-- https://base_ontology.com#Economy -->
 
-    <owl:Class rdf:about="https://myairlineontology.com/Cleanliness">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The cleanliness of the aircraft or airport</rdf:label>
-    </owl:Class>
+    <Class rdf:about="https://base_ontology.com#Economy">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Class"/>
+    </Class>
     
 
 
-    <!-- https://myairlineontology.com/Customer_Type -->
+    <!-- https://base_ontology.com#Female -->
 
-    <owl:Class rdf:about="https://myairlineontology.com/Customer_Type">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The type of customer</rdf:label>
-    </owl:Class>
+    <Class rdf:about="https://base_ontology.com#Female">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Passenger"/>
+    </Class>
     
 
 
-    <!-- https://myairlineontology.com/Departure_arrival_time_convenience -->
+    <!-- https://base_ontology.com#FirstClass -->
 
-    <owl:Class rdf:about="https://myairlineontology.com/Departure_arrival_time_convenience">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>Whether the departure or arrival time is convenient for the passenger</rdf:label>
-    </owl:Class>
+    <Class rdf:about="https://base_ontology.com#FirstClass">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Class"/>
+    </Class>
     
 
 
-    <!-- https://myairlineontology.com/Ease_of_online_booking -->
+    <!-- https://base_ontology.com#Flight -->
 
-    <owl:Class rdf:about="https://myairlineontology.com/Ease_of_online_booking">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The ease of booking a flight online</rdf:label>
-    </owl:Class>
+    <Class rdf:about="https://base_ontology.com#Flight"/>
     
 
 
-    <!-- https://myairlineontology.com/Food_and_drink -->
+    <!-- https://base_ontology.com#Gender -->
 
-    <owl:Class rdf:about="https://myairlineontology.com/Food_and_drink">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The quality of food and drink service</rdf:label>
-    </owl:Class>
+    <Class rdf:about="https://base_ontology.com#Gender"/>
     
 
 
-    <!-- https://myairlineontology.com/Gate_location -->
+    <!-- https://base_ontology.com#Leisure -->
 
-    <owl:Class rdf:about="https://myairlineontology.com/Gate_location">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The location of the gate</rdf:label>
-    </owl:Class>
+    <Class rdf:about="https://base_ontology.com#Leisure">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Travel"/>
+    </Class>
     
 
 
-    <!-- https://myairlineontology.com/Gender -->
+    <!-- https://base_ontology.com#Male -->
 
-    <owl:Class rdf:about="https://myairlineontology.com/Gender">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The gender of the passenger</rdf:label>
-    </owl:Class>
+    <Class rdf:about="https://base_ontology.com#Male">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Passenger"/>
+    </Class>
     
 
 
-    <!-- https://myairlineontology.com/Inflight_entertainment -->
+    <!-- https://base_ontology.com#Passenger -->
 
-    <owl:Class rdf:about="https://myairlineontology.com/Inflight_entertainment">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The quality of inflight entertainment</rdf:label>
-    </owl:Class>
+    <Class rdf:about="https://base_ontology.com#Passenger"/>
     
 
 
-    <!-- https://myairlineontology.com/Inflight_wifi_service -->
+    <!-- https://base_ontology.com#Satisfaction -->
 
-    <owl:Class rdf:about="https://myairlineontology.com/Inflight_wifi_service">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The quality of inflight wifi service</rdf:label>
-    </owl:Class>
+    <Class rdf:about="https://base_ontology.com#Satisfaction"/>
     
 
 
-    <!-- https://myairlineontology.com/Leg_room_service -->
+    <!-- https://base_ontology.com#Travel -->
 
-    <owl:Class rdf:about="https://myairlineontology.com/Leg_room_service">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The quality of leg room service</rdf:label>
-    </owl:Class>
+    <Class rdf:about="https://base_ontology.com#Travel"/>
     
 
 
-    <!-- https://myairlineontology.com/On_board_service -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-    <owl:Class rdf:about="https://myairlineontology.com/On_board_service">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The quality of on-board service</rdf:label>
-    </owl:Class>
     
 
 
-    <!-- https://myairlineontology.com/Online_boarding -->
+    <!-- http://www.w3.org/2002/07/owl#Ontology -->
 
-    <owl:Class rdf:about="https://myairlineontology.com/Online_boarding">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The availability of online boarding</rdf:label>
-    </owl:Class>
-    
-
-
-    <!-- https://myairlineontology.com/Online_support -->
-
-    <owl:Class rdf:about="https://myairlineontology.com/Online_support">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The quality of online support</rdf:label>
-    </owl:Class>
-    
-
-
-    <!-- https://myairlineontology.com/Seat_comfort -->
-
-    <owl:Class rdf:about="https://myairlineontology.com/Seat_comfort">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The comfort of the aircraft seat</rdf:label>
-    </owl:Class>
-    
-
-
-    <!-- https://myairlineontology.com/Type_of_Travel -->
-
-    <owl:Class rdf:about="https://myairlineontology.com/Type_of_Travel">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The type of travel (business or leisure)</rdf:label>
-    </owl:Class>
-    
-
-
-    <!-- https://myairlineontology.com/entity_name -->
-
-    <owl:Class rdf:about="https://myairlineontology.com/entity_name">
-        <rdf:label>A specific type of entity related to air travel</rdf:label>
-        <rdf:subclass_of rdf:resource="https://myairlineontology.com#class_entity"/>
-    </owl:Class>
-    
-
-
-    <!-- https://myairlineontology.com/satisfaction -->
-
-    <owl:Class rdf:about="https://myairlineontology.com/satisfaction">
-        <rdf:domain rdf:resource="https://myairlineontology.com#entity_name"/>
-        <rdf:label>The level of passenger satisfaction</rdf:label>
-    </owl:Class>
+    <NamedIndividual rdf:about="http://www.w3.org/2002/07/owl#Ontology">
+        <rdf:type rdf:resource="https://base_ontology.com#"/>
+    </NamedIndividual>
 </rdf:RDF>
 
 

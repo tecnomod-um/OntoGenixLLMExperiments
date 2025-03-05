@@ -1,0 +1,39 @@
+classDiagram
+    class Product {
+        absoluteUrl : xsd:string
+    }
+    class Brand {
+        brandName : xsd:string
+    }
+    class Category {
+        categoryName : xsd:string
+    }
+    class Image {
+        imageUrl : xsd:string
+    }
+    class Quantity {
+        quantityValue : xsd:string
+    }
+    class Price {
+        originalPriceValue : xsd:decimal
+    }
+    class ProductName {
+        productName : xsd:string
+    }
+    class SubCategory {
+        subCategoryName : xsd:string
+    }
+    class DiscountPrice {
+        discountPriceValue : xsd:decimal
+    }
+
+    Category <|-- SubCategory : subClassOf
+    Product <|-- ProductName : subClassOf
+
+    Product --> Brand : hasBrand
+    Product --> Category : hasCategory
+    Product --> Image : hasImage
+    Product --> Quantity : hasQuantity
+    Product --> Price : hasPrice
+    ProductName --|> Product
+    Category --> SubCategory : hasSubCategory

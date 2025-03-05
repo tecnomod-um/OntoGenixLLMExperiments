@@ -1,0 +1,54 @@
+classDiagram
+    class Complaint {
+        +complaintID: integer
+        +dateReceived: date
+        +dateSent: date
+        +timelyResponse: boolean
+    }
+    class ConsumerComplaint {
+        +complaintNarrative: string
+    }
+    class Company {
+        +companyName: string
+    }
+    class Consumer {
+        +consumerConsent: boolean
+        +consumerDisputed: boolean
+    }
+    class Product {
+        +productDescription: string
+    }
+    class Issue {
+        +issueDescription: string
+    }
+    class State {
+        +stateName: string
+    }
+    class Submission {
+        +submissionMethod: string
+    }
+    class PublicResponse
+    class ProductIssue
+    class StateLocation {
+        +zipCode: string
+    }
+    class SubmissionMethod
+
+    Complaint --> Company : hasCompany
+    Complaint --> Consumer : hasConsumer
+    Complaint --> Product : hasProduct
+    Complaint --> Issue : hasIssue
+    Complaint --> State : hasState
+    Complaint --> Submission : hasSubmission
+    
+    Company --> PublicResponse : hasPublicResponse
+    Consumer --> ConsumerComplaint : hasConsumerComplaint
+    Product --> ProductIssue : hasProductIssue
+    State --> StateLocation : hasStateLocation
+    Submission --> SubmissionMethod : hasSubmissionMethod
+
+    ConsumerComplaint --|> Complaint : subClassOf
+    PublicResponse --|> Company : subClassOf
+    ProductIssue --|> Issue : subClassOf
+    StateLocation --|> State : subClassOf
+    SubmissionMethod --|> Submission : subClassOf

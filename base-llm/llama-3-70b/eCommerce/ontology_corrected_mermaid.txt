@@ -1,0 +1,28 @@
+classDiagram
+    class Invoice {
+        +invoiceDate: xsd:date
+        +invoiceNo: xsd:string
+    }
+
+    class Product {
+        +stockCode: xsd:string
+        +quantity: xsd:integer
+        +unitPrice: xsd:decimal
+    }
+
+    class Customer {
+        +customerID: xsd:integer
+    }
+
+    class SalesInvoice
+    class ServiceInvoice
+    class StockItem
+    class CustomerAccount
+
+    Invoice --> Customer : isRelatedTo
+    Product --> Invoice : isRelatedTo
+
+    SalesInvoice --|> Invoice : subClassOf
+    ServiceInvoice --|> Invoice : subClassOf
+    StockItem --|> Product : subClassOf
+    CustomerAccount --|> Customer : subClassOf
