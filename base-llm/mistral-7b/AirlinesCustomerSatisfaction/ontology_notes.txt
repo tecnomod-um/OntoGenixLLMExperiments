@@ -1,1 +1,3 @@
-Namespace prefix 'owl' used but not defined
+Namespace prefix 'owl' used but not defined.
+
+Use of https://myairlineontology.com# and https://myairlineontology.com/ 

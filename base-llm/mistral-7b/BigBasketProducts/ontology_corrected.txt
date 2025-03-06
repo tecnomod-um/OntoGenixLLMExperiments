@@ -36,13 +36,13 @@ base:SubCategory a rdf:Property ;
 rdfs:domain base:class_entity ;
 rdfs:range rdfs:Literal .
 
-base:DiscountPrice a rdfs:Property ;
+base:DiscountPrice a rdf:Property ;
 rdfs:domain base:class_entity ;
-rdfs:range rdfs:Real .
+rdfs:range :Real .
 
-base:Price a rdfs:Property ;
+base:Price a rdf:Property ;
 rdfs:domain base:class_entity ;
-rdfs:range rdfs:Real .
+rdfs:range :Real .
 
 base:class_entity rdfs:label "class_entity".
 
@@ -117,10 +117,10 @@ rdfs:label "has_subcategory" .
 
 base:has_discount_price a owl:DatatypeProperty ;
 rdfs:domain base:class_entity ;
-rdfs:range rdfs:Real ;
+rdfs:range :Real ;
 rdfs:label "has_discount_price" .
 
 base:has_price a owl:DatatypeProperty ;
 rdfs:domain base:class_entity ;
-rdfs:range rdfs:Real ;
+rdfs:range :Real ;
 rdfs:label "has_price" .

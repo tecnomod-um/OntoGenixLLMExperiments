@@ -1,4 +1,11 @@
 Incorrect IDs with spaces between words. Examples:
-
 :Company public response
 :Consumer complaint narrative
+
+Number of elements. Example:
+:Issue :type
+ a owl:DatatypeProperty ;
+ rdf:domain :Issue ;
+ rdf:range :Text .
+ 
+Wrong URIs. Example: rdf:subClassOf

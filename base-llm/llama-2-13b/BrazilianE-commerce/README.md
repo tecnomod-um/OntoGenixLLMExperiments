@@ -10,14 +10,16 @@
 
 ### Errors
 
--   Incorrect format and serialization (number of elements, shortnames and dots). Example: <br>
+-   Incorrect format and serialization (number of elements, shortnames and dots). Example:
+    ```
     class class_entity {
         owl:ontologyProperty rdf:type owl:Class .
         owl:hasValue rdf:type owl:Class .
         owl:inverseOf rdf:type owl:Property .
     }
+    ```
 
-- Wrong URIs. Example: owl:ontologyProperty instead of owl:OntologyProperty. Some URIs are also used incorrectly.
+-   Wrong URIs. Example: owl:ontologyProperty instead of owl:OntologyProperty. Some URIs are also used incorrectly.
 
 
 ### URIs
@@ -53,10 +55,12 @@
 
 ### Errors
 
--   Incorrect format and serialization (number of elements, shortnames, dots, URI format). Example: <br>
+-   Incorrect format and serialization (number of elements, shortnames, dots, URI format). Example:
+    ```
     data_property (entity_type) a owl:DataProperty .
         domain (http://baseontology.com/customer)
         range (Text)
+    ```
 
 -   Uncommented text: <br>
     Sure, here is the TURTLE syntax content for the proposed ontology based on the provided JSON data table and schema:
@@ -97,10 +101,12 @@
 ### Errors
 
 -   Incorrect serialization (number of elements, shortnames, dots): 
+    ```
     class entity_name
         subClassOf class_entity.
         domain owl:Thing.
         range owl:String.
+    ```
    
 -   Wrong URIs. Example: owl:String. Some classes and properties share the same URIs.
 

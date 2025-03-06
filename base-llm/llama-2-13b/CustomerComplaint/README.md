@@ -7,7 +7,8 @@
 
 ### Errors
 
--   Incorrect format and serialization (shortnames, dots). Example: <br>
+-   Incorrect format and serialization (shortnames, dots). Example:
+    ```
     class CompanyPublicResponse {
         owl:Class(CompanyPublicResponse)
         rdf:type owl:Class
@@ -16,6 +17,7 @@
             owl:NamedIndividual(CompanyPublicResponse)
         )
     }
+    ```
 
 -   Wrong URIs
 
@@ -34,10 +36,12 @@
 -   Uncommented text: <br>
     Here is the proposed ontology for the given JSON data in TURTLE syntax:
 
--   And loop at the end of the file: <br>
+-   And loop at the end of the file:
+    ```
     <http://baseontology.com/Company> owl:hasValue <http://baseontology.com/non_null_count": 35699984167, "type": "text": "3", "3": "3" ...
+    ```
 
--   Wrong URIs and used incorrectly.
+-   Wrong URIs and used incorrectly. Example: owl:domain
 
 
 ### URIs
@@ -81,13 +85,15 @@
 
 ### Errors
 
--   Incorrect serialization (number of elements and ending loop). Example: <br>
-    <http://example.com/Company> owl:type owl:Class> , <br>
+-   Incorrect serialization (number of elements and ending loop). Example: 
+    ```
+    <http://example.com/Company> owl:type owl:Class> ,
     ...
     <http://example.com/Company> owl:Class> , 
     <http://Company> owl:Class> , 
     <http://Company> , 
     ...
+    ```
     
 -   Uncommented text. Example: <br>
     Here is the TURTLE syntax for the proposed ontology:
@@ -95,8 +101,10 @@
 -   Wrong URIs and incorrect use. Example: owl:has_value instead of owl:hasValue.
 
 -   Statements duplicated. Example: <br>
+    ```
     <http://example.com/CompanyPublicResponse> a owl:Class .
     <http://example.com/CompanyPublicResponse> rdf:type owl:Class .
+    ```
 
 
 ### URIs

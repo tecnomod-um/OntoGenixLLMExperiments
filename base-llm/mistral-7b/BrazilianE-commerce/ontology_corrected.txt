@@ -28,28 +28,28 @@
 
 :customer_unique_id a :TextDomain .
 :customer_unique_id rdfs:label "TextDomainRepresentingTheUniqueIdentifierOfAnEntity" .
-:customer_unique_id_value a owl:DataProperty .
+:customer_unique_id_value a owl:DatatypeProperty .
 :customer_unique_id_value rdfs:domain :class_entity .
 :customer_unique_id_value rdfs:range xsd:string .
 
 :customer_zip_code_prefix a :NumericalDomain .
 :customer_zip_code_prefix rdfs:label "NumericalDomainRepresentingThePrefixOfACustomerZipCode" .
-:customer_zip_code_prefix_value a owl:DataProperty .
+:customer_zip_code_prefix_value a owl:DatatypeProperty .
 :customer_zip_code_prefix_value rdfs:domain :class_entity .
 :customer_zip_code_prefix_value rdfs:range xsd:int .
 
-:customer_city_name a owl:DataProperty .
+:customer_city_name a owl:DatatypeProperty .
 :customer_city_name rdfs:domain :class_entity .
 :customer_city_name rdfs:range :customer_city .
 
-:customer_id_value a owl:DataProperty .
+:customer_id_value a owl:DatatypeProperty .
 :customer_id_value rdfs:domain :class_entity .
 :customer_id_value rdfs:range xsd:string .
 
-:customer_state_name a owl:DataProperty .
+:customer_state_name a owl:DatatypeProperty .
 :customer_state_name rdfs:domain :class_entity .
 :customer_state_name rdfs:range :customer_state .
 
-:customer_zip_code_prefix_value a owl:DataProperty .
+:customer_zip_code_prefix_value a owl:DatatypeProperty .
 :customer_zip_code_prefix_value rdfs:domain :class_entity .
 :customer_zip_code_prefix_value rdfs:range :customer_zip_code_prefix .

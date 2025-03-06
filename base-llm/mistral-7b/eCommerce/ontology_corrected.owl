@@ -22,15 +22,19 @@
     
 
 
-    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#label -->
+    <!-- http://www.w3.org/2000/01/rdf-schema#range -->
 
-    <AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#label"/>
+    <AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#range"/>
     
 
 
-    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#typedBy -->
+    <!-- https://base_ontology.com/hasName -->
 
-    <AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#typedBy"/>
+    <AnnotationProperty rdf:about="https://base_ontology.com/hasName">
+        <rdfs:label>hasName</rdfs:label>
+        <rdfs:range>http://www.w3.org/2001/XMLSchema#string</rdfs:range>
+        <rdfs:domain rdf:resource="https://base_ontology.com/entity_name"/>
+    </AnnotationProperty>
     
 
 
@@ -50,7 +54,7 @@
     <ObjectProperty rdf:about="https://base_ontology.com/hasCountry">
         <rdfs:domain rdf:resource="https://base_ontology.com/class_entity"/>
         <rdfs:range rdf:resource="https://base_ontology.com/Country"/>
-        <rdf:label>hasCountry</rdf:label>
+        <rdfs:label>hasCountry</rdfs:label>
     </ObjectProperty>
     
 
@@ -60,7 +64,7 @@
     <ObjectProperty rdf:about="https://base_ontology.com/hasCustomerID">
         <rdfs:domain rdf:resource="https://base_ontology.com/class_entity"/>
         <rdfs:range rdf:resource="https://base_ontology.com/CustomerID"/>
-        <rdf:label>hasCustomerID</rdf:label>
+        <rdfs:label>hasCustomerID</rdfs:label>
     </ObjectProperty>
     
 
@@ -70,7 +74,7 @@
     <ObjectProperty rdf:about="https://base_ontology.com/hasDescription">
         <rdfs:domain rdf:resource="https://base_ontology.com/class_entity"/>
         <rdfs:range rdf:resource="https://base_ontology.com/Description"/>
-        <rdf:label>hasDescription</rdf:label>
+        <rdfs:label>hasDescription</rdfs:label>
     </ObjectProperty>
     
 
@@ -80,7 +84,7 @@
     <ObjectProperty rdf:about="https://base_ontology.com/hasInvoiceDate">
         <rdfs:domain rdf:resource="https://base_ontology.com/class_entity"/>
         <rdfs:range rdf:resource="https://base_ontology.com/InvoiceDate"/>
-        <rdf:label>hasInvoiceDate</rdf:label>
+        <rdfs:label>hasInvoiceDate</rdfs:label>
     </ObjectProperty>
     
 
@@ -90,7 +94,7 @@
     <ObjectProperty rdf:about="https://base_ontology.com/hasInvoiceNo">
         <rdfs:domain rdf:resource="https://base_ontology.com/class_entity"/>
         <rdfs:range rdf:resource="https://base_ontology.com/InvoiceNo"/>
-        <rdf:label>hasInvoiceNo</rdf:label>
+        <rdfs:label>hasInvoiceNo</rdfs:label>
     </ObjectProperty>
     
 
@@ -100,7 +104,7 @@
     <ObjectProperty rdf:about="https://base_ontology.com/hasQuantity">
         <rdfs:domain rdf:resource="https://base_ontology.com/class_entity"/>
         <rdfs:range rdf:resource="https://base_ontology.com/Quantity"/>
-        <rdf:label>hasQuantity</rdf:label>
+        <rdfs:label>hasQuantity</rdfs:label>
     </ObjectProperty>
     
 
@@ -110,7 +114,7 @@
     <ObjectProperty rdf:about="https://base_ontology.com/hasStockCode">
         <rdfs:domain rdf:resource="https://base_ontology.com/class_entity"/>
         <rdfs:range rdf:resource="https://base_ontology.com/StockCode"/>
-        <rdf:label>hasStockCode</rdf:label>
+        <rdfs:label>hasStockCode</rdfs:label>
     </ObjectProperty>
     
 
@@ -120,7 +124,7 @@
     <ObjectProperty rdf:about="https://base_ontology.com/hasUnitPrice">
         <rdfs:domain rdf:resource="https://base_ontology.com/class_entity"/>
         <rdfs:range rdf:resource="https://base_ontology.com/UnitPrice"/>
-        <rdf:label>hasUnitPrice</rdf:label>
+        <rdfs:label>hasUnitPrice</rdfs:label>
     </ObjectProperty>
     
 
@@ -136,17 +140,6 @@
     
 
 
-    <!-- https://base_ontology.com/hasName -->
-
-    <DatatypeProperty rdf:about="https://base_ontology.com/hasName">
-        <rdfs:domain rdf:resource="https://base_ontology.com/entity_name"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdf:label>hasName</rdf:label>
-        <rdf:typedBy>http://www.w3.org/2001/XMLSchema#string</rdf:typedBy>
-    </DatatypeProperty>
-    
-
-
     <!-- https://base_ontology.com/name -->
 
     <DatatypeProperty rdf:about="https://base_ontology.com/name">
@@ -158,11 +151,10 @@
         <rdfs:domain rdf:resource="https://base_ontology.com/Quantity"/>
         <rdfs:domain rdf:resource="https://base_ontology.com/StockCode"/>
         <rdfs:domain rdf:resource="https://base_ontology.com/UnitPrice"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <rdf:label>name</rdf:label>
-        <rdf:typedBy>http://www.w3.org/2001/XMLSchema#string</rdf:typedBy>
+        <rdfs:label>name</rdfs:label>
+        <rdfs:range>http://www.w3.org/2001/XMLSchema#string</rdfs:range>
     </DatatypeProperty>
     
 
@@ -182,7 +174,7 @@
 
     <Class rdf:about="https://base_ontology.com/Country">
         <rdfs:subClassOf rdf:resource="https://base_ontology.com/class_entity"/>
-        <rdf:label>Country</rdf:label>
+        <rdfs:label>Country</rdfs:label>
     </Class>
     
 
@@ -191,7 +183,7 @@
 
     <Class rdf:about="https://base_ontology.com/CustomerID">
         <rdfs:subClassOf rdf:resource="https://base_ontology.com/class_entity"/>
-        <rdf:label>CustomerID</rdf:label>
+        <rdfs:label>CustomerID</rdfs:label>
     </Class>
     
 
@@ -200,7 +192,7 @@
 
     <Class rdf:about="https://base_ontology.com/Description">
         <rdfs:subClassOf rdf:resource="https://base_ontology.com/class_entity"/>
-        <rdf:label>Description</rdf:label>
+        <rdfs:label>Description</rdfs:label>
     </Class>
     
 
@@ -209,7 +201,7 @@
 
     <Class rdf:about="https://base_ontology.com/InvoiceDate">
         <rdfs:subClassOf rdf:resource="https://base_ontology.com/class_entity"/>
-        <rdf:label>InvoiceDate</rdf:label>
+        <rdfs:label>InvoiceDate</rdfs:label>
     </Class>
     
 
@@ -218,7 +210,7 @@
 
     <Class rdf:about="https://base_ontology.com/InvoiceNo">
         <rdfs:subClassOf rdf:resource="https://base_ontology.com/class_entity"/>
-        <rdf:label>InvoiceNo</rdf:label>
+        <rdfs:label>InvoiceNo</rdfs:label>
     </Class>
     
 
@@ -227,7 +219,7 @@
 
     <Class rdf:about="https://base_ontology.com/Quantity">
         <rdfs:subClassOf rdf:resource="https://base_ontology.com/class_entity"/>
-        <rdf:label>Quantity</rdf:label>
+        <rdfs:label>Quantity</rdfs:label>
     </Class>
     
 
@@ -236,7 +228,7 @@
 
     <Class rdf:about="https://base_ontology.com/StockCode">
         <rdfs:subClassOf rdf:resource="https://base_ontology.com/class_entity"/>
-        <rdf:label>StockCode</rdf:label>
+        <rdfs:label>StockCode</rdfs:label>
     </Class>
     
 
@@ -245,7 +237,7 @@
 
     <Class rdf:about="https://base_ontology.com/UnitPrice">
         <rdfs:subClassOf rdf:resource="https://base_ontology.com/class_entity"/>
-        <rdf:label>UnitPrice</rdf:label>
+        <rdfs:label>UnitPrice</rdfs:label>
     </Class>
     
 
@@ -262,7 +254,7 @@
 
     <Class rdf:about="https://base_ontology.com/entity_name">
         <rdfs:subClassOf rdf:resource="https://base_ontology.com/class_entity"/>
-        <rdf:label>entity_name</rdf:label>
+        <rdfs:label>entity_name</rdfs:label>
     </Class>
 </rdf:RDF>
 

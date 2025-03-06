@@ -1,0 +1,16 @@
+classDiagram
+    class Categorical
+    class Company 
+    class Complaint 
+    class Complaint_ID 
+    class Consumer
+    class Date
+    class Date_received
+    class Date_sent_to_company 
+    class Issue 
+    class Product 
+    class State 
+    class Sub_issue 
+    class Sub_product 
+    class Text
+    class ZIP_code    

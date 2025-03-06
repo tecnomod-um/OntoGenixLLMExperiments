@@ -1,0 +1,122 @@
+classDiagram
+    class class_entity {
+        "An entity related to air travel"
+    }
+
+    class entity_name {
+        "A specific type of entity related to air travel"
+    }
+
+    entity_name --|> class_entity : subClassOf
+
+    class Baggage_handling {
+        "The quality of baggage handling service"
+    }
+
+    class Checkin_service {
+        "The quality of check-in service"
+    }
+
+    class Cleanliness {
+        "The cleanliness of the aircraft or airport"
+    }
+
+    class Departure_arrival_time_convenience {
+        "Whether the departure or arrival time is convenient for the passenger"
+    }
+
+    class Ease_of_online_booking {
+        "The ease of booking a flight online"
+    }
+
+    class Food_and_drink {
+        "The quality of food and drink service"
+    }
+
+    class Gate_location {
+        "The location of the gate"
+    }
+
+    class Inflight_entertainment {
+        "The quality of in-flight entertainment"
+    }
+
+    class Inflight_wifi_service {
+        "The quality of in-flight WiFi service"
+    }
+
+    class Leg_room_service {
+        "The quality of leg room service"
+    }
+
+    class On_board_service {
+        "The quality of on-board service"
+    }
+
+    class Online_boarding {
+        "The availability of online boarding"
+    }
+
+    class Online_support {
+        "The quality of online support"
+    }
+
+    class Seat_comfort {
+        "The comfort of the aircraft seat"
+    }
+
+    class Class {
+        "The class of the flight"
+    }
+
+    class Customer_Type {
+        "The type of customer"
+    }
+
+    class Gender {
+        "The gender of the passenger"
+    }
+
+    class Type_of_Travel {
+        "The type of travel (business or leisure)"
+    }
+
+    class satisfaction {
+        "The level of passenger satisfaction"
+    }
+
+    class Age {
+        "The age of a passenger"
+    }
+
+    class Flight_distance {
+        "The distance of a flight in miles"
+    }
+
+    class Arrival_delay {
+        "The delay in minutes of a flight upon arrival"
+    }
+
+    class Departure_delay {
+        "The delay in minutes of a flight upon departure"
+    }
+
+    entity_name --> Online_boarding : has_online_boarding
+    entity_name --> Class : has_class
+    entity_name --> Cleanliness : has_cleanliness
+    entity_name --> Seat_comfort : has_seat_comfort
+    entity_name --> Ease_of_online_booking : has_ease_of_online_booking
+    entity_name --> Gender : has_gender
+    entity_name --> satisfaction : has_satisfaction
+    entity_name --> Gate_location : has_gate_location
+    entity_name --> Baggage_handling : has_baggage_handling
+    entity_name --> Checkin_service : has_checkin_service
+    entity_name --> Food_and_drink : has_food_and_drink
+    entity_name --> Inflight_entertainment : has_inflight_entertainment
+    entity_name --> Inflight_wifi_service : has_inflight_wifi_service
+    entity_name --> Leg_room_service : has_leg_room_service
+    entity_name --> On_board_service : has_on_board_service
+    entity_name --> Online_support : has_online_support
+    entity_name --> Customer_Type : has_customer_type
+    entity_name --> Type_of_Travel : has_type_of_travel
+    entity_name --> Departure_arrival_time_convenience : has_departure_arrival_time_convenience

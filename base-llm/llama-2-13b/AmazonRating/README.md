@@ -7,9 +7,11 @@
 
 ### Errors
 
--   Incorrect format and serialization due to lack of shortnames, IDs and dots. Example:<br>
-    ontology (class: class_entity) <br>
-        entity_name (domain: class_entity; range: owl:String)
+-   Incorrect format and serialization due to lack of shortnames, IDs and dots. Example:
+    ```
+    entity_name (subclassOf: class_entity)
+        domain: entity_name; range: owl:String
+    ```
 
 
 ## Llama-2-13B-8bits
@@ -23,12 +25,13 @@
 ### Errors
 
 -   Uncommented text at the begining and ending of the ontology:<br>
-
+    ```
     Sure, here is the TURTLE syntax content for the proposed ontology, without any condensing or shortening, and with strict compliance to the instructions provided:<br>
     ...<br>
     Ontology<br>
     ...<br>
     Note that I have not included any labels or comments or descriptions, as requested. Also, I have not added any instances to the ontology.
+    ```
 
 -   Wrong URIs due to the use of inappropriate prefixes and IDs. Examples: rdf:domain and rdf:range instead of rdfs:domain and rdfs:range, and owl:DataProperty instead of owl:DatatypeProperty.
 
@@ -72,14 +75,18 @@
 
 ### Errors
 
--   Incorrect serialization due to the number of elements in the triples. Examples:<br>
+-   Incorrect serialization due to the number of elements in the triples. Example:
+    ```
     <http://example.com/ontology/ProductReview/class_entity> owl:has_key owl:ObjectProperty <http://example.com/ontology/ProductReview/name> .
+    ```
 
 -    Uncommented text: <br>
      Sure, here is the thorough and exhaustive TURTLE syntax content for the proposed ontology, without condensing or shortening any part of it, ensuring strict compliance with the instructions provided:
 	
--   Some triples make no sense:<br>
+-   Some triples make no sense:
+    ```
     <http://example.com/ontology/ProductReview/entity_name> a owl:SubClassOf .
+    ```
 
 -   Wrong URIs. Example: owl:SubClassOf instead of rdfs:subClassOf.
 

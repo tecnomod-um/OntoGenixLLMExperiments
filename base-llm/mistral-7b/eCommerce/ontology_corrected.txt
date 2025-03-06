@@ -9,127 +9,121 @@ rdfs:subClassOf base:class_entity .
 
 base:Country a owl:Class ;
 rdfs:subClassOf base:class_entity ;
-rdf:label "Country" .
+rdfs:label "Country" .
 
 base:Description a owl:Class ;
 rdfs:subClassOf base:class_entity ;
-rdf:label "Description" .
+rdfs:label "Description" .
 
 base:InvoiceDate a owl:Class ;
 rdfs:subClassOf base:class_entity ;
-rdf:label "InvoiceDate" .
+rdfs:label "InvoiceDate" .
 
 base:InvoiceNo a owl:Class ;
 rdfs:subClassOf base:class_entity ;
-rdf:label "InvoiceNo" .
+rdfs:label "InvoiceNo" .
 
 base:StockCode a owl:Class ;
 rdfs:subClassOf base:class_entity ;
-rdf:label "StockCode" .
+rdfs:label "StockCode" .
 
 base:CustomerID a owl:Class ;
 rdfs:subClassOf base:class_entity ;
-rdf:label "CustomerID" .
+rdfs:label "CustomerID" .
 
 base:Quantity a owl:Class ;
 rdfs:subClassOf base:class_entity ;
-rdf:label "Quantity" .
+rdfs:label "Quantity" .
 
 base:UnitPrice a owl:Class ;
 rdfs:subClassOf base:class_entity ;
-rdf:label "UnitPrice" .
+rdfs:label "UnitPrice" .
 
 base:entity_name a owl:Class ;
 rdfs:subClassOf base:class_entity ;
-rdf:label "entity_name" .
+rdfs:label "entity_name" .
 
 base:hasCountry a rdf:Property ;
 rdfs:domain base:class_entity ;
 rdfs:range base:Country ;
-rdf:label "hasCountry" .
+rdfs:label "hasCountry" .
 
 base:hasDescription a rdf:Property ;
 rdfs:domain base:class_entity ;
 rdfs:range base:Description ;
-rdf:label "hasDescription" .
+rdfs:label "hasDescription" .
 
 base:hasInvoiceDate a rdf:Property ;
 rdfs:domain base:class_entity ;
 rdfs:range base:InvoiceDate ;
-rdf:label "hasInvoiceDate" .
+rdfs:label "hasInvoiceDate" .
 
 base:hasInvoiceNo a rdf:Property ;
 rdfs:domain base:class_entity ;
 rdfs:range base:InvoiceNo ;
-rdf:label "hasInvoiceNo" .
+rdfs:label "hasInvoiceNo" .
 
 base:hasStockCode a rdf:Property ;
 rdfs:domain base:class_entity ;
 rdfs:range base:StockCode ;
-rdf:label "hasStockCode" .
+rdfs:label "hasStockCode" .
 
 base:hasCustomerID a rdf:Property ;
 rdfs:domain base:class_entity ;
 rdfs:range base:CustomerID ;
-rdf:label "hasCustomerID" .
+rdfs:label "hasCustomerID" .
 
 base:hasQuantity a rdf:Property ;
 rdfs:domain base:class_entity ;
 rdfs:range base:Quantity ;
-rdf:label "hasQuantity" .
+rdfs:label "hasQuantity" .
 
 base:hasUnitPrice a rdf:Property ;
 rdfs:domain base:class_entity ;
 rdfs:range base:UnitPrice ;
-rdf:label "hasUnitPrice" .
+rdfs:label "hasUnitPrice" .
 
 base:hasName a rdf:Property ;
 rdfs:domain base:entity_name ;
-rdfs:range rdfs:Literal ;
-rdf:typedBy "http://www.w3.org/2001/XMLSchema#string" ;
-rdf:label "hasName" .
+rdfs:range "http://www.w3.org/2001/XMLSchema#string" ;
+rdfs:label "hasName" .
 
 base:name a rdf:Property ;
 rdfs:domain base:Country ;
-rdfs:range rdfs:Literal ;
-rdf:typedBy "http://www.w3.org/2001/XMLSchema#string" ;
-rdf:label "name" .
+rdfs:range "http://www.w3.org/2001/XMLSchema#string" ;
+rdfs:label "name" .
 
 base:name a rdf:Property ;
 rdfs:domain base:Description ;
-rdfs:range rdfs:Literal ;
-rdf:typedBy "http://www.w3.org/2001/XMLSchema#string" ;
-rdf:label "name" .
+rdfs:range "http://www.w3.org/2001/XMLSchema#string" ;
+rdfs:label "name" .
 
 base:name a rdf:Property ;
 rdfs:domain base:InvoiceDate ;
-rdfs:range rdfs:Literal ;
-rdf:typedBy "http://www.w3.org/2001/XMLSchema#string" ;
-rdf:label "name" .
+rdfs:range "http://www.w3.org/2001/XMLSchema#string" ;
+rdfs:label "name" .
 
 base:name a rdf:Property ;
 rdfs:domain base:InvoiceNo ;
-rdfs:range rdfs:Literal ;
-rdf:typedBy "http://www.w3.org/2001/XMLSchema#string" ;
-rdf:label "name" .
+rdfs:range "http://www.w3.org/2001/XMLSchema#string" ;
+rdfs:label "name" .
 
 base:name a rdf:Property ;
 rdfs:domain base:StockCode ;
-rdfs:range rdfs:Literal ;
-rdf:typedBy "http://www.w3.org/2001/XMLSchema#string" ;
-rdf:label "name" .
+rdfs:range "http://www.w3.org/2001/XMLSchema#string" ;
+rdfs:label "name" .
 
 base:name a rdf:Property ;
 rdfs:domain base:CustomerID ;
 rdfs:range xsd:int ;
-rdf:label "name" .
+rdfs:label "name" .
 
 base:name a rdf:Property ;
 rdfs:domain base:Quantity ;
 rdfs:range xsd:int ;
-rdf:label "name" .
+rdfs:label "name" .
 
 base:name a rdf:Property ;
 rdfs:domain base:UnitPrice ;
 rdfs:range xsd:float ;
-rdf:label "name" .
+rdfs:label "name" .

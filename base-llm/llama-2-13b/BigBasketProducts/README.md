@@ -10,8 +10,10 @@
 
 ### Errors
 
--   Incorrect serialization (number of elements in the triples). Example:<br>
+-   Incorrect serialization (number of elements in the triples). Example:
+    ```
     <http://base_ontology.com/class_entity> owl:hasValue <http://base_ontology.com/Absolute_Url_idx> "count" ;
+    ```
 
 -   Wrong URIs and inappropriate reuse. Examples: owl:domain and owl:ranges, and the use of owl:inverseOf.
 
@@ -54,8 +56,10 @@
 -   Uncommented text: <br>
     Here is the TURTLE syntax content for the proposed ontology, without any abbreviations or shortening, and with strict compliance to the instructions provided
 
--   Wrong URIs: <br>
+-   Wrong URIs:
+    ```
     <data_property_name> owl:domain <class_entity> .
+    ```
 
 
 ### URIs
@@ -107,9 +111,11 @@
 ### Errors
 
 -   Incorrect serialization: Lack of shortnames, serialization dots, and incorrect number of elements in the triples. Example:
-    class class_entity (rdf:type owl:Class) <br>
-       owl:hasSelf rdf:type owl:Class <br>
-       owl:hasKey rdf:type owl:ObjectProperty <br>
+    ```
+    class class_entity (rdf:type owl:Class)
+       owl:hasSelf rdf:type owl:Class
+       owl:hasKey rdf:type owl:ObjectProperty
+    ```
 
 -   Uncommented text. Examples: <br>
     Sure, here is the TURTLE syntax content for the proposed ontology based on the provided JSON data and schema:

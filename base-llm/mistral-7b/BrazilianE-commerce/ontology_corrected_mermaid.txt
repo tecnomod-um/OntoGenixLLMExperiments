@@ -1,0 +1,22 @@
+classDiagram
+    class class_entity {
+        +customer_unique_id_value xsd:string
+        +customer_zip_code_prefix_value xsd:int
+        +customer_id_value xsd:string
+    }
+
+    class entity_name
+    entity_name --|> class_entity : subClassOf
+
+    class NumericalDomain
+    class TextDomain
+    class customer_city
+    class customer_id
+    class customer_state
+
+    class_entity --> customer_city : customer_city_lives_in
+    class_entity --> customer_city : customer_city_name
+    class_entity --> customer_id : customer_id_has
+    class_entity --> customer_state : customer_state_resides_in
+    class_entity --> customer_state : customer_state_name
+

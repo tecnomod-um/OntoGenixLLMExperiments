@@ -11,11 +11,15 @@
 ### Errors
 
 Incorrect serialization: 
--   Incorrect format and number of elements in the triples. Example:<br>
+-   Incorrect format and number of elements in the triples. Example:
+    ```
     <http://example.com/ontology/Passenger/Age> a owl:type rdf:HTTP_timestamp">
+    ```
 
 -   And loop in the last triple:<br>
+    ```
     <http://Cleaning> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a/pass/passing theprior/passing the_passing/passing_passing_passing",p"pt",p
+    ```
 
 -   Incorrect URIs. Some URIs do not exist, like rdf:HTTP_timestamp.
 
@@ -57,12 +61,16 @@ Incorrect serialization:
 ### Errors
 
 Incorrect serialization:
--   Loop at the end of the ontology:<br>
+-   Loop at the end of the ontology:
+    ```
     <http/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight
+    ```
 
--   Incorrect serialization due to the number of elements in the triples. Example:<br>
+-   Incorrect serialization due to the number of elements in the triples. Example:
+    ```
     <http://example.com/ontology/Passenger> owl:class <http://example.com/ontology/Age> "120"^^xsd:integer" .
     <http://example.com/Flight> "10"^^xsd:integer" .
+    ```
 
 -   Incorrect URIs. Used of owl:class instead of owl:Class, and used as property.
 

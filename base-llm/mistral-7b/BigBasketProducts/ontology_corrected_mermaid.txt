@@ -1,0 +1,37 @@
+classDiagram
+    class class_entity {
+        +Brand: rdfs:Literal
+        +Category: rdfs:Literal
+        +ProductName: rdfs:Literal
+        +Quantity: rdfs:Literal
+        +SubCategory: rdfs:Literal
+    }
+    class entity_name
+    class NamedIndividual
+    class Resource
+
+    entity_name --|> class_entity : subClassOf
+    class_entity --|> NamedIndividual : subClassOf
+
+    class Brand
+    class Image_Url
+    class ProductName
+    class Quantity
+    class SubCategory
+    class DiscountPrice
+    class Price
+    class Real
+
+    class_entity --> Brand : has_brand
+    class_entity --> Image_Url : has_image
+    class_entity --> ProductName : has_product_name
+    class_entity --> Quantity : has_quantity
+    class_entity --> SubCategory : has_subcategory
+    class_entity --> DiscountPrice : has_discount_price
+    class_entity --> Price : has_price
+    class_entity --> Resource : Absolute_Url
+    class_entity --> Resource : Image_Url
+    class_entity --> Real : DiscountPrice
+    class_entity --> Real : has_discount_price
+    class_entity --> Real : has_price
+    class_entity --> Real : Price
