@@ -1,0 +1,72 @@
+classDiagram
+    class Categorical
+    class CompanyResponseToConsumer
+    class ConsumerConsentProvided
+    class ConsumerDisputed
+    class SubmittedVia
+    class Tags
+    class TimelyResponse
+
+    Categorical <|-- CompanyResponseToConsumer : subClassOf
+    Categorical <|-- ConsumerConsentProvided : subClassOf
+    Categorical <|-- ConsumerDisputed : subClassOf
+    Categorical <|-- SubmittedVia : subClassOf
+    Categorical <|-- Tags : subClassOf
+    Categorical <|-- TimelyResponse : subClassOf
+
+    class Complaint {
+        +hasNonNullCount : xsd:integer
+        +hasType : xsd:string
+        +hasUniqueCount : xsd:integer
+        +hasCount : xsd:integer
+        +hasMax : xsd:float
+        +hasMean : xsd:float
+        +hasMin : xsd:float
+        +hasStd : xsd:float
+    }
+
+    class ComplaintID
+    
+    class Text
+    class Company
+    class CompanyPublicResponse
+    class ConsumerComplaintNarrative
+    class DateReceived
+    class DateSentToCompany
+    class Issue
+    class Product
+    class State
+    class SubIssue
+    class SubProduct
+    class ZIPCode
+
+    Text <|-- Company : subClassOf
+    Text <|-- CompanyPublicResponse : subClassOf
+    Text <|-- ConsumerComplaintNarrative : subClassOf
+    Text <|-- DateReceived : subClassOf
+    Text <|-- DateSentToCompany : subClassOf
+    Text <|-- Issue : subClassOf
+    Text <|-- Product : subClassOf
+    Text <|-- State : subClassOf
+    Text <|-- SubIssue : subClassOf
+    Text <|-- SubProduct : subClassOf
+    Text <|-- ZIPCode : subClassOf
+   
+    Complaint --> Company : hasCompany
+    Complaint --> CompanyPublicResponse : hasCompanyPublicResponse
+    Complaint --> CompanyResponseToConsumer : hasCompanyResponseToConsumer
+    Complaint --> ComplaintID : hasComplaintID   
+    Complaint --> ConsumerComplaintNarrative : hasConsumerComplaintNarrative
+    Complaint --> ConsumerConsentProvided : hasConsumerConsentProvided
+    Complaint --> ConsumerDisputed : hasConsumerDisputed
+    Complaint --> DateReceived : hasDateReceived
+    Complaint --> DateSentToCompany : hasDateSentToCompany
+    Complaint --> Issue : hasIssue
+    Complaint --> Product : hasProduct
+    Complaint --> State : hasState
+    Complaint --> SubIssue : hasSubIssue
+    Complaint --> SubmittedVia : hasSubmittedVia
+    Complaint --> SubProduct : hasSubProduct
+    Complaint --> Tags : hasTags
+    Complaint --> TimelyResponse : hasTimelyResponse
+    Complaint --> ZIPCode : hasZIPCode

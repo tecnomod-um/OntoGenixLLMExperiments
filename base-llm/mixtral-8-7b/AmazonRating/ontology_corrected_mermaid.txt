@@ -1,0 +1,20 @@
+classDiagram
+    class Entity {
+    }
+    class Product {
+        +HasProductId xsd:string
+    }
+    class User {
+        +HasUserId xsd:string
+    }
+    class Rating {
+        +HasRating xsd:float
+        +HasTimestamp xsd:string
+    }
+    
+    Entity <|-- Product : subClassOf
+    Entity <|-- User : subClassOf
+    
+    Product --> Rating : RatedProduct
+    Rating --> User : RatedByUser
+

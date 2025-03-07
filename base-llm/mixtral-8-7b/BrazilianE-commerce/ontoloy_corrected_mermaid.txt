@@ -1,0 +1,29 @@
+classDiagram
+    class class_entity
+    class id
+    class city
+    class state
+    
+    class zip_code{
+        +customer_zip_code_prefix : xsd:integer
+    }
+
+    class customer {
+        +customer_city : xsd:string
+        +customer_id : xsd:string
+        +customer_state : xsd:string
+        +customer_unique_id : xsd:string
+    }
+
+    class_entity <|-- customer : subClassOf
+    class_entity <|-- city : subClassOf
+    class_entity <|-- state : subClassOf
+    class_entity <|-- id : subClassOf
+    class_entity <|-- zip_code : subClassOf
+
+    customer --> city : has_city
+    customer --> state : has_state
+    customer --> id : has_id
+    customer --> zip_code : has_zip_code
+
+ 

@@ -1,0 +1,1 @@
+Wrong URIs (owl:DataProperty)

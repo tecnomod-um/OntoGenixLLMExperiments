@@ -1,0 +1,31 @@
+classDiagram
+    class Categorical
+    class Customer
+    class Flight
+    class FlightClass
+    class Numerical
+
+    Customer --> Numerical : hasAge
+    Flight --> Numerical : hasArrivalDelay
+    Flight --> Numerical : hasDepartureDelay
+    Flight --> Numerical : hasFlightDistance
+
+    Flight --> Categorical : hasBaggageHandlingRating
+    Flight --> Categorical : hasCheckinServiceRating
+    Flight --> Categorical : hasCleanlinessRating
+    Flight --> Categorical : hasDepartureArrivalTimeConvenienceRating
+    Flight --> Categorical : hasEaseOfOnlineBookingRating
+    Flight --> Categorical : hasFoodAndDrinkRating
+    Flight --> Categorical : hasGateLocationRating
+    Flight --> Categorical : hasInflightEntertainmentRating
+    Flight --> Categorical : hasInflightWifiServiceRating
+    Flight --> Categorical : hasLegRoomServiceRating
+    Flight --> Categorical : hasOnBoardServiceRating
+    Flight --> Categorical : hasOnlineBoardingRating
+    Flight --> Categorical : hasOnlineSupportRating
+    Flight --> Categorical : hasSeatComfortRating
+
+    Customer --> Categorical : hasCustomerType
+    Customer --> Categorical : hasGender
+    Customer --> Categorical : hasTravelType
+    Customer --> Categorical : hasSatisfaction

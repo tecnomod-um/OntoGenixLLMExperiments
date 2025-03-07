@@ -1,0 +1,29 @@
+classDiagram
+    class Country
+    class CustomerID
+    class Description
+    class InvoiceDate
+    class InvoiceNo
+    class Quantity
+    class StockCode
+    class UnitPrice
+
+    class Invoice {
+        +Country : xsd:Literal
+        +CustomerID : xsd:integer
+        +Description : xsd:Literal
+        +InvoiceDate : xsd:Literal
+        +InvoiceNo : xsd:Literal
+        +Quantity : xsd:integer
+        +StockCode : xsd:Literal
+        +UnitPrice : xsd:integer
+    }
+
+    Invoice --> Country : hasCountry
+    Invoice --> CustomerID : hasCustomerID
+    Invoice --> Description : hasDescription
+    Invoice --> InvoiceDate : hasInvoiceDate
+    Invoice --> InvoiceNo : hasInvoiceNo
+    Invoice --> Quantity : hasQuantity
+    Invoice --> StockCode : hasStockCode
+    Invoice --> UnitPrice : hasUnitPrice

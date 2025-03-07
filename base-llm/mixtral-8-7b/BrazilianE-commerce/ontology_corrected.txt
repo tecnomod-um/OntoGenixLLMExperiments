@@ -4,7 +4,7 @@
 @prefix base: <https://base_ontology.com#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-owl:Ontology rdf:about "https://base_ontology.com/customer_data" ;
+owl:Ontology :about "https://base_ontology.com/customer_data" ;
    owl:versionInfo "Created by AI model"^^xsd:string .
 
 base:class_entity a owl:Class .

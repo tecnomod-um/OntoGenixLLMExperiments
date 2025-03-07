@@ -1,0 +1,169 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix onto: <https://base_ontology.com#> .
+
+<https://base_ontology.com#Text> a owl:Class .
+
+<https://base_ontology.com#Categorical> a owl:Class .
+
+<https://base_ontology.com#Company> a owl:Class ;
+rdfs:subClassOf <https://base_ontology.com#Text> .
+
+<https://base_ontology.com#CompanyPublicResponse> a owl:Class ;
+rdfs:subClassOf <https://base_ontology.com#Text> .
+
+<https://base_ontology.com#CompanyResponseToConsumer> a owl:Class ;
+rdfs:subClassOf <https://base_ontology.com#Categorical> .
+
+<https://base_ontology.com#ConsumerComplaintNarrative> a owl:Class ;
+rdfs:subClassOf <https://base_ontology.com#Text> .
+
+<https://base_ontology.com#ConsumerConsentProvided> a owl:Class ;
+rdfs:subClassOf <https://base_ontology.com#Categorical> .
+
+<https://base_ontology.com#ConsumerDisputed> a owl:Class ;
+rdfs:subClassOf <https://base_ontology.com#Categorical> .
+
+<https://base_ontology.com#DateReceived> a owl:Class ;
+rdfs:subClassOf <https://base_ontology.com#Text> .
+
+<https://base_ontology.com#DateSentToCompany> a owl:Class ;
+rdfs:subClassOf <https://base_ontology.com#Text> .
+
+<https://base_ontology.com#Issue> a owl:Class ;
+rdfs:subClassOf <https://base_ontology.com#Text> .
+
+<https://base_ontology.com#Product> a owl:Class ;
+rdfs:subClassOf <https://base_ontology.com#Text> .
+
+<https://base_ontology.com#State> a owl:Class ;
+rdfs:subClassOf <https://base_ontology.com#Text> .
+
+<https://base_ontology.com#SubIssue> a owl:Class ;
+rdfs:subClassOf <https://base_ontology.com#Text> .
+
+<https://base_ontology.com#SubProduct> a owl:Class ;
+rdfs:subClassOf <https://base_ontology.com#Text> .
+
+<https://base_ontology.com#SubmittedVia> a owl:Class ;
+rdfs:subClassOf <https://base_ontology.com#Categorical> .
+
+<https://base_ontology.com#Tags> a owl:Class ;
+rdfs:subClassOf <https://base_ontology.com#Categorical> .
+
+<https://base_ontology.com#TimelyResponse> a owl:Class ;
+rdfs:subClassOf <https://base_ontology.com#Categorical> .
+
+<https://base_ontology.com#ZIPCode> a owl:Class ;
+rdfs:subClassOf <https://base_ontology.com#Text> .
+
+<https://base_ontology.com#ComplaintID> a owl:Class ;
+rdfs:subClassOf owl:Thing .
+
+<https://base_ontology.com#hasCompany> a owl:ObjectProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range <https://base_ontology.com#Company> .
+
+<https://base_ontology.com#hasCompanyPublicResponse> a owl:ObjectProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range <https://base_ontology.com#CompanyPublicResponse> .
+
+<https://base_ontology.com#hasCompanyResponseToConsumer> a owl:ObjectProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range <https://base_ontology.com#CompanyResponseToConsumer> .
+
+<https://base_ontology.com#hasConsumerComplaintNarrative> a owl:ObjectProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range <https://base_ontology.com#ConsumerComplaintNarrative> .
+
+<https://base_ontology.com#hasConsumerConsentProvided> a owl:ObjectProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range <https://base_ontology.com#ConsumerConsentProvided> .
+
+<https://base_ontology.com#hasConsumerDisputed> a owl:ObjectProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range <https://base_ontology.com#ConsumerDisputed> .
+
+<https://base_ontology.com#hasDateReceived> a owl:ObjectProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range <https://base_ontology.com#DateReceived> .
+
+<https://base_ontology.com#hasDateSentToCompany> a owl:ObjectProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range <https://base_ontology.com#DateSentToCompany> .
+
+<https://base_ontology.com#hasIssue> a owl:ObjectProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range <https://base_ontology.com#Issue> .
+
+<https://base_ontology.com#hasProduct> a owl:ObjectProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range <https://base_ontology.com#Product> .
+
+<https://base_ontology.com#hasState> a owl:ObjectProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range <https://base_ontology.com#State> .
+
+<https://base_ontology.com#hasSubIssue> a owl:ObjectProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range <https://base_ontology.com#SubIssue> .
+
+<https://base_ontology.com#hasSubProduct> a owl:ObjectProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range <https://base_ontology.com#SubProduct> .
+
+<https://base_ontology.com#hasSubmittedVia> a owl:ObjectProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range <https://base_ontology.com#SubmittedVia> .
+
+<https://base_ontology.com#hasTags> a owl:ObjectProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range <https://base_ontology.com#Tags> .
+
+<https://base_ontology.com#hasTimelyResponse> a owl:ObjectProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range <https://base_ontology.com#TimelyResponse> .
+
+<https://base_ontology.com#hasZIPCode> a owl:ObjectProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range <https://base_ontology.com#ZIPCode> .
+
+<https://base_ontology.com#Complaint> a owl:Class .
+
+<https://base_ontology.com#hasComplaintID> a owl:ObjectProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range <https://base_ontology.com#ComplaintID> .
+
+<https://base_ontology.com#hasNonNullCount> a owl:DatatypeProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range xsd:integer .
+
+<https://base_ontology.com#hasType> a owl:DatatypeProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range xsd:string .
+
+<https://base_ontology.com#hasUniqueCount> a owl:DatatypeProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range xsd:integer .
+
+<https://base_ontology.com#hasCount> a owl:DatatypeProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range xsd:integer .
+
+<https://base_ontology.com#hasMax> a owl:DatatypeProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range xsd:float .
+
+<https://base_ontology.com#hasMean> a owl:DatatypeProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range xsd:float .
+
+<https://base_ontology.com#hasMin> a owl:DatatypeProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range xsd:float .
+
+<https://base_ontology.com#hasStd> a owl:DatatypeProperty ;
+rdfs:domain <https://base_ontology.com#Complaint> ;
+rdfs:range xsd:float .

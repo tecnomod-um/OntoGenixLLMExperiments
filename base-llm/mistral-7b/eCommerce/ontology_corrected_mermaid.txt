@@ -1,0 +1,59 @@
+classDiagram
+    class class_entity {
+    }
+
+    class Country {
+        +name xsd:float xsd:int
+    }
+
+    class Description {
+        +name xsd:float xsd:int
+    }
+
+    class InvoiceDate {
+        +name xsd:float xsd:int
+    }
+
+    class InvoiceNo {
+        +name xsd:float xsd:int
+    }
+
+    class StockCode {
+        +name xsd:float xsd:int
+    }
+
+    class CustomerID {
+        +name xsd:float xsd:int
+    }
+
+    class Quantity {
+        +name xsd:float xsd:int
+    }
+
+    class UnitPrice {
+        +name xsd:float xsd:int
+    }
+
+    class entity_name {
+        +name xsd:float xsd:int
+    }
+
+    class_entity <|-- class_entity : subClassOf
+    class_entity <|-- Country : subClassOf
+    class_entity <|-- Description : subClassOf
+    class_entity <|-- InvoiceDate : subClassOf
+    class_entity <|-- InvoiceNo : subClassOf
+    class_entity <|-- StockCode : subClassOf
+    class_entity <|-- CustomerID : subClassOf
+    class_entity <|-- Quantity : subClassOf
+    class_entity <|-- UnitPrice : subClassOf
+    class_entity <|-- entity_name : subClassOf
+
+    class_entity --> Country : hasCountry
+    class_entity --> Description : hasDescription
+    class_entity --> InvoiceDate : hasInvoiceDate
+    class_entity --> InvoiceNo : hasInvoiceNo
+    class_entity --> StockCode : hasStockCode
+    class_entity --> CustomerID : hasCustomerID
+    class_entity --> Quantity : hasQuantity
+    class_entity --> UnitPrice : hasUnitPrice

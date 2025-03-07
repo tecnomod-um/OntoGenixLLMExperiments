@@ -6,3 +6,6 @@ Incorrect use of shortnames (without prefixes) and number of elements in the tri
 state owl:Class ;
    rdfs:subClassOf class_entity ;
    rdfs:comment "Subclass of class_entity representing state" .
+   
+  
+Wrong URIs. Example: rdf:about
