@@ -109,4 +109,4 @@ Incorrect rdf/xml serialization.
 | xsd:integer          | X        | -                    |
 | xsd:float            | X        | -                    |
 | xsd:string           | X        | -                    |
-| *Total*              | **10**   | **0**                |
+| *Total*              | **10**   | **1**                |

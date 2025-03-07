@@ -9,7 +9,7 @@
 
 ## [Errors](./ontology_notes.txt)
 
-Ontology without syntax errors, but wrong URIs (owl:DataProperty).
+Ontology without syntax errors, but **wrong URIs** (owl:DataProperty).
 
 
 

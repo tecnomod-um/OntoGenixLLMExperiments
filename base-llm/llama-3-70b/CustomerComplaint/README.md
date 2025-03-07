@@ -12,8 +12,9 @@
 ### [Errors](./ontology_notes.txt)
 
 **Incorrect serialization:**
--   Uncommented text.
 -   Prefix xsd used but not declared.
+
+**Uncommented text.**
 
 
 ### [URIs](./ontology_URIs.xlsx)

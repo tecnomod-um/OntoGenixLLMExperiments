@@ -28,7 +28,7 @@
 
 ### [Errors](./8bits_ontology_notes.txt)
 
-Ontology without syntax errors, but wrong URIs.
+Ontology without syntax errors, but **wrong URIs**.
 
 
 ### [URIs](./8bits_ontology_URIs.xlsx)

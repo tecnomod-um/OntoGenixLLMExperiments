@@ -11,7 +11,7 @@
 
 ### [Errors](./ontology_notes.txt)
 
-Ontology without syntax errors, but wrong URIs.
+Ontology without syntax errors, but **wrong URIs**.
 
 
 ### [URIs](./ontology_URIs.xlsx)

@@ -14,7 +14,7 @@
 
 -   Use of https://myairlineontology.com# and https://myairlineontology.com/ 
 
--   Wrong URIs, like rdf:label or rdf:subclass_of
+**Wrong URIs**, like rdf:label or rdf:subclass_of
 
 
 ## [URIs](./ontology_URIs.xlsx)
