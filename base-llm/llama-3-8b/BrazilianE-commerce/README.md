@@ -7,11 +7,12 @@
 ![](./4bits_ontology.png)
 
 
-### Errors
+### [Errors](./4bits_ontology.txt)
 
 Ontology without syntax errors.
 
-### URIs
+
+### [URIs](./4bits_ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -47,9 +48,9 @@ Ontology without syntax errors.
 ![](./8bits_ontology_corrected.png)
 
 
-### Errors
+### [Errors](./ontology_8bits_notes.txt)
 
-Incorrect serialization:
+**Incorrect serialization:**
 -   Use of semicolons instead of dots at the end of each statement. Example:
     ```
     base:Entity_Name
@@ -58,7 +59,7 @@ Incorrect serialization:
     ```
 
 
-### URIs
+### [URIs](./8bits_ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -89,6 +90,6 @@ Incorrect serialization:
 [Generated ontology](./ontology.txt)
 
 
-### Errors
+### [Errors](./ontology_notes.txt)
 
-Incorrect rdf/xml serialization.
+**Incorrect rdf/xml serialization.**

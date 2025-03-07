@@ -7,9 +7,9 @@
 ![](./ontology_corrected.png)
 
 
-## Errors
+## [Errors](./ontology_notes.txt)
 
-Incorrect serialization:
+**Incorrect serialization:**
 -   Namespace prefix 'owl' used but not defined.
 
 -   Use of https://myairlineontology.com# and https://myairlineontology.com/ 
@@ -17,7 +17,7 @@ Incorrect serialization:
 -   Wrong URIs, like rdf:label or rdf:subclass_of
 
 
-## URIs
+## [URIs](./ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -35,7 +35,7 @@ Incorrect serialization:
 | rdf:range            | -        | rdfs:range           |
 | owl:Class            | X        | -                    |
 | owl:ObjectProperty   | X        | -                    |
-| xsd:int              | -        | xsd:integer          |
-| *Total*              | **3**    | **5**                |
+| xsd:int              | X        | -                    |
+| *Total*              | **4**    | **4**                |
 
-- Use of rdf:label as dc:description or rdfs:comment
+-   Use of rdf:label as dc:description or rdfs:comment

@@ -4,9 +4,9 @@
 
 [Generated ontology](./4bits_ontology.txt)
 
-### Errors
+### [Errors](./4bits_ontology_notes.txt)
 
-Incorrect format and serialization (number of elements, dots). Example:
+**Incorrect format and serialization** (number of elements, dots). Example:
 ```
 <https://base_ontology.com#entity_name>
         rdfs:subClassOf <https://base_ontology.com#class_entity>;
@@ -26,12 +26,12 @@ Incorrect format and serialization (number of elements, dots). Example:
 ![](./8bits_ontology_corrected.png)
 
 
-### Errors
+### [Errors](./8bits_ontology_notes.txt)
 
 Ontology without syntax errors, but wrong URIs.
 
 
-### URIs
+### [URIs](./8bits_ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -66,9 +66,9 @@ Ontology without syntax errors, but wrong URIs.
 ![](./ontology_corrected.png)
 
 
-### Errors
+### [Errors](./ontology_notes.txt)
 
-Incorrect serialization:
+**Incorrect serialization:**
 -   Missing end dots in the prefix declarations. Examples:
     ```
     @prefix owl: <http://www.w3.org/2002/07/owl#>
@@ -77,7 +77,7 @@ Incorrect serialization:
     @prefix base: <https://base_ontology.com#>
     ```
 
-### URIs
+### [URIs](./ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|

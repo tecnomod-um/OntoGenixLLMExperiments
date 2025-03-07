@@ -7,9 +7,9 @@
 ![](./ontology_corrected.png)
 
 
-## Errors
+## [Errors](./ontology_notes.txt)
 
-Incorrect serialization:
+**Incorrect serialization:**
 -   Lack of dots in the prefix declarations. Examples:
     ```
     @prefix base: <https://base_ontology.com/>
@@ -35,10 +35,10 @@ Incorrect serialization:
     rdf:label "name" .
     ```
 
-Wrong URIs. Example: rdf:typedBy or rdf:XMLSchema
+**Wrong URIs.** Example: rdf:typedBy or rdf:XMLSchema
 
 
-## URIs
+## [URIs](./ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|

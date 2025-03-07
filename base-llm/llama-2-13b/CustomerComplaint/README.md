@@ -5,9 +5,9 @@
 [Generated ontology](./4bits_ontology.txt)
 
 
-### Errors
+### [Errors](./ontology_4bits_notes.txt)
 
--   Incorrect format and serialization (shortnames, dots). Example:
+-   **Incorrect format and serialization** (shortnames, dots). Example:
     ```
     class CompanyPublicResponse {
         owl:Class(CompanyPublicResponse)
@@ -19,7 +19,7 @@
     }
     ```
 
--   Wrong URIs
+-   **Wrong URIs.**
 
 
 ## Llama-2-13B-8bits
@@ -31,20 +31,20 @@
 ![](./8bits_ontology_corrected.png)
 
 
-### Errors
+### [Errors](./ontology_8bits_notes.txt)
 
--   Uncommented text: <br>
+-   **Uncommented text:** <br>
     Here is the proposed ontology for the given JSON data in TURTLE syntax:
 
--   And loop at the end of the file:
+-   **Incorrect serialization** due to a loop at the end of the file:
     ```
     <http://baseontology.com/Company> owl:hasValue <http://baseontology.com/non_null_count": 35699984167, "type": "text": "3", "3": "3" ...
     ```
 
--   Wrong URIs and used incorrectly. Example: owl:domain
+-   **Wrong URIs** and used incorrectly. Example: owl:domain
 
 
-### URIs
+### [URIs](./ontology_8bits_URIs.xlsx)
 
 | Prefix | URI                                         | Validity | Corrected |
 |--------|---------------------------------------------|----------|-----------|
@@ -83,9 +83,9 @@
 ![](./all_ontology_corrected.png)
 
 
-### Errors
+### [Errors](./ontology_all_notes.txt)
 
--   Incorrect serialization (number of elements and ending loop). Example: 
+-   **Incorrect serialization** (number of elements and ending loop). Example: 
     ```
     <http://example.com/Company> owl:type owl:Class> ,
     ...
@@ -95,10 +95,10 @@
     ...
     ```
     
--   Uncommented text. Example: <br>
+-   **Uncommented text.** Example: <br>
     Here is the TURTLE syntax for the proposed ontology:
 
--   Wrong URIs and incorrect use. Example: owl:has_value instead of owl:hasValue.
+-   **Wrong URIs** and incorrect use. Example: owl:has_value instead of owl:hasValue.
 
 -   Statements duplicated. Example: <br>
     ```
@@ -107,7 +107,7 @@
     ```
 
 
-### URIs
+### [URIs](./ontology_all_URIs.xlsx)
 
 | Prefix | URI                                         | Validity | Corrected |
 |--------|---------------------------------------------|----------|-----------|
@@ -123,4 +123,4 @@
 | owl:has_value | -       | owl:hasValue  |
 | *Total*       | **2**   | **1**         |
 
-- owl:hasValue used incorrectly.
+-   owl:hasValue used incorrectly.

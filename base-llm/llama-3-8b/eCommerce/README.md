@@ -9,9 +9,9 @@
 ![](./4bits_ontology_corrected.png)
 
 
-### Errors
+### [Errors](./ontology_4bits_notes.txt)
 
-Incorrect serialization:
+**Incorrect serialization:**
 -   Missing end dots in the prefix declarations. Example:
     ```
     @prefix owl: <http://www.w3.org/2002/07/owl#>
@@ -37,7 +37,7 @@ Incorrect serialization:
     ```
 
 
-### URIs
+### [URIs](./4bits_ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -70,9 +70,9 @@ Incorrect serialization:
 ![](./8bits_ontology_corrected.png)
 
 
-### Errors
+### [Errors](./ontology_8bits_notes.txt)
 
-Incorrect serialization:
+**Incorrect serialization:**
 -   Missing end dots in the prefix declarations. Example:
     ```
     @prefix owl: <http://www.w3.org/2002/07/owl#>
@@ -81,7 +81,7 @@ Incorrect serialization:
     @prefix base_ontology: <https://base_ontology.com#>
     ```
 
-### URIs
+### [URIs](./8bits_ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -110,6 +110,6 @@ Incorrect serialization:
 [Generated ontology](./ontology.txt)
 
 
-### Errors
+### [Errors](./ontology_notes.txt)
 
-Incorrect rdf/xml serialization.
+**Incorrect rdf/xml serialization.**

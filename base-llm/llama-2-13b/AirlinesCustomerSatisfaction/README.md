@@ -8,9 +8,9 @@
 <br>
 ![](./4bits_ontology_corrected.png)
 
-### Errors
+### [Errors](./ontology_4bits_notes.txt)
 
-Incorrect serialization: 
+**Incorrect serialization:**
 -   Incorrect format and number of elements in the triples. Example:
     ```
     <http://example.com/ontology/Passenger/Age> a owl:type rdf:HTTP_timestamp">
@@ -21,10 +21,10 @@ Incorrect serialization:
     <http://Cleaning> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger> a passenger>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a>a/pass/passing theprior/passing the_passing/passing_passing_passing",p"pt",p
     ```
 
--   Incorrect URIs. Some URIs do not exist, like rdf:HTTP_timestamp.
+**Incorrect URIs.** Some URIs do not exist, like rdf:HTTP_timestamp.
 
 
-### URIs
+### [URIs](./ontology_4bits_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -58,9 +58,9 @@ Incorrect serialization:
 ![](./8bits_ontology_corrected.png)
 
 
-### Errors
+### [Errors](./ontology_8bits_notes.txt)
 
-Incorrect serialization:
+**Incorrect serialization:**
 -   Loop at the end of the ontology:
     ```
     <http/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight/Flight
@@ -72,13 +72,12 @@ Incorrect serialization:
     <http://example.com/Flight> "10"^^xsd:integer" .
     ```
 
--   Incorrect URIs. Used of owl:class instead of owl:Class, and used as property.
+**Incorrect URIs.** Used of owl:class instead of owl:Class, and used as property.
 
--   Uncommented text: <br>
-    Here is the TURTLE syntax for the proposed ontology
+**Uncommented text:** Here is the TURTLE syntax for the proposed ontology
 
 
-### URIs
+### [URIs](./ontology_8bits_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -98,14 +97,13 @@ Incorrect serialization:
 | *Total*       | **5**    | **1**       |
 
 -   owl:class used as property.
-<br>
 -   owl:hasValue used in an inappropriate way.
 
 
-## Llama-2-13B
+## Llama-2-13B without quantization
 
 [Generated ontology](./all_ontology.txt)
 
-### Errors
+### [Errors](./ontology_all_notes.txt)
 
-Incorrect format, that is, the file do not follow a Turtle structure to serialize RDF triples.
+**Incorrect format**, that is, the file do not follow a Turtle structure to serialize RDF triples.

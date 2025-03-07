@@ -4,7 +4,7 @@
 
 [Generated ontology](./4bits_ontology.txt)
 
-### Errors
+### [Errors](./ontology_4bits_notes.txt)
 
 Incorrect rdf/xml serialization
 
@@ -18,15 +18,15 @@ Incorrect rdf/xml serialization
 ![](./8bits_ontology_corrected.png)
 
 
-### Errors
+### [Errors](./ontology_8bits_notes.txt)
 
-Incorrect serialization:
+**Incorrect serialization:**
 -   Incorrect number of elements in the triples. Example:
     <br>
     base_ontology:class_entity owl:Class.
 
 
-### URIs
+### [URIs](./ontology_8bits_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -57,9 +57,9 @@ Incorrect serialization:
 ![](./ontology_corrected.png)
 
 
-### Errors
+### [Errors](./ontology_notes.txt)
 
-Incorrect serialization:
+**Incorrect serialization:**
 -   Incorrect use of shortnames. Example:
     ```
     @prefix class_entity: <https://base_ontology.com#class_entity>.
@@ -67,7 +67,7 @@ Incorrect serialization:
     class_entity rdfs:subClassOf owl:Thing.
     ```
 
-### URIs
+### [URIs](./ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|

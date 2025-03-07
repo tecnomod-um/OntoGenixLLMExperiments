@@ -9,9 +9,9 @@
 ![](./4bits_ontology_corrected.png)
 
 
-### Errors
+### [Errors](./ontology_4bits_notes.txt)
 
-Incorrect serialization:
+**Incorrect serialization:**
 -   Missing end dots in the prefix declarations. Example:
     ```
     @prefix owl: <https://www.w3.org/2002/07/owl#>
@@ -19,9 +19,11 @@ Incorrect serialization:
     @prefix rdfs: <https://www.w3.org/2000/01/rdf-schema#>
     @prefix base: <https://base_ontology.com/>
     ```
--   Wrong URIs. Example: owl:subClassOf
 
-### URIs
+**Wrong URIs.** Example: owl:subClassOf
+
+
+### [URIs](./4bits_ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -56,23 +58,25 @@ Incorrect serialization:
 ![](./8bits_ontology_corrected.png)
 
 
-### Errors
+### [Errors](./ontology_8bits_notes.txt)
 
-Incorrect serialization:
+**Incorrect serialization:**
 -   Incorrect number of elements in the triples and missing semicolons. Example:
     ```
     base_ontology:has_absolute_url owl:ObjectProperty
         owl:domain base_ontology:class_entity
         owl:range xsd:integer.
     ```
+
 -   Prefix declaration: 
     ```
     @prefix base_ontology: <https://base_ontology.com#ontology.owl>.
     ```
--   Wrong URIs. Example: owl:subclassOf
+
+**Wrong URIs.** Example: owl:subclassOf
 
 
-### URIs
+### [URIs](./8bits_ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -104,9 +108,9 @@ Incorrect serialization:
 ![](./ontology_corrected.png)
 
 
-### Errors
+### [Errors](./ontology_notes.txt)
 
-Incorrect serialization:
+**Incorrect serialization:**
 -   Missing ending dots in the prefixes. Example:
     ```
     @prefix owl: <http://www.w3.org/2002/07/owl#>
@@ -121,7 +125,7 @@ Incorrect serialization:
     ```
 
 
-### URIs
+### [URIs](./ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -144,4 +148,4 @@ Incorrect serialization:
 | xsd:decimal          | X        | -                    |
 | *Total*              | **9**    | **0**                |
 
-- Property owl:oneOf used incorrectly.
+-   Property owl:oneOf used incorrectly.

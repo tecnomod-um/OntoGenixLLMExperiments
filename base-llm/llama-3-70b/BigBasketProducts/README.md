@@ -12,7 +12,7 @@
 Ontology without syntax errors.
 
 
-### URIs
+### [URIs](./ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|

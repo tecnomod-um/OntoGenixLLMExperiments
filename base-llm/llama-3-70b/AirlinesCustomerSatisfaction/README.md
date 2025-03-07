@@ -8,13 +8,9 @@
 <br>
 ![](./ontology_corrected.png)
 
-### Errors
+### [Errors](./ontology_notes.txt)
 
-Incorrect serialization:
--   Uncommented text:
-    <br>
-    Here is the TURTLE ontology:
-
+**Incorrect serialization:**
 -   Incorrect statement of the ontology:
     ```
     owl:Ontology( <https://base_ontology.com#> )
@@ -29,8 +25,10 @@ Incorrect serialization:
     prefix base: <https://base_ontology.com#>
     ```
 
+**Uncommented text:** Here is the TURTLE ontology:
 
-### URIs
+
+### [URIs](./ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|

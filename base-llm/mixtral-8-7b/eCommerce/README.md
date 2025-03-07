@@ -7,9 +7,9 @@
 ![](./ontology_corrected.png)
 
 
-## Errors
+## [Errors](./ontology_notes.txt)
 
-Incorrect serialization:
+**Incorrect serialization:**
 -   Incorrect prefix declarations. Examples:
     ```
     Prefix: base = <https://base_ontology.com#>
@@ -28,10 +28,10 @@ Incorrect serialization:
     Class: base:Invoice
     ```
 
-Wrong IDs. Example: SubClassOf instead of subClassOf.
+**Wrong IDs.** Example: SubClassOf instead of subClassOf.
 
 
-## URIs
+## [URIs](./ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|

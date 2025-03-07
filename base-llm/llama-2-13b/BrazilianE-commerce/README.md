@@ -8,9 +8,9 @@
 <br>
 ![](./4bits_ontology_corrected.png)
 
-### Errors
+### [Errors](./ontology_4bits_notes.txt)
 
--   Incorrect format and serialization (number of elements, shortnames and dots). Example:
+-   **Incorrect format and serialization** (number of elements, shortnames and dots). Example:
     ```
     class class_entity {
         owl:ontologyProperty rdf:type owl:Class .
@@ -19,10 +19,10 @@
     }
     ```
 
--   Wrong URIs. Example: owl:ontologyProperty instead of owl:OntologyProperty. Some URIs are also used incorrectly.
+-   **Wrong URIs.** Example: owl:ontologyProperty instead of owl:OntologyProperty. Some URIs are also used incorrectly.
 
 
-### URIs
+### [URIs](./ontology_4bits_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -41,7 +41,7 @@
 | owl:Property         | -       | rdf:Property         |
 | *Total*              | **4**   | **2**                |
 
-- owl:OntologyProperty, owl:hasValue, owl:inverseOf, and owl:Property used incorrectly.
+-   owl:OntologyProperty, owl:hasValue, owl:inverseOf, and owl:Property used incorrectly.
 
 
 ## Llama-2-13B-8bits
@@ -53,22 +53,22 @@
 ![](./8bits_ontology_corrected.png)
 
 
-### Errors
+### [Errors](./ontology_8bits_notes.txt)
 
--   Incorrect format and serialization (number of elements, shortnames, dots, URI format). Example:
+-   **Incorrect format and serialization** (number of elements, shortnames, dots, URI format). Example:
     ```
     data_property (entity_type) a owl:DataProperty .
         domain (http://baseontology.com/customer)
         range (Text)
     ```
 
--   Uncommented text: <br>
+-   **Uncommented text:** <br>
     Sure, here is the TURTLE syntax content for the proposed ontology based on the provided JSON data table and schema:
 
--   Wrong URIs and used incorrectly. Example: owl:DataProperty
+-   **Wrong URIs** and used incorrectly. Example: owl:DataProperty
 
 
-### URIs
+### [URIs](./ontology_4bits_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -98,9 +98,9 @@
 ![](./all_ontology_corrected.png)
 
 
-### Errors
+### [Errors](./ontology_all_notes.txt)
 
--   Incorrect serialization (number of elements, shortnames, dots): 
+-   **Incorrect serialization** (number of elements, shortnames, dots): 
     ```
     class entity_name
         subClassOf class_entity.
@@ -108,13 +108,13 @@
         range owl:String.
     ```
    
--   Wrong URIs. Example: owl:String. Some classes and properties share the same URIs.
+-   **Wrong URIs.** Example: owl:String. Some classes and properties share the same URIs.
 
--   Uncommented text: 
+-   **Uncommented text:** 
     Sure, here is the TURTLE syntax content for the proposed ontology based on the provided JSON data and input related data description:
 
 
-### URIs
+### [URIs](./ontology_all_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|

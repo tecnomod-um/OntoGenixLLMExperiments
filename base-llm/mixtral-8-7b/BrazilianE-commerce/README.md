@@ -7,9 +7,9 @@
 ![](./ontology_corrected.png)
 
 
-## Errors
+## [Errors](./ontology_notes.txt)
 
-Incorrect serialization:
+**Incorrect serialization:**
 -   Incorrect declaration of prefixes:
     ```
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>, <http://www.w3.org/2000/01/rdf-schema#>, <http://www.w3.org/2002/07/owl#>, <https://base_ontology.com#>, <http://www.w3.org/2001/XMLSchema#>
@@ -22,9 +22,10 @@ Incorrect serialization:
         rdfs:comment "Subclass of class_entity representing state" .
     ```
     
-Wrong URIs. Example: rdf:about
+**Wrong URIs.** Example: rdf:about
 
-## URIs
+
+## [URIs](./ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|

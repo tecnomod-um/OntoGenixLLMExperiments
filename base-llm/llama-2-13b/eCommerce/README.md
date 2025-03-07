@@ -9,9 +9,9 @@
 ![](./4bits_ontology_corrected.png)
 
 
-### Errors
+### [Errors](./ontology_4bits_notes.txt)
 
--   Incorrect format and serialization (number of elements in the triples, dots, and incorrect representation of URIs with quotes). Example: <br>
+-   **Incorrect format and serialization** (number of elements in the triples, dots, and incorrect representation of URIs with quotes). Example: <br>
     ```
     class class_entity {
         owl:ontology owl:version "1.0" .
@@ -27,10 +27,10 @@
     }
     ```
 
--   Wrong URIs. Example: rdf:Resource instead of rdfs:Resource
+-   **Wrong URIs.** Example: rdf:Resource instead of rdfs:Resource
 
 
-### URIs
+### [URIs](./ontology_4bits_URIs.xlsx)
 
 | Prefix | URI                                         | Validity | Corrected |
 |--------|---------------------------------------------|----------|-----------|
@@ -63,9 +63,9 @@
 ![](./8bits_ontology_corrected.png)
 
 
-### Errors
+### [Errors](./ontology_8bits_notes.txt)
 
--   Incorrect serialization (number of elements in the triples, shortnames and dots), and uncommented text:
+-   **Incorrect serialization** (number of elements in the triples, shortnames and dots), and uncommented text:
     <br>
     Here is the proposed ontology for the given JSON data in TURTLE syntax:
     ```
@@ -75,10 +75,10 @@
         owl:hasSelf rdf:type owl:Class.
     ```
 
--   Wrong URIs. Example: owl:Entity
+-   **Wrong URIs.** Example: owl:Entity
 
 
-### URIs
+### [URIs](./ontology_8bits_URIs.xlsx)
 
 | Prefix | URI                                         | Validity | Corrected |
 |--------|---------------------------------------------|----------|-----------|
@@ -109,9 +109,9 @@
 ![](./all_ontology_corrected.png)
 
 
-### Errors
+### [Errors](./ontology_all_notes.txt)
 
--   Incorrect serialization (number of elements in the triples, and dots), and uncommented text. Example:
+-   **Incorrect serialization** (number of elements in the triples, and dots), and uncommented text. Example:
     <br>
     Sure, here is the TURTLE syntax for the proposed ontology based on the provided JSON data and instructions:
     ```
@@ -134,7 +134,7 @@
 -   URIs used incorrectly. Example: owl:hasValue to link two classes (rdfs:domain owl:Restriction).
 
 
-### URIs
+### [URIs](./ontology_all_URIs.xlsx)
 
 | Prefix | URI                                         | Validity | Corrected |
 |--------|---------------------------------------------|----------|-----------|
@@ -153,4 +153,4 @@
 | owl:inverseOf | X       | -          |
 | *Total*       | **6**   | **0**      |
 
-- owl:hasValue and owl:inverseOf used incorrectly.
+-   owl:hasValue and owl:inverseOf used incorrectly.

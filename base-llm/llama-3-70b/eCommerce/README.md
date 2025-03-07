@@ -9,12 +9,12 @@
 ![](./ontology_corrected.png)
 
 
-### Errors
+### [Errors](./ontology_notes.txt)
 
 Ontology without syntax errors, but wrong URIs.
 
 
-### URIs
+### [URIs](./ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|

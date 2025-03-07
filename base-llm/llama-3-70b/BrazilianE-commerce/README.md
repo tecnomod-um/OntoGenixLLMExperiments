@@ -9,12 +9,13 @@
 ![](./ontology_corrected.png)
 
 
-### Errors
+### [Errors](./ontology_notes.txt)
 
-Namespace prefix 'xsd' used but not defined.
+**Incorrect serialization:**
+-   Namespace prefix 'xsd' used but not defined.
 
 
-### URIs
+### [URIs](./ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|

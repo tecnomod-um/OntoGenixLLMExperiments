@@ -7,20 +7,20 @@
 ![](./ontology_corrected.png)
 
 
-## Errors
+## [Errors](./ontology_notes.txt)
 
-Incorrect serialization:
+**Incorrect serialization:**
 -   Incorrect use of shortnames, like TextDomain and NumericalDomain. Examples:
     ```
     :customer_id a TextDomain .
     :customer_zip_code_prefix a NumericalDomain .
     ```
 
-Wrong URIs. Example: owl:DataProperty
+**Wrong URIs.** Example: owl:DataProperty
 
 
 
-## URIs
+## [URIs](./ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -45,4 +45,4 @@ Wrong URIs. Example: owl:DataProperty
 | xsd:int              | X        | -                    |
 | *Total*              | **9**    | **1**                |
 
-- Use of rdf:label as dc:description or rdfs:comment
+-   Use of rdf:label as dc:description or rdfs:comment

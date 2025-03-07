@@ -5,7 +5,7 @@
 [Generated ontology](./4bits_ontology.txt)
 
 
-### Errors
+### [Errors](./ontology_4bits_notes.txt)
 
 Incorrect rdf/xml serialization.
 
@@ -20,9 +20,9 @@ Incorrect rdf/xml serialization.
 ![](./8bits_ontology_corrected.png)
 
 
-### Errors
+### [Errors](./ontology_8bits_notes.txt)
 
-Incorrect serialization:
+**Incorrect serialization:**
 -   Lack of shortnames. Example:
     ```
     class_entity
@@ -30,7 +30,7 @@ Incorrect serialization:
         rdfs:label "class_entity".
     ```
 
-### URIs
+### [URIs](./8bits_ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -67,9 +67,9 @@ Incorrect serialization:
 ![](./ontology_corrected.png)
 
 
-### Errors
+### [Errors](./ontology_8bits_notes.txt)
 
-Incorrect serialization:
+**Incorrect serialization:**
 -   Missing ending dots in the prefixes. Example:
     ```
     @prefix owl: <http://www.w3.org/2002/07/owl#>
@@ -82,10 +82,10 @@ Incorrect serialization:
 
 -   Incorrect use of shortnames. Example: has_company in the previous statement.
 
--   Wrong URIs. Example: owl:Categorical
+**Wrong URIs.** Example: owl:Categorical
 
 
-### URIs
+### [URIs](./8bits_ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|

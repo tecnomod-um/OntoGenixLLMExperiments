@@ -9,9 +9,9 @@
 ![](./4bits_ontology_corrected.png)
 
 
-### Errors
+### [Errors](./4bits_ontology_notes.txt)
 
-Incorrect serialization: 
+**Incorrect serialization:**
 -   Incorrect shortnames, like class_entity:
     ```
     class_entity
@@ -40,10 +40,11 @@ Incorrect serialization:
         owl:integer
         owl:integer
     ```
--   Incorrect URIs. Example: owl:domain instead of rdfs:domain.
+
+**Incorrect URIs.** Example: owl:domain instead of rdfs:domain.
 
 
-### URIs
+### [URIs](./ontology_4bits_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|

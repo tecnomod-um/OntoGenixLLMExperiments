@@ -7,9 +7,9 @@
 ![](./ontology_corrected.png)
 
 
-## Errors
+## [Errors](./ontology_notes.txt)
 
-Incorrect serialization:
+**Incorrect serialization:**
 -   Incorrect IDs with spaces between words. Examples:
     <br>
     :Company public response
@@ -24,10 +24,10 @@ Incorrect serialization:
     rdf:range :Text .
     ```
 
-Wrong URIs. Example: rdf:label
+**Wrong URIs.** Example: rdf:label
 
 
-## URIs
+## [URIs](./ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|

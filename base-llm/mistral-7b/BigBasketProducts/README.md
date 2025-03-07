@@ -7,9 +7,9 @@
 ![](./ontology_corrected.png)
 
 
-## Errors
+## [Errors](./ontology_notes.txt)
 
-Incorrect serialization:
+**Incorrect serialization:**
 -   Missing end dots in the prefixes. Example:
     ```
     @prefix base: <https://base_ontology.com/>
@@ -28,10 +28,10 @@ Incorrect serialization:
     rdfs:label "entity_name" ] ] .
     ```
 
--   Wrong URIs. Example: rdf:Resource or rdfs:Real
+**Wrong URIs.** Example: rdf:Resource or rdfs:Real
 
 
-## URIs
+## [URIs](./ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -57,4 +57,4 @@ Incorrect serialization:
 | owl:DatatypeProperty | X        | -                    |
 | *Total*              | **11**   | **2**                |
 
-- Use of rdf:label as dc:description or rdfs:comment
+-   Use of rdf:label as dc:description or rdfs:comment

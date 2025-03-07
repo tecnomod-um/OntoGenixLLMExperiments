@@ -8,17 +8,17 @@
 <br>
 ![](./4bits_ontology_corrected.png)
 
-### Errors
+### [Errors](./ontology_4bits_notes.txt)
 
--   Incorrect serialization (number of elements in the triples). Example:
+-   **Incorrect serialization** (number of elements in the triples). Example:
     ```
     <http://base_ontology.com/class_entity> owl:hasValue <http://base_ontology.com/Absolute_Url_idx> "count" ;
     ```
 
--   Wrong URIs and inappropriate reuse. Examples: owl:domain and owl:ranges, and the use of owl:inverseOf.
+-   **Wrong URIs** and inappropriate reuse. Examples: owl:domain and owl:ranges, and the use of owl:inverseOf.
 
 
-### URIs
+### [URIs](./ontology_4bits_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -38,8 +38,7 @@
 | xsd:string         | X        | -           |
 | *Total*            | **5**    | **2**       |
 
-- owl:inverseOf used in an inappropriate way.
-- <http://base_ontology.com/entity_name> and <http://base_ontology.com/data_type> used as nodes and properties.
+-   owl:inverseOf used in an inappropriate way.
 
 
 ## Llama-2-13B-8bits
@@ -51,18 +50,18 @@
 ![](./8bits_ontology_corrected.png)
 
 
-### Errors
+### [Errors](./ontology_8bits_notes.txt)
 
--   Uncommented text: <br>
+-   **Uncommented text:** <br>
     Here is the TURTLE syntax content for the proposed ontology, without any abbreviations or shortening, and with strict compliance to the instructions provided
 
--   Wrong URIs:
+-   **Wrong URIs.** Example:
     ```
     <data_property_name> owl:domain <class_entity> .
     ```
 
 
-### URIs
+### [URIs](./ontology_8bits_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -91,12 +90,12 @@
 | owl:DataProperty   | -        | owl:DatatypeProperty |
 | *Total*            | **5**    | **10**               |
 
-- owl:class (owl:Class) used as node and property, but it is a node (rdf:Class).
-- owl:hasSelf used incorrectly (owl:Restriction as domain).
-- owl:property (rdf:Poperty) used as property, but it is a node (rdf:Class).
-- owl:dataRange (owl:DataRange) used as property, but it is a node (rdf:Class)
-- owl:URI (xsd:anyURI) and owl:Text (xsd:string) used as node, but there are a datatype.
-- owl:dataRange (owl:DataRange) has been deprecated as of OWL2.
+-   owl:class (owl:Class) used as node and property, but it is a node (rdf:Class).
+-   owl:hasSelf used incorrectly (owl:Restriction as domain).
+-   owl:property (rdf:Poperty) used as property, but it is a node (rdf:Class).
+-   owl:dataRange (owl:DataRange) used as property, but it is a node (rdf:Class)
+-   owl:URI (xsd:anyURI) and owl:Text (xsd:string) used as node, but there are a datatype.
+-   owl:dataRange (owl:DataRange) has been deprecated as of OWL2.
 
 
 ## Llama-2-13B without quantization
@@ -108,22 +107,22 @@
 ![](./all_ontology_corrected.png)
 
 
-### Errors
+### [Errors](./ontology_all_notes.txt)
 
--   Incorrect serialization: Lack of shortnames, serialization dots, and incorrect number of elements in the triples. Example:
+-   **Incorrect serialization:** Lack of shortnames, serialization dots, and incorrect number of elements in the triples. Example:
     ```
     class class_entity (rdf:type owl:Class)
        owl:hasSelf rdf:type owl:Class
        owl:hasKey rdf:type owl:ObjectProperty
     ```
 
--   Uncommented text. Examples: <br>
+-   **Uncommented text.** Examples: <br>
     Sure, here is the TURTLE syntax content for the proposed ontology based on the provided JSON data and schema:
 
--   Wrong URIs. Example: owl:NumericDatatype
+-   **Wrong URIs.** Example: owl:NumericDatatype
 
 
-### URIs
+### [URIs](./ontology_all_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|

@@ -9,9 +9,9 @@
 ![](./ontology_corrected.png)
 
 
-### Errors
+### [Errors](./ontology_notes.txt)
 
-Incorrect serialization:
+**Incorrect serialization:**
 -   Incorrect blank nodes. Example:
     ```
     base_ontology:hasProductId [ a rdf:Property ; 
@@ -19,10 +19,10 @@ Incorrect serialization:
         rdfs:range xsd:string ;
         rdf:type rdf:Property ;
     ].
-```
+    ```
 
 
-### URIs
+### [URIs](./ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|

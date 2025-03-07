@@ -7,9 +7,9 @@
 ![](./ontology_corrected.png)
 
 
-## Errors
+## [Errors](./ontology_notes.txt)
 
-Incorrect serialization:
+**Incorrect serialization:**
 -   Incorrect restriction declaration:
     ```
     base:Rating rdf:type owl:Class ;
@@ -26,7 +26,7 @@ Incorrect serialization:
         ] .
     ```
 
-## URIs
+## [URIs](./ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -57,5 +57,5 @@ Incorrect serialization:
 | xsd:float            | X        | -                    |
 | *Total*              | **16**   | **0**                |
 
-- owl:onClass used incorrectly (only used within cardinality restrictions).
-- intersectionOf also used incorrectly.
+-   owl:onClass used incorrectly (only used within cardinality restrictions).
+-   intersectionOf also used incorrectly.

@@ -3,6 +3,6 @@
 [Generated ontology](./ontology.txt)
 
 
-## Errors
+## [Errors](./ontology_notes.txt)
 
-Incorrect format
+Incorrect format.

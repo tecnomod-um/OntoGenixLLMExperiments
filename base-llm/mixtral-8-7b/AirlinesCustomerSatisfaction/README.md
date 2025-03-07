@@ -7,14 +7,14 @@
 ![](./ontology_corrected.png)
 
 
-## Errors
+## [Errors](./ontology_notes.txt)
 
-Uncommented text:
+**Uncommented text:** 
 <br>
 Here is the TURTLE syntax for the ontology based on the provided JSON data and schema description
 
 
-## URIs
+## [URIs](./ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|

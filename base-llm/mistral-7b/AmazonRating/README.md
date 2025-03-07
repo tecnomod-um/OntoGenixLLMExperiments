@@ -3,19 +3,20 @@
 [Generated ontology](./ontology.txt)
 
 
-## Errors
+## [Errors](./ontology_notes.txt)
 
-Incorrect serialization:
+**Incorrect serialization:**
 -   Incorrect use of shortnames and number of elements in the triplets. Example:
     ```
     :ProductId hasEntityNameValue rdf:id "ProductId" ;
         rdfs:domain :ProductId ;
         rdfs:range rdf:String .
     ```
--   Wrong URIs. Example: rdf:id
+
+**Wrong URIs.** Example: rdf:id
 
 
-## URIs
+## [URIs](./ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected                                   |
 |--------|-----------------------------------------------|----------|---------------------------------------------|
@@ -41,4 +42,4 @@ Incorrect serialization:
 | rdf:Property          | X        | -                      |
 | *Total*               | **7**    | **5**                  |
 
-- Incorrect use of owl:hasValue
+-   Incorrect use of owl:hasValue
