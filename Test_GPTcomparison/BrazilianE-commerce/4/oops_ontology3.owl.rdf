@@ -1,0 +1,103 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:oops="http://oops.linkeddata.es/def#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
+  <rdf:Description rdf:about="http://oops.linkeddata.es/def#warning">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oops.linkeddata.es/data/73faa576-51cf-4deb-bde6-eb9d14f0f627">
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasCity</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasState</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasZipCode</oops:hasAffectedElement>
+    <rdf:type rdf:resource="http://oops.linkeddata.es/def#noSuggestionProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oops.linkeddata.es/data/fb990ae0-1714-4e66-87c5-939bc15e9b75">
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.geonames.org/ontology#Code</oops:hasAffectedElement>
+    <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontology elements (classes, object properties and datatype properties) are created isolated, with no relation to the rest of the ontology.	</oops:hasDescription>
+    <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor</oops:hasImportanceLevel>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://schema.org/Person</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://schema.org/PostalCode</oops:hasAffectedElement>
+    <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creating unconnected ontology elements</oops:hasName>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://schema.org/Organization</oops:hasAffectedElement>
+    <rdf:type rdf:resource="http://oops.linkeddata.es/def#pitfall"/>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/resource/City</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://schema.org/State</oops:hasAffectedElement>
+    <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</oops:hasNumberAffectedElements>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://schema.org/City</oops:hasAffectedElement>
+    <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P04</oops:hasCode>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/resource/State</oops:hasAffectedElement>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oops.linkeddata.es/data/a2a6584a-29e0-490d-839c-96fd730fc9a3">
+    <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</oops:hasNumberAffectedElements>
+    <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Important</oops:hasImportanceLevel>
+    <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This pitfall consists in not declaring the owl:Ontology tag, which provides the ontology metadata. The owl:Ontology tag aims at gathering metadata about a given ontology such as version information, license, provenance, creation date, and so on. It is also used to declare the inclusion of other ontologies.	</oops:hasDescription>
+    <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No OWL ontology declaration</oops:hasName>
+    <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P38</oops:hasCode>
+    <rdf:type rdf:resource="http://oops.linkeddata.es/def#pitfall"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oops.linkeddata.es/def#pitfall">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oops.linkeddata.es/data/217d7608-0f71-4b0a-af02-32e253c9d360">
+    <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor</oops:hasImportanceLevel>
+    <oops:noSuggestion rdf:resource="http://oops.linkeddata.es/data/73faa576-51cf-4deb-bde6-eb9d14f0f627"/>
+    <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</oops:hasNumberAffectedElements>
+    <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This pitfall appears when any relationship (except for those that are defined as symmetric properties using owl:SymmetricProperty) does not have an inverse relationship (owl:inverseOf) defined within the ontology.	</oops:hasDescription>
+    <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inverse relationships not explicitly declared</oops:hasName>
+    <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P13</oops:hasCode>
+    <rdf:type rdf:resource="http://oops.linkeddata.es/def#pitfall"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oops.linkeddata.es/data/13b3556d-c51f-4906-bcc7-59e363b2382c">
+    <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</oops:hasNumberAffectedElements>
+    <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Important</oops:hasImportanceLevel>
+    <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ontology lacks disjoint axioms between classes or between properties that should be defined as disjoint. This pitfall is related with the guidelines provided in [6], [2] and [7].	</oops:hasDescription>
+    <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Missing disjointness</oops:hasName>
+    <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P10</oops:hasCode>
+    <rdf:type rdf:resource="http://oops.linkeddata.es/def#pitfall"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oops.linkeddata.es/data/24db66c1-3738-42e6-80d3-46414bc409f2">
+    <oops:hasPitfall rdf:resource="http://oops.linkeddata.es/data/a2a6584a-29e0-490d-839c-96fd730fc9a3"/>
+    <oops:hasPitfall rdf:resource="http://oops.linkeddata.es/data/217d7608-0f71-4b0a-af02-32e253c9d360"/>
+    <oops:hasPitfall rdf:resource="http://oops.linkeddata.es/data/13b3556d-c51f-4906-bcc7-59e363b2382c"/>
+    <oops:hasPitfall rdf:resource="http://oops.linkeddata.es/data/df185b9e-5389-44ad-b309-adb0ed6812d6"/>
+    <oops:hasPitfall rdf:resource="http://oops.linkeddata.es/data/fb990ae0-1714-4e66-87c5-939bc15e9b75"/>
+    <rdf:type rdf:resource="http://oops.linkeddata.es/def#response"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oops.linkeddata.es/def#suggestion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oops.linkeddata.es/data/df185b9e-5389-44ad-b309-adb0ed6812d6">
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#CustomerCity</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#CustomerState</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/resource/City</oops:hasAffectedElement>
+    <rdf:type rdf:resource="http://oops.linkeddata.es/def#pitfall"/>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://schema.org/Organization</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasZipCodeStd</oops:hasAffectedElement>
+    <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This pitfall consists in creating an ontology element and failing to provide human readable annotations attached to it. Consequently, ontology elements lack annotation properties that label them (e.g. rdfs:label, lemon:LexicalEntry, skos:prefLabel or skos:altLabel) or that define them (e.g. rdfs:comment or dc:description). This pitfall is related to the guidelines provided in [5].	</oops:hasDescription>
+    <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Missing annotations</oops:hasName>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasZipCodeMean</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#CustomerZipCode</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://schema.org/State</oops:hasAffectedElement>
+    <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</oops:hasNumberAffectedElements>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasNonNullCount</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasUniqueId</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://schema.org/Person</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasZipCodeCount</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://schema.org/City</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasState</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://schema.org/PostalCode</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasZipCodeMax</oops:hasAffectedElement>
+    <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor</oops:hasImportanceLevel>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#Customer</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasZipCodeMin</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.geonames.org/ontology#Code</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasCity</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasZipCode</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/resource/State</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasUniqueCount</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasCustomerId</oops:hasAffectedElement>
+    <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P08</oops:hasCode>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,137 @@
+**Foundational Prefix:**
+<https://base_ontology.com#>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+<http://www.w3.org/2000/01/rdf-schema#>
+<http://www.w3.org/2002/07/owl#>
+Define it as an owl type
+
+**Data Description:**
+1. Company: text - The name of the company involved in the complaint - [1:606]
+2. Company public response: categorical - Public response provided by the company - [1:9]
+3. Company response to consumer: categorical - Response given by the company to the consumer - [1:5]
+4. Consumer complaint narrative: text - Detailed narrative of the complaint submitted by the consumer - [1:1652]
+5. Consumer consent provided?: categorical - Indicates whether the consumer provided consent for data sharing - [1:4]
+6. Consumer disputed?: categorical - Indicates whether the consumer disputed the complaint resolution - [0:0]
+7. Date received: text - The date on which the complaint was received - [1:166]
+8. Date sent to company: text - The date on which the complaint was forwarded to the company - [1:166]
+9. Issue: text - The issue raised in the complaint - [1:69]
+10. Product: categorical - The type of product the complaint is about - [1:9]
+11. State: text - The state from which the complaint was filed - [1:56]
+12. Sub-issue: text - Detailed issue related to the main issue - [1:141]
+13. Sub-product: text - Detailed product related to the main product - [1:46]
+14. Submitted via: categorical - The medium through which the complaint was submitted - [1:5]
+15. Tags: categorical - Tags associated with the complaint - [1:3]
+16. Timely response?: categorical - Indicates whether the company responded in a timely manner - [1:2]
+17. Complaint ID: Numerical - Unique identifier for the complaint - [1:1]
+18. ZIP code: Numerical - Postal code from which the complaint was filed - [1:M]
+
+**classes:**
+1. Complaint
+2. Company
+3. Consumer
+4. Product
+5. Issue
+6. Communication
+7. Location
+
+**subclasses:**
+1. PublicResponse: subclass of -> Company
+2. ConsumerNarrative: subclass of -> Consumer
+3. Consent: subclass of -> Consumer
+4. Dispute: subclass of -> Consumer
+5. SubProduct: subclass of -> Product
+6. SubIssue: subclass of -> Issue
+7. Tags: subclass of -> Complaint
+8. TimelyResponse: subclass of -> Communication
+9. State: subclass of -> Location
+10. ZIPCode: subclass of -> Location
+
+**Object Properties:**
+1. hasPublicResponse: domain - Company; range - PublicResponse
+2. hasConsumerNarrative: domain - Complaint; range - ConsumerNarrative
+3. hasConsent: domain - Consumer; range - Consent
+4. hasDispute: domain - Complaint; range - Dispute
+5. hasSubProduct: domain - Product; range - SubProduct
+6. hasSubIssue: domain - Issue; range - SubIssue
+7. hasTags: domain - Complaint; range - Tags
+8. hasTimelyResponse: domain - Communication; range - TimelyResponse
+9. locatedInState: domain - Location; range - State
+10. hasZIPCode: domain - Location; range - ZIPCode
+
+**Data Type Properties:**
+1. companyName: domain - Company; range - xsd:string
+2. companyResponseToConsumer: domain - Company; range - xsd:string
+3. dateReceived: domain - Communication; range - xsd:date
+4. dateSentToCompany: domain - Communication; range - xsd:date
+5. issueDescription: domain - Issue; range - xsd:string
+6. productCategory: domain - Product; range - xsd:string
+7. submittedVia: domain - Communication; range - xsd:string
+8. complaintID: domain - Complaint; range - xsd:integer
+9. consumerDisputed: domain - Dispute; range - xsd:boolean
+
+To enhance the interoperability of the ontology schema, we will link the entities to well-known external vocabularies and ontologies. This will allow systems that understand these external resources to better interpret the data described by our ontology.
+
+**Ontology Prefixes:**
+We will use the Turtle format to define the prefixes for the external vocabularies:
+
+```
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+```
+
+**Link of each entity to external resources:**
+For each entity, we will enumerate its corresponding external resource:
+
+1. Complaint: schema:ConsumerComplaint
+2. Company: gr:BusinessEntity
+3. Consumer: foaf:Person
+4. Product: gr:ProductOrService
+5. Issue: skos:Concept
+6. Communication: schema:Communication
+7. Location: schema:Place
+
+**Subclasses:**
+1. PublicResponse: schema:Comment
+2. ConsumerNarrative: schema:Review
+3. Consent: dcterms:RightsStatement
+4. Dispute: schema:DisputeResolution
+5. SubProduct: gr:SomeProducts
+6. SubIssue: skos:Concept
+7. Tags: schema:CategoryCode
+8. TimelyResponse: schema:ReplyAction
+9. State: schema:State
+10. ZIPCode: schema:PostalCode
+
+**Object Properties:**
+1. hasPublicResponse: schema:comment
+2. hasConsumerNarrative: schema:review
+3. hasConsent: dcterms:rights
+4. hasDispute: schema:disputeResolutionProcess
+5. hasSubProduct: gr:hasSubProduct
+6. hasSubIssue: skos:broader
+7. hasTags: schema:category
+8. hasTimelyResponse: schema:replyToUrl
+9. locatedInState: schema:addressRegion
+10. hasZIPCode: schema:postalCode
+
+**Data Type Properties:**
+1. companyName: gr:legalName
+2. companyResponseToConsumer: schema:customerService
+3. dateReceived: schema:dateReceived
+4. dateSentToCompany: schema:dateSent
+5. issueDescription: skos:note
+6. productCategory: gr:category
+7. submittedVia: schema:actionMethod
+8. complaintID: schema:identifier
+9. consumerDisputed: schema:customerDispute
+
+By linking to these external resources, we ensure that our ontology can be understood and used in conjunction with other datasets and ontologies, thus improving its interoperability.

@@ -1,0 +1,54 @@
+classDiagram
+    class City
+
+    class Customer {
+        +customerID : xsd:string
+        +customerUniqueID : xsd:string
+    }
+
+    class CustomerLocation {
+        +customerLocationCode : xsd:string
+        +customerLocationNameEn : xsd:string
+        +customerLocationNameEs : xsd:string
+    }
+
+    class Order {
+        +orderDate : xsd:dateTime
+        +orderDateOrdered : xsd:dateTime
+        +orderDateOrderedTextEn : xsd:string
+        +orderDateOrderedTextEs : xsd:string
+        +orderDateDelivered : xsd:dateTime
+        +orderDateDeliveredTextEn : xsd:string
+        +orderDateDeliveredTextEs : xsd:string
+        +orderDateShipped : xsd:dateTime
+        +orderDateShippedTextEn : xsd:string
+        +orderDateShippedTextEs : xsd:string
+    }
+
+    class OrderDate {
+        +orderDateText : xsd:string
+    }
+
+    class Product {
+        +pricePerUnitText : xsd:string
+        +productName : xsd:string
+        +quantityOrderedText : xsd:integer
+        +totalAmountText : xsd:string
+    }
+
+    class PricePerUnit
+
+    class ProductCategory {
+        +productCategoryName : xsd:string
+        +productCategoryNameEn : xsd:string
+        +productCategoryNameEs : xsd:string
+    }
+
+    class QuantityOrdered
+    class TotalAmount
+    class State
+
+    PricePerUnit --|> Product : subClassOf
+    ProductCategory --|> Product : subClassOf
+    QuantityOrdered --|> Product : subClassOf
+    TotalAmount --|> Product : subClassOf

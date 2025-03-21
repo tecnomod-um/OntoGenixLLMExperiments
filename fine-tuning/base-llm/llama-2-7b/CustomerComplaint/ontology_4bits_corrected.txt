@@ -1,0 +1,110 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:CreditReportOntology rdf:type owl:Ontology .
+
+### Classes ###
+um:CreditReport a owl:Class ;
+   rdfs:label "Credit Report" .
+
+um:Product a owl:Class ;
+   rdfs:label "Product" .
+
+um:SubProduct a owl:Class ;
+   rdfs:label "Sub-product" .
+
+um:Issue a owl:Class ;
+   rdfs:label "Issue" .
+
+um:SubIssue a owl:Class ;
+   rdfs:label "Sub-issue" .
+
+um:ConsumerComplaintNarrative a owl:Class ;
+   rdfs:label "Consumer complaint narrative" .
+
+um:CompanyPublicResponse a owl:Class ;
+   rdfs:label "Company public response" .
+
+um:Company a owl:Class ;
+   rdfs:label "Company" .
+
+um:State a owl:Class ;
+   rdfs:label "State" .
+
+um:ZipCode a owl:Class ;
+   rdfs:label "Zip code" .
+
+### Data Properties ###
+um:hasDateSentToCompany a rdf:Property ;
+   rdfs:domain um:CreditReport ;
+   rdfs:range xsd:date ;
+   rdfs:label "Has Date Sent to Company" .
+
+um:hasCompanyResponseToConsumer a rdf:Property ;
+   rdfs:domain um:CreditReport ;
+   rdfs:range xsd:string ;
+   rdfs:label "Has Company Response to Consumer" .
+
+um:hasTimelyResponse a rdf:Property ;
+   rdfs:domain um:CreditReport ;
+   rdfs:range xsd:boolean ;
+   rdfs:label "Has Timely Response" .
+
+um:hasConsumerDisputed a rdf:Property ;
+   rdfs:domain um:CreditReport ;
+   rdfs:range xsd:boolean ;
+   rdfs:label "Has Consumer Disputed" .
+
+um:hasComplaintID a rdf:Property ;
+   rdfs:domain um:CreditReport ;
+   rdfs:range um:ComplaintID ;
+   rdfs:label "Has Complaint ID" .
+
+### Object Properties ###
+um:hasProduct a owl:ObjectProperty ;
+   rdfs:domain um:CreditReport ;
+   rdfs:range um:Product ;
+   rdfs:label "Has Product" .
+
+um:hasSubProduct a owl:ObjectProperty ;
+   rdfs:domain um:CreditReport ;
+   rdfs:range um:SubProduct ;
+   rdfs:label "Has Sub-product" .
+
+um:hasIssue a owl:ObjectProperty ;
+   rdfs:domain um:CreditReport ;
+   rdfs:range um:Issue ;
+   rdfs:label "Has Issue" .
+
+um:hasSubIssue a owl:ObjectProperty ;
+   rdfs:domain um:CreditReport ;
+   rdfs:range um:SubIssue ;
+   rdfs:label "Has Sub-issue" .
+
+um:hasConsumerComplaintNarrative a owl:ObjectProperty ;
+   rdfs:domain um:CreditReport ;
+   rdfs:range um:ConsumerComplaintNarrative ;
+   rdfs:label "Has Consumer Complaint Narrative" .
+
+um:hasCompanyPublicResponse a owl:ObjectProperty ;
+   rdfs:domain um:CreditReport ;
+   rdfs:range um:CompanyPublicResponse ;
+   rdfs:label "Has Company Public Response" .
+
+um:belongsToCompany a owl:ObjectProperty ;
+   rdfs:domain um:CreditReport ;
+   rdfs:range um:Company ;
+   rdfs:label "Belongs to Company" .
+
+um:hasState a owl:ObjectProperty ;
+   rdfs:domain um:CreditReport ;
+   rdfs:range um:State ;
+   rdfs:label "Has State" .
+
+um:hasZipCode a owl:ObjectProperty ;
+   rdfs:domain um:CreditReport ;
+   rdfs:range um:ZipCode ;
+   rdfs:label "Has Zip Code" .

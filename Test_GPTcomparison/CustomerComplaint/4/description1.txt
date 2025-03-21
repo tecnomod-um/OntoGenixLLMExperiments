@@ -1,0 +1,94 @@
+**Foundational Prefix:**
+<https://base_ontology.com#>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+<http://www.w3.org/2000/01/rdf-schema#>
+<http://www.w3.org/2002/07/owl#>
+
+**Data Description:**
+1. Company: text - The name or identifier of a company - [1:1]
+2. Company public response: categorical - Public response provided by a company - [0:M]
+3. Company response to consumer: categorical - Response given by a company to a consumer's complaint - [1:1]
+4. Consumer complaint narrative: text - Detailed narrative of a consumer's complaint - [0:1]
+5. Consumer consent provided?: categorical - Indicates whether consumer consent was provided for data sharing - [0:1]
+6. Consumer disputed?: categorical - Indicates whether a consumer disputed a complaint resolution - [0:0]
+7. Date received: text - The date on which a complaint was received - [1:1]
+8. Date sent to company: text - The date on which a complaint was forwarded to the company - [1:1]
+9. Issue: text - Specific issue described in the consumer complaint - [1:1]
+10. Product: categorical - Type of product the complaint is related to - [1:1]
+11. State: text - The state from which the complaint was filed - [0:1]
+12. Sub-issue: text - More detailed issue related to the main issue - [0:1]
+13. Sub-product: text - More detailed product category related to the main product - [1:1]
+14. Submitted via: categorical - The medium through which the complaint was submitted - [1:1]
+15. Tags: categorical - Tags associated with the complaint for categorization - [0:1]
+16. Timely response?: categorical - Indicates whether the company responded in a timely manner - [1:1]
+17. Complaint ID: Numerical - Unique identifier for each complaint - [1:1]
+18. ZIP code: Numerical - Postal code related to the consumer's location - [0:1]
+
+**classes:**
+1. Complaint
+2. Company
+3. Consumer
+4. Product
+5. Issue
+
+**subclasses:**
+1. Sub-product: subclass of -> Product
+2. Sub-issue: subclass of -> Issue
+
+**Object Properties:**
+1. has_public_response: domain - Company; range - Company public response
+2. has_response_to_consumer: domain - Company; range - Company response to consumer
+3. has_narrative: domain - Complaint; range - Consumer complaint narrative
+4. has_consent: domain - Consumer; range - Consumer consent provided?
+5. is_disputed: domain - Complaint; range - Consumer disputed?
+6. has_issue: domain - Complaint; range - Issue
+7. has_product: domain - Complaint; range - Product
+8. has_sub_issue: domain - Complaint; range - Sub-issue
+9. has_sub_product: domain - Complaint; range - Sub-product
+10. submitted_via: domain - Complaint; range - Submitted via
+11. has_tags: domain - Complaint; range - Tags
+12. has_timely_response: domain - Complaint; range - Timely response?
+
+**Data Type Properties:**
+1. company_name: domain - Company; range - xsd:string
+2. date_received: domain - Complaint; range - xsd:date
+3. date_sent_to_company: domain - Complaint; range - xsd:date
+4. state: domain - Consumer; range - xsd:string
+5. complaint_id: domain - Complaint; range - xsd:integer
+6. zip_code: domain - Consumer; range - xsd:integer
+
+**Ontology Prefixes:**
+```
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+```
+
+**Link of each entity to external resources:**
+```
+Company: schema:Organization
+Consumer: foaf:Person
+Product: schema:Product
+Issue: skos:Concept
+Sub-product: schema:ProductModel
+Sub-issue: skos:Concept
+Company public response: schema:ReplyAction
+Company response to consumer: schema:ReplyAction
+Consumer complaint narrative: schema:Article
+Consumer consent provided?: schema:Boolean
+Consumer disputed?: schema:Boolean
+Date received: dcterms:date
+Date sent to company: dcterms:date
+State: schema:State
+ZIP code: schema:PostalCode
+Complaint ID: schema:identifier
+Tags: schema:keywords
+Timely response?: schema:Boolean
+Submitted via: schema:CreativeWork
+```

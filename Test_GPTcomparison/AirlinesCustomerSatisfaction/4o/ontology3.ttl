@@ -1,0 +1,112 @@
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+base:Customer a owl:Class ;
+    rdfs:subClassOf foaf:Person .
+
+base:Flight a owl:Class ;
+    rdfs:subClassOf schema:Flight .
+
+base:Service a owl:Class ;
+    rdfs:subClassOf schema:Service .
+
+base:Rating a owl:Class ;
+    rdfs:subClassOf schema:Rating .
+
+base:Age a owl:DatatypeProperty ;
+    rdfs:domain base:Customer ;
+    rdfs:range xsd:integer .
+
+base:Gender a owl:DatatypeProperty ;
+    rdfs:domain base:Customer ;
+    rdfs:range xsd:string .
+
+base:CustomerType a owl:DatatypeProperty ;
+    rdfs:domain base:Customer ;
+    rdfs:range xsd:string .
+
+base:TypeOfTravel a owl:DatatypeProperty ;
+    rdfs:domain base:Customer ;
+    rdfs:range xsd:string .
+
+base:FlightDistance a owl:DatatypeProperty ;
+    rdfs:domain base:Flight ;
+    rdfs:range xsd:float .
+
+base:Class a owl:DatatypeProperty ;
+    rdfs:domain base:Customer ;
+    rdfs:range xsd:string .
+
+base:ArrivalDelayInMinutes a owl:DatatypeProperty ;
+    rdfs:domain base:Flight ;
+    rdfs:range xsd:float .
+
+base:DepartureDelayInMinutes a owl:DatatypeProperty ;
+    rdfs:domain base:Flight ;
+    rdfs:range xsd:float .
+
+base:BaggageHandling a owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range base:Rating .
+
+base:CheckinService a owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range base:Rating .
+
+base:Cleanliness a owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range base:Rating .
+
+base:DepartureArrivalTimeConvenient a owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range base:Rating .
+
+base:EaseOfOnlineBooking a owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range base:Rating .
+
+base:FoodAndDrink a owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range base:Rating .
+
+base:GateLocation a owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range base:Rating .
+
+base:InflightEntertainment a owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range base:Rating .
+
+base:InflightWifiService a owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range base:Rating .
+
+base:LegRoomService a owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range base:Rating .
+
+base:OnBoardService a owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range base:Rating .
+
+base:OnlineBoarding a owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range base:Rating .
+
+base:OnlineSupport a owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range base:Rating .
+
+base:SeatComfort a owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range base:Rating .
+
+base:Satisfaction a owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range base:Rating .

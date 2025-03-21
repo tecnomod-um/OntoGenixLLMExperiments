@@ -1,0 +1,49 @@
+**Foundational Prefix:**
+https://base_ontology.com#
+http://www.w3.org/1999/02/22-rdf-syntax-ns#
+http://www.w3.org/2000/01/rdf-schema#
+http://www.w3.org/2002/07/owl#
+
+**Data Description:**
+1. ProductId: text - unique identifier for products - range: 1398 unique values
+2. Rating: categorical - user rating for products - range: 1.0 to 5.0
+3. Timestamp: text - timestamp of the rating - range: 3227 unique values
+4. UserId: text - unique identifier for users - range: 19101 unique values
+
+**classes:**
+1. Product
+2. User
+3. RatingEvent
+
+**subclasses:**
+1. ProductId: subclass of -> Product
+2. UserId: subclass of -> User
+3. Timestamp: subclass of -> RatingEvent
+
+**Object Properties:**
+1. hasRating: Product - RatingEvent
+2. ratedBy: RatingEvent - User
+
+**Data Type Properties:**
+1. productId: Product - text
+2. userId: User - text
+3. ratingValue: RatingEvent - categorical
+4. timestamp: RatingEvent - text
+
+**Ontology Prefixes:**
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+**Link of each entity to external resources:**
+Product: schema:Product
+User: schema:Person
+RatingEvent: schema:Review
+ProductId: dcterms:identifier
+UserId: dcterms:identifier
+Timestamp: dcterms:created
+Rating: schema:ratingValue

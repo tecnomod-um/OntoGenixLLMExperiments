@@ -1,0 +1,63 @@
+**Foundational Prefix:**
+<https://base_ontology.com#>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+<http://www.w3.org/2000/01/rdf-schema#>
+<http://www.w3.org/2002/07/owl#>
+Define it as an owl type
+
+**Data Description:**
+1. ProductId: text - Identifier for products - Unique
+2. Rating: categorical - Assessment score of a product - 1 to 5
+3. Timestamp: text - Date and time when the rating was recorded - Unique
+4. UserId: text - Identifier for users - Unique
+
+**classes:**
+1. Product
+2. User
+3. Review
+
+**subclasses:**
+1. RatedProduct: subclass of -> Product
+2. Reviewer: subclass of -> User
+3. ProductReview: subclass of -> Review
+
+**Object Properties:**
+1. hasReview: domain - User; range - Review
+2. reviewedProduct: domain - Review; range - Product
+3. reviewer: domain - Review; range - User
+
+**Data Type Properties:**
+1. productId: domain - Product; range - xsd:string
+2. ratingValue: domain - Review; range - xsd:integer
+3. timestampValue: domain - Review; range - xsd:dateTime
+4. userId: domain - User; range - xsd:string
+
+Ontology Prefixes:
+1. @prefix base: <https://base_ontology.com#> .
+2. @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+3. @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+4. @prefix owl: <http://www.w3.org/2002/07/owl#> .
+5. @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+6. @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+7. @prefix schema: <http://schema.org/> .
+8. @prefix gr: <http://purl.org/goodrelations/v1#> .
+9. @prefix sio: <http://semanticscience.org/resource/> .
+10. @prefix dbo: <http://dbpedia.org/ontology/> .
+11. @prefix dcterms: <http://purl.org/dc/terms/> .
+
+Link of each entity to external resources:
+1. Product: gr:ProductOrService
+2. User: foaf:Person
+3. Review: schema:Review
+4. RatedProduct: gr:Offering
+5. Reviewer: schema:Person
+6. ProductReview: schema:Review
+7. hasReview: schema:review
+8. reviewedProduct: schema:itemReviewed
+9. reviewer: schema:reviewer
+10. productId: dcterms:identifier
+11. ratingValue: schema:ratingValue
+12. timestampValue: dcterms:date
+13. userId: foaf:accountName
+
+The above prefixes and links to external resources are designed to enhance the interoperability of the ontology by aligning with widely recognized vocabularies and ontologies such as FOAF (Friend of a Friend), Schema.org, GoodRelations, SIO (Semanticscience Integrated Ontology), DBpedia Ontology, and Dublin Core Terms. This alignment allows for better integration and sharing of data across different systems and applications.

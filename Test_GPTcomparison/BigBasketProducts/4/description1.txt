@@ -1,0 +1,128 @@
+**Foundational Prefix:**
+<https://base_ontology.com#>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+<http://www.w3.org/2000/01/rdf-schema#>
+<http://www.w3.org/2002/07/owl#>
+Define it as an owl type
+
+**Data Description:**
+1. Absolute_Url: text - The full URL of a product - Unique for each product
+2. Brand: text - The brand name associated with a product - Multiple products can have the same brand
+3. Category: text - The general category of a product - Limited to a small set of categories
+4. Image_Url: text - The URL of the product's image - Almost unique for each product
+5. ProductName: text - The name of the product - Multiple products can have similar names
+6. Quantity: text - The quantity in stock for a product - Can vary widely across products
+7. SubCategory: text - A more specific category within the general category - Multiple products can belong to the same subcategory
+8. DiscountPrice: Numerical - The discounted price of a product - Ranges from a minimum of 3 to a maximum of 7605
+9. Price: Numerical - The original price of a product - Ranges from a minimum of 5 to a maximum of 10140
+
+**classes:**
+1. Product
+
+**subclasses:**
+1. Brand: subclass of -> Product
+2. Category: subclass of -> Product
+3. SubCategory: subclass of -> Category
+
+**Object Properties:**
+1. hasBrand: domain - Product; range - Brand
+2. hasCategory: domain - Product; range - Category
+3. hasSubCategory: domain - Category; range - SubCategory
+4. hasImage: domain - Product; range - Image_Url
+
+**Data Type Properties:**
+1. hasAbsoluteUrl: domain - Product; range - xsd:anyURI
+2. hasProductName: domain - Product; range - xsd:string
+3. hasQuantity: domain - Product; range - xsd:string
+4. hasDiscountPrice: domain - Product; range - xsd:float
+5. hasPrice: domain - Product; range - xsd:float
+
+To update the schema description for enhanced interoperability, we will link the entities to widely recognized vocabularies and ontologies such as Schema.org, Dublin Core, FOAF, and GoodRelations. These links will facilitate better understanding and integration with other systems.
+
+**Ontology Prefixes:**
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+**Link of each entity to external resources:**
+Product: schema:Product
+Brand: schema:Brand
+Category: schema:Category
+SubCategory: schema:Thing (Schema.org does not have a specific class for subcategory, so we use the generic Thing class)
+Absolute_Url: schema:url
+Image_Url: schema:image
+ProductName: schema:name
+Quantity: schema:QuantitativeValue (We can use QuantitativeValue to express quantities)
+DiscountPrice: gr:hasPriceSpecification (GoodRelations has a detailed vocabulary for prices)
+Price: gr:hasPriceSpecification
+
+**Updated Data Description:**
+1. Absolute_Url: text - schema:url
+2. Brand: text - schema:Brand
+3. Category: text - schema:Category
+4. Image_Url: text - schema:image
+5. ProductName: text - schema:name
+6. Quantity: text - schema:QuantitativeValue
+7. SubCategory: text - schema:Thing
+8. DiscountPrice: Numerical - gr:hasPriceSpecification
+9. Price: Numerical - gr:hasPriceSpecification
+
+**Updated Classes:**
+base:Product rdf:type owl:Class ;
+              rdfs:subClassOf schema:Product .
+
+**Updated Subclasses:**
+base:Brand rdf:type owl:Class ;
+            rdfs:subClassOf base:Product, schema:Brand .
+
+base:Category rdf:type owl:Class ;
+              rdfs:subClassOf base:Product, schema:Category .
+
+base:SubCategory rdf:type owl:Class ;
+                 rdfs:subClassOf base:Category, schema:Thing .
+
+**Updated Object Properties:**
+base:hasBrand rdf:type owl:ObjectProperty ;
+              rdfs:domain base:Product ;
+              rdfs:range base:Brand .
+
+base:hasCategory rdf:type owl:ObjectProperty ;
+                 rdfs:domain base:Product ;
+                 rdfs:range base:Category .
+
+base:hasSubCategory rdf:type owl:ObjectProperty ;
+                    rdfs:domain base:Category ;
+                    rdfs:range base:SubCategory .
+
+base:hasImage rdf:type owl:ObjectProperty ;
+              rdfs:domain base:Product ;
+              rdfs:range schema:image .
+
+**Updated Data Type Properties:**
+base:hasAbsoluteUrl rdf:type owl:DatatypeProperty ;
+                    rdfs:domain base:Product ;
+                    rdfs:range xsd:anyURI .
+
+base:hasProductName rdf:type owl:DatatypeProperty ;
+                    rdfs:domain base:Product ;
+                    rdfs:range xsd:string .
+
+base:hasQuantity rdf:type owl:DatatypeProperty ;
+                 rdfs:domain base:Product ;
+                 rdfs:range schema:QuantitativeValue .
+
+base:hasDiscountPrice rdf:type owl:DatatypeProperty ;
+                      rdfs:domain base:Product ;
+                      rdfs:range xsd:float .
+
+base:hasPrice rdf:type owl:DatatypeProperty ;
+               rdfs:domain base:Product ;
+               rdfs:range xsd:float .
+
+By linking to these external resources, we ensure that the ontology is interoperable with other systems that use these common vocabularies, facilitating data exchange and integration.

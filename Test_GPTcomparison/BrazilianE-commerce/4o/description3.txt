@@ -1,0 +1,81 @@
+**Foundational Prefix:**
+https://base_ontology.com#
+http://www.w3.org/1999/02/22-rdf-syntax-ns#
+http://www.w3.org/2000/01/rdf-schema#
+http://www.w3.org/2002/07/owl#
+
+**Data Description:**
+1. customer_city: text - city of the customer - range not specified
+2. customer_id: text - unique identifier for the customer - range not specified
+3. customer_state: text - state of the customer - range not specified
+4. customer_unique_id: text - unique identifier for the customer (not always unique) - range not specified
+5. customer_zip_code_prefix: Numerical - zip code prefix of the customer - 1004.0 to 99980.0
+
+**classes:**
+1. Customer
+
+**subclasses:**
+1. CustomerCity: subclass of -> Customer
+2. CustomerState: subclass of -> Customer
+3. CustomerUniqueId: subclass of -> Customer
+4. CustomerZipCodePrefix: subclass of -> Customer
+
+**Object Properties:**
+1. hasCity: Customer - CustomerCity
+2. hasState: Customer - CustomerState
+3. hasUniqueId: Customer - CustomerUniqueId
+4. hasZipCodePrefix: Customer - CustomerZipCodePrefix
+
+**Data Type Properties:**
+1. cityName: CustomerCity - text
+2. stateName: CustomerState - text
+3. uniqueId: CustomerUniqueId - text
+4. zipCodePrefix: CustomerZipCodePrefix - Numerical
+
+**Ontology Prefixes:**
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+**Link of each entity to external resources:**
+customer_city: schema:addressLocality
+customer_id: dcterms:identifier
+customer_state: schema:addressRegion
+customer_unique_id: foaf:mbox
+customer_zip_code_prefix: schema:postalCode
+
+**Data Description:**
+1. customer_city: text - city of the customer - range not specified
+2. customer_id: text - unique identifier for the customer - range not specified
+3. customer_state: text - state of the customer - range not specified
+4. customer_unique_id: text - unique identifier for the customer (not always unique) - range not specified
+5. customer_zip_code_prefix: Numerical - zip code prefix of the customer - 1004.0 to 99980.0
+
+**classes:**
+1. Customer
+
+**subclasses:**
+1. CustomerCity: subclass of -> Customer
+2. CustomerState: subclass of -> Customer
+3. CustomerUniqueId: subclass of -> Customer
+4. CustomerZipCodePrefix: subclass of -> Customer
+
+**Object Properties:**
+1. hasCity: Customer - CustomerCity
+2. hasState: Customer - CustomerState
+3. hasUniqueId: Customer - CustomerUniqueId
+4. hasZipCodePrefix: Customer - CustomerZipCodePrefix
+
+**Data Type Properties:**
+1. cityName: CustomerCity - text
+2. stateName: CustomerState - text
+3. uniqueId: CustomerUniqueId - text
+4. zipCodePrefix: CustomerZipCodePrefix - Numerical
+
+**Entities from external sources:**
+None

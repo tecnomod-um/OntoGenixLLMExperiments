@@ -1,0 +1,520 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:base="https://base_ontology.com#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:schema="http://schema.org/"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#fromState -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#fromState">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Complaint"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#Location"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasConsent -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasConsent">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Complaint"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#ConsumerConsent"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasDispute -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasDispute">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Complaint"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#Dispute"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasIssue -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasIssue">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Complaint"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#Issue"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasNarrative -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasNarrative">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Complaint"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#ConsumerNarrative"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasProduct -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasProduct">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Complaint"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#Product"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasPublicResponse -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasPublicResponse">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Complaint"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#PublicResponse"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasResponseToConsumer -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasResponseToConsumer">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Complaint"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#Company"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasSubIssue -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasSubIssue">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Issue"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#SubIssue"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasSubProduct -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasSubProduct">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Product"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#SubProduct"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasTag -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasTag">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Complaint"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#Tag"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasTimelyResponse -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasTimelyResponse">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Complaint"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#TimelyResponse"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#identifiedBy -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#identifiedBy">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Complaint"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#locatedIn -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#locatedIn">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Complaint"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#Location"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#receivedOn -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#receivedOn">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Complaint"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#Submission"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#sentToCompanyOn -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#sentToCompanyOn">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Complaint"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#Submission"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#submittedVia -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#submittedVia">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Complaint"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#Submission"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#companyName -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#companyName">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#complaintID -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#complaintID">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Complaint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#consentProvided -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#consentProvided">
+        <rdfs:domain rdf:resource="https://base_ontology.com#ConsumerConsent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#identifiedBy -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#identifiedBy">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#isDisputed -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#isDisputed">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Dispute"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#isTimely -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#isTimely">
+        <rdfs:domain rdf:resource="https://base_ontology.com#TimelyResponse"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#issueDescription -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#issueDescription">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Issue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#narrativeText -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#narrativeText">
+        <rdfs:domain rdf:resource="https://base_ontology.com#ConsumerNarrative"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#productType -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#productType">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#publicResponse -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#publicResponse">
+        <rdfs:domain rdf:resource="https://base_ontology.com#PublicResponse"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#receivedDate -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#receivedDate">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Submission"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#responseToConsumer -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#responseToConsumer">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#sentDate -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#sentDate">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Submission"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#stateName -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#stateName">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#subIssueDescription -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#subIssueDescription">
+        <rdfs:domain rdf:resource="https://base_ontology.com#SubIssue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#subProductType -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#subProductType">
+        <rdfs:domain rdf:resource="https://base_ontology.com#SubProduct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#submissionMethod -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#submissionMethod">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Submission"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#tagLabel -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#tagLabel">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Tag"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#zipCode -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#zipCode">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#Company -->
+
+    <Class rdf:about="https://base_ontology.com#Company">
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/Organization"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Complaint -->
+
+    <Class rdf:about="https://base_ontology.com#Complaint">
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/ConsumerComplaint"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Consumer -->
+
+    <Class rdf:about="https://base_ontology.com#Consumer">
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#ConsumerConsent -->
+
+    <Class rdf:about="https://base_ontology.com#ConsumerConsent">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Submission"/>
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/Boolean"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#ConsumerNarrative -->
+
+    <Class rdf:about="https://base_ontology.com#ConsumerNarrative">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Submission"/>
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/Article"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Dispute -->
+
+    <Class rdf:about="https://base_ontology.com#Dispute">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Complaint"/>
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/DisputeResolution"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Issue -->
+
+    <Class rdf:about="https://base_ontology.com#Issue">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Location -->
+
+    <Class rdf:about="https://base_ontology.com#Location">
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/Place"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Product -->
+
+    <Class rdf:about="https://base_ontology.com#Product">
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/Product"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#PublicResponse -->
+
+    <Class rdf:about="https://base_ontology.com#PublicResponse">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Company"/>
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/Organization"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#SubIssue -->
+
+    <Class rdf:about="https://base_ontology.com#SubIssue">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Issue"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#SubProduct -->
+
+    <Class rdf:about="https://base_ontology.com#SubProduct">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Product"/>
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/ProductModel"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Submission -->
+
+    <Class rdf:about="https://base_ontology.com#Submission">
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/CreativeWork"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Tag -->
+
+    <Class rdf:about="https://base_ontology.com#Tag">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Submission"/>
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/Thing"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#TimelyResponse -->
+
+    <Class rdf:about="https://base_ontology.com#TimelyResponse">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Complaint"/>
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/Duration"/>
+    </Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

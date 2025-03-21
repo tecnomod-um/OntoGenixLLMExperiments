@@ -1,0 +1,58 @@
+**Foundational Prefix:**
+- Foundational prefixes for the ontology:
+  - "https://base_ontology.com#"
+  - "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  - "http://www.w3.org/2000/01/rdf-schema#"
+  - "http://www.w3.org/2002/07/owl#"
+
+**Data Description:**
+1. Country: text - Country name - String
+2. Description: text - Description of an item - String
+3. InvoiceDate: text - Date of the invoice - String (Date format)
+4. InvoiceNo: text - Invoice number - String
+5. StockCode: text - Stock code of the item - String
+6. CustomerID: Numerical - ID of the customer - Integer
+7. Quantity: Numerical - Quantity of items - Integer
+8. UnitPrice: Numerical - Price per unit - Float
+
+**Classes:**
+1. class_entity
+
+**Subclasses:**
+1. entity_name: subclass of -> class_entity
+
+**Object Properties:**
+1. hasCountry: domain - class_entity, range - Country
+2. hasDescription: domain - class_entity, range - Description
+3. hasInvoiceDate: domain - class_entity, range - InvoiceDate
+4. hasInvoiceNo: domain - class_entity, range - InvoiceNo
+5. hasStockCode: domain - class_entity, range - StockCode
+6. hasCustomerID: domain - class_entity, range - CustomerID
+7. hasQuantity: domain - class_entity, range - Quantity
+8. hasUnitPrice: domain - class_entity, range - UnitPrice
+
+**Data Type Properties:**
+1. typeOfCountry: domain - Country, range - String
+2. typeOfDescription: domain - Description, range - String
+3. typeOfInvoiceDate: domain - InvoiceDate, range - String (Date format)
+4. typeOfInvoiceNo: domain - InvoiceNo, range - String
+5. typeOfStockCode: domain - StockCode, range - String
+6. typeOfCustomerID: domain - CustomerID, range - Integer
+7. typeOfQuantity: domain - Quantity, range - Integer
+8. typeOfUnitPrice: domain - UnitPrice, range - Float
+
+**Ontology Prefixes:**
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+**Link of each entity to external resources:**
+1. Country: external resource - DBpedia
+2. Description: external resource - Wikidata
+3. InvoiceDate: external resource - Schema.org
+4. InvoiceNo: external resource - Wikidata
+5. StockCode: external resource - Wikidata
+6. CustomerID: external resource - DBpedia
+7. Quantity: external resource - Schema.org
+8. UnitPrice: external resource - Wikidata

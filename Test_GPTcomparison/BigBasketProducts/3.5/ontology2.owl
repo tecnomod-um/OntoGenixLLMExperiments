@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/owl/owlapi/turtle#"
+     xml:base="http://www.semanticweb.org/owl/owlapi/turtle"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:base="https://base_ontology.com#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#hasCount -->
+
+    <owl:ObjectProperty rdf:about="https://base_ontology.com#hasCount">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Brand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasDiscountPrice -->
+
+    <owl:ObjectProperty rdf:about="https://base_ontology.com#hasDiscountPrice">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Brand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMax -->
+
+    <owl:ObjectProperty rdf:about="https://base_ontology.com#hasMax">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Brand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMean -->
+
+    <owl:ObjectProperty rdf:about="https://base_ontology.com#hasMean">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Brand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMin -->
+
+    <owl:ObjectProperty rdf:about="https://base_ontology.com#hasMin">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Brand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasNonNullCount -->
+
+    <owl:ObjectProperty rdf:about="https://base_ontology.com#hasNonNullCount">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Brand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasPrice -->
+
+    <owl:ObjectProperty rdf:about="https://base_ontology.com#hasPrice">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Brand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasSeeAlso -->
+
+    <owl:ObjectProperty rdf:about="https://base_ontology.com#hasSeeAlso">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Brand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasStd -->
+
+    <owl:ObjectProperty rdf:about="https://base_ontology.com#hasStd">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Brand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasType -->
+
+    <owl:ObjectProperty rdf:about="https://base_ontology.com#hasType">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Brand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasUniqueCount -->
+
+    <owl:ObjectProperty rdf:about="https://base_ontology.com#hasUniqueCount">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Brand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#hasCount -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#hasCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasDiscountPrice -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#hasDiscountPrice">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMax -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#hasMax">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMean -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#hasMean">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMin -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#hasMin">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasNonNullCount -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#hasNonNullCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasPrice -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#hasPrice">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasSeeAlso -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#hasSeeAlso">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasStd -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#hasStd">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasType -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#hasType">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasUniqueCount -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#hasUniqueCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#Absolute_Url -->
+
+    <owl:Class rdf:about="https://base_ontology.com#Absolute_Url">
+        <rdfs:seeAlso rdf:resource="file:/C:/Users/juanm/OntoGenixPreprocessingExperiments/experiments/Test_GPTcomparison/BigBasketProducts/3.5/external_source_for_absoluteurl"/>
+    </owl:Class>
+    
+
+
+    <!-- https://base_ontology.com#Brand -->
+
+    <owl:Class rdf:about="https://base_ontology.com#Brand">
+        <rdfs:seeAlso rdf:resource="file:/C:/Users/juanm/OntoGenixPreprocessingExperiments/experiments/Test_GPTcomparison/BigBasketProducts/3.5/external_source_for_brand"/>
+    </owl:Class>
+    
+
+
+    <!-- https://base_ontology.com#Category -->
+
+    <owl:Class rdf:about="https://base_ontology.com#Category">
+        <rdfs:seeAlso rdf:resource="file:/C:/Users/juanm/OntoGenixPreprocessingExperiments/experiments/Test_GPTcomparison/BigBasketProducts/3.5/external_source_for_category"/>
+    </owl:Class>
+    
+
+
+    <!-- https://base_ontology.com#DiscountPrice -->
+
+    <owl:Class rdf:about="https://base_ontology.com#DiscountPrice">
+        <rdfs:seeAlso rdf:resource="file:/C:/Users/juanm/OntoGenixPreprocessingExperiments/experiments/Test_GPTcomparison/BigBasketProducts/3.5/external_source_for_discountprice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://base_ontology.com#Image_Url -->
+
+    <owl:Class rdf:about="https://base_ontology.com#Image_Url">
+        <rdfs:seeAlso rdf:resource="file:/C:/Users/juanm/OntoGenixPreprocessingExperiments/experiments/Test_GPTcomparison/BigBasketProducts/3.5/external_source_for_imageurl"/>
+    </owl:Class>
+    
+
+
+    <!-- https://base_ontology.com#Price -->
+
+    <owl:Class rdf:about="https://base_ontology.com#Price">
+        <rdfs:seeAlso rdf:resource="file:/C:/Users/juanm/OntoGenixPreprocessingExperiments/experiments/Test_GPTcomparison/BigBasketProducts/3.5/external_source_for_price"/>
+    </owl:Class>
+    
+
+
+    <!-- https://base_ontology.com#ProductName -->
+
+    <owl:Class rdf:about="https://base_ontology.com#ProductName">
+        <rdfs:seeAlso rdf:resource="file:/C:/Users/juanm/OntoGenixPreprocessingExperiments/experiments/Test_GPTcomparison/BigBasketProducts/3.5/external_source_for_productname"/>
+    </owl:Class>
+    
+
+
+    <!-- https://base_ontology.com#Quantity -->
+
+    <owl:Class rdf:about="https://base_ontology.com#Quantity">
+        <rdfs:seeAlso rdf:resource="file:/C:/Users/juanm/OntoGenixPreprocessingExperiments/experiments/Test_GPTcomparison/BigBasketProducts/3.5/external_source_for_quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://base_ontology.com#SubCategory -->
+
+    <owl:Class rdf:about="https://base_ontology.com#SubCategory">
+        <rdfs:seeAlso rdf:resource="file:/C:/Users/juanm/OntoGenixPreprocessingExperiments/experiments/Test_GPTcomparison/BigBasketProducts/3.5/external_source_for_subcategory"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

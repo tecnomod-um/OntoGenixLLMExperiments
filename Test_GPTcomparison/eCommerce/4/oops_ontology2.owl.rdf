@@ -1,0 +1,96 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:oops="http://oops.linkeddata.es/def#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
+  <rdf:Description rdf:about="http://oops.linkeddata.es/def#warning">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oops.linkeddata.es/data/1c22134d-947d-4490-adf7-2b0f896fde8a">
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasCountry</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasCustomer</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasDescription</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasPriceSpecification</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasQuantitativeValue</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasStockItem</oops:hasAffectedElement>
+    <rdf:type rdf:resource="http://oops.linkeddata.es/def#noSuggestionProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oops.linkeddata.es/data/17c9050f-3bca-41a2-a62b-8c8fb4a12fd3">
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasInvoiceDate</oops:hasAffectedElement>
+    <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</oops:hasNumberAffectedElements>
+    <rdf:type rdf:resource="http://oops.linkeddata.es/def#pitfall"/>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasInvoiceNo</oops:hasAffectedElement>
+    <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor</oops:hasImportanceLevel>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#Customer</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasPriceSpecification</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/goodrelations/v1#description</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasStockItem</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#Invoice</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasQuantity</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasUnitPrice</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasStockCode</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/resource/Country</oops:hasAffectedElement>
+    <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Missing annotations</oops:hasName>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasQuantitativeValue</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#QuantitativeValue</oops:hasAffectedElement>
+    <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This pitfall consists in creating an ontology element and failing to provide human readable annotations attached to it. Consequently, ontology elements lack annotation properties that label them (e.g. rdfs:label, lemon:LexicalEntry, skos:prefLabel or skos:altLabel) or that define them (e.g. rdfs:comment or dc:description). This pitfall is related to the guidelines provided in [5].	</oops:hasDescription>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#PriceSpecification</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasCustomer</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#Country</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasCustomerID</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#Description</oops:hasAffectedElement>
+    <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P08</oops:hasCode>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasCountry</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#hasDescription</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#StockItem</oops:hasAffectedElement>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oops.linkeddata.es/data/5d36abbf-4432-451f-9334-318054481364">
+    <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</oops:hasNumberAffectedElements>
+    <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Important</oops:hasImportanceLevel>
+    <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This pitfall consists in not declaring the owl:Ontology tag, which provides the ontology metadata. The owl:Ontology tag aims at gathering metadata about a given ontology such as version information, license, provenance, creation date, and so on. It is also used to declare the inclusion of other ontologies.	</oops:hasDescription>
+    <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No OWL ontology declaration</oops:hasName>
+    <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P38</oops:hasCode>
+    <rdf:type rdf:resource="http://oops.linkeddata.es/def#pitfall"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oops.linkeddata.es/data/eecba873-e8f7-41cc-b711-9fb984c9e912">
+    <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor</oops:hasImportanceLevel>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">There are elements following different naming conventions as for example: http://purl.org/goodrelations/v1#description https://base_ontology.com#Country</oops:hasAffectedElement>
+    <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</oops:hasNumberAffectedElements>
+    <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ontology elements are not named following the same convention (for example CamelCase or use of delimiters as &amp;quot;-&amp;quot; or &amp;quot;_&amp;quot;) . Some notions about naming conventions are provided in [2].	</oops:hasDescription>
+    <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Using different naming conventions in the ontology</oops:hasName>
+    <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P22</oops:hasCode>
+    <rdf:type rdf:resource="http://oops.linkeddata.es/def#pitfall"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oops.linkeddata.es/data/27bd9adf-3001-4c86-a069-6113b3d85340">
+    <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor</oops:hasImportanceLevel>
+    <oops:noSuggestion rdf:resource="http://oops.linkeddata.es/data/1c22134d-947d-4490-adf7-2b0f896fde8a"/>
+    <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</oops:hasNumberAffectedElements>
+    <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This pitfall appears when any relationship (except for those that are defined as symmetric properties using owl:SymmetricProperty) does not have an inverse relationship (owl:inverseOf) defined within the ontology.	</oops:hasDescription>
+    <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inverse relationships not explicitly declared</oops:hasName>
+    <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P13</oops:hasCode>
+    <rdf:type rdf:resource="http://oops.linkeddata.es/def#pitfall"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oops.linkeddata.es/def#pitfall">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oops.linkeddata.es/def#suggestion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oops.linkeddata.es/data/e5298533-ff38-4787-8bd0-3d137fc489c6">
+    <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</oops:hasNumberAffectedElements>
+    <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Important</oops:hasImportanceLevel>
+    <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ontology lacks disjoint axioms between classes or between properties that should be defined as disjoint. This pitfall is related with the guidelines provided in [6], [2] and [7].	</oops:hasDescription>
+    <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Missing disjointness</oops:hasName>
+    <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P10</oops:hasCode>
+    <rdf:type rdf:resource="http://oops.linkeddata.es/def#pitfall"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oops.linkeddata.es/data/115b30b3-975d-476e-8990-eb217f88127f">
+    <oops:hasPitfall rdf:resource="http://oops.linkeddata.es/data/5d36abbf-4432-451f-9334-318054481364"/>
+    <oops:hasPitfall rdf:resource="http://oops.linkeddata.es/data/eecba873-e8f7-41cc-b711-9fb984c9e912"/>
+    <oops:hasPitfall rdf:resource="http://oops.linkeddata.es/data/27bd9adf-3001-4c86-a069-6113b3d85340"/>
+    <oops:hasPitfall rdf:resource="http://oops.linkeddata.es/data/e5298533-ff38-4787-8bd0-3d137fc489c6"/>
+    <oops:hasPitfall rdf:resource="http://oops.linkeddata.es/data/17c9050f-3bca-41a2-a62b-8c8fb4a12fd3"/>
+    <rdf:type rdf:resource="http://oops.linkeddata.es/def#response"/>
+  </rdf:Description>
+</rdf:RDF>

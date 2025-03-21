@@ -1,0 +1,73 @@
+**Foundational Prefix:**
+<https://base_ontology.com#>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+<http://www.w3.org/2000/01/rdf-schema#>
+<http://www.w3.org/2002/07/owl#>
+Define it as an owl type
+
+**Data Description:**
+1. ProductId: text - Identifier for products - Unique values: 1398
+2. Rating: categorical - Assessment score for products - Range: 1 to 5
+3. Timestamp: text - Time indication of an event - Unique values: 3227
+4. UserId: text - Identifier for users - Unique values: 19101
+
+**classes:**
+1. Product
+2. User
+3. Review
+
+**subclasses:**
+1. RatedProduct: subclass of -> Product
+2. ReviewTimestamp: subclass of -> Review
+
+**Object Properties:**
+1. hasReview: domain - User; range - Review
+2. reviewedProduct: domain - Review; range - Product
+3. hasRating: domain - Review; range - RatedProduct
+
+**Data Type Properties:**
+1. productId: domain - Product; range - xsd:string
+2. userId: domain - User; range - xsd:string
+3. ratingValue: domain - RatedProduct; range - xsd:integer
+4. timestampValue: domain - ReviewTimestamp; range - xsd:dateTime
+
+To update the schema description for enhanced interoperability, we will link the entities in the schema to well-known vocabularies and ontologies that are widely used and recognized in the semantic web community. This will facilitate better integration and understanding of the data when it is shared across different systems.
+
+**Ontology Prefixes:**
+```
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix rev: <http://purl.org/stuff/rev#> .
+```
+
+**Link of each entity to external resources:**
+```
+Product: gr:ProductOrService
+User: foaf:Person
+Review: rev:Review
+RatedProduct: schema:Product
+ReviewTimestamp: schema:Review
+```
+
+**Updated Data Type Properties:**
+```
+productId: domain - gr:ProductOrService; range - xsd:string
+userId: domain - foaf:Person; range - xsd:string
+ratingValue: domain - schema:Product; range - xsd:integer
+timestampValue: domain - schema:Review; range - xsd:dateTime
+```
+
+**Updated Object Properties:**
+```
+hasReview: domain - foaf:Person; range - rev:Review
+reviewedProduct: domain - rev:Review; range - gr:ProductOrService
+hasRating: domain - rev:Review; range - schema:Product
+```
+
+By linking to these external resources, we are using established vocabularies such as FOAF (Friend of a Friend) for user information, GoodRelations for product information, Schema.org for product ratings and reviews, and the Review Vocabulary for reviews. This will ensure that the ontology is interoperable with other systems that use these common vocabularies.

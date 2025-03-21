@@ -1,0 +1,30 @@
+classDiagram
+    class Complaint {
+        + hasConsumerConsentProvided xsd:string
+        + hasConsumerDisputed xsd:string
+        + hasDateReceivedByCompany xsd:dateTime
+        + hasDateReceivedByCompanyWithinXDays xsd:integer
+        + hasDateSentToCompany xsd:dateTime
+        + hasDateSentToCompanyWithinXDays xsd:integer
+        + hasLinkedProduct xsd:string
+        + hasLinkedSubProduct xsd:string
+        + hasName xsd:string
+        + hasReason xsd:string
+        + hasState xsd:string
+        + hasSubmittedVia xsd:string
+        + hasTags xsd:string
+        + hasTimelyResponse xsd:string
+        + hasZipCode xsd:string
+    }
+
+    class ComplaintID
+    class HasCompanyPublicResponse
+    class HasConsumerComplaintNarrative
+    class HasIssue
+    class HasSubIssue
+
+    Complaint --> HasIssue : hasIssue
+    Complaint --> HasSubIssue : hasSubIssue
+    Complaint --> HasConsumerComplaintNarrative : hasConsumerComplaintNarrative
+    Complaint --> HasCompanyPublicResponse : hasCompanyPublicResponse
+    Complaint --> ComplaintID : hasComplaintID

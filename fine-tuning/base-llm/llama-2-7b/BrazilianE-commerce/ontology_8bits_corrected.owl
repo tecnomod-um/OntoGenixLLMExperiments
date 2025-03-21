@@ -1,0 +1,467 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://vocab.um.es#USPCommercialDataOntology#"
+     xml:base="https://vocab.um.es#USPCommercialDataOntology"
+     xmlns:um="https://vocab.um.es#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://vocab.um.es#USPCommercialDataOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gDay -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gDay"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gMonth -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gMonth"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#time -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#customerAge -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#customerAge">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>customer age</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#customerCityOfBirth -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#customerCityOfBirth">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>customer city of birth</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#customerCityOfResidence -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#customerCityOfResidence">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>customer city of residence</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#customerCityOfResidenceCode -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#customerCityOfResidenceCode">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>customer city of residence code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#customerCountryOfBirth -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#customerCountryOfBirth">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>customer country of birth</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#customerCountryOfResidence -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#customerCountryOfResidence">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>customer country of residence</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#customerCountryOfResidenceCode -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#customerCountryOfResidenceCode">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>customer country of residence code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#customerEmail -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#customerEmail">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>customer email</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#customerGender -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#customerGender">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>customer gender</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#customerLastPurchase -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#customerLastPurchase">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>customer last purchase</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#customerMaritalStatus -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#customerMaritalStatus">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>customer marital status</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#customerName -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#customerName">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>customer name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#customerOccupation -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#customerOccupation">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>customer occupation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#customerPhone -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#customerPhone">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>customer phone</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#customerStateOfBirth -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#customerStateOfBirth">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>customer state of birth</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#customerStateOfResidence -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#customerStateOfResidence">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>customer state of residence</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#customerStateOfResidenceCode -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#customerStateOfResidenceCode">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>customer state of residence code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#productBrand -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#productBrand">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>product brand</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#productCategory -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#productCategory">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>product category</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#productDiscount -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#productDiscount">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>product discount</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#productImage -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#productImage">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>product image</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#productName -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#productName">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>product name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#productPrice -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#productPrice">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>product price</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#productSubCategory -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#productSubCategory">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>product sub category</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#productType -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#productType">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>product type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#productTypeBrand -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#productTypeBrand">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>product type brand</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#transactionAmount -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#transactionAmount">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>transaction amount</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#transactionDate -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#transactionDate">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label>transaction date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#transactionDateDay -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#transactionDateDay">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gDay"/>
+        <rdfs:label>transaction date day</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#transactionDateHour -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#transactionDateHour">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+        <rdfs:label>transaction date hour</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#transactionDateMinute -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#transactionDateMinute">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+        <rdfs:label>transaction date minute</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#transactionDateMonth -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#transactionDateMonth">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gMonth"/>
+        <rdfs:label>transaction date month</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#transactionDateSecond -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#transactionDateSecond">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+        <rdfs:label>transaction date second</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#transactionDateYear -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#transactionDateYear">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <rdfs:label>transaction date year</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#City -->
+
+    <owl:Class rdf:about="https://vocab.um.es#City">
+        <rdfs:label>City</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#Country -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Country">
+        <rdfs:label>Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#Customer -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Customer">
+        <rdfs:label>Customer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#Product -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Product">
+        <rdfs:label>Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#State -->
+
+    <owl:Class rdf:about="https://vocab.um.es#State">
+        <rdfs:label>State</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#Transaction -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Transaction">
+        <rdfs:label>Transaction</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

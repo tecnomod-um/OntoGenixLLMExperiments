@@ -1,0 +1,1 @@
+Incorrect URIs. Example: rdf:Class instead of rdfs:Class

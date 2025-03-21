@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:Product a owl:Class ;
+   rdfs:label "Product" .
+
+um:User a owl:Class ;
+   rdfs:label "User" .
+
+um:ProductRating a owl:Class ;
+   rdfs:label "Product Rating" .
+
+um:Rating a owl:Class ;
+   rdfs:label "Rating" .
+
+um:Time a owl:Class ;
+   rdfs:label "Time" .
+
+um:ProductID a owl:Class ;
+   rdfs:label "Product ID" .
+
+um:Ontology a owl:Class ;
+   rdfs:label "Ontology" .
+
+### Data Properties ###
+um:hasProduct a rdf:Property ;
+   rdfs:domain um:Product ;
+   rdfs:range um:ProductID .
+
+um:hasUser a rdf:Property ;
+   rdfs:domain um:User ;
+   rdfs:range um:Product .
+
+um:hasRating a rdf:Property ;
+   rdfs:domain um:ProductRating ;
+   rdfs:range um:Rating .
+
+um:hasTime a rdf:Property ;
+   rdfs:domain um:Time ;
+   rdfs:range um:ProductID .

@@ -1,0 +1,149 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix base: <https://base_ontology.com#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix schema: <http://schema.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+
+base:Passenger rdf:type owl:Class ;
+    rdfs:subClassOf schema:Person .
+
+base:Flight rdf:type owl:Class ;
+    rdfs:subClassOf schema:Flight .
+
+base:Service rdf:type owl:Class ;
+    rdfs:subClassOf schema:Service .
+
+base:Booking rdf:type owl:Class ;
+    rdfs:subClassOf dbo:Reservation .
+
+base:Satisfaction rdf:type owl:Class ;
+    rdfs:subClassOf sosa:Result .
+
+base:BusinessClass rdf:type owl:Class ;
+    rdfs:subClassOf dbo:BusinessClass .
+
+base:EconomyClass rdf:type owl:Class ;
+    rdfs:subClassOf dbo:EconomyClass .
+
+base:EcoPlusClass rdf:type owl:Class ;
+    rdfs:subClassOf schema:ProductModel .
+
+base:FrequentFlyer rdf:type owl:Class ;
+    rdfs:subClassOf schema:ProgramMembership .
+
+base:InfrequentFlyer rdf:type owl:Class ;
+    rdfs:subClassOf schema:ProgramMembership .
+
+base:Male rdf:type owl:Class ;
+    rdfs:subClassOf foaf:Male .
+
+base:Female rdf:type owl:Class ;
+    rdfs:subClassOf foaf:Female .
+
+base:PersonalTravel rdf:type owl:Class ;
+    rdfs:subClassOf schema:LeisureTimeActivity .
+
+base:BusinessTravel rdf:type owl:Class ;
+    rdfs:subClassOf schema:BusinessEvent .
+
+base:Satisfied rdf:type owl:Class ;
+    rdfs:subClassOf schema:ReviewAction .
+
+base:Unsatisfied rdf:type owl:Class ;
+    rdfs:subClassOf schema:ReviewAction .
+
+base:hasAge rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Passenger ;
+    rdfs:range xsd:float .
+
+base:hasArrivalDelay rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Flight ;
+    rdfs:range xsd:float .
+
+base:hasBaggageHandlingRating rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range xsd:int .
+
+base:hasCheckinServiceRating rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range xsd:int .
+
+base:hasCleanlinessRating rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range xsd:int .
+
+base:hasDepartureDelay rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Flight ;
+    rdfs:range xsd:float .
+
+base:hasDepartureArrivalTimeConvenienceRating rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range xsd:int .
+
+base:hasEaseOfOnlineBookingRating rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Booking ;
+    rdfs:range xsd:int .
+
+base:hasFlightDistance rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Flight ;
+    rdfs:range xsd:float .
+
+base:hasFoodAndDrinkRating rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range xsd:int .
+
+base:hasGateLocationRating rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range xsd:int .
+
+base:hasInflightEntertainmentRating rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range xsd:int .
+
+base:hasInflightWifiServiceRating rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range xsd:int .
+
+base:hasLegRoomServiceRating rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range xsd:int .
+
+base:hasOnBoardServiceRating rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range xsd:int .
+
+base:hasOnlineBoardingRating rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Booking ;
+    rdfs:range xsd:int .
+
+base:hasOnlineSupportRating rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range xsd:int .
+
+base:hasSeatComfortRating rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Service ;
+    rdfs:range xsd:int .
+
+base:hasClass rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Booking ;
+    rdfs:range [ rdf:type owl:Class ; owl:unionOf (base:BusinessClass base:EconomyClass base:EcoPlusClass) ] .
+
+base:hasCustomerType rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Passenger ;
+    rdfs:range [ rdf:type owl:Class ; owl:unionOf (base:FrequentFlyer base:InfrequentFlyer) ] .
+
+base:hasGender rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Passenger ;
+    rdfs:range [ rdf:type owl:Class ; owl:unionOf (base:Male base:Female) ] .
+
+base:hasTypeOfTravel rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Booking ;
+    rdfs:range [ rdf:type owl:Class ; owl:unionOf (base:PersonalTravel base:BusinessTravel) ] .
+
+base:hasSatisfaction rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Passenger ;
+    rdfs:range [ rdf:type owl:Class ; owl:unionOf (base:Satisfied base:Unsatisfied) ] .

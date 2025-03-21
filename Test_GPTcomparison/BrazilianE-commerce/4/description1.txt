@@ -1,0 +1,46 @@
+**Foundational Prefix:**
+<owl: https://base_ontology.com#>
+<rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+<rdfs: http://www.w3.org/2000/01/rdf-schema#>
+<owl: http://www.w3.org/2002/07/owl#>
+
+**Data Description:**
+1. customer_city: text - the city of the customer - [1, 2247]
+2. customer_id: text - unique identifier for a customer - [1, 20000]
+3. customer_state: text - the state of the customer - [1, 27]
+4. customer_unique_id: text - unique identifier for a customer that may be reused - [1, 19843]
+5. customer_zip_code_prefix: Numerical - prefix of the customer's zip code - [1004, 99980]
+
+**classes:**
+1. Customer
+
+**subclasses:**
+1. Unique_Customer: subclass of -> Customer
+2. Reusable_Customer_ID: subclass of -> Customer
+
+**Object Properties:**
+1. has_unique_id: domain - Customer; range - Unique_Customer
+2. has_reusable_id: domain - Customer; range - Reusable_Customer_ID
+
+**Data Type Properties:**
+1. has_city: domain - Customer; range - xsd:string
+2. has_state: domain - Customer; range - xsd:string
+3. has_zip_code_prefix: domain - Customer; range - xsd:integer
+
+Ontology Prefixes:
+1. @prefix owl: <http://www.w3.org/2002/07/owl#> .
+2. @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+3. @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+4. @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+5. @prefix base: <https://base_ontology.com#> .
+6. @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # For linking customer city and state
+7. @prefix schema: <http://schema.org/> .  # For linking customer identifiers
+
+Link of each entity to external resources:
+1. customer_city: vcard:locality
+2. customer_id: schema:identifier
+3. customer_state: vcard:region
+4. customer_unique_id: schema:identifier
+5. customer_zip_code_prefix: vcard:postal-code
+
+By linking to vCard and Schema.org, we ensure that the ontology can interoperate with widely used vocabularies for personal information and identifiers, which are commonly adopted in various domains.

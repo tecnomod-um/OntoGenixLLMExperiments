@@ -1,0 +1,516 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:base="https://base_ontology.com#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:DBpedia="http://dbpedia.org/ontology/"
+     xmlns:Wikidata="http://www.wikidata.org/ontology/"
+     xmlns:Schema.org="http://schema.org/ontology/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#hasCount -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasCount">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Country"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasExternalResource -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasExternalResource">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Country"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasExternalResourceCustomerID -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasExternalResourceCustomerID">
+        <rdfs:domain rdf:resource="https://base_ontology.com#CustomerID"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasExternalResourceDescription -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasExternalResourceDescription">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Description"/>
+        <rdfs:range rdf:resource="http://www.wikidata.org/ontology/"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasExternalResourceInvoiceDate -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasExternalResourceInvoiceDate">
+        <rdfs:domain rdf:resource="https://base_ontology.com#InvoiceDate"/>
+        <rdfs:range rdf:resource="http://schema.org/ontology/"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasExternalResourceInvoiceNo -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasExternalResourceInvoiceNo">
+        <rdfs:domain rdf:resource="https://base_ontology.com#InvoiceNo"/>
+        <rdfs:range rdf:resource="http://www.wikidata.org/ontology/"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasExternalResourceQuantity -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasExternalResourceQuantity">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Quantity"/>
+        <rdfs:range rdf:resource="http://schema.org/ontology/"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasExternalResourceStockCode -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasExternalResourceStockCode">
+        <rdfs:domain rdf:resource="https://base_ontology.com#StockCode"/>
+        <rdfs:range rdf:resource="http://www.wikidata.org/ontology/"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasExternalResourceUnitPrice -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasExternalResourceUnitPrice">
+        <rdfs:domain rdf:resource="https://base_ontology.com#UnitPrice"/>
+        <rdfs:range rdf:resource="http://www.wikidata.org/ontology/"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMax -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasMax">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Country"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMean -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasMean">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Country"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMin -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasMin">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Country"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasNonNullCount -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasNonNullCount">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Country"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasStd -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasStd">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Country"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasType -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasType">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Country"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasUniqueCount -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasUniqueCount">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Country"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#hasCount -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasCountCustomerID -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasCountCustomerID">
+        <rdfs:domain rdf:resource="https://base_ontology.com#CustomerID"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasCountQuantity -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasCountQuantity">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Quantity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasCountUnitPrice -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasCountUnitPrice">
+        <rdfs:domain rdf:resource="https://base_ontology.com#UnitPrice"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMax -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasMax">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMaxCustomerID -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasMaxCustomerID">
+        <rdfs:domain rdf:resource="https://base_ontology.com#CustomerID"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMaxQuantity -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasMaxQuantity">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Quantity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMaxUnitPrice -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasMaxUnitPrice">
+        <rdfs:domain rdf:resource="https://base_ontology.com#UnitPrice"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMean -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasMean">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMeanCustomerID -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasMeanCustomerID">
+        <rdfs:domain rdf:resource="https://base_ontology.com#CustomerID"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMeanQuantity -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasMeanQuantity">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Quantity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMeanUnitPrice -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasMeanUnitPrice">
+        <rdfs:domain rdf:resource="https://base_ontology.com#UnitPrice"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMin -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasMin">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMinCustomerID -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasMinCustomerID">
+        <rdfs:domain rdf:resource="https://base_ontology.com#CustomerID"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMinQuantity -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasMinQuantity">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Quantity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMinUnitPrice -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasMinUnitPrice">
+        <rdfs:domain rdf:resource="https://base_ontology.com#UnitPrice"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasNonNullCount -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasNonNullCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasStd -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasStd">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasStdCustomerID -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasStdCustomerID">
+        <rdfs:domain rdf:resource="https://base_ontology.com#CustomerID"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasStdQuantity -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasStdQuantity">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Quantity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasStdUnitPrice -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasStdUnitPrice">
+        <rdfs:domain rdf:resource="https://base_ontology.com#UnitPrice"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasType -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasType">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasTypeCustomerID -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasTypeCustomerID">
+        <rdfs:domain rdf:resource="https://base_ontology.com#CustomerID"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasTypeDescription -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasTypeDescription">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Description"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasTypeInvoiceDate -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasTypeInvoiceDate">
+        <rdfs:domain rdf:resource="https://base_ontology.com#InvoiceDate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasTypeInvoiceNo -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasTypeInvoiceNo">
+        <rdfs:domain rdf:resource="https://base_ontology.com#InvoiceNo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasTypeQuantity -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasTypeQuantity">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Quantity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasTypeStockCode -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasTypeStockCode">
+        <rdfs:domain rdf:resource="https://base_ontology.com#StockCode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasTypeUnitPrice -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasTypeUnitPrice">
+        <rdfs:domain rdf:resource="https://base_ontology.com#UnitPrice"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasUniqueCount -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasUniqueCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/ -->
+
+    <Class rdf:about="http://dbpedia.org/ontology/"/>
+    
+
+
+    <!-- http://schema.org/ontology/ -->
+
+    <Class rdf:about="http://schema.org/ontology/"/>
+    
+
+
+    <!-- http://www.wikidata.org/ontology/ -->
+
+    <Class rdf:about="http://www.wikidata.org/ontology/"/>
+    
+
+
+    <!-- https://base_ontology.com#Country -->
+
+    <Class rdf:about="https://base_ontology.com#Country"/>
+    
+
+
+    <!-- https://base_ontology.com#CustomerID -->
+
+    <Class rdf:about="https://base_ontology.com#CustomerID"/>
+    
+
+
+    <!-- https://base_ontology.com#Description -->
+
+    <Class rdf:about="https://base_ontology.com#Description"/>
+    
+
+
+    <!-- https://base_ontology.com#InvoiceDate -->
+
+    <Class rdf:about="https://base_ontology.com#InvoiceDate"/>
+    
+
+
+    <!-- https://base_ontology.com#InvoiceNo -->
+
+    <Class rdf:about="https://base_ontology.com#InvoiceNo"/>
+    
+
+
+    <!-- https://base_ontology.com#Quantity -->
+
+    <Class rdf:about="https://base_ontology.com#Quantity"/>
+    
+
+
+    <!-- https://base_ontology.com#StockCode -->
+
+    <Class rdf:about="https://base_ontology.com#StockCode"/>
+    
+
+
+    <!-- https://base_ontology.com#UnitPrice -->
+
+    <Class rdf:about="https://base_ontology.com#UnitPrice"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

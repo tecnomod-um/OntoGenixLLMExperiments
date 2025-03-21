@@ -1,0 +1,147 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+class_entity rdf:type owl:Class .
+
+entity_name rdf:type owl:Class ;
+    rdfs:subClassOf class_entity .
+
+hasPublicResponse rdf:type owl:ObjectProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+hasResponseToConsumer rdf:type owl:ObjectProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+hasComplaintNarrative rdf:type owl:ObjectProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+hasConsentProvided rdf:type owl:ObjectProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+hasDispute rdf:type owl:ObjectProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+hasDateReceived rdf:type owl:ObjectProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+hasDateSentToCompany rdf:type owl:ObjectProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+hasIssue rdf:type owl:ObjectProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+hasProduct rdf:type owl:ObjectProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+hasState rdf:type owl:ObjectProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+hasSubIssue rdf:type owl:ObjectProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+hasSubProduct rdf:type owl:ObjectProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+submittedVia rdf:type owl:ObjectProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+hasTags rdf:type owl:ObjectProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+hasTimelyResponse rdf:type owl:ObjectProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+hasComplaintID rdf:type owl:ObjectProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:integer .
+
+hasZIPCode rdf:type owl:ObjectProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:integer .
+
+typeOfCompany rdf:type owl:DatatypeProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+typeOfPublicResponse rdf:type owl:DatatypeProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+typeOfResponseToConsumer rdf:type owl:DatatypeProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+typeOfComplaintNarrative rdf:type owl:DatatypeProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+typeOfConsentProvided rdf:type owl:DatatypeProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+typeOfDispute rdf:type owl:DatatypeProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+typeOfDateReceived rdf:type owl:DatatypeProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+typeOfDateSentToCompany rdf:type owl:DatatypeProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+typeOfIssue rdf:type owl:DatatypeProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+typeOfProduct rdf:type owl:DatatypeProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+typeOfState rdf:type owl:DatatypeProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+typeOfSubIssue rdf:type owl:DatatypeProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+typeOfSubProduct rdf:type owl:DatatypeProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+typeOfSubmittedVia rdf:type owl:DatatypeProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+typeOfTags rdf:type owl:DatatypeProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+typeOfTimelyResponse rdf:type owl:DatatypeProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:string .
+
+typeOfComplaintID rdf:type owl:DatatypeProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:integer .
+
+typeOfZIPCode rdf:type owl:DatatypeProperty ;
+    rdfs:domain class_entity ;
+    rdfs:range xsd:integer .

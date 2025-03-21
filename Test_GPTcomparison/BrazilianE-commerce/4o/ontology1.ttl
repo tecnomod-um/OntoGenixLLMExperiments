@@ -1,0 +1,69 @@
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+
+base:Customer a owl:Class ;
+    rdfs:subClassOf foaf:Person .
+
+base:CustomerID a owl:Class ;
+    rdfs:subClassOf base:Customer ;
+    rdfs:subClassOf schema:identifier .
+
+base:CustomerCity a owl:Class ;
+    rdfs:subClassOf base:Customer ;
+    rdfs:subClassOf schema:addressLocality .
+
+base:CustomerState a owl:Class ;
+    rdfs:subClassOf base:Customer ;
+    rdfs:subClassOf schema:addressRegion .
+
+base:CustomerUniqueID a owl:Class ;
+    rdfs:subClassOf base:Customer ;
+    rdfs:subClassOf schema:identifier .
+
+base:CustomerZipCodePrefix a owl:Class ;
+    rdfs:subClassOf base:Customer ;
+    rdfs:subClassOf schema:postalCode .
+
+base:hasCustomerID a owl:ObjectProperty ;
+    rdfs:domain base:Customer ;
+    rdfs:range base:CustomerID .
+
+base:hasCustomerCity a owl:ObjectProperty ;
+    rdfs:domain base:Customer ;
+    rdfs:range base:CustomerCity .
+
+base:hasCustomerState a owl:ObjectProperty ;
+    rdfs:domain base:Customer ;
+    rdfs:range base:CustomerState .
+
+base:hasCustomerUniqueID a owl:ObjectProperty ;
+    rdfs:domain base:Customer ;
+    rdfs:range base:CustomerUniqueID .
+
+base:hasCustomerZipCodePrefix a owl:ObjectProperty ;
+    rdfs:domain base:Customer ;
+    rdfs:range base:CustomerZipCodePrefix .
+
+base:customer_city a owl:DatatypeProperty ;
+    rdfs:domain base:CustomerCity ;
+    rdfs:range rdfs:Literal .
+
+base:customer_id a owl:DatatypeProperty ;
+    rdfs:domain base:CustomerID ;
+    rdfs:range rdfs:Literal .
+
+base:customer_state a owl:DatatypeProperty ;
+    rdfs:domain base:CustomerState ;
+    rdfs:range rdfs:Literal .
+
+base:customer_unique_id a owl:DatatypeProperty ;
+    rdfs:domain base:CustomerUniqueID ;
+    rdfs:range rdfs:Literal .
+
+base:customer_zip_code_prefix a owl:DatatypeProperty ;
+    rdfs:domain base:CustomerZipCodePrefix ;
+    rdfs:range rdfs:Literal .

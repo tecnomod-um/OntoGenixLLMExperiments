@@ -1,0 +1,91 @@
+**Foundational Prefix:**
+https://base_ontology.com#
+http://www.w3.org/1999/02/22-rdf-syntax-ns#
+http://www.w3.org/2000/01/rdf-schema#
+http://www.w3.org/2002/07/owl#
+
+**Data Description:**
+1. customer_city: text - city of the customer - possible range: 2247 unique values
+2. customer_id: text - unique identifier for the customer - possible range: 20000 unique values
+3. customer_state: text - state of the customer - possible range: 27 unique values
+4. customer_unique_id: text - unique identifier for the customer - possible range: 19843 unique values
+5. customer_zip_code_prefix: Numerical - zip code prefix of the customer - possible range: 1004 to 99980
+
+**classes:**
+1. Customer
+
+**subclasses:**
+1. CustomerID: subclass of -> Customer
+2. CustomerCity: subclass of -> Customer
+3. CustomerState: subclass of -> Customer
+4. CustomerUniqueID: subclass of -> Customer
+5. CustomerZipCodePrefix: subclass of -> Customer
+
+**Object Properties:**
+1. hasCustomerID: Customer - CustomerID
+2. hasCustomerCity: Customer - CustomerCity
+3. hasCustomerState: Customer - CustomerState
+4. hasCustomerUniqueID: Customer - CustomerUniqueID
+5. hasCustomerZipCodePrefix: Customer - CustomerZipCodePrefix
+
+**Data Type Properties:**
+1. customer_city: CustomerCity - text
+2. customer_id: CustomerID - text
+3. customer_state: CustomerState - text
+4. customer_unique_id: CustomerUniqueID - text
+5. customer_zip_code_prefix: CustomerZipCodePrefix - Numerical
+
+**Foundational Prefix:**
+https://base_ontology.com#
+http://www.w3.org/1999/02/22-rdf-syntax-ns#
+http://www.w3.org/2000/01/rdf-schema#
+http://www.w3.org/2002/07/owl#
+http://xmlns.com/foaf/0.1/
+http://schema.org/
+
+**Data Description:**
+1. customer_city: text - city of the customer - possible range: 2247 unique values
+2. customer_id: text - unique identifier for the customer - possible range: 20000 unique values
+3. customer_state: text - state of the customer - possible range: 27 unique values
+4. customer_unique_id: text - unique identifier for the customer - possible range: 19843 unique values
+5. customer_zip_code_prefix: Numerical - zip code prefix of the customer - possible range: 1004 to 99980
+
+**classes:**
+1. Customer
+
+**subclasses:**
+1. CustomerID: subclass of -> Customer
+2. CustomerCity: subclass of -> Customer
+3. CustomerState: subclass of -> Customer
+4. CustomerUniqueID: subclass of -> Customer
+5. CustomerZipCodePrefix: subclass of -> Customer
+
+**Object Properties:**
+1. hasCustomerID: Customer - CustomerID
+2. hasCustomerCity: Customer - CustomerCity
+3. hasCustomerState: Customer - CustomerState
+4. hasCustomerUniqueID: Customer - CustomerUniqueID
+5. hasCustomerZipCodePrefix: Customer - CustomerZipCodePrefix
+
+**Data Type Properties:**
+1. customer_city: CustomerCity - text
+2. customer_id: CustomerID - text
+3. customer_state: CustomerState - text
+4. customer_unique_id: CustomerUniqueID - text
+5. customer_zip_code_prefix: CustomerZipCodePrefix - Numerical
+
+**Entities from external sources:**
+1. Customer: http://xmlns.com/foaf/0.1/Person
+2. CustomerID: http://schema.org/identifier
+3. CustomerCity: http://schema.org/addressLocality
+4. CustomerState: http://schema.org/addressRegion
+5. CustomerUniqueID: http://schema.org/identifier
+6. CustomerZipCodePrefix: http://schema.org/postalCode
+
+**Ontology Prefixes:**
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .

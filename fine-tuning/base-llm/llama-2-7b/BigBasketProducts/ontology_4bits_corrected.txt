@@ -1,0 +1,187 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:Product a owl:Class ;
+   rdfs:label "Product" .
+
+um:Brand a owl:Class ;
+   rdfs:label "Brand" .
+
+um:Category a owl:Class ;
+   rdfs:label "Category" .
+
+um:SubCategory a owl:Class ;
+   rdfs:label "SubCategory" .
+
+um:ProductType a owl:Class ;
+   rdfs:label "Product Type" .
+
+um:Quantity a owl:Class ;
+   rdfs:label "Quantity" .
+
+um:Price a owl:Class ;
+   rdfs:label "Price" .
+
+um:DiscountPrice a owl:Class ;
+   rdfs:label "Discount Price" .
+
+um:FAIR_URI a owl:Class ;
+   rdfs:label "FAIR_URI" .
+
+um:ProductLink a owl:Class ;
+   rdfs:label "Product Link" .
+
+um:ProductName a owl:Class ;
+   rdfs:label "Product Name" .
+
+um:Absolute_Url_idx a owl:Class ;
+   rdfs:label "Absolute URL Index" .
+
+um:Brand_idx a owl:Class ;
+   rdfs:label "Brand Index" .
+
+um:Category_idx a owl:Class ;
+   rdfs:label "Category Index" .
+
+um:SubCategory_idx a owl:Class ;
+   rdfs:label "SubCategory Index" .
+
+um:Quantity_idx a owl:Class ;
+   rdfs:label "Quantity Index" .
+
+um:Price_idx a owl:Class ;
+   rdfs:label "Price Index" .
+
+um:DiscountPrice_idx a owl:Class ;
+   rdfs:label "Discount Price Index" .
+
+um:FAIR_URI a owl:Class ;
+   rdfs:label "FAIR_URI" .
+
+um:ProductLink_idx a owl:Class ;
+   rdfs:label "Product Link Index" .
+
+um:ProductName_idx a owl:Class ;
+   rdfs:label "Product Name Index" .
+
+um:ProductLinks a rdf:Property ;
+   rdfs:domain um:Product ;
+   rdfs:range xsd:string ;
+   rdfs:label "Product Links" .
+
+um:ProductNameLinks a rdf:Property ;
+   rdfs:domain um:ProductName ;
+   rdfs:range xsd:string ;
+   rdfs:label "Product Name Links" .
+
+um:Absolute_Url a owl:Class ;
+   rdfs:label "Absolute URL" .
+
+um:ProductLinksToProduct a owl:Class ;
+   rdfs:label "Product Links to Product" .
+
+um:ProductLinksToBrand a owl:Class ;
+   rdfs:label "Product Links to Brand" .
+
+um:ProductLinksToCategory a owl:Class ;
+   rdfs:label "Product Links to Category" .
+
+um:ProductLinksToSubCategory a owl:Class ;
+   rdfs:label "Product Links to SubCategory" .
+
+um:ProductLinksToProductType a owl:Class ;
+   rdfs:label "Product Links to Product Type" .
+
+um:ProductLinksToQuantity a owl:Class ;
+   rdfs:label "Product Links to Quantity" .
+
+um:ProductLinksToPrice a owl:Class ;
+   rdfs:label "Product Links to Price" .
+
+um:ProductLinksToDiscountPrice a owl:Class ;
+   rdfs:label "Product Links to Discount Price" .
+
+um:ProductLinksToFAIR_URI a owl:Class ;
+   rdfs:label "Product Links to FAIR_URI" .
+
+um:ProductLinksToProductLinks a owl:Class ;
+   rdfs:label "Product Links to Product Links" .
+
+um:ProductLinksToProductName a owl:Class ;
+   rdfs:label "Product Links to Product Name" .
+
+um:ProductLinksToProductNameLinks a owl:Class ;
+   rdfs:subPropertyOf um:ProductLinksToProductName .
+
+um:ProductLinksToAbsolute_URL a owl:Class ;
+   rdfs:label "Product Links to Absolute URL" .
+
+um:ProductLinksToProductLinksToProduct a owl:Class ;
+   rdfs:subPropertyOf um:ProductLinksToProduct .
+
+um:ProductLinksToProductLinksToBrand a owl:Class ;
+   rdfs:subPropertyOf um:ProductLinksToBrand .
+
+um:ProductLinksToProductLinksToCategory a owl:Class ;
+   rdfs:subPropertyOf um:ProductLinksToCategory .
+
+um:ProductLinksToProductLinksToSubCategory a owl:Class ;
+   rdfs:subPropertyOf um:ProductLinksToSubCategory .
+
+um:ProductLinksToProductLinksToProductType a owl:Class ;
+   rdfs:subPropertyOf um:ProductLinksToProductType .
+
+um:ProductLinksToProductLinksToQuantity a owl:Class ;
+   rdfs:subPropertyOf um:ProductLinksToQuantity .
+
+um:ProductLinksToProductLinksToPrice a owl:Class ;
+   rdfs:subPropertyOf um:ProductLinksToPrice .
+
+um:ProductLinksToProductLinksToDiscountPrice a owl:Class ;
+   rdfs:subPropertyOf um:ProductLinksToDiscountPrice .
+
+um:ProductLinksToProductLinksToFAIR_URI a owl:Class ;
+   rdfs:subPropertyOf um:ProductLinksToFAIR_URI .
+
+um:ProductLinksToProductLinksToProductLinks a owl:Class ;
+   rdfs:subPropertyOf um:ProductLinksToProductLinks .
+
+um:ProductLinksToProductLinksToProductName a owl:Class ;
+   rdfs:subPropertyOf um:ProductLinksToProductName .
+
+um:ProductLinksToProductLinksToProductNameLinks a owl:Class ;
+   rdfs:subPropertyOf um:ProductLinksToProductNameLinks .
+
+um:ProductLinksToProductLinksToAbsolute_URL a owl:Class ;
+   rdfs:subPropertyOf um:ProductLinksToAbsolute_URL .
+
+um:ProductLinksToProductLinksToProductLinksToProduct a owl:Class ;
+   rdfs:subPropertyOf um:ProductLinksToProductLinksToProduct .
+
+um:ProductLinksToProductLinksToBrand a owl:Class ;
+   rdfs:subPropertyOf um:ProductLinksToBrand .
+
+um:ProductLinksToProductLinksToCategory a owl:Class ;
+   rdfs:subPropertyOf um:ProductLinksToCategory .
+
+um:ProductLinksToProductLinksToSubCategory a owl:Class ;
+   rdfs:subPropertyOf um:ProductLinksToSubCategory .
+
+um:ProductLinksToProductLinksToProductType a owl:Class ;
+   rdfs:subPropertyOf um:ProductLinksToProductType .
+
+um:ProductLinksToProductLinksToQuantity a owl:Class ;
+   rdfs:subPropertyOf um:ProductLinksToQuantity .
+
+um:ProductLinksToProductLinksToPrice a owl:Class ;
+   rdfs:subPropertyOf um:ProductLinksToPrice .
+
+um:ProductLinksToProductLinksToDiscountPrice a owl:Class ;
+   rdfs:subPropertyOf um:ProductLinksToDiscountPrice .
+
+um:ProductLinksToProductLinksToFAIR_URI a owl:Class ;
+   rdfs:subPropertyOf um:ProductLinksToFAIR_URI .
+

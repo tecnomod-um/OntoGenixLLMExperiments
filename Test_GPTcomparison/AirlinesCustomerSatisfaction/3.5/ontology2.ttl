@@ -1,0 +1,156 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+base:hasCount rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Class ;
+    rdfs:range xsd:float .
+
+base:hasMax rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Class ;
+    rdfs:range xsd:float .
+
+base:hasMean rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Class ;
+    rdfs:range xsd:float .
+
+base:hasMin rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Class ;
+    rdfs:range xsd:float .
+
+base:hasStd rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Class ;
+    rdfs:range xsd:float .
+
+base:hasType rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Class ;
+    rdfs:range xsd:string .
+
+base:hasNonNullCount rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Class ;
+    rdfs:range xsd:float .
+
+base:hasUniqueCount rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Class ;
+    rdfs:range xsd:float .
+
+base:hasExternalResource rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Class ;
+    rdfs:range xsd:string .
+
+base:Age owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty base:hasType ;
+        owl:hasValue "Numerical" ] ;
+    base:hasExternalResource "external resource_A" .
+
+base:Arrival_Delay_in_Minutes owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty base:hasType ;
+        owl:hasValue "Numerical" ] ;
+    base:hasExternalResource "external resource_B" .
+
+base:Baggage_Handling owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty base:hasType ;
+        owl:hasValue "categorical" ] ;
+    base:hasExternalResource "external resource_C" .
+
+base:Checkin_Service owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty base:hasType ;
+        owl:hasValue "categorical" ] ;
+    base:hasExternalResource "external resource_D" .
+
+base:Cleanliness owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty base:hasType ;
+        owl:hasValue "categorical" ] ;
+    base:hasExternalResource "external resource_E" .
+
+base:Departure_Delay_in_Minutes owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty base:hasType ;
+        owl:hasValue "Numerical" ] ;
+    base:hasExternalResource "external resource_F" .
+
+base:Departure_Arrival_Time_Convenient owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty base:hasType ;
+        owl:hasValue "categorical" ] ;
+    base:hasExternalResource "external resource_G" .
+
+base:Ease_of_Online_Booking owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty base:hasType ;
+        owl:hasValue "categorical" ] ;
+    base:hasExternalResource "external resource_H" .
+
+base:Flight_Distance owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty base:hasType ;
+        owl:hasValue "Numerical" ] ;
+    base:hasExternalResource "external resource_I" .
+
+base:Food_and_Drink owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty base:hasType ;
+        owl:hasValue "categorical" ] ;
+    base:hasExternalResource "external resource_J" .
+
+base:Gate_Location owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty base:hasType ;
+        owl:hasValue "categorical" ] ;
+    base:hasExternalResource "external resource_K" .
+
+base:Inflight_Entertainment owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty base:hasType ;
+        owl:hasValue "categorical" ] ;
+    base:hasExternalResource "external resource_L" .
+
+base:Inflight_Wifi_Service owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty base:hasType ;
+        owl:hasValue "categorical" ] ;
+    base:hasExternalResource "external resource_M" .
+
+base:Leg_Room_Service owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty base:hasType ;
+        owl:hasValue "categorical" ] ;
+    base:hasExternalResource "external resource_N" .
+
+base:On-board_Service owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty base:hasType ;
+        owl:hasValue "categorical" ] ;
+    base:hasExternalResource "external resource_O" .
+
+base:Online_Boarding owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty base:hasType ;
+        owl:hasValue "categorical" ] ;
+    base:hasExternalResource "external resource_P" .
+
+base:Online_Support owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty base:hasType ;
+        owl:hasValue "categorical" ] ;
+    base:hasExternalResource "external resource_Q" .
+
+base:Seat_Comfort owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty base:hasType ;
+        owl:hasValue "categorical" ] ;
+    base:hasExternalResource "external resource_R" .
+
+base:Class owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty base:hasType ;
+        owl:hasValue "categorical" ] ;
+    base:hasExternalResource "external resource_S" .
+
+base:Customer_Type owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty base:hasType ;
+        owl:hasValue "categorical" ] ;
+    base:hasExternalResource "external resource_T" .
+
+base:Gender owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty base:hasType ;
+        owl:hasValue "categorical" ] ;
+    base:hasExternalResource "external resource_U" .
+
+base:Type_of_Travel owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty base:hasType ;
+        owl:hasValue "categorical" ] ;
+    base:hasExternalResource "external resource_V" .
+
+base:Satisfaction owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty base:hasType ;
+        owl:hasValue "categorical" ] ;
+    base:hasExternalResource "external resource_W" .

@@ -1,0 +1,61 @@
+@prefix ex_company: <http://example.com/company#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ex_company:Company rdf:type owl:Class .
+ex_company:Company_public_response rdf:type owl:Class .
+ex_company:Company_response_to_consumer rdf:type owl:Class .
+ex_company:Consumer_complaint_narrative rdf:type owl:Class .
+ex_company:Consumer_consent_provided rdf:type owl:Class .
+ex_company:Consumer_disputed rdf:type owl:Class .
+ex_company:Date_received rdf:type owl:Class .
+ex_company:Date_sent_to_company rdf:type owl:Class .
+ex_company:Issue rdf:type owl:Class .
+ex_company:Product rdf:type owl:Class .
+ex_company:State rdf:type owl:Class .
+ex_company:Sub-issue rdf:type owl:Class .
+ex_company:Sub-product rdf:type owl:Class .
+ex_company:Submitted_via rdf:type owl:Class .
+ex_company:Tags rdf:type owl:Class .
+ex_company:Timely_response rdf:type owl:Class .
+ex_company:Complaint_ID rdf:type owl:Class .
+ex_company:ZIP_code rdf:type owl:Class .
+ex_company:external_resource rdf:type owl:Class .
+
+ex_company:hasNonNullCount rdf:type owl:ObjectProperty ;
+    rdfs:domain ex_company:Company ;
+    rdfs:range xsd:float .
+
+ex_company:hasType rdf:type owl:ObjectProperty ;
+    rdfs:domain ex_company:Company ;
+    rdfs:range xsd:string .
+
+ex_company:hasUniqueCount rdf:type owl:ObjectProperty ;
+    rdfs:domain ex_company:Company ;
+    rdfs:range xsd:float .
+
+ex_company:hasCount rdf:type owl:ObjectProperty ;
+    rdfs:domain ex_company:Company ;
+    rdfs:range xsd:float .
+
+ex_company:hasMax rdf:type owl:ObjectProperty ;
+    rdfs:domain ex_company:Company ;
+    rdfs:range xsd:float .
+
+ex_company:hasMean rdf:type owl:ObjectProperty ;
+    rdfs:domain ex_company:Company ;
+    rdfs:range xsd:float .
+
+ex_company:hasMin rdf:type owl:ObjectProperty ;
+    rdfs:domain ex_company:Company ;
+    rdfs:range xsd:float .
+
+ex_company:hasStd rdf:type owl:ObjectProperty ;
+    rdfs:domain ex_company:Company ;
+    rdfs:range xsd:float .
+
+ex_company:linkedTo rdf:type owl:ObjectProperty ;
+    rdfs:domain ex_company:Company ;
+    rdfs:range ex_company:external_resource .

@@ -1,0 +1,39 @@
+**Foundational Prefix:**
+Define it as an owl type
+
+**Data Description:**
+Enumerate for each column in the json data:
+1. customer_city: text - city where the customer is located - string
+2. customer_id: text - unique identifier for each customer - string
+3. customer_state: text - state where the customer is located - string
+4. customer_unique_id: text - unique identifier for each customer - string
+5. customer_zip_code_prefix: Numerical - prefix of the customer's zip code - integer
+
+**classes:**
+1. class_entity
+
+**subclasses:**
+1. entity_customer: subclass of -> class_entity
+
+**Object Properties:**
+1. hasCity: domain - entity_customer, range - string
+2. hasID: domain - entity_customer, range - string
+3. hasState: domain - entity_customer, range - string
+4. hasUniqueID: domain - entity_customer, range - string
+5. hasZipCodePrefix: domain - entity_customer, range - integer
+
+**Data Type Properties:**
+1. nonNullCount: domain - entity_customer, range - float
+2. type: domain - entity_customer, range - string
+3. uniqueCount: domain - entity_customer, range - float
+4. count: domain - entity_customer, range - float
+5. max: domain - entity_customer, range - float
+6. mean: domain - entity_customer, range - float
+7. min: domain - entity_customer, range - float
+8. std: domain - entity_customer, range - float
+
+**Ontology Prefixes:**
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+**Link of each entity to external resources:**
+1. entity_customer: DBpedia

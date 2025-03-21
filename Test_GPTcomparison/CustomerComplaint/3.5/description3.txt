@@ -1,0 +1,78 @@
+**Foundational Prefix:**
+- https://base_ontology.com#
+- http://www.w3.org/1999/02/22-rdf-syntax-ns#
+- http://www.w3.org/2000/01/rdf-schema#
+- http://www.w3.org/2002/07/owl#
+
+**Data Description:**
+1. Company: text - name of the company - string
+2. Company public response: categorical - public response of the company - string
+3. Company response to consumer: categorical - company's response to consumer - string
+4. Consumer complaint narrative: text - narrative of consumer complaint - string
+5. Consumer consent provided?: categorical - indication of consumer consent - string
+6. Consumer disputed?: categorical - indication of consumer dispute - string
+7. Date received: text - date of complaint received - string
+8. Date sent to company: text - date complaint sent to company - string
+9. Issue: text - issue raised by consumer - string
+10. Product: categorical - product related to the complaint - string
+11. State: text - state related to the complaint - string
+12. Sub-issue: text - sub-issue related to the complaint - string
+13. Sub-product: text - sub-product related to the complaint - string
+14. Submitted via: categorical - mode of submission of complaint - string
+15. Tags: categorical - tags related to the complaint - string
+16. Timely response?: categorical - indication of timely response - string
+17. Complaint ID: Numerical - unique identifier for the complaint - integer
+18. ZIP code: Numerical - ZIP code related to the complaint - integer
+
+**classes:**
+1. class_entity
+
+**subclasses:**
+1. entity_name: subclass of -> class_entity
+
+**Object Properties:**
+1. hasPublicResponse: domain - class_entity, range - Company public response
+2. hasResponseToConsumer: domain - class_entity, range - Company response to consumer
+3. hasComplaintNarrative: domain - class_entity, range - Consumer complaint narrative
+4. hasConsentProvided: domain - class_entity, range - Consumer consent provided?
+5. hasDispute: domain - class_entity, range - Consumer disputed?
+6. hasDateReceived: domain - class_entity, range - Date received
+7. hasDateSentToCompany: domain - class_entity, range - Date sent to company
+8. hasIssue: domain - class_entity, range - Issue
+9. hasProduct: domain - class_entity, range - Product
+10. hasState: domain - class_entity, range - State
+11. hasSubIssue: domain - class_entity, range - Sub-issue
+12. hasSubProduct: domain - class_entity, range - Sub-product
+13. hasSubmissionMethod: domain - class_entity, range - Submitted via
+14. hasTags: domain - class_entity, range - Tags
+15. hasTimelyResponse: domain - class_entity, range - Timely response?
+16. hasComplaintID: domain - class_entity, range - Complaint ID
+17. hasZIPCode: domain - class_entity, range - ZIP code
+
+**Data Type Properties:**
+1. hasType: domain - class_entity, range - string
+2. hasMeaning: domain - class_entity, range - string
+3. hasRange: domain - class_entity, range - string
+
+**Ontology Prefixes:**
+1. @prefix ex_company: <http://external_source_company.com#> .
+
+**Link of each entity to external resources:**
+1. Company: ex_company:company
+2. Company public response: ex_company:public_response
+3. Company response to consumer: ex_company:response_to_consumer
+4. Consumer complaint narrative: ex_company:complaint_narrative
+5. Consumer consent provided?: ex_company:consent_provided
+6. Consumer disputed?: ex_company:disputed
+7. Date received: ex_company:date_received
+8. Date sent to company: ex_company:date_sent_to_company
+9. Issue: ex_company:issue
+10. Product: ex_company:product
+11. State: ex_company:state
+12. Sub-issue: ex_company:sub_issue
+13. Sub-product: ex_company:sub_product
+14. Submitted via: ex_company:submitted_via
+15. Tags: ex_company:tags
+16. Timely response?: ex_company:timely_response
+17. Complaint ID: ex_company:complaint_id
+18. ZIP code: ex_company:zip_code

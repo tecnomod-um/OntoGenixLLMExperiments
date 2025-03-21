@@ -1,0 +1,204 @@
+**Foundational Prefix:**
+https://base_ontology.com#
+http://www.w3.org/1999/02/22-rdf-syntax-ns#
+http://www.w3.org/2000/01/rdf-schema#
+http://www.w3.org/2002/07/owl#
+
+**Data Description:**
+1. Company: text - The name of the company involved in the complaint - [1:M]
+2. Company public response: categorical - Public response provided by the company - [0:M]
+3. Company response to consumer: categorical - Response given by the company to the consumer - [1:M]
+4. Consumer complaint narrative: text - Detailed narrative of the complaint submitted by the consumer - [0:M]
+5. Consumer consent provided?: categorical - Indicates if consumer consent was provided for data sharing - [0:M]
+6. Consumer disputed?: categorical - Indicates if the consumer disputed the complaint resolution - [0:0]
+7. Date received: text - The date on which the complaint was received - [1:M]
+8. Date sent to company: text - The date on which the complaint was forwarded to the company - [1:M]
+9. Issue: text - The issue raised in the complaint - [1:M]
+10. Product: categorical - The type of product the complaint is about - [1:M]
+11. State: text - The state from which the complaint was filed - [0:M]
+12. Sub-issue: text - Detailed issue related to the main issue - [0:M]
+13. Sub-product: text - Detailed product related to the main product - [1:M]
+14. Submitted via: categorical - The medium through which the complaint was submitted - [1:M]
+15. Tags: categorical - Tags associated with the complaint - [0:M]
+16. Timely response?: categorical - Indicates if the response to the complaint was timely - [1:M]
+17. Complaint ID: Numerical - Unique identifier for the complaint - [1:1]
+18. ZIP code: Numerical - ZIP code related to the consumer's location - [0:M]
+
+**classes:**
+1. Complaint
+2. Company
+3. Consumer
+4. Product
+5. Issue
+6. Submission
+7. Location
+
+**subclasses:**
+1. PublicResponse: subclass of -> Company
+2. ConsumerNarrative: subclass of -> Consumer
+3. ConsumerConsent: subclass of -> Consumer
+4. Dispute: subclass of -> Consumer
+5. SubProduct: subclass of -> Product
+6. SubIssue: subclass of -> Issue
+7. Tag: subclass of -> Complaint
+8. TimelyResponse: subclass of -> Complaint
+
+**Object Properties:**
+1. hasPublicResponse: domain - Company; range - PublicResponse
+2. hasResponseToConsumer: domain - Company; range - Complaint
+3. hasNarrative: domain - Consumer; range - ConsumerNarrative
+4. hasConsent: domain - Consumer; range - ConsumerConsent
+5. hasDispute: domain - Consumer; range - Dispute
+6. receivedOn: domain - Complaint; range - Date
+7. sentToCompanyOn: domain - Complaint; range - Date
+8. hasIssue: domain - Complaint; range - Issue
+9. hasProduct: domain - Complaint; range - Product
+10. fromState: domain - Complaint; range - Location
+11. hasSubIssue: domain - Issue; range - SubIssue
+12. hasSubProduct: domain - Product; range - SubProduct
+13. submittedVia: domain - Submission; range - Complaint
+14. hasTag: domain - Complaint; range - Tag
+15. hasTimelyResponse: domain - Complaint; range - TimelyResponse
+16. identifiedBy: domain - Complaint; range - Complaint ID
+17. locatedIn: domain - Consumer; range - ZIP code
+
+**Data Type Properties:**
+1. companyName: domain - Company; range - xsd:string
+2. publicResponse: domain - PublicResponse; range - xsd:string
+3. responseToConsumer: domain - Complaint; range - xsd:string
+4. narrativeText: domain - ConsumerNarrative; range - xsd:string
+5. consentProvided: domain - ConsumerConsent; range - xsd:boolean
+6. isDisputed: domain - Dispute; range - xsd:boolean
+7. receivedDate: domain - Complaint; range - xsd:date
+8. sentDate: domain - Complaint; range - xsd:date
+9. issueDescription: domain - Issue; range - xsd:string
+10. productType: domain - Product; range - xsd:string
+11. stateName: domain - Location; range - xsd:string
+12. subIssueDescription: domain - SubIssue; range - xsd:string
+13. subProductType: domain - SubProduct; range - xsd:string
+14. submissionMethod: domain - Submission; range - xsd:string
+15. tagLabel: domain - Tag; range - xsd:string
+16. isTimely: domain - TimelyResponse; range - xsd:boolean
+17. complaintID: domain - Complaint; range - xsd:integer
+18. zipCode: domain - Location; range - xsd:string
+
+**Ontology Prefixes:**
+```
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+```
+
+**Link of each entity to external resources:**
+```
+Complaint: schema:ConsumerComplaint
+Company: schema:Organization
+Consumer: foaf:Person
+Product: schema:Product
+Issue: skos:Concept
+Submission: schema:CreativeWork
+Location: schema:Place
+
+PublicResponse: schema:Organization
+ConsumerNarrative: schema:Article
+ConsumerConsent: schema:Boolean
+Dispute: schema:DisputeResolution
+SubProduct: schema:ProductModel
+SubIssue: skos:Concept
+Tag: schema:Thing
+TimelyResponse: schema:Duration
+```
+
+**Data Description:**
+```
+1. Company: text - [1:M]
+2. Company public response: categorical - [0:M]
+3. Company response to consumer: categorical - [1:M]
+4. Consumer complaint narrative: text - [0:M]
+5. Consumer consent provided?: categorical - [0:M]
+6. Consumer disputed?: categorical - [0:0]
+7. Date received: text - [1:M]
+8. Date sent to company: text - [1:M]
+9. Issue: text - [1:M]
+10. Product: categorical - [1:M]
+11. State: text - [0:M]
+12. Sub-issue: text - [0:M]
+13. Sub-product: text - [1:M]
+14. Submitted via: categorical - [1:M]
+15. Tags: categorical - [0:M]
+16. Timely response?: categorical - [1:M]
+17. Complaint ID: Numerical - [1:1]
+18. ZIP code: Numerical - [0:M]
+```
+
+**classes:**
+```
+1. Complaint
+2. Company
+3. Consumer
+4. Product
+5. Issue
+6. Submission
+7. Location
+```
+
+**subclasses:**
+```
+1. PublicResponse
+2. ConsumerNarrative
+3. ConsumerConsent
+4. Dispute
+5. SubProduct
+6. SubIssue
+7. Tag
+8. TimelyResponse
+```
+
+**Object Properties:**
+```
+1. hasPublicResponse
+2. hasResponseToConsumer
+3. hasNarrative
+4. hasConsent
+5. hasDispute
+6. receivedOn
+7. sentToCompanyOn
+8. hasIssue
+9. hasProduct
+10. fromState
+11. hasSubIssue
+12. hasSubProduct
+13. submittedVia
+14. hasTag
+15. hasTimelyResponse
+16. identifiedBy
+17. locatedIn
+```
+
+**Data Type Properties:**
+```
+1. companyName
+2. publicResponse
+3. responseToConsumer
+4. narrativeText
+5. consentProvided
+6. isDisputed
+7. receivedDate
+8. sentDate
+9. issueDescription
+10. productType
+11. stateName
+12. subIssueDescription
+13. subProductType
+14. submissionMethod
+15. tagLabel
+16. isTimely
+17. complaintID
+18. zipCode
+```

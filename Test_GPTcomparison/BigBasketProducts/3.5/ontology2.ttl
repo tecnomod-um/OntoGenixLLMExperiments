@@ -1,0 +1,69 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+base:Brand a owl:Class .
+base:Category a owl:Class .
+base:SubCategory a owl:Class .
+base:ProductName a owl:Class .
+base:Quantity a owl:Class .
+base:Absolute_Url a owl:Class .
+base:Image_Url a owl:Class .
+base:DiscountPrice a owl:Class .
+base:Price a owl:Class .
+
+base:hasNonNullCount a owl:ObjectProperty ;
+    rdfs:domain base:Brand ;
+    rdfs:range xsd:float .
+
+base:hasType a owl:ObjectProperty ;
+    rdfs:domain base:Brand ;
+    rdfs:range xsd:string .
+
+base:hasUniqueCount a owl:ObjectProperty ;
+    rdfs:domain base:Brand ;
+    rdfs:range xsd:float .
+
+base:hasCount a owl:ObjectProperty ;
+    rdfs:domain base:Brand ;
+    rdfs:range xsd:float .
+
+base:hasMax a owl:ObjectProperty ;
+    rdfs:domain base:Brand ;
+    rdfs:range xsd:float .
+
+base:hasMean a owl:ObjectProperty ;
+    rdfs:domain base:Brand ;
+    rdfs:range xsd:float .
+
+base:hasMin a owl:ObjectProperty ;
+    rdfs:domain base:Brand ;
+    rdfs:range xsd:float .
+
+base:hasStd a owl:ObjectProperty ;
+    rdfs:domain base:Brand ;
+    rdfs:range xsd:float .
+
+base:hasSeeAlso a owl:ObjectProperty ;
+    rdfs:domain base:Brand ;
+    rdfs:range xsd:anyURI .
+
+base:hasDiscountPrice a owl:ObjectProperty ;
+    rdfs:domain base:Brand ;
+    rdfs:range xsd:float .
+
+base:hasPrice a owl:ObjectProperty ;
+    rdfs:domain base:Brand ;
+    rdfs:range xsd:float .
+
+base:Brand rdfs:seeAlso <external_source_for_brand> .
+base:Category rdfs:seeAlso <external_source_for_category> .
+base:SubCategory rdfs:seeAlso <external_source_for_subcategory> .
+base:ProductName rdfs:seeAlso <external_source_for_productname> .
+base:Quantity rdfs:seeAlso <external_source_for_quantity> .
+base:Absolute_Url rdfs:seeAlso <external_source_for_absoluteurl> .
+base:Image_Url rdfs:seeAlso <external_source_for_imageurl> .
+base:DiscountPrice rdfs:seeAlso <external_source_for_discountprice> .
+base:Price rdfs:seeAlso <external_source_for_price> .

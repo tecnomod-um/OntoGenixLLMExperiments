@@ -1,0 +1,183 @@
+**Foundational Prefix:**
+https://base_ontology.com#
+http://www.w3.org/1999/02/22-rdf-syntax-ns#
+http://www.w3.org/2000/01/rdf-schema#
+http://www.w3.org/2002/07/owl#
+
+**Data Description:**
+1. Country: text - The country where the transaction occurred - [16 unique values]
+2. Description: text - Textual description of the item - [2360 unique values]
+3. InvoiceDate: text - The date when the invoice was issued - [806 unique values]
+4. InvoiceNo: text - Unique number identifying the invoice - [937 unique values]
+5. StockCode: text - Unique code identifying the stock item - [2408 unique values]
+6. CustomerID: Numerical - Unique identifier for the customer - [min: 12347, max: 18269, mean: 15587.2794635499, std: 1775.1752663906]
+7. Quantity: Numerical - The quantity of items in the transaction - [min: -9360, max: 2880, mean: 7.7657882894, std: 78.1636373452]
+8. UnitPrice: Numerical - The price per unit of the item - [min: 0.0, max: 13541.33, mean: 7.6455087754, std: 201.9077270209]
+
+**classes:**
+1. Transaction
+2. Product
+3. Customer
+4. Invoice
+
+**subclasses:**
+1. InvoiceDate: subclass of -> Invoice
+2. InvoiceNo: subclass of -> Invoice
+3. StockCode: subclass of -> Product
+4. Description: subclass of -> Product
+5. CustomerID: subclass of -> Customer
+6. Country: subclass of -> Transaction
+
+**Object Properties:**
+1. hasProduct: domain - Transaction, range - Product
+2. hasCustomer: domain - Transaction, range - Customer
+3. hasInvoice: domain - Transaction, range - Invoice
+4. locatedIn: domain - Transaction, range - Country
+
+**Data Type Properties:**
+1. countryName: domain - Country, range - xsd:string
+2. descriptionText: domain - Description, range - xsd:string
+3. invoiceDateValue: domain - InvoiceDate, range - xsd:string
+4. invoiceNumber: domain - InvoiceNo, range - xsd:string
+5. stockCodeValue: domain - StockCode, range - xsd:string
+6. customerIdentifier: domain - CustomerID, range - xsd:integer
+7. quantityValue: domain - Transaction, range - xsd:integer
+8. unitPriceValue: domain - Transaction, range - xsd:decimal
+
+To update the schema description for enhanced interoperability, we will link the entities to well-known external vocabularies and ontologies. This will facilitate data exchange and integration with other systems. Below are the steps and reasoning to achieve this:
+
+**Ontology Prefixes:**
+1. Define prefixes for commonly used ontologies such as Dublin Core, FOAF (Friend of a Friend), Schema.org, SKOS (Simple Knowledge Organization System), and GoodRelations, which are widely recognized and can provide the necessary semantic context for the entities.
+
+```
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+```
+
+**Link of each entity to external resources:**
+1. Transaction: schema:Order
+2. Product: schema:Product
+3. Customer: schema:Person or schema:Organization (depending on the nature of the customer)
+4. Invoice: schema:Invoice
+5. Country: schema:Country
+6. InvoiceDate: schema:DateTime
+7. InvoiceNo: schema:identifier
+8. StockCode: schema:ProductModel or schema:sku
+9. Description: schema:description
+10. CustomerID: schema:identifier
+11. Quantity: schema:QuantitativeValue
+12. UnitPrice: schema:PriceSpecification
+
+**Updated Object Properties:**
+- The object properties remain the same, but we ensure they are aligned with the external vocabularies where applicable.
+
+**Updated Data Type Properties:**
+- The data type properties are updated to use the external vocabularies' properties where applicable.
+
+**Updated Schema Description:**
+- Update the schema description to reflect the new prefixes and links to external resources.
+
+**Classes:**
+```
+base:Transaction a owl:Class ;
+    rdfs:subClassOf schema:Order .
+
+base:Product a owl:Class ;
+    rdfs:subClassOf schema:Product .
+
+base:Customer a owl:Class ;
+    rdfs:subClassOf schema:Person, schema:Organization .
+
+base:Invoice a owl:Class ;
+    rdfs:subClassOf schema:Invoice .
+```
+
+**Subclasses:**
+```
+base:InvoiceDate a owl:Class ;
+    rdfs:subClassOf base:Invoice ;
+    owl:equivalentClass schema:DateTime .
+
+base:InvoiceNo a owl:Class ;
+    rdfs:subClassOf base:Invoice ;
+    owl:equivalentClass schema:identifier .
+
+base:StockCode a owl:Class ;
+    rdfs:subClassOf base:Product ;
+    owl:equivalentClass schema:ProductModel, schema:sku .
+
+base:Description a owl:Class ;
+    rdfs:subClassOf base:Product ;
+    owl:equivalentClass schema:description .
+
+base:CustomerID a owl:Class ;
+    rdfs:subClassOf base:Customer ;
+    owl:equivalentClass schema:identifier .
+
+base:Country a owl:Class ;
+    rdfs:subClassOf base:Transaction ;
+    owl:equivalentClass schema:Country .
+```
+
+**Object Properties:**
+```
+base:hasProduct a owl:ObjectProperty ;
+    rdfs:domain base:Transaction ;
+    rdfs:range base:Product .
+
+base:hasCustomer a owl:ObjectProperty ;
+    rdfs:domain base:Transaction ;
+    rdfs:range base:Customer .
+
+base:hasInvoice a owl:ObjectProperty ;
+    rdfs:domain base:Transaction ;
+    rdfs:range base:Invoice .
+
+base:locatedIn a owl:ObjectProperty ;
+    rdfs:domain base:Transaction ;
+    rdfs:range base:Country .
+```
+
+**Data Type Properties:**
+```
+base:countryName a owl:DatatypeProperty ;
+    rdfs:domain base:Country ;
+    rdfs:range xsd:string .
+
+base:descriptionText a owl:DatatypeProperty ;
+    rdfs:domain base:Description ;
+    rdfs:range xsd:string .
+
+base:invoiceDateValue a owl:DatatypeProperty ;
+    rdfs:domain base:InvoiceDate ;
+    rdfs:range xsd:string .
+
+base:invoiceNumber a owl:DatatypeProperty ;
+    rdfs:domain base:InvoiceNo ;
+    rdfs:range xsd:string .
+
+base:stockCodeValue a owl:DatatypeProperty ;
+    rdfs:domain base:StockCode ;
+    rdfs:range xsd:string .
+
+base:customerIdentifier a owl:DatatypeProperty ;
+    rdfs:domain base:CustomerID ;
+    rdfs:range xsd:integer .
+
+base:quantityValue a owl:DatatypeProperty ;
+    rdfs:domain base:Transaction ;
+    rdfs:range xsd:integer .
+
+base:unitPriceValue a owl:DatatypeProperty ;
+    rdfs:domain base:Transaction ;
+    rdfs:range xsd:decimal .
+```
+
+By linking to these external resources, we ensure that the ontology is interoperable with other systems that use these common vocabularies, thus facilitating data sharing and integration.

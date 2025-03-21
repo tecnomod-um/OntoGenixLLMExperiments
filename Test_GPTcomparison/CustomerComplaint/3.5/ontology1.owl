@@ -1,0 +1,300 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ex_company="http://example.com/company#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.com/company#hasCount -->
+
+    <ObjectProperty rdf:about="http://example.com/company#hasCount">
+        <rdfs:domain rdf:resource="http://example.com/company#Company"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://example.com/company#hasMax -->
+
+    <ObjectProperty rdf:about="http://example.com/company#hasMax">
+        <rdfs:domain rdf:resource="http://example.com/company#Company"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://example.com/company#hasMean -->
+
+    <ObjectProperty rdf:about="http://example.com/company#hasMean">
+        <rdfs:domain rdf:resource="http://example.com/company#Company"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://example.com/company#hasMin -->
+
+    <ObjectProperty rdf:about="http://example.com/company#hasMin">
+        <rdfs:domain rdf:resource="http://example.com/company#Company"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://example.com/company#hasNonNullCount -->
+
+    <ObjectProperty rdf:about="http://example.com/company#hasNonNullCount">
+        <rdfs:domain rdf:resource="http://example.com/company#Company"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://example.com/company#hasStd -->
+
+    <ObjectProperty rdf:about="http://example.com/company#hasStd">
+        <rdfs:domain rdf:resource="http://example.com/company#Company"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://example.com/company#hasType -->
+
+    <ObjectProperty rdf:about="http://example.com/company#hasType">
+        <rdfs:domain rdf:resource="http://example.com/company#Company"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://example.com/company#hasUniqueCount -->
+
+    <ObjectProperty rdf:about="http://example.com/company#hasUniqueCount">
+        <rdfs:domain rdf:resource="http://example.com/company#Company"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://example.com/company#linkedTo -->
+
+    <ObjectProperty rdf:about="http://example.com/company#linkedTo">
+        <rdfs:domain rdf:resource="http://example.com/company#Company"/>
+        <rdfs:range rdf:resource="http://example.com/company#external_resource"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.com/company#hasCount -->
+
+    <DatatypeProperty rdf:about="http://example.com/company#hasCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://example.com/company#hasMax -->
+
+    <DatatypeProperty rdf:about="http://example.com/company#hasMax">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://example.com/company#hasMean -->
+
+    <DatatypeProperty rdf:about="http://example.com/company#hasMean">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://example.com/company#hasMin -->
+
+    <DatatypeProperty rdf:about="http://example.com/company#hasMin">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://example.com/company#hasNonNullCount -->
+
+    <DatatypeProperty rdf:about="http://example.com/company#hasNonNullCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://example.com/company#hasStd -->
+
+    <DatatypeProperty rdf:about="http://example.com/company#hasStd">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://example.com/company#hasType -->
+
+    <DatatypeProperty rdf:about="http://example.com/company#hasType">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://example.com/company#hasUniqueCount -->
+
+    <DatatypeProperty rdf:about="http://example.com/company#hasUniqueCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.com/company#Company -->
+
+    <Class rdf:about="http://example.com/company#Company"/>
+    
+
+
+    <!-- http://example.com/company#Company_public_response -->
+
+    <Class rdf:about="http://example.com/company#Company_public_response"/>
+    
+
+
+    <!-- http://example.com/company#Company_response_to_consumer -->
+
+    <Class rdf:about="http://example.com/company#Company_response_to_consumer"/>
+    
+
+
+    <!-- http://example.com/company#Complaint_ID -->
+
+    <Class rdf:about="http://example.com/company#Complaint_ID"/>
+    
+
+
+    <!-- http://example.com/company#Consumer_complaint_narrative -->
+
+    <Class rdf:about="http://example.com/company#Consumer_complaint_narrative"/>
+    
+
+
+    <!-- http://example.com/company#Consumer_consent_provided -->
+
+    <Class rdf:about="http://example.com/company#Consumer_consent_provided"/>
+    
+
+
+    <!-- http://example.com/company#Consumer_disputed -->
+
+    <Class rdf:about="http://example.com/company#Consumer_disputed"/>
+    
+
+
+    <!-- http://example.com/company#Date_received -->
+
+    <Class rdf:about="http://example.com/company#Date_received"/>
+    
+
+
+    <!-- http://example.com/company#Date_sent_to_company -->
+
+    <Class rdf:about="http://example.com/company#Date_sent_to_company"/>
+    
+
+
+    <!-- http://example.com/company#Issue -->
+
+    <Class rdf:about="http://example.com/company#Issue"/>
+    
+
+
+    <!-- http://example.com/company#Product -->
+
+    <Class rdf:about="http://example.com/company#Product"/>
+    
+
+
+    <!-- http://example.com/company#State -->
+
+    <Class rdf:about="http://example.com/company#State"/>
+    
+
+
+    <!-- http://example.com/company#Sub-issue -->
+
+    <Class rdf:about="http://example.com/company#Sub-issue"/>
+    
+
+
+    <!-- http://example.com/company#Sub-product -->
+
+    <Class rdf:about="http://example.com/company#Sub-product"/>
+    
+
+
+    <!-- http://example.com/company#Submitted_via -->
+
+    <Class rdf:about="http://example.com/company#Submitted_via"/>
+    
+
+
+    <!-- http://example.com/company#Tags -->
+
+    <Class rdf:about="http://example.com/company#Tags"/>
+    
+
+
+    <!-- http://example.com/company#Timely_response -->
+
+    <Class rdf:about="http://example.com/company#Timely_response"/>
+    
+
+
+    <!-- http://example.com/company#ZIP_code -->
+
+    <Class rdf:about="http://example.com/company#ZIP_code"/>
+    
+
+
+    <!-- http://example.com/company#external_resource -->
+
+    <Class rdf:about="http://example.com/company#external_resource"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

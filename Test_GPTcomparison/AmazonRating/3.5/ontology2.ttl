@@ -1,0 +1,45 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex1: <http://example.org/resource1#> .
+@prefix : <http://example.org/ontology#> .
+
+:class_entity a owl:Class .
+
+:entity_name rdfs:subClassOf :class_entity .
+
+:hasRating a owl:ObjectProperty ;
+    rdfs:domain :class_entity ;
+    rdfs:range xsd:integer .
+
+:hasTimestamp a owl:ObjectProperty ;
+    rdfs:domain :class_entity ;
+    rdfs:range xsd:string .
+
+:hasUserId a owl:ObjectProperty ;
+    rdfs:domain :class_entity ;
+    rdfs:range xsd:string .
+
+:hasProductId a owl:DatatypeProperty ;
+    rdfs:domain :class_entity ;
+    rdfs:range xsd:string .
+
+:ProductId rdfs:subClassOf :class_entity ;
+    :hasProductId xsd:string .
+
+:Rating rdfs:subClassOf :class_entity ;
+    :hasRating xsd:integer .
+
+:Timestamp rdfs:subClassOf :class_entity ;
+    :hasTimestamp xsd:string .
+
+:UserId rdfs:subClassOf :class_entity ;
+    :hasUserId xsd:string .
+
+ex1:product a owl:NamedIndividual .
+
+ex1:rating a owl:NamedIndividual .
+
+ex1:time a owl:NamedIndividual .
+
+ex1:user a owl:NamedIndividual .

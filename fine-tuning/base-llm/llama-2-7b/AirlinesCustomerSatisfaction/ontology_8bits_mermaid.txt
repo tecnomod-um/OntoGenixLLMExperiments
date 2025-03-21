@@ -1,0 +1,36 @@
+classDiagram
+    class Customer {
+        +age : xsd:integer
+        +customerType : xsd:string
+        +gender : xsd:string
+        +satisfaction : xsd:string
+    }
+
+    class Airline
+
+    class Booking {
+        +ArrivalDelayInMinutes : xsd:integer
+        +baggageHandling : xsd:string
+        +bookingDate : xsd:date
+        +bookingTime : xsd:time
+        +checkinService : xsd:string
+        +DepartureDelayInMinutes : xsd:integer
+        +easeOfOnlineBooking : xsd:string
+        +gateLocation : xsd:string
+        +legRoomService : xsd:string
+        +onBoardService : xsd:string
+        +onlineBoardring : xsd:string
+        +onlineSupport : xsd:string
+    }
+
+    class Flight {
+        +cleanliness : xsd:string
+        +departureArrivalTimeConvenient : xsd:string
+        +foodAndDrink : xsd:string
+        +inflightEntertainment : xsd:string
+        +inflightWifiService : xsd:string
+        +seatComfort : xsd:string
+        +typeOfTravel : xsd:string
+    }
+
+    class Class

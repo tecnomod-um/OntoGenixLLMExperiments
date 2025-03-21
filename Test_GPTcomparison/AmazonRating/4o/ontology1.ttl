@@ -1,0 +1,44 @@
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+base:Product a owl:Class ;
+    rdfs:subClassOf schema:Product .
+
+base:User a owl:Class ;
+    rdfs:subClassOf schema:Person .
+
+base:RatingEvent a owl:Class ;
+    rdfs:subClassOf schema:Review .
+
+base:ProductId a owl:DatatypeProperty ;
+    rdfs:domain base:Product ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf dcterms:identifier .
+
+base:UserId a owl:DatatypeProperty ;
+    rdfs:domain base:User ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf dcterms:identifier .
+
+base:Timestamp a owl:DatatypeProperty ;
+    rdfs:domain base:RatingEvent ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf dcterms:created .
+
+base:Rating a owl:DatatypeProperty ;
+    rdfs:domain base:RatingEvent ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf schema:ratingValue .
+
+base:hasProduct a owl:ObjectProperty ;
+    rdfs:domain base:RatingEvent ;
+    rdfs:range base:Product .
+
+base:hasUser a owl:ObjectProperty ;
+    rdfs:domain base:RatingEvent ;
+    rdfs:range base:User .

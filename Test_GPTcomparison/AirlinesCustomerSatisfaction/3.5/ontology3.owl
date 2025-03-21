@@ -1,0 +1,605 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:base="https://base_ontology.com#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#hasCount -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasCount">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasExternalResource -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasExternalResource">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMax -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasMax">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMean -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasMean">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMin -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasMin">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasNonNullCount -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasNonNullCount">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasStd -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasStd">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasType -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasType">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasUniqueCount -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasUniqueCount">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#hasCount -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasExternalResource -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasExternalResource">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMax -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasMax">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMean -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasMean">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMin -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasMin">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasNonNullCount -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasNonNullCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasStd -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasStd">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasType -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasType">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasUniqueCount -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasUniqueCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Class -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    
+
+
+    <!-- https://base_ontology.com#Class -->
+
+    <Class rdf:about="https://base_ontology.com#Class">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasType"/>
+                <hasValue>categorical</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Customer_Type -->
+
+    <Class rdf:about="https://base_ontology.com#Customer_Type">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasUniqueCount"/>
+                <hasValue>1.0</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Gender -->
+
+    <Class rdf:about="https://base_ontology.com#Gender">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasUniqueCount"/>
+                <hasValue>2.0</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Satisfaction -->
+
+    <Class rdf:about="https://base_ontology.com#Satisfaction">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasUniqueCount"/>
+                <hasValue>2.0</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Type_of_Travel -->
+
+    <Class rdf:about="https://base_ontology.com#Type_of_Travel">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasUniqueCount"/>
+                <hasValue>1.0</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#Age -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Age">
+        <base:hasCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasCount>
+        <base:hasExternalResource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external resource_A</base:hasExternalResource>
+        <base:hasMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">70.0</base:hasMax>
+        <base:hasMean rdf:datatype="http://www.w3.org/2001/XMLSchema#float">38.4159</base:hasMean>
+        <base:hasMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</base:hasMin>
+        <base:hasStd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">18.537704</base:hasStd>
+        <base:hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numerical</base:hasType>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Arrival_Delay_in_Minutes -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Arrival_Delay_in_Minutes">
+        <base:hasCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">19923.0</base:hasCount>
+        <base:hasExternalResource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external resource_B</base:hasExternalResource>
+        <base:hasMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1584.0</base:hasMax>
+        <base:hasMean rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.582091</base:hasMean>
+        <base:hasMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</base:hasMin>
+        <base:hasStd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">41.178295</base:hasStd>
+        <base:hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numerical</base:hasType>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Baggage_Handling -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Baggage_Handling">
+        <base:hasCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasCount>
+        <base:hasExternalResource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external resource_C</base:hasExternalResource>
+        <base:hasMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</base:hasMax>
+        <base:hasMean rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.67135</base:hasMean>
+        <base:hasMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</base:hasMin>
+        <base:hasNonNullCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasNonNullCount>
+        <base:hasStd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0913748</base:hasStd>
+        <base:hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorical</base:hasType>
+        <base:hasUniqueCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</base:hasUniqueCount>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Checkin_Service -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Checkin_Service">
+        <base:hasCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasCount>
+        <base:hasExternalResource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external resource_D</base:hasExternalResource>
+        <base:hasMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</base:hasMax>
+        <base:hasMean rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.47205</base:hasMean>
+        <base:hasMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</base:hasMin>
+        <base:hasNonNullCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasNonNullCount>
+        <base:hasStd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.2174124</base:hasStd>
+        <base:hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorical</base:hasType>
+        <base:hasUniqueCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</base:hasUniqueCount>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Class -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Class">
+        <base:hasExternalResource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external resource_S</base:hasExternalResource>
+        <base:hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorical</base:hasType>
+        <base:hasUniqueCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</base:hasUniqueCount>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Cleanliness -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Cleanliness">
+        <base:hasCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasCount>
+        <base:hasExternalResource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external resource_E</base:hasExternalResource>
+        <base:hasMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</base:hasMax>
+        <base:hasMean rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.69215</base:hasMean>
+        <base:hasMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</base:hasMin>
+        <base:hasNonNullCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasNonNullCount>
+        <base:hasStd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0673028</base:hasStd>
+        <base:hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorical</base:hasType>
+        <base:hasUniqueCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</base:hasUniqueCount>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Customer_Type -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Customer_Type">
+        <base:hasExternalResource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external resource_T</base:hasExternalResource>
+        <base:hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorical</base:hasType>
+        <base:hasUniqueCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</base:hasUniqueCount>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Departure_Arrival_Time_Convenient -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Departure_Arrival_Time_Convenient">
+        <base:hasCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasCount>
+        <base:hasExternalResource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external resource_G</base:hasExternalResource>
+        <base:hasMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</base:hasMax>
+        <base:hasMean rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.34485</base:hasMean>
+        <base:hasMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</base:hasMin>
+        <base:hasNonNullCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasNonNullCount>
+        <base:hasStd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.4885024</base:hasStd>
+        <base:hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorical</base:hasType>
+        <base:hasUniqueCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0</base:hasUniqueCount>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Departure_Delay_in_Minutes -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Departure_Delay_in_Minutes">
+        <base:hasCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasCount>
+        <base:hasExternalResource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external resource_F</base:hasExternalResource>
+        <base:hasMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1592.0</base:hasMax>
+        <base:hasMean rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.2104</base:hasMean>
+        <base:hasMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</base:hasMin>
+        <base:hasStd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">40.897854</base:hasStd>
+        <base:hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numerical</base:hasType>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Ease_of_Online_Booking -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Ease_of_Online_Booking">
+        <base:hasCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasCount>
+        <base:hasExternalResource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external resource_H</base:hasExternalResource>
+        <base:hasMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</base:hasMax>
+        <base:hasMean rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.3077</base:hasMean>
+        <base:hasMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</base:hasMin>
+        <base:hasNonNullCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasNonNullCount>
+        <base:hasStd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.2204078</base:hasStd>
+        <base:hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorical</base:hasType>
+        <base:hasUniqueCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</base:hasUniqueCount>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Flight_Distance -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Flight_Distance">
+        <base:hasCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasCount>
+        <base:hasExternalResource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external resource_I</base:hasExternalResource>
+        <base:hasMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6907.0</base:hasMax>
+        <base:hasMean rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1789.1414</base:hasMean>
+        <base:hasMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</base:hasMin>
+        <base:hasStd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">852.57825</base:hasStd>
+        <base:hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numerical</base:hasType>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Food_and_Drink -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Food_and_Drink">
+        <base:hasCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasCount>
+        <base:hasExternalResource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external resource_J</base:hasExternalResource>
+        <base:hasMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</base:hasMax>
+        <base:hasMean rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.17165</base:hasMean>
+        <base:hasMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</base:hasMin>
+        <base:hasNonNullCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasNonNullCount>
+        <base:hasStd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.4505142</base:hasStd>
+        <base:hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorical</base:hasType>
+        <base:hasUniqueCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0</base:hasUniqueCount>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Gate_Location -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Gate_Location">
+        <base:hasCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasCount>
+        <base:hasExternalResource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external resource_K</base:hasExternalResource>
+        <base:hasMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</base:hasMax>
+        <base:hasMean rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.9485</base:hasMean>
+        <base:hasMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</base:hasMin>
+        <base:hasNonNullCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasNonNullCount>
+        <base:hasStd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.2553592</base:hasStd>
+        <base:hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorical</base:hasType>
+        <base:hasUniqueCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0</base:hasUniqueCount>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Gender -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Gender">
+        <base:hasExternalResource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external resource_U</base:hasExternalResource>
+        <base:hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorical</base:hasType>
+        <base:hasUniqueCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</base:hasUniqueCount>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Inflight_Entertainment -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Inflight_Entertainment">
+        <base:hasCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasCount>
+        <base:hasExternalResource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external resource_L</base:hasExternalResource>
+        <base:hasMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</base:hasMax>
+        <base:hasMean rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.75605</base:hasMean>
+        <base:hasMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</base:hasMin>
+        <base:hasNonNullCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasNonNullCount>
+        <base:hasStd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5514054</base:hasStd>
+        <base:hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorical</base:hasType>
+        <base:hasUniqueCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0</base:hasUniqueCount>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Inflight_Wifi_Service -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Inflight_Wifi_Service">
+        <base:hasCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasCount>
+        <base:hasExternalResource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external resource_M</base:hasExternalResource>
+        <base:hasMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</base:hasMax>
+        <base:hasMean rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.1694</base:hasMean>
+        <base:hasMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</base:hasMin>
+        <base:hasNonNullCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasNonNullCount>
+        <base:hasStd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.3205646</base:hasStd>
+        <base:hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorical</base:hasType>
+        <base:hasUniqueCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0</base:hasUniqueCount>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Leg_Room_Service -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Leg_Room_Service">
+        <base:hasCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasCount>
+        <base:hasExternalResource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external resource_N</base:hasExternalResource>
+        <base:hasMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</base:hasMax>
+        <base:hasMean rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.3479</base:hasMean>
+        <base:hasMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</base:hasMin>
+        <base:hasNonNullCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasNonNullCount>
+        <base:hasStd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.23808</base:hasStd>
+        <base:hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorical</base:hasType>
+        <base:hasUniqueCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0</base:hasUniqueCount>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#On-board_Service -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#On-board_Service">
+        <base:hasCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasCount>
+        <base:hasExternalResource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external resource_O</base:hasExternalResource>
+        <base:hasMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</base:hasMax>
+        <base:hasMean rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.4384</base:hasMean>
+        <base:hasMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</base:hasMin>
+        <base:hasNonNullCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasNonNullCount>
+        <base:hasStd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.1566644</base:hasStd>
+        <base:hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorical</base:hasType>
+        <base:hasUniqueCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</base:hasUniqueCount>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Online_Boarding -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Online_Boarding">
+        <base:hasCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasCount>
+        <base:hasExternalResource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external resource_P</base:hasExternalResource>
+        <base:hasMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</base:hasMax>
+        <base:hasMean rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.32895</base:hasMean>
+        <base:hasMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</base:hasMin>
+        <base:hasNonNullCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasNonNullCount>
+        <base:hasStd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.2906685</base:hasStd>
+        <base:hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorical</base:hasType>
+        <base:hasUniqueCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</base:hasUniqueCount>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Online_Support -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Online_Support">
+        <base:hasCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasCount>
+        <base:hasExternalResource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external resource_Q</base:hasExternalResource>
+        <base:hasMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</base:hasMax>
+        <base:hasMean rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.45725</base:hasMean>
+        <base:hasMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</base:hasMin>
+        <base:hasNonNullCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasNonNullCount>
+        <base:hasStd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.3450513</base:hasStd>
+        <base:hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorical</base:hasType>
+        <base:hasUniqueCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</base:hasUniqueCount>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Satisfaction -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Satisfaction">
+        <base:hasExternalResource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external resource_W</base:hasExternalResource>
+        <base:hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorical</base:hasType>
+        <base:hasUniqueCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</base:hasUniqueCount>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Seat_Comfort -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Seat_Comfort">
+        <base:hasCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasCount>
+        <base:hasExternalResource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external resource_R</base:hasExternalResource>
+        <base:hasMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</base:hasMax>
+        <base:hasMean rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.18995</base:hasMean>
+        <base:hasMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</base:hasMin>
+        <base:hasNonNullCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20000.0</base:hasNonNullCount>
+        <base:hasStd rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.3999525</base:hasStd>
+        <base:hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorical</base:hasType>
+        <base:hasUniqueCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0</base:hasUniqueCount>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Type_of_Travel -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Type_of_Travel">
+        <base:hasExternalResource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external resource_V</base:hasExternalResource>
+        <base:hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorical</base:hasType>
+        <base:hasUniqueCount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</base:hasUniqueCount>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

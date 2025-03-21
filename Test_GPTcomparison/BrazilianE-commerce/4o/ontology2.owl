@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:base="https://base_ontology.com#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="http://schema.org/"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#hasCity -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasCity">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Customer"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#CustomerCity"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasState -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasState">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Customer"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#CustomerState"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasUniqueId -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasUniqueId">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Customer"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#CustomerUniqueId"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasZipCodePrefix -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasZipCodePrefix">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Customer"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#CustomerZipCodePrefix"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#cityName -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#cityName">
+        <rdfs:domain rdf:resource="https://base_ontology.com#CustomerCity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#stateName -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#stateName">
+        <rdfs:domain rdf:resource="https://base_ontology.com#CustomerState"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#uniqueId -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#uniqueId">
+        <rdfs:domain rdf:resource="https://base_ontology.com#CustomerUniqueId"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#zipCodePrefix -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#zipCodePrefix">
+        <rdfs:domain rdf:resource="https://base_ontology.com#CustomerZipCodePrefix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <Class rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://schema.org/City -->
+
+    <Class rdf:about="http://schema.org/City"/>
+    
+
+
+    <!-- http://schema.org/Person -->
+
+    <Class rdf:about="http://schema.org/Person"/>
+    
+
+
+    <!-- http://schema.org/PostalCode -->
+
+    <Class rdf:about="http://schema.org/PostalCode"/>
+    
+
+
+    <!-- http://schema.org/State -->
+
+    <Class rdf:about="http://schema.org/State"/>
+    
+
+
+    <!-- https://base_ontology.com#Customer -->
+
+    <Class rdf:about="https://base_ontology.com#Customer">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#CustomerCity -->
+
+    <Class rdf:about="https://base_ontology.com#CustomerCity">
+        <rdfs:subClassOf rdf:resource="http://schema.org/City"/>
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Customer"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#CustomerState -->
+
+    <Class rdf:about="https://base_ontology.com#CustomerState">
+        <rdfs:subClassOf rdf:resource="http://schema.org/State"/>
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Customer"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#CustomerUniqueId -->
+
+    <Class rdf:about="https://base_ontology.com#CustomerUniqueId">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/identifier"/>
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Customer"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#CustomerZipCodePrefix -->
+
+    <Class rdf:about="https://base_ontology.com#CustomerZipCodePrefix">
+        <rdfs:subClassOf rdf:resource="http://schema.org/PostalCode"/>
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Customer"/>
+    </Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

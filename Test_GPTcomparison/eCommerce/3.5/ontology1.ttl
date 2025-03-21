@@ -1,0 +1,270 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+base:Country rdf:type owl:Class .
+base:Description rdf:type owl:Class .
+base:InvoiceDate rdf:type owl:Class .
+base:InvoiceNo rdf:type owl:Class .
+base:StockCode rdf:type owl:Class .
+base:CustomerID rdf:type owl:Class .
+base:Quantity rdf:type owl:Class .
+base:UnitPrice rdf:type owl:Class .
+
+base:hasNonNullCount rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Country ;
+    rdfs:range xsd:float .
+
+base:hasType rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Country ;
+    rdfs:range xsd:string .
+
+base:hasUniqueCount rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Country ;
+    rdfs:range xsd:float .
+
+base:hasCount rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Country ;
+    rdfs:range xsd:float .
+
+base:hasMax rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Country ;
+    rdfs:range xsd:float .
+
+base:hasMean rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Country ;
+    rdfs:range xsd:float .
+
+base:hasMin rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Country ;
+    rdfs:range xsd:float .
+
+base:hasStd rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Country ;
+    rdfs:range xsd:float .
+
+base:hasNonNullCount_Description rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Description ;
+    rdfs:range xsd:float .
+
+base:hasType_Description rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Description ;
+    rdfs:range xsd:string .
+
+base:hasUniqueCount_Description rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Description ;
+    rdfs:range xsd:float .
+
+base:hasCount_Description rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Description ;
+    rdfs:range xsd:float .
+
+base:hasMax_Description rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Description ;
+    rdfs:range xsd:float .
+
+base:hasMean_Description rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Description ;
+    rdfs:range xsd:float .
+
+base:hasMin_Description rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Description ;
+    rdfs:range xsd:float .
+
+base:hasStd_Description rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Description ;
+    rdfs:range xsd:float .
+
+base:hasNonNullCount_InvoiceDate rdf:type owl:ObjectProperty ;
+    rdfs:domain base:InvoiceDate ;
+    rdfs:range xsd:float .
+
+base:hasType_InvoiceDate rdf:type owl:ObjectProperty ;
+    rdfs:domain base:InvoiceDate ;
+    rdfs:range xsd:string .
+
+base:hasUniqueCount_InvoiceDate rdf:type owl:ObjectProperty ;
+    rdfs:domain base:InvoiceDate ;
+    rdfs:range xsd:float .
+
+base:hasCount_InvoiceDate rdf:type owl:ObjectProperty ;
+    rdfs:domain base:InvoiceDate ;
+    rdfs:range xsd:float .
+
+base:hasMax_InvoiceDate rdf:type owl:ObjectProperty ;
+    rdfs:domain base:InvoiceDate ;
+    rdfs:range xsd:float .
+
+base:hasMean_InvoiceDate rdf:type owl:ObjectProperty ;
+    rdfs:domain base:InvoiceDate ;
+    rdfs:range xsd:float .
+
+base:hasMin_InvoiceDate rdf:type owl:ObjectProperty ;
+    rdfs:domain base:InvoiceDate ;
+    rdfs:range xsd:float .
+
+base:hasStd_InvoiceDate rdf:type owl:ObjectProperty ;
+    rdfs:domain base:InvoiceDate ;
+    rdfs:range xsd:float .
+
+base:hasNonNullCount_InvoiceNo rdf:type owl:ObjectProperty ;
+    rdfs:domain base:InvoiceNo ;
+    rdfs:range xsd:float .
+
+base:hasType_InvoiceNo rdf:type owl:ObjectProperty ;
+    rdfs:domain base:InvoiceNo ;
+    rdfs:range xsd:string .
+
+base:hasUniqueCount_InvoiceNo rdf:type owl:ObjectProperty ;
+    rdfs:domain base:InvoiceNo ;
+    rdfs:range xsd:float .
+
+base:hasCount_InvoiceNo rdf:type owl:ObjectProperty ;
+    rdfs:domain base:InvoiceNo ;
+    rdfs:range xsd:float .
+
+base:hasMax_InvoiceNo rdf:type owl:ObjectProperty ;
+    rdfs:domain base:InvoiceNo ;
+    rdfs:range xsd:float .
+
+base:hasMean_InvoiceNo rdf:type owl:ObjectProperty ;
+    rdfs:domain base:InvoiceNo ;
+    rdfs:range xsd:float .
+
+base:hasMin_InvoiceNo rdf:type owl:ObjectProperty ;
+    rdfs:domain base:InvoiceNo ;
+    rdfs:range xsd:float .
+
+base:hasStd_InvoiceNo rdf:type owl:ObjectProperty ;
+    rdfs:domain base:InvoiceNo ;
+    rdfs:range xsd:float .
+
+base:hasNonNullCount_StockCode rdf:type owl:ObjectProperty ;
+    rdfs:domain base:StockCode ;
+    rdfs:range xsd:float .
+
+base:hasType_StockCode rdf:type owl:ObjectProperty ;
+    rdfs:domain base:StockCode ;
+    rdfs:range xsd:string .
+
+base:hasUniqueCount_StockCode rdf:type owl:ObjectProperty ;
+    rdfs:domain base:StockCode ;
+    rdfs:range xsd:float .
+
+base:hasCount_StockCode rdf:type owl:ObjectProperty ;
+    rdfs:domain base:StockCode ;
+    rdfs:range xsd:float .
+
+base:hasMax_StockCode rdf:type owl:ObjectProperty ;
+    rdfs:domain base:StockCode ;
+    rdfs:range xsd:float .
+
+base:hasMean_StockCode rdf:type owl:ObjectProperty ;
+    rdfs:domain base:StockCode ;
+    rdfs:range xsd:float .
+
+base:hasMin_StockCode rdf:type owl:ObjectProperty ;
+    rdfs:domain base:StockCode ;
+    rdfs:range xsd:float .
+
+base:hasStd_StockCode rdf:type owl:ObjectProperty ;
+    rdfs:domain base:StockCode ;
+    rdfs:range xsd:float .
+
+base:hasNonNullCount_CustomerID rdf:type owl:ObjectProperty ;
+    rdfs:domain base:CustomerID ;
+    rdfs:range xsd:float .
+
+base:hasType_CustomerID rdf:type owl:ObjectProperty ;
+    rdfs:domain base:CustomerID ;
+    rdfs:range xsd:string .
+
+base:hasUniqueCount_CustomerID rdf:type owl:ObjectProperty ;
+    rdfs:domain base:CustomerID ;
+    rdfs:range xsd:float .
+
+base:hasCount_CustomerID rdf:type owl:ObjectProperty ;
+    rdfs:domain base:CustomerID ;
+    rdfs:range xsd:float .
+
+base:hasMax_CustomerID rdf:type owl:ObjectProperty ;
+    rdfs:domain base:CustomerID ;
+    rdfs:range xsd:float .
+
+base:hasMean_CustomerID rdf:type owl:ObjectProperty ;
+    rdfs:domain base:CustomerID ;
+    rdfs:range xsd:float .
+
+base:hasMin_CustomerID rdf:type owl:ObjectProperty ;
+    rdfs:domain base:CustomerID ;
+    rdfs:range xsd:float .
+
+base:hasStd_CustomerID rdf:type owl:ObjectProperty ;
+    rdfs:domain base:CustomerID ;
+    rdfs:range xsd:float .
+
+base:hasNonNullCount_Quantity rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Quantity ;
+    rdfs:range xsd:float .
+
+base:hasType_Quantity rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Quantity ;
+    rdfs:range xsd:string .
+
+base:hasUniqueCount_Quantity rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Quantity ;
+    rdfs:range xsd:float .
+
+base:hasCount_Quantity rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Quantity ;
+    rdfs:range xsd:float .
+
+base:hasMax_Quantity rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Quantity ;
+    rdfs:range xsd:float .
+
+base:hasMean_Quantity rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Quantity ;
+    rdfs:range xsd:float .
+
+base:hasMin_Quantity rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Quantity ;
+    rdfs:range xsd:float .
+
+base:hasStd_Quantity rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Quantity ;
+    rdfs:range xsd:float .
+
+base:hasNonNullCount_UnitPrice rdf:type owl:ObjectProperty ;
+    rdfs:domain base:UnitPrice ;
+    rdfs:range xsd:float .
+
+base:hasType_UnitPrice rdf:type owl:ObjectProperty ;
+    rdfs:domain base:UnitPrice ;
+    rdfs:range xsd:string .
+
+base:hasUniqueCount_UnitPrice rdf:type owl:ObjectProperty ;
+    rdfs:domain base:UnitPrice ;
+    rdfs:range xsd:float .
+
+base:hasCount_UnitPrice rdf:type owl:ObjectProperty ;
+    rdfs:domain base:UnitPrice ;
+    rdfs:range xsd:float .
+
+base:hasMax_UnitPrice rdf:type owl:ObjectProperty ;
+    rdfs:domain base:UnitPrice ;
+    rdfs:range xsd:float .
+
+base:hasMean_UnitPrice rdf:type owl:ObjectProperty ;
+    rdfs:domain base:UnitPrice ;
+    rdfs:range xsd:float .
+
+base:hasMin_UnitPrice rdf:type owl:ObjectProperty ;
+    rdfs:domain base:UnitPrice ;
+    rdfs:range xsd:float .
+
+base:hasStd_UnitPrice rdf:type owl:ObjectProperty ;
+    rdfs:domain base:UnitPrice ;
+    rdfs:range xsd:float .

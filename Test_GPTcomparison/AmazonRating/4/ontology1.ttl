@@ -1,0 +1,49 @@
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix rev: <http://purl.org/stuff/rev#> .
+
+### Classes
+
+gr:ProductOrService a owl:Class .
+foaf:Person a owl:Class .
+rev:Review a owl:Class .
+schema:Product a owl:Class .
+schema:Review a owl:Class .
+
+### Object Properties
+
+base:hasReview a owl:ObjectProperty ;
+    rdfs:domain foaf:Person ;
+    rdfs:range rev:Review .
+
+base:reviewedProduct a owl:ObjectProperty ;
+    rdfs:domain rev:Review ;
+    rdfs:range gr:ProductOrService .
+
+base:hasRating a owl:ObjectProperty ;
+    rdfs:domain rev:Review ;
+    rdfs:range schema:Product .
+
+### Data Properties
+
+base:productId a owl:DatatypeProperty ;
+    rdfs:domain gr:ProductOrService ;
+    rdfs:range xsd:string .
+
+base:userId a owl:DatatypeProperty ;
+    rdfs:domain foaf:Person ;
+    rdfs:range xsd:string .
+
+base:ratingValue a owl:DatatypeProperty ;
+    rdfs:domain schema:Product ;
+    rdfs:range xsd:integer .
+
+base:timestampValue a owl:DatatypeProperty ;
+    rdfs:domain schema:Review ;
+    rdfs:range xsd:dateTime .

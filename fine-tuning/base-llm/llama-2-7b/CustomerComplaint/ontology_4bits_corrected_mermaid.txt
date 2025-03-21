@@ -1,0 +1,29 @@
+classDiagram
+    class CreditReport {
+        + hasDateSentToCompany xsd:date
+        + hasCompanyResponseToConsumer xsd:string
+        + hasTimelyResponse xsd:boolean
+        + hasConsumerDisputed xsd:boolean
+    }
+
+    class Company
+    class CompanyPublicResponse 
+    class ComplaintID
+    class ConsumerComplaintNarrative
+    class Issue 
+    class Product
+    class State
+    class SubIssue
+    class SubProduct
+    class ZipCode
+
+    CreditReport --> Company : belongsToCompany
+    CreditReport --> CompanyPublicResponse : hasCompanyPublicResponse
+    CreditReport --> ComplaintID : hasComplainID
+    CreditReport --> ConsumerComplaintNarrative : hasConsumerComplaintNarrative
+    CreditReport --> Issue : hasIssue
+    CreditReport --> Product : hasProduct
+    CreditReport --> State : hasState
+    CreditReport --> SubIssue : hasSubIssue
+    CreditReport --> SubProduct : hasSubProduct
+    CreditReport --> ZipCode : hasZipCode

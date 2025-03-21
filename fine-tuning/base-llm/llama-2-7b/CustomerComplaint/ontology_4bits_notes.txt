@@ -1,0 +1,4 @@
+Incorrect serialization due to identifiers with blank spacies between words (incorrect URIs). Example:
+um:hasSubProduct a rdf:object property
+
+Some URIs are also incorrect. Example: rdf:property

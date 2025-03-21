@@ -1,0 +1,68 @@
+**Foundational Prefix:**
+https://base_ontology.com#
+http://www.w3.org/1999/02/22-rdf-syntax-ns#
+http://www.w3.org/2000/01/rdf-schema#
+http://www.w3.org/2002/07/owl#
+
+**Data Description:**
+1. Country: text - Country of the transaction - 16 unique values
+2. Description: text - Description of the item - 2360 unique values
+3. InvoiceDate: text - Date of the invoice - 806 unique values
+4. InvoiceNo: text - Invoice number - 937 unique values
+5. StockCode: text - Code of the stock item - 2408 unique values
+6. CustomerID: Numerical - ID of the customer - Range: 12347.0 to 18269.0
+7. Quantity: Numerical - Quantity of the item - Range: -9360.0 to 2880.0
+8. UnitPrice: Numerical - Price per unit of the item - Range: 0.0 to 13541.33
+
+**classes:**
+1. Transaction
+
+**subclasses:**
+1. Country: subclass of -> Transaction
+2. Description: subclass of -> Transaction
+3. InvoiceDate: subclass of -> Transaction
+4. InvoiceNo: subclass of -> Transaction
+5. StockCode: subclass of -> Transaction
+6. CustomerID: subclass of -> Transaction
+7. Quantity: subclass of -> Transaction
+8. UnitPrice: subclass of -> Transaction
+
+**Object Properties:**
+1. hasCountry: Transaction - Country
+2. hasDescription: Transaction - Description
+3. hasInvoiceDate: Transaction - InvoiceDate
+4. hasInvoiceNo: Transaction - InvoiceNo
+5. hasStockCode: Transaction - StockCode
+6. hasCustomerID: Transaction - CustomerID
+7. hasQuantity: Transaction - Quantity
+8. hasUnitPrice: Transaction - UnitPrice
+
+**Data Type Properties:**
+1. countryName: Country - text
+2. itemDescription: Description - text
+3. invoiceDateValue: InvoiceDate - text
+4. invoiceNumber: InvoiceNo - text
+5. stockCodeValue: StockCode - text
+6. customerIDValue: CustomerID - Numerical
+7. quantityValue: Quantity - Numerical
+8. unitPriceValue: UnitPrice - Numerical
+
+**Ontology Prefixes:**
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+**Link of each entity to external resources:**
+1. Country: <http://schema.org/Country>
+2. Description: <http://purl.org/dc/terms/description>
+3. InvoiceDate: <http://schema.org/Date>
+4. InvoiceNo: <http://schema.org/identifier>
+5. StockCode: <http://schema.org/Product>
+6. CustomerID: <http://xmlns.com/foaf/0.1/Person>
+7. Quantity: <http://schema.org/QuantitativeValue>
+8. UnitPrice: <http://schema.org/UnitPriceSpecification>

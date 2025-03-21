@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:um="https://vocab.um.es#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#hasProduct -->
+
+    <ObjectProperty rdf:about="https://vocab.um.es#hasProduct">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#ProductID"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasRating -->
+
+    <ObjectProperty rdf:about="https://vocab.um.es#hasRating">
+        <rdfs:domain rdf:resource="https://vocab.um.es#ProductRating"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#Rating"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasTime -->
+
+    <ObjectProperty rdf:about="https://vocab.um.es#hasTime">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Time"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#ProductID"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasUser -->
+
+    <ObjectProperty rdf:about="https://vocab.um.es#hasUser">
+        <rdfs:domain rdf:resource="https://vocab.um.es#User"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#Product"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#Class -->
+
+    <Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#property -->
+
+    <Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#property"/>
+    
+
+
+    <!-- https://vocab.um.es#Product -->
+
+    <Class rdf:about="https://vocab.um.es#Product"/>
+    
+
+
+    <!-- https://vocab.um.es#ProductID -->
+
+    <Class rdf:about="https://vocab.um.es#ProductID"/>
+    
+
+
+    <!-- https://vocab.um.es#ProductRating -->
+
+    <Class rdf:about="https://vocab.um.es#ProductRating"/>
+    
+
+
+    <!-- https://vocab.um.es#Rating -->
+
+    <Class rdf:about="https://vocab.um.es#Rating"/>
+    
+
+
+    <!-- https://vocab.um.es#Time -->
+
+    <Class rdf:about="https://vocab.um.es#Time"/>
+    
+
+
+    <!-- https://vocab.um.es#User -->
+
+    <Class rdf:about="https://vocab.um.es#User"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#Ontology -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#Ontology">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Ontology</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#Product -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#Product">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#ProductID -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#ProductID">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#ProductRating -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#ProductRating">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#Rating -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#Rating">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#Time -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#Time">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#User -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#User">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#hasProduct -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#hasProduct">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#hasRating -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#hasRating">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#hasTime -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#hasTime">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#hasUser -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#hasUser">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="https://vocab.um.es#Product">
+        <rdfs:label>Product</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://vocab.um.es#ProductID">
+        <rdfs:label>Product ID</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://vocab.um.es#ProductRating">
+        <rdfs:label>Product Rating</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://vocab.um.es#Rating">
+        <rdfs:label>Rating</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://vocab.um.es#Time">
+        <rdfs:label>Time</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://vocab.um.es#User">
+        <rdfs:label>User</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

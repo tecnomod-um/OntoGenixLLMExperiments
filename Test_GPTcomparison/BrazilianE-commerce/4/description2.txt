@@ -1,0 +1,102 @@
+**Foundational Prefix:**
+https://base_ontology.com#
+http://www.w3.org/1999/02/22-rdf-syntax-ns#
+http://www.w3.org/2000/01/rdf-schema#
+http://www.w3.org/2002/07/owl#
+
+**Data Description:**
+1. customer_city: text - The city of the customer - [1:2247]
+2. customer_id: text - Unique identifier for the customer - [1:20000]
+3. customer_state: text - The state of the customer - [1:27]
+4. customer_unique_id: text - Unique identifier for the customer, distinct from customer_id - [1:19843]
+5. customer_zip_code_prefix: Numerical - Prefix of the customer's zip code - [1004:99980]
+
+**classes:**
+1. Customer
+
+**subclasses:**
+1. CustomerCity: subclass of -> Customer
+2. CustomerState: subclass of -> Customer
+3. CustomerZipCode: subclass of -> Customer
+
+**Object Properties:**
+1. hasCity: domain - Customer range - CustomerCity
+2. hasState: domain - Customer range - CustomerState
+3. hasZipCode: domain - Customer range - CustomerZipCode
+
+**Data Type Properties:**
+1. city_name: domain - CustomerCity range - xsd:string
+2. state_name: domain - CustomerState range - xsd:string
+3. zip_code_prefix: domain - CustomerZipCode range - xsd:integer
+4. customer_identifier: domain - Customer range - xsd:string
+5. unique_customer_identifier: domain - Customer range - xsd:string
+
+Ontology Prefixes:
+Enumerate the prefixes needed for the design of the schema:
+1. prefix definition in turtle format
+
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix schema: <http://schema.org/> .
+
+Link of each entity to external resources:
+For each entity enumerate its corresponding external source:
+
+customer_city: schema:addressLocality
+customer_id: schema:identifier
+customer_state: schema:addressRegion
+customer_unique_id: schema:identifier
+customer_zip_code_prefix: schema:postalCodePrefix
+
+Classes:
+base:Customer a owl:Class .
+
+Subclasses:
+base:CustomerCity a owl:Class ;
+                 rdfs:subClassOf base:Customer .
+
+base:CustomerState a owl:Class ;
+                   rdfs:subClassOf base:Customer .
+
+base:CustomerZipCode a owl:Class ;
+                     rdfs:subClassOf base:Customer .
+
+Object Properties:
+base:hasCity a owl:ObjectProperty ;
+              rdfs:domain base:Customer ;
+              rdfs:range base:CustomerCity .
+
+base:hasState a owl:ObjectProperty ;
+               rdfs:domain base:Customer ;
+               rdfs:range base:CustomerState .
+
+base:hasZipCode a owl:ObjectProperty ;
+                 rdfs:domain base:Customer ;
+                 rdfs:range base:CustomerZipCode .
+
+Data Type Properties:
+base:city_name a owl:DatatypeProperty ;
+               rdfs:domain base:CustomerCity ;
+               rdfs:range xsd:string .
+
+base:state_name a owl:DatatypeProperty ;
+                 rdfs:domain base:CustomerState ;
+                 rdfs:range xsd:string .
+
+base:zip_code_prefix a owl:DatatypeProperty ;
+                      rdfs:domain base:CustomerZipCode ;
+                      rdfs:range xsd:integer .
+
+base:customer_identifier a owl:DatatypeProperty ;
+                         rdfs:domain base:Customer ;
+                         rdfs:range xsd:string .
+
+base:unique_customer_identifier a owl:DatatypeProperty ;
+                                rdfs:domain base:Customer ;
+                                rdfs:range xsd:string .
+
+By linking the entities to external resources such as schema.org, we enhance the interoperability of the ontology, allowing it to integrate more seamlessly with other systems that use these well-established vocabularies. The use of vCard is omitted as it does not provide a better fit for the entities described than schema.org.

@@ -1,0 +1,51 @@
+classDiagram
+    class Country
+
+    class Customer {
+        + customerID xsd:integer
+        + customerLocation xsd:string
+    }
+
+    class Order {
+        + date xsd:date
+        + invoiceNumber xsd:string
+        + orderDate xsd:date
+        + orderID xsd:integer
+        + quantity xsd:integer
+        + salesAmount xsd:decimal
+    }
+
+    class Payment
+
+    class Product {
+        + productCategory xsd:string
+        + productName xsd:string
+        + productNameWithCurrencyAfterTranslated xsd:string
+        + productNameWithCurrencyAfterTranslatedWithUnits xsd:string
+        + productNameWithCurrencyAfterTranslatedWithoutUnit xsd:string
+        + productType xsd:string
+        + unitPrice xsd:decimal
+    }
+
+    class ProductCategory {
+        + productCategoryWithCurrency xsd:string
+        + productCategoryWithCurrencyAfterTranslated xsd:string
+        + productCategoryWithCurrencyAfterTranslatedWithUnits xsd:string
+        + productCategoryWithCurrencyAfterTranslatedWithoutUnit xsd:string
+    }
+
+    class ProductType {
+        + productTypeWithCurrency xsd:string
+        + productTypeWithCurrencyAfterTranslated xsd:string
+        + productTypeWithCurrencyAfterTranslatedWithUnits xsd:string
+        + productTypeWithCurrencyAfterTranslatedWithoutUnit xsd:string
+    }
+
+    class SalesAmount {
+        + salesAmountWithCurrency xsd:string
+        + salesAmountWithCurrencyAfterTranslated xsd:string
+        + salesAmountWithCurrencyAfterTranslatedWithUnits xsd:string
+        + salesAmountWithCurrencyAfterTranslatedWithUnitsWithoutUnit xsd:string
+    }
+
+

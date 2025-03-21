@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+@prefix ex: <https://example.org#> .
+
+um:Commerce a owl:Ontology .
+
+### Classes ###
+
+um:User a owl:Class ;
+    rdfs:label "User" .
+
+um:Product a owl:Class ;
+    rdfs:label "Product" .
+
+### Data Properties ###
+
+um:hasUserId a owl:DatatypeProperty ;
+    rdfs:domain um:User ;
+    rdfs:range xsd:string ;
+    rdfs:label "has user ID" .
+
+um:hasProductId a owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string ;
+    rdfs:label "has product ID" .
+
+um:hasRating a owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "has rating" .
+
+um:hasTimestamp a owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:dateTimeStamp ;
+    rdfs:label "has timestamp" .
+
+### Object Properties ###
+
+um:hasRatedProduct a owl:ObjectProperty ;
+    rdfs:domain um:User ;
+    rdfs:range um:Product ;
+    rdfs:label "has rated product" .
+
+um:ratedBy a owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:User ;
+    rdfs:label "rated by" .

@@ -1,0 +1,349 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/TEMP#"
+     xml:base="http://purl.obolibrary.org/obo/TEMP"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:prefix="http://www.geneontology.org/formats/oboInOwl#@prefix "
+     xmlns:hasTags="http://www.geneontology.org/formats/oboInOwl#hasTags "
+     xmlns:hasIssue="http://www.geneontology.org/formats/oboInOwl#hasIssue "
+     xmlns:hasState="http://www.geneontology.org/formats/oboInOwl#hasState "
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:hasDispute="http://www.geneontology.org/formats/oboInOwl#hasDispute "
+     xmlns:hasProduct="http://www.geneontology.org/formats/oboInOwl#hasProduct "
+     xmlns:hasZIPCode="http://www.geneontology.org/formats/oboInOwl#hasZIPCode "
+     xmlns:typeOfTags="http://www.geneontology.org/formats/oboInOwl#typeOfTags "
+     xmlns:entity_name="http://www.geneontology.org/formats/oboInOwl#entity_name "
+     xmlns:hasSubIssue="http://www.geneontology.org/formats/oboInOwl#hasSubIssue "
+     xmlns:typeOfIssue="http://www.geneontology.org/formats/oboInOwl#typeOfIssue "
+     xmlns:typeOfState="http://www.geneontology.org/formats/oboInOwl#typeOfState "
+     xmlns:class_entity="http://www.geneontology.org/formats/oboInOwl#class_entity "
+     xmlns:submittedVia="http://www.geneontology.org/formats/oboInOwl#submittedVia "
+     xmlns:hasSubProduct="http://www.geneontology.org/formats/oboInOwl#hasSubProduct "
+     xmlns:typeOfCompany="http://www.geneontology.org/formats/oboInOwl#typeOfCompany "
+     xmlns:typeOfDispute="http://www.geneontology.org/formats/oboInOwl#typeOfDispute "
+     xmlns:typeOfProduct="http://www.geneontology.org/formats/oboInOwl#typeOfProduct "
+     xmlns:typeOfZIPCode="http://www.geneontology.org/formats/oboInOwl#typeOfZIPCode "
+     xmlns:hasComplaintID="http://www.geneontology.org/formats/oboInOwl#hasComplaintID "
+     xmlns:typeOfSubIssue="http://www.geneontology.org/formats/oboInOwl#typeOfSubIssue "
+     xmlns:hasDateReceived="http://www.geneontology.org/formats/oboInOwl#hasDateReceived "
+     xmlns:typeOfSubProduct="http://www.geneontology.org/formats/oboInOwl#typeOfSubProduct "
+     xmlns:hasPublicResponse="http://www.geneontology.org/formats/oboInOwl#hasPublicResponse "
+     xmlns:hasTimelyResponse="http://www.geneontology.org/formats/oboInOwl#hasTimelyResponse "
+     xmlns:typeOfComplaintID="http://www.geneontology.org/formats/oboInOwl#typeOfComplaintID "
+     xmlns:hasConsentProvided="http://www.geneontology.org/formats/oboInOwl#hasConsentProvided "
+     xmlns:typeOfDateReceived="http://www.geneontology.org/formats/oboInOwl#typeOfDateReceived "
+     xmlns:typeOfSubmittedVia="http://www.geneontology.org/formats/oboInOwl#typeOfSubmittedVia "
+     xmlns:hasDateSentToCompany="http://www.geneontology.org/formats/oboInOwl#hasDateSentToCompany "
+     xmlns:typeOfPublicResponse="http://www.geneontology.org/formats/oboInOwl#typeOfPublicResponse "
+     xmlns:typeOfTimelyResponse="http://www.geneontology.org/formats/oboInOwl#typeOfTimelyResponse "
+     xmlns:hasComplaintNarrative="http://www.geneontology.org/formats/oboInOwl#hasComplaintNarrative "
+     xmlns:hasResponseToConsumer="http://www.geneontology.org/formats/oboInOwl#hasResponseToConsumer "
+     xmlns:typeOfConsentProvided="http://www.geneontology.org/formats/oboInOwl#typeOfConsentProvided "
+     xmlns:typeOfDateSentToCompany="http://www.geneontology.org/formats/oboInOwl#typeOfDateSentToCompany "
+     xmlns:typeOfComplaintNarrative="http://www.geneontology.org/formats/oboInOwl#typeOfComplaintNarrative "
+     xmlns:typeOfResponseToConsumer="http://www.geneontology.org/formats/oboInOwl#typeOfResponseToConsumer ">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/TEMP">
+        <oboInOwl:rdfs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">domain class_entity ;</oboInOwl:rdfs>
+        <oboInOwl:rdfs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">range xsd:integer .</oboInOwl:rdfs>
+        <oboInOwl:rdfs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">range xsd:string .</oboInOwl:rdfs>
+        <oboInOwl:rdfs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subClassOf class_entity .</oboInOwl:rdfs>
+        <prefix:owl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;http://www.w3.org/2002/07/owl#&gt; .</prefix:owl>
+        <prefix:xsd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;http://www.w3.org/2001/XMLSchema#&gt; .</prefix:xsd>
+        <class_entity:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:Class .</class_entity:rdf>
+        <entity_name:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:Class ;</entity_name:rdf>
+        <hasComplaintID:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:ObjectProperty ;</hasComplaintID:rdf>
+        <hasComplaintNarrative:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:ObjectProperty ;</hasComplaintNarrative:rdf>
+        <hasConsentProvided:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:ObjectProperty ;</hasConsentProvided:rdf>
+        <hasDateReceived:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:ObjectProperty ;</hasDateReceived:rdf>
+        <hasDateSentToCompany:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:ObjectProperty ;</hasDateSentToCompany:rdf>
+        <hasDispute:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:ObjectProperty ;</hasDispute:rdf>
+        <hasIssue:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:ObjectProperty ;</hasIssue:rdf>
+        <hasProduct:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:ObjectProperty ;</hasProduct:rdf>
+        <hasPublicResponse:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:ObjectProperty ;</hasPublicResponse:rdf>
+        <hasResponseToConsumer:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:ObjectProperty ;</hasResponseToConsumer:rdf>
+        <hasState:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:ObjectProperty ;</hasState:rdf>
+        <hasSubIssue:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:ObjectProperty ;</hasSubIssue:rdf>
+        <hasSubProduct:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:ObjectProperty ;</hasSubProduct:rdf>
+        <hasTags:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:ObjectProperty ;</hasTags:rdf>
+        <hasTimelyResponse:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:ObjectProperty ;</hasTimelyResponse:rdf>
+        <hasZIPCode:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:ObjectProperty ;</hasZIPCode:rdf>
+        <submittedVia:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:ObjectProperty ;</submittedVia:rdf>
+        <typeOfCompany:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:DatatypeProperty ;</typeOfCompany:rdf>
+        <typeOfComplaintID:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:DatatypeProperty ;</typeOfComplaintID:rdf>
+        <typeOfComplaintNarrative:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:DatatypeProperty ;</typeOfComplaintNarrative:rdf>
+        <typeOfConsentProvided:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:DatatypeProperty ;</typeOfConsentProvided:rdf>
+        <typeOfDateReceived:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:DatatypeProperty ;</typeOfDateReceived:rdf>
+        <typeOfDateSentToCompany:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:DatatypeProperty ;</typeOfDateSentToCompany:rdf>
+        <typeOfDispute:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:DatatypeProperty ;</typeOfDispute:rdf>
+        <typeOfIssue:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:DatatypeProperty ;</typeOfIssue:rdf>
+        <typeOfProduct:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:DatatypeProperty ;</typeOfProduct:rdf>
+        <typeOfPublicResponse:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:DatatypeProperty ;</typeOfPublicResponse:rdf>
+        <typeOfResponseToConsumer:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:DatatypeProperty ;</typeOfResponseToConsumer:rdf>
+        <typeOfState:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:DatatypeProperty ;</typeOfState:rdf>
+        <typeOfSubIssue:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:DatatypeProperty ;</typeOfSubIssue:rdf>
+        <typeOfSubProduct:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:DatatypeProperty ;</typeOfSubProduct:rdf>
+        <typeOfSubmittedVia:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:DatatypeProperty ;</typeOfSubmittedVia:rdf>
+        <typeOfTags:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:DatatypeProperty ;</typeOfTags:rdf>
+        <typeOfTimelyResponse:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:DatatypeProperty ;</typeOfTimelyResponse:rdf>
+        <typeOfZIPCode:rdf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type owl:DatatypeProperty ;</typeOfZIPCode:rdf>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#rdfs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#rdfs"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#@prefix owl -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#@prefix owl"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#@prefix xsd -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#@prefix xsd"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#class_entity rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#class_entity rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#entity_name rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#entity_name rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasComplaintID rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasComplaintID rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasComplaintNarrative rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasComplaintNarrative rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasConsentProvided rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasConsentProvided rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDateReceived rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDateReceived rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDateSentToCompany rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDateSentToCompany rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDispute rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDispute rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasIssue rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasIssue rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasProduct rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasProduct rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasPublicResponse rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasPublicResponse rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasResponseToConsumer rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasResponseToConsumer rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasState rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasState rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasSubIssue rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSubIssue rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasSubProduct rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSubProduct rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasTags rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasTags rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasTimelyResponse rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasTimelyResponse rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasZIPCode rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasZIPCode rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#submittedVia rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#submittedVia rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#typeOfCompany rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#typeOfCompany rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#typeOfComplaintID rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#typeOfComplaintID rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#typeOfComplaintNarrative rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#typeOfComplaintNarrative rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#typeOfConsentProvided rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#typeOfConsentProvided rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#typeOfDateReceived rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#typeOfDateReceived rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#typeOfDateSentToCompany rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#typeOfDateSentToCompany rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#typeOfDispute rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#typeOfDispute rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#typeOfIssue rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#typeOfIssue rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#typeOfProduct rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#typeOfProduct rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#typeOfPublicResponse rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#typeOfPublicResponse rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#typeOfResponseToConsumer rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#typeOfResponseToConsumer rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#typeOfState rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#typeOfState rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#typeOfSubIssue rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#typeOfSubIssue rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#typeOfSubProduct rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#typeOfSubProduct rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#typeOfSubmittedVia rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#typeOfSubmittedVia rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#typeOfTags rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#typeOfTags rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#typeOfTimelyResponse rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#typeOfTimelyResponse rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#typeOfZIPCode rdf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#typeOfZIPCode rdf"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

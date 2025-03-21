@@ -1,0 +1,65 @@
+**Foundational Prefix:**
+https://base_ontology.com#
+http://www.w3.org/1999/02/22-rdf-syntax-ns#
+http://www.w3.org/2000/01/rdf-schema#
+http://www.w3.org/2002/07/owl#
+
+**Data Description:**
+1. Country: text - The country associated with the data entry - 16 unique values
+2. Description: text - Description of the item or transaction - 2360 unique values
+3. InvoiceDate: text - The date of the invoice - 806 unique values
+4. InvoiceNo: text - The invoice number - 937 unique values
+5. StockCode: text - The stock code of the item - 2408 unique values
+6. CustomerID: Numerical - The ID of the customer - Range: 12347.0 to 18269.0
+7. Quantity: Numerical - The quantity of items - Range: -9360.0 to 2880.0
+8. UnitPrice: Numerical - The price per unit of the item - Range: 0.0 to 13541.33
+
+**classes:**
+1. Transaction
+2. Item
+3. Customer
+
+**subclasses:**
+1. Invoice: subclass of -> Transaction
+2. Product: subclass of -> Item
+
+**Object Properties:**
+1. hasCustomer: Transaction - Customer
+2. hasItem: Transaction - Item
+
+**Data Type Properties:**
+1. country: Transaction - text
+2. description: Item - text
+3. invoiceDate: Invoice - text
+4. invoiceNo: Invoice - text
+5. stockCode: Product - text
+6. customerID: Customer - Numerical
+7. quantity: Item - Numerical
+8. unitPrice: Item - Numerical
+
+**Ontology Prefixes:**
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+**Link of each entity to external resources:**
+Transaction: schema:TradeAction
+Item: schema:Product
+Customer: schema:Person
+Invoice: schema:Invoice
+Product: schema:Product
+hasCustomer: schema:agent
+hasItem: schema:object
+country: schema:location
+description: dcterms:description
+invoiceDate: schema:dateIssued
+invoiceNo: schema:identifier
+stockCode: schema:productID
+customerID: schema:identifier
+quantity: schema:amount
+unitPrice: schema:price

@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:gr="http://purl.org/goodrelations/v1#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:base="https://base_ontology.com#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:schema="http://schema.org/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#hasBrand -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasBrand">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Product"/>
+        <rdfs:range rdf:resource="http://purl.org/goodrelations/v1#Brand"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasCategory -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasCategory">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasImage -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasImage">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Product"/>
+        <rdfs:range rdf:resource="http://schema.org/ImageObject"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasQuantity -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasQuantity">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Product"/>
+        <rdfs:range rdf:resource="http://schema.org/QuantitativeValue"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasSubCategory -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasSubCategory">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#hasAbsoluteUrl -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasAbsoluteUrl">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasDiscountPrice -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasDiscountPrice">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasPrice -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasPrice">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasProductName -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasProductName">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasQuantity -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasQuantity"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/goodrelations/v1#Brand -->
+
+    <Class rdf:about="http://purl.org/goodrelations/v1#Brand"/>
+    
+
+
+    <!-- http://schema.org/ImageObject -->
+
+    <Class rdf:about="http://schema.org/ImageObject"/>
+    
+
+
+    <!-- http://schema.org/QuantitativeValue -->
+
+    <Class rdf:about="http://schema.org/QuantitativeValue"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- https://base_ontology.com#Brand -->
+
+    <Class rdf:about="https://base_ontology.com#Brand">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Product"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Category -->
+
+    <Class rdf:about="https://base_ontology.com#Category">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Product"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Product -->
+
+    <Class rdf:about="https://base_ontology.com#Product"/>
+    
+
+
+    <!-- https://base_ontology.com#SubCategory -->
+
+    <Class rdf:about="https://base_ontology.com#SubCategory">
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#Category"/>
+    </Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

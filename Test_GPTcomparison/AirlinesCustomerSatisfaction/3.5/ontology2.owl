@@ -1,0 +1,687 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:base="https://base_ontology.com#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#hasCount -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasCount">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Class"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasExternalResource -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasExternalResource">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Class"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMax -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasMax">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Class"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMean -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasMean">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Class"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMin -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasMin">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Class"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasNonNullCount -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasNonNullCount">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Class"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasStd -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasStd">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Class"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasType -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasType">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Class"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasUniqueCount -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasUniqueCount">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Class"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#hasCount -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasExternalResource -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasExternalResource">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMax -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasMax">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMean -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasMean">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMin -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasMin">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasNonNullCount -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasNonNullCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasStd -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasStd">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasType -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasType">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasUniqueCount -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasUniqueCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#Age -->
+
+    <Class rdf:about="https://base_ontology.com#Age">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasType"/>
+                <hasValue>Numerical</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Arrival_Delay_in_Minutes -->
+
+    <Class rdf:about="https://base_ontology.com#Arrival_Delay_in_Minutes">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasType"/>
+                <hasValue>Numerical</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Baggage_Handling -->
+
+    <Class rdf:about="https://base_ontology.com#Baggage_Handling">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasType"/>
+                <hasValue>categorical</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Checkin_Service -->
+
+    <Class rdf:about="https://base_ontology.com#Checkin_Service">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasType"/>
+                <hasValue>categorical</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Class -->
+
+    <Class rdf:about="https://base_ontology.com#Class">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasType"/>
+                <hasValue>categorical</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Cleanliness -->
+
+    <Class rdf:about="https://base_ontology.com#Cleanliness">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasType"/>
+                <hasValue>categorical</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Customer_Type -->
+
+    <Class rdf:about="https://base_ontology.com#Customer_Type">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasType"/>
+                <hasValue>categorical</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Departure_Arrival_Time_Convenient -->
+
+    <Class rdf:about="https://base_ontology.com#Departure_Arrival_Time_Convenient">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasType"/>
+                <hasValue>categorical</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Departure_Delay_in_Minutes -->
+
+    <Class rdf:about="https://base_ontology.com#Departure_Delay_in_Minutes">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasType"/>
+                <hasValue>Numerical</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Ease_of_Online_Booking -->
+
+    <Class rdf:about="https://base_ontology.com#Ease_of_Online_Booking">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasType"/>
+                <hasValue>categorical</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Flight_Distance -->
+
+    <Class rdf:about="https://base_ontology.com#Flight_Distance">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasType"/>
+                <hasValue>Numerical</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Food_and_Drink -->
+
+    <Class rdf:about="https://base_ontology.com#Food_and_Drink">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasType"/>
+                <hasValue>categorical</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Gate_Location -->
+
+    <Class rdf:about="https://base_ontology.com#Gate_Location">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasType"/>
+                <hasValue>categorical</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Gender -->
+
+    <Class rdf:about="https://base_ontology.com#Gender">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasType"/>
+                <hasValue>categorical</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Inflight_Entertainment -->
+
+    <Class rdf:about="https://base_ontology.com#Inflight_Entertainment">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasType"/>
+                <hasValue>categorical</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Inflight_Wifi_Service -->
+
+    <Class rdf:about="https://base_ontology.com#Inflight_Wifi_Service">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasType"/>
+                <hasValue>categorical</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Leg_Room_Service -->
+
+    <Class rdf:about="https://base_ontology.com#Leg_Room_Service">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasType"/>
+                <hasValue>categorical</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#On-board_Service -->
+
+    <Class rdf:about="https://base_ontology.com#On-board_Service">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasType"/>
+                <hasValue>categorical</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Online_Boarding -->
+
+    <Class rdf:about="https://base_ontology.com#Online_Boarding">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasType"/>
+                <hasValue>categorical</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Online_Support -->
+
+    <Class rdf:about="https://base_ontology.com#Online_Support">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasType"/>
+                <hasValue>categorical</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Satisfaction -->
+
+    <Class rdf:about="https://base_ontology.com#Satisfaction">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasType"/>
+                <hasValue>categorical</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Seat_Comfort -->
+
+    <Class rdf:about="https://base_ontology.com#Seat_Comfort">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasType"/>
+                <hasValue>categorical</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Type_of_Travel -->
+
+    <Class rdf:about="https://base_ontology.com#Type_of_Travel">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="https://base_ontology.com#hasType"/>
+                <hasValue>categorical</hasValue>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#Age -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Age">
+        <base:hasExternalResource>external resource_A</base:hasExternalResource>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Arrival_Delay_in_Minutes -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Arrival_Delay_in_Minutes">
+        <base:hasExternalResource>external resource_B</base:hasExternalResource>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Baggage_Handling -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Baggage_Handling">
+        <base:hasExternalResource>external resource_C</base:hasExternalResource>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Checkin_Service -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Checkin_Service">
+        <base:hasExternalResource>external resource_D</base:hasExternalResource>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Class -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Class">
+        <base:hasExternalResource>external resource_S</base:hasExternalResource>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Cleanliness -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Cleanliness">
+        <base:hasExternalResource>external resource_E</base:hasExternalResource>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Customer_Type -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Customer_Type">
+        <base:hasExternalResource>external resource_T</base:hasExternalResource>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Departure_Arrival_Time_Convenient -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Departure_Arrival_Time_Convenient">
+        <base:hasExternalResource>external resource_G</base:hasExternalResource>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Departure_Delay_in_Minutes -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Departure_Delay_in_Minutes">
+        <base:hasExternalResource>external resource_F</base:hasExternalResource>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Ease_of_Online_Booking -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Ease_of_Online_Booking">
+        <base:hasExternalResource>external resource_H</base:hasExternalResource>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Flight_Distance -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Flight_Distance">
+        <base:hasExternalResource>external resource_I</base:hasExternalResource>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Food_and_Drink -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Food_and_Drink">
+        <base:hasExternalResource>external resource_J</base:hasExternalResource>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Gate_Location -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Gate_Location">
+        <base:hasExternalResource>external resource_K</base:hasExternalResource>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Gender -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Gender">
+        <base:hasExternalResource>external resource_U</base:hasExternalResource>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Inflight_Entertainment -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Inflight_Entertainment">
+        <base:hasExternalResource>external resource_L</base:hasExternalResource>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Inflight_Wifi_Service -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Inflight_Wifi_Service">
+        <base:hasExternalResource>external resource_M</base:hasExternalResource>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Leg_Room_Service -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Leg_Room_Service">
+        <base:hasExternalResource>external resource_N</base:hasExternalResource>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#On-board_Service -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#On-board_Service">
+        <base:hasExternalResource>external resource_O</base:hasExternalResource>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Online_Boarding -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Online_Boarding">
+        <base:hasExternalResource>external resource_P</base:hasExternalResource>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Online_Support -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Online_Support">
+        <base:hasExternalResource>external resource_Q</base:hasExternalResource>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Satisfaction -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Satisfaction">
+        <base:hasExternalResource>external resource_W</base:hasExternalResource>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Seat_Comfort -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Seat_Comfort">
+        <base:hasExternalResource>external resource_R</base:hasExternalResource>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Type_of_Travel -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#Type_of_Travel">
+        <base:hasExternalResource>external resource_V</base:hasExternalResource>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

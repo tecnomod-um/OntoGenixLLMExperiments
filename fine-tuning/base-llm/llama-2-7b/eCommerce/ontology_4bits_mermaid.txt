@@ -1,0 +1,25 @@
+classDiagram
+    class Customer {
+        + hasCustomerID xsd:integer
+    }
+
+    class Order {
+        + hasOrderDate xsd:date
+    }
+
+    class OrderLine {
+        + hasUnitPrice xsd:decimal
+        + hasQuantity xsd:integer
+    }
+
+    class Product
+    class StockCode
+
+    OrderLine --|> Order : subClassOf
+
+    OrderLine --> Customer : hasCustomer
+    Customer --> Order : hasOrder
+    Order --> OrderLine : hasOrderLine
+    OrderLine --> Product : hasProduct
+    Product --> StockCode : hasStockCode
+

@@ -1,0 +1,80 @@
+**Foundational Prefix:**
+<https://base_ontology.com#>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+<http://www.w3.org/2000/01/rdf-schema#>
+<http://www.w3.org/2002/07/owl#>
+
+**Data Description:**
+1. Absolute_Url: text - The full URL of a product or item - Unique URLs
+2. Brand: text - The brand name associated with a product - Multiple products per brand
+3. Category: text - The general category to which a product belongs - Limited to a set of categories
+4. Image_Url: text - The URL of an image associated with a product - Unique or nearly unique URLs
+5. ProductName: text - The name of the product - Multiple products can share a name
+6. Quantity: text - The quantity of the product available or sold - Various quantities
+7. SubCategory: text - A more specific category within the general category - Multiple products per subcategory
+8. DiscountPrice: Numerical - The discounted price of a product - Range from minimum to maximum observed values
+9. Price: Numerical - The original price of a product - Range from minimum to maximum observed values
+
+**classes:**
+1. Product
+
+**subclasses:**
+1. Brand: subclass of -> Product
+2. Category: subclass of -> Product
+3. SubCategory: subclass of -> Category
+
+**Object Properties:**
+1. hasBrand: domain - Product; range - Brand
+2. hasCategory: domain - Product; range - Category
+3. hasSubCategory: domain - Product; range - SubCategory
+4. hasImage: domain - Product; range - Image_Url
+
+**Data Type Properties:**
+1. url: domain - Product; range - xsd:anyURI
+2. productName: domain - Product; range - xsd:string
+3. quantity: domain - Product; range - xsd:string
+4. discountPrice: domain - Product; range - xsd:float
+5. price: domain - Product; range - xsd:float
+
+Ontology Prefixes:
+1. @prefix base: <https://base_ontology.com#> .
+2. @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+3. @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+4. @prefix owl: <http://www.w3.org/2002/07/owl#> .
+5. @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+6. @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+7. @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+8. @prefix gr: <http://purl.org/goodrelations/v1#> .
+9. @prefix sdo: <http://schema.org/> .
+
+Link of each entity to external resources:
+1. Absolute_Url: sdo:URL
+2. Brand: gr:Brand
+3. Category: skos:Concept
+4. Image_Url: foaf:Image
+5. ProductName: sdo:Product
+6. Quantity: sdo:QuantitativeValue
+7. SubCategory: skos:Concept
+8. DiscountPrice: gr:priceSpecification
+9. Price: gr:priceSpecification
+
+Classes:
+1. Product: sdo:Product
+
+Subclasses:
+1. Brand: gr:Brand
+2. Category: skos:Concept
+3. SubCategory: skos:Concept
+
+Object Properties:
+1. hasBrand: sdo:brand
+2. hasCategory: sdo:category
+3. hasSubCategory: sdo:category
+4. hasImage: foaf:depiction
+
+Data Type Properties:
+1. url: sdo:url
+2. productName: sdo:name
+3. quantity: sdo:QuantitativeValue
+4. discountPrice: sdo:offers
+5. price: sdo:price

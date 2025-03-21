@@ -1,0 +1,126 @@
+**Foundational Prefix:**
+https://base_ontology.com#
+http://www.w3.org/1999/02/22-rdf-syntax-ns#
+http://www.w3.org/2000/01/rdf-schema#
+http://www.w3.org/2002/07/owl#
+
+**Data Description:**
+1. Company: text - Name of the company - [606 unique values]
+2. Company public response: categorical - Public response from the company - [9 unique values]
+3. Company response to consumer: categorical - Company's response to the consumer - [5 unique values]
+4. Consumer complaint narrative: text - Narrative of the consumer complaint - [1652 unique values]
+5. Consumer consent provided?: categorical - Whether consumer consent was provided - [4 unique values]
+6. Consumer disputed?: categorical - Whether the consumer disputed the response - [0 unique values]
+7. Date received: text - Date the complaint was received - [166 unique values]
+8. Date sent to company: text - Date the complaint was sent to the company - [166 unique values]
+9. Issue: text - The issue reported in the complaint - [69 unique values]
+10. Product: categorical - The product related to the complaint - [9 unique values]
+11. State: text - The state where the complaint was filed - [56 unique values]
+12. Sub-issue: text - Sub-issue related to the main issue - [141 unique values]
+13. Sub-product: text - Sub-product related to the main product - [46 unique values]
+14. Submitted via: categorical - How the complaint was submitted - [5 unique values]
+15. Tags: categorical - Tags associated with the complaint - [3 unique values]
+16. Timely response?: categorical - Whether the response was timely - [2 unique values]
+17. Complaint ID: Numerical - Unique identifier for the complaint - [20000 values]
+18. ZIP code: Numerical - ZIP code of the consumer - [19976 values]
+
+**classes:**
+1. Complaint
+
+**subclasses:**
+1. Company: subclass of -> Complaint
+2. Consumer: subclass of -> Complaint
+3. Product: subclass of -> Complaint
+4. Response: subclass of -> Complaint
+
+**Object Properties:**
+1. hasCompany: Complaint - Company
+2. hasConsumer: Complaint - Consumer
+3. hasProduct: Complaint - Product
+4. hasResponse: Complaint - Response
+
+**Data Type Properties:**
+1. companyName: Company - text
+2. companyPublicResponse: Response - categorical
+3. companyResponseToConsumer: Response - categorical
+4. consumerComplaintNarrative: Consumer - text
+5. consumerConsentProvided: Consumer - categorical
+6. consumerDisputed: Consumer - categorical
+7. dateReceived: Complaint - text
+8. dateSentToCompany: Complaint - text
+9. issue: Complaint - text
+10. productType: Product - categorical
+11. state: Complaint - text
+12. subIssue: Complaint - text
+13. subProduct: Product - text
+14. submittedVia: Complaint - categorical
+15. tags: Complaint - categorical
+16. timelyResponse: Response - categorical
+17. complaintID: Complaint - Numerical
+18. zipCode: Consumer - Numerical
+
+**Ontology Prefixes:**
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+**Link of each entity to external resources:**
+1. Company: schema:Organization
+2. Company public response: dcterms:description
+3. Company response to consumer: dcterms:description
+4. Consumer complaint narrative: dcterms:description
+5. Consumer consent provided?: schema:consent
+6. Consumer disputed?: schema:disputeResolution
+7. Date received: dcterms:date
+8. Date sent to company: dcterms:date
+9. Issue: schema:Thing
+10. Product: schema:Product
+11. State: schema:Place
+12. Sub-issue: schema:Thing
+13. Sub-product: schema:Product
+14. Submitted via: schema:DeliveryMethod
+15. Tags: schema:keywords
+16. Timely response?: schema:responseTime
+17. Complaint ID: dcterms:identifier
+18. ZIP code: schema:PostalAddress
+
+**classes:**
+1. Complaint
+
+**subclasses:**
+1. Company: subclass of -> Complaint
+2. Consumer: subclass of -> Complaint
+3. Product: subclass of -> Complaint
+4. Response: subclass of -> Complaint
+
+**Object Properties:**
+1. hasCompany: Complaint - Company
+2. hasConsumer: Complaint - Consumer
+3. hasProduct: Complaint - Product
+4. hasResponse: Complaint - Response
+
+**Data Type Properties:**
+1. companyName: Company - text
+2. companyPublicResponse: Response - categorical
+3. companyResponseToConsumer: Response - categorical
+4. consumerComplaintNarrative: Consumer - text
+5. consumerConsentProvided: Consumer - categorical
+6. consumerDisputed: Consumer - categorical
+7. dateReceived: Complaint - text
+8. dateSentToCompany: Complaint - text
+9. issue: Complaint - text
+10. productType: Product - categorical
+11. state: Complaint - text
+12. subIssue: Complaint - text
+13. subProduct: Product - text
+14. submittedVia: Complaint - categorical
+15. tags: Complaint - categorical
+16. timelyResponse: Response - categorical
+17. complaintID: Complaint - Numerical
+18. zipCode: Consumer - Numerical

@@ -1,0 +1,48 @@
+**Foundational Prefix:**
+- https://base_ontology.com#
+- http://www.w3.org/1999/02/22-rdf-syntax-ns#
+- http://www.w3.org/2000/01/rdf-schema#
+- http://www.w3.org/2002/07/owl#
+
+**Data Description:**
+1. customer_city: text - city where the customer is located - string
+2. customer_id: text - unique identifier for each customer - string
+3. customer_state: text - state where the customer is located - string
+4. customer_unique_id: text - unique identifier for each customer - string
+5. customer_zip_code_prefix: Numerical - prefix of the customer's zip code - integer
+
+**classes:**
+1. class_entity
+
+**subclasses:**
+1. entity_customer: subclass of -> class_entity
+
+**Object Properties:**
+1. hasCity: domain - entity_customer, range - string
+2. hasID: domain - entity_customer, range - string
+3. hasState: domain - entity_customer, range - string
+4. hasUniqueID: domain - entity_customer, range - string
+5. hasZipCodePrefix: domain - entity_customer, range - integer
+
+**Data Type Properties:**
+1. nonNullCount: domain - class_entity, range - float
+2. type: domain - class_entity, range - string
+3. uniqueCount: domain - class_entity, range - float
+4. count: domain - class_entity, range - float
+5. max: domain - class_entity, range - float
+6. mean: domain - class_entity, range - float
+7. min: domain - class_entity, range - float
+8. std: domain - class_entity, range - float
+
+**Ontology Prefixes:**
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+**Link of each entity to external resources:**
+1. customer_city: GeoNames (http://www.geonames.org/)
+2. customer_id: CRM Ontology (https://www.w3.org/TR/vocab-crm/)
+3. customer_state: GeoNames (http://www.geonames.org/)
+4. customer_unique_id: UUID (https://en.wikipedia.org/wiki/Universally_unique_identifier)
+5. customer_zip_code_prefix: GeoNames (http://www.geonames.org/)

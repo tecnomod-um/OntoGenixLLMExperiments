@@ -1,0 +1,52 @@
+classDiagram
+    class City
+    class Country
+        class State
+    
+    class Customer {
+        + customerAge xsd:integer
+        + customerCityOfBirth xsd:string
+        + customerCityOfResidence xsd:string
+        + customerCityOfResidenceCode xsd:string
+        + customerCountryOfBirth xsd:string
+        + customerCountryOfResidence xsd:string
+        + customerCountryOfResidenceCode xsd:string
+        + customerEmail xsd:string
+        + customerGender xsd:string
+        + customerLastPurchase xsd:dateTime
+        + customerMaritalStatus xsd:string
+        + customerName xsd:string
+        + customerOccupation xsd:string
+        + customerPhone xsd:string
+        + customerStateOfBirth xsd:string
+        + customerStateOfResidence xsd:string
+        + customerStateOfResidenceCode xsd:string
+    }
+
+    class Product {
+        + productBrand xsd:string
+        + productCategory xsd:string
+        + productDiscount xsd:decimal
+        + productImage xsd:string
+        + productName xsd:string
+        + productPrice xsd:decimal
+        + productSubCategory xsd:string
+        + productType xsd:string
+        + productTypeBrand xsd:string
+    }
+
+    class Transaction {
+        + transactionAmount xsd:decimal
+        + transactionDate xsd:date
+        + transactionDateDay xsd:gDay
+        + transactionDateMonth xsd:gMonth
+        + transactionDateYear xsd:gYear
+    }
+
+    class gHour
+    class gMinute
+    class gSecond
+
+    Transaction --> gHour : transactionDateHour
+    Transaction --> gMinute : transactionDateMinute
+    Transaction --> gSecond : transactionDateSecond

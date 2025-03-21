@@ -1,0 +1,102 @@
+**Foundational Prefix:**
+Define it as an owl type
+
+**Data Description:**
+Enumerate for each column in the json data:
+1. Absolute_Url: text - URL of the product - string
+2. Brand: text - Brand of the product - string
+3. Category: text - Category of the product - string
+4. Image_Url: text - URL of the product image - string
+5. ProductName: text - Name of the product - string
+6. Quantity: text - Quantity of the product - string
+7. SubCategory: text - Subcategory of the product - string
+8. DiscountPrice: Numerical - Discounted price of the product - float
+9. Price: Numerical - Original price of the product - float
+
+**classes:**
+1. class_entity
+
+**subclasses:**
+1. entity_name: subclass of -> class_entity
+
+**Object Properties:**
+1. hasBrand: domain - class_entity, range - Brand
+2. hasCategory: domain - class_entity, range - Category
+3. hasSubCategory: domain - class_entity, range - SubCategory
+4. hasProductName: domain - class_entity, range - ProductName
+5. hasQuantity: domain - class_entity, range - Quantity
+6. hasDiscountPrice: domain - class_entity, range - DiscountPrice
+7. hasPrice: domain - class_entity, range - Price
+8. hasImage: domain - class_entity, range - Image_Url
+9. hasAbsoluteUrl: domain - class_entity, range - Absolute_Url
+
+**Data Type Properties:**
+1. hasBrandName: domain - Brand, range - string
+2. hasCategoryName: domain - Category, range - string
+3. hasSubCategoryName: domain - SubCategory, range - string
+4. hasProductNameValue: domain - ProductName, range - string
+5. hasQuantityValue: domain - Quantity, range - string
+6. hasDiscountPriceValue: domain - DiscountPrice, range - float
+7. hasPriceValue: domain - Price, range - float
+8. hasImageUrlValue: domain - Image_Url, range - string
+9. hasAbsoluteUrlValue: domain - Absolute_Url, range - string
+
+Foundational Prefix:
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Data Description:
+1. Absolute_Url: text - URL of the product - string
+2. Brand: text - Brand of the product - string
+3. Category: text - Category of the product - string
+4. Image_Url: text - URL of the product image - string
+5. ProductName: text - Name of the product - string
+6. Quantity: text - Quantity of the product - string
+7. SubCategory: text - Subcategory of the product - string
+8. DiscountPrice: Numerical - Discounted price of the product - float
+9. Price: Numerical - Original price of the product - float
+
+Classes:
+1. class_entity
+
+Subclasses:
+1. entity_name: subclass of -> class_entity
+
+Object Properties:
+1. hasBrand: domain - class_entity, range - Brand
+2. hasCategory: domain - class_entity, range - Category
+3. hasSubCategory: domain - class_entity, range - SubCategory
+4. hasProductName: domain - class_entity, range - ProductName
+5. hasQuantity: domain - class_entity, range - Quantity
+6. hasDiscountPrice: domain - class_entity, range - DiscountPrice
+7. hasPrice: domain - class_entity, range - Price
+8. hasImage: domain - class_entity, range - Image_Url
+9. hasAbsoluteUrl: domain - class_entity, range - Absolute_Url
+
+Data Type Properties:
+1. hasBrandName: domain - Brand, range - string
+2. hasCategoryName: domain - Category, range - string
+3. hasSubCategoryName: domain - SubCategory, range - string
+4. hasProductNameValue: domain - ProductName, range - string
+5. hasQuantityValue: domain - Quantity, range - string
+6. hasDiscountPriceValue: domain - DiscountPrice, range - float
+7. hasPriceValue: domain - Price, range - float
+8. hasImageUrlValue: domain - Image_Url, range - string
+9. hasAbsoluteUrlValue: domain - Absolute_Url, range - string
+
+Entities from external sources:
+1. Brand: external resource - DBpedia
+2. Category: external resource - Wikidata
+3. SubCategory: external resource - Schema.org
+4. ProductName: external resource - Amazon Product Advertising API
+5. Quantity: external resource - GoodRelations
+6. DiscountPrice: external resource - OpenCitations
+7. Price: external resource - Eurostat
+8. Image_Url: external resource - Wikimedia Commons
+9. Absolute_Url: external resource - Linked Open Data Cloud
+
+Ontology Prefixes:
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+This updated schema description enhances interoperability by linking each entity to relevant external sources, enriching the ontology with external knowledge and improving its semantic connections.

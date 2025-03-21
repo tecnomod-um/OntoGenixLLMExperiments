@@ -1,0 +1,63 @@
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+
+base:Complaint rdf:type owl:Class ; rdfs:isDefinedBy schema:ConsumerComplaint .
+base:Company rdf:type owl:Class ; rdfs:isDefinedBy schema:Organization .
+base:Consumer rdf:type owl:Class ; rdfs:isDefinedBy foaf:Person .
+base:Product rdf:type owl:Class ; rdfs:isDefinedBy schema:Product .
+base:Issue rdf:type owl:Class ; rdfs:isDefinedBy skos:Concept .
+base:Submission rdf:type owl:Class ; rdfs:isDefinedBy schema:CreativeWork .
+base:Location rdf:type owl:Class ; rdfs:isDefinedBy schema:Place .
+
+base:PublicResponse rdf:type owl:Class ; rdfs:subClassOf base:Company ; rdfs:isDefinedBy schema:Organization .
+base:ConsumerNarrative rdf:type owl:Class ; rdfs:subClassOf base:Submission ; rdfs:isDefinedBy schema:Article .
+base:ConsumerConsent rdf:type owl:Class ; rdfs:subClassOf base:Submission ; rdfs:isDefinedBy schema:Boolean .
+base:Dispute rdf:type owl:Class ; rdfs:subClassOf base:Complaint ; rdfs:isDefinedBy schema:DisputeResolution .
+base:SubProduct rdf:type owl:Class ; rdfs:subClassOf base:Product ; rdfs:isDefinedBy schema:ProductModel .
+base:SubIssue rdf:type owl:Class ; rdfs:subClassOf base:Issue ; rdfs:isDefinedBy skos:Concept .
+base:Tag rdf:type owl:Class ; rdfs:subClassOf base:Submission ; rdfs:isDefinedBy schema:Thing .
+base:TimelyResponse rdf:type owl:Class ; rdfs:subClassOf base:Complaint ; rdfs:isDefinedBy schema:Duration .
+
+base:hasPublicResponse rdf:type owl:ObjectProperty ; rdfs:domain base:Complaint ; rdfs:range base:PublicResponse .
+base:hasResponseToConsumer rdf:type owl:ObjectProperty ; rdfs:domain base:Complaint ; rdfs:range base:Company .
+base:hasNarrative rdf:type owl:ObjectProperty ; rdfs:domain base:Complaint ; rdfs:range base:ConsumerNarrative .
+base:hasConsent rdf:type owl:ObjectProperty ; rdfs:domain base:Complaint ; rdfs:range base:ConsumerConsent .
+base:hasDispute rdf:type owl:ObjectProperty ; rdfs:domain base:Complaint ; rdfs:range base:Dispute .
+base:receivedOn rdf:type owl:ObjectProperty ; rdfs:domain base:Complaint ; rdfs:range base:Submission .
+base:sentToCompanyOn rdf:type owl:ObjectProperty ; rdfs:domain base:Complaint ; rdfs:range base:Submission .
+base:hasIssue rdf:type owl:ObjectProperty ; rdfs:domain base:Complaint ; rdfs:range base:Issue .
+base:hasProduct rdf:type owl:ObjectProperty ; rdfs:domain base:Complaint ; rdfs:range base:Product .
+base:fromState rdf:type owl:ObjectProperty ; rdfs:domain base:Complaint ; rdfs:range base:Location .
+base:hasSubIssue rdf:type owl:ObjectProperty ; rdfs:domain base:Issue ; rdfs:range base:SubIssue .
+base:hasSubProduct rdf:type owl:ObjectProperty ; rdfs:domain base:Product ; rdfs:range base:SubProduct .
+base:submittedVia rdf:type owl:ObjectProperty ; rdfs:domain base:Complaint ; rdfs:range base:Submission .
+base:hasTag rdf:type owl:ObjectProperty ; rdfs:domain base:Complaint ; rdfs:range base:Tag .
+base:hasTimelyResponse rdf:type owl:ObjectProperty ; rdfs:domain base:Complaint ; rdfs:range base:TimelyResponse .
+base:identifiedBy rdf:type owl:ObjectProperty ; rdfs:domain base:Complaint ; rdfs:range xsd:integer .
+base:locatedIn rdf:type owl:ObjectProperty ; rdfs:domain base:Complaint ; rdfs:range base:Location .
+
+base:companyName rdf:type owl:DatatypeProperty ; rdfs:domain base:Company ; rdfs:range xsd:string .
+base:publicResponse rdf:type owl:DatatypeProperty ; rdfs:domain base:PublicResponse ; rdfs:range xsd:string .
+base:responseToConsumer rdf:type owl:DatatypeProperty ; rdfs:domain base:Company ; rdfs:range xsd:string .
+base:narrativeText rdf:type owl:DatatypeProperty ; rdfs:domain base:ConsumerNarrative ; rdfs:range xsd:string .
+base:consentProvided rdf:type owl:DatatypeProperty ; rdfs:domain base:ConsumerConsent ; rdfs:range xsd:boolean .
+base:isDisputed rdf:type owl:DatatypeProperty ; rdfs:domain base:Dispute ; rdfs:range xsd:boolean .
+base:receivedDate rdf:type owl:DatatypeProperty ; rdfs:domain base:Submission ; rdfs:range xsd:date .
+base:sentDate rdf:type owl:DatatypeProperty ; rdfs:domain base:Submission ; rdfs:range xsd:date .
+base:issueDescription rdf:type owl:DatatypeProperty ; rdfs:domain base:Issue ; rdfs:range xsd:string .
+base:productType rdf:type owl:DatatypeProperty ; rdfs:domain base:Product ; rdfs:range xsd:string .
+base:stateName rdf:type owl:DatatypeProperty ; rdfs:domain base:Location ; rdfs:range xsd:string .
+base:subIssueDescription rdf:type owl:DatatypeProperty ; rdfs:domain base:SubIssue ; rdfs:range xsd:string .
+base:subProductType rdf:type owl:DatatypeProperty ; rdfs:domain base:SubProduct ; rdfs:range xsd:string .
+base:submissionMethod rdf:type owl:DatatypeProperty ; rdfs:domain base:Submission ; rdfs:range xsd:string .
+base:tagLabel rdf:type owl:DatatypeProperty ; rdfs:domain base:Tag ; rdfs:range xsd:string .
+base:isTimely rdf:type owl:DatatypeProperty ; rdfs:domain base:TimelyResponse ; rdfs:range xsd:boolean .
+base:complaintID rdf:type owl:DatatypeProperty ; rdfs:domain base:Complaint ; rdfs:range xsd:integer .
+base:zipCode rdf:type owl:DatatypeProperty ; rdfs:domain base:Location ; rdfs:range xsd:string .

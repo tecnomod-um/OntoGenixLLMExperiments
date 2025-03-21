@@ -1,0 +1,75 @@
+**Foundational Prefix:**
+- Foundational prefixes for the ontology:
+  - "https://base_ontology.com#"
+  - "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  - "http://www.w3.org/2000/01/rdf-schema#"
+  - "http://www.w3.org/2002/07/owl#"
+
+**Data Description:**
+1. Country: 
+   - type - text
+   - short description of the column data meaning - Country name
+   - possible range - Textual representation of country names
+
+2. Description:
+   - type - text
+   - short description of the column data meaning - Description of items
+   - possible range - Textual descriptions of items
+
+3. InvoiceDate:
+   - type - text
+   - short description of the column data meaning - Date of invoice
+   - possible range - Textual representation of dates
+
+4. InvoiceNo:
+   - type - text
+   - short description of the column data meaning - Invoice number
+   - possible range - Textual representation of invoice numbers
+
+5. StockCode:
+   - type - text
+   - short description of the column data meaning - Stock code of items
+   - possible range - Textual representation of stock codes
+
+6. CustomerID:
+   - type - Numerical
+   - short description of the column data meaning - Customer ID
+   - possible range - Numerical representation of customer IDs
+
+7. Quantity:
+   - type - Numerical
+   - short description of the column data meaning - Quantity of items
+   - possible range - Numerical representation of quantities
+
+8. UnitPrice:
+   - type - Numerical
+   - short description of the column data meaning - Price per unit
+   - possible range - Numerical representation of unit prices
+
+**classes:**
+1. class_entity
+
+**subclasses:**
+1. entity_name: subclass of -> class_entity
+
+**Object Properties:**
+1. No object properties defined.
+
+**Data Type Properties:**
+1. No data type properties defined.
+
+**Ontology Prefixes:**
+1. @prefix base: <https://base_ontology.com#> .
+2. @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+3. @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+4. @prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+**Link of each entity to external resources:**
+1. Country: external resource
+2. Description: external resource
+3. InvoiceDate: external resource
+4. InvoiceNo: external resource
+5. StockCode: external resource
+6. CustomerID: external resource
+7. Quantity: external resource
+8. UnitPrice: external resource

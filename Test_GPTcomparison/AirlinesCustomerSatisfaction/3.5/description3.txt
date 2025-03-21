@@ -1,0 +1,80 @@
+**Foundational Prefix:**
+- https://base_ontology.com#
+- http://www.w3.org/1999/02/22-rdf-syntax-ns#
+- http://www.w3.org/2000/01/rdf-schema#
+- http://www.w3.org/2002/07/owl#
+
+**Data Description:**
+1. Age: Numerical - Represents the age of individuals - Range: [7.0, 70.0]
+2. Arrival Delay in Minutes: Numerical - Indicates the delay in minutes for arrival - Range: [0.0, 1584.0]
+3. Baggage handling: Categorical - Describes the quality of baggage handling - Range: [1.0, 5.0]
+4. Checkin service: Categorical - Reflects the quality of check-in service - Range: [1.0, 5.0]
+5. Cleanliness: Categorical - Indicates the cleanliness rating - Range: [1.0, 5.0]
+6. Departure Delay in Minutes: Numerical - Represents the delay in minutes for departure - Range: [0.0, 1592.0]
+7. Departure/Arrival time convenient: Categorical - Reflects the convenience of departure/arrival times - Range: [0.0, 5.0]
+8. Ease of Online booking: Categorical - Describes the ease of online booking - Range: [1.0, 5.0]
+9. Flight Distance: Numerical - Represents the distance of the flight in miles - Range: [50.0, 6907.0]
+10. Food and drink: Categorical - Indicates the quality of food and drink services - Range: [0.0, 5.0]
+11. Gate location: Categorical - Describes the quality of gate location - Range: [0.0, 5.0]
+12. Inflight entertainment: Categorical - Reflects the quality of inflight entertainment - Range: [0.0, 5.0]
+13. Inflight wifi service: Categorical - Indicates the quality of inflight wifi service - Range: [0.0, 5.0]
+14. Leg room service: Categorical - Describes the quality of legroom service - Range: [0.0, 5.0]
+15. On-board service: Categorical - Reflects the quality of on-board services - Range: [1.0, 5.0]
+16. Online boarding: Categorical - Indicates the ease of online boarding process - Range: [1.0, 5.0]
+17. Online support: Categorical - Describes the quality of online customer support - Range: [1.0, 5.0]
+18. Seat comfort: Categorical - Reflects the comfort level of seats - Range: [0.0, 5.0]
+19. Class: Categorical - Represents the class of service - Range: [null, null]
+20. Customer Type: Categorical - Indicates the type of customer - Range: [null, null]
+21. Gender: Categorical - Represents the gender of individuals - Range: [null, null]
+22. Type of Travel: Categorical - Describes the type of travel - Range: [null, null]
+23. Satisfaction: Categorical - Indicates the satisfaction level - Range: [null, null]
+
+**Classes:**
+1. class_entity
+
+**Subclasses:**
+1. entity_name: subclass of -> class_entity
+
+**Object Properties:**
+1. No object properties defined.
+
+**Data Type Properties:**
+1. count: domain - class_entity, range - xsd:float
+2. max: domain - class_entity, range - xsd:float
+3. mean: domain - class_entity, range - xsd:float
+4. min: domain - class_entity, range - xsd:float
+5. std: domain - class_entity, range - xsd:float
+6. type: domain - class_entity, range - xsd:string
+7. non_null_count: domain - class_entity, range - xsd:float
+8. unique_count: domain - class_entity, range - xsd:float
+
+**Ontology Prefixes:**
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+**Link of each entity to external resources:**
+1. Age: external resource_A
+2. Arrival Delay in Minutes: external resource_B
+3. Baggage handling: external resource_C
+4. Checkin service: external resource_D
+5. Cleanliness: external resource_E
+6. Departure Delay in Minutes: external resource_F
+7. Departure/Arrival time convenient: external resource_G
+8. Ease of Online booking: external resource_H
+9. Flight Distance: external resource_I
+10. Food and drink: external resource_J
+11. Gate location: external resource_K
+12. Inflight entertainment: external resource_L
+13. Inflight wifi service: external resource_M
+14. Leg room service: external resource_N
+15. On-board service: external resource_O
+16. Online boarding: external resource_P
+17. Online support: external resource_Q
+18. Seat comfort: external resource_R
+19. Class: external resource_S
+20. Customer Type: external resource_T
+21. Gender: external resource_U
+22. Type of Travel: external resource_V
+23. Satisfaction: external resource_W

@@ -1,0 +1,133 @@
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+base:Company a owl:Class ;
+    rdfs:subClassOf schema:Organization .
+
+base:CompanyPublicResponse a owl:Class ;
+    rdfs:subClassOf schema:Review .
+
+base:CompanyResponseToConsumer a owl:Class ;
+    rdfs:subClassOf schema:Review .
+
+base:ConsumerComplaintNarrative a owl:Class ;
+    rdfs:subClassOf schema:Text .
+
+base:ConsumerConsentProvided a owl:Class ;
+    rdfs:subClassOf schema:Boolean .
+
+base:ConsumerDisputed a owl:Class ;
+    rdfs:subClassOf schema:Boolean .
+
+base:DateReceived a owl:Class ;
+    rdfs:subClassOf dcterms:date .
+
+base:DateSentToCompany a owl:Class ;
+    rdfs:subClassOf dcterms:date .
+
+base:Issue a owl:Class ;
+    rdfs:subClassOf schema:Text .
+
+base:Product a owl:Class ;
+    rdfs:subClassOf schema:Product .
+
+base:State a owl:Class ;
+    rdfs:subClassOf schema:Place .
+
+base:SubIssue a owl:Class ;
+    rdfs:subClassOf schema:Text .
+
+base:SubProduct a owl:Class ;
+    rdfs:subClassOf schema:Product .
+
+base:SubmittedVia a owl:Class ;
+    rdfs:subClassOf schema:Text .
+
+base:Tags a owl:Class ;
+    rdfs:subClassOf schema:Text .
+
+base:TimelyResponse a owl:Class ;
+    rdfs:subClassOf schema:Boolean .
+
+base:ComplaintID a owl:Class ;
+    rdfs:subClassOf schema:identifier .
+
+base:ZIPCode a owl:Class ;
+    rdfs:subClassOf schema:PostalCode .
+
+base:hasCompany a owl:ObjectProperty ;
+    rdfs:domain base:Complaint ;
+    rdfs:range base:Company .
+
+base:hasCompanyPublicResponse a owl:ObjectProperty ;
+    rdfs:domain base:Complaint ;
+    rdfs:range base:CompanyPublicResponse .
+
+base:hasCompanyResponseToConsumer a owl:ObjectProperty ;
+    rdfs:domain base:Complaint ;
+    rdfs:range base:CompanyResponseToConsumer .
+
+base:hasConsumerComplaintNarrative a owl:ObjectProperty ;
+    rdfs:domain base:Complaint ;
+    rdfs:range base:ConsumerComplaintNarrative .
+
+base:hasConsumerConsentProvided a owl:ObjectProperty ;
+    rdfs:domain base:Complaint ;
+    rdfs:range base:ConsumerConsentProvided .
+
+base:hasConsumerDisputed a owl:ObjectProperty ;
+    rdfs:domain base:Complaint ;
+    rdfs:range base:ConsumerDisputed .
+
+base:hasDateReceived a owl:ObjectProperty ;
+    rdfs:domain base:Complaint ;
+    rdfs:range base:DateReceived .
+
+base:hasDateSentToCompany a owl:ObjectProperty ;
+    rdfs:domain base:Complaint ;
+    rdfs:range base:DateSentToCompany .
+
+base:hasIssue a owl:ObjectProperty ;
+    rdfs:domain base:Complaint ;
+    rdfs:range base:Issue .
+
+base:hasProduct a owl:ObjectProperty ;
+    rdfs:domain base:Complaint ;
+    rdfs:range base:Product .
+
+base:hasState a owl:ObjectProperty ;
+    rdfs:domain base:Complaint ;
+    rdfs:range base:State .
+
+base:hasSubIssue a owl:ObjectProperty ;
+    rdfs:domain base:Complaint ;
+    rdfs:range base:SubIssue .
+
+base:hasSubProduct a owl:ObjectProperty ;
+    rdfs:domain base:Complaint ;
+    rdfs:range base:SubProduct .
+
+base:hasSubmittedVia a owl:ObjectProperty ;
+    rdfs:domain base:Complaint ;
+    rdfs:range base:SubmittedVia .
+
+base:hasTags a owl:ObjectProperty ;
+    rdfs:domain base:Complaint ;
+    rdfs:range base:Tags .
+
+base:hasTimelyResponse a owl:ObjectProperty ;
+    rdfs:domain base:Complaint ;
+    rdfs:range base:TimelyResponse .
+
+base:hasComplaintID a owl:ObjectProperty ;
+    rdfs:domain base:Complaint ;
+    rdfs:range base:ComplaintID .
+
+base:hasZIPCode a owl:ObjectProperty ;
+    rdfs:domain base:Complaint ;
+    rdfs:range base:ZIPCode .

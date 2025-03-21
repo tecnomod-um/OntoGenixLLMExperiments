@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:crm="https://www.w3.org/TR/vocab-crm/"
+     xmlns:geo="http://www.geonames.org/"
+     xmlns:osm="https://www.openstreetmap.org/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:base="https://base_ontology.com#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="https://schema.org/"
+     xmlns:dbpedia="https://wiki.dbpedia.org/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#count -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#count">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#customer_city -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#customer_city">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:seeAlso rdf:resource="http://www.geonames.org/"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#customer_id -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#customer_id">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/vocab-crm/"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#customer_state -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#customer_state">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:seeAlso rdf:resource="https://wiki.dbpedia.org/"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#customer_unique_id -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#customer_unique_id">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:seeAlso rdf:resource="https://schema.org/"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#customer_zip_code_prefix -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#customer_zip_code_prefix">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:seeAlso rdf:resource="https://www.openstreetmap.org/"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#max -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#max">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#mean -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#mean">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#min -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#min">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#non_null_count -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#non_null_count">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#std -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#std">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#type -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#type">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#unique_count -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#unique_count">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#City -->
+
+    <Class rdf:about="https://base_ontology.com#City"/>
+    
+
+
+    <!-- https://base_ontology.com#Customer -->
+
+    <Class rdf:about="https://base_ontology.com#Customer"/>
+    
+
+
+    <!-- https://base_ontology.com#State -->
+
+    <Class rdf:about="https://base_ontology.com#State"/>
+    
+
+
+    <!-- https://base_ontology.com#UniqueID -->
+
+    <Class rdf:about="https://base_ontology.com#UniqueID"/>
+    
+
+
+    <!-- https://base_ontology.com#ZipCode -->
+
+    <Class rdf:about="https://base_ontology.com#ZipCode"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

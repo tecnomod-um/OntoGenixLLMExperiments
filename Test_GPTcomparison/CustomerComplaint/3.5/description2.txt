@@ -1,0 +1,149 @@
+**Foundational Prefix:**
+Define it as an owl type
+
+**Data Description:**
+Enumerate for each column in the json data:
+1. Company: text - name of the company - string
+2. Company public response: categorical - public response of the company - string
+3. Company response to consumer: categorical - company's response to consumer - string
+4. Consumer complaint narrative: text - narrative of consumer complaint - string
+5. Consumer consent provided?: categorical - indication of consumer consent - string
+6. Consumer disputed?: categorical - indication of consumer dispute - string
+7. Date received: text - date of complaint received - string
+8. Date sent to company: text - date complaint sent to company - string
+9. Issue: text - issue raised by consumer - string
+10. Product: categorical - product related to the complaint - string
+11. State: text - state related to the complaint - string
+12. Sub-issue: text - sub-issue related to the complaint - string
+13. Sub-product: text - sub-product related to the complaint - string
+14. Submitted via: categorical - mode of submission of the complaint - string
+15. Tags: categorical - tags related to the complaint - string
+16. Timely response?: categorical - indication of timely response - string
+17. Complaint ID: Numerical - unique identifier for the complaint - integer
+18. ZIP code: Numerical - ZIP code related to the complaint - integer
+
+**classes:**
+Enumerate the classes:
+1. class_entity
+
+**subclasses:**
+Enumerate the subclasses:
+1. entity_name: subclass of -> class_entity
+
+**Object Properties:**
+For each class and subclass enumerate its corresponding object properties:
+1. hasPublicResponse: domain - class_entity, range - string
+2. hasResponseToConsumer: domain - class_entity, range - string
+3. hasComplaintNarrative: domain - class_entity, range - string
+4. hasConsentProvided: domain - class_entity, range - string
+5. hasDispute: domain - class_entity, range - string
+6. hasDateReceived: domain - class_entity, range - string
+7. hasDateSentToCompany: domain - class_entity, range - string
+8. hasIssue: domain - class_entity, range - string
+9. hasProduct: domain - class_entity, range - string
+10. hasState: domain - class_entity, range - string
+11. hasSubIssue: domain - class_entity, range - string
+12. hasSubProduct: domain - class_entity, range - string
+13. submittedVia: domain - class_entity, range - string
+14. hasTags: domain - class_entity, range - string
+15. hasTimelyResponse: domain - class_entity, range - string
+16. hasComplaintID: domain - class_entity, range - integer
+17. hasZIPCode: domain - class_entity, range - integer
+
+**Data Type Properties:**
+For each class and subclass enumerate its corresponding data type properties:
+1. typeOfCompany: domain - class_entity, range - string
+2. typeOfPublicResponse: domain - class_entity, range - string
+3. typeOfResponseToConsumer: domain - class_entity, range - string
+4. typeOfComplaintNarrative: domain - class_entity, range - string
+5. typeOfConsentProvided: domain - class_entity, range - string
+6. typeOfDispute: domain - class_entity, range - string
+7. typeOfDateReceived: domain - class_entity, range - string
+8. typeOfDateSentToCompany: domain - class_entity, range - string
+9. typeOfIssue: domain - class_entity, range - string
+10. typeOfProduct: domain - class_entity, range - string
+11. typeOfState: domain - class_entity, range - string
+12. typeOfSubIssue: domain - class_entity, range - string
+13. typeOfSubProduct: domain - class_entity, range - string
+14. typeOfSubmittedVia: domain - class_entity, range - string
+15. typeOfTags: domain - class_entity, range - string
+16. typeOfTimelyResponse: domain - class_entity, range - string
+17. typeOfComplaintID: domain - class_entity, range - integer
+18. typeOfZIPCode: domain - class_entity, range - integer
+
+Foundational Prefix:
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Data Description:
+1. Company: text - name of the company - string
+2. Company public response: categorical - public response of the company - string
+3. Company response to consumer: categorical - company's response to consumer - string
+4. Consumer complaint narrative: text - narrative of consumer complaint - string
+5. Consumer consent provided?: categorical - indication of consumer consent - string
+6. Consumer disputed?: categorical - indication of consumer dispute - string
+7. Date received: text - date of complaint received - string
+8. Date sent to company: text - date complaint sent to company - string
+9. Issue: text - issue raised by consumer - string
+10. Product: categorical - product related to the complaint - string
+11. State: text - state related to the complaint - string
+12. Sub-issue: text - sub-issue related to the complaint - string
+13. Sub-product: text - sub-product related to the complaint - string
+14. Submitted via: categorical - mode of submission of the complaint - string
+15. Tags: categorical - tags related to the complaint - string
+16. Timely response?: categorical - indication of timely response - string
+17. Complaint ID: Numerical - unique identifier for the complaint - integer
+18. ZIP code: Numerical - ZIP code related to the complaint - integer
+
+Classes:
+1. class_entity
+
+Subclasses:
+1. entity_name: subclass of -> class_entity
+
+Object Properties:
+1. hasPublicResponse: domain - class_entity, range - string
+2. hasResponseToConsumer: domain - class_entity, range - string
+3. hasComplaintNarrative: domain - class_entity, range - string
+4. hasConsentProvided: domain - class_entity, range - string
+5. hasDispute: domain - class_entity, range - string
+6. hasDateReceived: domain - class_entity, range - string
+7. hasDateSentToCompany: domain - class_entity, range - string
+8. hasIssue: domain - class_entity, range - string
+9. hasProduct: domain - class_entity, range - string
+10. hasState: domain - class_entity, range - string
+11. hasSubIssue: domain - class_entity, range - string
+12. hasSubProduct: domain - class_entity, range - string
+13. submittedVia: domain - class_entity, range - string
+14. hasTags: domain - class_entity, range - string
+15. hasTimelyResponse: domain - class_entity, range - string
+16. hasComplaintID: domain - class_entity, range - integer
+17. hasZIPCode: domain - class_entity, range - integer
+
+Data Type Properties:
+1. typeOfCompany: domain - class_entity, range - string
+2. typeOfPublicResponse: domain - class_entity, range - string
+3. typeOfResponseToConsumer: domain - class_entity, range - string
+4. typeOfComplaintNarrative: domain - class_entity, range - string
+5. typeOfConsentProvided: domain - class_entity, range - string
+6. typeOfDispute: domain - class_entity, range - string
+7. typeOfDateReceived: domain - class_entity, range - string
+8. typeOfDateSentToCompany: domain - class_entity, range - string
+9. typeOfIssue: domain - class_entity, range - string
+10. typeOfProduct: domain - class_entity, range - string
+11. typeOfState: domain - class_entity, range - string
+12. typeOfSubIssue: domain - class_entity, range - string
+13. typeOfSubProduct: domain - class_entity, range - string
+14. typeOfSubmittedVia: domain - class_entity, range - string
+15. typeOfTags: domain - class_entity, range - string
+16. typeOfTimelyResponse: domain - class_entity, range - string
+17. typeOfComplaintID: domain - class_entity, range - integer
+18. typeOfZIPCode: domain - class_entity, range - integer
+
+Entities from external sources:
+None
+
+Ontology Prefixes:
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Link of each entity to external resources:
+1. entity_name: external resource

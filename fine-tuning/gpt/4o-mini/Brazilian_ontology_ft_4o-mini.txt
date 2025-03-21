@@ -1,0 +1,97 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:Order_Management_System rdf:type owl:Ontology .
+
+# Classes
+um:Order rdf:type owl:Class ;
+    rdfs:label "Order"@en .
+
+um:Customer rdf:type owl:Class ;
+    rdfs:label "Customer"@en .
+
+um:OrderStatus rdf:type owl:Class ;
+    rdfs:label "Order Status"@en .
+
+um:Date rdf:type owl:Class ;
+    rdfs:label "Date"@en .
+
+# Data properties
+um:orderID rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range xsd:string ;
+    rdfs:label "order ID"@en .
+
+um:customerID rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:string ;
+    rdfs:label "customer ID"@en .
+
+um:orderStatusValue rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:OrderStatus ;
+    rdfs:range xsd:string ;
+    rdfs:label "order status value"@en .
+
+um:purchaseTimestamp rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Date ;
+    rdfs:range xsd:dateTime ;
+    rdfs:label "purchase timestamp"@en .
+
+um:approvedAt rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Date ;
+    rdfs:range xsd:dateTime ;
+    rdfs:label "approved at"@en .
+
+um:deliveredCarrierDate rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Date ;
+    rdfs:range xsd:dateTime ;
+    rdfs:label "delivered carrier date"@en .
+
+um:deliveredCustomerDate rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Date ;
+    rdfs:range xsd:dateTime ;
+    rdfs:label "delivered customer date"@en .
+
+um:estimatedDeliveryDate rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Date ;
+    rdfs:range xsd:dateTime ;
+    rdfs:label "estimated delivery date"@en .
+
+# Object properties
+um:hasCustomer rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:Customer ;
+    rdfs:label "has customer"@en .
+
+um:hasOrderStatus rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:OrderStatus ;
+    rdfs:label "has order status"@en .
+
+um:hasPurchaseTimestamp rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:Date ;
+    rdfs:label "has purchase timestamp"@en .
+
+um:hasApprovedAt rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:Date ;
+    rdfs:label "has approved at"@en .
+
+um:hasDeliveredCarrierDate rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:Date ;
+    rdfs:label "has delivered carrier date"@en .
+
+um:hasDeliveredCustomerDate rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:Date ;
+    rdfs:label "has delivered customer date"@en .
+
+um:hasEstimatedDeliveryDate rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:Date ;
+    rdfs:label "has estimated delivery date"@en .

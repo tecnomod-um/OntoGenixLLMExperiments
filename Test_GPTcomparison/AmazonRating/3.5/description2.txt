@@ -1,0 +1,38 @@
+**Foundational Prefix:**
+Define it as an owl type
+
+**Data Description:**
+Enumerate for each column in the json data:
+1. ProductId: text - unique identifier for a product - string
+2. Rating: categorical - rating given to a product - integer (1-5)
+3. Timestamp: text - time when the rating was given - string
+4. UserId: text - unique identifier for a user - string
+
+**classes:**
+1. class_entity
+
+**subclasses:**
+1. Product: subclass of -> class_entity
+2. Rating: subclass of -> class_entity
+3. Timestamp: subclass of -> class_entity
+4. User: subclass of -> class_entity
+
+**Object Properties:**
+1. hasRating: domain - Product, range - Rating
+2. hasTimestamp: domain - Product, range - Timestamp
+3. hasUser: domain - Product, range - User
+
+**Data Type Properties:**
+1. hasProductId: domain - Product, range - string
+2. hasRatingValue: domain - Rating, range - integer
+3. hasTimestampValue: domain - Timestamp, range - string
+4. hasUserId: domain - User, range - string
+
+**Ontology Prefixes:**
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+**Link of each entity to external resources:**
+1. Product: external resource_1
+2. Rating: external resource_2
+3. Timestamp: external resource_3
+4. User: external resource_4

@@ -1,0 +1,68 @@
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+
+base:Customer rdf:type owl:Class ;
+    rdfs:subClassOf schema:Person, schema:Organization .
+
+base:CustomerCity rdf:type owl:Class ;
+    rdfs:subClassOf schema:City, dbpedia:City .
+
+base:CustomerState rdf:type owl:Class ;
+    rdfs:subClassOf schema:State, dbpedia:State .
+
+base:CustomerZipCode rdf:type owl:Class ;
+    rdfs:subClassOf schema:PostalCode, geonames:Code .
+
+base:hasCity rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Customer ;
+    rdfs:range base:CustomerCity .
+
+base:hasState rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Customer ;
+    rdfs:range base:CustomerState .
+
+base:hasZipCode rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Customer ;
+    rdfs:range base:CustomerZipCode .
+
+base:hasUniqueId rdf:type owl:DatatypeProperty ;
+    rdfs:domain base:Customer ;
+    rdfs:range xsd:string .
+
+base:hasCustomerId rdf:type owl:DatatypeProperty ;
+    rdfs:domain base:Customer ;
+    rdfs:range xsd:string .
+
+base:hasNonNullCount rdf:type owl:DatatypeProperty ;
+    rdfs:domain [ rdf:type owl:Class ; owl:unionOf (base:CustomerCity base:CustomerState base:Customer) ] ;
+    rdfs:range xsd:float .
+
+base:hasUniqueCount rdf:type owl:DatatypeProperty ;
+    rdfs:domain [ rdf:type owl:Class ; owl:unionOf (base:CustomerCity base:CustomerState base:Customer) ] ;
+    rdfs:range xsd:float .
+
+base:hasZipCodeCount rdf:type owl:DatatypeProperty ;
+    rdfs:domain base:CustomerZipCode ;
+    rdfs:range xsd:float .
+
+base:hasZipCodeMax rdf:type owl:DatatypeProperty ;
+    rdfs:domain base:CustomerZipCode ;
+    rdfs:range xsd:float .
+
+base:hasZipCodeMean rdf:type owl:DatatypeProperty ;
+    rdfs:domain base:CustomerZipCode ;
+    rdfs:range xsd:float .
+
+base:hasZipCodeMin rdf:type owl:DatatypeProperty ;
+    rdfs:domain base:CustomerZipCode ;
+    rdfs:range xsd:float .
+
+base:hasZipCodeStd rdf:type owl:DatatypeProperty ;
+    rdfs:domain base:CustomerZipCode ;
+    rdfs:range xsd:float .

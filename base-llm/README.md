@@ -1,8 +1,8 @@
-# Experiments with base openLLMs
+# Experiments with base LLMs
 
 ## Objective
 
-The objective of these experiments is to study the ontology generation capacity of different base openLLMs
+The objective of these experiments is to study the ontology generation capacity of different base open-LLMs.
 
 
 ## The approach
@@ -16,7 +16,7 @@ The generation parameters are:
 - top_p=0.8: The value of top_p controls the probabilistic sampling in text generation. A value of 0.8 allows for more diversity in the generation by restricting the sampling to a relevant subset of words, preventing the model from becoming too predictable or choosing words that are too unlikely.
 - top_k=40: The value of top_k limits the number of candidate words from which the model can choose. This value reduces the possibility of selecting low probability words, which helps to control the consistency and quality of the generated text. Therefore, a value of 40 allows for sufficient diversity without making the generation too random.
 - temperature=0.5: Temperature adjusts the level of ‘creativity’ of the model. A lower temperature (close to 0) makes the model more conservative and chooses the most likely options, while a higher temperature (close to 1 or more) makes it more likely to explore less likely options. Thus, a value of 0.5 balances creativity and accuracy, providing coherent and sensible answers without the text being monotonous or too predictable.
-- max_new_tokens=4096: This parameter defines the maximum number of tokens.  A limit of 4096 is relatively large and allows the model to generate long or continuous responses without truncating the text.
+- max_new_tokens=4096: This parameter defines the maximum number of tokens. A limit of 4096 is relatively large and allows the model to generate long or continuous responses without truncating the text.
 
 ## Experiments by openLLM
 
@@ -73,19 +73,19 @@ The following table shows the main errors made by LLM models in the generation o
 
 
 We talk about:
-- 'Incorrect format' when the model returns a serialization of RDF triples that does not correspond to the requested turtle, or other alternative ontology serialization format. Instead, it returns another inappropriate format that cannot be converted, i.e., the result generates an output that does not pass the validation tests, and therefore cannot be converted to a different type of RDF serialization. These errors were not corrected in most cases due to the incomprehensible output or the relatively high effort required by the user, based on the size of the ontology.
-- 'Incorrect serialization' when the model returns a turtle serialization, but contains syntax errors that hinder the validation of the ontology. The type of the error is included in brackets. some of these errors can be corrected manually with relatively little effort, depending on the size of the ontology.
-- 'Uncommented text' when the model does not return only the requested ontology, but includes text messages that are not properly included as comments. This result also prevents the validation of the ontology. These errors can be corrected easily
-- 'Incorrect rdf/xml serialization' when the model returns an ontology with incorrect rdf/xml serialization instead of turtle. These errors were not corrected.
-- 'Wrong URIs' when the model incorrectly reuses pre-existing vocabularies and generates incorrect URIs.
+- **'Incorrect format'** when the model returns a serialization of RDF triples that does not correspond to the requested turtle, or other alternative ontology serialization format. Instead, it returns another inappropriate format that cannot be converted, i.e., the result generates an output that does not pass the validation tests, and therefore cannot be converted to a different type of RDF serialization. These errors were not corrected in most cases due to the incomprehensible output or the relatively high effort required by the user, based on the size of the ontology.
+- **'Incorrect serialization'** when the model returns a turtle serialization, but contains syntax errors that hinder the validation of the ontology. The type of the error is included in brackets. some of these errors can be corrected manually with relatively little effort, depending on the size of the ontology.
+- **'Uncommented text'** when the model does not return only the requested ontology, but includes text messages that are not properly included as comments. This result also prevents the validation of the ontology. These errors can be corrected easily
+- **'Incorrect rdf/xml serialization'** when the model returns an ontology with incorrect rdf/xml serialization instead of turtle. These errors were not corrected.
+- **'Wrong URIs'** when the model incorrectly reuses pre-existing vocabularies and generates incorrect URIs.
 
 Errors associated with incorrect serialization are usually common, being:
-- Incorrect number of elements in a triplet (2 or more than 3). When the triplet includes two elements it is because the model omits the property rdf:type (a). When the triplet has more than 3 elements, it is typically due to an inadequate concatenation of statements, inclusion of redundancies ( repeating the type of entity: Class, ObjectProperty, DatatypeProperty) or wrong syntax constraints/axioms.
-- Loop at the end: the model is not able to finalize the ontology and includes random characters, or repeats a triplet or a fragment of it.
-- Shortnames: shortnames without the prefix (only ID is included).
-- IDs: lack of IDs, only the prefix is included. It is the inverse error of the previous one.
-- Dots: mistakes in the ending dots. This includes lack of dots and/or semicolons at the end of statements, or an inappropriate use ( dot instead of semicolon). 
-- Prefix: prefix used but not declarated.
+- **Incorrect number of elements** in a triplet (2 or more than 3). When the triplet includes two elements it is because the model omits the property rdf:type (a). When the triplet has more than 3 elements, it is typically due to an inadequate concatenation of statements, inclusion of redundancies ( repeating the type of entity: Class, ObjectProperty, DatatypeProperty) or wrong syntax constraints/axioms.
+- **Loop at the end**: the model is not able to finalize the ontology and includes random characters, or repeats a triplet or a fragment of it.
+- **Shortnames**: shortnames without the prefix (only ID is included).
+- **IDs**: lack of IDs, only the prefix is included. It is the inverse error of the previous one.
+- **Dots**: mistakes in the ending dots. This includes lack of dots and/or semicolons at the end of statements, or an inappropriate use ( dot instead of semicolon). 
+- **Prefix**: prefix used but not declarated.
 
 Below we include a new table with those ontologies that could be developed after a human intervention. These were the ontologies with serialization, and format errors, where a human intervention for correction implies a lower effort than a de novo development.
 

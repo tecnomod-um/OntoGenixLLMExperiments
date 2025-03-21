@@ -1,0 +1,13 @@
+classDiagram
+    class Product
+    class User
+    class ProductRating
+    class Time 
+    class Rating
+    class ProductID
+    class Ontology
+
+    Product --> ProductID :hasProduct
+    ProductRating --> Rating :hasRating
+    Time --> ProductID :hasTime
+    User --> Product :hasUser

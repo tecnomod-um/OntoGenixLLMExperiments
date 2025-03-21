@@ -1,0 +1,63 @@
+**Foundational Prefix:**
+Define it as an owl type
+
+**Data Description:**
+Enumerate for each column in the json data:
+1. ProductId: text - identifier for a product - alphanumeric string
+2. Rating: categorical - rating given to a product - integer (1-5)
+3. Timestamp: text - time when the rating was given - timestamp string
+4. UserId: text - identifier for a user - alphanumeric string
+
+**classes:**
+1. class_entity
+
+**subclasses:**
+1. entity_name: subclass of -> class_entity
+
+**Object Properties:**
+1. hasRating: domain - class_entity, range - Rating
+2. hasTimestamp: domain - class_entity, range - Timestamp
+3. hasUserId: domain - class_entity, range - UserId
+
+**Data Type Properties:**
+1. hasProductId: domain - class_entity, range - ProductId
+
+Foundational Prefix:
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+Data Description:
+1. ProductId: text - identifier for a product - alphanumeric string
+2. Rating: categorical - rating given to a product - integer (1-5)
+3. Timestamp: text - time when the rating was given - timestamp string
+4. UserId: text - identifier for a user - alphanumeric string
+
+Classes:
+@prefix : <http://example.com/ontology#> .
+:class_entity a owl:Class .
+
+Subclasses:
+:entity_name rdfs:subClassOf :class_entity .
+
+Object Properties:
+:hasRating a owl:ObjectProperty ;
+    rdfs:domain :class_entity ;
+    rdfs:range xsd:integer .
+
+:hasTimestamp a owl:ObjectProperty ;
+    rdfs:domain :class_entity ;
+    rdfs:range xsd:dateTime .
+
+:hasUserId a owl:ObjectProperty ;
+    rdfs:domain :class_entity ;
+    rdfs:range xsd:string .
+
+Data Type Properties:
+:hasProductId a owl:DatatypeProperty ;
+    rdfs:domain :class_entity ;
+    rdfs:range xsd:string .
+
+Entities from external sources:
+1. ProductId: external resource - schema.org/Product
+2. Rating: external resource - schema.org/Rating
+3. Timestamp: external resource - schema.org/DateTime
+4. UserId: external resource - schema.org/Person

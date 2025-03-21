@@ -1,0 +1,37 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix base: <https://base_ontology.com#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix schema: <http://schema.org/> .
+
+base:Customer a owl:Class .
+
+base:hasCity a owl:ObjectProperty ;
+    rdfs:domain base:Customer ;
+    rdfs:range vcard:locality .
+
+base:hasState a owl:ObjectProperty ;
+    rdfs:domain base:Customer ;
+    rdfs:range vcard:region .
+
+base:hasZipCodePrefix a owl:DatatypeProperty ;
+    rdfs:domain base:Customer ;
+    rdfs:range vcard:postal-code .
+
+base:hasCustomerId a owl:DatatypeProperty ;
+    rdfs:domain base:Customer ;
+    rdfs:range schema:identifier .
+
+base:hasCustomerUniqueId a owl:DatatypeProperty ;
+    rdfs:domain base:Customer ;
+    rdfs:range schema:identifier .
+
+vcard:locality a owl:Class .
+vcard:region a owl:Class .
+vcard:postal-code a owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+schema:identifier a owl:DatatypeProperty ;
+    rdfs:range xsd:string .

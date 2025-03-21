@@ -1,0 +1,43 @@
+classDiagram
+    class Age {
+        +age : xsd:integer
+    }
+
+    class Author {
+        +authorFirstName : xsd:string
+        +authorLastName : xsd:string
+    }
+
+    class Book {
+        +bookTitle : xsd:string
+    }
+
+    class Format {
+        +format : xsd:string
+    }
+
+    class Gender {
+        +gender : xsd:string
+    }
+
+    class Genre
+
+    class Language {
+        +language : xsd:string
+    }
+
+    class ProductId {
+        +productId : xsd:string
+    }
+
+    class Publisher {
+        +publisherName : xsd:string
+    }
+
+    class PublishingYear {
+        +publishingYear : xsd:integer
+    }
+
+    class Rating {
+        +rating : xsd:float
+    }

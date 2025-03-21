@@ -1,0 +1,20 @@
+classDiagram
+    class Customer {
+        + customerReferenceID xsd:string
+    }
+
+    class Purchase {
+        + purchaseAmount xsd:decimal
+        + datePurchase xsd:date
+        + reviewRating xsd:decimal
+    }
+
+    class Product {
+        + productName xsd:string
+    }
+
+    class PaymentMethod
+
+    Purchase --> Customer : hasCustomer
+    Purchase --> Product : hasProduct
+    Purchase --> PaymentMethod : paidWith

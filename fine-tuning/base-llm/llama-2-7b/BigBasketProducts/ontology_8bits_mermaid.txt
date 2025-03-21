@@ -1,0 +1,38 @@
+classDiagram
+    class Shoe
+
+    class Brand {
+        +availableInRDF : xsd:integer
+        +brandNameInRDF : xsd:string
+        +discountPriceInRDF : xsd:decimal
+        +priceInRDF : xsd:decimal
+        +productCodeInRDF : xsd:string
+        +productNameInRDF : xsd:string
+        +quantityInRDF : xsd:integer
+    }
+
+    class Category {
+        +categoryNameInRDF : xsd:string
+    }
+
+    class SubCategory {
+        +subCategoryNameInRDF : xsd:string
+    }
+
+    class Product {
+        +absoluteUrl : xsd:string
+        +available : xsd:integer
+        +availableInRDF : xsd:integer
+        +discountPrice : xsd:decimal
+        +price : xsd:decimal
+        +productCode : xsd:string
+        +productName : xsd:string
+        +productNameInRDF : xsd:string
+        +quantity : xsd:integer
+        +quantityInRDF : xsd:integer
+    }
+
+    Shoe --> Brand : hasBrand
+    Product --> Category : belongsToCategory
+    Product --> SubCategory : belongsToSubCategory
+    Brand --> Product : hasProduct

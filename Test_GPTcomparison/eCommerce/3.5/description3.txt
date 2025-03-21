@@ -1,0 +1,57 @@
+**Foundational Prefix:**
+- Foundational prefixes for the ontology:
+  - "https://base_ontology.com#"
+  - "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  - "http://www.w3.org/2000/01/rdf-schema#"
+  - "http://www.w3.org/2002/07/owl#"
+
+**Data Description:**
+1. Country: text - country name - string
+2. Description: text - description of an item - string
+3. InvoiceDate: text - date of the invoice - string
+4. InvoiceNo: text - invoice number - string
+5. StockCode: text - stock code of an item - string
+6. CustomerID: Numerical - customer ID - integer
+7. Quantity: Numerical - quantity of items - integer
+8. UnitPrice: Numerical - price per unit - float
+
+**Classes:**
+1. class_entity
+
+**Subclasses:**
+1. entity_name: subclass of -> class_entity
+
+**Object Properties:**
+1. hasCountry: domain - class_entity, range - Country
+2. hasDescription: domain - class_entity, range - Description
+3. hasInvoiceDate: domain - class_entity, range - InvoiceDate
+4. hasInvoiceNo: domain - class_entity, range - InvoiceNo
+5. hasStockCode: domain - class_entity, range - StockCode
+6. hasCustomerID: domain - class_entity, range - CustomerID
+7. hasQuantity: domain - class_entity, range - Quantity
+8. hasUnitPrice: domain - class_entity, range - UnitPrice
+
+**Data Type Properties:**
+1. type: domain - class_entity, range - string
+2. unique_count: domain - class_entity, range - float
+3. count: domain - class_entity, range - float
+4. max: domain - class_entity, range - float
+5. mean: domain - class_entity, range - float
+6. min: domain - class_entity, range - float
+7. std: domain - class_entity, range - float
+
+**Ontology Prefixes:**
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+**Link of each entity to external resources:**
+1. Country: external resource A
+2. Description: external resource B
+3. InvoiceDate: external resource C
+4. InvoiceNo: external resource D
+5. StockCode: external resource E
+6. CustomerID: external resource F
+7. Quantity: external resource G
+8. UnitPrice: external resource H

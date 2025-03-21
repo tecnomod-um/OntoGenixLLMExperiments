@@ -1,0 +1,3 @@
+Shortnames without prefix. Example: class_entity
+
+class_entity rdf:type owl:Class .

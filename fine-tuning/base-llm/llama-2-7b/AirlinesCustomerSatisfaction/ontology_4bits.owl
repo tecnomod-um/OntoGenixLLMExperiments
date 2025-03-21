@@ -1,0 +1,296 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:um="https://vocab.um.es#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#Class -->
+
+    <Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#Age -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#Age">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Age</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#ArrivalDelayMinutes -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#ArrivalDelayMinutes">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Arrival Delay in Minutes</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#BaggageHandling -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#BaggageHandling">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Baggage handling</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#CheckinService -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#CheckinService">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Checkin service</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#Class -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#Class">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Class</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#Cleanliness -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#Cleanliness">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Cleanliness</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#CustomerType -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#CustomerType">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Customer Type</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#DepartureArrivalTimeConvenient -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#DepartureArrivalTimeConvenient">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Departure/Arrival time convenient</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#DepartureDelayMinutes -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#DepartureDelayMinutes">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Departure Delay in Minutes</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#EaseOfOnlineBooking -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#EaseOfOnlineBooking">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Ease of Online booking</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#Flight -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#Flight">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Flight</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#FlightDistance -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#FlightDistance">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Flight Distance</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#FoodAndDrink -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#FoodAndDrink">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Food and drink</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#GateLocation -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#GateLocation">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Gate location</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#Gender -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#Gender">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Gender</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#InflightEntertainment -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#InflightEntertainment">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Inflight entertainment</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#InflightWifiService -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#InflightWifiService">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Inflight wifi service</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#LegRoomService -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#LegRoomService">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Leg room service</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#OnBoardService -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#OnBoardService">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>On-board service</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#OnlineBoard -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#OnlineBoard">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Online boarding</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#OnlineSupport -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#OnlineSupport">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Online support</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#Satisfaction -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#Satisfaction">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Satisfaction</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#SatisfactionWithFlight -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#SatisfactionWithFlight">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Satisfaction with Flight</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#SatisfactionWithOverallExperience -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#SatisfactionWithOverallExperience">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Satisfaction with Overall Experience</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#SatisfactionWithService -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#SatisfactionWithService">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Satisfaction with Service</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#SatisfactionWithTravel -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#SatisfactionWithTravel">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Satisfaction with Travel</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#SeatComfort -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#SeatComfort">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Seat comfort</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://vocab.um.es#TypeOfTravel -->
+
+    <NamedIndividual rdf:about="https://vocab.um.es#TypeOfTravel">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+        <rdfs:label>Type of Travel</rdfs:label>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

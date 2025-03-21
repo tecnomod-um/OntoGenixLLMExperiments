@@ -1,0 +1,54 @@
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+base:Transaction rdf:type owl:Class .
+base:Item rdf:type owl:Class .
+base:Customer rdf:type owl:Class .
+base:Invoice rdf:type owl:Class .
+base:Product rdf:type owl:Class .
+
+base:hasCustomer rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Transaction ;
+    rdfs:range base:Customer .
+
+base:hasItem rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Transaction ;
+    rdfs:range base:Item .
+
+base:country rdf:type owl:DatatypeProperty ;
+    rdfs:domain base:Transaction ;
+    rdfs:range xsd:string .
+
+base:description rdf:type owl:DatatypeProperty ;
+    rdfs:domain base:Item ;
+    rdfs:range xsd:string .
+
+base:invoiceDate rdf:type owl:DatatypeProperty ;
+    rdfs:domain base:Invoice ;
+    rdfs:range xsd:dateTime .
+
+base:invoiceNo rdf:type owl:DatatypeProperty ;
+    rdfs:domain base:Invoice ;
+    rdfs:range xsd:string .
+
+base:stockCode rdf:type owl:DatatypeProperty ;
+    rdfs:domain base:Product ;
+    rdfs:range xsd:string .
+
+base:customerID rdf:type owl:DatatypeProperty ;
+    rdfs:domain base:Customer ;
+    rdfs:range xsd:integer .
+
+base:quantity rdf:type owl:DatatypeProperty ;
+    rdfs:domain base:Item ;
+    rdfs:range xsd:integer .
+
+base:unitPrice rdf:type owl:DatatypeProperty ;
+    rdfs:domain base:Item ;
+    rdfs:range xsd:decimal .
