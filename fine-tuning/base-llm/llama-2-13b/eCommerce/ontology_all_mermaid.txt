@@ -1,0 +1,23 @@
+classDiagram
+    class Order {
+        +lineTotal : xsd:decimal
+        +orderNumber : xsd:string
+        +orderDate : xsd:date
+        +quantity : xsd:integer
+    }
+
+    class Customer {
+        +customerCity : xsd:string
+        +customerCountry : xsd:string
+        +customerName : xsd:string
+        +customerState : xsd:string
+    }
+
+    class Product {
+        +unitPrice : xsd:decimal
+    }
+
+    class Country
+
+    Order --> Product : hasProduct
+    Customer --> Country : belongsToCountry

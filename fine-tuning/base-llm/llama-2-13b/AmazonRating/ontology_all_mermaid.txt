@@ -1,0 +1,27 @@
+classDiagram
+    class Brand
+
+    class Category
+
+    class Product {
+        + discount xsd:decimal
+        + discountWithCurrency xsd:string
+        + price xsd:decimal
+        + priceWithCurrency xsd:string
+        + productName xsd:string
+        + sold xsd:integer
+    }
+
+    class Rating {
+        + rating xsd:decimal
+        + reviews xsd:integer
+    }
+
+    class Timestamp {
+        + lastUpdated xsd:dateTime
+    }
+
+    Product --> Category : belongsToCategory
+    Product --> Brand : hasBrand
+    Product --> Rating : hasRating
+    Product --> Timestamp : hasTimestamp

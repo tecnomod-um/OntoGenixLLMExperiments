@@ -1,0 +1,30 @@
+classDiagram
+    class Category
+
+    class Link
+
+    class Order {
+        + deliveryDate xsd:date
+        + margin xsd:decimal
+        + marginAsPercentage xsd:decimal
+        + orderDate xsd:date
+        + orderNumber xsd:string
+        + profit xsd:decimal
+        + quantityOrdered xsd:integer
+        + revenue xsd:decimal
+    }
+
+    class Product {
+        + discountApplied xsd:decimal
+        + discountAppliedAsPercentage xsd:decimal
+        + priceEach xsd:decimal
+        + priceWithoutDiscount xsd:decimal
+    }
+
+    class SubCategory
+
+    Order --> Category : belongsToCategory
+    Order --> SubCategory : belongsToSubCategory
+    Order --> Link : hasLink
+    Order --> Product : hasProduct
+    Link --> Product : hasProduct

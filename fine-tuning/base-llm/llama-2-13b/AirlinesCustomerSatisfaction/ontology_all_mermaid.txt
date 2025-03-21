@@ -1,0 +1,37 @@
+classDiagram
+    class Class
+
+    class Customer {
+        + gender xsd:string
+        + age xsd:integer
+    }
+
+    class Ticket {
+        + arrivalDelayInMinutes xsd:integer
+        + baggageHandling xsd:decimal
+        + checkInService xsd:decimal
+        + class xsd:string
+        + cleanliness xsd:decimal
+        + departureDelayInMinutes xsd:integer
+        + departureOrArrivalTimeConvenient xsd:decimal
+        + easeOfOnlineBooking xsd:decimal
+        + flightDistance xsd:decimal
+        + foodAndDrink xsd:decimal
+        + gateLocation xsd:integer
+        + inflightEntertainment xsd:decimal
+        + inflightWifiService xsd:decimal
+        + legRoomService xsd:decimal
+        + onBoardService xsd:decimal
+        + onlineBoarding xsd:decimal
+        + onlineSupport xsd:decimal
+        + satisfaction xsd:string
+        + seatComfort xsd:decimal
+        + ticketID xsd:string
+        + ticketPrice xsd:decimal
+        + ticketQuantity xsd:integer
+        + typeOfTravel xsd:string
+    }
+
+    class TypeOfTravel
+
+    Customer --> Ticket : hasTicket

@@ -1,0 +1,40 @@
+classDiagram
+    class Country
+    class Customer
+
+    class Order {
+        +hasCustomer : xsd:string
+        +hasOrderPurchaseDate : xsd:date
+        +hasOrderPurchaseTime : xsd:time
+        +hasOrderStatus : xsd:string
+    }
+
+    class OrderDate
+    class OrderDeliveredCity
+    class OrderDeliveredCountry
+    class OrderDeliveredDate
+    class OrderDeliveredState
+    class OrderEstimatedDeliveryDate
+    class OrderLineItem
+    class OrderPurchaseDate
+    class OrderPurchaseTime
+    class OrderStatus
+    class Product
+    class SalesTeam
+    class SalesTeamName
+    class SalesTeamState
+    class State
+
+    Customer --> SalesTeamName : hasCustomerName
+    Customer --> Order : hasOrder
+    Order --> OrderDeliveredCity : hasOrderDeliveredCity
+    Order --> OrderDeliveredDate : hasOrderDeliveredDate
+    OrderLineItem --> Product : hasOrderLineItemName
+    OrderStatus --> SalesTeamName : hasOrderStatusName
+    Product --> SalesTeamName : hasProductName
+    Order --> OrderDeliveredCountry : hasOrderDeliveredCountry
+    Order --> Country : hasOrderDeliveredCountry
+    Order --> OrderDeliveredState : hasOrderDeliveredState
+    Order --> State : hasOrderDeliveredState
+    Order --> OrderEstimatedDeliveryDate : hasOrderEstimatedDeliveryDate
+    Order --> OrderLineItem : hasOrderLineItems

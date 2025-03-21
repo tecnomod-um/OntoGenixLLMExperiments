@@ -1,0 +1,36 @@
+classDiagram
+    class Company {
+        +companyName : xsd:string
+    }
+
+    class ConsumerComplaint {
+        +consumerComplaintID : xsd:string
+        +consumerComplaintDate : xsd:date
+    }
+
+    class Issue {
+        +issueName : xsd:string
+        +issueDescription : xsd:string
+    }
+
+    class Product {
+        +productName : xsd:string
+        +productID : xsd:string
+    }
+
+    class SubProduct {
+        +subProductName : xsd:string
+        +subProductID : xsd:string
+    }
+
+    class Transaction {
+        +transactionID : xsd:string
+        +transactionDate : xsd:date
+        +transactionAmount : xsd:decimal
+    }
+
+    Transaction --> Company : belongsToCompany
+    Transaction --> ConsumerComplaint : hasConsumerComplaint
+    Product --> Transaction : hasTransaction
+    Product --> SubProduct : hasSubProduct
+    Transaction --> Issue : hasIssue
