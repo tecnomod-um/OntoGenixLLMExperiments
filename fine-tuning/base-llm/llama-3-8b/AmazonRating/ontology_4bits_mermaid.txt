@@ -1,0 +1,12 @@
+classDiagram
+    class Product {
+        +productId : xsd:string
+        +rating : xsd:decimal
+        +timestamp : xsd:decimal
+    }
+
+    class ProductRating
+
+    class User {
+        +userId : xsd:string
+    }

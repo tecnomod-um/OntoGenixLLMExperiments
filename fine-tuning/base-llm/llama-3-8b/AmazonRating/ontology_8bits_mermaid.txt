@@ -1,0 +1,28 @@
+classDiagram
+
+    class Category
+
+    class Product {
+        +hasID : xsd:string
+        +hasName : xsd:string
+        +hasRating : xsd:decimal
+    }
+
+    class ProductReview {
+    }
+
+    class Review {
+        +hasTimestamp : xsd:integer
+    }
+
+    class SubCategory
+
+    class User
+
+    ProductReview --> User : hasAuthor
+    Product --> Category : hasCategory
+    SubCategory --> Category : hasCategory
+    ProductReview --> Product : hasProduct
+    Product --> SubCategory : hasSubCategory
+
+    ProductReview --|> Review :subClassOf

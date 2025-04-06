@@ -1,0 +1,11 @@
+Ontology without syntax errors, but semantic errors: 
+
+- object properties as datatype properties:
+
+um:category rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:category ;
+    rdfs:label "category". 
+	
+
+- um:category defined as owl:Class, owl:ObjectProperty and owl:DatatyProperty

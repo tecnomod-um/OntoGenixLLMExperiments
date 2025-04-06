@@ -1,0 +1,23 @@
+classDiagram
+
+    class Product
+
+    class Rating {
+        +hasRatingValue : xsd:integer
+    }
+
+    class Review {
+        +hasReviewValue : xsd:string
+    }
+
+    class Timestamp {
+        +hasTimestamp : xsd:integer
+    }
+
+    class User
+
+    Review --> Product : hasProduct
+    Review --> Rating : hasRating
+    Review --> Timestamp : hasTimestamp
+    Timestamp --> Timestamp : hasTimestamp
+    Review --> User : hasUser

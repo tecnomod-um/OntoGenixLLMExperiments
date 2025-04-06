@@ -1,0 +1,28 @@
+classDiagram
+
+class Customer {
+  +hasCustomerName: xsd:string
+}
+
+class Date
+
+class Delivery {
+  +hasDeliveryDateTime: xsd:dateTime
+  +hasDeliveryTimestamp: xsd:dateTime
+  +hasOrderStatus: xsd:string
+  +hasOrderTimestamp: xsd:dateTime
+}
+
+class Location
+
+class Product {
+  +hasProductName: xsd:string
+}
+
+Product --> Customer : hasCustomer
+Product --> Date : hasDate
+Delivery --> Location : hasDeliveriedAt
+Product --> Delivery : hasDelivery
+Delivery --> Location : hasLocation
+Customer --> Product : hasProduct
+

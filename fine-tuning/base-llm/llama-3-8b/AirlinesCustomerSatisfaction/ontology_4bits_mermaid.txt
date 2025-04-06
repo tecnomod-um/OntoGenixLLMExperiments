@@ -1,0 +1,43 @@
+ classDiagram
+    class Age {
+        +hasAgeRange : xsd:string
+    }
+
+    class Airline
+
+    class AirlineService {
+        +hasAirline : xsd:string
+    }
+
+    class Class {
+        +hasClass : xsd:string
+    }
+
+    class Customer {
+        +hasAge : xsd:integer
+        +hasCustomerType : xsd:string
+        +hasSatisfaction : xsd:string
+    }
+
+    class CustomerType
+
+    class Gender
+
+    class Position {
+        +hasPosition : xsd:string
+    }
+
+    class TypeOfTravel {
+        +hasTypeOfTravel : xsd:string
+    }
+
+    AirlineService --> Airline : hasAirline
+    Position --> Class : hasArrivalDelay
+    Position --> Class : hasBaggageHandling
+    Position --> Class : hasBoarding
+    Customer --> CustomerType : hasCustomerType
+    Position --> Class : hasDepartureDelay
+    Customer --> Gender : hasGender
+    Airline --> Class : hasInflightEntertainment
+    Class --> Position : hasLegRoomService
+    Airline --> TypeOfTravel : hasOnlineBooking

@@ -1,0 +1,24 @@
+classDiagram
+
+    class Brand
+
+    class category
+
+    class Price {
+        +available : xsd:decimal
+        +discountPrice : xsd:decimal
+        +lineOfSales : xsd:decimal
+        +price : xsd:decimal
+        +pricePerUnit : xsd:decimal
+        +quantity : xsd:decimal
+        +rating : xsd:decimal
+        +reviews : xsd:decimal
+    }
+
+    class Product {
+        +productName : xsd:string
+    }
+
+    Product --> Brand : hasBrand
+    Product --> category : belongsToCategory
+    Product --> category : category

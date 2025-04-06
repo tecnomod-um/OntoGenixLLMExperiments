@@ -2,3 +2,7 @@ Missing end dots at the end of "Classes" and "Datatype properties" sections. Exa
 
 um:Timestamp rdf:type owl:Class ;
     rdfs:label "Timestamp" 
+	
+
+There are object properties that have more than one entity as domain, but with "and" operator instead of "or". 
+Example: hasTimestamp (Review and Timestamp as domain, Timestamp as range).

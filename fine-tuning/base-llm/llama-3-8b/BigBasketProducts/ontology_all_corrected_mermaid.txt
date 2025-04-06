@@ -1,0 +1,31 @@
+classDiagram
+
+class Brand
+
+class Category
+
+class DiscountPrice {
+  +discountPrice: xsd:decimal
+}
+
+class Price {
+  +price: xsd:decimal
+}
+
+class Product {
+  +brand: xsd:string
+  +category: xsd:string
+  +productName: xsd:string
+  +subCategory: xsd:string
+}
+
+class Quantity {
+  +quantity: xsd:string
+}
+
+class SubCategory
+
+Product --> Category : belongsToCategory
+Product --> SubCategory : belongsToSubCategory
+Product --> DiscountPrice : hasDiscountPrice
+Product --> Price : hasPrice

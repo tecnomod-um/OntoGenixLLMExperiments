@@ -1,0 +1,32 @@
+classDiagram
+    class Airline
+
+    class Class 
+
+    class Customer {
+        +hasAge : xsd:integer
+        +hasGender : xsd:string
+        +hasSatisfaction : xsd:string
+        +hasTypeOfTravel : xsd:string
+    }
+
+    class Flight {
+        +hasFlightDistance : xsd:integer
+    }
+
+    Flight --> Class : hasBaggageHandling
+    Flight --> Class : hasCheckinService
+    Fligh --> Class : hasClass
+    Flight --> Class : hasCleanliness
+    Flight --> Class : hasDepartureArrivalTimeConvenient
+    Flight --> Class : hasEaseOfOnlineBooking    
+    Flight --> Class : hasFoodAndDrink
+    Flight --> Class : hasGateLocation
+    Flight --> Customer : hasCustomer
+    Flight --> Class : hasInflightEntertainment
+    Flight --> Class : hasInflightWifiService
+    Flight --> Class : hasLegRoomService
+    Flight --> Class : hasOnboardService
+    Flight --> Class : hasOnlineBoarding
+    Flight --> Class : hasOnlineSupport
+    Flight --> Class : hasSeatComfort

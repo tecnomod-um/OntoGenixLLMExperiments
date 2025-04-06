@@ -1,0 +1,23 @@
+classDiagram
+
+class City
+
+class Customer {
+  +customerID: xsd:string
+}
+
+class Order {
+  +orderApprovedAt: xsd:date
+  +orderDeliveredCarrierDate: xsd:date
+  +orderDeliveredCustomerDate: xsd:date
+  +orderEstimatedDeliveryDate: xsd:date
+  +orderId: xsd:string
+  +orderPurchaseTimestamp: xsd:date
+  +orderStatus: xsd:string
+}
+
+class Product
+
+Order --> City : occursInCity
+Order --> Customer : hasCustomer
+Order --> Product : hasProduct

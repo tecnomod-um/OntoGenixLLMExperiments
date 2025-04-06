@@ -1,0 +1,8 @@
+Ontology without syntax errors, but semantic errors: 
+
+-   Object properties as datatype properties. 
+
+    um:hasDeliveredAt rdf:type owl:DatatypeProperty ;
+        rdfs:domain um:Delivery ;
+        rdfs:range um:Location ;
+        rdfs:label "Has delivered at"@en. 

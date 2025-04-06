@@ -1,0 +1,42 @@
+classDiagram
+
+class Brand
+class Category
+class SubCategory
+
+class Customer {
+  +hasCustomerID: xsd:string
+}
+
+class Order {
+  +hasOrderApprovedAt: xsd:
+  +hasOrderDeliveredCarrierDate: xsd:dateTime
+  +hasOrderDeliveredCustomerDate: xsd:dateTime
+  +hasOrderEstimatedDeliveryDate: xsd:dateTime
+  +hasOrderID: xsd:string
+  +hasOrderPurchaseTimestamp: xsd:dateTime
+}
+
+class PaymentMethod
+class Product
+class ProductGroup
+class Region
+class State
+class City
+class Country
+
+SubCategory --|> Category :subClassOf
+City --|> State :subClassOf
+Country --|> State :subClassOf
+
+Product --> Category : belongsToCategory
+Country --> City : belongsToCity
+Customer --> Country : belongsToCountry
+Product --> ProductGroup : belongsToProductGroup
+Country --> Region : belongsToRegion
+Product --> SubCategory : belongsToSubCategory
+Product --> Brand : hasBrand
+Order --> Customer : hasCustomer
+Order --> PaymentMethod : hasPaymentMethod
+Order --> Product : hasProduct
+Customer --> State : hasState

@@ -18,7 +18,7 @@ um:Product rdf:type owl:Class ;
     rdfs:label "Product".
 
 um:City rdf:type owl:Class ;
-    rdfs:label "City" 
+    rdfs:label "City".
 
 
 ### Data Properties ###
@@ -61,7 +61,7 @@ um:orderDeliveredCustomerDate rdf:type owl:DatatypeProperty ;
 um:orderEstimatedDeliveryDate rdf:type owl:DatatypeProperty ;
     rdfs:domain um:Order ;
     rdfs:range xsd:date ;
-    rdfs:label "order estimated delivery date" 
+    rdfs:label "order estimated delivery date".
 
 
 ### Object Properties ###

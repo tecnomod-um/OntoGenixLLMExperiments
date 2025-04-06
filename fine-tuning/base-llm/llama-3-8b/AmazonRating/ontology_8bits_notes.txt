@@ -1,0 +1,4 @@
+Ontology without syntax errors.
+
+There are object properties that have more than one entity as domain, 
+but with "and" operator instead of "or". Example: hasCategory.

@@ -1,0 +1,17 @@
+classDiagram
+
+class Category
+
+class Price {
+  +hasPrice: xsd:decimal
+  +hasDiscountPrice: xsd:decimal
+}
+
+class Product {
+  +hasQuantity: xsd:string
+}
+
+class SubCategory
+
+Product --> Category : hasCategory
+Product --> SubCategory : hasSubCategory

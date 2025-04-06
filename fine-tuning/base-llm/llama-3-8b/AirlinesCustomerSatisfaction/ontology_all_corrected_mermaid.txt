@@ -1,0 +1,43 @@
+classDiagram
+    class Class
+
+    class Customer {
+        +hasAge : xsd:integer
+        +hasSatisfaction : xsd:string
+    }
+
+    class CustomerType
+
+    class Delay
+
+    class Flight {
+        +hasFlightDistance : xsd:integer
+    }
+
+    class Service {
+        +hasBaggageHandling : xsd:integer
+        +hasCheckinService : xsd:integer
+        +hasCleanliness : xsd:integer
+        +hasDepartureArrivalTime : xsd:integer
+        +hasEaseOfOnlineBooking : xsd:integer
+        +hasFoodDrink : xsd:integer
+        +hasGateLocation : xsd:integer
+        +hasInflightEntertainment : xsd:integer
+        +hasInflightWifiService : xsd:integer
+        +hasLegRoomService : xsd:integer
+        +hasOnboardService : xsd:integer
+        +hasOnlineBoarding : xsd:integer
+        +hasOnlineSupport : xsd:integer
+        +hasSeatComfort : xsd:integer
+    }
+
+    class TravelType
+
+    Flight --> Delay : hasArrivalDelay
+    Flight --> Class : belongsToClass
+    Flight --> Delay : hasDepartureDelay
+    Customer --> Customer : hasCustomer
+    Flight --> Delay : hasDelay
+    Flight --> Service : hasService
+    Customer --> TravelType : hasTravelType
+    Customer --> CustomerType : hasType
