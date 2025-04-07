@@ -31,6 +31,7 @@ The following LLMs will be used:
 * Llama 3 (8B) quantized at 8 bits
 * Llama 3 (8B) without quantization
 * GPT-4o-mini
+* GPT-3.5-turbo
 
 ### Launch of the fine-tuning job (GPT model via OpenAI)
 For OpenAI models, launching a fine-tuning job using the **GPT-4o-mini** model involves the following steps:
