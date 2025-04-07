@@ -17,7 +17,7 @@ For the fine-tuning process, a **training dataset** is required, consisting of a
 
 Need a total of **40 examples (pairs CSV file-ontology)** for the fine-tuning process of the LLMs. 
 * A total of 30 examples as [**training data**](./training_data/train_data.jsonl).
-* A total of 10 examples as [**validation data**](./training_data/validation.jsonl).
+* A total of 10 examples as [**validation data**](./training_data/validation_data.jsonl).
 * 6 datasets related to commercial activities from Ontogenix paper as [**test data**](./test_files).
 
 This process is reflected in the Python script named [preparation_training_dataset.py](./scripts/preparation_training_dataset.py?ref_type=heads). To use the script, the next line code is needed:
