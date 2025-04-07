@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:ProductCatalog rdf:type owl:Ontology .
+
+### Classes ###
+
+um:Product rdf:type owl:Class .
+um:Brand rdf:type owl:Class .
+um:Category rdf:type owl:Class .
+um:SubCategory rdf:type owl:Class .
+
+### Data Properties ###
+
+um:productName rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string .
+
+um:price rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:decimal .
+
+um:discountPrice rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:decimal .
+
+um:imageUrl rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:anyURI .
+
+um:quantity rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string .
+
+um:absoluteUrl rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:anyURI .
+
+### Object Properties ###
+
+um:hasBrand rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:Brand .
+
+um:hasCategory rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:Category .
+
+um:hasSubCategory rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:SubCategory .
+
+### Instances ###
+
+# Example for class Brand
+# um:BBPopular rdf:type um:Brand .
+```
