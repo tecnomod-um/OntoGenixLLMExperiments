@@ -5,7 +5,7 @@ When referring to **ontology building capacity**, we refer to the model's abilit
 This includes the model's proficiency in accurately mapping data to concepts, defining classes, properties, and relationships, and constructing a coherent framework that represents the information in a meaningful and logically consistent way.
 
 We have studied the ontology-building capabilities of:
-* GPT base models from OpenAI and open-source LLMs through the **prompt** (experiments realized by Juan Mulero and Ronghao Pan, respectively).
+* GPT base models from OpenAI and open-source LLMs through the **prompt**.
 * **Fine-tuning**, the model is trained on new, targeted data, allowing it to adapt effectively to a specific context, such as the ontology building.
 
 ## Fine-tuning process
