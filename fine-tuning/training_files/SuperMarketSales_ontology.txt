@@ -1,0 +1,93 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:SuperMarketSalesOntology rdf:type owl:Ontology .
+
+### Classes ###
+um:Customer rdf:type owl:Class ;
+    rdfs:label "Customer"@en .
+
+um:Branch rdf:type owl:Class ;
+    rdfs:label "Branch"@en .
+
+um:City rdf:type owl:Class ;
+    rdfs:label "City"@en .
+
+um:ProductLine rdf:type owl:Class ;
+    rdfs:label "Product Line"@en .
+
+um:PaymentMethod rdf:type owl:Class ;
+    rdfs:label "Payment Method"@en .
+
+um:Invoice rdf:type owl:Class ;
+    rdfs:label "Invoice"@en .
+
+### Data Properties ###
+um:hasGender rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:string ;
+    rdfs:label "Gender"@en .
+
+um:hasUnitPrice rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:ProductLine ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Unit Price"@en .
+
+um:hasQuantity rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:ProductLine ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Quantity"@en .
+
+um:hasTax rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Invoice ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Tax 5%"@en .
+
+um:hasTotal rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Invoice ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total"@en .
+
+um:hasCOGS rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:ProductLine ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Cost of Goods Sold (COGS)"@en .
+
+um:hasGrossIncome rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Invoice ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Gross Income"@en .
+
+um:hasRating rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:ProductLine ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Rating"@en .
+
+### Object Properties ###
+um:isInBranch rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Invoice ;
+    rdfs:range um:Branch ;
+    rdfs:label "Is In Branch"@en .
+
+um:isInCity rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Invoice ;
+    rdfs:range um:City ;
+    rdfs:label "Is In City"@en .
+
+um:hasProductLine rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Invoice ;
+    rdfs:range um:ProductLine ;
+    rdfs:label "Has Product Line"@en .
+
+um:usesPaymentMethod rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Invoice ;
+    rdfs:range um:PaymentMethod ;
+    rdfs:label "Uses Payment Method"@en .
+
+um:hasCustomer rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Invoice ;
+    rdfs:range um:Customer ;
+    rdfs:label "Has Customer"@en .

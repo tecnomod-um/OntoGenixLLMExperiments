@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:SmartphoneSalesOntology rdf:type owl:Ontology .
+
+### Classes ###
+um:Product rdf:type owl:Class ;
+    rdfs:label "Product"@en .
+
+um:Payment rdf:type owl:Class ;
+    rdfs:label "Payment"@en .
+
+um:TypeOfProduct rdf:type owl:Class ;
+    rdfs:label "Type of Product"@en .
+
+um:Order rdf:type owl:Class ;
+    rdfs:label "Order"@en .
+
+um:Date rdf:type owl:Class ;
+    rdfs:label "Date"@en .
+
+### Data Properties ###
+um:hasQuarter rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Quarter"@en .
+
+um:hasPrice rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Price"@en .
+
+um:hasAmount rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Amount"@en .
+
+um:hasQuantity rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Quantity"@en .
+
+### Object Properties ###
+um:hasPaymentType rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:Payment ;
+    rdfs:label "Has Payment Type"@en .
+
+um:hasTypeOfProduct rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:TypeOfProduct ;
+    rdfs:label "Has Type of Product"@en .
+
+um:belongsToOrder rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:Order ;
+    rdfs:label "Belongs to Order"@en .
+
+um:hasDate rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:Date ;
+    rdfs:label "Has Date"@en .

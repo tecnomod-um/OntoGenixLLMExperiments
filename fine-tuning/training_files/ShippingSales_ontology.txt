@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:ShippingSalesOntology rdf:type owl:Ontology .
+
+### Classes ###
+um:Customer rdf:type owl:Class ;
+    rdfs:label "Customer"@en .
+
+um:WarehouseBlock rdf:type owl:Class ;
+    rdfs:label "Warehouse Block"@en .
+
+um:ModeOfShipment rdf:type owl:Class ;
+    rdfs:label "Mode of Shipment"@en .
+
+um:Product rdf:type owl:Class ;
+    rdfs:label "Product"@en .
+
+### Data Properties ###
+um:hasCustomerCareCalls rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Customer Care Calls"@en .
+
+um:hasCustomerRating rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Customer Rating"@en .
+
+um:hasCostOfTheProduct rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Cost of the Product"@en .
+
+um:hasPriorPurchases rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Prior Purchases"@en .
+
+um:hasDiscountOffered rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Discount Offered"@en .
+
+um:hasWeightInGrams rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Weight in Grams"@en .
+
+### Object Properties ###
+um:isShippedFrom rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:WarehouseBlock ;
+    rdfs:label "Is Shipped From"@en .
+
+um:isShippedBy rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:ModeOfShipment ;
+    rdfs:label "Is Shipped By"@en .
+
+um:purchases rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range um:Product ;
+    rdfs:label "Purchases"@en .

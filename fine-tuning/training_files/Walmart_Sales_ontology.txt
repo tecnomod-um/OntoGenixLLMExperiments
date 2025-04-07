@@ -1,0 +1,36 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:Store a owl:Class .
+
+um:Sales_Record a owl:Class .
+
+um:hasDate a owl:DatatypeProperty ;
+    rdfs:domain um:Sales_Record ;
+    rdfs:range xsd:date .
+
+um:hasWeeklySales a owl:DatatypeProperty ;
+    rdfs:domain um:Sales_Record ;
+    rdfs:range xsd:decimal .
+
+um:hasTemperature a owl:DatatypeProperty ;
+    rdfs:domain um:Sales_Record ;
+    rdfs:range xsd:decimal .
+
+um:hasFuelPrice a owl:DatatypeProperty ;
+    rdfs:domain um:Sales_Record ;
+    rdfs:range xsd:decimal .
+
+um:hasCPI a owl:DatatypeProperty ;
+    rdfs:domain um:Sales_Record ;
+    rdfs:range xsd:decimal .
+
+um:hasUnemploymentRate a owl:DatatypeProperty ;
+    rdfs:domain um:Sales_Record ;
+    rdfs:range xsd:decimal .
+
+um:recordedAtStore a owl:ObjectProperty ;
+    rdfs:domain um:Sales_Record ;
+    rdfs:range um:Store .

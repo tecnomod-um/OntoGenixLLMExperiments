@@ -1,0 +1,82 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:RetailSalesOntology rdf:type owl:Ontology .
+
+### Classes ###
+
+um:Transaction rdf:type owl:Class ;
+    rdfs:label "Transaction" .
+
+um:Customer rdf:type owl:Class ;
+    rdfs:label "Customer" .
+
+um:Product rdf:type owl:Class ;
+    rdfs:label "Product" .
+
+um:ProductCategory rdf:type owl:Class ;
+    rdfs:label "Product Category" .
+
+
+### Data Properties ###
+
+um:transactionID rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "transaction ID" .
+
+um:transactionDate rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range xsd:date ;
+    rdfs:label "transaction date" .
+
+um:customerID rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:string ;
+    rdfs:label "customer ID" .
+
+um:gender rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:string ;
+    rdfs:label "gender" .
+
+um:age rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:integer ;
+    rdfs:label "age" .
+
+um:quantity rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "quantity" .
+
+um:pricePerUnit rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "price per unit" .
+
+um:totalAmount rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "total amount" .
+
+
+### Object Properties ###
+
+um:hasCustomer rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range um:Customer ;
+    rdfs:label "has customer" .
+
+um:involvesProduct rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range um:Product ;
+    rdfs:label "involves product" .
+
+um:belongsToCategory rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:ProductCategory ;
+    rdfs:label "belongs to category" .

@@ -1,0 +1,97 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:FoodSalesOntology rdf:type owl:Ontology .
+
+### Classes ###
+
+um:Order rdf:type owl:Class ;
+    rdfs:label "Order" .
+
+um:Item rdf:type owl:Class ;
+    rdfs:label "Item" .
+
+um:Transaction rdf:type owl:Class ;
+    rdfs:label "Transaction" .
+
+um:Person rdf:type owl:Class ;
+    rdfs:label "Person" .
+
+um:Datetime rdf:type owl:Class ;
+    rdfs:label "Datetime" .
+
+um:Time rdf:type owl:Class ;
+    rdfs:label "Time" .
+
+### Data Properties ###
+
+um:orderId rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range xsd:string ;
+    rdfs:label "order ID" .
+
+um:itemName rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Item ;
+    rdfs:range xsd:string ;
+    rdfs:label "item name" .
+
+um:itemType rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Item ;
+    rdfs:range xsd:string ;
+    rdfs:label "item type" .
+
+um:itemPrice rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Item ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "item price" .
+
+um:quantity rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range xsd:integer ;
+    rdfs:label "quantity" .
+
+um:transactionAmount rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "transaction amount" .
+
+um:transactionType rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "transaction type" .
+
+um:receivedBy rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Person ;
+    rdfs:range xsd:string ;
+    rdfs:label "received by" .
+
+
+### Object Properties ###
+
+um:includesItem rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:Item ;
+    rdfs:label "includes item" .
+
+um:hasTransaction rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:Transaction ;
+    rdfs:label "has transaction" .
+
+um:handledBy rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range um:Person ;
+    rdfs:label "handled by" .
+
+um:hasDatetime rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:Datetime ;
+    rdfs:label "has datetime" .
+
+um:hasTime rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Datetime ;
+    rdfs:range um:Time ;
+    rdfs:label "has time" .

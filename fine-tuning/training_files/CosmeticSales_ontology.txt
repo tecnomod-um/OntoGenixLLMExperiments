@@ -1,0 +1,101 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:CosmeticSalesOntology rdf:type owl:Ontology .
+
+### Classes ###
+
+um:Product rdf:type owl:Class ;
+    rdfs:label "Product" .
+
+um:Brand rdf:type owl:Class ;
+    rdfs:label "Brand" .
+
+um:Category rdf:type owl:Class ;
+    rdfs:label "Category" .
+
+um:Subcategory rdf:type owl:Class ;
+    rdfs:subClassOf um:Category ;
+    rdfs:label "Subcategory" .
+
+um:Country rdf:type owl:Class ;
+    rdfs:label "Country" .
+
+
+### Data Properties ###
+
+um:productName rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string ;
+    rdfs:label "product name" .
+
+um:website rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string ;
+    rdfs:label "website" .
+
+um:price rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "price" .
+
+um:ingredients rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string ;
+    rdfs:label "ingredients" .
+
+um:form rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string ;
+    rdfs:label "form" .
+
+um:productType rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string ;
+    rdfs:label "type" .
+
+um:color rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string ;
+    rdfs:label "color" .
+
+um:size rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string ;
+    rdfs:label "size" .
+
+um:rating rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "rating" .
+
+um:noOfRatings rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:integer ;
+    rdfs:label "number of ratings" .
+
+
+### Object Properties ###
+
+um:hasBrand rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:Brand ;
+    rdfs:label "has brand" .
+
+um:belongsToCategory rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:Category ;
+    rdfs:label "belongs to category" .
+
+um:belongsToSubcategory rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:Subcategory ;
+    rdfs:label "belongs to subcategory" .
+
+um:availableInCountry rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:Country ;
+    rdfs:label "available in country" .

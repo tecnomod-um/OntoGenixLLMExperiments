@@ -1,0 +1,82 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:CarSales a owl:Ontology .
+
+# Classes
+um:Car a owl:Class .
+um:Seller a owl:Class .
+
+# Object Properties
+um:hasSeller a owl:ObjectProperty ;
+    rdfs:domain um:Car ;
+    rdfs:range um:Seller .
+
+# Data Properties
+um:year a owl:DatatypeProperty ;
+    rdfs:domain um:Car ;
+    rdfs:range xsd:integer .
+
+um:make a owl:DatatypeProperty ;
+    rdfs:domain um:Car ;
+    rdfs:range xsd:string .
+
+um:model a owl:DatatypeProperty ;
+    rdfs:domain um:Car ;
+    rdfs:range xsd:string .
+
+um:trim a owl:DatatypeProperty ;
+    rdfs:domain um:Car ;
+    rdfs:range xsd:string .
+
+um:body a owl:DatatypeProperty ;
+    rdfs:domain um:Car ;
+    rdfs:range xsd:string .
+
+um:transmission a owl:DatatypeProperty ;
+    rdfs:domain um:Car ;
+    rdfs:range xsd:string .
+
+um:vin a owl:DatatypeProperty ;
+    rdfs:domain um:Car ;
+    rdfs:range xsd:string .
+
+um:state a owl:DatatypeProperty ;
+    rdfs:domain um:Car ;
+    rdfs:range xsd:string .
+
+um:condition a owl:DatatypeProperty ;
+    rdfs:domain um:Car ;
+    rdfs:range xsd:float .
+
+um:odometer a owl:DatatypeProperty ;
+    rdfs:domain um:Car ;
+    rdfs:range xsd:float .
+
+um:color a owl:DatatypeProperty ;
+    rdfs:domain um:Car ;
+    rdfs:range xsd:string .
+
+um:interior a owl:DatatypeProperty ;
+    rdfs:domain um:Car ;
+    rdfs:range xsd:string .
+
+um:sellerName a owl:DatatypeProperty ;
+    rdfs:domain um:Seller ;
+    rdfs:range xsd:string .
+
+um:mmr a owl:DatatypeProperty ;
+    rdfs:domain um:Car ;
+    rdfs:range xsd:float .
+
+um:sellingPrice a owl:DatatypeProperty ;
+    rdfs:domain um:Car ;
+    rdfs:range xsd:float .
+
+um:saleDate a owl:DatatypeProperty ;
+    rdfs:domain um:Car ;
+    rdfs:range xsd:string .
+

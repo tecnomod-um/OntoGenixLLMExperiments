@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:DepartmentStoreOntology rdf:type owl:Ontology .
+
+### Classes ###
+
+um:Seller rdf:type owl:Class ;
+    rdfs:label "Seller" .
+
+um:Department rdf:type owl:Class ;
+    rdfs:label "Department" .
+
+um:SalesRecord rdf:type owl:Class ;
+    rdfs:label "Sales Record" .
+
+
+### Data Properties ###
+
+um:sellerName rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Seller ;
+    rdfs:range xsd:string ;
+    rdfs:label "seller name" .
+
+um:departmentName rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Department ;
+    rdfs:range xsd:string ;
+    rdfs:label "department name" .
+
+um:revenue rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:SalesRecord ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "revenue" .
+
+um:revenueGoal rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:SalesRecord ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "revenue goal" .
+
+um:margin rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:SalesRecord ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "margin" .
+
+um:marginGoal rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:SalesRecord ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "margin goal" .
+
+um:salesDate rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:SalesRecord ;
+    rdfs:range xsd:date ;
+    rdfs:label "sales date" .
+
+um:salesQuantity rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:SalesRecord ;
+    rdfs:range xsd:integer ;
+    rdfs:label "sales quantity" .
+
+um:customers rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:SalesRecord ;
+    rdfs:range xsd:integer ;
+    rdfs:label "customers" .
+
+
+### Object Properties ###
+
+um:hasSeller rdf:type owl:ObjectProperty ;
+    rdfs:domain um:SalesRecord ;
+    rdfs:range um:Seller ;
+    rdfs:label "has seller" .
+
+um:belongsToDepartment rdf:type owl:ObjectProperty ;
+    rdfs:domain um:SalesRecord ;
+    rdfs:range um:Department ;
+    rdfs:label "belongs to department" .

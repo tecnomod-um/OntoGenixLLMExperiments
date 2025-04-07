@@ -1,0 +1,115 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix um: <https://vocab.um.es/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+um:americano a owl:DatatypeProperty ;
+    rdfs:label "Americano" ;
+    rdfs:domain um:Beverages ;
+    rdfs:range xsd:decimal .
+
+um:angbutter a owl:DatatypeProperty ;
+    rdfs:label "Angbutter" ;
+    rdfs:domain um:Meals ;
+    rdfs:range xsd:decimal .
+
+um:berry_ade a owl:DatatypeProperty ;
+    rdfs:label "Berry Ade" ;
+    rdfs:domain um:Beverages ;
+    rdfs:range xsd:decimal .
+
+um:cacao_deep a owl:DatatypeProperty ;
+    rdfs:label "Cacao Deep" ;
+    rdfs:domain um:Meals ;
+    rdfs:range xsd:decimal .
+
+um:caffe_latte a owl:DatatypeProperty ;
+    rdfs:label "Caffe Latte" ;
+    rdfs:domain um:Beverages ;
+    rdfs:range xsd:decimal .
+
+um:croissant a owl:DatatypeProperty ;
+    rdfs:label "Croissant" ;
+    rdfs:domain um:Meals ;
+    rdfs:range xsd:decimal .
+
+um:croque_monsieur a owl:DatatypeProperty ;
+    rdfs:label "Croque Monsieur" ;
+    rdfs:domain um:Meals ;
+    rdfs:range xsd:decimal .
+
+um:datetime a owl:DatatypeProperty ;
+    rdfs:label "Datetime" ;
+    rdfs:domain um:BakerySales ;
+    rdfs:range xsd:dateTime .
+
+um:day_of_week a owl:DatatypeProperty ;
+    rdfs:label "Day Of Week" ;
+    rdfs:domain um:BakerySales ;
+    rdfs:range xsd:string .
+
+um:lemon_ade a owl:DatatypeProperty ;
+    rdfs:label "Lemon Ade" ;
+    rdfs:domain um:Beverages ;
+    rdfs:range xsd:decimal .
+
+um:mad_garlic a owl:DatatypeProperty ;
+    rdfs:label "Mad Garlic" ;
+    rdfs:domain um:Meals ;
+    rdfs:range xsd:decimal .
+
+um:milk_tea a owl:DatatypeProperty ;
+    rdfs:label "Milk Tea" ;
+    rdfs:domain um:Beverages ;
+    rdfs:range xsd:decimal .
+
+um:orange_pound a owl:DatatypeProperty ;
+    rdfs:label "Orange Pound" ;
+    rdfs:domain um:Meals ;
+    rdfs:range xsd:decimal .
+
+um:pain_au_chocolat a owl:DatatypeProperty ;
+    rdfs:label "Pain Au Chocolat" ;
+    rdfs:domain um:Meals ;
+    rdfs:range xsd:decimal .
+
+um:place a owl:DatatypeProperty ;
+    rdfs:label "Place" ;
+    rdfs:domain um:BakerySales ;
+    rdfs:range xsd:string .
+
+um:plain_bread a owl:DatatypeProperty ;
+    rdfs:label "Plain Bread" ;
+    rdfs:domain um:Meals ;
+    rdfs:range xsd:decimal .
+
+um:tiramisu a owl:DatatypeProperty ;
+    rdfs:label "Tiramisu" ;
+    rdfs:domain um:Meals ;
+    rdfs:range xsd:decimal .
+
+um:tiramisu_croissant a owl:DatatypeProperty ;
+    rdfs:label "Tiramisu Croissant" ;
+    rdfs:domain um:Meals ;
+    rdfs:range xsd:decimal .
+
+um:total a owl:DatatypeProperty ;
+    rdfs:label "Total" ;
+    rdfs:domain um:BakerySales ;
+    rdfs:range xsd:decimal .
+
+um:wiener a owl:DatatypeProperty ;
+    rdfs:label "Wiener" ;
+    rdfs:domain um:Meals ;
+    rdfs:range xsd:decimal .
+
+um:Beverages a owl:Class ;
+    rdfs:label "Beverages" ;
+    rdfs:subClassOf um:BakerySales .
+
+um:BakerySales a owl:Class ;
+    rdfs:label "Bakery Sales" .
+
+um:Meals a owl:Class ;
+    rdfs:label "Meals" ;
+    rdfs:subClassOf um:BakerySales .

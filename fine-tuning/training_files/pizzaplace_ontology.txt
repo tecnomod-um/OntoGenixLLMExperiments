@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:PizzaPlaceOntology rdf:type owl:Ontology .
+
+### Classes ###
+
+um:Order rdf:type owl:Class ;
+    rdfs:label "Order" .
+
+um:Pizza rdf:type owl:Class ;
+    rdfs:label "Pizza" .
+
+um:PizzaSize rdf:type owl:Class ;
+    rdfs:label "Pizza Size" .
+
+um:PizzaType rdf:type owl:Class ;
+    rdfs:label "Pizza Type" .
+
+um:Datetime rdf:type owl:Class ;
+    rdfs:label "Datetime" .
+
+
+### Data Properties ###
+
+um:orderId rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range xsd:string ;
+    rdfs:label "order ID" .
+
+um:orderDate rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Datetime ;
+    rdfs:range xsd:date ;
+    rdfs:label "order date" .
+
+um:orderTime rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Datetime ;
+    rdfs:range xsd:time ;
+    rdfs:label "order time" .
+
+um:pizzaName rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Pizza ;
+    rdfs:range xsd:string ;
+    rdfs:label "pizza name" .
+
+um:price rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Pizza ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "price" .
+
+
+### Object Properties ###
+
+um:hasPizza rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:Pizza ;
+    rdfs:label "has pizza" .
+
+um:hasSize rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Pizza ;
+    rdfs:range um:PizzaSize ;
+    rdfs:label "has size" .
+
+um:hasType rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Pizza ;
+    rdfs:range um:PizzaType ;
+    rdfs:label "has type" .
+
+um:hasDatetime rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:Datetime ;
+    rdfs:label "has datetime" .

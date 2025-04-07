@@ -1,0 +1,86 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:VendingMachineSalesOntology rdf:type owl:Ontology .
+
+### Classes ###
+um:Transaction rdf:type owl:Class ;
+    rdfs:label "Transaction"@en .
+
+um:Device rdf:type owl:Class ;
+    rdfs:label "Device"@en .
+
+um:Location rdf:type owl:Class ;
+    rdfs:label "Location"@en .
+
+um:Machine rdf:type owl:Class ;
+    rdfs:label "Machine"@en .
+
+um:Product rdf:type owl:Class ;
+    rdfs:label "Product"@en .
+
+um:Category rdf:type owl:Class ;
+    rdfs:label "Category"@en .
+
+um:Date rdf:type owl:Class ;
+    rdfs:label "Date"@en .
+
+### Data Properties ###
+um:hasTransactionID rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Transaction ID"@en .
+
+um:hasLineTotal rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Line Total"@en .
+
+um:hasTransTotal rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Transaction Total"@en .
+
+um:hasStatus rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "Status"@en .
+
+### Object Properties ###
+um:hasDevice rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range um:Device ;
+    rdfs:label "Has Device"@en .
+
+um:hasMachine rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range um:Machine ;
+    rdfs:label "Has Machine"@en .
+
+um:hasProduct rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range um:Product ;
+    rdfs:label "Has Product"@en .
+
+um:hasCategory rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:Category ;
+    rdfs:label "Has Category"@en .
+
+um:hasTransactionDate rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range um:Date ;
+    rdfs:label "Has Transaction Date"@en .
+
+um:machineHasLocation rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Machine ;
+    rdfs:range um:Location ;
+    rdfs:label "Machine Has Location"@en .
+
+um:machineHasCategory rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Machine ;
+    rdfs:range um:Category ;
+    rdfs:label "Machine Has Category"@en .

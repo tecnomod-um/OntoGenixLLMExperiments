@@ -1,0 +1,127 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:EcommerceSalesOntology rdf:type owl:Ontology .
+
+### Classes ###
+
+um:Product rdf:type owl:Class ;
+    rdfs:label "Product" .
+
+um:Category rdf:type owl:Class ;
+    rdfs:label "Category" .
+
+um:Review rdf:type owl:Class ;
+    rdfs:label "Review" .
+
+um:AnnualSales rdf:type owl:Class ;
+    rdfs:label "Annual Sales" .
+
+
+### Data Properties ###
+
+um:productId rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string ;
+    rdfs:label "product ID" .
+
+um:productName rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string ;
+    rdfs:label "product name" .
+
+um:price rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "price" .
+
+um:reviewScore rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Review ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "review score" .
+
+um:reviewCount rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Review ;
+    rdfs:range xsd:integer ;
+    rdfs:label "review count" .
+
+um:salesMonth1 rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:AnnualSales ;
+    rdfs:range xsd:integer ;
+    rdfs:label "sales month 1" .
+
+um:salesMonth2 rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:AnnualSales ;
+    rdfs:range xsd:integer ;
+    rdfs:label "sales month 2" .
+
+um:salesMonth3 rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:AnnualSales ;
+    rdfs:range xsd:integer ;
+    rdfs:label "sales month 3" .
+
+um:salesMonth4 rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:AnnualSales ;
+    rdfs:range xsd:integer ;
+    rdfs:label "sales month 4" .
+
+um:salesMonth5 rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:AnnualSales ;
+    rdfs:range xsd:integer ;
+    rdfs:label "sales month 5" .
+
+um:salesMonth6 rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:AnnualSales ;
+    rdfs:range xsd:integer ;
+    rdfs:label "sales month 6" .
+
+um:salesMonth7 rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:AnnualSales ;
+    rdfs:range xsd:integer ;
+    rdfs:label "sales month 7" .
+
+um:salesMonth8 rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:AnnualSales ;
+    rdfs:range xsd:integer ;
+    rdfs:label "sales month 8" .
+
+um:salesMonth9 rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:AnnualSales ;
+    rdfs:range xsd:integer ;
+    rdfs:label "sales month 9" .
+
+um:salesMonth10 rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:AnnualSales ;
+    rdfs:range xsd:integer ;
+    rdfs:label "sales month 10" .
+
+um:salesMonth11 rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:AnnualSales ;
+    rdfs:range xsd:integer ;
+    rdfs:label "sales month 11" .
+
+um:salesMonth12 rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:AnnualSales ;
+    rdfs:range xsd:integer ;
+    rdfs:label "sales month 12" .
+
+
+### Object Properties ###
+
+um:belongsToCategory rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:Category ;
+    rdfs:label "belongs to category" .
+
+um:hasReview rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:Review ;
+    rdfs:label "has review" .
+
+um:hasAnnualSales rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:AnnualSales ;
+    rdfs:label "has annual sales" .

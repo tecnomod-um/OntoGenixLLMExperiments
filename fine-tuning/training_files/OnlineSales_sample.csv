@@ -1,0 +1,51 @@
+Transaction ID,Date,Product Category,Product Name,Units Sold,Unit Price,Total Revenue,Region,Payment Method
+10104,2024-04-13,Home Appliances,Shark IQ Robot Vacuum,2,349.99,699.98,Europe,PayPal
+10077,2024-03-17,Beauty Products,Glossier Boy Brow,2,16.0,32.0,Europe,PayPal
+10147,2024-05-26,Clothing,Levi's Sherpa Trucker Jacket,2,98.0,196.0,Asia,Debit Card
+10053,2024-02-22,Beauty Products,Shiseido Ultimate Sun Protector,1,49.0,49.0,Europe,PayPal
+10230,2024-08-17,Home Appliances,Anova Precision Oven,1,599.0,599.0,Europe,PayPal
+10025,2024-01-25,Electronics,Bose QuietComfort 35 Headphones,1,299.99,299.99,North America,Credit Card
+10060,2024-02-29,Sports,Hyperice Hypervolt Massager,1,349.0,349.0,Asia,Credit Card
+10113,2024-04-22,Beauty Products,Biore UV Aqua Rich Watery Essence Sunscreen,1,15.0,15.0,Europe,PayPal
+10169,2024-06-17,Electronics,Samsung Odyssey G7 Gaming Monitor,1,699.99,699.99,North America,Credit Card
+10206,2024-07-24,Home Appliances,KitchenAid Stand Mixer,1,379.99,379.99,Europe,PayPal
+10059,2024-02-28,Beauty Products,Anastasia Beverly Hills Brow Wiz,2,23.0,46.0,Europe,PayPal
+10043,2024-02-12,Electronics,GoPro HERO10 Black,3,399.99,1199.97,North America,Credit Card
+10094,2024-04-03,Books,The Alchemist by Paulo Coelho,3,14.99,44.97,North America,Credit Card
+10236,2024-08-23,Home Appliances,Nespresso Vertuo Next Coffee and Espresso Maker,1,159.99,159.99,Europe,PayPal
+10065,2024-03-05,Beauty Products,Lancome La Vie Est Belle,1,102.0,102.0,Europe,PayPal
+10103,2024-04-12,Electronics,Canon EOS R5 Camera,1,3899.99,3899.99,North America,Credit Card
+10196,2024-07-14,Books,The Road by Cormac McCarthy,2,11.99,23.98,North America,Credit Card
+10191,2024-07-09,Beauty Products,Glossier Cloud Paint,1,18.0,18.0,Europe,PayPal
+10028,2024-01-28,Books,Pride and Prejudice by Jane Austen,3,12.99,38.97,North America,Credit Card
+10222,2024-08-09,Sports,Garmin Forerunner 945,1,599.99,599.99,Asia,Credit Card
+10045,2024-02-14,Clothing,Patagonia Better Sweater,2,139.99,279.98,Asia,Debit Card
+10004,2024-01-04,Books,The Da Vinci Code,4,15.99,63.96,North America,Credit Card
+10033,2024-02-02,Clothing,Under Armour HeatGear T-Shirt,5,29.99,149.95,Asia,Debit Card
+10018,2024-01-18,Sports,Manduka PRO Yoga Mat,4,119.99,479.96,Asia,Credit Card
+10163,2024-06-11,Electronics,Apple MacBook Air,1,1199.99,1199.99,North America,Credit Card
+10173,2024-06-21,Beauty Products,Paula's Choice Skin Perfecting 2% BHA Liquid Exfoliant,1,29.5,29.5,Europe,PayPal
+10175,2024-06-23,Electronics,Amazon Fire TV Stick 4K,3,49.99,149.97,North America,Credit Card
+10215,2024-08-02,Beauty Products,L'Occitane Shea Butter Hand Cream,2,29.0,58.0,Europe,PayPal
+10040,2024-02-09,Books,Harry Potter and the Sorcerer's Stone,3,24.99,74.97,North America,Credit Card
+10089,2024-03-29,Beauty Products,Sunday Riley Good Genes,1,105.0,105.0,Europe,PayPal
+10199,2024-07-17,Electronics,Apple TV 4K,2,179.0,358.0,North America,Credit Card
+10158,2024-06-06,Home Appliances,Breville Nespresso Creatista Plus,1,499.95,499.95,Europe,PayPal
+10159,2024-06-07,Clothing,Under Armour Tech 2.0 T-Shirt,4,24.99,99.96,Asia,Debit Card
+10063,2024-03-03,Clothing,Hanes ComfortSoft T-Shirt,10,9.99,99.9,Asia,Debit Card
+10204,2024-07-22,Sports,Yeti Tundra Haul Portable Wheeled Cooler,1,399.99,399.99,Asia,Credit Card
+10014,2024-01-14,Home Appliances,Keurig K-Elite Coffee Maker,1,189.99,189.99,Europe,PayPal
+10148,2024-05-27,Books,The Outsiders by S.E. Hinton,3,10.99,32.97,North America,Credit Card
+10202,2024-07-20,Books,The Goldfinch by Donna Tartt,2,14.99,29.98,North America,Credit Card
+10225,2024-08-12,Clothing,Old Navy Mid-Rise Rockstar Super Skinny Jeans,2,44.99,89.98,Asia,Debit Card
+10213,2024-07-31,Clothing,Uniqlo Airism Seamless Boxer Briefs,4,9.9,39.6,Asia,Debit Card
+10108,2024-04-17,Sports,Bowflex SelectTech 552 Dumbbells,1,399.99,399.99,Asia,Credit Card
+10073,2024-03-13,Electronics,HP Spectre x360 Laptop,1,1599.99,1599.99,North America,Credit Card
+10227,2024-08-14,Beauty Products,The Ordinary Caffeine Solution 5% + EGCG,1,6.7,6.7,Europe,PayPal
+10039,2024-02-08,Clothing,Columbia Fleece Jacket,4,59.99,239.96,Asia,Debit Card
+10197,2024-07-15,Beauty Products,Tom Ford Black Orchid Perfume,1,125.0,125.0,Europe,PayPal
+10071,2024-03-11,Beauty Products,Drunk Elephant C-Firma Day Serum,1,78.0,78.0,Europe,PayPal
+10054,2024-02-23,Sports,Titleist Pro V1 Golf Balls,5,49.99,249.95,Asia,Credit Card
+10107,2024-04-16,Beauty Products,The Ordinary Niacinamide Serum,1,6.5,6.5,Europe,PayPal
+10181,2024-06-29,Electronics,Google Pixelbook Go,1,649.99,649.99,North America,Credit Card
+10134,2024-05-13,Home Appliances,Keurig K-Mini Coffee Maker,2,79.99,159.98,Europe,PayPal

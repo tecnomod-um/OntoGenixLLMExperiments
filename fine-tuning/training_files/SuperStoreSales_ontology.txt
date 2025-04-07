@@ -1,0 +1,121 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:SuperStoreSalesOntology rdf:type owl:Ontology .
+
+### Classes ###
+um:Order rdf:type owl:Class ;
+    rdfs:label "Order"@en .
+
+um:Customer rdf:type owl:Class ;
+    rdfs:label "Customer"@en .
+
+um:Product rdf:type owl:Class ;
+    rdfs:label "Product"@en .
+
+um:Segment rdf:type owl:Class ;
+    rdfs:label "Segment"@en .
+
+um:Category rdf:type owl:Class ;
+    rdfs:label "Category"@en .
+
+um:SubCategory rdf:type owl:Class ;
+    rdfs:label "Sub-Category"@en .
+
+um:Region rdf:type owl:Class ;
+    rdfs:label "Region"@en .
+
+um:State rdf:type owl:Class ;
+    rdfs:label "State"@en .
+
+um:City rdf:type owl:Class ;
+    rdfs:label "City"@en .
+
+um:Country rdf:type owl:Class ;
+    rdfs:label "Country"@en .
+
+um:Date rdf:type owl:Class ;
+    rdfs:label "Date"@en .
+
+um:OrderDate rdf:type owl:Class ;
+    rdfs:subClassOf um:Date ;
+    rdfs:label "Order Date"@en .
+
+um:ShippingDate rdf:type owl:Class ;
+    rdfs:subClassOf um:Date ;
+    rdfs:label "Shipping Date"@en .
+
+### Data Properties ###
+um:hasName rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:string ;
+    rdfs:label "Name"@en .
+
+um:hasSales rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Sales"@en .
+
+um:hasPostalCode rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:City ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Postal Code"@en .
+
+### Object Properties ###
+um:hasCustomer rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:Customer ;
+    rdfs:label "Has Customer"@en .
+
+um:belongsToSegment rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range um:Segment ;
+    rdfs:label "Belongs to Segment"@en .
+
+um:hasCategory rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:Category ;
+    rdfs:label "Has Category"@en .
+
+um:hasSubCategory rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Category ;
+    rdfs:range um:SubCategory ;
+    rdfs:label "Has Sub-Category"@en .
+
+um:isInRegion rdf:type owl:ObjectProperty ;
+    rdfs:domain um:State ;
+    rdfs:range um:Region ;
+    rdfs:label "Is In Region"@en .
+
+um:isInState rdf:type owl:ObjectProperty ;
+    rdfs:domain um:City ;
+    rdfs:range um:State ;
+    rdfs:label "Is In State"@en .
+
+um:isInCountry rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Region ;
+    rdfs:range um:Country ;
+    rdfs:label "Is In Country"@en .
+
+um:hasProduct rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:Product ;
+    rdfs:label "Has Product"@en .
+
+um:hasCity rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:City ;
+    rdfs:label "Has City"@en .
+
+um:hasOrderDate rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:OrderDate ;
+    rdfs:label "Has Order Date"@en .
+
+um:hasShippingDate rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:ShippingDate ;
+    rdfs:label "Has Shipping Date"@en .

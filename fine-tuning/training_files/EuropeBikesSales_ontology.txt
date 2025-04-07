@@ -1,0 +1,130 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:BikeSalesOntology rdf:type owl:Ontology .
+
+### Classes ###
+
+um:Sale rdf:type owl:Class ;
+    rdfs:label "Sale" .
+
+um:Customer rdf:type owl:Class ;
+    rdfs:label "Customer" .
+
+um:Product rdf:type owl:Class ;
+    rdfs:label "Product" .
+
+um:Country rdf:type owl:Class ;
+    rdfs:label "Country" .
+
+um:State rdf:type owl:Class ;
+    rdfs:label "State" .
+
+um:ProductCategory rdf:type owl:Class ;
+    rdfs:label "Product Category" .
+
+um:SubCategory rdf:type owl:Class ;
+    rdfs:subClassOf um:ProductCategory ;
+    rdfs:label "Sub Category" .
+
+um:Age rdf:type owl:Class ;
+    rdfs:label "Age" .
+
+
+### Data Properties ###
+
+um:saleDate rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Sale ;
+    rdfs:range xsd:date ;
+    rdfs:label "sale date" .
+
+um:orderQuantity rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Sale ;
+    rdfs:range xsd:integer ;
+    rdfs:label "order quantity" .
+
+um:unitCost rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Sale ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "unit cost" .
+
+um:unitPrice rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Sale ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "unit price" .
+
+um:profit rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Sale ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "profit" .
+
+um:cost rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Sale ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "cost" .
+
+um:revenue rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Sale ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "revenue" .
+
+um:customerAge rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Age ;
+    rdfs:range xsd:integer ;
+    rdfs:label "customer age" .
+
+um:ageGroup rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Age ;
+    rdfs:range xsd:string ;
+    rdfs:label "age group" .
+
+um:customerGender rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:string ;
+    rdfs:label "customer gender" .
+
+um:productName rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string ;
+    rdfs:label "product name" .
+
+
+### Object Properties ###
+
+um:hasCustomer rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Sale ;
+    rdfs:range um:Customer ;
+    rdfs:label "has customer" .
+
+um:hasProduct rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Sale ;
+    rdfs:range um:Product ;
+    rdfs:label "has product" .
+
+um:belongsToCountry rdf:type owl:ObjectProperty ;
+    rdfs:domain um:State ;
+    rdfs:range um:Country ;
+    rdfs:label "belongs to country" .
+
+um:belongsToState rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range um:State ;
+    rdfs:label "belongs to state" .
+
+um:belongsToCategory rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:ProductCategory ;
+    rdfs:label "belongs to category" .
+
+um:belongsToSubCategory rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:SubCategory ;
+    rdfs:label "belongs to sub category" .
+
+um:hasAge rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range um:Age ;
+    rdfs:label "has age" .

@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:WallArtSales rdf:type owl:Ontology .
+
+# Classes
+um:Product rdf:type owl:Class ;
+           rdfs:label "Product" .
+
+um:Brand rdf:type owl:Class ;
+         rdfs:label "Brand" .
+
+um:Discount rdf:type owl:Class ;
+            rdfs:label "Discount" .
+
+um:Shipping rdf:type owl:Class ;
+            rdfs:label "Shipping" .
+
+# Data Properties
+um:hasPrice rdf:type owl:DatatypeProperty ;
+            rdfs:domain um:Product ;
+            rdfs:range xsd:string ;
+            rdfs:label "Price" .
+
+um:hasLink rdf:type owl:DatatypeProperty ;
+           rdfs:domain um:Product ;
+           rdfs:range xsd:string ;
+           rdfs:label "Link" .
+
+um:hasBrand rdf:type owl:ObjectProperty ;
+            rdfs:domain um:Product ;
+            rdfs:range um:Brand ;
+            rdfs:label "Brand" .
+
+um:hasDiscount rdf:type owl:ObjectProperty ;
+               rdfs:domain um:Product ;
+               rdfs:range um:Discount ;
+               rdfs:label "Discount" .
+
+um:hasShipping rdf:type owl:ObjectProperty ;
+               rdfs:domain um:Product ;
+               rdfs:range um:Shipping ;
+               rdfs:label "Shipping" .

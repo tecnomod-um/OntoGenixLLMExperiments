@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:MensPerfumeOntology rdf:type owl:Ontology .
+
+### Classes ###
+
+um:Perfume rdf:type owl:Class ;
+    rdfs:label "Perfume" .
+
+um:Brand rdf:type owl:Class ;
+    rdfs:label "Brand" .
+
+um:ItemLocation rdf:type owl:Class ;
+    rdfs:label "Item Location" .
+
+
+### Data Properties ###
+
+um:perfumeTitle rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Perfume ;
+    rdfs:range xsd:string ;
+    rdfs:label "perfume title" .
+
+um:perfumeType rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Perfume ;
+    rdfs:range xsd:string ;
+    rdfs:label "perfume type" .
+
+um:price rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Perfume ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "price" .
+
+um:priceWithCurrency rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Perfume ;
+    rdfs:range xsd:string ;
+    rdfs:label "price with currency" .
+
+um:available rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Perfume ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "available quantity" .
+
+um:sold rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Perfume ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "sold quantity" .
+
+um:lastUpdated rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Perfume ;
+    rdfs:range xsd:dateTime ;
+    rdfs:label "last updated" .
+
+um:itemLocationName rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:ItemLocation ;
+    rdfs:range xsd:string ;
+    rdfs:label "item location name" .
+
+
+### Object Properties ###
+
+um:hasBrand rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Perfume ;
+    rdfs:range um:Brand ;
+    rdfs:label "has brand" .
+
+um:locatedAt rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Perfume ;
+    rdfs:range um:ItemLocation ;
+    rdfs:label "located at" .

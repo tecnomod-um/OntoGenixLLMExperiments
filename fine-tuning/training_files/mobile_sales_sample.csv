@@ -1,0 +1,51 @@
+TransactionID,Date,MobileModel,Brand,Price,UnitsSold,TotalRevenue,CustomerAge,CustomerGender,Location,PaymentMethod
+56f4a3f9-ee2d-4c28-b836-8f183b0333b0,2024-04-05,they,"Kirby, Oneill and Carter",1345.42,94,31312.96,25,Female,Steelemouth,Online
+6b8a98dc-b9c0-44e3-94da-b6a298984061,2024-03-24,science,Schmidt LLC,646.09,89,12122.0,40,Other,Williammouth,Online
+4fd27964-ae6c-4db2-864d-97433fd75088,2024-04-24,board,"Robertson, Frye and Frost",1266.76,27,27716.78,40,Male,West Michael,Credit Card
+200c26df-fb70-4338-afdc-c3e26dfe04fb,2024-02-08,school,Clark-Figueroa,888.01,53,72454.0,43,Male,New Stephenberg,Debit Card
+5b971458-ca8d-4320-b8dd-fa1cd0d3f733,2024-07-15,why,Martin-Morales,434.12,30,86497.11,53,Other,Buchananstad,Credit Card
+9e882c68-34f4-4e1a-9f82-91a3597967b0,2024-03-16,wall,"Evans, Taylor and Peterson",364.81,43,39749.53,22,Other,Norrisville,Credit Card
+1a521cbf-968b-4dd3-8649-0c65d1cdf045,2024-05-18,life,Arias-Mendoza,1479.23,36,125596.8,52,Other,New Kimberly,Cash
+6e60d8ff-7739-4b20-9e46-39aaaff5712f,2024-02-24,career,"Fuller, Sanders and Molina",363.28,42,16676.68,26,Male,North Jacqueline,Credit Card
+8fdb323b-83af-4344-8d72-b57ec9589874,2024-04-01,forward,Brooks LLC,704.12,19,120880.32,59,Other,New Jennifer,Credit Card
+999e4a97-c4b5-4eef-a92f-72eac69f1987,2024-03-11,manage,Spencer-Payne,226.71,82,107416.58,49,Other,Jamesview,Cash
+ee24e583-be91-4fee-9b9e-0210b1c41e00,2024-02-25,service,Hicks and Sons,947.69,57,15252.45,28,Male,Lake Josephborough,Debit Card
+d3e3db15-d472-4157-9673-cd4a419f4c4b,2024-01-10,attack,Rodriguez-Morales,604.24,66,8244.32,32,Female,East Kerrychester,Credit Card
+02c2544c-36f1-405b-ade0-5b5725b91e35,2024-01-02,girl,"Salazar, Myers and Mcmahon",1164.58,67,10010.51,57,Other,Kaitlinhaven,Credit Card
+ce333627-a441-47b9-809c-526b7222bb7c,2024-02-12,herself,Lane Ltd,189.93,61,99262.8,57,Other,Port Rebeccamouth,Credit Card
+2bcc91eb-ec74-46c9-9b32-bdd72c2899f0,2024-01-11,stage,Graham LLC,1030.8,17,18401.6,42,Other,Timothyville,Debit Card
+a82956fe-729e-4c5b-bad7-dc1927e97a57,2024-04-09,risk,"Hull, Simmons and Robinson",941.59,68,418.48,42,Female,Deborahberg,Debit Card
+271ea241-ee6b-425a-b5d6-5b9fcf2830cb,2024-04-02,sort,"Roth, Franklin and Hernandez",157.5,87,35169.4,55,Male,Nicolestad,Online
+5dec83cf-16ce-41b2-b06a-be7ccce0710f,2024-02-18,yet,Adams LLC,1377.31,2,74497.92,64,Male,North Pamela,Online
+54619eff-3d8d-4e16-b4c4-910619ea1990,2024-05-16,about,"Paul, Goodman and Richardson",385.39,31,16529.13,34,Male,Port Ashlee,Online
+61f1c03f-5527-49bf-88f6-0d8694e72d41,2024-07-13,southern,Coleman-Pena,975.77,63,8300.22,23,Other,Kathrynborough,Online
+0b2038fe-3514-4341-984e-c9fafd24a1a5,2024-03-31,speech,"Mueller, Collier and Khan",429.75,21,2193.45,42,Male,East Sarahhaven,Credit Card
+07097620-54aa-4e73-9024-c51380f3deca,2024-06-22,base,Aguilar-Scott,1019.36,55,43002.08,33,Female,Sharonberg,Cash
+496dc092-826e-4d95-9ede-2990ccd24530,2024-05-16,machine,Lee Ltd,388.88,19,12497.49,53,Other,New Jacobfort,Online
+e41b3943-d8e1-4208-9df5-af3f34b2c70e,2024-02-13,treat,"Johnson, Figueroa and Jones",1085.52,38,113673.2,36,Female,North Manuelshire,Online
+e24a5e01-58fc-4b60-ad3d-ea4d0311562a,2024-04-22,develop,"Mclaughlin, Wilson and Hunter",163.62,85,31578.18,50,Male,Michellehaven,Credit Card
+786209f4-66ff-4984-8ad5-7aeb9693a463,2024-07-19,happy,"Adkins, Robertson and Lindsey",835.18,33,30069.27,48,Other,Elaineville,Online
+8762735e-ec2b-4099-9ca1-b8d3fb475c01,2024-05-07,laugh,Shah PLC,1123.18,58,27109.12,59,Other,Lake Priscillahaven,Online
+3f591e8b-fd26-4d8e-9556-2ce32355437e,2024-02-26,one,Cain Group,443.56,85,109351.08,47,Other,Barrettberg,Online
+7693996d-41f7-4434-b4b9-26faf2537100,2024-06-24,every,"Nielsen, Rivera and Jones",1151.12,41,9768.66,55,Other,Meganburgh,Debit Card
+e3b45f0a-999b-4aef-947e-2015fbb4c651,2024-04-25,win,"Vincent, Oneill and Bryant",479.02,60,31592.7,60,Female,Lynnside,Cash
+f6fce23b-3313-491a-9b9f-6c5b6e3619f9,2024-03-24,source,"Turner, Vega and Green",900.04,54,36582.21,20,Other,West Thomas,Credit Card
+33d32c98-aca7-4fbb-b543-2ec021f21032,2024-01-07,doctor,Mendez and Sons,1409.14,4,12291.43,62,Other,Morganland,Credit Card
+61da9554-d735-47aa-92c0-2dd9b8e6b055,2024-07-21,thus,Aguilar Group,219.12,71,10462.84,30,Male,West Dustin,Credit Card
+bca07c20-5f33-4f80-9b7c-e5c8cfea85d4,2024-07-17,maintain,"Beck, Choi and Thomas",570.97,16,10176.04,38,Other,Lake Reneeview,Debit Card
+6848fd52-ccbd-4bfb-8ddf-349698439e7b,2024-03-30,adult,Larsen-Russell,475.83,45,65965.5,19,Male,Hardyborough,Online
+20454e0f-638d-4d6b-90b0-ecb2a238d54b,2024-07-13,factor,Smith-Scott,747.06,96,8582.58,54,Other,Kellerfurt,Cash
+78570e53-00a1-4890-94bf-ded05ed52867,2024-01-22,prepare,Horne PLC,1076.75,60,4879.19,64,Other,Port Juan,Debit Card
+3a53e601-db42-492f-ba83-0c7ab32701e3,2024-01-31,finish,Mueller-Hall,376.75,85,118596.04,42,Other,Khanstad,Online
+d1e7a1d9-3a9b-4e50-846a-6566572b5079,2024-07-14,think,Peterson Inc,1007.3,15,105106.96,50,Male,Schroederland,Debit Card
+8eb5f50a-b99c-41d8-85b0-cbe79295764c,2024-07-10,any,Baird-Henderson,1085.16,49,27642.2,38,Male,New Keithport,Online
+3c11f0e7-84ae-46e9-8ab2-4006c91b4629,2024-01-18,cold,Hart Group,153.61,70,40581.0,56,Female,West Kennethmouth,Cash
+673ba242-77f0-4978-8a16-d8f590cf8be3,2024-05-04,until,Hunter-Richardson,944.16,47,78747.4,23,Other,Jamesstad,Credit Card
+60fb609a-ba93-4cbd-bff3-01d13238f71d,2024-02-23,upon,"Ibarra, Jackson and Potter",245.81,36,44415.36,34,Other,Lake Amanda,Debit Card
+04496bf2-c10b-4435-a571-b300c4f5c7ba,2024-07-22,itself,Finley Group,377.8,24,7221.0,31,Male,Carolview,Debit Card
+1dc5f7eb-89cf-48c1-a377-4f33a0762835,2024-07-01,degree,Gomez LLC,1416.21,38,31379.76,61,Male,Clarkview,Cash
+d24e4773-7a2d-4a74-8f68-abccc3bbe00f,2024-07-09,group,Bailey-Davis,733.08,95,62334.0,44,Female,East Deborahfurt,Online
+e519097e-723f-4485-b92b-d2863bd57583,2024-04-22,recognize,Gallagher-Parker,448.61,16,87610.96,34,Female,Ramirezfort,Cash
+918c1785-2c85-4757-a15e-cfddb38dd38e,2024-05-27,bad,"Mcmahon, Jones and Baker",1317.59,86,102433.02,28,Other,New Charles,Credit Card
+dc467662-2188-455e-b885-a74bec8d04d0,2024-06-12,indicate,Ramos LLC,733.77,93,70985.66,56,Other,West Chrisbury,Credit Card
+4b29f834-10c4-4f1a-9b7b-b2a240232a14,2024-06-04,someone,"Norman, West and Mata",1066.94,81,3489.54,22,Other,Rayville,Cash

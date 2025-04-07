@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:PropertySalesOntology rdf:type owl:Ontology .
+
+### Classes ###
+
+um:Property rdf:type owl:Class ;
+    rdfs:label "Property" .
+
+um:Sale rdf:type owl:Class ;
+    rdfs:label "Sale" .
+
+um:PropertyType rdf:type owl:Class ;
+    rdfs:label "Property Type" .
+
+um:Datetime rdf:type owl:Class ;
+    rdfs:label "Datetime" .
+
+
+### Data Properties ###
+
+um:bedrooms rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Property ;
+    rdfs:range xsd:integer ;
+    rdfs:label "bedrooms" .
+
+um:marketAssessment rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Sale ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "market assessment" .
+
+
+### Object Properties ###
+
+um:hasProperty rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Sale ;
+    rdfs:range um:Property ;
+    rdfs:label "has property" .
+
+um:hasType rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Property ;
+    rdfs:range um:PropertyType ;
+    rdfs:label "has type" .
+
+um:hasDatetime rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Sale ;
+    rdfs:range um:Datetime ;
+    rdfs:label "has datetime" .

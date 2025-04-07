@@ -1,0 +1,51 @@
+Date,Day,Month,Year,Customer_Age,Age_Group,Customer_Gender,Country,State,Product_Category,Sub_Category,Product,Order_Quantity,Unit_Cost,Unit_Price,Profit,Cost,Revenue
+2014-06-13,13,June,2014,49,Adults (35-64),M,Canada,British Columbia,Accessories,Tires and Tubes,Mountain Tire Tube,25,2,5,74,50,124
+2015-11-04,4,November,2015,34,Young Adults (25-34),M,Australia,Queensland,Accessories,Helmets,"Sport-100 Helmet, Red",22,13,35,361,286,647
+2015-12-27,27,December,2015,28,Young Adults (25-34),F,United States,California,Bikes,Mountain Bikes,"Mountain-200 Black, 46",1,1252,2295,997,1252,2249
+2015-08-28,28,August,2015,27,Young Adults (25-34),M,United States,California,Accessories,Bottles and Cages,Water Bottle - 30 oz.,22,2,5,64,44,108
+2014-02-03,3,February,2014,35,Adults (35-64),F,Canada,British Columbia,Clothing,Jerseys,"Long-Sleeve Logo Jersey, L",5,38,50,58,190,248
+2013-12-20,20,December,2013,26,Young Adults (25-34),F,United States,Washington,Bikes,Mountain Bikes,"Mountain-200 Black, 38",1,1252,2295,538,1252,1790
+2015-09-13,13,September,2015,44,Adults (35-64),M,Canada,British Columbia,Accessories,Bottles and Cages,Water Bottle - 30 oz.,25,2,5,74,50,124
+2014-03-30,30,March,2014,47,Adults (35-64),F,United Kingdom,England,Clothing,Jerseys,"Short-Sleeve Classic Jersey, M",28,42,54,276,1176,1452
+2016-05-03,3,May,2016,28,Young Adults (25-34),M,France,Loir et Cher,Accessories,Bottles and Cages,Water Bottle - 30 oz.,26,2,5,64,52,116
+2013-09-06,6,September,2013,27,Young Adults (25-34),F,Australia,Victoria,Accessories,Fenders,Fender Set - Mountain,3,8,22,28,24,52
+2013-11-01,1,November,2013,35,Adults (35-64),M,France,Loiret,Bikes,Touring Bikes,"Touring-3000 Yellow, 58",1,461,742,199,461,660
+2015-09-10,10,September,2015,34,Young Adults (25-34),F,United States,Washington,Accessories,Bike Stands,All-Purpose Bike Stand,9,59,159,585,531,1116
+2014-02-04,4,February,2014,21,Youth (<25),M,Australia,South Australia,Accessories,Helmets,"Sport-100 Helmet, Black",29,13,35,455,377,832
+2014-05-16,16,May,2014,19,Youth (<25),M,France,Hauts de Seine,Clothing,Jerseys,"Short-Sleeve Classic Jersey, XL",12,42,54,99,504,603
+2015-08-26,26,August,2015,19,Youth (<25),M,Australia,Victoria,Accessories,Hydration Packs,Hydration Pack - 70 oz.,23,21,55,516,483,999
+2016-07-07,7,July,2016,73,Seniors (64+),F,United States,California,Clothing,Vests,"Classic Vest, M",3,24,64,116,72,188
+2016-01-24,24,January,2016,55,Adults (35-64),F,United States,California,Accessories,Tires and Tubes,Mountain Tire Tube,25,2,5,73,50,123
+2016-01-13,13,January,2016,37,Adults (35-64),F,United States,California,Bikes,Mountain Bikes,"Mountain-200 Black, 46",3,1252,2295,2991,3756,6747
+2016-04-09,9,April,2016,35,Adults (35-64),F,United States,Washington,Bikes,Road Bikes,"Road-150 Red, 62",1,2171,3578,620,2171,2791
+2015-10-26,26,October,2015,28,Young Adults (25-34),F,Australia,New South Wales,Accessories,Bottles and Cages,Water Bottle - 30 oz.,9,2,5,21,18,39
+2014-06-27,27,June,2014,22,Youth (<25),F,Canada,British Columbia,Accessories,Bottles and Cages,Mountain Bottle Cage,23,4,10,136,92,228
+2014-02-12,12,February,2014,17,Youth (<25),F,Australia,New South Wales,Accessories,Bottles and Cages,Water Bottle - 30 oz.,4,2,5,9,8,17
+2016-06-02,2,June,2016,33,Young Adults (25-34),M,United States,Washington,Accessories,Bottles and Cages,Water Bottle - 30 oz.,30,2,5,57,60,117
+2013-10-14,14,October,2013,23,Youth (<25),M,Australia,New South Wales,Clothing,Jerseys,"Short-Sleeve Classic Jersey, XL",18,42,54,90,756,846
+2012-06-13,13,June,2012,47,Adults (35-64),M,Australia,Victoria,Bikes,Road Bikes,"Road-750 Black, 48",2,344,540,165,688,853
+2014-02-27,27,February,2014,20,Youth (<25),F,United States,California,Accessories,Helmets,"Sport-100 Helmet, Blue",1,13,35,21,13,34
+2015-10-13,13,October,2015,20,Youth (<25),F,Canada,British Columbia,Accessories,Tires and Tubes,Mountain Tire Tube,2,2,5,6,4,10
+2016-03-13,13,March,2016,34,Young Adults (25-34),M,France,Nord,Accessories,Tires and Tubes,Patch Kit/8 Patches,16,1,2,12,16,28
+2016-07-21,21,July,2016,30,Young Adults (25-34),F,Australia,Queensland,Accessories,Tires and Tubes,Road Tire Tube,1,1,4,2,1,3
+2016-04-08,8,April,2016,42,Adults (35-64),F,United States,Oregon,Accessories,Tires and Tubes,Mountain Tire Tube,28,2,5,64,56,120
+2016-04-30,30,April,2016,26,Young Adults (25-34),F,Australia,Queensland,Accessories,Tires and Tubes,HL Mountain Tire,4,13,35,66,52,118
+2015-11-08,8,November,2015,27,Young Adults (25-34),M,France,Loir et Cher,Clothing,Vests,"Classic Vest, M",25,24,64,824,600,1424
+2016-06-20,20,June,2016,50,Adults (35-64),M,Australia,Queensland,Accessories,Tires and Tubes,Patch Kit/8 Patches,29,1,2,20,29,49
+2011-05-20,20,May,2011,49,Adults (35-64),F,United States,California,Bikes,Road Bikes,"Road-550-W Yellow, 44",2,713,1120,769,1426,2195
+2014-04-13,13,April,2014,29,Young Adults (25-34),M,United Kingdom,England,Bikes,Mountain Bikes,"Mountain-200 Silver, 38",1,1266,2320,961,1266,2227
+2016-04-19,19,April,2016,31,Young Adults (25-34),M,France,Somme,Bikes,Road Bikes,"Road-250 Black, 48",3,1555,2443,1345,4665,6010
+2014-01-08,8,January,2014,31,Young Adults (25-34),F,Australia,Victoria,Clothing,Gloves,"Half-Finger Gloves, S",6,9,24,60,54,114
+2016-01-15,15,January,2016,47,Adults (35-64),F,France,Val d'Oise,Accessories,Tires and Tubes,LL Road Tire,1,8,21,9,8,17
+2014-05-21,21,May,2014,21,Youth (<25),M,United States,California,Accessories,Tires and Tubes,Mountain Tire Tube,13,2,5,38,26,64
+2016-04-09,9,April,2016,50,Adults (35-64),M,United States,California,Accessories,Tires and Tubes,Touring Tire Tube,1,2,5,3,2,5
+2015-07-29,29,July,2015,42,Adults (35-64),M,Australia,South Australia,Bikes,Touring Bikes,"Touring-1000 Blue, 46",1,1482,2384,473,1482,1955
+2016-01-07,7,January,2016,46,Adults (35-64),F,Canada,British Columbia,Accessories,Bottles and Cages,Water Bottle - 30 oz.,9,2,5,27,18,45
+2016-07-31,31,July,2016,48,Adults (35-64),F,United States,Washington,Accessories,Cleaners,Bike Wash - Dissolver,12,3,8,39,36,75
+2015-12-14,14,December,2015,33,Young Adults (25-34),F,Canada,British Columbia,Accessories,Tires and Tubes,Mountain Tire Tube,29,2,5,86,58,144
+2015-08-24,24,August,2015,38,Adults (35-64),F,United States,Oregon,Clothing,Gloves,"Half-Finger Gloves, S",1,9,24,12,9,21
+2014-06-21,21,June,2014,46,Adults (35-64),F,United States,California,Accessories,Tires and Tubes,Mountain Tire Tube,12,2,5,35,24,59
+2015-11-25,25,November,2015,33,Young Adults (25-34),M,Canada,British Columbia,Clothing,Jerseys,"Long-Sleeve Logo Jersey, M",24,38,50,276,912,1188
+2013-08-22,22,August,2013,23,Youth (<25),M,United States,California,Bikes,Mountain Bikes,"Mountain-200 Silver, 38",1,1266,2320,1008,1266,2274
+2013-12-13,13,December,2013,53,Adults (35-64),M,Australia,New South Wales,Clothing,Socks,"Racing Socks, M",7,3,9,34,21,55
+2014-06-28,28,June,2014,41,Adults (35-64),M,United States,Oregon,Clothing,Gloves,"Half-Finger Gloves, S",29,9,24,338,261,599

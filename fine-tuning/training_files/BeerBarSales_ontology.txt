@@ -1,0 +1,44 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:Product a owl:Class .
+um:Vendor a owl:Class .
+
+um:productCode a rdf:Property ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:int .
+
+um:vendorCode a rdf:Property ;
+    rdfs:domain um:Vendor ;
+    rdfs:range xsd:int .
+
+um:name a rdf:Property ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string .
+
+um:retailPrice a rdf:Property ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:float .
+
+um:baseUnit a rdf:Property ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string .
+
+um:countryOfOrigin a rdf:Property ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string .
+
+um:size a rdf:Property ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:float .
+
+um:abv a rdf:Property ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:float .
+
+um:isSoldBy a rdf:Property ;
+    rdfs:domain um:Product ;
+    rdfs:range um:Vendor .

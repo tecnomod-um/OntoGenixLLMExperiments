@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:MarketingSalesOntology rdf:type owl:Ontology .
+
+### Classes ###
+
+um:Campaign rdf:type owl:Class ;
+    rdfs:label "Campaign" .
+
+um:Sales rdf:type owl:Class ;
+    rdfs:label "Sales" .
+
+um:Channel rdf:type owl:Class ;
+    rdfs:label "Channel" .
+
+um:Influencer rdf:type owl:Class ;
+    rdfs:label "Influencer" .
+
+
+### Data Properties ###
+
+um:tvBudget rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Channel ;
+    rdfs:range xsd:string ;
+    rdfs:label "TV budget" .
+
+um:radioBudget rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Channel ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Radio budget" .
+
+um:socialMediaBudget rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Channel ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Social media budget" .
+
+um:salesAmount rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Sales ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "sales amount" .
+
+um:influencerType rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Influencer ;
+    rdfs:range xsd:string ;
+    rdfs:label "influencer type" .
+
+
+### Object Properties ###
+
+um:hasChannel rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Campaign ;
+    rdfs:range um:Channel ;
+    rdfs:label "has channel" .
+
+um:hasSales rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Campaign ;
+    rdfs:range um:Sales ;
+    rdfs:label "has sales" .
+
+um:usesInfluencer rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Campaign ;
+    rdfs:range um:Influencer ;
+    rdfs:label "uses influencer" .

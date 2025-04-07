@@ -1,0 +1,43 @@
+@prefix um: <https://vocab.um.es#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+um:BakerySales a owl:Ontology .
+
+um:Transaction a owl:Class ;
+    rdfs:label "Transaction" .
+
+um:Date a owl:Class ;
+    rdfs:label "Date" .
+
+um:hasTransactionNo a owl:DatatypeProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "has transaction number" .
+
+um:hasItem a owl:DatatypeProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "has item" .
+
+um:hasDate a owl:ObjectProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range um:Date ;
+    rdfs:label "has date" .
+
+um:dateTime a owl:DatatypeProperty ;
+    rdfs:domain um:Date ;
+    rdfs:range xsd:dateTime ;
+    rdfs:label "date and time" .
+
+um:dayPart a owl:DatatypeProperty ;
+    rdfs:domain um:Date ;
+    rdfs:range xsd:string ;
+    rdfs:label "day part" .
+
+um:dayType a owl:DatatypeProperty ;
+    rdfs:domain um:Date ;
+    rdfs:range xsd:string ;
+    rdfs:label "day type" .

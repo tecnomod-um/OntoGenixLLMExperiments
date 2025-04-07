@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:BoatSales a owl:Ontology .
+
+# Classes
+um:Boat a owl:Class .
+
+# Data Properties
+um:price a owl:DatatypeProperty ;
+    rdfs:domain um:Boat ;
+    rdfs:range xsd:string .
+
+um:boatType a owl:DatatypeProperty ;
+    rdfs:domain um:Boat ;
+    rdfs:range xsd:string .
+
+um:manufacturer a owl:DatatypeProperty ;
+    rdfs:domain um:Boat ;
+    rdfs:range xsd:string .
+
+um:type a owl:DatatypeProperty ;
+    rdfs:domain um:Boat ;
+    rdfs:range xsd:string .
+
+um:yearBuilt a owl:DatatypeProperty ;
+    rdfs:domain um:Boat ;
+    rdfs:range xsd:integer .
+
+um:length a owl:DatatypeProperty ;
+    rdfs:domain um:Boat ;
+    rdfs:range xsd:float .
+
+um:width a owl:DatatypeProperty ;
+    rdfs:domain um:Boat ;
+    rdfs:range xsd:float .
+
+um:material a owl:DatatypeProperty ;
+    rdfs:domain um:Boat ;
+    rdfs:range xsd:string .
+
+um:location a owl:DatatypeProperty ;
+    rdfs:domain um:Boat ;
+    rdfs:range xsd:string .
+
+um:numberOfViewsLast7Days a owl:DatatypeProperty ;
+    rdfs:domain um:Boat ;
+    rdfs:range xsd:integer .
+

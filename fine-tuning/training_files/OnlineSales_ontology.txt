@@ -1,0 +1,80 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:OnlineSalesOntology rdf:type owl:Ontology .
+
+### Classes ###
+
+um:Transaction rdf:type owl:Class ;
+    rdfs:label "Transaction" .
+
+um:Product rdf:type owl:Class ;
+    rdfs:label "Product" .
+
+um:ProductCategory rdf:type owl:Class ;
+    rdfs:label "Product Category" .
+
+um:Region rdf:type owl:Class ;
+    rdfs:label "Region" .
+
+um:PaymentMethod rdf:type owl:Class ;
+    rdfs:label "Payment Method" .
+
+
+### Data Properties ###
+
+um:transactionID rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "transaction ID" .
+
+um:transactionDate rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range xsd:date ;
+    rdfs:label "transaction date" .
+
+um:productName rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string ;
+    rdfs:label "product name" .
+
+um:unitsSold rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "units sold" .
+
+um:unitPrice rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "unit price" .
+
+um:totalRevenue rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "total revenue" .
+
+
+### Object Properties ###
+
+um:belongsToCategory rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range um:ProductCategory ;
+    rdfs:label "belongs to category" .
+
+um:occurredInRegion rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range um:Region ;
+    rdfs:label "occurred in region" .
+
+um:usesPaymentMethod rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range um:PaymentMethod ;
+    rdfs:label "uses payment method" .
+
+um:involvesProduct rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range um:Product ;
+    rdfs:label "involves product" .

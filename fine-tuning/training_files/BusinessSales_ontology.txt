@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:BusinessSales a owl:Ontology .
+
+# Classes
+um:Product a owl:Class .
+
+# Data Properties
+um:productType a owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string .
+
+um:netQuantity a owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:integer .
+
+um:grossSales a owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:float .
+
+um:discounts a owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:float .
+
+um:returns a owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:float .
+
+um:totalNetSales a owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:float .
+

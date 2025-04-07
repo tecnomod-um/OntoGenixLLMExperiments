@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:MotorVehicleSalesOntology rdf:type owl:Ontology .
+
+### Classes ###
+
+um:MotorVehicleSales rdf:type owl:Class ;
+    rdfs:label "Motor Vehicle Sales" .
+
+um:County rdf:type owl:Class ;
+    rdfs:label "County" .
+
+
+### Data Properties ###
+
+um:salesYear rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:MotorVehicleSales ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "sales year" .
+
+um:salesQuarter rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:MotorVehicleSales ;
+    rdfs:range xsd:integer ;
+    rdfs:label "sales quarter" .
+
+um:salesAmount rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:MotorVehicleSales ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "sales amount" .
+
+um:countyName rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:County ;
+    rdfs:range xsd:string ;
+    rdfs:label "county name" .
+
+
+### Object Properties ###
+
+um:occursInCounty rdf:type owl:ObjectProperty ;
+    rdfs:domain um:MotorVehicleSales ;
+    rdfs:range um:County ;
+    rdfs:label "occurs in county" .

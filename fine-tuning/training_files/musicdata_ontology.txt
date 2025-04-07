@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:MusicDataOntology rdf:type owl:Ontology .
+
+### Classes ###
+
+um:MusicRecord rdf:type owl:Class ;
+    rdfs:label "Music Record" .
+
+um:Format rdf:type owl:Class ;
+    rdfs:label "Format" .
+
+um:Metric rdf:type owl:Class ;
+    rdfs:label "Metric" .
+
+um:Year rdf:type owl:Class ;
+    rdfs:label "Year" .
+
+
+### Data Properties ###
+
+um:numberOfRecords rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:MusicRecord ;
+    rdfs:range xsd:integer ;
+    rdfs:label "number of records" .
+
+um:valueActual rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:MusicRecord ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "value actual" .
+
+
+### Object Properties ###
+
+um:hasFormat rdf:type owl:ObjectProperty ;
+    rdfs:domain um:MusicRecord ;
+    rdfs:range um:Format ;
+    rdfs:label "has format" .
+
+um:hasMetric rdf:type owl:ObjectProperty ;
+    rdfs:domain um:MusicRecord ;
+    rdfs:range um:Metric ;
+    rdfs:label "has metric" .
+
+um:hasYear rdf:type owl:ObjectProperty ;
+    rdfs:domain um:MusicRecord ;
+    rdfs:range um:Year ;
+    rdfs:label "has year" .

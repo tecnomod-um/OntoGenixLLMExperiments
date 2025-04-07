@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:FurnitureOntology rdf:type owl:Ontology .
+
+### Classes ###
+
+um:Furniture rdf:type owl:Class ;
+    rdfs:label "Furniture" .
+
+
+### Data Properties ###
+
+um:productTitle rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Furniture ;
+    rdfs:range xsd:string ;
+    rdfs:label "product title" .
+
+um:originalPrice rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Furniture ;
+    rdfs:range xsd:string ;
+    rdfs:label "original price" .
+
+um:price rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Furniture ;
+    rdfs:range xsd:string ;
+    rdfs:label "price" .
+
+um:sold rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Furniture ;
+    rdfs:range xsd:integer ;
+    rdfs:label "sold quantity" .
+
+um:tagText rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Furniture ;
+    rdfs:range xsd:string ;
+    rdfs:label "tag text" .

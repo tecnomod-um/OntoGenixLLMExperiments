@@ -1,0 +1,101 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:USRegionalSalesOntology rdf:type owl:Ontology .
+
+### Classes ###
+um:Order rdf:type owl:Class ;
+    rdfs:label "Order"@en .
+
+um:Customer rdf:type owl:Class ;
+    rdfs:label "Customer"@en .
+
+um:Store rdf:type owl:Class ;
+    rdfs:label "Store"@en .
+
+um:Product rdf:type owl:Class ;
+    rdfs:label "Product"@en .
+
+um:SalesTeam rdf:type owl:Class ;
+    rdfs:label "Sales Team"@en .
+
+um:Date rdf:type owl:Class ;
+    rdfs:label "Date"@en .
+
+um:OrderDate rdf:type owl:Class ;
+    rdfs:subClassOf um:Date ;
+    rdfs:label "Order Date"@en .
+
+um:ShipDate rdf:type owl:Class ;
+    rdfs:subClassOf um:Date ;
+    rdfs:label "Ship Date"@en .
+
+um:DeliveryDate rdf:type owl:Class ;
+    rdfs:subClassOf um:Date ;
+    rdfs:label "Delivery Date"@en .
+
+um:Warehouse rdf:type owl:Class ;
+    rdfs:label "Warehouse"@en .
+
+um:SalesChannel rdf:type owl:Class ;
+    rdfs:label "Sales Channel"@en .
+
+### Data Properties ###
+um:hasOrderQuantity rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Order Quantity"@en .
+
+um:hasDiscountApplied rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Discount Applied"@en .
+
+### Object Properties ###
+um:hasCustomer rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:Customer ;
+    rdfs:label "Has Customer"@en .
+
+um:hasStore rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:Store ;
+    rdfs:label "Has Store"@en .
+
+um:hasProduct rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:Product ;
+    rdfs:label "Has Product"@en .
+
+um:hasSalesTeam rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:SalesTeam ;
+    rdfs:label "Has Sales Team"@en .
+
+um:hasOrderDate rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:OrderDate ;
+    rdfs:label "Has Order Date"@en .
+
+um:hasShipDate rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:ShipDate ;
+    rdfs:label "Has Ship Date"@en .
+
+um:hasDeliveryDate rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:DeliveryDate ;
+    rdfs:label "Has Delivery Date"@en .
+
+um:hasWarehouse rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:Warehouse ;
+    rdfs:label "Has Warehouse"@en .
+
+um:hasSalesChannel rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Order ;
+    rdfs:range um:SalesChannel ;
+    rdfs:label "Has Sales Channel"@en .

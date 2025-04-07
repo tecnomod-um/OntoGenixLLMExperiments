@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:CoffeeSalesOntology rdf:type owl:Ontology .
+
+### Classes ###
+
+um:Transaction rdf:type owl:Class ;
+    rdfs:label "Transaction" .
+
+um:Coffee rdf:type owl:Class ;
+    rdfs:label "Coffee" .
+
+um:Payment rdf:type owl:Class ;
+    rdfs:label "Payment" .
+
+
+### Data Properties ###
+
+um:transactionDate rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range xsd:date ;
+    rdfs:label "transaction date" .
+
+um:transactionDatetime rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range xsd:dateTime ;
+    rdfs:label "transaction datetime" .
+
+um:paymentType rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Payment ;
+    rdfs:range xsd:string ;
+    rdfs:label "payment type" .
+
+um:card rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Payment ;
+    rdfs:range xsd:string ;
+    rdfs:label "card" .
+
+um:amount rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Payment ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "amount" .
+
+um:coffeeName rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Coffee ;
+    rdfs:range xsd:string ;
+    rdfs:label "coffee name" .
+
+
+### Object Properties ###
+
+um:hasPayment rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range um:Payment ;
+    rdfs:label "has payment" .
+
+um:hasCoffee rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Transaction ;
+    rdfs:range um:Coffee ;
+    rdfs:label "has coffee" .

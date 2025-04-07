@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:SalesSatisfactionOntology rdf:type owl:Ontology .
+
+### Classes ###
+um:Customer rdf:type owl:Class ;
+    rdfs:label "Customer"@en .
+
+um:CustomerSegment rdf:type owl:Class ;
+    rdfs:label "Customer Segment"@en .
+
+um:Group rdf:type owl:Class ;
+    rdfs:label "Group"@en .
+
+um:Sales rdf:type owl:Class ;
+    rdfs:label "Sales"@en .
+
+um:Satisfaction rdf:type owl:Class ;
+    rdfs:label "Satisfaction"@en .
+
+### Data Properties ###
+um:hasSalesBefore rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Sales ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Sales Before"@en .
+
+um:hasSalesAfter rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Sales ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Sales After"@en .
+
+um:hasCustomerSatisfactionBefore rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Satisfaction ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Customer Satisfaction Before"@en .
+
+um:hasCustomerSatisfactionAfter rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Satisfaction ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Customer Satisfaction After"@en .
+
+um:hasPurchaseMade rdf:type owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:string ;
+    rdfs:label "Purchase Made"@en .
+
+### Object Properties ###
+um:belongsToSegment rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range um:CustomerSegment ;
+    rdfs:label "Belongs to Segment"@en .
+
+um:belongsToGroup rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range um:Group ;
+    rdfs:label "Belongs to Group"@en .
+
+um:hasSales rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range um:Sales ;
+    rdfs:label "Has Sales"@en .
+
+um:hasSatisfaction rdf:type owl:ObjectProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range um:Satisfaction ;
+    rdfs:label "Has Satisfaction"@en .

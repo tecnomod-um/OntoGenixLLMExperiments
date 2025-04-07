@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:BooksSales a owl:Ontology .
+
+# Classes
+um:Book a owl:Class .
+um:Author a owl:Class .
+um:Publisher a owl:Class .
+
+# Object Properties
+um:hasAuthor a owl:ObjectProperty ;
+    rdfs:domain um:Book ;
+    rdfs:range um:Author .
+
+um:hasPublisher a owl:ObjectProperty ;
+    rdfs:domain um:Book ;
+    rdfs:range um:Publisher .
+
+# Data Properties
+um:publishingYear a owl:DatatypeProperty ;
+    rdfs:domain um:Book ;
+    rdfs:range xsd:integer .
+
+um:bookName a owl:DatatypeProperty ;
+    rdfs:domain um:Book ;
+    rdfs:range xsd:string .
+
+um:languageCode a owl:DatatypeProperty ;
+    rdfs:domain um:Book ;
+    rdfs:range xsd:string .
+
+um:authorRating a owl:DatatypeProperty ;
+    rdfs:domain um:Author ;
+    rdfs:range xsd:string .
+
+um:bookAverageRating a owl:DatatypeProperty ;
+    rdfs:domain um:Book ;
+    rdfs:range xsd:float .
+
+um:bookRatingsCount a owl:DatatypeProperty ;
+    rdfs:domain um:Book ;
+    rdfs:range xsd:integer .
+
+um:genre a owl:DatatypeProperty ;
+    rdfs:domain um:Book ;
+    rdfs:range xsd:string .
+
+um:grossSales a owl:DatatypeProperty ;
+    rdfs:domain um:Book ;
+    rdfs:range xsd:float .
+
+um:publisherRevenue a owl:DatatypeProperty ;
+    rdfs:domain um:Publisher ;
+    rdfs:range xsd:float .
+
+um:salePrice a owl:DatatypeProperty ;
+    rdfs:domain um:Book ;
+    rdfs:range xsd:float .
+
+um:salesRank a owl:DatatypeProperty ;
+    rdfs:domain um:Book ;
+    rdfs:range xsd:integer .
+
+um:publisherName a owl:DatatypeProperty ;
+    rdfs:domain um:Publisher ;
+    rdfs:range xsd:string .
+
+um:unitsSold a owl:DatatypeProperty ;
+    rdfs:domain um:Book ;
+    rdfs:range xsd:integer .

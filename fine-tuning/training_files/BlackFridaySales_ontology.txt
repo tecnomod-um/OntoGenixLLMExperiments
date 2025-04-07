@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:BlackFridaySales a owl:Ontology .
+
+# Classes
+um:User a owl:Class .
+um:Product a owl:Class .
+
+# Object Properties
+um:hasProduct a owl:ObjectProperty ;
+    rdfs:domain um:User ;
+    rdfs:range um:Product .
+
+# Data Properties
+um:userID a owl:DatatypeProperty ;
+    rdfs:domain um:User ;
+    rdfs:range xsd:integer .
+
+um:gender a owl:DatatypeProperty ;
+    rdfs:domain um:User ;
+    rdfs:range xsd:string .
+
+um:age a owl:DatatypeProperty ;
+    rdfs:domain um:User ;
+    rdfs:range xsd:string .
+
+um:occupation a owl:DatatypeProperty ;
+    rdfs:domain um:User ;
+    rdfs:range xsd:integer .
+
+um:cityCategory a owl:DatatypeProperty ;
+    rdfs:domain um:User ;
+    rdfs:range xsd:string .
+
+um:stayInCurrentCityYears a owl:DatatypeProperty ;
+    rdfs:domain um:User ;
+    rdfs:range xsd:string .
+
+um:productID a owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:string .
+
+um:productCategory1 a owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:integer .
+
+um:productCategory2 a owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:integer .
+
+um:productCategory3 a owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:integer .
+
+um:purchaseAmount a owl:DatatypeProperty ;
+    rdfs:domain um:Product ;
+    rdfs:range xsd:integer .
+

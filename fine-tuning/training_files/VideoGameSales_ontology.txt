@@ -1,0 +1,83 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix um: <https://vocab.um.es#> .
+
+# Classes
+um:VideoGame a owl:Class ;
+    rdfs:label "Video Game" .
+
+um:Platform a owl:Class ;
+    rdfs:label "Platform" .
+
+um:Genre a owl:Class ;
+    rdfs:label "Genre" .
+
+um:Publisher a owl:Class ;
+    rdfs:label "Publisher" .
+
+um:Sales a owl:Class ;
+    rdfs:label "Sales" .
+
+# Data Properties
+um:hasRank a owl:DatatypeProperty ;
+    rdfs:domain um:VideoGame ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Rank" .
+
+um:hasName a owl:DatatypeProperty ;
+    rdfs:domain um:VideoGame ;
+    rdfs:range xsd:string ;
+    rdfs:label "Name" .
+
+um:hasYear a owl:DatatypeProperty ;
+    rdfs:domain um:VideoGame ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year" .
+
+um:hasNA_Sales a owl:DatatypeProperty ;
+    rdfs:domain um:Sales ;
+    rdfs:range xsd:float ;
+    rdfs:label "North America Sales" .
+
+um:hasEU_Sales a owl:DatatypeProperty ;
+    rdfs:domain um:Sales ;
+    rdfs:range xsd:float ;
+    rdfs:label "Europe Sales" .
+
+um:hasJP_Sales a owl:DatatypeProperty ;
+    rdfs:domain um:Sales ;
+    rdfs:range xsd:float ;
+    rdfs:label "Japan Sales" .
+
+um:hasOther_Sales a owl:DatatypeProperty ;
+    rdfs:domain um:Sales ;
+    rdfs:range xsd:float ;
+    rdfs:label "Other Sales" .
+
+um:hasGlobal_Sales a owl:DatatypeProperty ;
+    rdfs:domain um:Sales ;
+    rdfs:range xsd:float ;
+    rdfs:label "Global Sales" .
+
+# Object Properties
+um:hasPlatform a owl:ObjectProperty ;
+    rdfs:domain um:VideoGame ;
+    rdfs:range um:Platform ;
+    rdfs:label "has Platform" .
+
+um:hasGenre a owl:ObjectProperty ;
+    rdfs:domain um:VideoGame ;
+    rdfs:range um:Genre ;
+    rdfs:label "has Genre" .
+
+um:hasPublisher a owl:ObjectProperty ;
+    rdfs:domain um:VideoGame ;
+    rdfs:range um:Publisher ;
+    rdfs:label "has Publisher" .
+
+um:hasSales a owl:ObjectProperty ;
+    rdfs:domain um:VideoGame ;
+    rdfs:range um:Sales ;
+    rdfs:label "has Sales" .

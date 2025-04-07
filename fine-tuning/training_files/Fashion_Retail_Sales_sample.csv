@@ -1,0 +1,51 @@
+Customer Reference ID,Item Purchased,Purchase Amount (USD),Date Purchase,Review Rating,Payment Method
+4030,Boots,127.0,2023-03-17,1.8,Cash
+3982,Overalls,182.0,2023-01-23,4.9,Credit Card
+4003,Cardigan,,2023-01-31,3.1,Cash
+4030,Sunglasses,,2022-11-13,1.2,Credit Card
+4007,Dress,172.0,2023-04-05,1.9,Cash
+3964,Kimono,58.0,2023-02-09,,Credit Card
+3987,Raincoat,109.0,2023-01-20,3.0,Credit Card
+3979,Overalls,,2023-03-24,2.7,Cash
+3962,Romper,,2023-08-18,3.6,Credit Card
+3997,Wallet,3003.0,2022-11-27,4.7,Cash
+4035,Handbag,46.0,2023-04-21,4.3,Credit Card
+4001,Tank Top,101.0,2023-08-17,,Cash
+4028,Handbag,,2023-06-15,2.2,Cash
+4049,Backpack,82.0,2023-02-06,4.7,Credit Card
+4082,Sweater,,2023-02-27,,Credit Card
+3979,Swimsuit,190.0,2023-09-08,1.9,Cash
+4110,Polo Shirt,42.0,2022-10-15,4.0,Cash
+4019,Shorts,153.0,2023-05-21,1.4,Cash
+4063,Vest,,2023-05-29,2.9,Cash
+4107,Shorts,183.0,2023-07-06,2.0,Credit Card
+3966,Polo Shirt,87.0,2023-01-08,3.3,Cash
+4042,Leggings,76.0,2023-02-22,3.9,Credit Card
+4010,Pajamas,46.0,2023-05-12,4.5,Credit Card
+4117,Socks,193.0,2023-03-15,2.3,Credit Card
+4017,Jacket,31.0,2023-05-15,4.5,Cash
+4069,Jumpsuit,,2023-02-16,4.8,Cash
+4008,Skirt,10.0,2023-05-30,2.2,Credit Card
+4031,Coat,170.0,2023-02-23,3.3,Cash
+4093,Scarf,,2023-06-21,3.5,Credit Card
+4029,Jumpsuit,84.0,2022-12-05,3.5,Cash
+4023,Jumpsuit,130.0,2022-11-04,4.1,Credit Card
+3999,Slippers,127.0,2022-11-22,4.7,Credit Card
+3986,Wallet,,2022-12-17,1.8,Cash
+3958,Sun Hat,59.0,2023-06-15,4.3,Credit Card
+4104,Romper,194.0,2023-01-09,2.0,Cash
+4034,Belt,101.0,2022-12-25,1.2,Credit Card
+4005,Cardigan,,2022-12-14,3.1,Credit Card
+3990,T-shirt,,2023-06-17,4.8,Cash
+4074,Socks,67.0,2022-10-31,5.0,Credit Card
+4017,Jeans,72.0,2022-10-28,,Credit Card
+4106,Hoodie,108.0,2023-08-06,1.3,Cash
+3996,Skirt,135.0,2023-03-04,1.9,Credit Card
+4095,Flip-Flops,54.0,2023-01-15,2.1,Credit Card
+3961,Jumpsuit,191.0,2023-06-19,3.7,Cash
+3971,Cardigan,,2022-10-18,4.5,Cash
+3998,T-shirt,136.0,2023-08-15,3.4,Credit Card
+3989,Trousers,144.0,2023-08-13,3.2,Credit Card
+4068,Tunic,60.0,2023-01-04,1.2,Cash
+4086,Sandals,78.0,2023-05-21,3.3,Credit Card
+4029,Camisole,29.0,2023-05-05,1.3,Credit Card
