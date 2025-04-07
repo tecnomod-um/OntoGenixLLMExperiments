@@ -18,7 +18,7 @@ For the fine-tuning process, a **training dataset** is required, consisting of a
 Need a total of **40 examples (pairs CSV file-ontology)** for the fine-tuning process of the LLMs. 
 * A total of 30 examples as [**training data**](./training_data/train_data.jsonl).
 * A total of 10 examples as [**validation data**](./training_data/validation.jsonl).
-* 6 datasets related to commercial activities from Ontogenix paper as [test data](./test_files).
+* 6 datasets related to commercial activities from Ontogenix paper as [**test data**](./test_files).
 
 This process is reflected in the Python script named [preparation_training_dataset.py](./scripts/preparation_training_dataset.py?ref_type=heads). To use the script, the next line code is needed:
 `python preparation_training_dataset.py input_folder output_folder`
@@ -33,7 +33,7 @@ The following LLMs will be used:
 * GPT-4o-mini
 
 ### Launch of the fine-tuning job (GPT model via OpenAI)
-For OpenAI models, launching a fine-tuning job, using the **GPT-4o-mini** model, involves the following steps:
+For OpenAI models, launching a fine-tuning job using the **GPT-4o-mini** model involves the following steps:
 1. Upload the training and validation files to the OpenAI platform.
 2. Define the hyperparameters for the fine-tuning job (n_epochs,batch_size,learning_rate_multiplier).
 3. Create the fine-tuning job with the selected model and the provided training and validation data.
@@ -65,13 +65,13 @@ Where **ft_model** is the name of the fine-tuned model, **input_folder** is the 
 * Open-source LLMs should be trained with more data than GPT to have similar accuracy.
 * Classes:
     - Not all columns derive in classes.
-    - Quantized LLMs do not improve no-quantized ones.
+    - Quantized LLMs do not improve non-quantized ones.
     - Some LLMs use general names.
     - For some LLMs the distinction between entities and properties is not very clear.
 * Object properties:
     - Different levels of performance in the connection of classes through OPs.
 * Enrichment of the training data:
-    - Llama LLMs tends to create classes tha are not present in the CSV file, inferring them from the training dataset.
+    - Llama LLMs tend to create classes that are not present in the CSV file, inferring them from the training dataset.
 
 
 
