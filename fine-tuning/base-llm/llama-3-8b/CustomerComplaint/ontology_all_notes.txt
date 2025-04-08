@@ -1,0 +1,8 @@
+Ontology without syntax errors, but semantic errors:
+
+-	Datatype property as Object property:
+
+um:hasComplaintID a owl:ObjectProperty ;
+    rdfs:domain um:ComplaintID ;
+    rdfs:range xsd:string ;
+	rdfs:label "Has Complaint ID".

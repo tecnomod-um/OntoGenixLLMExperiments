@@ -1,0 +1,70 @@
+classDiagram
+
+class CompanyResponse {
+  +hasCompanyResponse: xsd:string
+}
+
+class CompanyResponseToConsumer {
+  +hasCompanyResponseToConsumer: xsd:string
+}
+
+class ComplaintID {
+  +hasComplaintID: xsd:integer
+}
+
+class ConsumerComplaintNarrative
+
+class ConsumerConsent
+
+class CreditComplaint {
+  +hasTypeOfComplaint: xsd:string
+}
+
+class DateReceived
+
+class DateSentToCompany {
+  +hasDateSentToCompany: xsd:date
+}
+
+class Disputed {
+  +hasDisputed: xsd:string
+}
+
+class Issue
+
+class Product
+
+class State
+
+class SubIssue
+
+class SubProduct
+
+class SubmittedVia {
+  +hasSubmittedVia: xsd:string
+}
+
+class Tags {
+  +hasTags: xsd:string
+}
+
+class TimelyResponse {
+  +hasTimelyResponse: xsd:string
+}
+
+class ZIPCode
+
+State --> ZIPCode : hasAffectingState
+DateReceived --> CreditComplaint : hasCreditComplaint
+CompanyResponseToConsumer --> CompanyResponse : hasRelatedToCompanyResponse
+ConsumerConsent --> SubmittedVia : hasRelatedToConsumer
+ConsumerConsent --> SubmittedVia : hasRelatedToConsumerConsent
+DateReceived --> CreditComplaint : hasRelatedToDateReceived
+DateSentToCompany --> CompanyResponse : hasRelatedToDateSent
+Disputed --> CompanyResponse : hasRelatedToDisputed
+Issue --> SubIssue : hasRelatedToIssue
+Product --> SubProduct : hasRelatedToProduct
+State --> ZIPCode : hasRelatedToState
+SubmittedVia --> DateSentToCompany : hasRelatedToSubmittedVia
+Tags --> ConsumerComplaintNarrative : hasRelatedToTags
+TimelyResponse --> CompanyResponse : hasRelatedToTimelyResponse

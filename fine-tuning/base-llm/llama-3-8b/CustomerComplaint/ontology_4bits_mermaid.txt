@@ -1,0 +1,27 @@
+classDiagram
+
+class Company {
+  +hasCompany: xsd:string
+}
+
+class Product {
+  +hasProduct: xsd:string
+}
+
+class State {
+  +hasZIPCode: xsd:decimal
+}
+
+class SubProduct {
+  +hasSubProduct: xsd:string
+}
+
+class Tags {
+  +hasTags: xsd:string
+}
+
+SubProduct --> Tags : hasDietifiedTags
+SubProduct --> Tags : hasDisputedByConsumer
+Product --> Company : hasResponseByCompany
+Company --> Tags : isDisputedByConsumer
+Product --> SubProduct : isIncludedInSub-product

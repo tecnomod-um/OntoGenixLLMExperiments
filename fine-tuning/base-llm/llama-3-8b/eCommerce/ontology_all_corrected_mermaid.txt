@@ -1,0 +1,19 @@
+classDiagram
+
+class Customer {
+  +customerCountry: xsd:string
+}
+
+class Invoice {
+  +invoiceDate: xsd:date
+}
+
+class Product {
+  +productId: xsd:string
+  +productDescription: xsd:string
+  +unitPrice: xsd:decimal
+  +quantity: xsd:integer
+}
+
+Invoice --> Product : hasProduct
+Invoice --> Customer : hasCustomer

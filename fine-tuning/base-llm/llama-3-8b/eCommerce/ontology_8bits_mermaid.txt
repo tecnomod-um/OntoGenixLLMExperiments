@@ -1,0 +1,21 @@
+classDiagram
+
+class Country
+
+class Customer {
+  +customerID: xsd:integer
+}
+
+class Product {
+  +productCode: xsd:string
+  +unitPrice: xsd:decimal
+}
+
+class Transaction {
+  +transactionID: xsd:string
+  +transactionDate: xsd:date
+}
+
+Transaction --> Customer : belongsToCustomer
+Transaction --> Product : hasProduct
+Transaction --> Country : occursInCountry
