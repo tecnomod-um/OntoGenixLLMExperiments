@@ -1,0 +1,65 @@
+classDiagram
+
+class BusinessClass
+BusinessClass --|> dbo_BusinessClass :subClassOf
+
+class EconomyClass
+EconomyClass --|> dbo_EconomyClass :subClassOf
+
+class Booking 
+Booking --|> dbo_Reservation :subClassOf
+
+class Female
+Female --|> foaf_Female :subClassOf
+
+class Male
+Male --|> foaf_Male :subClassOf
+
+class Satisfaction
+Satisfaction --|> sosa_Result :subClassOf
+
+class BusinessTravel
+BusinessTravel --|> schema_BusinessEvent :subClassOf
+
+class Flight 
+Flight --|> schema_Flight :subClassOf
+
+class PersonalTravel
+PersonalTravel --|> schema_LeisureTimeActivity :subClassOf
+
+class Passenger 
+Passenger --|> schema_Person :subClassOf
+
+class EcoPlusClass
+EcoPlusClass --|> schema_ProductModel :subClassOf
+
+class FrequentFlyer
+FrequentFlyer --|> schema_ProgramMembership :subClassOf
+
+class InfrequentFlyer
+InfrequentFlyer --|> schema_ProgramMembership :subClassOf
+
+class Satisfied
+Satisfied --|> schema_ReviewAction :subClassOf
+
+class Unsatisfied
+Unsatisfied --|> schema_ReviewAction :subClassOf
+
+class Service 
+Service --|> schema_Service :subClassOf
+
+Booking --> BusinessClass : hasClass
+Booking --> EcoPlusClass : hasClass
+Booking --> EconomyClass : hasClass
+
+Passenger --> FrequentFlyer : hasCustomerType
+Passenger --> InfrequentFlyer : hasCustomerType
+
+Passenger --> Female : hasGender
+Passenger --> Male : hasGender
+
+Passenger --> Satisfied : hasSatisfaction
+Passenger --> Unsatisfied : hasSatisfaction
+
+Booking --> BusinessTravel : hasTypeOfTravel
+Booking --> PersonalTravel : hasTypeOfTravel

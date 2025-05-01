@@ -1,0 +1,14 @@
+classDiagram
+
+class Customer
+
+class Flight
+
+class CustomerRating {
+  +hasAttribute: xsd:string
+  +hasNumericValue: xsd:decimal
+}
+
+CustomerRating --> Customer : hasCustomer
+Customer --> Flight : hasFlight
+Customer --> CustomerRating : ratedBy

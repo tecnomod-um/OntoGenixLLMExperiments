@@ -1,0 +1,9 @@
+classDiagram
+    class Country
+    class Description
+    class InvoiceDate
+    class InvoiceNo
+    class StockCode
+    class CustomerID
+    class Quantity
+    class UnitPrice

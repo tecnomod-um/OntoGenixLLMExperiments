@@ -1,0 +1,25 @@
+classDiagram
+
+    class Brand
+
+    class Category
+
+    class Product {
+        +absoluteUrl : rdfs:Literal
+        +discountPrice : rdfs:Literal
+        +imageUrl : rdfs:Literal
+        +price : rdfs:Literal
+        +productName : rdfs:Literal
+        +quantity : rdfs:Literal
+    }
+
+    class SubCategory
+
+    SubCategory --|> schema_Category : subClassOf
+    Brand --|> schema_Brand : subClassOf
+    Category --|> schema_Category : subClassOf
+    Product --|> schema_Product : subClassOf
+
+    Product --> Brand : hasBrand
+    Product --> Category : hasCategory
+    Product --> SubCategory : hasSubCategory

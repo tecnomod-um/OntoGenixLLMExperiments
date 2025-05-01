@@ -1,0 +1,22 @@
+classDiagram
+
+class Invoice {
+  +invoiceDate: xsd:dateTime
+  +quantity: xsd:integer
+}
+
+class Product {
+  +stockCode: xsd:string
+  +description: xsd:string
+  +unitPrice: xsd:decimal
+}
+
+class Customer {
+  +customerID: xsd:integer
+}
+
+class Country
+
+Invoice --> Product : hasProduct
+Invoice --> Customer : belongsToCustomer
+Customer --> Country : locatedInCountry

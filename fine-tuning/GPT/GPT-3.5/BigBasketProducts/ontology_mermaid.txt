@@ -1,0 +1,23 @@
+classDiagram
+
+class Product {
+  +absoluteUrl: xsd:anyURI
+  +category: xsd:string
+  +discountPrice: xsd:decimal
+  +imageUrl: xsd:anyURI
+  +maxDiscountPrice: xsd:decimal
+  +maxPrice: xsd:decimal
+  +minDiscountPrice: xsd:decimal
+  +minPrice: xsd:decimal
+  +price: xsd:decimal
+  +productName: xsd:string
+  +productNameList: xsd:string
+  +quantity: xsd:string
+  +subCategory: xsd:string
+}
+
+class Brand {
+  +brandList: xsd:string
+}
+
+Product --> Brand : isProducedBy

@@ -1,0 +1,12 @@
+classDiagram
+    class Customer {
+        +hasZipCodePrefix: vcard_postal_code (xsd:string)
+        +hasCustomerId: schema_identifier (xsd:string)
+        +hasCustomerUniqueId: schema_identifier (xsd:string)
+    }
+
+    class vcard_locality
+    class vcard_region
+
+    Customer --> vcard_locality : hasCity
+    Customer --> vcard_region : hasState

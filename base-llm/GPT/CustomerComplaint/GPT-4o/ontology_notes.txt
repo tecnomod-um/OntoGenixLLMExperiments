@@ -1,0 +1,7 @@
+Ontology without syntax errors, but semantics errors. For example, schema:identifier is a property, but class entity is declarated as subClassOf this property:
+```
+base:ComplaintID a owl:Class ;
+    rdfs:subClassOf schema:identifier .
+```
+
+Also wrong URIs, like schema:PostalCode, that does not exist.

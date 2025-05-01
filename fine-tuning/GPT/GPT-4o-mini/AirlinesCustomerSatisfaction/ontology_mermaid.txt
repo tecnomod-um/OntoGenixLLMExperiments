@@ -1,0 +1,39 @@
+classDiagram
+
+class Customer {
+  +age: xsd:integer
+  +customerType: xsd:string
+  +gender: xsd:string
+}
+
+class Experience {
+  +baggageHandling: xsd:integer
+  +checkinService: xsd:integer
+  +cleanliness: xsd:integer
+  +departureArrivalTimeConvenient: xsd:integer
+  +easeOfOnlineBooking: xsd:integer
+  +foodAndDrink: xsd:integer
+  +gateLocation: xsd:integer
+  +inflightEntertainment: xsd:integer
+  +inflightWifiService: xsd:integer
+  +legRoomService: xsd:integer
+  +onBoardService: xsd:integer
+  +onlineBoarding: xsd:integer
+  +onlineSupport: xsd:integer
+  +satisfaction: xsd:string
+  +seatComfort: xsd:integer
+}
+
+class Flight {
+  +arrivalDelayInMinutes: xsd:float
+  +departureDelayInMinutes: xsd:integer
+  +flightDistance: xsd:integer
+  +typeOfTravel: xsd:string
+}
+
+class FlightClass
+
+Flight --> Customer : hasCustomer
+Flight --> Experience : hasExperience
+Flight --> FlightClass : hasFlightClass
+Experience --> FlightClass : measuredBy

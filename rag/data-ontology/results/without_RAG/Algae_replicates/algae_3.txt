@@ -1,8 +1,0 @@
-Light: http://www.w3.org/2001/XMLSchema#double  
-Nitrate: http://www.w3.org/2001/XMLSchema#double  
-Iron: http://www.w3.org/2001/XMLSchema#double  
-Phosphate: http://www.w3.org/2001/XMLSchema#double  
-Temperature: http://www.w3.org/2001/XMLSchema#double  
-pH: http://www.w3.org/2001/XMLSchema#double  
-CO2: http://www.w3.org/2001/XMLSchema#double  
-Population: IRI not available.

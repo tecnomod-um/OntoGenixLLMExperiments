@@ -1,9 +1,0 @@
-Education: IRI not available  
-JoiningYear: IRI not available  
-Country: um:Country  
-PaymentTier: IRI not available  
-Age: IRI not available  
-Gender: IRI not available  
-EverBenched: IRI not available  
-ExperienceInCurrentDomain: IRI not available  
-LeaveOrNot: IRI not available  

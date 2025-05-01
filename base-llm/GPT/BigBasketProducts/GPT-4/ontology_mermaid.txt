@@ -1,0 +1,28 @@
+classDiagram
+
+    class Brand
+
+    class Category
+
+    class Product {
+        +hasAbsoluteUrl : xsd:anyURI
+        +hasDiscountPrice : xsd:float
+        +hasPrice : xsd:float
+        +hasProductName : xsd:string
+    }
+
+    class SubCategory
+
+    Brand --|> schema_Brand : subClassOf
+    Category --|> schema_Category : subClassOf
+    SubCategory --|> Category : subClassOf
+    Product --|> schema_Product : subClassOf
+    Brand --|> Product : subClassOf
+    Category --|> Product : subClassOf
+    SubCategory --|> schema_Thing : subClassOf
+
+    Product --> Brand : hasBrand
+    Product --> Category : hasCategory
+    Product --> schema_image : hasImage
+    Product -- > schema_QuantitativeValue :hasQuantity
+    Category --> SubCategory : hasSubCategory

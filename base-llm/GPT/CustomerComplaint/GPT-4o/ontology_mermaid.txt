@@ -1,0 +1,59 @@
+classDiagram
+
+class Complaint
+class Company
+class CompanyPublicResponse
+class CompanyResponseToConsumer
+class ComplaintID
+class ConsumerComplaintNarrative
+class ConsumerConsentProvided
+class ConsumerDisputed
+class DateReceived
+class DateSentToCompany
+class Issue
+class Product
+class State
+class SubIssue
+class SubProduct
+class SubmittedVia
+class Tags
+class TimelyResponse
+class ZIPCode
+
+DateReceived --|> dcterms_date :subClassOf
+DateSentToCompany --|> dcterms_date :subClassOf
+ConsumerConsentProvided --|> schema_Boolean :subClassOf
+ConsumerDisputed --|> schema_Boolean :subClassOf
+TimelyResponse --|> schema_Boolean :subClassOf
+ComplaintID --|> schema_identifier :subClassOf
+Company --|> schema_Organization :subClassOf
+State --|> schema_Place :subClassOf
+ZIPCode --|> schema_PostalCode :subClassOf
+Product --|> schema_Product :subClassOf
+SubProduct --|> schema_Product :subClassOf
+CompanyPublicResponse --|> schema_Review :subClassOf
+CompanyResponseToConsumer --|> schema_Review :subClassOf
+ConsumerComplaintNarrative --|> schema_Text :subClassOf
+Issue --|> schema_Text :subClassOf
+SubIssue --|> schema_Text :subClassOf
+SubmittedVia --|> schema_Text :subClassOf
+Tags --|> schema_Text :subClassOf
+
+Complaint --> Company : hasCompany
+Complaint --> CompanyPublicResponse : hasCompanyPublicResponse
+Complaint --> CompanyResponseToConsumer : hasCompanyResponseToConsumer
+Complaint --> ComplaintID : hasComplaintID
+Complaint --> ConsumerComplaintNarrative : hasConsumerComplaintNarrative
+Complaint --> ConsumerConsentProvided : hasConsumerConsentProvided
+Complaint --> ConsumerDisputed : hasConsumerDisputed
+Complaint --> DateReceived : hasDateReceived
+Complaint --> DateSentToCompany : hasDateSentToCompany
+Complaint --> Issue : hasIssue
+Complaint --> Product : hasProduct
+Complaint --> State : hasState
+Complaint --> SubIssue : hasSubIssue
+Complaint --> SubmittedVia : hasSubmittedVia
+Complaint --> SubProduct : hasSubProduct
+Complaint --> Tags : hasTags
+Complaint --> TimelyResponse : hasTimelyResponse
+Complaint --> ZIPCode : hasZIPCode

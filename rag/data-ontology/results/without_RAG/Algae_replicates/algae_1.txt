@@ -1,8 +1,0 @@
-Light: http://www.w3.org/2002/07/owl#LightIntensity  
-Nitrate: http://www.semanticweb.org/ontologies/2023/10/environment#NitrateConcentration  
-Iron: http://www.semanticweb.org/ontologies/2023/10/environment#IronConcentration  
-Phosphate: http://www.semanticweb.org/ontologies/2023/10/environment#PhosphateConcentration  
-Temperature: http://www.semanticweb.org/ontologies/2023/10/environment#WaterTemperature  
-pH: http://www.semanticweb.org/ontologies/2023/10/environment#pHLevel  
-CO2: http://www.semanticweb.org/ontologies/2023/10/environment#CO2Concentration  
-Population: http://www.semanticweb.org/ontologies/2023/10/environment#AlgaePopulationDensity  

@@ -1,0 +1,124 @@
+@prefix base: <https://base_ontology.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+base:Age rdf:type owl:Class .
+base:ArrivalDelayInMinutes rdf:type owl:Class .
+base:BaggageHandling rdf:type owl:Class .
+base:CheckinService rdf:type owl:Class .
+base:Cleanliness rdf:type owl:Class .
+base:DepartureDelayInMinutes rdf:type owl:Class .
+base:DepartureArrivalTimeConvenient rdf:type owl:Class .
+base:EaseOfOnlineBooking rdf:type owl:Class .
+base:FlightDistance rdf:type owl:Class .
+base:FoodAndDrink rdf:type owl:Class .
+base:GateLocation rdf:type owl:Class .
+base:InflightEntertainment rdf:type owl:Class .
+base:InflightWifiService rdf:type owl:Class .
+base:LegRoomService rdf:type owl:Class .
+base:OnBoardService rdf:type owl:Class .
+base:OnlineBoarding rdf:type owl:Class .
+base:OnlineSupport rdf:type owl:Class .
+base:SeatComfort rdf:type owl:Class .
+base:Class rdf:type owl:Class .
+base:CustomerType rdf:type owl:Class .
+base:Gender rdf:type owl:Class .
+base:TypeOfTravel rdf:type owl:Class .
+base:Satisfaction rdf:type owl:Class .
+
+base:hasAge rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Age ;
+    rdfs:range schema:age .
+
+base:hasArrivalDelayInMinutes rdf:type owl:ObjectProperty ;
+    rdfs:domain base:ArrivalDelayInMinutes ;
+    rdfs:range schema:arrivalTime .
+
+base:hasBaggageHandling rdf:type owl:ObjectProperty ;
+    rdfs:domain base:BaggageHandling ;
+    rdfs:range schema:Rating .
+
+base:hasCheckinService rdf:type owl:ObjectProperty ;
+    rdfs:domain base:CheckinService ;
+    rdfs:range schema:Rating .
+
+base:hasCleanliness rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Cleanliness ;
+    rdfs:range schema:Rating .
+
+base:hasDepartureDelayInMinutes rdf:type owl:ObjectProperty ;
+    rdfs:domain base:DepartureDelayInMinutes ;
+    rdfs:range schema:departureTime .
+
+base:hasDepartureArrivalTimeConvenient rdf:type owl:ObjectProperty ;
+    rdfs:domain base:DepartureArrivalTimeConvenient ;
+    rdfs:range schema:Rating .
+
+base:hasEaseOfOnlineBooking rdf:type owl:ObjectProperty ;
+    rdfs:domain base:EaseOfOnlineBooking ;
+    rdfs:range schema:Rating .
+
+base:hasFlightDistance rdf:type owl:ObjectProperty ;
+    rdfs:domain base:FlightDistance ;
+    rdfs:range schema:distance .
+
+base:hasFoodAndDrink rdf:type owl:ObjectProperty ;
+    rdfs:domain base:FoodAndDrink ;
+    rdfs:range schema:Rating .
+
+base:hasGateLocation rdf:type owl:ObjectProperty ;
+    rdfs:domain base:GateLocation ;
+    rdfs:range schema:Rating .
+
+base:hasInflightEntertainment rdf:type owl:ObjectProperty ;
+    rdfs:domain base:InflightEntertainment ;
+    rdfs:range schema:Rating .
+
+base:hasInflightWifiService rdf:type owl:ObjectProperty ;
+    rdfs:domain base:InflightWifiService ;
+    rdfs:range schema:Rating .
+
+base:hasLegRoomService rdf:type owl:ObjectProperty ;
+    rdfs:domain base:LegRoomService ;
+    rdfs:range schema:Rating .
+
+base:hasOnBoardService rdf:type owl:ObjectProperty ;
+    rdfs:domain base:OnBoardService ;
+    rdfs:range schema:Rating .
+
+base:hasOnlineBoarding rdf:type owl:ObjectProperty ;
+    rdfs:domain base:OnlineBoarding ;
+    rdfs:range schema:Rating .
+
+base:hasOnlineSupport rdf:type owl:ObjectProperty ;
+    rdfs:domain base:OnlineSupport ;
+    rdfs:range schema:Rating .
+
+base:hasSeatComfort rdf:type owl:ObjectProperty ;
+    rdfs:domain base:SeatComfort ;
+    rdfs:range schema:Rating .
+
+base:hasClass rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Class ;
+    rdfs:range schema:class .
+
+base:hasCustomerType rdf:type owl:ObjectProperty ;
+    rdfs:domain base:CustomerType ;
+    rdfs:range schema:customer .
+
+base:hasGender rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Gender ;
+    rdfs:range schema:gender .
+
+base:hasTypeOfTravel rdf:type owl:ObjectProperty ;
+    rdfs:domain base:TypeOfTravel ;
+    rdfs:range schema:Trip .
+
+base:hasSatisfaction rdf:type owl:ObjectProperty ;
+    rdfs:domain base:Satisfaction ;
+    rdfs:range schema:Rating .

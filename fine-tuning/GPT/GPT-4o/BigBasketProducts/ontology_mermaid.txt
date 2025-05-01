@@ -1,0 +1,20 @@
+classDiagram
+
+class Brand
+
+class Category
+
+class Product {
+  +absoluteUrl: xsd:anyURI
+  +discountPrice: xsd:decimal
+  +imageUrl: xsd:anyURI
+  +price: xsd:decimal
+  +productName: xsd:string
+  +quantity: xsd:string
+}
+
+class SubCategory
+
+Product --> Brand : hasBrand
+Product --> Category : hasCategory
+Product --> SubCategory : hasSubCategory

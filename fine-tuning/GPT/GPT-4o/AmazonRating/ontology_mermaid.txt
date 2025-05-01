@@ -1,0 +1,17 @@
+classDiagram
+
+class Product {
+  +productId: xsd:string
+}
+
+class Review {
+  +ratingValue: xsd:float
+  +timestamp: xsd:dateTime
+}
+
+class User {
+  +userId: xsd:string
+}
+
+Review --> Product : forProduct
+User --> Review : reviews

@@ -1,0 +1,20 @@
+classDiagram
+    class Product {
+        +ProductId: xsd:string
+    }
+
+    class User {
+        +UserId: xsd:string
+    }
+
+    class RatingEvent {
+        +Timestamp: xsd:string
+        +Rating: xsd:decimal
+    }
+
+    Product --|> schema_Product :subClassOf
+    User --|> schema_Person :subClassOf
+    RatingEvent --|> schema_Review :subClassOf
+
+    RatingEvent --> Product : hasProduct
+    RatingEvent --> User : hasUser

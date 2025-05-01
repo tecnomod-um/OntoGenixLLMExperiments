@@ -1,0 +1,20 @@
+classDiagram
+
+class Brand
+
+class Food_Products {
+  +Absolute_Url: xsd:anyURI
+  +Category: xsd:string
+  +Discount_Price: xsd:decimal
+  +Image_Url: xsd:anyURI
+  +Price: xsd:decimal
+  +Product_Name: xsd:string
+  +Quantity: xsd:string
+  +SubCategory: xsd:string
+}
+
+class Household_Products
+
+class Personal_Care_Products
+
+Food_Products --> Brand : has_Brand

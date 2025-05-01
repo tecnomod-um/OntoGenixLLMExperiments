@@ -1,0 +1,40 @@
+classDiagram
+
+    class Company
+    class CompanyPublicResponse
+    class CompanyResponseToConsumer
+    class Complaint
+    class Consumer
+    class ConsumerComplaintNarrative
+    class ConsumerConsent
+    class ConsumerDisputed
+    class Date
+    class Issue
+    class Product
+    class State
+    class SubIssue
+    class SubmittedVia
+    class SubProduct
+    class Tags
+    class TimelyResponse
+    class ZIPCode
+
+    Complaint --> schema_Organization : hasCompany
+    Complaint --> schema_ReplyAction : hasCompanyPublicResponse
+    Complaint --> schema_ReplyAction : hasCompanyResponseToConsumer
+    Complaint --> schema_identifier : hasComplaintID
+    Complaint --> foaf_Person : hasConsumer
+    Complaint --> schema_Article : hasConsumerComplaintNarrative
+    Complaint --> schema_Boolean : hasConsumerConsent
+    Complaint --> schema_Boolean : hasConsumerDisputed
+    Complaint --> dcterms_date : hasDateReceived
+    Complaint --> dcterms_date : hasDateSentToCompany
+    Complaint --> skos_Concept : hasIssue
+    Complaint --> schema_Product : hasProduct
+    Complaint --> schema_State : hasState
+    Complaint --> skos_Concept : hasSubIssue
+    Complaint --> schema_CreativeWork : hasSubmittedVia
+    Complaint --> schema_ProductModel : hasSubProduct
+    Complaint --> schema_keywords : hasTags
+    Complaint --> schema_Boolean : hasTimelyResponse
+    Complaint --> schema_PostalCode : hasZIPCode

@@ -1,9 +1,0 @@
-Education: http://schema.org/educationalAttainment  
-JoiningYear: http://schema.org/startDate  
-Country: http://schema.org/addressCountry  
-PaymentTier: IRI not available  
-Age: http://schema.org/age  
-Gender: http://schema.org/gender  
-EverBenched: IRI not available  
-ExperienceInCurrentDomain: IRI not available  
-LeaveOrNot: IRI not available  

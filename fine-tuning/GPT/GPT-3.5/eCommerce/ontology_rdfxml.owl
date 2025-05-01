@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://vocab.um.es#SalesOntology#"
+     xml:base="https://vocab.um.es#SalesOntology"
+     xmlns:um="https://vocab.um.es#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://vocab.um.es#SalesOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#hasCountry -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#hasCountry">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has Country</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasCustomerID -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#hasCustomerID">
+        <rdfs:domain rdf:resource="https://vocab.um.es#CustomerID"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>has Customer ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#hasDescription">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Description"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has Description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasInvoiceDate -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#hasInvoiceDate">
+        <rdfs:domain rdf:resource="https://vocab.um.es#InvoiceDate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has Invoice Date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasInvoiceNumber -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#hasInvoiceNumber">
+        <rdfs:domain rdf:resource="https://vocab.um.es#SalesInvoice"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has Invoice Number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasQuantity -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#hasQuantity">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Quantity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>has Quantity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasStockCode -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#hasStockCode">
+        <rdfs:domain rdf:resource="https://vocab.um.es#StockCode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has Stock Code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasUnitPrice -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#hasUnitPrice">
+        <rdfs:domain rdf:resource="https://vocab.um.es#UnitPrice"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>has Unit Price</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#Country -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Country">
+        <rdfs:label>Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#CustomerID -->
+
+    <owl:Class rdf:about="https://vocab.um.es#CustomerID">
+        <rdfs:label>Customer ID</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#Description -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Description">
+        <rdfs:label>Description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#InvoiceDate -->
+
+    <owl:Class rdf:about="https://vocab.um.es#InvoiceDate">
+        <rdfs:label>Invoice Date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#Quantity -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Quantity">
+        <rdfs:label>Quantity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#SalesInvoice -->
+
+    <owl:Class rdf:about="https://vocab.um.es#SalesInvoice">
+        <rdfs:label>Sales Invoice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#StockCode -->
+
+    <owl:Class rdf:about="https://vocab.um.es#StockCode">
+        <rdfs:label>Stock Code</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#UnitPrice -->
+
+    <owl:Class rdf:about="https://vocab.um.es#UnitPrice">
+        <rdfs:label>Unit Price</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

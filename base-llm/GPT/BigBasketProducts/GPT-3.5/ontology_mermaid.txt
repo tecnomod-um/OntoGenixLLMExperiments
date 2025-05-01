@@ -1,0 +1,53 @@
+ classDiagram
+
+     class Absolute_Url {
+        +hasAbsoluteUrlValue : xsd:string
+    }
+
+    class Brand {
+        +hasBrandName : xsd:string
+    }
+
+    class Category {
+        +hasCategoryName : xsd:string
+    }
+
+    class class_entity
+
+    class class_name
+
+    class DiscountPrice {
+        +hasDiscountPriceValue : xsd:float
+    }
+
+    class Image_Url {
+        +hasImageUrlValue : xsd:string
+    }
+
+    class Price {
+        +hasPriceValue : xsd:float
+    }
+
+    class ProductName {
+        +hasProductNameValue : xsd:string
+    }
+
+    class Quantity {
+        +hasQuantityValue : xsd:string
+    }
+
+    class SubCategory {
+        +hasSubCategoryName : xsd:string
+    }
+
+    class_name --|> class_entity :subClassOf
+
+    class_entity --> Absolute_Url : hasAbsoluteUrl
+    class_entity --> Brand : hasBrand
+    class_entity --> Category : hasCategory
+    class_entity --> DiscountPrice : hasDiscountPrice
+    class_entity --> Image_Url : hasImage
+    class_entity --> Price : hasPrice
+    class_entity --> ProductName : hasProductName
+    class_entity --> Quantity : hasQuantity
+    class_entity --> SubCategory : hasSubCategory

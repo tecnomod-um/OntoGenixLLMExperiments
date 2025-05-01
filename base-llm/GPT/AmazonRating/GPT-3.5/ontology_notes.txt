@@ -1,0 +1,6 @@
+Ontology without syntax errors, but semantics errors. For example, Datatype properties declarated as Object properties. Example:
+```
+:hasRating a owl:ObjectProperty ;
+    rdfs:domain :class_entity ;
+    rdfs:range xsd:integer .
+```

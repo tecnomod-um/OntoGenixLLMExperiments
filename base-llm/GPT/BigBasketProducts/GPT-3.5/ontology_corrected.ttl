@@ -1,0 +1,93 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <https://base_ontology.com#> .
+
+### Classes
+:class_entity a owl:Class .
+:Brand a owl:Class .
+:Category a owl:Class .
+:SubCategory a owl:Class .
+:ProductName a owl:Class .
+:Quantity a owl:Class .
+:DiscountPrice a owl:Class .
+:Price a owl:Class .
+:Image_Url a owl:Class .
+:Absolute_Url a owl:Class .
+
+### Subclasses
+:entity_name rdfs:subClassOf :class_entity .
+
+### Object Properties
+:hasBrand a owl:ObjectProperty ;
+    rdfs:domain :class_entity ;
+    rdfs:range :Brand .
+
+:hasCategory a owl:ObjectProperty ;
+    rdfs:domain :class_entity ;
+    rdfs:range :Category .
+
+:hasSubCategory a owl:ObjectProperty ;
+    rdfs:domain :class_entity ;
+    rdfs:range :SubCategory .
+
+:hasProductName a owl:ObjectProperty ;
+    rdfs:domain :class_entity ;
+    rdfs:range :ProductName .
+
+:hasQuantity a owl:ObjectProperty ;
+    rdfs:domain :class_entity ;
+    rdfs:range :Quantity .
+
+:hasDiscountPrice a owl:ObjectProperty ;
+    rdfs:domain :class_entity ;
+    rdfs:range :DiscountPrice .
+
+:hasPrice a owl:ObjectProperty ;
+    rdfs:domain :class_entity ;
+    rdfs:range :Price .
+
+:hasImage a owl:ObjectProperty ;
+    rdfs:domain :class_entity ;
+    rdfs:range :Image_Url .
+
+:hasAbsoluteUrl a owl:ObjectProperty ;
+    rdfs:domain :class_entity ;
+    rdfs:range :Absolute_Url .
+
+### Data Type Properties
+:hasBrandName a owl:DatatypeProperty ;
+    rdfs:domain :Brand ;
+    rdfs:range xsd:string .
+
+:hasCategoryName a owl:DatatypeProperty ;
+    rdfs:domain :Category ;
+    rdfs:range xsd:string .
+
+:hasSubCategoryName a owl:DatatypeProperty ;
+    rdfs:domain :SubCategory ;
+    rdfs:range xsd:string .
+
+:hasProductNameValue a owl:DatatypeProperty ;
+    rdfs:domain :ProductName ;
+    rdfs:range xsd:string .
+
+:hasQuantityValue a owl:DatatypeProperty ;
+    rdfs:domain :Quantity ;
+    rdfs:range xsd:string .
+
+:hasDiscountPriceValue a owl:DatatypeProperty ;
+    rdfs:domain :DiscountPrice ;
+    rdfs:range xsd:float .
+
+:hasPriceValue a owl:DatatypeProperty ;
+    rdfs:domain :Price ;
+    rdfs:range xsd:float .
+
+:hasImageUrlValue a owl:DatatypeProperty ;
+    rdfs:domain :Image_Url ;
+    rdfs:range xsd:string .
+
+:hasAbsoluteUrlValue a owl:DatatypeProperty ;
+    rdfs:domain :Absolute_Url ;
+    rdfs:range xsd:string .

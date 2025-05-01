@@ -1,0 +1,109 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:FlightSatisfactionOntology rdf:type owl:Ontology .
+
+### Classes ###
+
+um:Passenger rdf:type owl:Class .
+
+um:Flight rdf:type owl:Class .
+
+um:Gender rdf:type owl:Class .
+
+um:CustomerType rdf:type owl:Class .
+
+um:TravelType rdf:type owl:Class .
+
+um:FlightClass rdf:type owl:Class .
+
+
+### Data Properties ###
+
+um:age rdf:type owl:DatatypeProperty ;
+       rdfs:domain um:Passenger ;
+       rdfs:range xsd:integer .
+
+um:flightDistance rdf:type owl:DatatypeProperty ;
+                  rdfs:domain um:Flight ;
+                  rdfs:range xsd:integer .
+
+um:seatComfort rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:integer .
+
+um:departureArrivalConvenience rdf:type owl:DatatypeProperty ;
+                               rdfs:range xsd:integer .
+
+um:foodAndDrink rdf:type owl:DatatypeProperty ;
+                rdfs:range xsd:integer .
+
+um:gateLocation rdf:type owl:DatatypeProperty ;
+                rdfs:range xsd:integer .
+
+um:inflightWifiService rdf:type owl:DatatypeProperty ;
+                       rdfs:range xsd:integer .
+
+um:inflightEntertainment rdf:type owl:DatatypeProperty ;
+                         rdfs:range xsd:integer .
+
+um:onlineSupport rdf:type owl:DatatypeProperty ;
+                 rdfs:range xsd:integer .
+
+um:easeOfOnlineBooking rdf:type owl:DatatypeProperty ;
+                       rdfs:range xsd:integer .
+
+um:onBoardService rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:integer .
+
+um:legRoomService rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:integer .
+
+um:baggageHandling rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:integer .
+
+um:checkinService rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:integer .
+
+um:cleanliness rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:integer .
+
+um:onlineBoarding rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:integer .
+
+um:departureDelayMinutes rdf:type owl:DatatypeProperty ;
+                         rdfs:domain um:Flight ;
+                         rdfs:range xsd:integer .
+
+um:arrivalDelayMinutes rdf:type owl:DatatypeProperty ;
+                       rdfs:domain um:Flight ;
+                       rdfs:range xsd:integer .
+
+um:satisfaction rdf:type owl:DatatypeProperty ;
+                rdfs:domain um:Passenger ;
+                rdfs:range rdfs:Literal .
+
+
+### Object Properties ###
+
+um:hasGender rdf:type owl:ObjectProperty ;
+             rdfs:domain um:Passenger ;
+             rdfs:range um:Gender .
+
+um:hasCustomerType rdf:type owl:ObjectProperty ;
+                   rdfs:domain um:Passenger ;
+                   rdfs:range um:CustomerType .
+
+um:hasTravelType rdf:type owl:ObjectProperty ;
+                 rdfs:domain um:Flight ;
+                 rdfs:range um:TravelType .
+
+um:hasFlightClass rdf:type owl:ObjectProperty ;
+                  rdfs:domain um:Flight ;
+                  rdfs:range um:FlightClass .
+
+um:fliesOn rdf:type owl:ObjectProperty ;
+           rdfs:domain um:Passenger ;
+           rdfs:range um:Flight .

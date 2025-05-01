@@ -1,0 +1,29 @@
+classDiagram
+
+class Customer {
+  +customerID: xsd:string
+}
+
+class Date {
+  +approvedAt: xsd:dateTime
+  +deliveredCarrierDate: xsd:dateTime
+  +deliveredCustomerDate: xsd:dateTime
+  +estimatedDeliveryDate: xsd:dateTime
+  +purchaseTimestamp: xsd:dateTime
+}
+
+class Order {
+  +orderID: xsd:string
+}
+
+class OrderStatus {
+  +orderStatusValue: xsd:string
+}
+
+Order --> Date : hasApprovedAt
+Order --> Customer : hasCustomer
+Order --> Date : hasDeliveredCarrierDate
+Order --> Date : hasDeliveredCustomerDate
+Order --> Date : hasEstimatedDeliveryDate
+Order --> OrderStatus : hasOrderStatus
+Order --> Date : hasPurchaseTimestamp

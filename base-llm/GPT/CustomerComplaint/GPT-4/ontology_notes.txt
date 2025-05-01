@@ -1,0 +1,3 @@
+Ontology without syntax errors, but semantic errors. For example, schema:identifier and dcterms:date are properties, but are used as range of Object properties.
+
+Also wrong URIs. For examples: dcterms:date.

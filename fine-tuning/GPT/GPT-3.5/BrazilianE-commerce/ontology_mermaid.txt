@@ -1,0 +1,9 @@
+classDiagram
+
+class Customers {
+  +CustomerCity: xsd:string
+  +CustomerID: xsd:string
+  +CustomerState: xsd:string
+  +CustomerUniqueID: xsd:string
+  +CustomerZipCodePrefix: xsd:integer
+}

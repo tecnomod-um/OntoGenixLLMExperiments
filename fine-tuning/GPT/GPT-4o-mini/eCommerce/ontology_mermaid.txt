@@ -1,0 +1,25 @@
+classDiagram
+
+class Country {
+  +countryName: xsd:string
+}
+
+class Customer {
+  +customerID: xsd:integer
+}
+
+class Invoice {
+  +invoiceDate: xsd:dateTime
+  +invoiceNumber: xsd:string
+  +quantity: xsd:integer
+}
+
+class Product {
+  +description: xsd:string
+  +stockCode: xsd:string
+  +unitPrice: xsd:decimal
+}
+
+Invoice --> Customer : isFromCustomer
+Invoice --> Product : hasProduct
+Customer --> Country : isForCountry

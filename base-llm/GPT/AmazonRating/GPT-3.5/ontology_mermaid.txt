@@ -1,0 +1,15 @@
+classDiagram
+    class class_entity {
+        +hasProductId: xsd:string
+    }
+    class entity_name
+    class ProductId
+    class Rating
+    class Timestamp
+    class UserId
+
+    entity_name --|> class_entity :subClassOf
+    ProductId --|> class_entity :subClassOf
+    Rating --|> class_entity :subClassOf
+    Timestamp --|> class_entity :subClassOf
+    UserId --|> class_entity :subClassOf

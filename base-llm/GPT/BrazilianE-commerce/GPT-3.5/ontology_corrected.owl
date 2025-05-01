@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://base_ontology.com#"
+     xml:base="https://base_ontology.com"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:entity_customer="http://dbpedia.org/resource/">
+    <owl:Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#count -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#count">
+        <rdfs:domain rdf:resource="https://base_ontology.com#entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasCustomerCity -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#hasCustomerCity">
+        <rdfs:domain rdf:resource="https://base_ontology.com#entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasCustomerId -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#hasCustomerId">
+        <rdfs:domain rdf:resource="https://base_ontology.com#entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasCustomerState -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#hasCustomerState">
+        <rdfs:domain rdf:resource="https://base_ontology.com#entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasCustomerUniqueId -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#hasCustomerUniqueId">
+        <rdfs:domain rdf:resource="https://base_ontology.com#entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasCustomerZipCodePrefix -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#hasCustomerZipCodePrefix">
+        <rdfs:domain rdf:resource="https://base_ontology.com#entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#max -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#max">
+        <rdfs:domain rdf:resource="https://base_ontology.com#entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#mean -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#mean">
+        <rdfs:domain rdf:resource="https://base_ontology.com#entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#min -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#min">
+        <rdfs:domain rdf:resource="https://base_ontology.com#entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#nonNullCount -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#nonNullCount">
+        <rdfs:domain rdf:resource="https://base_ontology.com#entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#std -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#std">
+        <rdfs:domain rdf:resource="https://base_ontology.com#entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#type -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#type">
+        <rdfs:domain rdf:resource="https://base_ontology.com#entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#uniqueCount -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#uniqueCount">
+        <rdfs:domain rdf:resource="https://base_ontology.com#entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#entity -->
+
+    <owl:Class rdf:about="https://base_ontology.com#entity"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

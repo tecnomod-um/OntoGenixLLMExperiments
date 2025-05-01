@@ -1,0 +1,47 @@
+classDiagram
+    class Customer
+
+    class CustomerCity {
+        +customer_city: rdfs:Literal
+    }
+
+    class CustomerID {
+        +customer_id: rdfs:Literal
+    }
+
+    class CustomerState {
+        +customer_state: rdfs:Literal
+    }
+
+    class CustomerUniqueID {
+        +customer_unique_id: rdfs:Literal
+    }
+
+    class CustomerZipCodePrefix {
+        +customer_zip_code_prefix: rdfs:Literal
+    }
+
+    class foaf_Person
+    class schema_identifier
+    class schema_addressLocality
+    class schema_addressRegion
+    class schema_postalCode
+
+    Customer --|> foaf_Person :subClassOf
+    CustomerCity --|> Customer :subClassOf
+    CustomerID --|> Customer :subClassOf
+    CustomerState --|> Customer :subClassOf
+    CustomerUniqueID --|> Customer :subClassOf
+    CustomerZipCodePrefix --|> Customer :subClassOf
+
+    CustomerCity --|> schema_addressLocality :subClassOf
+    CustomerState --|> schema_addressRegion :subClassOf
+    CustomerID --|> schema_identifier :subClassOf
+    CustomerUniqueID --|> schema_identifier :subClassOf
+    CustomerZipCodePrefix --|> schema_postalCode :subClassOf
+
+    Customer --> CustomerID : hasCustomerID
+    Customer --> CustomerCity : hasCustomerCity
+    Customer --> CustomerState : hasCutomerState
+    Customer --> CustomerUniqueID : hasCutomerUniqueID
+    Customer --> CustomerZipCodePrefix : hasCustomerZipCodePrefix

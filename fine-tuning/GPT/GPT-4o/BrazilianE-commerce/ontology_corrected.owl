@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix um: <https://vocab.um.es#> .
+
+um:CommerceOntology a owl:Ontology .
+
+### Classes ###
+um:Customer a owl:Class ;
+    rdfs:label "Customer"@en .
+
+um:Location a owl:Class ;
+    rdfs:label "Location"@en .
+
+um:Region a owl:Class ;
+    rdfs:label "Region"@en .
+
+
+### Data Properties ###
+um:customerId a owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:string ;
+    rdfs:label "Customer ID"@en .
+
+um:customerUniqueId a owl:DatatypeProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range xsd:string ;
+    rdfs:label "Customer Unique ID"@en .
+
+um:zipCodePrefix a owl:DatatypeProperty ;
+    rdfs:domain um:Location ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Zip Code Prefix"@en .
+
+um:cityName a owl:DatatypeProperty ;
+    rdfs:domain um:Location ;
+    rdfs:range xsd:string ;
+    rdfs:label "City Name"@en .
+
+um:stateName a owl:DatatypeProperty ;
+    rdfs:domain um:Region ;
+    rdfs:range xsd:string ;
+    rdfs:label "State Name"@en .
+
+
+### Object Properties ###
+um:hasLocation a owl:ObjectProperty ;
+    rdfs:domain um:Customer ;
+    rdfs:range um:Location ;
+    rdfs:label "Has Location"@en .
+
+um:locatedIn a owl:ObjectProperty ;
+    rdfs:domain um:Location ;
+    rdfs:range um:Region ;
+    rdfs:label "Located In"@en .
+
+### Axioms ###
+um:Customer um:has um:customerId, um:customerUniqueId, um:hasLocation .
+
+um:Location um:has um:zipCodePrefix, um:cityName, um:locatedIn .
+
+um:Region um:has um:stateName .

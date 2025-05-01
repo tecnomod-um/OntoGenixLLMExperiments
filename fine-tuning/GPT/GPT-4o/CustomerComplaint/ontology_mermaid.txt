@@ -1,0 +1,30 @@
+classDiagram
+
+class Company
+
+class Complaint {
+  +companyResponse: xsd:string
+  +complaintID: xsd:integer
+  +consumerConsent: xsd:string
+  +consumerDisputed: xsd:boolean
+  +receivedDate: xsd:date
+  +submittedVia: xsd:string
+  +timelyResponse: xsd:boolean
+}
+
+class Issue
+
+class Product
+
+class State 
+
+class SubIssue
+
+class SubProduct
+
+Complaint --> Company : hasCompany
+Complaint --> Issue : hasIssue
+Complaint --> Product : hasProduct
+Complaint --> SubIssue : hasSubIssue
+Complaint --> SubProduct : hasSubProduct
+Company --> State : locatedInState

@@ -1,0 +1,60 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix entity_customer: <http://dbpedia.org/resource/> .
+@prefix : <https://base_ontology.com#> .
+
+:entity a owl:Class .
+
+:hasCustomerCity a owl:DatatypeProperty ;
+    rdfs:domain :entity ;
+    rdfs:range xsd:string .
+
+:hasCustomerId a owl:DatatypeProperty ;
+    rdfs:domain :entity ;
+    rdfs:range xsd:string .
+
+:hasCustomerState a owl:DatatypeProperty ;
+    rdfs:domain :entity ;
+    rdfs:range xsd:string .
+
+:hasCustomerUniqueId a owl:DatatypeProperty ;
+    rdfs:domain :entity ;
+    rdfs:range xsd:string .
+
+:hasCustomerZipCodePrefix a owl:DatatypeProperty ;
+    rdfs:domain :entity ;
+    rdfs:range xsd:integer .
+
+:nonNullCount a owl:DatatypeProperty ;
+    rdfs:domain :entity ;
+    rdfs:range xsd:float .
+
+:type a owl:DatatypeProperty ;
+    rdfs:domain :entity ;
+    rdfs:range xsd:string .
+
+:uniqueCount a owl:DatatypeProperty ;
+    rdfs:domain :entity ;
+    rdfs:range xsd:float .
+
+:count a owl:DatatypeProperty ;
+    rdfs:domain :entity ;
+    rdfs:range xsd:float .
+
+:max a owl:DatatypeProperty ;
+    rdfs:domain :entity ;
+    rdfs:range xsd:float .
+
+:mean a owl:DatatypeProperty ;
+    rdfs:domain :entity ;
+    rdfs:range xsd:float .
+
+:min a owl:DatatypeProperty ;
+    rdfs:domain :entity ;
+    rdfs:range xsd:float .
+
+:std a owl:DatatypeProperty ;
+    rdfs:domain :entity ;
+    rdfs:range xsd:float .

@@ -1,0 +1,88 @@
+classDiagram
+    class Country {
+        +hasNonNullCount : xsd:float
+        +hasType : xsd:string
+        +hasUniqueCount : xsd:float
+        +hasCount : xsd:float
+        +hasMax : xsd:float
+        +hasMean : xsd:float
+        +hasMin : xsd:float
+        +hasStd : xsd:float
+    }
+
+    class Description {
+        +hasNonNullCount_Description : xsd:float
+        +hasType_Description : xsd:string
+        +hasUniqueCount_Description : xsd:float
+        +hasCount_Description : xsd:float
+        +hasMax_Description : xsd:float
+        +hasMean_Description : xsd:float
+        +hasMin_Description : xsd:float
+        +hasStd_Description : xsd:float
+    }
+
+    class InvoiceDate {
+        +hasNonNullCount_InvoiceDate : xsd:float
+        +hasType_InvoiceDate : xsd:string
+        +hasUniqueCount_InvoiceDate : xsd:float
+        +hasCount_InvoiceDate : xsd:float
+        +hasMax_InvoiceDate : xsd:float
+        +hasMean_InvoiceDate : xsd:float
+        +hasMin_InvoiceDate : xsd:float
+        +hasStd_InvoiceDate : xsd:float
+    }
+
+    class InvoiceNo {
+        +hasNonNullCount_InvoiceNo : xsd:float
+        +hasType_InvoiceNo : xsd:string
+        +hasUniqueCount_InvoiceNo : xsd:float
+        +hasCount_InvoiceNo : xsd:float
+        +hasMax_InvoiceNo : xsd:float
+        +hasMean_InvoiceNo : xsd:float
+        +hasMin_InvoiceNo : xsd:float
+        +hasStd_InvoiceNo : xsd:float
+    }
+
+    class StockCode {
+        +hasNonNullCount_StockCode : xsd:float
+        +hasType_StockCode : xsd:string
+        +hasUniqueCount_StockCode : xsd:float
+        +hasCount_StockCode : xsd:float
+        +hasMax_StockCode : xsd:float
+        +hasMean_StockCode : xsd:float
+        +hasMin_StockCode : xsd:float
+        +hasStd_StockCode : xsd:float
+    }
+
+    class CustomerID {
+        +hasNonNullCount_CustomerID : xsd:float
+        +hasType_CustomerID : xsd:string
+        +hasUniqueCount_CustomerID : xsd:float
+        +hasCount_CustomerID : xsd:float
+        +hasMax_CustomerID : xsd:float
+        +hasMean_CustomerID : xsd:float
+        +hasMin_CustomerID : xsd:float
+        +hasStd_CustomerID : xsd:float
+    }
+
+    class Quantity {
+        +hasNonNullCount_Quantity : xsd:float
+        +hasType_Quantity : xsd:string
+        +hasUniqueCount_Quantity : xsd:float
+        +hasCount_Quantity : xsd:float
+        +hasMax_Quantity : xsd:float
+        +hasMean_Quantity : xsd:float
+        +hasMin_Quantity : xsd:float
+        +hasStd_Quantity : xsd:float
+    }
+
+    class UnitPrice {
+        +hasNonNullCount_UnitPrice : xsd:float
+        +hasType_UnitPrice : xsd:string
+        +hasUniqueCount_UnitPrice : xsd:float
+        +hasCount_UnitPrice : xsd:float
+        +hasMax_UnitPrice : xsd:float
+        +hasMean_UnitPrice : xsd:float
+        +hasMin_UnitPrice : xsd:float
+        +hasStd_UnitPrice : xsd:float
+    }

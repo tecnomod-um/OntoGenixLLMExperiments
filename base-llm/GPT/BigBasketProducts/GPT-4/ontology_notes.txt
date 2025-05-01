@@ -1,0 +1,8 @@
+Ontology without syntax errors, but wrong URIs (schema:Category). 
+
+Also Object properties declarated as Datatype property:
+```
+base:hasQuantity rdf:type owl:DatatypeProperty ;
+                 rdfs:domain base:Product ;
+                 rdfs:range schema:QuantitativeValue .
+```

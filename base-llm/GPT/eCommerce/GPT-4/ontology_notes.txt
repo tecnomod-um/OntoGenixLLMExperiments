@@ -1,0 +1,6 @@
+Ontology without syntax errors, but semantic errors because entity classes are defined as equivalents of properties. Example:
+```
+base:CustomerID a owl:Class ;
+    rdfs:subClassOf base:Customer ;
+    owl:equivalentClass schema:identifier .
+``` 

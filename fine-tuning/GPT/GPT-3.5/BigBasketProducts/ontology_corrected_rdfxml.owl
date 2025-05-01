@@ -1,0 +1,232 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://vocab.um.es/CommercialActivities#"
+     xml:base="https://vocab.um.es/CommercialActivities"
+     xmlns:um="https://vocab.um.es/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://vocab.um.es/CommercialActivities#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es/isProducedBy -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es/isProducedBy">
+        <rdfs:domain rdf:resource="https://vocab.um.es/Product"/>
+        <rdfs:range rdf:resource="https://vocab.um.es/Brand"/>
+        <rdfs:comment xml:lang="en">Relates a product to the brand producing it</rdfs:comment>
+        <rdfs:label xml:lang="en">is produced by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es/absoluteUrl -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es/absoluteUrl">
+        <rdfs:domain rdf:resource="https://vocab.um.es/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="en">The absolute URL of the product</rdfs:comment>
+        <rdfs:label xml:lang="en">absolute URL</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es/brandList -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es/brandList">
+        <rdfs:domain rdf:resource="https://vocab.um.es/Brand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The names of the brands in the dataset</rdfs:comment>
+        <rdfs:label xml:lang="en">brand list</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es/category -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es/category">
+        <rdfs:domain rdf:resource="https://vocab.um.es/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The category of the products</rdfs:comment>
+        <rdfs:label xml:lang="en">category</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es/discountPrice -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es/discountPrice">
+        <rdfs:domain rdf:resource="https://vocab.um.es/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">The discounted price of the product</rdfs:comment>
+        <rdfs:label xml:lang="en">discount price</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es/imageUrl -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es/imageUrl">
+        <rdfs:domain rdf:resource="https://vocab.um.es/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="en">The URL of the image of the products</rdfs:comment>
+        <rdfs:label xml:lang="en">image URL</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es/maxDiscountPrice -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es/maxDiscountPrice">
+        <rdfs:domain rdf:resource="https://vocab.um.es/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">The maximum discounted price of the products in the dataset</rdfs:comment>
+        <rdfs:label xml:lang="en">maximum discount price</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es/maxPrice -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es/maxPrice">
+        <rdfs:domain rdf:resource="https://vocab.um.es/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">The maximum price of the products in the dataset</rdfs:comment>
+        <rdfs:label xml:lang="en">maximum price</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es/minDiscountPrice -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es/minDiscountPrice">
+        <rdfs:domain rdf:resource="https://vocab.um.es/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">The minimum discounted price of the products in the dataset</rdfs:comment>
+        <rdfs:label xml:lang="en">minimum discount price</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es/minPrice -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es/minPrice">
+        <rdfs:domain rdf:resource="https://vocab.um.es/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">The minimum price of the products in the dataset</rdfs:comment>
+        <rdfs:label xml:lang="en">minimum price</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es/price -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es/price">
+        <rdfs:domain rdf:resource="https://vocab.um.es/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">The price of the product</rdfs:comment>
+        <rdfs:label xml:lang="en">price</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es/productName -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es/productName">
+        <rdfs:domain rdf:resource="https://vocab.um.es/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The name of the product</rdfs:comment>
+        <rdfs:label xml:lang="en">product name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es/productNameList -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es/productNameList">
+        <rdfs:domain rdf:resource="https://vocab.um.es/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The name of the products in the dataset</rdfs:comment>
+        <rdfs:label xml:lang="en">product name list</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es/quantity -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es/quantity">
+        <rdfs:domain rdf:resource="https://vocab.um.es/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The quantity of the product</rdfs:comment>
+        <rdfs:label xml:lang="en">quantity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es/subCategory -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es/subCategory">
+        <rdfs:domain rdf:resource="https://vocab.um.es/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The sub-category of the products</rdfs:comment>
+        <rdfs:label xml:lang="en">sub-category</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es/Brand -->
+
+    <owl:Class rdf:about="https://vocab.um.es/Brand">
+        <rdfs:comment xml:lang="en">Represents a brand of a product in a commercial context</rdfs:comment>
+        <rdfs:label xml:lang="en">Brand</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es/Product -->
+
+    <owl:Class rdf:about="https://vocab.um.es/Product">
+        <rdfs:comment xml:lang="en">Represents a product in a commercial context</rdfs:comment>
+        <rdfs:label xml:lang="en">Product</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

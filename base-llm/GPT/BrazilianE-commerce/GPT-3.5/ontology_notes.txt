@@ -1,0 +1,8 @@
+Ontology without syntax errors, but semantic errors. For example, Datatype properties declarated as Object properties:
+```
+entity_customer:hasCustomerCity a owl:ObjectProperty ;
+    rdfs:domain entity_customer: ;
+    rdfs:range xsd:string .
+```
+
+Also wrong URIs. Example: entity_customer:hasCustomerCity.

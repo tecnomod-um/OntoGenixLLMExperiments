@@ -1,0 +1,6 @@
+Ontology without syntax errors, but semantic errors. For example, Datatype properties declarated as Object properties:
+```
+base:hasZipCodePrefix a owl:DatatypeProperty ;
+    rdfs:domain base:Customer ;
+    rdfs:range vcard:postal-code .
+```

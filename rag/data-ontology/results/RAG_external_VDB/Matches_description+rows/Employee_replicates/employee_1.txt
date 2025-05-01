@@ -1,9 +1,0 @@
-Education: IRI not available  
-JoiningYear: IRI not available  
-Country: https://vocab.um.es/country1#Country  
-PaymentTier: IRI not available  
-Age: IRI not available  
-Gender: http://purl.allotrope.org/ontologies/result#AFR_0001486  
-EverBenched: IRI not available  
-ExperienceInCurrentDomain: IRI not available  
-LeaveOrNot: IRI not available  

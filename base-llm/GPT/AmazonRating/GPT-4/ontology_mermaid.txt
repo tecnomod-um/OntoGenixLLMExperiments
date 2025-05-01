@@ -1,0 +1,22 @@
+classDiagram
+    class gr_ProductOrService {
+        productId: xsd:string
+    }
+
+    class foaf_Person {
+        userId: xsd:string
+    }
+
+    class rev_Review
+
+    class schema_Product {
+        ratingValue: xsd:integer
+    }
+
+    class schema_Review {
+        timestampValue: xsd:dateTime
+    }
+
+    foaf_Person --> rev_Review : hasReview
+    rev_Review --> gr_ProductOrService : reviewedProduct
+    rev_Review --> schema_Product : hasRating

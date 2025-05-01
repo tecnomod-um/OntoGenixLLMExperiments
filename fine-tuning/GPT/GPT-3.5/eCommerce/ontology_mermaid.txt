@@ -1,0 +1,33 @@
+classDiagram
+
+class Country {
+  +hasCountry: xsd:string
+}
+
+class CustomerID {
+  +hasCustomerID: xsd:decimal
+}
+
+class Description {
+  +hasDescription: xsd:string
+}
+
+class InvoiceDate {
+  +hasInvoiceDate: xsd:string
+}
+
+class Quantity {
+  +hasQuantity: xsd:integer
+}
+
+class SalesInvoice {
+  +hasInvoiceNumber: xsd:string
+}
+
+class StockCode {
+  +hasStockCode: xsd:string
+}
+
+class UnitPrice {
+  +hasUnitPrice: xsd:decimal
+}

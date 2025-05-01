@@ -1,0 +1,26 @@
+classDiagram
+
+class CustomerType
+
+class Flight {
+  +arrivalDelayMinutes: xsd:integer
+  +departureDelayMinutes: xsd:integer
+  +flightDistance: xsd:integer
+}
+
+class FlightClass
+
+class Gender
+
+class Passenger {
+  +age: xsd:integer
+  +satisfaction: rdfs:Literal
+}
+
+class TravelType
+
+Passenger --> Flight : fliesOn
+Passenger --> CustomerType : hasCustomerType
+Flight --> FlightClass : hasFlightClass
+Passenger --> Gender : hasGender
+Flight --> TravelType : hasTravelType

@@ -1,0 +1,7 @@
+Ontology without syntax errors, but semantics errors because Datatype properties are declarated as Object properties.
+Example:
+```
+ex_company:hasNonNullCount rdf:type owl:ObjectProperty ;
+    rdfs:domain ex_company:Company ;
+    rdfs:range xsd:float .
+```

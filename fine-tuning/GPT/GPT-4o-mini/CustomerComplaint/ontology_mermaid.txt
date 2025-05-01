@@ -1,0 +1,35 @@
+classDiagram
+
+class Company
+class Consumer {
+  +hasConsumerConsentProvided: xsd:string
+}
+class ConsumerComplaint {
+  +hasComplaintID: xsd:string
+  +hasCompanyResponseToConsumer: xsd:string
+}
+class Date
+class DateReceived {
+  +hasDateReceived: xsd:date
+}
+class DateSentToCompany {
+  +hasDateSentToCompany: xsd:date
+}
+class Issue
+class Product
+class State
+class SubIssue
+class SubProduct
+class Tag
+
+ConsumerComplaint --> Company : hasCompany
+ConsumerComplaint --> Date : hasDateResponse
+ConsumerComplaint --> DateReceived : hasDate
+ConsumerComplaint --> Consumer : isAboutConsumer
+ConsumerComplaint --> DateSentToCompany : hasDateSent
+ConsumerComplaint --> Issue : hasIssue
+ConsumerComplaint --> Product : hasProduct
+Company --> State : hasState
+ConsumerComplaint --> SubIssue : hasSubIssue
+ConsumerComplaint --> SubProduct : hasSubProduct
+ConsumerComplaint --> Tag : hasTag

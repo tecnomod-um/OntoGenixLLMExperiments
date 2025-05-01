@@ -1,0 +1,13 @@
+classDiagram
+
+class Product
+
+class Rating {
+  +ratingTimestamp: xsd:integer
+  +ratingValue: xsd:float
+}
+
+class User
+
+Rating --> Product : hasProduct
+Rating --> User : hasUser

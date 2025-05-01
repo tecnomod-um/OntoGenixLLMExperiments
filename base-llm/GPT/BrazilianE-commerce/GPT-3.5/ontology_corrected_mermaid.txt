@@ -1,0 +1,16 @@
+classDiagram
+    class entity {
+        +hasCustomerCity: xsd:string
+        +hasCustomerId: xsd:string
+        +hasCustomerState: xsd:string
+        +hasCustomerUniqueId: xsd:string
+        +hasCustomerZipCodePrefix: xsd:integer
+        +nonNullCount: xsd:float
+        +type: xsd:string
+        +uniqueCount: xsd:float
+        +count: xsd:float
+        +max: xsd:float
+        +mean: xsd:float
+        +min: xsd:float
+        +std: xsd:float
+    }

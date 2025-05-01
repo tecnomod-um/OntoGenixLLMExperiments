@@ -1,0 +1,31 @@
+classDiagram
+
+class Company
+
+class Complaint {
+  +dateReceived: xsd:date
+  +state: xsd:string
+}
+
+class Issue {
+  +consumerComplaintNarrative: xsd:string
+  +issueType: xsd:string
+}
+
+class Product {
+  +productName: xsd:string
+}
+
+class SubIssue {
+  +subIssueType: xsd:string
+}
+
+class SubProduct {
+  +subProductName: xsd:string
+}
+
+Complaint --> Issue : hasIssue
+Complaint --> Product : hasProduct
+Complaint --> SubIssue : hasSubIssue
+Complaint --> SubProduct : hasSubProduct
+Complaint --> Company : relatedCompany

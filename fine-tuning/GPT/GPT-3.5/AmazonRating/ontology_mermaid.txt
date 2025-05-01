@@ -1,0 +1,14 @@
+classDiagram
+
+class User {
+  +hasUserId: xsd:string
+}
+
+class Product {
+  +hasProductId: xsd:string
+  +hasRating: xsd:decimal
+  +hasTimestamp: xsd:dateTimeStamp
+}
+
+User --> Product : hasRatedProduct
+Product --> User : ratedBy

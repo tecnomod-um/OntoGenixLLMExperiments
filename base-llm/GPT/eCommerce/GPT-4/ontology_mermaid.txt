@@ -1,0 +1,62 @@
+classDiagram
+
+class Invoice 
+Invoice --|> schema_Invoice : subClassOf
+
+class InvoiceDate {
+  +invoiceDateValue: xsd:string
+}
+InvoiceDate --|> Invoice :subClassOf
+InvoiceDate <--> schema_DateTime : ≡
+
+class InvoiceNo  {
+  +invoiceNumber: xsd:string
+}
+InvoiceNo --|> Invoice : subClassOf
+InvoiceNo <--> schema_identifier : ≡
+
+
+class Transaction {
+  +quantityValue: xsd:integer
+  +unitPriceValue: xsd:decimal
+}
+Transaction --|> schema_Order : subClassOf
+
+class Country {
+  +countryName: xsd:string
+}
+Country --|> Transaction
+Country <--> schema_Country : ≡
+
+
+class Customer 
+Customer --|> schema_Organization : subClassOf 
+Customer --|> schema_Person : subClassOf 
+
+class CustomerID {
+  +customerIdentifier: xsd:integer
+}
+CustomerID --|> Customer : subClassOf
+CustomerID <--> schema_identifier : ≡
+
+class Product
+Product --|> schema_Product :subClassOf
+
+class Description {
+  +descriptionText: xsd:string
+}
+Description --|> Product :subClassOf
+Description <--> schema_description : ≡
+
+class StockCode {
+  +stockCodeValue: xsd:string
+}
+StockCode --|> Product :subClassOf
+StockCode <--> schema_ProductModel : ≡
+StockCode <--> schema_sku : ≡
+
+
+Transaction --> Customer : hasCustomer
+Transaction --> Invoice : hasInvoice
+Transaction --> Product : hasProduct
+Transaction --> Country : locatedIn

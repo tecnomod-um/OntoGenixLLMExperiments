@@ -1,0 +1,33 @@
+classDiagram
+
+    class Company {
+        +hasCount : xsd:float
+        +hasMax : xsd:float
+        +hasMean : xsd:float
+        +hasMin : xsd:float
+        +hasNonNullCount : xsd:float
+        +hasStd : xsd:float
+        +hasType : xsd:string
+        +hasUniqueCount : xsd:float
+    }
+
+    class Company_public_response
+    class Company_response_to_consumer
+    class Complaint_ID
+    class Consumer_complaint_narrative
+    class Consumer_consent_provided
+    class Consumer_disputed
+    class Date_received
+    class Date_sent_to_company
+    class external_resource
+    class Issue
+    class Product
+    class State
+    class Sub-issue
+    class Sub-product
+    class Submitted_via
+    class Tags
+    class Timely_response
+    class ZIP_code
+
+    Company --> external_resource : linkedTo

@@ -1,0 +1,6 @@
+Incorrect serialization: shortnames - absence of prefixes.
+
+Example:
+um:Customer has um:customerId, um:customerUniqueId, um:hasLocation .
+um:Location has um:zipCodePrefix, um:cityName, um:locatedIn .
+um:Region has um:stateName .

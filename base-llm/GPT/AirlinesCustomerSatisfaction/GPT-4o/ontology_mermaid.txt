@@ -1,0 +1,48 @@
+classDiagram
+    class Age
+    class ArrivalDelayInMinutes
+    class BaggageHandling
+    class CheckinService
+    class Cleanliness
+    class Class
+    class CustomerType
+    class DepartureArrivalTimeConvenient
+    class DepartureDelayInMinutes
+    class EaseOfOnlineBooking
+    class FlightDistance
+    class FoodAndDrink
+    class GateLocation
+    class Gender
+    class InflightEntertainment
+    class InflightWifiService
+    class LegRoomService
+    class OnBoardService
+    class OnlineBoarding
+    class OnlineSupport
+    class Satisfaction
+    class SeatComfort
+    class TypeOfTravel
+
+    Age --> schema_age : hasAge
+    ArrivalDelayInMinutes --> schema_arrivalTime : hasArrivalDelayInMinutes
+    BaggageHandling --> schema_Rating : hasBaggageHandling
+    CheckinService --> schema_Rating : hasCheckinService
+    Cleanliness --> schema_Rating : hasCleanliness
+    Class --> schema_class : hasClass
+    CustomerType --> schema_customer : hasCustomerType
+    DepartureArrivalTimeConvenient --> schema_Rating : hasDepartureArrivalTimeConvenient
+    DepartureDelayInMinutes --> schema_departureTime : hasDepartureDelayInMinutes
+    EaseOfOnlineBooking --> schema_Rating : hasEaseOfOnlineBooking
+    FlightDistance --> schema_distance : hasFlightDistance
+    FoodAndDrink --> schema_Rating : hasFoodAndDrink
+    GateLocation --> schema_Rating : hasGateLocation
+    Gender --> schema_gender : hasGender
+    InflightEntertainment --> schema_Rating : hasInflightEntertainment
+    InflightWifiService --> schema_Rating : hasInflightWifiService
+    LegRoomService --> schema_Rating : hasLegRoomService
+    OnBoardService --> schema_Rating : hasOnBoardService
+    OnlineBoarding --> schema_Rating : hasOnlineBoarding
+    OnlineSupport --> schema_Rating : hasOnlineSupport
+    Satisfaction --> schema_Rating : hasSatisfaction
+    SeatComfort --> schema_Rating : hasSeatComfort
+    TypeOfTravel --> schema_Trip : hasTypeOfTravel

@@ -1,0 +1,18 @@
+classDiagram
+
+class Customer {
+  +customerId: xsd:string
+  +customerUniqueId: xsd:string
+}
+
+class Location {
+  +cityName: xsd:string
+  +zipCodePrefix: xsd:integer
+}
+
+class Region {
+  +stateName: xsd:string
+}
+
+Customer --> Location : hasLocation
+Location --> Region : locatedIn
