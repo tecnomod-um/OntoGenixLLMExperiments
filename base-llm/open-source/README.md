@@ -93,7 +93,7 @@ Below we include a new table with those ontologies that could be developed after
 |-----------------------|-------------------------------|--------------|-------------------|----------------------|--------------------|-----------|--------|
 | Llama-2-7b-8bits      | -                             | -            | -                 | -                    | -                  | -         | 0      |
 | Llama-2-13b-4bits     | X                             | -            | X                 | X                    | -                  | X         | 4      |
-| Llama-2-13b-8bits     | -                             | X            | X                 | X                    | X                  | X         | 5      |
+| Llama-2-13b-8bits     | X                             | X            | X                 | X                    | X                  | X         | 6      |
 | Llama-2-13b           | -                             | X            | X                 | X                    | X                  | X         | 5      |
 | Llama-2-70b-4bits     | X                             | -            | -                 | -                    | -                  | -         | 1      |
 | Llama-3-8b-4bits      | -                             | -            | X                 | X                    | -                  | X         | 3      |
@@ -102,6 +102,6 @@ Below we include a new table with those ontologies that could be developed after
 | Llama-3-70b-4bits     | X                             | X            | X                 | X                    | X                  | X         | 6      |
 | Mistral-7b            | X                             | -            | X                 | X                    | X                  | X         | 5      |
 | Mixtral-8-7b-4bits    | X                             | X            | -                 | X                    | X                  | X         | 5      |
-| **Total**             | **7**                         | **6**        | **8**             | **8**                | **7**              | **8**     | **44** |
+| **Total**             | **8**                         | **6**        | **8**             | **8**                | **7**              | **8**     | **45** |
 
 

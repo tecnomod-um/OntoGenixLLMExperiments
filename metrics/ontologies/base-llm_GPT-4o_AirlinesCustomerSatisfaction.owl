@@ -1,0 +1,440 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:base="https://base_ontology.com#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="http://schema.org/"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#hasAge -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasAge">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Age"/>
+        <rdfs:range rdf:resource="http://schema.org/age"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasArrivalDelayInMinutes -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasArrivalDelayInMinutes">
+        <rdfs:domain rdf:resource="https://base_ontology.com#ArrivalDelayInMinutes"/>
+        <rdfs:range rdf:resource="http://schema.org/arrivalTime"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasBaggageHandling -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasBaggageHandling">
+        <rdfs:domain rdf:resource="https://base_ontology.com#BaggageHandling"/>
+        <rdfs:range rdf:resource="http://schema.org/Rating"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasCheckinService -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasCheckinService">
+        <rdfs:domain rdf:resource="https://base_ontology.com#CheckinService"/>
+        <rdfs:range rdf:resource="http://schema.org/Rating"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasClass -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasClass">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Class"/>
+        <rdfs:range rdf:resource="http://schema.org/class"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasCleanliness -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasCleanliness">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Cleanliness"/>
+        <rdfs:range rdf:resource="http://schema.org/Rating"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasCustomerType -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasCustomerType">
+        <rdfs:domain rdf:resource="https://base_ontology.com#CustomerType"/>
+        <rdfs:range rdf:resource="http://schema.org/customer"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasDepartureArrivalTimeConvenient -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasDepartureArrivalTimeConvenient">
+        <rdfs:domain rdf:resource="https://base_ontology.com#DepartureArrivalTimeConvenient"/>
+        <rdfs:range rdf:resource="http://schema.org/Rating"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasDepartureDelayInMinutes -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasDepartureDelayInMinutes">
+        <rdfs:domain rdf:resource="https://base_ontology.com#DepartureDelayInMinutes"/>
+        <rdfs:range rdf:resource="http://schema.org/departureTime"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasEaseOfOnlineBooking -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasEaseOfOnlineBooking">
+        <rdfs:domain rdf:resource="https://base_ontology.com#EaseOfOnlineBooking"/>
+        <rdfs:range rdf:resource="http://schema.org/Rating"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasFlightDistance -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasFlightDistance">
+        <rdfs:domain rdf:resource="https://base_ontology.com#FlightDistance"/>
+        <rdfs:range rdf:resource="http://schema.org/distance"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasFoodAndDrink -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasFoodAndDrink">
+        <rdfs:domain rdf:resource="https://base_ontology.com#FoodAndDrink"/>
+        <rdfs:range rdf:resource="http://schema.org/Rating"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasGateLocation -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasGateLocation">
+        <rdfs:domain rdf:resource="https://base_ontology.com#GateLocation"/>
+        <rdfs:range rdf:resource="http://schema.org/Rating"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasGender -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasGender">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Gender"/>
+        <rdfs:range rdf:resource="http://schema.org/gender"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasInflightEntertainment -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasInflightEntertainment">
+        <rdfs:domain rdf:resource="https://base_ontology.com#InflightEntertainment"/>
+        <rdfs:range rdf:resource="http://schema.org/Rating"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasInflightWifiService -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasInflightWifiService">
+        <rdfs:domain rdf:resource="https://base_ontology.com#InflightWifiService"/>
+        <rdfs:range rdf:resource="http://schema.org/Rating"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasLegRoomService -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasLegRoomService">
+        <rdfs:domain rdf:resource="https://base_ontology.com#LegRoomService"/>
+        <rdfs:range rdf:resource="http://schema.org/Rating"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasOnBoardService -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasOnBoardService">
+        <rdfs:domain rdf:resource="https://base_ontology.com#OnBoardService"/>
+        <rdfs:range rdf:resource="http://schema.org/Rating"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasOnlineBoarding -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasOnlineBoarding">
+        <rdfs:domain rdf:resource="https://base_ontology.com#OnlineBoarding"/>
+        <rdfs:range rdf:resource="http://schema.org/Rating"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasOnlineSupport -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasOnlineSupport">
+        <rdfs:domain rdf:resource="https://base_ontology.com#OnlineSupport"/>
+        <rdfs:range rdf:resource="http://schema.org/Rating"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasSatisfaction -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasSatisfaction">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Satisfaction"/>
+        <rdfs:range rdf:resource="http://schema.org/Rating"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasSeatComfort -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasSeatComfort">
+        <rdfs:domain rdf:resource="https://base_ontology.com#SeatComfort"/>
+        <rdfs:range rdf:resource="http://schema.org/Rating"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasTypeOfTravel -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasTypeOfTravel">
+        <rdfs:domain rdf:resource="https://base_ontology.com#TypeOfTravel"/>
+        <rdfs:range rdf:resource="http://schema.org/Trip"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/Rating -->
+
+    <Class rdf:about="http://schema.org/Rating"/>
+    
+
+
+    <!-- http://schema.org/Trip -->
+
+    <Class rdf:about="http://schema.org/Trip"/>
+    
+
+
+    <!-- http://schema.org/age -->
+
+    <Class rdf:about="http://schema.org/age"/>
+    
+
+
+    <!-- http://schema.org/arrivalTime -->
+
+    <Class rdf:about="http://schema.org/arrivalTime"/>
+    
+
+
+    <!-- http://schema.org/class -->
+
+    <Class rdf:about="http://schema.org/class"/>
+    
+
+
+    <!-- http://schema.org/customer -->
+
+    <Class rdf:about="http://schema.org/customer"/>
+    
+
+
+    <!-- http://schema.org/departureTime -->
+
+    <Class rdf:about="http://schema.org/departureTime"/>
+    
+
+
+    <!-- http://schema.org/distance -->
+
+    <Class rdf:about="http://schema.org/distance"/>
+    
+
+
+    <!-- http://schema.org/gender -->
+
+    <Class rdf:about="http://schema.org/gender"/>
+    
+
+
+    <!-- https://base_ontology.com#Age -->
+
+    <Class rdf:about="https://base_ontology.com#Age"/>
+    
+
+
+    <!-- https://base_ontology.com#ArrivalDelayInMinutes -->
+
+    <Class rdf:about="https://base_ontology.com#ArrivalDelayInMinutes"/>
+    
+
+
+    <!-- https://base_ontology.com#BaggageHandling -->
+
+    <Class rdf:about="https://base_ontology.com#BaggageHandling"/>
+    
+
+
+    <!-- https://base_ontology.com#CheckinService -->
+
+    <Class rdf:about="https://base_ontology.com#CheckinService"/>
+    
+
+
+    <!-- https://base_ontology.com#Class -->
+
+    <Class rdf:about="https://base_ontology.com#Class"/>
+    
+
+
+    <!-- https://base_ontology.com#Cleanliness -->
+
+    <Class rdf:about="https://base_ontology.com#Cleanliness"/>
+    
+
+
+    <!-- https://base_ontology.com#CustomerType -->
+
+    <Class rdf:about="https://base_ontology.com#CustomerType"/>
+    
+
+
+    <!-- https://base_ontology.com#DepartureArrivalTimeConvenient -->
+
+    <Class rdf:about="https://base_ontology.com#DepartureArrivalTimeConvenient"/>
+    
+
+
+    <!-- https://base_ontology.com#DepartureDelayInMinutes -->
+
+    <Class rdf:about="https://base_ontology.com#DepartureDelayInMinutes"/>
+    
+
+
+    <!-- https://base_ontology.com#EaseOfOnlineBooking -->
+
+    <Class rdf:about="https://base_ontology.com#EaseOfOnlineBooking"/>
+    
+
+
+    <!-- https://base_ontology.com#FlightDistance -->
+
+    <Class rdf:about="https://base_ontology.com#FlightDistance"/>
+    
+
+
+    <!-- https://base_ontology.com#FoodAndDrink -->
+
+    <Class rdf:about="https://base_ontology.com#FoodAndDrink"/>
+    
+
+
+    <!-- https://base_ontology.com#GateLocation -->
+
+    <Class rdf:about="https://base_ontology.com#GateLocation"/>
+    
+
+
+    <!-- https://base_ontology.com#Gender -->
+
+    <Class rdf:about="https://base_ontology.com#Gender"/>
+    
+
+
+    <!-- https://base_ontology.com#InflightEntertainment -->
+
+    <Class rdf:about="https://base_ontology.com#InflightEntertainment"/>
+    
+
+
+    <!-- https://base_ontology.com#InflightWifiService -->
+
+    <Class rdf:about="https://base_ontology.com#InflightWifiService"/>
+    
+
+
+    <!-- https://base_ontology.com#LegRoomService -->
+
+    <Class rdf:about="https://base_ontology.com#LegRoomService"/>
+    
+
+
+    <!-- https://base_ontology.com#OnBoardService -->
+
+    <Class rdf:about="https://base_ontology.com#OnBoardService"/>
+    
+
+
+    <!-- https://base_ontology.com#OnlineBoarding -->
+
+    <Class rdf:about="https://base_ontology.com#OnlineBoarding"/>
+    
+
+
+    <!-- https://base_ontology.com#OnlineSupport -->
+
+    <Class rdf:about="https://base_ontology.com#OnlineSupport"/>
+    
+
+
+    <!-- https://base_ontology.com#Satisfaction -->
+
+    <Class rdf:about="https://base_ontology.com#Satisfaction"/>
+    
+
+
+    <!-- https://base_ontology.com#SeatComfort -->
+
+    <Class rdf:about="https://base_ontology.com#SeatComfort"/>
+    
+
+
+    <!-- https://base_ontology.com#TypeOfTravel -->
+
+    <Class rdf:about="https://base_ontology.com#TypeOfTravel"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

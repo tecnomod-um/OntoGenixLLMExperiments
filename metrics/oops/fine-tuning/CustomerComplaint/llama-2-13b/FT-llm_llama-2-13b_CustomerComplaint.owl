@@ -1,0 +1,284 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://vocab.um.es#RetailSalesOntology#"
+     xml:base="https://vocab.um.es#RetailSalesOntology"
+     xmlns:um="https://vocab.um.es#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://vocab.um.es#RetailSalesOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#belongsToCompany -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#belongsToCompany">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Transaction"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#Company"/>
+        <rdfs:label>belongs to company</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasConsumerComplaint -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#hasConsumerComplaint">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Transaction"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#ConsumerComplaint"/>
+        <rdfs:label>has consumer complaint</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasIssue -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#hasIssue">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Transaction"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#Issue"/>
+        <rdfs:label>has issue</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasSubProduct -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#hasSubProduct">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#SubProduct"/>
+        <rdfs:label>has sub-product</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasTransaction -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#hasTransaction">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#Transaction"/>
+        <rdfs:label>has transaction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#companyName -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#companyName">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>company name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#consumerComplaintDate -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#consumerComplaintDate">
+        <rdfs:domain rdf:resource="https://vocab.um.es#ConsumerComplaint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label>consumer complaint date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#consumerComplaintID -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#consumerComplaintID">
+        <rdfs:domain rdf:resource="https://vocab.um.es#ConsumerComplaint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>consumer complaint ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#issueDescription -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#issueDescription">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Issue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>issue description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#issueName -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#issueName">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Issue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>issue name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#productID -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#productID">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>product ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#productName -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#productName">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>product name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#subProductID -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#subProductID">
+        <rdfs:domain rdf:resource="https://vocab.um.es#SubProduct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>sub-product ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#subProductName -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#subProductName">
+        <rdfs:domain rdf:resource="https://vocab.um.es#SubProduct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>sub-product name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#transactionAmount -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#transactionAmount">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>transaction amount</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#transactionDate -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#transactionDate">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label>transaction date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#transactionID -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#transactionID">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>transaction ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#Company -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Company">
+        <rdfs:label>Company</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#ConsumerComplaint -->
+
+    <owl:Class rdf:about="https://vocab.um.es#ConsumerComplaint">
+        <rdfs:label>Consumer Complaint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#Issue -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Issue">
+        <rdfs:label>Issue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#Product -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Product">
+        <rdfs:label>Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#SubProduct -->
+
+    <owl:Class rdf:about="https://vocab.um.es#SubProduct">
+        <rdfs:label>Sub-Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#Transaction -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Transaction">
+        <rdfs:label>Transaction</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

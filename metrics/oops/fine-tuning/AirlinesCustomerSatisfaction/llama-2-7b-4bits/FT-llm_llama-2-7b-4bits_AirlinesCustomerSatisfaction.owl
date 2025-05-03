@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:um="https://vocab.um.es#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#Age -->
+
+    <Class rdf:about="https://vocab.um.es#Age">
+        <rdfs:label>Age</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#ArrivalDelayMinutes -->
+
+    <Class rdf:about="https://vocab.um.es#ArrivalDelayMinutes">
+        <rdfs:label>Arrival Delay in Minutes</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#BaggageHandling -->
+
+    <Class rdf:about="https://vocab.um.es#BaggageHandling">
+        <rdfs:label>Baggage handling</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#CheckinService -->
+
+    <Class rdf:about="https://vocab.um.es#CheckinService">
+        <rdfs:label>Checkin service</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#Class -->
+
+    <Class rdf:about="https://vocab.um.es#Class">
+        <rdfs:label>Class</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#Cleanliness -->
+
+    <Class rdf:about="https://vocab.um.es#Cleanliness">
+        <rdfs:label>Cleanliness</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#CustomerType -->
+
+    <Class rdf:about="https://vocab.um.es#CustomerType">
+        <rdfs:label>Customer Type</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#DepartureArrivalTimeConvenient -->
+
+    <Class rdf:about="https://vocab.um.es#DepartureArrivalTimeConvenient">
+        <rdfs:label>Departure/Arrival time convenient</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#DepartureDelayMinutes -->
+
+    <Class rdf:about="https://vocab.um.es#DepartureDelayMinutes">
+        <rdfs:label>Departure Delay in Minutes</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#EaseOfOnlineBooking -->
+
+    <Class rdf:about="https://vocab.um.es#EaseOfOnlineBooking">
+        <rdfs:label>Ease of Online booking</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#Flight -->
+
+    <Class rdf:about="https://vocab.um.es#Flight">
+        <rdfs:label>Flight</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#FlightDistance -->
+
+    <Class rdf:about="https://vocab.um.es#FlightDistance">
+        <rdfs:label>Flight Distance</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#FoodAndDrink -->
+
+    <Class rdf:about="https://vocab.um.es#FoodAndDrink">
+        <rdfs:label>Food and drink</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#GateLocation -->
+
+    <Class rdf:about="https://vocab.um.es#GateLocation">
+        <rdfs:label>Gate location</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#Gender -->
+
+    <Class rdf:about="https://vocab.um.es#Gender">
+        <rdfs:label>Gender</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#InflightEntertainment -->
+
+    <Class rdf:about="https://vocab.um.es#InflightEntertainment">
+        <rdfs:label>Inflight entertainment</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#InflightWifiService -->
+
+    <Class rdf:about="https://vocab.um.es#InflightWifiService">
+        <rdfs:label>Inflight wifi service</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#LegRoomService -->
+
+    <Class rdf:about="https://vocab.um.es#LegRoomService">
+        <rdfs:label>Leg room service</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#OnBoardService -->
+
+    <Class rdf:about="https://vocab.um.es#OnBoardService">
+        <rdfs:label>On-board service</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#OnlineBoard -->
+
+    <Class rdf:about="https://vocab.um.es#OnlineBoard">
+        <rdfs:label>Online boarding</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#OnlineSupport -->
+
+    <Class rdf:about="https://vocab.um.es#OnlineSupport">
+        <rdfs:label>Online support</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#Satisfaction -->
+
+    <Class rdf:about="https://vocab.um.es#Satisfaction">
+        <rdfs:label>Satisfaction</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#SatisfactionWithFlight -->
+
+    <Class rdf:about="https://vocab.um.es#SatisfactionWithFlight">
+        <rdfs:label>Satisfaction with Flight</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#SatisfactionWithOverallExperience -->
+
+    <Class rdf:about="https://vocab.um.es#SatisfactionWithOverallExperience">
+        <rdfs:label>Satisfaction with Overall Experience</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#SatisfactionWithService -->
+
+    <Class rdf:about="https://vocab.um.es#SatisfactionWithService">
+        <rdfs:label>Satisfaction with Service</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#SatisfactionWithTravel -->
+
+    <Class rdf:about="https://vocab.um.es#SatisfactionWithTravel">
+        <rdfs:label>Satisfaction with Travel</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#SeatComfort -->
+
+    <Class rdf:about="https://vocab.um.es#SeatComfort">
+        <rdfs:label>Seat comfort</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://vocab.um.es#TypeOfTravel -->
+
+    <Class rdf:about="https://vocab.um.es#TypeOfTravel">
+        <rdfs:label>Type of Travel</rdfs:label>
+    </Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

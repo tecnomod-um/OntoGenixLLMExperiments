@@ -1,0 +1,695 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://myairlineontology.com/"
+     xml:base="https://myairlineontology.com/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/01/rdf-schema#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://myairlineontology.com/Baggage_handling -->
+
+    <owl:AnnotationProperty rdf:about="https://myairlineontology.com/Baggage_handling">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://myairlineontology.com/Checkin_service -->
+
+    <owl:AnnotationProperty rdf:about="https://myairlineontology.com/Checkin_service">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://myairlineontology.com/Class -->
+
+    <owl:AnnotationProperty rdf:about="https://myairlineontology.com/Class">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://myairlineontology.com/Cleanliness -->
+
+    <owl:AnnotationProperty rdf:about="https://myairlineontology.com/Cleanliness">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://myairlineontology.com/Customer_Type -->
+
+    <owl:AnnotationProperty rdf:about="https://myairlineontology.com/Customer_Type">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://myairlineontology.com/Departure_arrival_time_convenience -->
+
+    <owl:AnnotationProperty rdf:about="https://myairlineontology.com/Departure_arrival_time_convenience">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://myairlineontology.com/Ease_of_online_booking -->
+
+    <owl:AnnotationProperty rdf:about="https://myairlineontology.com/Ease_of_online_booking">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://myairlineontology.com/Food_and_drink -->
+
+    <owl:AnnotationProperty rdf:about="https://myairlineontology.com/Food_and_drink">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://myairlineontology.com/Gate_location -->
+
+    <owl:AnnotationProperty rdf:about="https://myairlineontology.com/Gate_location">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://myairlineontology.com/Gender -->
+
+    <owl:AnnotationProperty rdf:about="https://myairlineontology.com/Gender">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://myairlineontology.com/Inflight_entertainment -->
+
+    <owl:AnnotationProperty rdf:about="https://myairlineontology.com/Inflight_entertainment">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://myairlineontology.com/Inflight_wifi_service -->
+
+    <owl:AnnotationProperty rdf:about="https://myairlineontology.com/Inflight_wifi_service">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://myairlineontology.com/Leg_room_service -->
+
+    <owl:AnnotationProperty rdf:about="https://myairlineontology.com/Leg_room_service">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://myairlineontology.com/On_board_service -->
+
+    <owl:AnnotationProperty rdf:about="https://myairlineontology.com/On_board_service">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://myairlineontology.com/Online_boarding -->
+
+    <owl:AnnotationProperty rdf:about="https://myairlineontology.com/Online_boarding">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://myairlineontology.com/Online_support -->
+
+    <owl:AnnotationProperty rdf:about="https://myairlineontology.com/Online_support">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://myairlineontology.com/Seat_comfort -->
+
+    <owl:AnnotationProperty rdf:about="https://myairlineontology.com/Seat_comfort">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://myairlineontology.com/Type_of_Travel -->
+
+    <owl:AnnotationProperty rdf:about="https://myairlineontology.com/Type_of_Travel">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://myairlineontology.com/satisfaction -->
+
+    <owl:AnnotationProperty rdf:about="https://myairlineontology.com/satisfaction">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://myairlineontology.com/Age -->
+
+    <owl:ObjectProperty rdf:about="https://myairlineontology.com/Age">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_age -->
+
+    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_age">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_arrival_delay -->
+
+    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_arrival_delay">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_baggage_handling -->
+
+    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_baggage_handling">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+        <rdfs:range rdf:resource="https://myairlineontology.com/Baggage_handling"/>
+        <rdfs:label>The quality of baggage handling service for an entity related to air travel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_checkin_service -->
+
+    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_checkin_service">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+        <rdfs:range rdf:resource="https://myairlineontology.com/Checkin_service"/>
+        <rdfs:label>The quality of checkin service for an entity related to air travel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_class -->
+
+    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_class">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+        <rdfs:range rdf:resource="https://myairlineontology.com/Class"/>
+        <rdfs:label>The class of the flight for an entity related to air travel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_cleanliness -->
+
+    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_cleanliness">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+        <rdfs:range rdf:resource="https://myairlineontology.com/Cleanliness"/>
+        <rdfs:label>The cleanliness of an entity related to air travel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_customer_type -->
+
+    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_customer_type">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+        <rdfs:range rdf:resource="https://myairlineontology.com/Customer_Type"/>
+        <rdfs:label>The type of customer for an entity related to air travel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_departure_arrival_time_convenience -->
+
+    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_departure_arrival_time_convenience">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+        <rdfs:range rdf:resource="https://myairlineontology.com/Departure_arrival_time_convenience"/>
+        <rdfs:label>Whether the departure or arrival time is convenient for the passenger of an entity related to air travel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_departure_delay -->
+
+    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_departure_delay">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_ease_of_online_booking -->
+
+    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_ease_of_online_booking">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+        <rdfs:range rdf:resource="https://myairlineontology.com/Ease_of_online_booking"/>
+        <rdfs:label>The ease of booking a flight online for an entity related to air travel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_flight_distance -->
+
+    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_flight_distance">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_food_and_drink -->
+
+    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_food_and_drink">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+        <rdfs:range rdf:resource="https://myairlineontology.com/Food_and_drink"/>
+        <rdfs:label>The quality of food and drink service for an entity related to air travel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_gate_location -->
+
+    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_gate_location">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+        <rdfs:range rdf:resource="https://myairlineontology.com/Gate_location"/>
+        <rdfs:label>The location of the gate for an entity related to air travel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_gender -->
+
+    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_gender">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+        <rdfs:range rdf:resource="https://myairlineontology.com/Gender"/>
+        <rdfs:label>The gender of the passenger for an entity related to air travel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_inflight_entertainment -->
+
+    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_inflight_entertainment">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+        <rdfs:range rdf:resource="https://myairlineontology.com/Inflight_entertainment"/>
+        <rdfs:label>The quality of inflight entertainment for an entity related to air travel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_inflight_wifi_service -->
+
+    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_inflight_wifi_service">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+        <rdfs:range rdf:resource="https://myairlineontology.com/Inflight_wifi_service"/>
+        <rdfs:label>The quality of inflight wifi service for an entity related to air travel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_leg_room_service -->
+
+    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_leg_room_service">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+        <rdfs:range rdf:resource="https://myairlineontology.com/Leg_room_service"/>
+        <rdfs:label>The quality of leg room service for an entity related to air travel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_on_board_service -->
+
+    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_on_board_service">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+        <rdfs:range rdf:resource="https://myairlineontology.com/On_board_service"/>
+        <rdfs:label>The quality of on-board service for an entity related to air travel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_online_boarding -->
+
+    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_online_boarding">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+        <rdfs:range rdf:resource="https://myairlineontology.com/Online_boarding"/>
+        <rdfs:label>The availability of online boarding for an entity related to air travel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_online_support -->
+
+    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_online_support">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+        <rdfs:range rdf:resource="https://myairlineontology.com/Online_support"/>
+        <rdfs:label>The quality of online support for an entity related to air travel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_satisfaction -->
+
+    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_satisfaction">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+        <rdfs:range rdf:resource="https://myairlineontology.com/satisfaction"/>
+        <rdfs:label>The level of passenger satisfaction for an entity related to air travel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_seat_comfort -->
+
+    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_seat_comfort">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+        <rdfs:range rdf:resource="https://myairlineontology.com/Seat_comfort"/>
+        <rdfs:label>The comfort of the aircraft seat for an entity related to air travel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_type_of_travel -->
+
+    <owl:ObjectProperty rdf:about="https://myairlineontology.com/has_type_of_travel">
+        <rdfs:domain rdf:resource="https://myairlineontology.com/entity_name"/>
+        <rdfs:range rdf:resource="https://myairlineontology.com/Type_of_Travel"/>
+        <rdfs:label>The type of travel (business or leisure) for an entity related to air travel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://myairlineontology.com/Age -->
+
+    <owl:DatatypeProperty rdf:about="https://myairlineontology.com/Age">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_age -->
+
+    <owl:DatatypeProperty rdf:about="https://myairlineontology.com/has_age">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_arrival_delay -->
+
+    <owl:DatatypeProperty rdf:about="https://myairlineontology.com/has_arrival_delay">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_departure_delay -->
+
+    <owl:DatatypeProperty rdf:about="https://myairlineontology.com/has_departure_delay">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://myairlineontology.com/has_flight_distance -->
+
+    <owl:DatatypeProperty rdf:about="https://myairlineontology.com/has_flight_distance">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://myairlineontology.com/Baggage_handling -->
+
+    <owl:Class rdf:about="https://myairlineontology.com/Baggage_handling"/>
+    
+
+
+    <!-- https://myairlineontology.com/Checkin_service -->
+
+    <owl:Class rdf:about="https://myairlineontology.com/Checkin_service"/>
+    
+
+
+    <!-- https://myairlineontology.com/Class -->
+
+    <owl:Class rdf:about="https://myairlineontology.com/Class"/>
+    
+
+
+    <!-- https://myairlineontology.com/Cleanliness -->
+
+    <owl:Class rdf:about="https://myairlineontology.com/Cleanliness"/>
+    
+
+
+    <!-- https://myairlineontology.com/Customer_Type -->
+
+    <owl:Class rdf:about="https://myairlineontology.com/Customer_Type"/>
+    
+
+
+    <!-- https://myairlineontology.com/Departure_arrival_time_convenience -->
+
+    <owl:Class rdf:about="https://myairlineontology.com/Departure_arrival_time_convenience"/>
+    
+
+
+    <!-- https://myairlineontology.com/Ease_of_online_booking -->
+
+    <owl:Class rdf:about="https://myairlineontology.com/Ease_of_online_booking"/>
+    
+
+
+    <!-- https://myairlineontology.com/Food_and_drink -->
+
+    <owl:Class rdf:about="https://myairlineontology.com/Food_and_drink"/>
+    
+
+
+    <!-- https://myairlineontology.com/Gate_location -->
+
+    <owl:Class rdf:about="https://myairlineontology.com/Gate_location"/>
+    
+
+
+    <!-- https://myairlineontology.com/Gender -->
+
+    <owl:Class rdf:about="https://myairlineontology.com/Gender"/>
+    
+
+
+    <!-- https://myairlineontology.com/Inflight_entertainment -->
+
+    <owl:Class rdf:about="https://myairlineontology.com/Inflight_entertainment"/>
+    
+
+
+    <!-- https://myairlineontology.com/Inflight_wifi_service -->
+
+    <owl:Class rdf:about="https://myairlineontology.com/Inflight_wifi_service"/>
+    
+
+
+    <!-- https://myairlineontology.com/Leg_room_service -->
+
+    <owl:Class rdf:about="https://myairlineontology.com/Leg_room_service"/>
+    
+
+
+    <!-- https://myairlineontology.com/On_board_service -->
+
+    <owl:Class rdf:about="https://myairlineontology.com/On_board_service"/>
+    
+
+
+    <!-- https://myairlineontology.com/Online_boarding -->
+
+    <owl:Class rdf:about="https://myairlineontology.com/Online_boarding"/>
+    
+
+
+    <!-- https://myairlineontology.com/Online_support -->
+
+    <owl:Class rdf:about="https://myairlineontology.com/Online_support"/>
+    
+
+
+    <!-- https://myairlineontology.com/Seat_comfort -->
+
+    <owl:Class rdf:about="https://myairlineontology.com/Seat_comfort"/>
+    
+
+
+    <!-- https://myairlineontology.com/Type_of_Travel -->
+
+    <owl:Class rdf:about="https://myairlineontology.com/Type_of_Travel"/>
+    
+
+
+    <!-- https://myairlineontology.com/class_entity -->
+
+    <owl:Class rdf:about="https://myairlineontology.com/class_entity">
+        <rdfs:label>An entity related to air travel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://myairlineontology.com/entity_name -->
+
+    <owl:Class rdf:about="https://myairlineontology.com/entity_name">
+        <rdfs:subClassOf rdf:resource="https://myairlineontology.com/class_entity"/>
+        <rdfs:label>A specific type of entity related to air travel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://myairlineontology.com/satisfaction -->
+
+    <owl:Class rdf:about="https://myairlineontology.com/satisfaction"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="https://myairlineontology.com/Age">
+        <rdfs:label>The age of a passenger</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://myairlineontology.com/Baggage_handling">
+        <rdfs:label>The quality of baggage handling service</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://myairlineontology.com/Checkin_service">
+        <rdfs:label>The quality of checkin service</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://myairlineontology.com/Class">
+        <rdfs:label>The class of the flight</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://myairlineontology.com/Cleanliness">
+        <rdfs:label>The cleanliness of the aircraft or airport</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://myairlineontology.com/Customer_Type">
+        <rdfs:label>The type of customer</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://myairlineontology.com/Departure_arrival_time_convenience">
+        <rdfs:label>Whether the departure or arrival time is convenient for the passenger</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://myairlineontology.com/Ease_of_online_booking">
+        <rdfs:label>The ease of booking a flight online</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://myairlineontology.com/Food_and_drink">
+        <rdfs:label>The quality of food and drink service</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://myairlineontology.com/Gate_location">
+        <rdfs:label>The location of the gate</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://myairlineontology.com/Gender">
+        <rdfs:label>The gender of the passenger</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://myairlineontology.com/Inflight_entertainment">
+        <rdfs:label>The quality of inflight entertainment</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://myairlineontology.com/Inflight_wifi_service">
+        <rdfs:label>The quality of inflight wifi service</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://myairlineontology.com/Leg_room_service">
+        <rdfs:label>The quality of leg room service</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://myairlineontology.com/On_board_service">
+        <rdfs:label>The quality of on-board service</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://myairlineontology.com/Online_boarding">
+        <rdfs:label>The availability of online boarding</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://myairlineontology.com/Online_support">
+        <rdfs:label>The quality of online support</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://myairlineontology.com/Seat_comfort">
+        <rdfs:label>The comfort of the aircraft seat</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://myairlineontology.com/Type_of_Travel">
+        <rdfs:label>The type of travel (business or leisure)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://myairlineontology.com/has_age">
+        <rdfs:label>The age of an entity related to air travel</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://myairlineontology.com/has_arrival_delay">
+        <rdfs:label>The delay in minutes of a flight upon arrival for an entity related to air travel</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://myairlineontology.com/has_departure_delay">
+        <rdfs:label>The delay in minutes of a flight upon departure for an entity related to air travel</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://myairlineontology.com/has_flight_distance">
+        <rdfs:label>The distance of a flight in miles for an entity related to air travel</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://myairlineontology.com/satisfaction">
+        <rdfs:label>The level of passenger satisfaction</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,634 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:dbo="http://dbpedia.org/ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:base="https://base_ontology.com#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sosa="http://www.w3.org/ns/sosa/"
+     xmlns:schema="http://schema.org/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#hasAge -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasAge">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Passenger"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasArrivalDelay -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasArrivalDelay">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Flight"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasBaggageHandlingRating -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasBaggageHandlingRating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Service"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasCheckinServiceRating -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasCheckinServiceRating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Service"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasClass -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasClass">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Booking"/>
+        <rdfs:range>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://base_ontology.com#BusinessClass"/>
+                    <rdf:Description rdf:about="https://base_ontology.com#EcoPlusClass"/>
+                    <rdf:Description rdf:about="https://base_ontology.com#EconomyClass"/>
+                </unionOf>
+            </Class>
+        </rdfs:range>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasCleanlinessRating -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasCleanlinessRating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Service"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasCustomerType -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasCustomerType">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Passenger"/>
+        <rdfs:range>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://base_ontology.com#FrequentFlyer"/>
+                    <rdf:Description rdf:about="https://base_ontology.com#InfrequentFlyer"/>
+                </unionOf>
+            </Class>
+        </rdfs:range>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasDepartureArrivalTimeConvenienceRating -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasDepartureArrivalTimeConvenienceRating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Service"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasDepartureDelay -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasDepartureDelay">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Flight"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasEaseOfOnlineBookingRating -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasEaseOfOnlineBookingRating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Booking"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasFlightDistance -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasFlightDistance">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Flight"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasFoodAndDrinkRating -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasFoodAndDrinkRating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Service"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasGateLocationRating -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasGateLocationRating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Service"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasGender -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasGender">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Passenger"/>
+        <rdfs:range>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://base_ontology.com#Female"/>
+                    <rdf:Description rdf:about="https://base_ontology.com#Male"/>
+                </unionOf>
+            </Class>
+        </rdfs:range>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasInflightEntertainmentRating -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasInflightEntertainmentRating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Service"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasInflightWifiServiceRating -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasInflightWifiServiceRating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Service"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasLegRoomServiceRating -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasLegRoomServiceRating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Service"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasOnBoardServiceRating -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasOnBoardServiceRating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Service"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasOnlineBoardingRating -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasOnlineBoardingRating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Booking"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasOnlineSupportRating -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasOnlineSupportRating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Service"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasSatisfaction -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasSatisfaction">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Passenger"/>
+        <rdfs:range>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://base_ontology.com#Satisfied"/>
+                    <rdf:Description rdf:about="https://base_ontology.com#Unsatisfied"/>
+                </unionOf>
+            </Class>
+        </rdfs:range>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasSeatComfortRating -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasSeatComfortRating">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Service"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasTypeOfTravel -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasTypeOfTravel">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Booking"/>
+        <rdfs:range>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://base_ontology.com#BusinessTravel"/>
+                    <rdf:Description rdf:about="https://base_ontology.com#PersonalTravel"/>
+                </unionOf>
+            </Class>
+        </rdfs:range>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#hasAge -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasAge">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasArrivalDelay -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasArrivalDelay">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasBaggageHandlingRating -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasBaggageHandlingRating">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasCheckinServiceRating -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasCheckinServiceRating">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasCleanlinessRating -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasCleanlinessRating">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasDepartureArrivalTimeConvenienceRating -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasDepartureArrivalTimeConvenienceRating">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasDepartureDelay -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasDepartureDelay">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasEaseOfOnlineBookingRating -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasEaseOfOnlineBookingRating">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasFlightDistance -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasFlightDistance">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasFoodAndDrinkRating -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasFoodAndDrinkRating">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasGateLocationRating -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasGateLocationRating">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasInflightEntertainmentRating -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasInflightEntertainmentRating">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasInflightWifiServiceRating -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasInflightWifiServiceRating">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasLegRoomServiceRating -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasLegRoomServiceRating">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasOnBoardServiceRating -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasOnBoardServiceRating">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasOnlineBoardingRating -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasOnlineBoardingRating">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasOnlineSupportRating -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasOnlineSupportRating">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasSeatComfortRating -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasSeatComfortRating">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/BusinessClass -->
+
+    <Class rdf:about="http://dbpedia.org/ontology/BusinessClass"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/EconomyClass -->
+
+    <Class rdf:about="http://dbpedia.org/ontology/EconomyClass"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Reservation -->
+
+    <Class rdf:about="http://dbpedia.org/ontology/Reservation"/>
+    
+
+
+    <!-- http://schema.org/BusinessEvent -->
+
+    <Class rdf:about="http://schema.org/BusinessEvent"/>
+    
+
+
+    <!-- http://schema.org/Flight -->
+
+    <Class rdf:about="http://schema.org/Flight"/>
+    
+
+
+    <!-- http://schema.org/LeisureTimeActivity -->
+
+    <Class rdf:about="http://schema.org/LeisureTimeActivity"/>
+    
+
+
+    <!-- http://schema.org/Person -->
+
+    <Class rdf:about="http://schema.org/Person"/>
+    
+
+
+    <!-- http://schema.org/ProductModel -->
+
+    <Class rdf:about="http://schema.org/ProductModel"/>
+    
+
+
+    <!-- http://schema.org/ProgramMembership -->
+
+    <Class rdf:about="http://schema.org/ProgramMembership"/>
+    
+
+
+    <!-- http://schema.org/ReviewAction -->
+
+    <Class rdf:about="http://schema.org/ReviewAction"/>
+    
+
+
+    <!-- http://schema.org/Service -->
+
+    <Class rdf:about="http://schema.org/Service"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Result -->
+
+    <Class rdf:about="http://www.w3.org/ns/sosa/Result"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Female -->
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/Female"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Male -->
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/Male"/>
+    
+
+
+    <!-- https://base_ontology.com#Booking -->
+
+    <Class rdf:about="https://base_ontology.com#Booking">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Reservation"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#BusinessClass -->
+
+    <Class rdf:about="https://base_ontology.com#BusinessClass">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/BusinessClass"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#BusinessTravel -->
+
+    <Class rdf:about="https://base_ontology.com#BusinessTravel">
+        <rdfs:subClassOf rdf:resource="http://schema.org/BusinessEvent"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#EcoPlusClass -->
+
+    <Class rdf:about="https://base_ontology.com#EcoPlusClass">
+        <rdfs:subClassOf rdf:resource="http://schema.org/ProductModel"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#EconomyClass -->
+
+    <Class rdf:about="https://base_ontology.com#EconomyClass">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/EconomyClass"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Female -->
+
+    <Class rdf:about="https://base_ontology.com#Female">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Female"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Flight -->
+
+    <Class rdf:about="https://base_ontology.com#Flight">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Flight"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#FrequentFlyer -->
+
+    <Class rdf:about="https://base_ontology.com#FrequentFlyer">
+        <rdfs:subClassOf rdf:resource="http://schema.org/ProgramMembership"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#InfrequentFlyer -->
+
+    <Class rdf:about="https://base_ontology.com#InfrequentFlyer">
+        <rdfs:subClassOf rdf:resource="http://schema.org/ProgramMembership"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Male -->
+
+    <Class rdf:about="https://base_ontology.com#Male">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Male"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Passenger -->
+
+    <Class rdf:about="https://base_ontology.com#Passenger">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#PersonalTravel -->
+
+    <Class rdf:about="https://base_ontology.com#PersonalTravel">
+        <rdfs:subClassOf rdf:resource="http://schema.org/LeisureTimeActivity"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Satisfaction -->
+
+    <Class rdf:about="https://base_ontology.com#Satisfaction">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Result"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Satisfied -->
+
+    <Class rdf:about="https://base_ontology.com#Satisfied">
+        <rdfs:subClassOf rdf:resource="http://schema.org/ReviewAction"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Service -->
+
+    <Class rdf:about="https://base_ontology.com#Service">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Service"/>
+    </Class>
+    
+
+
+    <!-- https://base_ontology.com#Unsatisfied -->
+
+    <Class rdf:about="https://base_ontology.com#Unsatisfied">
+        <rdfs:subClassOf rdf:resource="http://schema.org/ReviewAction"/>
+    </Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

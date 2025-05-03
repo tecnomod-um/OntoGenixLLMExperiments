@@ -1,0 +1,293 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://vocab.um.es#MensShoesOntology#"
+     xml:base="https://vocab.um.es#MensShoesOntology"
+     xmlns:um="https://vocab.um.es#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://vocab.um.es#MensShoesOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#belongsToCategory -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#belongsToCategory">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#Category"/>
+        <rdfs:label>belongs to category</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#belongsToSubCategory -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#belongsToSubCategory">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#SubCategory"/>
+        <rdfs:label>belongs to sub-category</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasBrand -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#hasBrand">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Shoe"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#Brand"/>
+        <rdfs:label>has brand</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasProduct -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#hasProduct">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Brand"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:label>has product</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#absoluteUrl -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#absoluteUrl">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>absolute URL</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#available -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#available">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>available</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#availableInRDF -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#availableInRDF">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Brand"/>
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>available in RDF</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#brandNameInRDF -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#brandNameInRDF">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Brand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>brand name in RDF</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#categoryNameInRDF -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#categoryNameInRDF">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Category"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>category name in RDF</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#discountPrice -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#discountPrice">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>discount price</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#discountPriceInRDF -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#discountPriceInRDF">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Brand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>discount price in RDF</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#price -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#price">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>price</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#priceInRDF -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#priceInRDF">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Brand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>price in RDF</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#productCode -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#productCode">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>product code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#productCodeInRDF -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#productCodeInRDF">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Brand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>product code in RDF</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#productName -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#productName">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>product name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#productNameInRDF -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#productNameInRDF">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Brand"/>
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>brand name in RDF</rdfs:label>
+        <rdfs:label>product name in RDF</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#quantity -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#quantity">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>quantity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#quantityInRDF -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#quantityInRDF">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Brand"/>
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>quantity in RDF</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#subCategoryNameInRDF -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#subCategoryNameInRDF">
+        <rdfs:domain rdf:resource="https://vocab.um.es#SubCategory"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>sub-category name in RDF</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#Brand -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Brand">
+        <rdfs:label>Brand</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#Category -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Category">
+        <rdfs:label>Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#Product -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Product">
+        <rdfs:label>Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#Shoe -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Shoe">
+        <rdfs:label>Shoe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#SubCategory -->
+
+    <owl:Class rdf:about="https://vocab.um.es#SubCategory">
+        <rdfs:label>Sub-Category</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

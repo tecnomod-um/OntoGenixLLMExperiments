@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://vocab.um.es#OnlineSalesOntology#"
+     xml:base="https://vocab.um.es#OnlineSalesOntology"
+     xmlns:um="https://vocab.um.es#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://vocab.um.es#OnlineSalesOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#hasCustomer -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#hasCustomer">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Order"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#Customer"/>
+        <rdfs:label>has customer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasProduct -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#hasProduct">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Order"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:label>has product</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#occursInCity -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#occursInCity">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Order"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#City"/>
+        <rdfs:label>occurs in city</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#customerID -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#customerID">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>customer ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#orderApprovedAt -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#orderApprovedAt">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label>order approved at</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#orderDeliveredCarrierDate -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#orderDeliveredCarrierDate">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label>order delivered carrier date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#orderDeliveredCustomerDate -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#orderDeliveredCustomerDate">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label>order delivered customer date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#orderEstimatedDeliveryDate -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#orderEstimatedDeliveryDate">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label>order estimated delivery date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#orderId -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#orderId">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>order ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#orderPurchaseTimestamp -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#orderPurchaseTimestamp">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label>order purchase timestamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#orderStatus -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#orderStatus">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>order status</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#City -->
+
+    <owl:Class rdf:about="https://vocab.um.es#City">
+        <rdfs:label>City</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#Customer -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Customer">
+        <rdfs:label>Customer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#Order -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Order">
+        <rdfs:label>Order</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#Product -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Product">
+        <rdfs:label>Product</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

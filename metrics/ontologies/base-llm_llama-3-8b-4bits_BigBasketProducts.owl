@@ -1,0 +1,354 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="https://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:base="https://base_ontology.com/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.w3.org/2000/01/rdf-schema#domain -->
+
+    <AnnotationProperty rdf:about="https://www.w3.org/2000/01/rdf-schema#domain"/>
+    
+
+
+    <!-- https://www.w3.org/2000/01/rdf-schema#label -->
+
+    <AnnotationProperty rdf:about="https://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- https://www.w3.org/2000/01/rdf-schema#range -->
+
+    <AnnotationProperty rdf:about="https://www.w3.org/2000/01/rdf-schema#range"/>
+    
+
+
+    <!-- https://www.w3.org/2000/01/rdf-schema#subClassOf -->
+
+    <AnnotationProperty rdf:about="https://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.w3.org/2002/07/owl#Class -->
+
+    <Class rdf:about="https://www.w3.org/2002/07/owl#Class"/>
+    
+
+
+    <!-- https://www.w3.org/2002/07/owl#DatatypeProperty -->
+
+    <Class rdf:about="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    
+
+
+    <!-- https://www.w3.org/2002/07/owl#ObjectProperty -->
+
+    <Class rdf:about="https://www.w3.org/2002/07/owl#ObjectProperty"/>
+    
+
+
+    <!-- https://www.w3.org/2002/07/owl#Ontology -->
+
+    <Class rdf:about="https://www.w3.org/2002/07/owl#Ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#class_entity -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#class_entity">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:label>Class Entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#owl:Class"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#entity_name -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#entity_name">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="https://base_ontology.com#class_entity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#has_absolute_url_idx -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#has_absolute_url_idx">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:label>Has Absolute URL Index</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#has_absolute_url_idx_type -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#has_absolute_url_idx_type">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:label>Has Absolute URL Index Type</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#has_brand_idx -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#has_brand_idx">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:label>Has Brand Index</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#has_brand_idx_type -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#has_brand_idx_type">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:label>Has Brand Index Type</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#has_category_idx -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#has_category_idx">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:label>Has Category Index</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#has_category_idx_type -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#has_category_idx_type">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:label>Has Category Index Type</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#has_discount_price_idx -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#has_discount_price_idx">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:label>Has Discount Price Index</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#has_discount_price_idx_type -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#has_discount_price_idx_type">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:label>Has Discount Price Index Type</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#has_fair_uri -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#has_fair_uri">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:label>Has FAIR URI</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#has_fair_uri_type -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#has_fair_uri_type">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:label>Has FAIR URI Type</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#has_image_url -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#has_image_url">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:label>Has Image URL</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#has_image_url_type -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#has_image_url_type">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:label>Has Image URL Type</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#has_price_idx -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#has_price_idx">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:label>Has Price Index</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#has_price_idx_type -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#has_price_idx_type">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:label>Has Price Index Type</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#has_product_name_idx -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#has_product_name_idx">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:label>Has Product Name Index</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#has_product_name_idx_type -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#has_product_name_idx_type">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:label>Has Product Name Index Type</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#has_quantity -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#has_quantity">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:label>Has Quantity</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#has_quantity_type -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#has_quantity_type">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:label>Has Quantity Type</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#has_subcategory_idx -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#has_subcategory_idx">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:label>Has Subcategory Index</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#has_subcategory_idx_type -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#has_subcategory_idx_type">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:label>Has Subcategory Index Type</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#owl:Class -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#owl:Class">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:label>Class Entity</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#owl:Ontology -->
+
+    <NamedIndividual rdf:about="https://base_ontology.com#owl:Ontology">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#Ontology"/>
+        <rdfs:label>Base Ontology</rdfs:label>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

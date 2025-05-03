@@ -1,0 +1,431 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://base_ontology.com#"
+     xml:base="https://base_ontology.com"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#has_subclass -->
+
+    <owl:AnnotationProperty rdf:about="https://base_ontology.com#has_subclass"/>
+    
+
+
+    <!-- https://base_ontology.com#has_value -->
+
+    <owl:AnnotationProperty rdf:about="https://base_ontology.com#has_value"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#object_property_name -->
+
+    <owl:ObjectProperty rdf:about="https://base_ontology.com#object_property_name">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#class_entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#Age -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#Age">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#Arrival_Delay_in_Minutes -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#Arrival_Delay_in_Minutes">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#Cleanliness -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#Cleanliness">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#Departure_Delay_in_Minutes -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#Departure_Delay_in_Minutes">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#Ease_of_Online_booking -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#Ease_of_Online_booking">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#Flight_Distance -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#Flight_Distance">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#Food_and_drink -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#Food_and_drink">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#Gate_location -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#Gate_location">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#Inflight_entertainment -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#Inflight_entertainment">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#Inflight_wifi_service -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#Inflight_wifi_service">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#Leg_room_service -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#Leg_room_service">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#On-board_service -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#On-board_service">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#data_property_name -->
+
+    <owl:DatatypeProperty rdf:about="https://base_ontology.com#data_property_name">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#class_entity -->
+
+    <owl:Class rdf:about="https://base_ontology.com#class_entity">
+        <has_subclass rdf:resource="https://base_ontology.com#entity_name"/>
+    </owl:Class>
+    
+
+
+    <!-- https://base_ontology.com#data_property_name -->
+
+    <owl:Class rdf:about="https://base_ontology.com#data_property_name"/>
+    
+
+
+    <!-- https://base_ontology.com#entity_name -->
+
+    <owl:Class rdf:about="https://base_ontology.com#entity_name">
+        <has_subclass rdf:resource="https://base_ontology.com#class_entity"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#Age -->
+
+    <owl:NamedIndividual rdf:about="https://base_ontology.com#Age">
+        <rdf:type rdf:resource="https://base_ontology.com#data_property_name"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Arrival_Delay_in_Minutes -->
+
+    <owl:NamedIndividual rdf:about="https://base_ontology.com#Arrival_Delay_in_Minutes">
+        <rdf:type rdf:resource="https://base_ontology.com#data_property_name"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Baggage_handling -->
+
+    <owl:NamedIndividual rdf:about="https://base_ontology.com#Baggage_handling">
+        <rdf:type rdf:resource="https://base_ontology.com#entity_name"/>
+        <has_value>1..5</has_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Checkin_service -->
+
+    <owl:NamedIndividual rdf:about="https://base_ontology.com#Checkin_service">
+        <rdf:type rdf:resource="https://base_ontology.com#entity_name"/>
+        <has_value>1..6</has_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Cleanliness -->
+
+    <owl:NamedIndividual rdf:about="https://base_ontology.com#Cleanliness">
+        <rdf:type rdf:resource="https://base_ontology.com#data_property_name"/>
+        <rdf:type rdf:resource="https://base_ontology.com#entity_name"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Departure_Delay_in_Minutes -->
+
+    <owl:NamedIndividual rdf:about="https://base_ontology.com#Departure_Delay_in_Minutes">
+        <rdf:type rdf:resource="https://base_ontology.com#data_property_name"/>
+        <rdf:type rdf:resource="https://base_ontology.com#entity_name"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Ease_of_Online_booking -->
+
+    <owl:NamedIndividual rdf:about="https://base_ontology.com#Ease_of_Online_booking">
+        <rdf:type rdf:resource="https://base_ontology.com#data_property_name"/>
+        <rdf:type rdf:resource="https://base_ontology.com#entity_name"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Flight_Distance -->
+
+    <owl:NamedIndividual rdf:about="https://base_ontology.com#Flight_Distance">
+        <rdf:type rdf:resource="https://base_ontology.com#data_property_name"/>
+        <rdf:type rdf:resource="https://base_ontology.com#entity_name"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Food_and_drink -->
+
+    <owl:NamedIndividual rdf:about="https://base_ontology.com#Food_and_drink">
+        <rdf:type rdf:resource="https://base_ontology.com#data_property_name"/>
+        <rdf:type rdf:resource="https://base_ontology.com#entity_name"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Gate_location -->
+
+    <owl:NamedIndividual rdf:about="https://base_ontology.com#Gate_location">
+        <rdf:type rdf:resource="https://base_ontology.com#data_property_name"/>
+        <rdf:type rdf:resource="https://base_ontology.com#entity_name"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Inflight_entertainment -->
+
+    <owl:NamedIndividual rdf:about="https://base_ontology.com#Inflight_entertainment">
+        <rdf:type rdf:resource="https://base_ontology.com#data_property_name"/>
+        <rdf:type rdf:resource="https://base_ontology.com#entity_name"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Inflight_wifi_service -->
+
+    <owl:NamedIndividual rdf:about="https://base_ontology.com#Inflight_wifi_service">
+        <rdf:type rdf:resource="https://base_ontology.com#data_property_name"/>
+        <rdf:type rdf:resource="https://base_ontology.com#entity_name"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Leg_room_service -->
+
+    <owl:NamedIndividual rdf:about="https://base_ontology.com#Leg_room_service">
+        <rdf:type rdf:resource="https://base_ontology.com#data_property_name"/>
+        <rdf:type rdf:resource="https://base_ontology.com#entity_name"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#On-board_service -->
+
+    <owl:NamedIndividual rdf:about="https://base_ontology.com#On-board_service">
+        <rdf:type rdf:resource="https://base_ontology.com#data_property_name"/>
+        <rdf:type rdf:resource="https://base_ontology.com#entity_name"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Online_boarding -->
+
+    <owl:NamedIndividual rdf:about="https://base_ontology.com#Online_boarding">
+        <rdf:type rdf:resource="https://base_ontology.com#entity_name"/>
+        <has_value>1..6</has_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Online_support -->
+
+    <owl:NamedIndividual rdf:about="https://base_ontology.com#Online_support">
+        <rdf:type rdf:resource="https://base_ontology.com#entity_name"/>
+        <has_value>1..6</has_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Seat_comfort -->
+
+    <owl:NamedIndividual rdf:about="https://base_ontology.com#Seat_comfort">
+        <rdf:type rdf:resource="https://base_ontology.com#entity_name"/>
+        <has_value>1..6</has_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#Departure_Arrival_time:convenient -->
+
+    <owl:NamedIndividual rdf:about="https://base_ontology.com#Departure_Arrival_time:convenient">
+        <rdf:type rdf:resource="https://base_ontology.com#entity_name"/>
+        <has_value>1..6</has_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="https://base_ontology.com#Cleanliness">
+        <has_value>1..6</has_value>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://base_ontology.com#Departure_Delay_in_Minutes">
+        <has_value>0..1000</has_value>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://base_ontology.com#Ease_of_Online_booking">
+        <has_value>1..6</has_value>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://base_ontology.com#Flight_Distance">
+        <has_value>0..10000</has_value>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://base_ontology.com#Food_and_drink">
+        <has_value>1..6</has_value>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://base_ontology.com#Gate_location">
+        <has_value>1..6</has_value>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://base_ontology.com#Inflight_entertainment">
+        <has_value>1..6</has_value>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://base_ontology.com#Inflight_wifi_service">
+        <has_value>1..6</has_value>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://base_ontology.com#Leg_room_service">
+        <has_value>1..6</has_value>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://base_ontology.com#On-board_service">
+        <has_value>1..6</has_value>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

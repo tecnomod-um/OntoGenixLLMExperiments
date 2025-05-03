@@ -7,7 +7,7 @@
 ![](./4bits_ontology.png)
 
 
-### [Errors](./4bits_ontology.txt)
+### [Errors](./ontology_4bits_notes.txt)
 
 Ontology without syntax errors.
 
@@ -40,8 +40,6 @@ Ontology without syntax errors.
 ## Llama-3-8B-8bits
 
 [Generated ontology](./8bits_ontology.txt)
-<br>
-![](./8bits_ontology.png)
 <br>
 [Corrected ontology](./8bits_ontology_corrected.txt)
 <br>

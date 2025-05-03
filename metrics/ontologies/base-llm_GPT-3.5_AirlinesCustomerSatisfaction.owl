@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:base="https://base_ontology.com#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#hasCount -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasCount">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Age"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#Arrival_Delay_in_Minutes"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#Baggage_handling"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMax -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasMax">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Age"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#Arrival_Delay_in_Minutes"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#Baggage_handling"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMean -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasMean">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Age"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#Arrival_Delay_in_Minutes"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#Baggage_handling"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMin -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasMin">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Age"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#Arrival_Delay_in_Minutes"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#Baggage_handling"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasNonNullCount -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasNonNullCount">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Age"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#Arrival_Delay_in_Minutes"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#Baggage_handling"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasStd -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasStd">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Age"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#Arrival_Delay_in_Minutes"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#Baggage_handling"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasType -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasType">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Age"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#Arrival_Delay_in_Minutes"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#Baggage_handling"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasUniqueCount -->
+
+    <ObjectProperty rdf:about="https://base_ontology.com#hasUniqueCount">
+        <rdfs:domain rdf:resource="https://base_ontology.com#Age"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#Arrival_Delay_in_Minutes"/>
+        <rdfs:domain rdf:resource="https://base_ontology.com#Baggage_handling"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#hasCount -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMax -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasMax">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMean -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasMean">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasMin -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasMin">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasNonNullCount -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasNonNullCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasStd -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasStd">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasType -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasType">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://base_ontology.com#hasUniqueCount -->
+
+    <DatatypeProperty rdf:about="https://base_ontology.com#hasUniqueCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#Age -->
+
+    <Class rdf:about="https://base_ontology.com#Age"/>
+    
+
+
+    <!-- https://base_ontology.com#Arrival_Delay_in_Minutes -->
+
+    <Class rdf:about="https://base_ontology.com#Arrival_Delay_in_Minutes"/>
+    
+
+
+    <!-- https://base_ontology.com#Baggage_handling -->
+
+    <Class rdf:about="https://base_ontology.com#Baggage_handling"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

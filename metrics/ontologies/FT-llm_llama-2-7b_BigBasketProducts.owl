@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://vocab.um.es#FashionRetailOntology#"
+     xml:base="https://vocab.um.es#FashionRetailOntology"
+     xmlns:um="https://vocab.um.es#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://vocab.um.es#FashionRetailOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#hasCustomer -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#hasCustomer">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Purchase"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#Customer"/>
+        <rdfs:label>has customer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasProduct -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#hasProduct">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Purchase"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:label>has product</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#paidWith -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#paidWith">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Purchase"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#PaymentMethod"/>
+        <rdfs:label>paid with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#customerReferenceID -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#customerReferenceID">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>customer reference ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#datePurchase -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#datePurchase">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Purchase"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label>date of purchase</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#productName -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#productName">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>item purchased</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#purchaseAmount -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#purchaseAmount">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Purchase"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>purchase amount (USD)</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#reviewRating -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#reviewRating">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Purchase"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>review rating</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#Customer -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Customer">
+        <rdfs:label>Customer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#PaymentMethod -->
+
+    <owl:Class rdf:about="https://vocab.um.es#PaymentMethod">
+        <rdfs:label>Payment Method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#Product -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Product">
+        <rdfs:label>Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#Purchase -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Purchase">
+        <rdfs:label>Purchase</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

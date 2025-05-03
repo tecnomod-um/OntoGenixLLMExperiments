@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://vocab.um.es#FlightSatisfactionOntology#"
+     xml:base="https://vocab.um.es#FlightSatisfactionOntology"
+     xmlns:um="https://vocab.um.es#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://vocab.um.es#FlightSatisfactionOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#fliesOn -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#fliesOn">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Passenger"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#Flight"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasCustomerType -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#hasCustomerType">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Passenger"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#CustomerType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasFlightClass -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#hasFlightClass">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Flight"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#FlightClass"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasGender -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#hasGender">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Passenger"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#Gender"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasTravelType -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#hasTravelType">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Flight"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#TravelType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#age -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#age">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Passenger"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#arrivalDelayMinutes -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#arrivalDelayMinutes">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Flight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#baggageHandling -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#baggageHandling">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#checkinService -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#checkinService">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#cleanliness -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#cleanliness">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#departureArrivalConvenience -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#departureArrivalConvenience">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#departureDelayMinutes -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#departureDelayMinutes">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Flight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#easeOfOnlineBooking -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#easeOfOnlineBooking">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#flightDistance -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#flightDistance">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Flight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#foodAndDrink -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#foodAndDrink">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#gateLocation -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#gateLocation">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#inflightEntertainment -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#inflightEntertainment">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#inflightWifiService -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#inflightWifiService">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#legRoomService -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#legRoomService">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#onBoardService -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#onBoardService">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#onlineBoarding -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#onlineBoarding">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#onlineSupport -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#onlineSupport">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#satisfaction -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#satisfaction">
+        <rdfs:domain rdf:resource="https://vocab.um.es#Passenger"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#seatComfort -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#seatComfort">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#CustomerType -->
+
+    <owl:Class rdf:about="https://vocab.um.es#CustomerType"/>
+    
+
+
+    <!-- https://vocab.um.es#Flight -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Flight"/>
+    
+
+
+    <!-- https://vocab.um.es#FlightClass -->
+
+    <owl:Class rdf:about="https://vocab.um.es#FlightClass"/>
+    
+
+
+    <!-- https://vocab.um.es#Gender -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Gender"/>
+    
+
+
+    <!-- https://vocab.um.es#Passenger -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Passenger"/>
+    
+
+
+    <!-- https://vocab.um.es#TravelType -->
+
+    <owl:Class rdf:about="https://vocab.um.es#TravelType"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

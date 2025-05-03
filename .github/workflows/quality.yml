@@ -18,5 +18,5 @@ jobs:
       - name: OQuaREReport
         uses: tecnomod-um/oquare-metrics@v3.0
         with:
-          ontology-folders: ontologies
-          contents-folder: oquare
+          ontology-folders: metrics/ontologies
+          contents-folder: metrics/oquare

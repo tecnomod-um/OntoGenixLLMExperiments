@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.com/ontology#"
+     xml:base="http://example.com/ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.com/ontology#hasRating -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontology#hasRating">
+        <rdfs:domain rdf:resource="http://example.com/ontology#class_entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/ontology#hasTimestamp -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontology#hasTimestamp">
+        <rdfs:domain rdf:resource="http://example.com/ontology#class_entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/ontology#hasUserId -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontology#hasUserId">
+        <rdfs:domain rdf:resource="http://example.com/ontology#class_entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.com/ontology#hasProductId -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontology#hasProductId">
+        <rdfs:domain rdf:resource="http://example.com/ontology#class_entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontology#hasRating -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontology#hasRating">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontology#hasTimestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontology#hasTimestamp">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontology#hasUserId -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontology#hasUserId">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.com/ontology#ProductId -->
+
+    <owl:Class rdf:about="http://example.com/ontology#ProductId">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontology#class_entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/ontology#hasProductId"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontology#Rating -->
+
+    <owl:Class rdf:about="http://example.com/ontology#Rating">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontology#class_entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/ontology#hasRating"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontology#Timestamp -->
+
+    <owl:Class rdf:about="http://example.com/ontology#Timestamp">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontology#class_entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/ontology#hasTimestamp"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontology#UserId -->
+
+    <owl:Class rdf:about="http://example.com/ontology#UserId">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontology#class_entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/ontology#hasUserId"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontology#class_entity -->
+
+    <owl:Class rdf:about="http://example.com/ontology#class_entity"/>
+    
+
+
+    <!-- http://example.com/ontology#entity_name -->
+
+    <owl:Class rdf:about="http://example.com/ontology#entity_name">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontology#class_entity"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

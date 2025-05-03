@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://base_ontology.com#"
+     xml:base="https://base_ontology.com"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdfs1="http://www.w3.org/2000/01/rdf-schema#rdfs:">
+    <owl:Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#rdfs:domain -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#rdfs:domain"/>
+    
+
+
+    <!-- https://base_ontology.com#data_property_name -->
+
+    <owl:AnnotationProperty rdf:about="https://base_ontology.com#data_property_name">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://base_ontology.com#entity_name -->
+
+    <owl:AnnotationProperty rdf:about="https://base_ontology.com#entity_name">
+        <rdfs:domain rdf:resource="https://base_ontology.com#class_entity"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#data_property_name -->
+
+    <owl:ObjectProperty rdf:about="https://base_ontology.com#data_property_name">
+        <rdfs:range rdf:resource="https://base_ontology.com#Numerical"/>
+        <rdfs:range rdf:resource="https://base_ontology.com#text"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#description -->
+
+    <owl:ObjectProperty rdf:about="https://base_ontology.com#description">
+        <rdfs:range rdf:resource="https://base_ontology.com#text"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://base_ontology.com#entity_name -->
+
+    <owl:ObjectProperty rdf:about="https://base_ontology.com#entity_name">
+        <rdfs:range rdf:resource="https://base_ontology.com#text"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#OntologyProperty -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#OntologyProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#hasValue -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#hasValue"/>
+    
+
+
+    <!-- https://base_ontology.com#Numerical -->
+
+    <owl:Class rdf:about="https://base_ontology.com#Numerical"/>
+    
+
+
+    <!-- https://base_ontology.com#customer_city -->
+
+    <owl:Class rdf:about="https://base_ontology.com#customer_city"/>
+    
+
+
+    <!-- https://base_ontology.com#customer_id -->
+
+    <owl:Class rdf:about="https://base_ontology.com#customer_id"/>
+    
+
+
+    <!-- https://base_ontology.com#customer_state -->
+
+    <owl:Class rdf:about="https://base_ontology.com#customer_state"/>
+    
+
+
+    <!-- https://base_ontology.com#customer_unique_id -->
+
+    <owl:Class rdf:about="https://base_ontology.com#customer_unique_id"/>
+    
+
+
+    <!-- https://base_ontology.com#customer_zip_code_prefix -->
+
+    <owl:Class rdf:about="https://base_ontology.com#customer_zip_code_prefix"/>
+    
+
+
+    <!-- https://base_ontology.com#object_property_name -->
+
+    <owl:Class rdf:about="https://base_ontology.com#object_property_name"/>
+    
+
+
+    <!-- https://base_ontology.com#text -->
+
+    <owl:Class rdf:about="https://base_ontology.com#text"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://base_ontology.com#data_property_name -->
+
+    <owl:NamedIndividual rdf:about="https://base_ontology.com#data_property_name">
+        <rdf:type rdf:resource="https://base_ontology.com#customer_city"/>
+        <rdf:type rdf:resource="https://base_ontology.com#customer_id"/>
+        <rdf:type rdf:resource="https://base_ontology.com#customer_state"/>
+        <rdf:type rdf:resource="https://base_ontology.com#customer_unique_id"/>
+        <rdf:type rdf:resource="https://base_ontology.com#customer_zip_code_prefix"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#description -->
+
+    <owl:NamedIndividual rdf:about="https://base_ontology.com#description">
+        <rdf:type rdf:resource="https://base_ontology.com#object_property_name"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://base_ontology.com#entity_name -->
+
+    <owl:NamedIndividual rdf:about="https://base_ontology.com#entity_name">
+        <rdf:type rdf:resource="https://base_ontology.com#object_property_name"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="https://base_ontology.com#description">
+        <rdfs1:domain rdf:resource="https://base_ontology.com#entity_name"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

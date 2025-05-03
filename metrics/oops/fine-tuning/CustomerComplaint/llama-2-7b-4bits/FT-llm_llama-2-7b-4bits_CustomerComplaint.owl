@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://vocab.um.es#CreditReportOntology#"
+     xml:base="https://vocab.um.es#CreditReportOntology"
+     xmlns:um="https://vocab.um.es#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://vocab.um.es#CreditReportOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#belongsToCompany -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#belongsToCompany">
+        <rdfs:domain rdf:resource="https://vocab.um.es#CreditReport"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#Company"/>
+        <rdfs:label>Belongs to Company</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasCompanyPublicResponse -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#hasCompanyPublicResponse">
+        <rdfs:domain rdf:resource="https://vocab.um.es#CreditReport"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#CompanyPublicResponse"/>
+        <rdfs:label>Has Company Public Response</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasComplaintID -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#hasComplaintID">
+        <rdfs:domain rdf:resource="https://vocab.um.es#CreditReport"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#ComplaintID"/>
+        <rdfs:label>Has Complaint ID</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasConsumerComplaintNarrative -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#hasConsumerComplaintNarrative">
+        <rdfs:domain rdf:resource="https://vocab.um.es#CreditReport"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#ConsumerComplaintNarrative"/>
+        <rdfs:label>Has Consumer Complaint Narrative</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasIssue -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#hasIssue">
+        <rdfs:domain rdf:resource="https://vocab.um.es#CreditReport"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#Issue"/>
+        <rdfs:label>Has Issue</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasProduct -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#hasProduct">
+        <rdfs:domain rdf:resource="https://vocab.um.es#CreditReport"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#Product"/>
+        <rdfs:label>Has Product</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasState -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#hasState">
+        <rdfs:domain rdf:resource="https://vocab.um.es#CreditReport"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#State"/>
+        <rdfs:label>Has State</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasSubIssue -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#hasSubIssue">
+        <rdfs:domain rdf:resource="https://vocab.um.es#CreditReport"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#SubIssue"/>
+        <rdfs:label>Has Sub-issue</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasSubProduct -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#hasSubProduct">
+        <rdfs:domain rdf:resource="https://vocab.um.es#CreditReport"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#SubProduct"/>
+        <rdfs:label>Has Sub-product</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasZipCode -->
+
+    <owl:ObjectProperty rdf:about="https://vocab.um.es#hasZipCode">
+        <rdfs:domain rdf:resource="https://vocab.um.es#CreditReport"/>
+        <rdfs:range rdf:resource="https://vocab.um.es#ZipCode"/>
+        <rdfs:label>Has Zip Code</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#hasCompanyResponseToConsumer -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#hasCompanyResponseToConsumer">
+        <rdfs:domain rdf:resource="https://vocab.um.es#CreditReport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Has Company Response to Consumer</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasConsumerDisputed -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#hasConsumerDisputed">
+        <rdfs:domain rdf:resource="https://vocab.um.es#CreditReport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>Has Consumer Disputed</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasDateSentToCompany -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#hasDateSentToCompany">
+        <rdfs:domain rdf:resource="https://vocab.um.es#CreditReport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label>Has Date Sent to Company</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://vocab.um.es#hasTimelyResponse -->
+
+    <owl:DatatypeProperty rdf:about="https://vocab.um.es#hasTimelyResponse">
+        <rdfs:domain rdf:resource="https://vocab.um.es#CreditReport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>Has Timely Response</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://vocab.um.es#Company -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Company">
+        <rdfs:label>Company</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#CompanyPublicResponse -->
+
+    <owl:Class rdf:about="https://vocab.um.es#CompanyPublicResponse">
+        <rdfs:label>Company public response</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#ComplaintID -->
+
+    <owl:Class rdf:about="https://vocab.um.es#ComplaintID"/>
+    
+
+
+    <!-- https://vocab.um.es#ConsumerComplaintNarrative -->
+
+    <owl:Class rdf:about="https://vocab.um.es#ConsumerComplaintNarrative">
+        <rdfs:label>Consumer complaint narrative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#CreditReport -->
+
+    <owl:Class rdf:about="https://vocab.um.es#CreditReport">
+        <rdfs:label>Credit Report</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#Issue -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Issue">
+        <rdfs:label>Issue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#Product -->
+
+    <owl:Class rdf:about="https://vocab.um.es#Product">
+        <rdfs:label>Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#State -->
+
+    <owl:Class rdf:about="https://vocab.um.es#State">
+        <rdfs:label>State</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#SubIssue -->
+
+    <owl:Class rdf:about="https://vocab.um.es#SubIssue">
+        <rdfs:label>Sub-issue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#SubProduct -->
+
+    <owl:Class rdf:about="https://vocab.um.es#SubProduct">
+        <rdfs:label>Sub-product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.um.es#ZipCode -->
+
+    <owl:Class rdf:about="https://vocab.um.es#ZipCode">
+        <rdfs:label>Zip code</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
