@@ -55,9 +55,7 @@
 
 [Generated ontology](./ontology_8bits.txt)
 <br>
-[Corrected ontology](./ontology_8bits_corrected.txt)
-<br>
-![](./ontology_8bits_corrected.png)
+![](./ontology_8bits.png)
 
 
 ### [Errors](./ontology_8bits_notes.txt)

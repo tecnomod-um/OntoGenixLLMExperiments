@@ -1,13 +1,13 @@
 # GPT-4o
 
-[Generated ontology](./ontology.owl)
+[Generated ontology](./ontology.ttl)
 <br>
 ![](./ontology.png)
 
 
 ## [Errors](./ontology_notes.txt)
 
-Ontology without syntax errors, but wrong URIs. Example: schema:Category.
+Ontology without syntax errors, but **wrong URIs**. Example: schema:Category.
 
 
 ## [URIs](./ontology_URIs.xlsx)

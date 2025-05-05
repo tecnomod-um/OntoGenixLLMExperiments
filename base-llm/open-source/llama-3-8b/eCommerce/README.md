@@ -2,11 +2,11 @@
 
 ## Llama-3-8B-4bits
 
-[Generated ontology](./4bits_ontology.txt)
+[Generated ontology](./ontology_4bits.txt)
 <br>
-[Corrected ontology](./4bits_ontology_corrected.txt)
+[Corrected ontology](./ontology_4bits_corrected.txt)
 <br>
-![](./4bits_ontology_corrected.png)
+![](./ontology_4bits_corrected.png)
 
 
 ### [Errors](./ontology_4bits_notes.txt)
@@ -37,7 +37,7 @@
     ```
 
 
-### [URIs](./4bits_ontology_URIs.xlsx)
+### [URIs](./ontology_4bits_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -63,11 +63,11 @@
 
 ## Llama-3-8B-8bits
 
-[Generated ontology](./8bits_ontology.txt)
+[Generated ontology](./ontology_8bits.txt)
 <br>
-[Corrected ontology](./8bits_ontology_corrected.txt)
+[Corrected ontology](./ontology_8bits_corrected.txt)
 <br>
-![](./8bits_ontology_corrected.png)
+![](./ontology_8bits_corrected.png)
 
 
 ### [Errors](./ontology_8bits_notes.txt)
@@ -81,7 +81,7 @@
     @prefix base_ontology: <https://base_ontology.com#>
     ```
 
-### [URIs](./8bits_ontology_URIs.xlsx)
+### [URIs](./ontology_8bits_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -107,9 +107,9 @@
 
 ## Llama-3-8B-without quantization
 
-[Generated ontology](./ontology.txt)
+[Generated ontology](./ontology_all.txt)
 
 
-### [Errors](./ontology_notes.txt)
+### [Errors](./ontology_all_notes.txt)
 
 **Incorrect rdf/xml serialization.**

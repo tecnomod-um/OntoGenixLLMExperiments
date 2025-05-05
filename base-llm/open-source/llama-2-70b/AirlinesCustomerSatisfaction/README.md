@@ -2,14 +2,14 @@
 
 ## Llama-2-70B-4bits
 
-[Generated ontology](./4bits_ontology.txt)
+[Generated ontology](./ontology.txt)
 <br>
-[Corrected ontology](./4bits_ontology_corrected.txt)
+[Corrected ontology](./ontology_corrected.txt)
 <br>
-![](./4bits_ontology_corrected.png)
+![](./ontology_corrected.png)
 
 
-### [Errors](./4bits_ontology_notes.txt)
+### [Errors](./ontology_notes.txt)
 
 **Incorrect serialization:**
 -   Incorrect shortnames, like class_entity:
@@ -44,7 +44,7 @@
 **Incorrect URIs.** Example: owl:domain instead of rdfs:domain.
 
 
-### [URIs](./ontology_4bits_URIs.xlsx)
+### [URIs](./ontology_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|

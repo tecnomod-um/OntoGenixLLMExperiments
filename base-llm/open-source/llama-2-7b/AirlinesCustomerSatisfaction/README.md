@@ -7,4 +7,4 @@
 
 ### [Errors](./ontology_notes.txt)
 
--   Incorrect format.
+-   **Incorrect format**.

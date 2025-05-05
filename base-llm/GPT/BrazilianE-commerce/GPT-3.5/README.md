@@ -1,10 +1,10 @@
 # GPT-3.5
 
-[Generated ontology](./ontology.owl)
+[Generated ontology](./ontology.ttl)
 <br>
 ![](./ontology.png)
 <br>
-[Corrected ontology](./ontology_corrected.owl)
+[Corrected ontology](./ontology_corrected.ttl)
 <br>
 ![](./ontology_corrected.png)
 
@@ -18,7 +18,7 @@ entity_customer:hasCustomerCity a owl:ObjectProperty ;
     rdfs:range xsd:string .
 ```
 
-Also wrong URIs. Example: entity_customer:hasCustomerCity.
+Also **wrong URIs**. Example: entity_customer:hasCustomerCity.
 
 
 ## [URIs](./ontology_URIs.xlsx)

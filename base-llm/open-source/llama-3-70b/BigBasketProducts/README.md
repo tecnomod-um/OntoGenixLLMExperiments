@@ -7,7 +7,7 @@
 ![](./ontology.png)
 
 
-### Errors
+### [Errors](./ontology_notes.txt)
 
 Ontology without syntax errors.
 

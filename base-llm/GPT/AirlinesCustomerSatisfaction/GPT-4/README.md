@@ -1,6 +1,6 @@
 # GPT-4
 
-[Generated ontology](./ontology.owl)
+[Generated ontology](./ontology.ttl)
 <br>
 ![](./ontology.png)
 
@@ -15,7 +15,8 @@ Ontology without syntax errors, but semantic errors:
         rdfs:domain base:Flight ;
         rdfs:range xsd:float .
     ```
--   Wrong URIs. Example: foaf:Male does not exist.
+    
+And **wrong URIs**. Example: foaf:Male does not exist.
 
 
 ## [URIs](./ontology_URIs.xlsx)

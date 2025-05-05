@@ -4,9 +4,7 @@
 
 [Generated ontology](./ontology_4bits.txt)
 <br>
-[Corrected ontology](./ontology_4bits_corrected.txt)
-<br>
-![](./ontology_4bits_corrected.png)
+![](./ontology_4bits.png)
 
 
 ### [Errors](./ontology_4bits_notes.txt)
@@ -50,7 +48,7 @@ Ontology without syntax errors.
 
 ### [Errors](./ontology_8bits_notes.txt)
 
-Ontology without syntax errors, but wrong URIs. Example: xsd:gHour.
+Ontology without syntax errors, but **wrong URIs**. Example: xsd:gHour.
 
 
 ### [URIs](./ontology_8bits_URIs.xlsx)

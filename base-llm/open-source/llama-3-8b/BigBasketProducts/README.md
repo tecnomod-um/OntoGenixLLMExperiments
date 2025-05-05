@@ -2,11 +2,11 @@
 
 ## Llama-3-8B-4bits
 
-[Generated ontology](./4bits_ontology.txt)
+[Generated ontology](./ontology_4bits.txt)
 <br>
-[Corrected ontology](./4bits_ontology_corrected.txt)
+[Corrected ontology](./ontology_4bits_corrected.txt)
 <br>
-![](./4bits_ontology_corrected.png)
+![](./ontology_4bits_corrected.png)
 
 
 ### [Errors](./ontology_4bits_notes.txt)
@@ -23,7 +23,7 @@
 **Wrong URIs.** Example: owl:subClassOf
 
 
-### [URIs](./4bits_ontology_URIs.xlsx)
+### [URIs](./ontology_4bits_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -49,13 +49,13 @@
 
 ## Llama-3-8B-8bits
 
-[Generated ontology](./8bits_ontology.txt)
+[Generated ontology](./ontology_8bits.txt)
 <br>
-![](./8bits_ontology.png)
+![](./ontology_8bits.png)
 <br>
-[Corrected ontology](./8bits_ontology_corrected.txt)
+[Corrected ontology](./ontology_8bits_corrected.txt)
 <br>
-![](./8bits_ontology_corrected.png)
+![](./ontology_8bits_corrected.png)
 
 
 ### [Errors](./ontology_8bits_notes.txt)
@@ -76,7 +76,7 @@
 **Wrong URIs.** Example: owl:subclassOf
 
 
-### [URIs](./8bits_ontology_URIs.xlsx)
+### [URIs](./ontology_8bits_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -101,14 +101,14 @@
 
 ## Llama-3-8B-without quantization
 
-[Generated ontology](./ontology.txt)
+[Generated ontology](./ontology_all.txt)
 <br>
-[Corrected ontology](./ontology_corrected.txt)
+[Corrected ontology](./ontology_all_corrected.txt)
 <br>
-![](./ontology_corrected.png)
+![](./ontology_all_corrected.png)
 
 
-### [Errors](./ontology_notes.txt)
+### [Errors](./ontology_all_notes.txt)
 
 **Incorrect serialization:**
 -   Missing ending dots in the prefixes. Example:
@@ -125,7 +125,7 @@
     ```
 
 
-### [URIs](./ontology_URIs.xlsx)
+### [URIs](./ontology_all_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|

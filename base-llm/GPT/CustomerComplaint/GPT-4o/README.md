@@ -1,6 +1,6 @@
 # GPT-4o
 
-[Generated ontology](./ontology.owl)
+[Generated ontology](./ontology.ttl)
 <br>
 ![](./ontology.png)
 
@@ -13,7 +13,7 @@ base:ComplaintID a owl:Class ;
     rdfs:subClassOf schema:identifier .
 ```
 
-Also wrong URIs, like schema:PostalCode, that does not exist.
+Also **wrong URIs**, like schema:PostalCode, that does not exist.
 
 
 ## [URIs](./ontology_URIs.xlsx)

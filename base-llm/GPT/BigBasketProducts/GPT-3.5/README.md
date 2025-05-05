@@ -1,8 +1,8 @@
 # GPT-3.5
 
-[Generated ontology](./ontology.owl)
+[Generated ontology](./ontology.ttl)
 <br>
-[Corrected ontology](./ontology_corrected.owl)
+[Corrected ontology](./ontology_corrected.ttl)
 <br>
 ![](./ontology_corrected.png)
 

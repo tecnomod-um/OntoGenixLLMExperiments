@@ -1,6 +1,6 @@
 # GPT-4
 
-[Generated ontology](./ontology.owl)
+[Generated ontology](./ontology.ttl)
 <br>
 ![](./ontology.png)
 
@@ -9,7 +9,7 @@
 
 Ontology without syntax errors, but semantic errors. For example, schema:identifier and dcterms:date are properties, but are used as range of Object properties.
 
-Also wrong URIs. For examples: dcterms:date.
+Also **wrong URIs**. For examples: dcterms:date.
 
 
 ## [URIs](./ontology_URIs.xlsx)
@@ -44,7 +44,7 @@ Also wrong URIs. For examples: dcterms:date.
 | schema:Boolean           | X        | -               |
 | dcterms:date             | X        | -               |
 | schema:State             | X        | -               |
-| schema:PostalCode        | X        | base:PostalCode |
+| schema:PostalCode        | -        | base:PostalCode |
 | schema:identifier        | X        | -               |
 | schema:keywords          | X        | -               |
 | schema:CreativeWork      | X        | -               |

@@ -1,20 +1,21 @@
 # GPT-4
 
-[Generated ontology](./ontology.owl)
+[Generated ontology](./ontology.ttl)
 <br>
 ![](./ontology.png)
 
 
 ## [Errors](./ontology_notes.txt)
 
-Ontology without syntax errors, but wrong URIs (schema:Category). 
-
-Also Object properties declarated as Datatype property:
+Ontology without syntax errors, but semantics error.
+-   Object properties declarated as Datatype property:
 ```
 base:hasQuantity rdf:type owl:DatatypeProperty ;
                  rdfs:domain base:Product ;
                  rdfs:range schema:QuantitativeValue .
 ```
+
+Also **wrong URIs** (schema:Category). 
 
 
 ## [URIs](./ontology_URIs.xlsx)

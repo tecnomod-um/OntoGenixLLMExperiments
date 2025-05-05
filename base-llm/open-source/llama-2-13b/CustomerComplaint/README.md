@@ -2,7 +2,7 @@
 
 ## Llama-2-13B-4bits
 
-[Generated ontology](./4bits_ontology.txt)
+[Generated ontology](./ontology_4bits.txt)
 
 
 ### [Errors](./ontology_4bits_notes.txt)
@@ -24,11 +24,11 @@
 
 ## Llama-2-13B-8bits
 
-[Generated ontology](./8bits_ontology.txt) 
+[Generated ontology](./ontology_8bits.txt) 
 <br>
-[Corrected ontology](./8bits_ontology_corrected.txt)
+[Corrected ontology](./ontology_8bits_corrected.txt)
 <br>
-![](./8bits_ontology_corrected.png)
+![](./ontology_8bits_corrected.png)
 
 
 ### [Errors](./ontology_8bits_notes.txt)
@@ -76,11 +76,11 @@
 
 ## Llama-2-13B without quantization
 
-[Generated ontology](./all_ontology.txt)
+[Generated ontology](./ontology_all.txt)
 <br>
-[Corrected ontology](./all_ontology_corrected.txt)
+[Corrected ontology](./ontology_all_corrected.txt)
 <br>
-![](./all_ontology_corrected.png)
+![](./ontology_all_corrected.png)
 
 
 ### [Errors](./ontology_all_notes.txt)

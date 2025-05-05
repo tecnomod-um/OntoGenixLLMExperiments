@@ -1,6 +1,6 @@
 # GPT-4o
 
-[Generated ontology](./ontology.owl)
+[Generated ontology](./ontology.ttl)
 <br>
 ![](./ontology.png)
 
@@ -9,7 +9,7 @@
 
 Ontology without syntax errors, but semantics errors. For example, reuse of properties from schema, but as classes.
 
-Also, wrong URIs. Example: schema:age does not exist.
+Also, **wrong URIs**. Example: schema:age does not exist.
 
 
 ## [URIs](./ontology_URIs.xlsx)

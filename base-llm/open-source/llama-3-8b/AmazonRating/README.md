@@ -2,9 +2,9 @@
 
 ## Llama-3-8B-4bits
 
-[Generated ontology](./4bits_ontology.txt)
+[Generated ontology](./ontology_4bits.txt)
 
-### [Errors](./4bits_ontology_notes.txt)
+### [Errors](./ontology_4bits_notes.txt)
 
 **Incorrect format and serialization** (number of elements, dots). Example:
 ```
@@ -17,21 +17,21 @@
 
 ## Llama-3-8B-8bits
 
-[Generated ontology](./8bits_ontology.txt)
+[Generated ontology](./ontology_8bits.txt)
 <br>
-![](./8bits_ontology.png)
+![](./ontology_8bits.png)
 <br>
-[Corrected ontology](./8bits_ontology_corrected.txt)
+[Corrected ontology](./ontology_8bits_corrected.txt)
 <br>
-![](./8bits_ontology_corrected.png)
+![](./ontology_8bits_corrected.png)
 
 
-### [Errors](./8bits_ontology_notes.txt)
+### [Errors](./ontology_8bits_notes.txt)
 
 Ontology without syntax errors, but **wrong URIs**.
 
 
-### [URIs](./8bits_ontology_URIs.xlsx)
+### [URIs](./ontology_8bits_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|
@@ -59,14 +59,14 @@ Ontology without syntax errors, but **wrong URIs**.
 
 ## Llama-3-8B-without quantization
 
-[Generated ontology](./ontology.txt)
+[Generated ontology](./ontology_all.txt)
 <br>
-[Corrected ontology](./ontology_corrected.txt)
+[Corrected ontology](./ontology_all_corrected.txt)
 <br>
-![](./ontology_corrected.png)
+![](./ontology_all_corrected.png)
 
 
-### [Errors](./ontology_notes.txt)
+### [Errors](./ontology_all_notes.txt)
 
 **Incorrect serialization:**
 -   Missing end dots in the prefix declarations. Examples:
@@ -77,7 +77,7 @@ Ontology without syntax errors, but **wrong URIs**.
     @prefix base: <https://base_ontology.com#>
     ```
 
-### [URIs](./ontology_URIs.xlsx)
+### [URIs](./ontology_all_URIs.xlsx)
 
 | Prefix | URI                                           | Validity | Corrected |
 |--------|-----------------------------------------------|----------|-----------|

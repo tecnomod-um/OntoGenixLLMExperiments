@@ -10,8 +10,9 @@
 ## [Errors](./ontology_notes.txt)
 
 **Uncommented text:** 
-<br>
+```
 Here is the TURTLE syntax for the ontology based on the provided JSON data and schema description
+```
 
 
 ## [URIs](./ontology_URIs.xlsx)

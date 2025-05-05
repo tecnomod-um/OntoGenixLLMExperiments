@@ -1,6 +1,6 @@
 # GPT-3.5
 
-[Generated ontology](./ontology.owl)
+[Generated ontology](./ontology.ttl)
 <br>
 ![](./ontology.png)
 
