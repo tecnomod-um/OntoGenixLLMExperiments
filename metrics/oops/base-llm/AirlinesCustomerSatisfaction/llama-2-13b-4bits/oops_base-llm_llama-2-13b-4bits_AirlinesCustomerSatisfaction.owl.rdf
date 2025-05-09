@@ -7,45 +7,23 @@
   <rdf:Description rdf:about="http://oops.linkeddata.es/def#warning">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://oops.linkeddata.es/data/50e91e25-d487-48c2-bb44-326e4f67e4d9">
-    <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P08</oops:hasCode>
-    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Baggage_handling</oops:hasAffectedElement>
-    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Checkin_service</oops:hasAffectedElement>
-    <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</oops:hasNumberAffectedElements>
-    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Cleanliness</oops:hasAffectedElement>
-    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Online_boarding</oops:hasAffectedElement>
-    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Departure_delay</oops:hasAffectedElement>
-    <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Missing annotations</oops:hasName>
-    <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor</oops:hasImportanceLevel>
-    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Arrival_Delay_in_Minutes</oops:hasAffectedElement>
+  <rdf:Description rdf:about="http://oops.linkeddata.es/data/13d196e6-f3fe-4684-b5e4-7012691c6844">
     <rdf:type rdf:resource="http://oops.linkeddata.es/def#pitfall"/>
-    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Age</oops:hasAffectedElement>
-    <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This pitfall consists in creating an ontology element and failing to provide human readable annotations attached to it. Consequently, ontology elements lack annotation properties that label them (e.g. rdfs:label, lemon:LexicalEntry, skos:prefLabel or skos:altLabel) or that define them (e.g. rdfs:comment or dc:description). This pitfall is related to the guidelines provided in [5].	</oops:hasDescription>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://oops.linkeddata.es/data/a1c0e33d-f44d-4d0f-88ee-49cdb0cc0bf8">
-    <oops:hasPitfall rdf:resource="http://oops.linkeddata.es/data/ff40b360-25df-4e33-89ec-4da48c2638e9"/>
-    <oops:hasPitfall rdf:resource="http://oops.linkeddata.es/data/fdf34509-0db5-4130-8042-a8cd5739d35b"/>
-    <oops:hasPitfall rdf:resource="http://oops.linkeddata.es/data/369c3570-c0ba-4a2d-8183-14d8b88e48e8"/>
-    <oops:hasPitfall rdf:resource="http://oops.linkeddata.es/data/50e91e25-d487-48c2-bb44-326e4f67e4d9"/>
-    <rdf:type rdf:resource="http://oops.linkeddata.es/def#response"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://oops.linkeddata.es/data/369c3570-c0ba-4a2d-8183-14d8b88e48e8">
-    <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</oops:hasNumberAffectedElements>
-    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Online_boarding</oops:hasAffectedElement>
-    <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Missing domain or range in properties</oops:hasName>
     <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Object and/or datatype properties without domain or range (or none of them) are included in the ontology. 	</oops:hasDescription>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Online_boarding</oops:hasAffectedElement>
+    <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P11</oops:hasCode>
+    <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Missing domain or range in properties</oops:hasName>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Departure_delay</oops:hasAffectedElement>
     <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Important</oops:hasImportanceLevel>
-    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Checkin_service</oops:hasAffectedElement>
-    <rdf:type rdf:resource="http://oops.linkeddata.es/def#pitfall"/>
+    <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</oops:hasNumberAffectedElements>
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Cleanliness</oops:hasAffectedElement>
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Baggage_handling</oops:hasAffectedElement>
-    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Departure_delay</oops:hasAffectedElement>
-    <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P11</oops:hasCode>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Checkin_service</oops:hasAffectedElement>
   </rdf:Description>
   <rdf:Description rdf:about="http://oops.linkeddata.es/def#pitfall">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://oops.linkeddata.es/data/1741fe64-2544-4a5d-92ca-d5e305e0882f">
+  <rdf:Description rdf:about="http://oops.linkeddata.es/data/b07e5a20-f054-4a9b-9fc9-e9c6a12cc88d">
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Baggage_handling</oops:hasAffectedElement>
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Checkin_service</oops:hasAffectedElement>
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Cleanliness</oops:hasAffectedElement>
@@ -56,16 +34,7 @@
   <rdf:Description rdf:about="http://oops.linkeddata.es/def#suggestion">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://oops.linkeddata.es/data/fdf34509-0db5-4130-8042-a8cd5739d35b">
-    <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor</oops:hasImportanceLevel>
-    <oops:noSuggestion rdf:resource="http://oops.linkeddata.es/data/1741fe64-2544-4a5d-92ca-d5e305e0882f"/>
-    <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</oops:hasNumberAffectedElements>
-    <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This pitfall appears when any relationship (except for those that are defined as symmetric properties using owl:SymmetricProperty) does not have an inverse relationship (owl:inverseOf) defined within the ontology.	</oops:hasDescription>
-    <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inverse relationships not explicitly declared</oops:hasName>
-    <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P13</oops:hasCode>
-    <rdf:type rdf:resource="http://oops.linkeddata.es/def#pitfall"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://oops.linkeddata.es/data/ff40b360-25df-4e33-89ec-4da48c2638e9">
+  <rdf:Description rdf:about="http://oops.linkeddata.es/data/93741add-2d87-4744-8306-b11f3f3502a6">
     <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Important</oops:hasImportanceLevel>
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://base_ontology.com#HTTP_timestamp</oops:hasAffectedElement>
     <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</oops:hasNumberAffectedElements>
@@ -73,5 +42,36 @@
     <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Untyped class</oops:hasName>
     <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P34</oops:hasCode>
     <rdf:type rdf:resource="http://oops.linkeddata.es/def#pitfall"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oops.linkeddata.es/data/27b77109-e24d-43bd-a198-c0a50cb99580">
+    <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor</oops:hasImportanceLevel>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Online_boarding</oops:hasAffectedElement>
+    <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</oops:hasNumberAffectedElements>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Checkin_service</oops:hasAffectedElement>
+    <rdf:type rdf:resource="http://oops.linkeddata.es/def#pitfall"/>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Departure_delay</oops:hasAffectedElement>
+    <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This pitfall consists in creating an ontology element and failing to provide human readable annotations attached to it. Consequently, ontology elements lack annotation properties that label them (e.g. rdfs:label, lemon:LexicalEntry, skos:prefLabel or skos:altLabel) or that define them (e.g. rdfs:comment or dc:description). This pitfall is related to the guidelines provided in [5].	</oops:hasDescription>
+    <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P08</oops:hasCode>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Baggage_handling</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Arrival_Delay_in_Minutes</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Cleanliness</oops:hasAffectedElement>
+    <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Missing annotations</oops:hasName>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://example.com/ontology/Passenger/Age</oops:hasAffectedElement>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oops.linkeddata.es/data/bcb015ac-c1e3-4c7f-ade8-a25371edbb9e">
+    <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor</oops:hasImportanceLevel>
+    <oops:noSuggestion rdf:resource="http://oops.linkeddata.es/data/b07e5a20-f054-4a9b-9fc9-e9c6a12cc88d"/>
+    <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</oops:hasNumberAffectedElements>
+    <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This pitfall appears when any relationship (except for those that are defined as symmetric properties using owl:SymmetricProperty) does not have an inverse relationship (owl:inverseOf) defined within the ontology.	</oops:hasDescription>
+    <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inverse relationships not explicitly declared</oops:hasName>
+    <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P13</oops:hasCode>
+    <rdf:type rdf:resource="http://oops.linkeddata.es/def#pitfall"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oops.linkeddata.es/data/655915ed-79e5-4c38-8ba2-59ead3aab9f9">
+    <oops:hasPitfall rdf:resource="http://oops.linkeddata.es/data/93741add-2d87-4744-8306-b11f3f3502a6"/>
+    <oops:hasPitfall rdf:resource="http://oops.linkeddata.es/data/bcb015ac-c1e3-4c7f-ade8-a25371edbb9e"/>
+    <oops:hasPitfall rdf:resource="http://oops.linkeddata.es/data/13d196e6-f3fe-4684-b5e4-7012691c6844"/>
+    <oops:hasPitfall rdf:resource="http://oops.linkeddata.es/data/27b77109-e24d-43bd-a198-c0a50cb99580"/>
+    <rdf:type rdf:resource="http://oops.linkeddata.es/def#response"/>
   </rdf:Description>
 </rdf:RDF>
