@@ -5,9 +5,6 @@
 <http://example.com/ontology/Passenger> a owl:Ontology;
    rdf:type owl:Ontology .
 
-<http://example.com/ontology/Passenger> owl:imports <http://example.com/ontology/Flight> ;
-   owl:imports <http://example.com/ontology/Airline> .
-
 <http://example.com/ontology/Passenger> owl:Class <http://example.com/ontology/Passenger> .
 
 <http://example.com/ontology/Passenger> owl:hasValue "12"^^xsd:integer .

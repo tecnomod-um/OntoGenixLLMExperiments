@@ -5,8 +5,6 @@
 
 <http://baseontology.com/complaint> a owl:Ontology .
 
-<http://baseontology.com/complaint> owl:imports <http://baseontology.com/foundational> .
-
 <http://baseontology.com/foundational> a owl:Ontology .
 
 <http://baseontology.com/foundational> owl:imports <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .

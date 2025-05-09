@@ -8,8 +8,10 @@
    rdfs:label "Invoice" ;
        owl:oneOf ( "Country" "Description" "InvoiceDate" "InvoiceNo" "StockCode" "CustomerID" "Quantity" "UnitPrice" ) ;
    rdfs:comment "An invoice is a document issued by a seller to a buyer for the sale and delivery of goods or services." ;
-   rdfs:domain "http://base_ontology.com/" ;
-   rdfs:range "http://www.w3.org/1999/02/22-rdf-syntax-ns#, http://www.w3.org/2000/01/rdf-schema#, http://www.w3.org/2002/07/owl#" ;
+   rdfs:domain <http://base_ontology.com/> ;
+   rdfs:range <http://www.w3.org/1999/02/22-rdf-syntax-ns> ;
+   rdfs:range <http://www.w3.org/2000/01/rdf-schema> ;
+   rdfs:range <http://www.w3.org/2002/07/owl#> ;
    owl:inverseOf "CustomerID", "Quantity" ;
    owl:inverseOf "InvoiceDate", "InvoiceNo" ;
    owl:inverseOf "StockCode", "Quantity" .
@@ -20,7 +22,9 @@
        owl:oneOf ( "Australia" "Canada" "China" "France" "Germany" "India" "Italy" "Japan" "Mexico" "Spain" "United Kingdom" "United States" ) ;
    rdfs:comment "A country is a political entity that is defined by a specific territory and government." ;
    rdfs:domain <http://base_ontology.com/> ;
-   rdfs:range <http://www.w3.org/1999/02/22-rdf-syntax-ns>, <http://www.w3.org/2000/01/rdf-schema>, <http://www.w3.org/2002/07/owl> .
+   rdfs:range <http://www.w3.org/1999/02/22-rdf-syntax-ns> ;
+   rdfs:range <http://www.w3.org/2000/01/rdf-schema> ;
+   rdfs:range <http://www.w3.org/2002/07/owl#> .
 
 
 :Description a owl:Class;
@@ -29,7 +33,9 @@
        owl:oneOf ( "A brief description of the invoice." ) ;
    rdfs:comment "A brief description of the invoice." ;
    rdfs:domain <http://base_ontology.com/> ;
-   rdfs:range <http://www.w3.org/1999/02/22-rdf-syntax-ns>, <http://www.w3.org/2000/01/rdf-schema#>, <http://www.w3.org/2002/07/owl#> .
+   rdfs:range <http://www.w3.org/1999/02/22-rdf-syntax-ns> ;
+   rdfs:range <http://www.w3.org/2000/01/rdf-schema> ;
+   rdfs:range <http://www.w3.org/2002/07/owl#> .
 
 :InvoiceDate a owl:Class;
    rdfs:subClassOf :class_entity ;
@@ -37,7 +43,9 @@
        owl:oneOf ( "The date the invoice was issued." ) ;
    rdfs:comment "The date the invoice was issued." ;
    rdfs:domain <http://base_ontology.com/> ;
-   rdfs:range <http://www.w3.org/1999/02/22-rdf-syntax-ns#>, <http://www.w3.org/2000/01/rdf-schema#>, <http://www.w3.org/2002/07/owl#> .
+   rdfs:range <http://www.w3.org/1999/02/22-rdf-syntax-ns> ;
+   rdfs:range <http://www.w3.org/2000/01/rdf-schema> ;
+   rdfs:range <http://www.w3.org/2002/07/owl#> .
 
 :InvoiceNo a owl:Class;
    rdfs:subClassOf :class_entity ;
@@ -45,7 +53,9 @@
        owl:oneOf ( "The unique identifier for the invoice." ) ;
    rdfs:comment "The unique identifier for the invoice." ;
    rdfs:domain <http://base_ontology.com/> ;
-   rdfs:range <http://www.w3.org/1999/02/22-rdf-syntax-ns#>, <http://www.w3.org/2000/01/rdf-schema#>, <http://www.w3.org/2002/07/owl#> .
+   rdfs:range <http://www.w3.org/1999/02/22-rdf-syntax-ns> ;
+   rdfs:range <http://www.w3.org/2000/01/rdf-schema> ;
+   rdfs:range <http://www.w3.org/2002/07/owl#> .
 
 :StockCode a owl:Class;
    rdfs:subClassOf :class_entity ;
@@ -53,7 +63,9 @@
        owl:oneOf ( "The code for the stock or item being invoiced." ) ;
    rdfs:comment "The code for the stock or item being invoiced." ;
    rdfs:domain <http://base_ontology.com/> ;
-   rdfs:range <http://www.w3.org/1999/02/22-rdf-syntax-ns#>, <http://www.w3.org/2000/01/rdf-schema#>, <http://www.w3.org/2002/07/owl#> .
+   rdfs:range <http://www.w3.org/1999/02/22-rdf-syntax-ns> ;
+   rdfs:range <http://www.w3.org/2000/01/rdf-schema> ;
+   rdfs:range <http://www.w3.org/2002/07/owl#> .
 
 :CustomerID a owl:Class;
    rdfs:subClassOf :class_entity ;
@@ -61,7 +73,9 @@
        owl:oneOf ( "The unique identifier for the customer." ) ;
    rdfs:comment "The unique identifier for the customer." ;
    rdfs:domain <http://base_ontology.com/> ;
-   rdfs:range <http://www.w3.org/1999/02/22-rdf-syntax-ns#, <http://www.w3.org/2000/01/rdf-schema#>, <http://www.w3.org/2002/07/owl#> .
+   rdfs:range <http://www.w3.org/1999/02/22-rdf-syntax-ns> ;
+   rdfs:range <http://www.w3.org/2000/01/rdf-schema> ;
+   rdfs:range <http://www.w3.org/2002/07/owl#> .
 
 :Quantity a owl:Class;
    rdfs:subClassOf :class_entity ;
@@ -69,7 +83,9 @@
        owl:oneOf ( "The quantity of the item being invoiced." ) ;
    rdfs:comment "The quantity of the item being invoiced." ;
    rdfs:domain <http://base_ontology.com/> ;
-   rdfs:range <http://www.w3.org/1999/02/22-rdf-syntax-ns#>, <http://www.w3.org/2000/01/rdf-schema#>, <http://www.w3.org/2002/07/owl#> .
+   rdfs:range <http://www.w3.org/1999/02/22-rdf-syntax-ns> ;
+   rdfs:range <http://www.w3.org/2000/01/rdf-schema> ;
+   rdfs:range <http://www.w3.org/2002/07/owl#> .
 
 :UnitPrice a owl:Class;
    rdfs:subClassOf :class_entity ;
@@ -77,4 +93,6 @@
        owl:oneOf ( "The unit price of the item being invoiced." ) ;
    rdfs:comment "The unit price of the item being invoiced." ;
    rdfs:domain <http://base_ontology.com/> ;
-   rdfs:range <http://www.w3.org/1999/02/22-rdf-syntax-ns#>, <http://www.w3.org/2000/01/rdf-schema#>, <http://www.w3.org/2002/07/owl#> .
+   rdfs:range <http://www.w3.org/1999/02/22-rdf-syntax-ns> ;
+   rdfs:range <http://www.w3.org/2000/01/rdf-schema> ;
+   rdfs:range <http://www.w3.org/2002/07/owl#> .
