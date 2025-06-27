@@ -111,6 +111,7 @@ The same dataset was used consistently across fine-tuning procedures for both GP
 ## 🔍 Evaluation Methodology
 
 The [generated ontologies](metrics/ontologies) were evaluated using both **quantitative** and **qualitative** methods:
+
 *Note: Only valid ontologies are included in this directory for evaluation purposes. Ontologies deemed invalid have been excluded.*
 
 ### Quantitative Evaluation
@@ -124,7 +125,7 @@ The [generated ontologies](metrics/ontologies) were evaluated using both **quant
 
    * Syntactic errors were manually corrected only if the workload was less than that required to model from scratch.
    * This allowed further semantic and structural analysis post-validation.
-   * 
+     
 3. **Ontology Quality Tools**:
 
    * [**OOPS! (Ontology Pitfall Scanner)**](metrics/oops): Identifies modeling pitfalls (17 found types out of 41).
