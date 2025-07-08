@@ -1,0 +1,11 @@
+NUMBER,TYPE,AmazonRating GPT-3.5,AmazonRating GPT-4o,AmazonRating GPT-4o-mini,AmazonRating llama-2-13b,AmazonRating llama-2-7b,AmazonRating llama-2-7b-4bits,AmazonRating llama-2-7b-8bits,AmazonRating llama-3-8b,AmazonRating llama-3-8b-4bits,AmazonRating llama-3-8b-8bits,summary
+P04,MINOR,NA,NA,NA,NA,NA,1,1,NA,1,NA,3
+P08,MINOR,1,1,1,1,1,1,1,1,1,1,10
+P10,IMPORTANT,1,1,1,1,1,1,1,1,1,1,10
+P13,MINOR,1,1,1,1,1,1,NA,1,NA,1,8
+P19,CRITICAL,NA,NA,NA,NA,NA,NA,NA,1,NA,1,2
+P38,IMPORTANT,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,1
+,TOTAL,3,3,3,3,3,5,3,4,3,4,34
+,CRITICAL,0,0,0,0,0,0,0,1,0,1,2
+,IMPORTANT,1,1,1,1,1,2,1,1,1,1,11
+,MINOR,2,2,2,2,2,3,2,2,2,2,21

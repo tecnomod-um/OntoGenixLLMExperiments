@@ -1,0 +1,19 @@
+LLM_model,dataset,top_level_type,low_level_type
+GPT-3.5,AirlinesCustomerSatisfaction,Valid,-
+GPT-3.5,AmazonRating,Valid,-
+GPT-3.5,BigBasketProducts,Incorrect serialization,prefixes
+GPT-3.5,BrazilianE-commerce,Valid,-
+GPT-3.5,CustomerComplaint,Valid,-
+GPT-3.5,eCommerce,Valid,-
+GPT-4o,AirlinesCustomerSatisfaction,Valid,-
+GPT-4o,AmazonRating,Valid,-
+GPT-4o,BigBasketProducts,Valid,-
+GPT-4o,BrazilianE-commerce,Incorrect serialization,shortnames
+GPT-4o,CustomerComplaint,Valid,-
+GPT-4o,eCommerce,Valid,-
+GPT-4o-mini,AirlinesCustomerSatisfaction,Valid,-
+GPT-4o-mini,AmazonRating,Valid,-
+GPT-4o-mini,BigBasketProducts,Valid,-
+GPT-4o-mini,BrazilianE-commerce,Valid,-
+GPT-4o-mini,CustomerComplaint,Valid,-
+GPT-4o-mini,eCommerce,Valid,-

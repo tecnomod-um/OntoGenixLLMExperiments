@@ -1,0 +1,32 @@
+dataset,Error_type,Number_incidences,Rate
+AirlinesCustomerSatisfaction,ending loop,3,30
+AirlinesCustomerSatisfaction,number of elements,3,30
+AirlinesCustomerSatisfaction,prefixes,2,20
+AirlinesCustomerSatisfaction,shortnames,2,20
+AirlinesCustomerSatisfaction,IDs,1,10
+AirlinesCustomerSatisfaction,dots,1,10
+AirlinesCustomerSatisfaction,format numeric values,1,10
+AmazonRating,number of elements,3,30
+AmazonRating,dots,2,20
+AmazonRating,blank node declarations,1,10
+AmazonRating,restrictions,1,10
+AmazonRating,shortnames,1,10
+BigBasketProducts,dots,5,50
+BigBasketProducts,number of elements,3,30
+BigBasketProducts,prefixes,2,20
+BigBasketProducts,restrictions,1,10
+BigBasketProducts,shortnames,1,10
+BrazilianE-commerce,prefixes,3,30
+BrazilianE-commerce,shortnames,3,30
+BrazilianE-commerce,dots,2,20
+BrazilianE-commerce,number of elements,2,20
+CustomerComplaint,ending loop,2,20
+CustomerComplaint,number of elements,2,20
+CustomerComplaint,shortnames,2,20
+CustomerComplaint,IDs,1,10
+CustomerComplaint,dots,1,10
+CustomerComplaint,prefixes,1,10
+eCommerce,dots,7,70
+eCommerce,number of elements,5,50
+eCommerce,shortnames,5,50
+eCommerce,prefixes,2,20

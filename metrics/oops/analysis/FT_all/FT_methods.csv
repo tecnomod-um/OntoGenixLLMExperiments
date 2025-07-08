@@ -1,0 +1,11 @@
+Method,Number of ontologies,Rate of ontologies,Number of ontologies (after corrections),Rate of ontologies (after corrections),Total pitfalls,Critical,Important,Minor
+GPT-3.5,5,83.33,6,100,15,0,6,9
+GPT-4o,5,83.33,6,100,20,0,8,12
+GPT-4o-mini,6,100,6,100,21,0,7,14
+Llama-2-7b-4bits,4,66.67,6,100,24,0,9,15
+Llama-2-7b-8bits,6,100,6,100,21,1,7,13
+Llama-2-7b,6,100,6,100,18,0,6,12
+Llama-2-13b,6,100,6,100,23,2,7,14
+Llama-3-8b-4bits,6,100,6,100,21,0,7,14
+Llama-3-8b-8bits,6,100,6,100,23,1,8,14
+Llama-3-8b,1,16.67,6,100,21,2,6,13

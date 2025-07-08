@@ -1,0 +1,11 @@
+NUMBER,TYPE,AirlinesCustomerSatisfaction GPT-4o-mini,AmazonRating GPT-4o-mini,BigBasketProducts GPT-4o-mini,BrazilianE-commerce GPT-4o-mini,CustomerComplaint GPT-4o-mini,eCommerce GPT-4o-mini,summary
+P04,MINOR,NA,NA,1,NA,NA,NA,1
+P08,MINOR,1,1,1,1,1,1,6
+P10,IMPORTANT,1,1,1,1,1,1,6
+P13,MINOR,1,1,1,1,1,1,6
+P22,MINOR,NA,NA,1,NA,NA,NA,1
+P38,IMPORTANT,NA,NA,1,NA,NA,NA,1
+,TOTAL,3,3,6,3,3,3,21
+,CRITICAL,0,0,0,0,0,0,0
+,IMPORTANT,1,1,2,1,1,1,7
+,MINOR,2,2,4,2,2,2,14

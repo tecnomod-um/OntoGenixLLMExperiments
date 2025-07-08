@@ -1,0 +1,4 @@
+Error_type,Number_incidences,Rate
+Valid,35,83.33
+Incorrect serialization,7,16.67
+Wrong URIs,5,11.9

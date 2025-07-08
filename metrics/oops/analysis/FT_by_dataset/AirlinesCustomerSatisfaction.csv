@@ -1,0 +1,13 @@
+NUMBER,TYPE,AirlinesCustomerSatisfaction GPT-3.5,AirlinesCustomerSatisfaction GPT-4o,AirlinesCustomerSatisfaction GPT-4o-mini,AirlinesCustomerSatisfaction llama-2-13b,AirlinesCustomerSatisfaction llama-2-7b,AirlinesCustomerSatisfaction llama-2-7b-4bits,AirlinesCustomerSatisfaction llama-2-7b-8bits,AirlinesCustomerSatisfaction llama-3-8b,AirlinesCustomerSatisfaction llama-3-8b-4bits,AirlinesCustomerSatisfaction llama-3-8b-8bits,summary
+P04,MINOR,NA,NA,NA,1,NA,1,1,NA,NA,1,4
+P07,MINOR,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,1
+P08,MINOR,1,1,1,1,1,1,1,1,1,1,10
+P10,IMPORTANT,1,1,1,1,1,1,1,1,1,1,10
+P11,IMPORTANT,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,1
+P13,MINOR,1,1,1,1,1,NA,NA,1,1,1,8
+P22,MINOR,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,1
+P38,IMPORTANT,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,1
+,TOTAL,3,4,3,4,3,5,4,3,3,4,36
+,CRITICAL,0,0,0,0,0,0,0,0,0,0,0
+,IMPORTANT,1,2,1,1,1,2,1,1,1,1,12
+,MINOR,2,2,2,3,2,3,3,2,2,3,24

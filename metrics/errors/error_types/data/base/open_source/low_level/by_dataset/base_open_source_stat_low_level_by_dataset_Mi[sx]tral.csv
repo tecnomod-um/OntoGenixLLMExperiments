@@ -1,0 +1,17 @@
+dataset,Error_type,Number_incidences,Rate
+AirlinesCustomerSatisfaction,prefixes,1,50
+AmazonRating,number of elements,1,50
+AmazonRating,restrictions,1,50
+AmazonRating,shortnames,1,50
+BigBasketProducts,dots,1,50
+BigBasketProducts,prefixes,1,50
+BigBasketProducts,restrictions,1,50
+BrazilianE-commerce,shortnames,2,100
+BrazilianE-commerce,number of elements,1,50
+BrazilianE-commerce,prefixes,1,50
+CustomerComplaint,IDs,1,50
+CustomerComplaint,number of elements,1,50
+eCommerce,dots,2,100
+eCommerce,number of elements,2,100
+eCommerce,prefixes,2,100
+eCommerce,shortnames,2,100

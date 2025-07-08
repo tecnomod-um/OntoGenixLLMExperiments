@@ -1,0 +1,13 @@
+NUMBER,TYPE,CustomerComplaint GPT-3.5,CustomerComplaint GPT-4,CustomerComplaint GPT-4o,CustomerComplaint llama-2-13b,CustomerComplaint llama-2-13b-8bits,CustomerComplaint llama-3-70b-4bits,CustomerComplaint llama-3-8b,CustomerComplaint llama-3-8b-8bits,CustomerComplaint mistral-7b,CustomerComplaint mixtral-8-7b,summary
+P04,MINOR,1,1,1,1,NA,NA,1,NA,1,1,7
+P08,MINOR,1,1,1,1,1,1,1,1,1,1,10
+P10,IMPORTANT,1,1,1,1,NA,1,1,1,1,1,9
+P11,IMPORTANT,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,1
+P13,MINOR,1,1,1,NA,1,1,1,1,1,1,9
+P22,MINOR,1,1,1,NA,1,NA,NA,1,1,NA,6
+P38,IMPORTANT,1,1,1,1,NA,NA,1,NA,1,1,7
+P39,CRITICAL,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,1
+,TOTAL,6,6,6,4,3,3,5,4,8,5,50
+,CRITICAL,0,0,0,0,0,0,0,0,1,0,1
+,IMPORTANT,2,2,2,2,0,1,2,1,3,2,17
+,MINOR,4,4,4,2,3,2,3,3,4,3,32

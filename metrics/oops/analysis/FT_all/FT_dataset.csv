@@ -1,0 +1,7 @@
+Dataset,Number of methods,Rate of methods,Number of methods (after corrections),Rate of methods (after corrections),Total pitfalls,Critical,Important,Minor
+AirlinesCustomerSatisfaction,9,90,10,100,36,0,12,24
+AmazonRating,9,90,10,100,34,2,11,21
+BigBasketProducts,7,70,10,100,39,2,13,24
+BrazilianE-commerce,8,80,10,100,34,1,13,20
+CustomerComplaint,9,90,10,100,35,1,12,22
+eCommerce,9,90,10,100,29,0,10,19

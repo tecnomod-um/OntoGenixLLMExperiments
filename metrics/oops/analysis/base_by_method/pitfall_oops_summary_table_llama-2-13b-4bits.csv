@@ -1,0 +1,14 @@
+NUMBER,TYPE,AirlinesCustomerSatisfaction llama-2-13b-4bits,BigBasketProducts llama-2-13b-4bits,BrazilianE-commerce llama-2-13b-4bits,eCommerce llama-2-13b-4bits,summary
+P04,MINOR,NA,1,1,NA,2
+P08,MINOR,1,1,1,1,4
+P10,IMPORTANT,NA,1,1,1,3
+P11,IMPORTANT,1,1,1,NA,3
+P13,MINOR,1,NA,1,1,3
+P19,CRITICAL,NA,NA,1,1,2
+P22,MINOR,NA,NA,1,1,2
+P34,IMPORTANT,1,NA,1,NA,2
+P38,IMPORTANT,NA,1,1,1,3
+,TOTAL,4,5,9,6,24
+,CRITICAL,0,0,1,1,2
+,IMPORTANT,2,3,4,2,11
+,MINOR,2,2,4,3,11

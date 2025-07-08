@@ -1,0 +1,18 @@
+dataset,Error_type,Number_incidences,Rate
+AirlinesCustomerSatisfaction,Valid,6,85.71
+AirlinesCustomerSatisfaction,Incorrect serialization,1,14.29
+AirlinesCustomerSatisfaction,Wrong URIs,1,14.29
+AmazonRating,Valid,6,85.71
+AmazonRating,Incorrect serialization,1,14.29
+AmazonRating,Wrong URIs,1,14.29
+BigBasketProducts,Valid,5,71.43
+BigBasketProducts,Incorrect serialization,2,28.57
+BigBasketProducts,Wrong URIs,1,14.29
+BrazilianE-commerce,Valid,6,85.71
+BrazilianE-commerce,Incorrect serialization,1,14.29
+BrazilianE-commerce,Wrong URIs,1,14.29
+CustomerComplaint,Valid,6,85.71
+CustomerComplaint,Incorrect serialization,1,14.29
+CustomerComplaint,Wrong URIs,1,14.29
+eCommerce,Valid,6,85.71
+eCommerce,Incorrect serialization,1,14.29

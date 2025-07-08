@@ -1,0 +1,5 @@
+prefix,count_total,count_valid,validity_rate,count_invalid
+owl,184,135,73.37,49
+rdf,75,48,64,27
+rdfs,91,87,95.6,4
+xsd,59,57,96.61,2

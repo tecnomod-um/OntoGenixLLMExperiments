@@ -1,0 +1,5 @@
+LLM_model,Error_type,Number_incidences,Rate
+Llama-3-8b,Incorrect serialization,5,83.33
+Llama-3-8b,Valid,1,16.67
+Llama-3-8b-4bits,Valid,6,100
+Llama-3-8b-8bits,Valid,6,100

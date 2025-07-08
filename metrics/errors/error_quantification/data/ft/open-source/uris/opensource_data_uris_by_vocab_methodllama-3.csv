@@ -1,0 +1,13 @@
+method_quant,prefix,count_total,count_valid,rate_valid
+llama-3-8b 4bits,owl,23,23,100
+llama-3-8b 8bits,owl,22,22,100
+llama-3-8b all,owl,24,24,100
+llama-3-8b 4bits,rdf,6,6,100
+llama-3-8b 8bits,rdf,6,6,100
+llama-3-8b all,rdf,6,6,100
+llama-3-8b 4bits,rdfs,18,18,100
+llama-3-8b 8bits,rdfs,20,20,100
+llama-3-8b all,rdfs,18,18,100
+llama-3-8b 4bits,xsd,14,14,100
+llama-3-8b 8bits,xsd,16,16,100
+llama-3-8b all,xsd,15,15,100

@@ -1,0 +1,9 @@
+NUMBER,TYPE,eCommerce GPT-3.5,eCommerce GPT-4o,eCommerce GPT-4o-mini,eCommerce llama-2-13b,eCommerce llama-2-7b,eCommerce llama-2-7b-4bits,eCommerce llama-2-7b-8bits,eCommerce llama-3-8b,eCommerce llama-3-8b-4bits,eCommerce llama-3-8b-8bits,summary
+P04,MINOR,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,1
+P08,MINOR,1,1,1,1,1,1,1,1,1,1,10
+P10,IMPORTANT,1,1,1,1,1,1,1,1,1,1,10
+P13,MINOR,NA,1,1,1,1,1,NA,1,1,1,8
+,TOTAL,2,3,3,3,3,3,3,3,3,3,29
+,CRITICAL,0,0,0,0,0,0,0,0,0,0,0
+,IMPORTANT,1,1,1,1,1,1,1,1,1,1,10
+,MINOR,1,2,2,2,2,2,2,2,2,2,19

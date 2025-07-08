@@ -1,0 +1,18 @@
+dataset,Error_type,Number_incidences,Rate
+AirlinesCustomerSatisfaction,ending loop,3,75
+AirlinesCustomerSatisfaction,number of elements,2,50
+AirlinesCustomerSatisfaction,IDs,1,25
+AirlinesCustomerSatisfaction,format numeric values,1,25
+AirlinesCustomerSatisfaction,shortnames,1,25
+AmazonRating,number of elements,1,25
+BigBasketProducts,number of elements,2,50
+BigBasketProducts,dots,1,25
+BigBasketProducts,shortnames,1,25
+BrazilianE-commerce,dots,1,25
+BrazilianE-commerce,number of elements,1,25
+BrazilianE-commerce,shortnames,1,25
+CustomerComplaint,ending loop,2,50
+CustomerComplaint,number of elements,1,25
+eCommerce,dots,3,75
+eCommerce,number of elements,3,75
+eCommerce,shortnames,3,75

@@ -1,0 +1,7 @@
+method,dataset,TOTAL_diff,CRITICAL_diff,IMPORTANT_diff,MINOR_diff
+llama-2-13b,AmazonRating,-1,0,0,-1
+llama-2-13b,BigBasketProducts,-1,1,-1,-1
+llama-2-13b,BrazilianE-commerce,-2,0,-1,-1
+llama-2-13b,CustomerComplaint,-1,0,-1,0
+llama-2-13b,eCommerce,-2,0,-2,0
+Mean,llama-2-13b,-1.4,0.2,-1,-0.6

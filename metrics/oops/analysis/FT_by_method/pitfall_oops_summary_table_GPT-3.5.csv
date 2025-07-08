@@ -1,0 +1,9 @@
+NUMBER,TYPE,AirlinesCustomerSatisfaction GPT-3.5,AmazonRating GPT-3.5,BigBasketProducts GPT-3.5,BrazilianE-commerce GPT-3.5,CustomerComplaint GPT-3.5,eCommerce GPT-3.5,summary
+P08,MINOR,1,1,NA,1,1,1,5
+P10,IMPORTANT,1,1,1,NA,1,1,5
+P13,MINOR,1,1,1,NA,1,NA,4
+P38,IMPORTANT,NA,NA,NA,1,NA,NA,1
+,TOTAL,3,3,2,2,3,2,15
+,CRITICAL,0,0,0,0,0,0,0
+,IMPORTANT,1,1,1,1,1,1,6
+,MINOR,2,2,1,1,2,1,9

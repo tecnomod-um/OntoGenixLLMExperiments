@@ -1,0 +1,8 @@
+dataset,Error_type,Number_incidences,Rate
+AirlinesCustomerSatisfaction,dots,1,50
+AmazonRating,dots,1,50
+BigBasketProducts,dots,2,100
+BigBasketProducts,IDs,1,50
+BrazilianE-commerce,dots,1,50
+CustomerComplaint,IDs,1,50
+eCommerce,dots,1,50

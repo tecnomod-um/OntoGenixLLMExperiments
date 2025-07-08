@@ -1,0 +1,16 @@
+NUMBER,TYPE,AirlinesCustomerSatisfaction mistral-7b,BigBasketProducts mistral-7b,BrazilianE-commerce mistral-7b,CustomerComplaint mistral-7b,eCommerce mistral-7b,summary
+P04,MINOR,1,NA,1,1,NA,3
+P07,MINOR,1,NA,NA,NA,NA,1
+P08,MINOR,1,1,1,1,1,5
+P10,IMPORTANT,1,1,1,1,1,5
+P11,IMPORTANT,NA,NA,NA,1,NA,1
+P13,MINOR,1,1,1,1,1,5
+P19,CRITICAL,NA,1,1,NA,1,3
+P22,MINOR,1,1,1,1,1,5
+P35,IMPORTANT,1,NA,NA,NA,NA,1
+P38,IMPORTANT,1,1,1,1,1,5
+P39,CRITICAL,1,NA,NA,1,NA,2
+,TOTAL,9,6,7,8,6,36
+,CRITICAL,1,1,1,1,1,5
+,IMPORTANT,3,2,2,3,2,12
+,MINOR,5,3,4,4,3,19

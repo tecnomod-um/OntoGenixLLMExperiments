@@ -1,0 +1,6 @@
+method,dataset,TOTAL_diff,CRITICAL_diff,IMPORTANT_diff,MINOR_diff
+GPT-3.5,AirlinesCustomerSatisfaction,-3,-1,-1,-1
+GPT-4o,AirlinesCustomerSatisfaction,-2,0,0,-2
+llama-3-8b,AirlinesCustomerSatisfaction,-3,0,-1,-2
+llama-3-8b-8bits,AirlinesCustomerSatisfaction,1,0,0,1
+Mean,AirlinesCustomerSatisfaction,-1.75,-0.25,-0.5,-1

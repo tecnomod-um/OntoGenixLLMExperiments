@@ -1,0 +1,15 @@
+prefix,count_total,count_valid,validity_rate,count_invalid
+schema,71,63,88.73,8
+owl,49,49,100,0
+rdfs,49,49,100,0
+xsd,32,32,100,0
+rdf,18,18,100,0
+dbr,12,0,0,12
+foaf,5,3,60,2
+dcterms,4,4,100,0
+dbo,3,0,0,3
+vcard,3,3,100,0
+gr,1,1,100,0
+rev,1,1,100,0
+skos,1,1,100,0
+sosa,1,1,100,0

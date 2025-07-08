@@ -1,0 +1,13 @@
+NUMBER,TYPE,BigBasketProducts GPT-3.5,BigBasketProducts GPT-4o,BigBasketProducts GPT-4o-mini,BigBasketProducts llama-2-13b,BigBasketProducts llama-2-7b,BigBasketProducts llama-2-7b-4bits,BigBasketProducts llama-2-7b-8bits,BigBasketProducts llama-3-8b,BigBasketProducts llama-3-8b-4bits,BigBasketProducts llama-3-8b-8bits,summary
+P04,MINOR,NA,NA,1,NA,NA,1,NA,1,NA,NA,3
+P08,MINOR,NA,1,1,1,1,1,1,1,1,1,9
+P10,IMPORTANT,1,1,1,1,1,1,1,1,1,1,10
+P13,MINOR,1,1,1,1,1,NA,1,1,1,1,9
+P19,CRITICAL,NA,NA,NA,1,NA,NA,1,NA,NA,NA,2
+P22,MINOR,NA,NA,1,NA,NA,1,NA,NA,1,NA,3
+P24,IMPORTANT,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,1
+P38,IMPORTANT,NA,NA,1,NA,NA,1,NA,NA,NA,NA,2
+,TOTAL,2,3,6,4,3,5,4,4,5,3,39
+,CRITICAL,0,0,0,1,0,0,1,0,0,0,2
+,IMPORTANT,1,1,2,1,1,2,1,1,2,1,13
+,MINOR,1,2,4,2,2,3,2,3,3,2,24

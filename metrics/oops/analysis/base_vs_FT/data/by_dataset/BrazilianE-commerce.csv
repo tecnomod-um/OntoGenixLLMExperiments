@@ -1,0 +1,7 @@
+method,dataset,TOTAL_diff,CRITICAL_diff,IMPORTANT_diff,MINOR_diff
+GPT-3.5,BrazilianE-commerce,0,0,0,0
+GPT-4o,BrazilianE-commerce,-3,0,-1,-2
+llama-2-13b,BrazilianE-commerce,-2,0,-1,-1
+llama-3-8b-4bits,BrazilianE-commerce,-2,0,-1,-1
+llama-3-8b-8bits,BrazilianE-commerce,-1,0,0,-1
+Mean,BrazilianE-commerce,-1.6,0,-0.6,-1

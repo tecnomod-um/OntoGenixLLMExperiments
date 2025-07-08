@@ -1,0 +1,49 @@
+LLM_model,dataset,top_level_type,low_level_type
+Llama-2-7b-4bits,AirlinesCustomerSatisfaction,Valid,-
+Llama-2-7b-4bits,AirlinesCustomerSatisfaction,Wrong URIs,-
+Llama-2-7b-4bits,AmazonRating,Valid,-
+Llama-2-7b-4bits,AmazonRating,Wrong URIs,-
+Llama-2-7b-4bits,BigBasketProducts,Incorrect serialization,dots
+Llama-2-7b-4bits,BigBasketProducts,Incorrect serialization,IDs
+Llama-2-7b-4bits,BigBasketProducts,Wrong URIs,-
+Llama-2-7b-4bits,BrazilianE-commerce,Valid,-
+Llama-2-7b-4bits,CustomerComplaint,Incorrect serialization,IDs
+Llama-2-7b-4bits,CustomerComplaint,Wrong URIs,-
+Llama-2-7b-4bits,eCommerce,Valid,-
+Llama-2-7b-8bits,AirlinesCustomerSatisfaction,Valid,-
+Llama-2-7b-8bits,AmazonRating,Valid,-
+Llama-2-7b-8bits,BigBasketProducts,Valid,-
+Llama-2-7b-8bits,BrazilianE-commerce,Valid,-
+Llama-2-7b-8bits,BrazilianE-commerce,Wrong URIs,-
+Llama-2-7b-8bits,CustomerComplaint,Valid,-
+Llama-2-7b-8bits,eCommerce,Valid,-
+Llama-2-7b,AirlinesCustomerSatisfaction,Valid,-
+Llama-2-7b,AmazonRating,Valid,-
+Llama-2-7b,BigBasketProducts,Valid,-
+Llama-2-7b,BrazilianE-commerce,Valid,-
+Llama-2-7b,CustomerComplaint,Valid,-
+Llama-2-7b,eCommerce,Valid,-
+Llama-2-13b,AirlinesCustomerSatisfaction,Valid,-
+Llama-2-13b,AmazonRating,Valid,-
+Llama-2-13b,BigBasketProducts,Valid,-
+Llama-2-13b,BrazilianE-commerce,Valid,-
+Llama-2-13b,CustomerComplaint,Valid,-
+Llama-2-13b,eCommerce,Valid,-
+Llama-3-8b-4bits,AirlinesCustomerSatisfaction,Valid,-
+Llama-3-8b-4bits,AmazonRating,Valid,-
+Llama-3-8b-4bits,BigBasketProducts,Valid,-
+Llama-3-8b-4bits,BrazilianE-commerce,Valid,-
+Llama-3-8b-4bits,CustomerComplaint,Valid,-
+Llama-3-8b-4bits,eCommerce,Valid,-
+Llama-3-8b-8bits,AirlinesCustomerSatisfaction,Valid,-
+Llama-3-8b-8bits,AmazonRating,Valid,-
+Llama-3-8b-8bits,BigBasketProducts,Valid,-
+Llama-3-8b-8bits,BrazilianE-commerce,Valid,-
+Llama-3-8b-8bits,CustomerComplaint,Valid,-
+Llama-3-8b-8bits,eCommerce,Valid,-
+Llama-3-8b,AirlinesCustomerSatisfaction,Incorrect serialization,dots
+Llama-3-8b,AmazonRating,Incorrect serialization,dots
+Llama-3-8b,BigBasketProducts,Incorrect serialization,dots
+Llama-3-8b,BrazilianE-commerce,Incorrect serialization,dots
+Llama-3-8b,CustomerComplaint,Valid,-
+Llama-3-8b,eCommerce,Incorrect serialization,dots

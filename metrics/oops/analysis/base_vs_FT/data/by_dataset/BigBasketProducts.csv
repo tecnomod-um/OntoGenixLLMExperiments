@@ -1,0 +1,8 @@
+method,dataset,TOTAL_diff,CRITICAL_diff,IMPORTANT_diff,MINOR_diff
+GPT-3.5,BigBasketProducts,-3,0,-1,-2
+GPT-4o,BigBasketProducts,-3,0,-2,-1
+llama-2-13b,BigBasketProducts,-1,1,-1,-1
+llama-3-8b,BigBasketProducts,0,0,-1,1
+llama-3-8b-4bits,BigBasketProducts,-1,0,-2,1
+llama-3-8b-8bits,BigBasketProducts,-2,-1,-1,0
+Mean,BigBasketProducts,-1.67,0,-1.33,-0.33

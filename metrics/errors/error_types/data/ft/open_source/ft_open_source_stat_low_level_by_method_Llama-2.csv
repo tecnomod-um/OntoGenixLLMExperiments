@@ -1,0 +1,3 @@
+LLM_model,Error_type,Number_incidences,Rate
+Llama-2-7b-4bits,IDs,2,33.33
+Llama-2-7b-4bits,dots,1,16.67

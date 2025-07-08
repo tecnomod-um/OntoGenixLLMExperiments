@@ -1,0 +1,12 @@
+LLM_model,Error_type,Number_incidences,Rate
+Mistral-7b,number of elements,3,50
+Mistral-7b,prefixes,3,50
+Mistral-7b,shortnames,3,50
+Mistral-7b,dots,2,33.33
+Mistral-7b,IDs,1,16.67
+Mistral-7b,restrictions,1,16.67
+Mixtral-8-7b-4bits,number of elements,2,33.33
+Mixtral-8-7b-4bits,prefixes,2,33.33
+Mixtral-8-7b-4bits,shortnames,2,33.33
+Mixtral-8-7b-4bits,dots,1,16.67
+Mixtral-8-7b-4bits,restrictions,1,16.67

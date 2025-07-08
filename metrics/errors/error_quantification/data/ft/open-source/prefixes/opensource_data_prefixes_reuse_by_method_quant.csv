@@ -1,0 +1,5 @@
+prefix,llama-2-13b all,llama-2-7b 4bits,llama-2-7b 8bits,llama-2-7b all,llama-3-8b 4bits,llama-3-8b 8bits,llama-3-8b all
+owl,6,6,6,6,6,6,6
+rdf,6,6,6,6,6,6,6
+rdfs,6,6,6,6,6,6,6
+xsd,6,6,6,6,6,6,6

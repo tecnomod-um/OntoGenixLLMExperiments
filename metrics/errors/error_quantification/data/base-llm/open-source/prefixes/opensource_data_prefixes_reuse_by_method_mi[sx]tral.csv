@@ -1,0 +1,9 @@
+method_quant,prefix,total,correct,validity_rate,incorrect
+mistral-7b all,owl,5,3,60,2
+mistral-7b all,rdf,6,1,16.67,5
+mistral-7b all,rdfs,5,0,0,5
+mistral-7b all,xsd,3,3,100,0
+mixtral-8-7b all,owl,5,5,100,0
+mixtral-8-7b all,rdf,5,5,100,0
+mixtral-8-7b all,rdfs,5,5,100,0
+mixtral-8-7b all,xsd,5,5,100,0

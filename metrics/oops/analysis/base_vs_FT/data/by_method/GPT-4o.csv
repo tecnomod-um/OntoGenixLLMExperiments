@@ -1,0 +1,8 @@
+method,dataset,TOTAL_diff,CRITICAL_diff,IMPORTANT_diff,MINOR_diff
+GPT-4o,AirlinesCustomerSatisfaction,-2,0,0,-2
+GPT-4o,AmazonRating,-4,0,-2,-2
+GPT-4o,BigBasketProducts,-3,0,-2,-1
+GPT-4o,BrazilianE-commerce,-3,0,-1,-2
+GPT-4o,CustomerComplaint,-2,0,0,-2
+GPT-4o,eCommerce,-1,0,-1,0
+Mean,GPT-4o,-2.5,0,-1,-1.5

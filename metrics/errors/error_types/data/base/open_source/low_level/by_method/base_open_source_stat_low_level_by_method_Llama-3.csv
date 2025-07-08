@@ -1,0 +1,12 @@
+LLM_model,Error_type,Number_incidences,Rate
+Llama-3-70b-4bits,prefixes,3,50
+Llama-3-70b-4bits,blank node declarations,1,16.67
+Llama-3-70b-4bits,dots,1,16.67
+Llama-3-8b,dots,3,50
+Llama-3-8b,shortnames,2,33.33
+Llama-3-8b-4bits,dots,3,50
+Llama-3-8b-4bits,number of elements,1,16.67
+Llama-3-8b-8bits,dots,3,50
+Llama-3-8b-8bits,number of elements,2,33.33
+Llama-3-8b-8bits,prefixes,2,33.33
+Llama-3-8b-8bits,shortnames,1,16.67

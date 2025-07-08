@@ -1,0 +1,14 @@
+dataset,Error_type,Number_incidences,Rate
+AirlinesCustomerSatisfaction,Valid,4,100
+AirlinesCustomerSatisfaction,Wrong URIs,1,25
+AmazonRating,Valid,4,100
+AmazonRating,Wrong URIs,1,25
+BigBasketProducts,Valid,3,75
+BigBasketProducts,Incorrect serialization,1,25
+BigBasketProducts,Wrong URIs,1,25
+BrazilianE-commerce,Valid,4,100
+BrazilianE-commerce,Wrong URIs,1,25
+CustomerComplaint,Valid,3,75
+CustomerComplaint,Incorrect serialization,1,25
+CustomerComplaint,Wrong URIs,1,25
+eCommerce,Valid,4,100

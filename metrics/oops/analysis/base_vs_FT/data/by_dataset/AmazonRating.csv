@@ -1,0 +1,7 @@
+method,dataset,TOTAL_diff,CRITICAL_diff,IMPORTANT_diff,MINOR_diff
+GPT-3.5,AmazonRating,-2,0,-1,-1
+GPT-4o,AmazonRating,-4,0,-2,-2
+llama-2-13b,AmazonRating,-1,0,0,-1
+llama-3-8b,AmazonRating,-2,0,-1,-1
+llama-3-8b-8bits,AmazonRating,0,1,0,-1
+Mean,AmazonRating,-1.8,0.2,-0.8,-1.2

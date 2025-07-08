@@ -1,0 +1,5 @@
+method,dataset,TOTAL_diff,CRITICAL_diff,IMPORTANT_diff,MINOR_diff
+llama-3-8b-4bits,BigBasketProducts,-1,0,-2,1
+llama-3-8b-4bits,BrazilianE-commerce,-2,0,-1,-1
+llama-3-8b-4bits,eCommerce,-2,0,-1,-1
+Mean,llama-3-8b-4bits,-1.67,0,-1.33,-0.33

@@ -1,0 +1,10 @@
+NUMBER,TYPE,AirlinesCustomerSatisfaction mixtral-8-7b,AmazonRating mixtral-8-7b,BrazilianE-commerce mixtral-8-7b,CustomerComplaint mixtral-8-7b,eCommerce mixtral-8-7b,summary
+P04,MINOR,NA,1,1,1,NA,3
+P08,MINOR,1,1,1,1,1,5
+P10,IMPORTANT,1,1,1,1,1,5
+P13,MINOR,1,1,1,1,1,5
+P38,IMPORTANT,1,1,1,1,1,5
+,TOTAL,4,5,5,5,4,23
+,CRITICAL,0,0,0,0,0,0
+,IMPORTANT,2,2,2,2,2,10
+,MINOR,2,3,3,3,2,13

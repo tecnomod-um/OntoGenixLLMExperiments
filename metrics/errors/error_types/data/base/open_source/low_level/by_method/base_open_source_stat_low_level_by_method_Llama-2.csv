@@ -1,0 +1,17 @@
+LLM_model,Error_type,Number_incidences,Rate
+Llama-2-13b,number of elements,5,83.33
+Llama-2-13b,dots,3,50
+Llama-2-13b,shortnames,3,50
+Llama-2-13b,ending loop,1,16.67
+Llama-2-13b-4bits,number of elements,3,50
+Llama-2-13b-4bits,dots,1,16.67
+Llama-2-13b-4bits,ending loop,1,16.67
+Llama-2-13b-4bits,shortnames,1,16.67
+Llama-2-13b-8bits,ending loop,2,33.33
+Llama-2-13b-8bits,number of elements,2,33.33
+Llama-2-13b-8bits,dots,1,16.67
+Llama-2-13b-8bits,shortnames,1,16.67
+Llama-2-70b-4bits,IDs,1,16.67
+Llama-2-70b-4bits,ending loop,1,16.67
+Llama-2-70b-4bits,format numeric values,1,16.67
+Llama-2-70b-4bits,shortnames,1,16.67

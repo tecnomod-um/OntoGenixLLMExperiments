@@ -1,0 +1,9 @@
+NUMBER,TYPE,AirlinesCustomerSatisfaction GPT-4o,AmazonRating GPT-4o,BigBasketProducts GPT-4o,BrazilianE-commerce GPT-4o,CustomerComplaint GPT-4o,eCommerce GPT-4o,summary
+P08,MINOR,1,1,1,1,1,1,6
+P10,IMPORTANT,1,1,1,1,1,1,6
+P11,IMPORTANT,1,NA,NA,NA,1,NA,2
+P13,MINOR,1,1,1,1,1,1,6
+,TOTAL,4,3,3,3,4,3,20
+,CRITICAL,0,0,0,0,0,0,0
+,IMPORTANT,2,1,1,1,2,1,8
+,MINOR,2,2,2,2,2,2,12

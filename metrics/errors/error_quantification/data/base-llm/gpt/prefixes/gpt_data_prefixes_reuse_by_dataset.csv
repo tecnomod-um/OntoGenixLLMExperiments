@@ -1,0 +1,16 @@
+prefix,AirlinesCustomerSatisfaction,AmazonRating,BigBasketProducts,BrazilianE-commerce,CustomerComplaint,eCommerce
+dbo,1,0,0,0,0,0
+dcterms,1,1,1,0,2,1
+foaf,2,1,2,1,1,2
+owl,3,3,3,3,3,3
+rdf,3,2,2,3,3,3
+rdfs,3,3,3,3,3,3
+schema,2,2,2,2,2,2
+sosa,1,0,0,0,0,0
+xsd,3,3,2,2,3,3
+gr,0,1,1,0,0,1
+rev,0,1,0,0,0,0
+dc,0,0,1,0,0,1
+dbr,0,0,0,1,0,0
+vcard,0,0,0,1,0,0
+skos,0,0,0,0,1,1

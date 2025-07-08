@@ -1,0 +1,12 @@
+NUMBER,TYPE,AirlinesCustomerSatisfaction llama-2-7b-8bits,AmazonRating llama-2-7b-8bits,BigBasketProducts llama-2-7b-8bits,BrazilianE-commerce llama-2-7b-8bits,CustomerComplaint llama-2-7b-8bits,eCommerce llama-2-7b-8bits,summary
+P04,MINOR,1,1,NA,1,NA,1,4
+P08,MINOR,1,1,1,1,1,1,6
+P10,IMPORTANT,1,1,1,1,1,1,6
+P13,MINOR,NA,NA,1,NA,1,NA,2
+P19,CRITICAL,NA,NA,1,NA,NA,NA,1
+P22,MINOR,1,NA,NA,NA,NA,NA,1
+P30,IMPORTANT,NA,NA,NA,1,NA,NA,1
+,TOTAL,4,3,4,4,3,3,21
+,CRITICAL,0,0,1,0,0,0,1
+,IMPORTANT,1,1,1,2,1,1,7
+,MINOR,3,2,2,2,2,2,13

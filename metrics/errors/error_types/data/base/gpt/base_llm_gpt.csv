@@ -1,0 +1,26 @@
+LLM_model,dataset,top_level_type,low_level_type
+GPT-3.5,AirlinesCustomerSatisfaction,Valid,-
+GPT-3.5,AmazonRating,Valid,-
+GPT-3.5,BigBasketProducts,Incorrect serialization,prefixes
+GPT-3.5,BrazilianE-commerce,Valid,-
+GPT-3.5,BrazilianE-commerce,Wrong URIs,-
+GPT-3.5,CustomerComplaint,Valid,-
+GPT-3.5,eCommerce,Valid,-
+GPT-4,AirlinesCustomerSatisfaction,Valid,-
+GPT-4,AirlinesCustomerSatisfaction,Wrong URIs,-
+GPT-4,AmazonRating,Valid,-
+GPT-4,BigBasketProducts,Valid,-
+GPT-4,BigBasketProducts,Wrong URIs,-
+GPT-4,BrazilianE-commerce,Valid,-
+GPT-4,CustomerComplaint,Valid,-
+GPT-4,CustomerComplaint,Wrong URIs,-
+GPT-4,eCommerce,Valid,-
+GPT-4o,AirlinesCustomerSatisfaction,Valid,-
+GPT-4o,AirlinesCustomerSatisfaction,Wrong URIs,-
+GPT-4o,AmazonRating,Valid,-
+GPT-4o,BigBasketProducts,Valid,-
+GPT-4o,BigBasketProducts,Wrong URIs,-
+GPT-4o,BrazilianE-commerce,Valid,-
+GPT-4o,CustomerComplaint,Valid,-
+GPT-4o,CustomerComplaint,Wrong URIs,-
+GPT-4o,eCommerce,Valid,-

@@ -1,0 +1,13 @@
+method,prefix,count_total,count_valid,rate_valid
+GPT-3.5,owl,22,22,100
+GPT-4o,owl,24,24,100
+GPT-4o-mini,owl,23,23,100
+GPT-3.5,rdf,6,6,100
+GPT-4o,rdf,6,6,100
+GPT-4o-mini,rdf,6,6,100
+GPT-3.5,rdfs,18,18,100
+GPT-4o,rdfs,17,17,100
+GPT-4o-mini,rdfs,18,18,100
+GPT-3.5,xsd,15,15,100
+GPT-4o,xsd,17,17,100
+GPT-4o-mini,xsd,16,16,100

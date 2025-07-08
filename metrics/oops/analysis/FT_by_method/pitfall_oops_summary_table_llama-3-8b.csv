@@ -1,0 +1,10 @@
+NUMBER,TYPE,AirlinesCustomerSatisfaction llama-3-8b,AmazonRating llama-3-8b,BigBasketProducts llama-3-8b,BrazilianE-commerce llama-3-8b,CustomerComplaint llama-3-8b,eCommerce llama-3-8b,summary
+P04,MINOR,NA,NA,1,NA,NA,NA,1
+P08,MINOR,1,1,1,1,1,1,6
+P10,IMPORTANT,1,1,1,1,1,1,6
+P13,MINOR,1,1,1,1,1,1,6
+P19,CRITICAL,NA,1,NA,NA,1,NA,2
+,TOTAL,3,4,4,3,4,3,21
+,CRITICAL,0,1,0,0,1,0,2
+,IMPORTANT,1,1,1,1,1,1,6
+,MINOR,2,2,3,2,2,2,13

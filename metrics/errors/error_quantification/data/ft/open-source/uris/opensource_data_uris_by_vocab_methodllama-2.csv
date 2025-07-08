@@ -1,0 +1,17 @@
+method_quant,prefix,count_total,count_valid,rate_valid,count_invalid,rate_invalid
+llama-2-13b all,owl,24,24,100,0,0
+llama-2-7b 4bits,owl,8,8,100,0,0
+llama-2-7b 8bits,owl,20,20,100,0,0
+llama-2-7b all,owl,23,23,100,0,0
+llama-2-13b all,rdf,6,6,100,0,0
+llama-2-7b 4bits,rdf,14,7,50,7,50
+llama-2-7b 8bits,rdf,6,6,100,0,0
+llama-2-7b all,rdf,6,6,100,0,0
+llama-2-13b all,rdfs,18,18,100,0,0
+llama-2-7b 4bits,rdfs,19,18,94.74,1,5.26
+llama-2-7b 8bits,rdfs,17,17,100,0,0
+llama-2-7b all,rdfs,18,18,100,0,0
+llama-2-13b all,xsd,21,21,100,0,0
+llama-2-7b 4bits,xsd,10,10,100,0,0
+llama-2-7b 8bits,xsd,28,25,89.29,3,10.71
+llama-2-7b all,xsd,19,19,100,0,0

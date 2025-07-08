@@ -1,0 +1,16 @@
+prefix,GPT-3.5,GPT-4,GPT-4o
+dbr,1,0,0
+owl,6,6,6
+rdf,4,6,6
+rdfs,6,6,6
+xsd,6,6,4
+dbo,0,1,0
+dc,0,2,0
+dcterms,0,1,5
+foaf,0,5,4
+gr,0,3,0
+rev,0,1,0
+schema,0,6,6
+skos,0,2,0
+sosa,0,1,0
+vcard,0,1,0

@@ -1,0 +1,153 @@
+LLM_model,dataset,top_level_type,low_level_type
+Llama-2-7b-8bits,AirlinesCustomerSatisfaction,Incorrect format,-
+Llama-2-7b-8bits,AmazonRating,Incorrect format,-
+Llama-2-7b-8bits,AmazonRating,Uncommented text,-
+Llama-2-7b-8bits,BigBasketProducts,Incorrect format,-
+Llama-2-7b-8bits,BigBasketProducts,Uncommented text,-
+Llama-2-7b-8bits,BrazilianE-commerce,Incorrect format,-
+Llama-2-7b-8bits,BrazilianE-commerce,Uncommented text,-
+Llama-2-7b-8bits,CustomerComplaint,Incorrect format,-
+Llama-2-7b-8bits,CustomerComplaint,Uncommented text,-
+Llama-2-7b-8bits,eCommerce,Incorrect format,-
+Llama-2-7b-8bits,eCommerce,Uncommented text,-
+Llama-2-13b-4bits,AirlinesCustomerSatisfaction,Incorrect serialization,number of elements
+Llama-2-13b-4bits,AirlinesCustomerSatisfaction,Incorrect serialization,ending loop
+Llama-2-13b-4bits,AirlinesCustomerSatisfaction,Wrong URIs,-
+Llama-2-13b-4bits,AmazonRating,Incorrect format,-
+Llama-2-13b-4bits,AmazonRating,Uncommented text,-
+Llama-2-13b-4bits,BigBasketProducts,Incorrect serialization,number of elements
+Llama-2-13b-4bits,BigBasketProducts,Wrong URIs,-
+Llama-2-13b-4bits,BrazilianE-commerce,Incorrect format,-
+Llama-2-13b-4bits,BrazilianE-commerce,Uncommented text,-
+Llama-2-13b-4bits,BrazilianE-commerce,Wrong URIs,-
+Llama-2-13b-4bits,CustomerComplaint,Incorrect format,-
+Llama-2-13b-4bits,eCommerce,Incorrect format,-
+Llama-2-13b-4bits,eCommerce,Incorrect serialization,number of elements
+Llama-2-13b-4bits,eCommerce,Incorrect serialization,shortnames
+Llama-2-13b-4bits,eCommerce,Incorrect serialization,dots
+Llama-2-13b-4bits,eCommerce,Wrong URIs,-
+Llama-2-13b-8bits,AirlinesCustomerSatisfaction,Incorrect serialization,number of elements
+Llama-2-13b-8bits,AirlinesCustomerSatisfaction,Incorrect serialization,ending loop
+Llama-2-13b-8bits,AirlinesCustomerSatisfaction,Uncommented text,-
+Llama-2-13b-8bits,AirlinesCustomerSatisfaction,Wrong URIs,-
+Llama-2-13b-8bits,AmazonRating,Uncommented text,-
+Llama-2-13b-8bits,AmazonRating,Wrong URIs,-
+Llama-2-13b-8bits,BigBasketProducts,Uncommented text,-
+Llama-2-13b-8bits,BigBasketProducts,Wrong URIs,-
+Llama-2-13b-8bits,BrazilianE-commerce,Incorrect format,-
+Llama-2-13b-8bits,BrazilianE-commerce,Uncommented text,-
+Llama-2-13b-8bits,BrazilianE-commerce,Wrong URIs,-
+Llama-2-13b-8bits,CustomerComplaint,Incorrect serialization,ending loop
+Llama-2-13b-8bits,CustomerComplaint,Uncommented text,-
+Llama-2-13b-8bits,CustomerComplaint,Wrong URIs,-
+Llama-2-13b-8bits,eCommerce,Incorrect serialization,number of elements
+Llama-2-13b-8bits,eCommerce,Incorrect serialization,shortnames
+Llama-2-13b-8bits,eCommerce,Incorrect serialization,dots
+Llama-2-13b-8bits,eCommerce,Uncommented text,-
+Llama-2-13b-8bits,eCommerce,Wrong URIs,-
+Llama-2-13b,AirlinesCustomerSatisfaction,Incorrect format,-
+Llama-2-13b,AmazonRating,Incorrect serialization,number of elements
+Llama-2-13b,AmazonRating,Uncommented text,-
+Llama-2-13b,AmazonRating,Wrong URIs,-
+Llama-2-13b,BigBasketProducts,Incorrect serialization,number of elements
+Llama-2-13b,BigBasketProducts,Incorrect serialization,shortnames
+Llama-2-13b,BigBasketProducts,Incorrect serialization,dots
+Llama-2-13b,BigBasketProducts,Uncommented text,-
+Llama-2-13b,BigBasketProducts,Wrong URIs,-
+Llama-2-13b,BrazilianE-commerce,Incorrect serialization,number of elements
+Llama-2-13b,BrazilianE-commerce,Incorrect serialization,shortnames
+Llama-2-13b,BrazilianE-commerce,Incorrect serialization,dots
+Llama-2-13b,BrazilianE-commerce,Uncommented text,-
+Llama-2-13b,BrazilianE-commerce,Wrong URIs,-
+Llama-2-13b,CustomerComplaint,Incorrect serialization,number of elements
+Llama-2-13b,CustomerComplaint,Incorrect serialization,ending loop
+Llama-2-13b,CustomerComplaint,Uncommented text,-
+Llama-2-13b,CustomerComplaint,Wrong URIs,-
+Llama-2-13b,eCommerce,Incorrect serialization,number of elements
+Llama-2-13b,eCommerce,Incorrect serialization,shortnames
+Llama-2-13b,eCommerce,Incorrect serialization,dots
+Llama-2-13b,eCommerce,Uncommented text,-
+Llama-2-70b-4bits,AirlinesCustomerSatisfaction,Incorrect serialization,ending loop
+Llama-2-70b-4bits,AirlinesCustomerSatisfaction,Incorrect serialization,shortnames
+Llama-2-70b-4bits,AirlinesCustomerSatisfaction,Incorrect serialization,IDs
+Llama-2-70b-4bits,AirlinesCustomerSatisfaction,Incorrect serialization,format numeric values
+Llama-2-70b-4bits,AirlinesCustomerSatisfaction,Wrong URIs,-
+Llama-2-70b-4bits,AmazonRating,Incorrect format,-
+Llama-2-70b-4bits,AmazonRating,Uncommented text,-
+Llama-2-70b-4bits,BigBasketProducts,Incorrect format,-
+Llama-2-70b-4bits,BigBasketProducts,Uncommented text,-
+Llama-2-70b-4bits,BrazilianE-commerce,Incorrect format,-
+Llama-2-70b-4bits,BrazilianE-commerce,Uncommented text,-
+Llama-2-70b-4bits,CustomerComplaint,Incorrect format,-
+Llama-2-70b-4bits,CustomerComplaint,Uncommented text,-
+Llama-2-70b-4bits,eCommerce,Incorrect format,-
+Llama-2-70b-4bits,eCommerce,Uncommented text,-
+Llama-3-8b-4bits,AirlinesCustomerSatisfaction,Incorrect rdf/xml serialization,-
+Llama-3-8b-4bits,AmazonRating,Incorrect serialization,number of elements
+Llama-3-8b-4bits,AmazonRating,Incorrect serialization,dots
+Llama-3-8b-4bits,BigBasketProducts,Incorrect serialization,dots
+Llama-3-8b-4bits,BigBasketProducts,Wrong URIs,-
+Llama-3-8b-4bits,BrazilianE-commerce,Valid,-
+Llama-3-8b-4bits,CustomerComplaint,Incorrect rdf/xml serialization,-
+Llama-3-8b-4bits,eCommerce,Incorrect serialization,dots
+Llama-3-8b-8bits,AirlinesCustomerSatisfaction,Incorrect serialization,number of elements
+Llama-3-8b-8bits,AmazonRating,Valid,-
+Llama-3-8b-8bits,AmazonRating,Wrong URIs,-
+Llama-3-8b-8bits,BigBasketProducts,Incorrect serialization,number of elements
+Llama-3-8b-8bits,BigBasketProducts,Incorrect serialization,dots
+Llama-3-8b-8bits,BigBasketProducts,Incorrect serialization,prefixes
+Llama-3-8b-8bits,BigBasketProducts,Wrong URIs,-
+Llama-3-8b-8bits,BrazilianE-commerce,Incorrect serialization,dots
+Llama-3-8b-8bits,BrazilianE-commerce,Incorrect serialization,prefixes
+Llama-3-8b-8bits,CustomerComplaint,Incorrect serialization,shortnames
+Llama-3-8b-8bits,eCommerce,Incorrect serialization,dots
+Llama-3-8b,AirlinesCustomerSatisfaction,Incorrect serialization,shortnames
+Llama-3-8b,AmazonRating,Incorrect serialization,dots
+Llama-3-8b,BigBasketProducts,Incorrect serialization,dots
+Llama-3-8b,BrazilianE-commerce,Incorrect rdf/xml serialization,-
+Llama-3-8b,CustomerComplaint,Incorrect serialization,dots
+Llama-3-8b,CustomerComplaint,Incorrect serialization,shortnames
+Llama-3-8b,CustomerComplaint,Wrong URIs,-
+Llama-3-8b,eCommerce,Incorrect rdf/xml serialization,-
+Llama-3-70b-4bits,AirlinesCustomerSatisfaction,Incorrect serialization,dots
+Llama-3-70b-4bits,AirlinesCustomerSatisfaction,Incorrect serialization,prefixes
+Llama-3-70b-4bits,AirlinesCustomerSatisfaction,Uncommented text,-
+Llama-3-70b-4bits,AmazonRating,Incorrect serialization,blank node declarations
+Llama-3-70b-4bits,BigBasketProducts,Valid,-
+Llama-3-70b-4bits,BrazilianE-commerce,Incorrect serialization,prefixes
+Llama-3-70b-4bits,CustomerComplaint,Incorrect serialization,prefixes
+Llama-3-70b-4bits,CustomerComplaint,Uncommented text,-
+Llama-3-70b-4bits,eCommerce,Valid,-
+Llama-3-70b-4bits,eCommerce,Wrong URIs,-
+Mistral-7b,AirlinesCustomerSatisfaction,Incorrect serialization,prefixes
+Mistral-7b,AirlinesCustomerSatisfaction,Wrong URIs,-
+Mistral-7b,AmazonRating,Incorrect serialization,shortnames
+Mistral-7b,AmazonRating,Incorrect serialization,number of elements
+Mistral-7b,AmazonRating,Wrong URIs,-
+Mistral-7b,BigBasketProducts,Incorrect serialization,dots
+Mistral-7b,BigBasketProducts,Incorrect serialization,prefixes
+Mistral-7b,BigBasketProducts,Incorrect serialization,restrictions
+Mistral-7b,BigBasketProducts,Wrong URIs,-
+Mistral-7b,BrazilianE-commerce,Incorrect serialization,shortnames
+Mistral-7b,BrazilianE-commerce,Wrong URIs,-
+Mistral-7b,CustomerComplaint,Incorrect serialization,number of elements
+Mistral-7b,CustomerComplaint,Incorrect serialization,IDs
+Mistral-7b,CustomerComplaint,Wrong URIs,-
+Mistral-7b,eCommerce,Incorrect serialization,number of elements
+Mistral-7b,eCommerce,Incorrect serialization,dots
+Mistral-7b,eCommerce,Incorrect serialization,shortnames
+Mistral-7b,eCommerce,Incorrect serialization,prefixes
+Mistral-7b,eCommerce,Wrong URIs,-
+Mixtral-8-7b-4bits,AirlinesCustomerSatisfaction,Uncommented text,-
+Mixtral-8-7b-4bits,AmazonRating,Incorrect serialization,restrictions
+Mixtral-8-7b-4bits,BigBasketProducts,Incorrect format,-
+Mixtral-8-7b-4bits,BrazilianE-commerce,Incorrect serialization,prefixes
+Mixtral-8-7b-4bits,BrazilianE-commerce,Incorrect serialization,number of elements
+Mixtral-8-7b-4bits,BrazilianE-commerce,Incorrect serialization,shortnames
+Mixtral-8-7b-4bits,BrazilianE-commerce,Wrong URIs,-
+Mixtral-8-7b-4bits,CustomerComplaint,Valid,-
+Mixtral-8-7b-4bits,CustomerComplaint,Wrong URIs,-
+Mixtral-8-7b-4bits,eCommerce,Incorrect serialization,number of elements
+Mixtral-8-7b-4bits,eCommerce,Incorrect serialization,shortnames
+Mixtral-8-7b-4bits,eCommerce,Incorrect serialization,dots
+Mixtral-8-7b-4bits,eCommerce,Incorrect serialization,prefixes

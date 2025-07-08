@@ -1,0 +1,8 @@
+dataset,TOTAL,CRITICAL,IMPORTANT,MINOR
+AirlinesCustomerSatisfaction,-1.75,-0.25,-0.5,-1
+AmazonRating,-1.8,0.2,-0.8,-1.2
+BigBasketProducts,-1.67,0,-1.33,-0.33
+BrazilianE-commerce,-1.6,0,-0.6,-1
+CustomerComplaint,-1.2,0.2,-0.4,-1
+eCommerce,-1.8,0,-1.2,-0.6
+Mean,-1.64,0.03,-0.8,-0.86

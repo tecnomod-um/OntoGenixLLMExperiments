@@ -1,0 +1,8 @@
+LLM_model,Error_type,Number_incidences,Rate
+GPT-3.5,Valid,5,83.33
+GPT-3.5,Incorrect serialization,1,16.67
+GPT-3.5,Wrong URIs,1,16.67
+GPT-4,Valid,6,100
+GPT-4,Wrong URIs,3,50
+GPT-4o,Valid,6,100
+GPT-4o,Wrong URIs,3,50

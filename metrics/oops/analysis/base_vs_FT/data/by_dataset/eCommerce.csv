@@ -1,0 +1,7 @@
+method,dataset,TOTAL_diff,CRITICAL_diff,IMPORTANT_diff,MINOR_diff
+GPT-3.5,eCommerce,-2,0,-1,-1
+GPT-4o,eCommerce,-1,0,-1,0
+llama-2-13b,eCommerce,-2,0,-2,0
+llama-3-8b-4bits,eCommerce,-2,0,-1,-1
+llama-3-8b-8bits,eCommerce,-2,0,-1,-1
+Mean,eCommerce,-1.8,0,-1.2,-0.6

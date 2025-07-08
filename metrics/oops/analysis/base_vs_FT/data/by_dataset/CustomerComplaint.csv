@@ -1,0 +1,7 @@
+method,dataset,TOTAL_diff,CRITICAL_diff,IMPORTANT_diff,MINOR_diff
+GPT-3.5,CustomerComplaint,-3,0,-1,-2
+GPT-4o,CustomerComplaint,-2,0,0,-2
+llama-2-13b,CustomerComplaint,-1,0,-1,0
+llama-3-8b,CustomerComplaint,-1,1,-1,-1
+llama-3-8b-8bits,CustomerComplaint,1,0,1,0
+Mean,CustomerComplaint,-1.2,0.2,-0.4,-1

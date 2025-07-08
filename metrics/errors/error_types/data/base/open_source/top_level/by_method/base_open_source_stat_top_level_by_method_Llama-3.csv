@@ -1,0 +1,15 @@
+LLM_model,Error_type,Number_incidences,Rate
+Llama-3-70b-4bits,Incorrect serialization,4,66.67
+Llama-3-70b-4bits,Uncommented text,2,33.33
+Llama-3-70b-4bits,Valid,2,33.33
+Llama-3-70b-4bits,Wrong URIs,1,16.67
+Llama-3-8b,Incorrect serialization,4,66.67
+Llama-3-8b,Incorrect rdf/xml serialization,2,33.33
+Llama-3-8b,Wrong URIs,1,16.67
+Llama-3-8b-4bits,Incorrect serialization,3,50
+Llama-3-8b-4bits,Incorrect rdf/xml serialization,2,33.33
+Llama-3-8b-4bits,Valid,1,16.67
+Llama-3-8b-4bits,Wrong URIs,1,16.67
+Llama-3-8b-8bits,Incorrect serialization,5,83.33
+Llama-3-8b-8bits,Wrong URIs,2,33.33
+Llama-3-8b-8bits,Valid,1,16.67

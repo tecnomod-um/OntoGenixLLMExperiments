@@ -1,0 +1,5 @@
+Error_type,Number_incidences,Rate
+Incorrect serialization,3,50
+Incorrect rdf/xml serialization,2,33.33
+Valid,1,16.67
+Wrong URIs,1,16.67

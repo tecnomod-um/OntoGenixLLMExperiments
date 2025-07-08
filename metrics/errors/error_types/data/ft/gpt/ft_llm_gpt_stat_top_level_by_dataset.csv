@@ -1,0 +1,9 @@
+dataset,Error_type,Number_incidences,Rate
+AirlinesCustomerSatisfaction,Valid,3,100
+AmazonRating,Valid,3,100
+BigBasketProducts,Valid,2,66.67
+BigBasketProducts,Incorrect serialization,1,33.33
+BrazilianE-commerce,Valid,2,66.67
+BrazilianE-commerce,Incorrect serialization,1,33.33
+CustomerComplaint,Valid,3,100
+eCommerce,Valid,3,100

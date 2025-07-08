@@ -1,0 +1,20 @@
+method,dataset,total,validity,validity_rate,corrected,corrected_rate
+llama-3-70b all,AirlinesCustomerSatisfaction,9,9,100,0,0
+llama-3-70b all,AmazonRating,8,8,100,0,0
+llama-3-70b all,BigBasketProducts,9,9,100,0,0
+llama-3-70b all,BrazilianE-commerce,9,9,100,0,0
+llama-3-70b all,CustomerComplaint,11,11,100,0,0
+llama-3-70b all,eCommerce,11,7,63.64,4,36.36
+llama-3-8b 4bits,BigBasketProducts,10,7,70,3,30
+llama-3-8b 4bits,BrazilianE-commerce,10,10,100,0,0
+llama-3-8b 4bits,eCommerce,9,9,100,0,0
+llama-3-8b 8bits,AirlinesCustomerSatisfaction,6,6,100,0,0
+llama-3-8b 8bits,AmazonRating,10,8,80,2,20
+llama-3-8b 8bits,BigBasketProducts,7,4,57.14,3,42.86
+llama-3-8b 8bits,BrazilianE-commerce,10,10,100,0,0
+llama-3-8b 8bits,CustomerComplaint,12,12,100,0,0
+llama-3-8b 8bits,eCommerce,8,8,100,0,0
+llama-3-8b all,AirlinesCustomerSatisfaction,2,2,100,0,0
+llama-3-8b all,AmazonRating,7,7,100,0,0
+llama-3-8b all,BigBasketProducts,9,9,100,0,0
+llama-3-8b all,CustomerComplaint,11,10,90.91,1,9.09

@@ -1,0 +1,12 @@
+method,dataset,total,validity,validity_rate,corrected,corrected_rate
+mistral-7b all,AirlinesCustomerSatisfaction,8,4,50,4,50
+mistral-7b all,AmazonRating,12,7,58.33,5,41.67
+mistral-7b all,BigBasketProducts,13,11,84.62,2,15.38
+mistral-7b all,BrazilianE-commerce,10,9,90,1,10
+mistral-7b all,CustomerComplaint,12,5,41.67,7,58.33
+mistral-7b all,eCommerce,11,7,63.64,4,36.36
+mixtral-8-7b all,AirlinesCustomerSatisfaction,6,6,100,0,0
+mixtral-8-7b all,AmazonRating,16,16,100,0,0
+mixtral-8-7b all,BrazilianE-commerce,11,10,90.91,1,9.09
+mixtral-8-7b all,CustomerComplaint,10,9,90,1,10
+mixtral-8-7b all,eCommerce,7,7,100,0,0

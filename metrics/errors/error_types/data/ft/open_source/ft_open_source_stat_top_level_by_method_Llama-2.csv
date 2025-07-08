@@ -1,0 +1,8 @@
+LLM_model,Error_type,Number_incidences,Rate
+Llama-2-13b,Valid,6,100
+Llama-2-7b,Valid,6,100
+Llama-2-7b-4bits,Valid,4,66.67
+Llama-2-7b-4bits,Wrong URIs,4,66.67
+Llama-2-7b-4bits,Incorrect serialization,2,33.33
+Llama-2-7b-8bits,Valid,6,100
+Llama-2-7b-8bits,Wrong URIs,1,16.67

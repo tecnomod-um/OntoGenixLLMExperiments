@@ -1,0 +1,6 @@
+Error_type,Number_incidences,Rate
+Incorrect serialization,9,75
+Wrong URIs,8,66.67
+Incorrect format,1,8.33
+Uncommented text,1,8.33
+Valid,1,8.33
