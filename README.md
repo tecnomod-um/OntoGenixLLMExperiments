@@ -55,10 +55,10 @@ The following state-of-the-art open-source LLMs were evaluated (some in quantize
 
 Common generation parameters:
 
-* `top_p = 0.8`
-* `top_k = 40`
-* `temperature = 0.5`
-* `max_new_tokens = 4096`
+* `top_p = 0.8`. Regulates probabilistic sampling by restricting token selection to the most probable subset. This encourages output diversity while maintaining relevance.
+* `top_k = 40`. Limits the pool of candidate tokens, reducing the likelihood of incoherent or low-probability word choices and enhancing output consistency.
+* `temperature = 0.5`. Modulates the randomness of the generation. A moderate value of 0.5 offers a balance between creative variation and deterministic behavior.
+* `max_new_tokens = 4096`. Sets the upper limit for the number of generated tokens, allowing for extended and uninterrupted responses suitable for full ontology outputs.
 
 #### [Fine-tuned Models](fine-tuning/open-source)
 
@@ -143,3 +143,4 @@ A deeper inspection of semantic coherence and modeling fidelity was carried out,
 | **Ontology Structure Assessment** | Assesses whether the ontology is well-organized, with logical hierarchies and modular design to support reuse, reasoning, search, or classification tasks. | Structure is disorganized, flat, or incoherent; difficult to apply for functional tasks.                      | Some hierarchy and modularity present, but with partial organization or redundancy.                          | Well-structured hierarchy and clear modularization; supports classification, reasoning, and integration.                           |
 
 The results are located in [`metrics/qualitative_assesment`](metrics/qualitative_assesment) directory.
+
