@@ -1,5 +1,0 @@
-For the next dataset description: {dataset_description}, I need you to translate the dataset related to commercial activities to an ontology using the RDF, XML, XSD, RDFS, and OWL ontologies formatted as TTL.                    
-Try to differentiate between concepts (Classes) and attributes (Data properties). 
-Use the prefix um: with IRI <https://vocab.um.es> for any created entities. 
-Do not write any explanation at the beginning or the end of the answer.                   
-Not include individuals in the ontology.
