@@ -1,12 +1,12 @@
-# OntoGenix LLM Experiments
+# LLM Ontology Generation Experiments
 
-This repository contains all experimental data, code, and resources associated with the evaluation of large language models (LLMs) for automated ontology engineering using the OntoGenix pipeline. The study includes both proprietary (OpenAI) and open-source models in their base and fine-tuned variants. Experiments were conducted across a consistent workflow and dataset to ensure comparability.
+This repository contains all experimental data, code, and resources associated with the evaluation of large language models (LLMs) for automated ontology engineering using the OntoGenix prompt. The study includes both proprietary (OpenAI) and open-source models in their base and fine-tuned variants. Experiments were conducted across a consistent workflow and dataset to ensure comparability.
 
 ## 📌 Overview
 
 The experiments presented in this repository aim to assess the effectiveness of LLMs in generating RDF/OWL ontologies from structured data (CSV files). The methodology encompasses:
 
-* Integration of multiple LLMs (GPT and open-source variants) into the OntoGenix ontology construction pipeline.
+* Integration of multiple LLMs (GPT and open-source variants).
 * Systematic fine-tuning of selected models using paired CSV-ontology datasets.
 * Quantitative and qualitative evaluation of the generated ontologies across various dimensions, including syntactic validity and semantic quality.
 
@@ -22,7 +22,7 @@ The experiments presented in this repository aim to assess the effectiveness of 
 * **GPT-4-1106-preview**
 * **GPT-4o-2024-08-06**
 
-These models were evaluated directly within the OntoGenix pipeline without further training.
+These models were evaluated directly without further training.
 
 #### [Fine-tuned Models](fine-tuning/GPT)
 
@@ -40,7 +40,6 @@ Training configuration:
 * Batch size: 3
 * Learning rate multiplier: 0.3
 
-Fine-tuned models were prompted using a simplified single-sentence input format.
 
 ### 2. Open-Source Models
 
@@ -143,4 +142,5 @@ A deeper inspection of semantic coherence and modeling fidelity was carried out,
 | **Ontology Structure Assessment** | Assesses whether the ontology is well-organized, with logical hierarchies and modular design to support reuse, reasoning, search, or classification tasks. | Structure is disorganized, flat, or incoherent; difficult to apply for functional tasks.                      | Some hierarchy and modularity present, but with partial organization or redundancy.                          | Well-structured hierarchy and clear modularization; supports classification, reasoning, and integration.                           |
 
 The results are located in [`metrics/qualitative_assesment`](metrics/qualitative_assesment) directory.
+
 
